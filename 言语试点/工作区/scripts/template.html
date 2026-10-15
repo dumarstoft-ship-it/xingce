@@ -1,0 +1,547 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>盖句精读</title>
+<style>
+/* 版式：左侧目录（按主题或按日期），右侧单栏阅读；遮住的点题句是一条"涂改带"，点开后变成朱笔划线；判断题在文末 */
+:root {
+  --paper: #f4f5f2;
+  --sheet: #fcfcfa;
+  --ink: #1f2328;
+  --ink-soft: #5d636a;
+  --rule: #dadcd6;
+  --tape: #e3e5df;
+  --tape-line: #cdd0c8;
+  --zhu: #a3262f;
+  --zhu-soft: rgba(163, 38, 47, 0.08);
+  --chip: #eceee9;
+  --chip-on: #1f2328;
+  --chip-on-fg: #fcfcfa;
+  --focus: #2f5d8a;
+  --ok: #2e6b3f;
+  --bad: #9a3412;
+  --nf: #0f5c6e;
+  --serif: "Songti SC", "STSong", "Noto Serif SC", "Source Han Serif SC", "SimSun", serif;
+  --sans: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", system-ui, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #14171a; --sheet: #1a1e22; --ink: #e3e5e2; --ink-soft: #a2a8ad; --rule: #2c3238;
+    --tape: #2a3036; --tape-line: #373e45; --zhu: #e07a7f; --zhu-soft: rgba(224, 122, 127, 0.12);
+    --chip: #242a30; --chip-on: #e3e5e2; --chip-on-fg: #14171a; --focus: #8fb6dd; --ok: #7bc48f; --bad: #f0a07a; --nf: #6cc3d5;
+    color-scheme: dark;
+  }
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 15px; }
+.app { display: grid; grid-template-columns: 300px minmax(0, 1fr); height: 100%; }
+nav { border-right: 1px solid var(--rule); background: var(--sheet); display: flex; flex-direction: column; min-height: 0; }
+.nav-head { padding: 16px 16px 10px; display: flex; flex-direction: column; gap: 10px; border-bottom: 1px solid var(--rule); }
+.brand { font-family: var(--serif); font-size: 1.25rem; font-weight: 700; letter-spacing: 0.04em; }
+.brand small { font-family: var(--sans); font-size: 0.75rem; font-weight: 400; color: var(--ink-soft); margin-left: 6px; letter-spacing: 0; }
+.seg { display: flex; gap: 4px; flex-wrap: wrap; }
+.seg button, .nav-tools button { font: inherit; font-size: 0.8125rem; border: 1px solid var(--rule); background: var(--chip); color: var(--ink); border-radius: 4px; padding: 3px 9px; cursor: pointer; }
+.seg button[aria-pressed="true"] { background: var(--chip-on); color: var(--chip-on-fg); border-color: var(--chip-on); }
+#q { font: inherit; font-size: 0.875rem; width: 100%; padding: 6px 8px; border: 1px solid var(--rule); border-radius: 4px; background: var(--paper); color: var(--ink); }
+.nav-stat { font-size: 0.75rem; color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+.nav-list { overflow-y: auto; flex: 1; padding: 6px 0 24px; }
+.grp { font-size: 0.75rem; color: var(--ink-soft); padding: 12px 16px 4px; letter-spacing: 0.02em; }
+.item { display: grid; grid-template-columns: 14px minmax(0, 1fr); gap: 8px; align-items: start; padding: 6px 16px; cursor: pointer; text-decoration: none; color: var(--ink); border-left: 3px solid transparent; }
+.item:hover { background: var(--chip); }
+.item[aria-current="true"] { background: var(--chip); border-left-color: var(--zhu); }
+.item .dot { width: 10px; height: 10px; border-radius: 50%; border: 1.5px solid var(--tape-line); margin-top: 5px; }
+.item .dot.part { background: linear-gradient(90deg, var(--ink-soft) 50%, transparent 50%); border-color: var(--ink-soft); }
+.item .dot.done { background: var(--ink-soft); border-color: var(--ink-soft); }
+.item .t { font-size: 0.875rem; line-height: 1.45; }
+.item .m { font-size: 0.6875rem; color: var(--ink-soft); }
+.item .m .nf { color: var(--nf); }
+.nav-tools { display: flex; gap: 6px; flex-wrap: wrap; padding: 10px 16px; border-top: 1px solid var(--rule); }
+main { overflow-y: auto; min-width: 0; }
+.wrap { max-width: 44rem; margin: 0 auto; padding: 28px 24px 80px; display: flex; flex-direction: column; gap: 18px; }
+.how { font-size: 0.875rem; line-height: 1.7; color: var(--ink-soft); border-left: 3px solid var(--tape-line); padding: 2px 0 2px 12px; }
+.how b { color: var(--ink); font-weight: 600; }
+.legend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 0.8125rem; color: var(--ink-soft); }
+.legend b { color: var(--ink); font-weight: 600; }
+article { background: var(--sheet); border: 1px solid var(--rule); border-radius: 6px; padding: 26px 26px 22px; display: flex; flex-direction: column; gap: 16px; }
+.meta { font-size: 0.8125rem; color: var(--ink-soft); display: flex; flex-wrap: wrap; gap: 4px 12px; align-items: baseline; }
+.meta .src { color: var(--zhu); font-weight: 600; }
+.meta .src.nf { color: var(--nf); }
+h1 { font-family: var(--serif); font-weight: 700; font-size: 1.6rem; line-height: 1.35; margin: 0; text-wrap: balance; }
+.byline { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; font-size: 0.875rem; color: var(--ink-soft); }
+.byline a { color: var(--focus); text-decoration: none; border-bottom: 1px solid currentColor; }
+.progress { margin-left: auto; font-variant-numeric: tabular-nums; }
+.group { font-size: 0.8125rem; color: var(--ink-soft); background: var(--paper); border-radius: 4px; padding: 6px 10px; }
+.para { display: flex; flex-direction: column; gap: 8px; }
+.para p { font-family: var(--serif); font-size: 1.08rem; line-height: 1.95; margin: 0; text-indent: 2em; }
+.para p.sub { text-indent: 0; font-weight: 700; }
+.pno { font-family: var(--sans); font-size: 0.6875rem; color: var(--ink-soft); margin-right: 0.4em; display: inline-block; text-indent: 0; }
+button.tape { font: inherit; font-family: var(--sans); font-size: 0.8125rem; color: var(--ink-soft); background: repeating-linear-gradient(135deg, var(--tape) 0 8px, var(--tape-line) 8px 9px); border: 0; border-radius: 3px; padding: 2px 10px; margin: 0 2px; cursor: pointer; text-indent: 0; line-height: 1.8; }
+button.tape:hover { color: var(--ink); }
+button:focus-visible, textarea:focus-visible, #q:focus-visible, .item:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+mark.rev { background: var(--zhu-soft); color: inherit; padding: 0 1px; text-decoration: underline; text-decoration-color: var(--zhu); text-decoration-thickness: 1.5px; text-underline-offset: 5px; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+.check { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 8px; font-size: 0.8125rem; color: var(--ink-soft); }
+.check .which { flex: 1 1 100%; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chips button { font: inherit; font-size: 0.8125rem; border: 1px solid var(--rule); background: var(--chip); color: var(--ink); border-radius: 999px; padding: 3px 12px; cursor: pointer; }
+.chips button[aria-pressed="true"] { background: var(--chip-on); color: var(--chip-on-fg); border-color: var(--chip-on); }
+section.block { border-top: 1px solid var(--rule); padding-top: 16px; display: flex; flex-direction: column; gap: 10px; }
+section.block h2 { font-size: 0.9375rem; margin: 0; }
+.hint { font-size: 0.8125rem; color: var(--ink-soft); }
+textarea { font: inherit; font-family: var(--serif); font-size: 1rem; line-height: 1.7; width: 100%; min-height: 4.2em; resize: vertical; border: 1px solid var(--rule); border-radius: 4px; padding: 8px 10px; background: var(--paper); color: var(--ink); }
+.judg { display: flex; flex-direction: column; gap: 8px; padding: 10px 12px; background: var(--paper); border-radius: 4px; }
+.judg .stem { font-family: var(--serif); font-size: 1rem; line-height: 1.75; }
+.judg .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+.judg .row button { font: inherit; font-size: 0.875rem; border: 1px solid var(--rule); background: var(--sheet); color: var(--ink); border-radius: 4px; padding: 3px 14px; cursor: pointer; }
+.judg .res { font-size: 0.875rem; line-height: 1.7; }
+.judg .res .ok { color: var(--ok); font-weight: 600; }
+.judg .res .bad { color: var(--bad); font-weight: 600; }
+.judg .res a { color: var(--focus); word-break: break-all; }
+.judg .quote { font-family: var(--serif); color: var(--ink-soft); border-left: 2px solid var(--rule); padding-left: 8px; margin-top: 4px; }
+.pager { display: flex; justify-content: space-between; gap: 12px; }
+.pager button, .tools button { font: inherit; font-size: 0.875rem; background: var(--sheet); border: 1px solid var(--rule); color: var(--ink); border-radius: 4px; padding: 6px 12px; cursor: pointer; }
+.pager button:disabled { opacity: 0.4; cursor: default; }
+.tools { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; font-size: 0.8125rem; color: var(--ink-soft); }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; }
+.stat { background: var(--sheet); border: 1px solid var(--rule); border-radius: 6px; padding: 12px 14px; }
+.stat .n { font-size: 1.5rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.stat .l { font-size: 0.8125rem; color: var(--ink-soft); }
+.stat .pct { font-size: 0.8125rem; font-weight: 400; color: var(--ink-soft); margin-left: 6px; }
+section.block > button { align-self: flex-start; font: inherit; font-size: 0.875rem; background: var(--sheet); border: 1px solid var(--rule); color: var(--ink); border-radius: 4px; padding: 6px 12px; cursor: pointer; }
+table.ref { border-collapse: collapse; width: 100%; font-size: 0.9375rem; }
+table.ref td, table.ref th { border-bottom: 1px solid var(--rule); padding: 8px 6px; text-align: left; vertical-align: top; line-height: 1.6; }
+.words-all { font-family: var(--serif); white-space: pre-wrap; line-height: 1.8; background: var(--sheet); border: 1px solid var(--rule); border-radius: 6px; padding: 12px 14px; }
+.kbd { font-size: 0.75rem; color: var(--ink-soft); }
+button.blank { font: inherit; font-family: var(--serif); color: var(--ink-soft); background: var(--tape); border: 0; border-bottom: 1.5px solid var(--ink-soft); border-radius: 2px 2px 0 0; padding: 0 3px; margin: 0 2px; cursor: pointer; text-indent: 0; line-height: 1.5; }
+button.blank:hover { color: var(--ink); }
+.pick { display: inline-flex; gap: 4px; text-indent: 0; }
+.pick button { font: inherit; font-family: var(--sans); font-size: 0.75rem; border: 1px solid var(--rule); background: var(--sheet); color: var(--ink); border-radius: 999px; padding: 1px 9px; cursor: pointer; }
+mark.wrev { background: var(--zhu-soft); color: inherit; padding: 0 2px; border-bottom: 1.5px solid var(--zhu); }
+.check .note { flex: 1 1 100%; color: var(--ink); line-height: 1.6; }
+.modebar { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; font-size: 0.8125rem; color: var(--ink-soft); }
+.review { display: flex; flex-direction: column; gap: 8px; }
+.review .it { background: var(--sheet); border: 1px solid var(--rule); border-radius: 6px; padding: 10px 12px; font-size: 0.875rem; line-height: 1.7; display: flex; flex-direction: column; gap: 4px; }
+.review .ctx { font-family: var(--serif); font-size: 1rem; line-height: 1.8; }
+.review .src { font-size: 0.75rem; color: var(--ink-soft); }
+@media (max-width: 760px) {
+  .app { grid-template-columns: 1fr; grid-template-rows: auto 1fr; }
+  nav { max-height: 42vh; border-right: 0; border-bottom: 1px solid var(--rule); }
+  .wrap { padding: 18px 16px 60px; }
+  article { padding: 18px 16px; }
+}
+@media (prefers-reduced-motion: no-preference) { mark.rev { animation: ink 240ms ease-out; } @keyframes ink { from { background: transparent; } to { background: var(--zhu-soft); } } }
+</style>
+</head>
+<body>
+<div class="app">
+  <nav aria-label="文章目录">
+    <div class="nav-head">
+      <div class="brand">盖句精读<small id="count"></small></div>
+      <div class="seg" role="group" aria-label="排列方式">
+        <button type="button" data-order="theme" aria-pressed="true">按主题</button>
+        <button type="button" data-order="date" aria-pressed="false">按日期</button>
+      </div>
+      <div class="seg" role="group" aria-label="来源筛选">
+        <button type="button" data-src="all" aria-pressed="true">全部</button>
+        <button type="button" data-src="人民日报" aria-pressed="false">人民日报</button>
+        <button type="button" data-src="南方日报" aria-pressed="false">南方日报</button>
+        <button type="button" data-src="常识" aria-pressed="false">常识</button>
+      </div>
+      <input id="q" type="search" placeholder="搜标题或主题" aria-label="搜标题或主题">
+      <div class="nav-stat" id="navstat"></div>
+    </div>
+    <div class="nav-list" id="navlist"></div>
+    <div class="nav-tools">
+      <button type="button" id="go-stats">我的记录</button>
+      <button type="button" id="go-1310">广东"1310"</button>
+    </div>
+  </nav>
+  <main id="main"></main>
+</div>
+
+<script id="data" type="application/json">/*__DATA__*/</script>
+<script id="ref1310" type="application/json">/*__REF1310__*/</script>
+<script>
+"use strict";
+const DATA = JSON.parse(document.getElementById("data").textContent);
+const REF = JSON.parse(document.getElementById("ref1310").textContent);
+const TAGS = [["hit", "猜中"], ["narrow", "太窄"], ["level", "层次不对"], ["tail", "被尾句带走"]];
+const KEY = "gaiju-v1";
+let store = {};
+try { store = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (e) { store = {}; }
+function save() { try { localStorage.setItem(KEY, JSON.stringify(store)); } catch (e) {} }
+function st(id) {
+  const s = store[id] || (store[id] = { open: {}, tags: {}, words: "", judg: {} });
+  s.wopen = s.wopen || {}; s.wconf = s.wconf || {}; s.whit = s.whit || {};
+  return s;
+}
+
+let order = "theme", srcFilter = "all", query = "", current = null, view = "article", mode = "sent";
+try { const u = JSON.parse(localStorage.getItem(KEY + ":ui") || "{}"); order = u.order || order; srcFilter = u.src || srcFilter; current = u.cur || null; mode = u.mode === "word" ? "word" : "sent"; } catch (e) {}
+function saveUi() { try { localStorage.setItem(KEY + ":ui", JSON.stringify({ order, src: srcFilter, cur: current, mode })); } catch (e) {} }
+
+const byId = Object.fromEntries(DATA.map(a => [a.id, a]));
+function masksOf(a) { return a.paras.flat().filter(x => x.m); }
+function statusOf(a) {
+  const s = store[a.id]; if (!s) return "";
+  const n = masksOf(a).length, t = Object.keys(s.tags || {}).length;
+  if (n && t >= n) return "done";
+  return (t || Object.keys(s.open || {}).length) ? "part" : "";
+}
+function visible() {
+  const q = query.trim();
+  return DATA.filter(a => (srcFilter === "all" || (srcFilter === "常识" ? a.kind === "cs" : a.kind !== "cs" && a.src === srcFilter)) && (!q || (a.title + a.group + a.col).includes(q)));
+}
+function rank(a) { return a.kind === "cs" ? 2 : a.src === "南方日报" ? 1 : 0; }
+function ordered() {
+  const list = visible().slice();
+  if (order === "date") list.sort((x, y) => x.date.localeCompare(y.date) || x.id.localeCompare(y.id));
+  else list.sort((x, y) => rank(x) - rank(y) || x.gidx - y.gidx || x.date.localeCompare(y.date));
+  return list;
+}
+
+function renderNav() {
+  const list = ordered();
+  const box = document.getElementById("navlist");
+  box.replaceChildren();
+  let last = null;
+  for (const a of list) {
+    const g = order === "date" ? a.date.slice(0, 7).replace("-", " 年 ") + " 月" : (a.kind === "cs" ? "常识 · " : a.src === "南方日报" ? "南方日报 · " : "") + a.gname;
+    if (g !== last) { const h = document.createElement("div"); h.className = "grp"; h.textContent = g; box.append(h); last = g; }
+    const it = document.createElement("a");
+    it.className = "item"; it.href = "#" + a.id; it.tabIndex = 0;
+    if (a.id === current && view === "article") it.setAttribute("aria-current", "true");
+    const dot = document.createElement("span"); dot.className = "dot " + statusOf(a);
+    const txt = document.createElement("span");
+    const t = document.createElement("div"); t.className = "t"; t.textContent = a.title;
+    const m = document.createElement("div"); m.className = "m";
+    const s = document.createElement("span"); s.className = a.src === "南方日报" ? "nf" : ""; s.textContent = a.src;
+    m.append(s, document.createTextNode(" · " + a.col + " · " + a.date.slice(5)));
+    txt.append(t, m); it.append(dot, txt);
+    it.addEventListener("click", e => { e.preventDefault(); openArticle(a.id); });
+    box.append(it);
+  }
+  const done = DATA.filter(a => statusOf(a) === "done").length;
+  document.getElementById("navstat").textContent = `显示 ${list.length} 篇 · 已读完 ${done} / ${DATA.length}`;
+  document.getElementById("count").textContent = `${DATA.length} 篇`;
+  for (const b of document.querySelectorAll("[data-order]")) b.setAttribute("aria-pressed", b.dataset.order === order ? "true" : "false");
+  for (const b of document.querySelectorAll("[data-src]")) b.setAttribute("aria-pressed", b.dataset.src === srcFilter ? "true" : "false");
+}
+
+function openArticle(id) {
+  if (!byId[id]) return;
+  current = id; view = "article"; saveUi();
+  renderArticle(byId[id]); renderNav();
+  document.getElementById("main").scrollTop = 0;
+  const cur = document.querySelector('.item[aria-current="true"]'); if (cur) cur.scrollIntoView({ block: "nearest" });
+}
+
+function el(tag, cls, text) { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
+
+function renderArticle(a) {
+  const s = st(a.id);
+  const wm = mode === "word" && (a.w || []).length > 0;
+  const main = document.getElementById("main");
+  const wrap = el("div", "wrap");
+  const how = el("div", "how");
+  const legend = el("div", "legend");
+  if (wm) {
+    how.innerHTML = "第二遍读：这次遮的是词，横线的长度就是字数。读到横线先<b>在心里填一个词</b>，再选“有把握”或“没把握”揭开，对照后点“对上了”或“没对上”。遮的位置都像选词填空的考点，揭开后附一句为什么用这个词。";
+    legend.innerHTML = "<span><b>有把握却没对上</b>的词会收进“我的记录”，留着重点复习</span>";
+  } else {
+    how.innerHTML = "每段先读灰条以外的部分，<b>心里用一句话说出这段在讲什么</b>，再点灰条看原句，选一个对照结果。灰条遮住的是这一段的点题句，命题人出片段阅读时常删的就是它。";
+    legend.innerHTML = "<span><b>猜中</b>：意思对上了</span><span><b>太窄</b>：把例子或局部当成观点</span><span><b>层次不对</b>：抽象得太高或太低</span><span><b>被尾句带走</b>：抓了段尾，但它不是中心</span>";
+  }
+  const art = el("article");
+  const meta = el("div", "meta");
+  const src = el("span", "src" + (a.src === "南方日报" ? " nf" : ""), a.src);
+  meta.append(src, el("span", "", a.col), el("span", "", a.date), el("span", "", a.page || ""));
+  const h = el("h1", "", a.title);
+  const by = el("div", "byline");
+  if (a.author) by.append(el("span", "", a.author));
+  const link = el("a", "", "原文链接（需联网）"); link.href = a.url; link.target = "_blank"; link.rel = "noopener";
+  const prog = el("span", "progress"); prog.id = "prog";
+  by.append(link, prog);
+  const grp = el("div", "group", (a.kind === "cs" ? "考点：" : a.src === "南方日报" ? "覆盖：" : "主题：") + a.group);
+  art.append(meta, h, by, grp);
+  if ((a.w || []).length) {
+    const mb = el("div", "modebar");
+    const seg = el("div", "seg"); seg.setAttribute("role", "group"); seg.setAttribute("aria-label", "遮挡方式");
+    for (const [k, name] of [["sent", "遮点题句（" + masksOf(a).length + "）"], ["word", "遮词语（" + a.w.length + "）"]]) {
+      const b = el("button", "", name); b.type = "button"; b.dataset.mode = k;
+      b.setAttribute("aria-pressed", mode === k ? "true" : "false");
+      b.addEventListener("click", () => { if (mode !== k) { mode = k; saveUi(); renderArticle(a); } });
+      seg.append(b);
+    }
+    mb.append(seg, el("span", "", mode === "word" ? "先读完点题句，再切到这里读第二遍" : "读完一遍可切到“遮词语”再读一遍"));
+    art.append(mb);
+  }
+
+  a.paras.forEach((para, pi) => {
+    const box = el("div", "para");
+    const p = el("p", para.length === 1 && para[0].sub ? "sub" : "");
+    p.append(el("span", "pno", "[" + (pi + 1) + "]"));
+    const checks = el("div", "checks");
+    if (wm) { renderWordPara(a, s, para, pi, p, checks); box.append(p, checks); art.append(box); return; }
+    for (const part of para) {
+      if (part.t != null) { p.append(document.createTextNode(part.t)); continue; }
+      const slot = el("span");
+      p.append(slot);
+      const reveal = () => { const mk = el("mark", "rev", part.m); slot.replaceChildren(mk); };
+      const mask = () => {
+        const b = el("button", "tape", (part.label ? part.label + " · " : "") + "点题句，点开");
+        b.type = "button"; b.dataset.mask = part.id;
+        b.setAttribute("aria-label", "揭开第" + (pi + 1) + "段被遮住的句子");
+        b.addEventListener("click", () => { s.open[part.id] = 1; save(); reveal(); checks.append(checkRow(a, part, pi)); updateProg(a); renderNavLite(); });
+        slot.replaceChildren(b);
+      };
+      if (s.open[part.id]) { reveal(); checks.append(checkRow(a, part, pi)); } else mask();
+    }
+    box.append(p, checks);
+    art.append(box);
+  });
+
+  const w = el("section", "block");
+  w.append(el("h2", "", "意外的措辞"), el("div", "hint", "读到“换我会写别的词”的地方就记下来，一篇最多 3 个，没有就空着。攒一批再问 DeepSeek：这里为什么用这个词。"));
+  const ta = el("textarea"); ta.id = "words"; ta.placeholder = "例：充斥着较量；固守过去的经验"; ta.value = s.words || "";
+  let tmr; ta.addEventListener("input", () => { clearTimeout(tmr); tmr = setTimeout(() => { s.words = ta.value; save(); }, 500); });
+  w.append(ta);
+  art.append(w);
+
+  if (a.judgments && a.judgments.length) {
+    const jb = el("section", "block");
+    jb.append(el("h2", "", (a.kind === "cs" ? "常识" : "政治理论") + " · 判断题"));
+    a.judgments.forEach((j, ji) => {
+      const box = el("div", "judg");
+      box.append(el("div", "stem", (ji + 1) + ". （判断题）" + j.statement));
+      const row = el("div", "row");
+      const res = el("div", "res");
+      const show = (pick) => {
+        res.replaceChildren();
+        const right = pick === j.answer;
+        res.append(el("span", right ? "ok" : "bad", (right ? "答对了。" : "答错了。") + "正确答案：" + (j.answer ? "正确" : "错误") + "。"));
+        res.append(document.createTextNode(j.explain));
+        const q = el("div", "quote", "原话：" + j.source_quote);
+        const l = el("a", "", j.source_url); l.href = j.source_url; l.target = "_blank"; l.rel = "noopener";
+        const srcLine = el("div", ""); srcLine.append(document.createTextNode("出处："), l);
+        res.append(q, srcLine);
+      };
+      for (const [v, name] of [[true, "正确"], [false, "错误"]]) {
+        const b = el("button", "", name); b.type = "button";
+        b.addEventListener("click", () => { s.judg[ji] = v; save(); show(v); });
+        row.append(b);
+      }
+      if (s.judg[ji] != null) show(s.judg[ji]);
+      box.append(row, res);
+      jb.append(box);
+    });
+    art.append(jb);
+  }
+
+  const tools = el("div", "tools");
+  const again = el("button", "", "重新遮住，再读一遍"); again.type = "button";
+  again.addEventListener("click", () => { if (wm) s.wopen = {}; else s.open = {}; save(); renderArticle(a); renderNavLite(); });
+  tools.append(again, el("span", "kbd", "快捷键：空格 揭开下一处 · ← → 上一篇 / 下一篇"));
+  art.append(tools);
+
+  const list = ordered(); const i = list.findIndex(x => x.id === a.id);
+  const pager = el("div", "pager");
+  const prev = el("button", "", "← 上一篇"); prev.type = "button"; prev.disabled = i <= 0;
+  const next = el("button", "", "下一篇 →"); next.type = "button"; next.disabled = i < 0 || i >= list.length - 1;
+  prev.addEventListener("click", () => openArticle(list[i - 1].id));
+  next.addEventListener("click", () => openArticle(list[i + 1].id));
+  pager.append(prev, next);
+
+  wrap.append(how, legend, art, pager);
+  main.replaceChildren(wrap);
+  updateProg(a);
+}
+
+function checkRow(a, part, pi) {
+  const s = st(a.id);
+  const row = el("div", "check");
+  row.append(el("span", "which", "第" + (pi + 1) + "段" + (part.label ? "（" + part.label + "）" : "") + "：我的一句话和原句比——"));
+  const chips = el("div", "chips"); chips.setAttribute("role", "group");
+  for (const [k, name] of TAGS) {
+    const b = el("button", "", name); b.type = "button";
+    b.setAttribute("aria-pressed", s.tags[part.id] === k ? "true" : "false");
+    b.addEventListener("click", () => {
+      if (s.tags[part.id] === k) delete s.tags[part.id]; else s.tags[part.id] = k;
+      for (const c of chips.children) c.setAttribute("aria-pressed", c === b && s.tags[part.id] ? "true" : "false");
+      save(); updateProg(a); renderNavLite();
+    });
+    chips.append(b);
+  }
+  row.append(chips);
+  return row;
+}
+function updateProg(a) {
+  const s = st(a.id); const p = document.getElementById("prog"); if (!p) return;
+  if (mode === "word" && (a.w || []).length) { const t = a.w.filter(w => s.whit[w.id] != null).length; p.textContent = "词语已对照 " + t + " / " + a.w.length; return; }
+  const n = masksOf(a).length; const t = masksOf(a).filter(m => s.tags[m.id]).length;
+  p.textContent = "已对照 " + t + " / " + n;
+}
+function paraText(para) { return para.map(x => x.t != null ? x.t : x.m).join(""); }
+function renderWordPara(a, s, para, pi, p, checks) {
+  const full = paraText(para);
+  const ws = (a.w || []).filter(w => w.p === pi + 1).sort((x, y) => x.b - y.b);
+  let pos = 0;
+  for (const w of ws) {
+    if (w.b > pos) p.append(document.createTextNode(full.slice(pos, w.b)));
+    const word = full.slice(w.b, w.e);
+    const slot = el("span"); p.append(slot);
+    const reveal = () => slot.replaceChildren(el("mark", "wrev", word));
+    const blank = () => {
+      const b = el("button", "blank", "＿".repeat(word.length)); b.type = "button"; b.dataset.word = w.id;
+      b.setAttribute("aria-label", "第" + (pi + 1) + "段被遮住的词，" + word.length + "个字");
+      b.addEventListener("click", () => {
+        const pk = el("span", "pick");
+        for (const [k, name] of [["sure", "有把握"], ["unsure", "没把握"]]) {
+          const c = el("button", "", name); c.type = "button";
+          c.addEventListener("click", () => { s.wopen[w.id] = 1; s.wconf[w.id] = k; save(); reveal(); checks.append(wordRow(a, w, word, pi)); updateProg(a); });
+          pk.append(c);
+        }
+        slot.replaceChildren(pk); pk.firstChild.focus();
+      });
+      slot.replaceChildren(b);
+    };
+    if (s.wopen[w.id]) { reveal(); checks.append(wordRow(a, w, word, pi)); } else blank();
+    pos = w.e;
+  }
+  if (pos < full.length) p.append(document.createTextNode(full.slice(pos)));
+}
+function wordRow(a, w, word, pi) {
+  const s = st(a.id);
+  const row = el("div", "check");
+  row.append(el("span", "which", "第" + (pi + 1) + "段「" + word + "」（揭开前" + (s.wconf[w.id] === "sure" ? "有把握" : "没把握") + "）：我心里填的词——"));
+  const chips = el("div", "chips"); chips.setAttribute("role", "group");
+  for (const [v, name] of [[true, "对上了"], [false, "没对上"]]) {
+    const b = el("button", "", name); b.type = "button";
+    b.setAttribute("aria-pressed", s.whit[w.id] === v ? "true" : "false");
+    b.addEventListener("click", () => {
+      if (s.whit[w.id] === v) delete s.whit[w.id]; else s.whit[w.id] = v;
+      for (const c of chips.children) c.setAttribute("aria-pressed", c === b && s.whit[w.id] === v ? "true" : "false");
+      save(); updateProg(a);
+    });
+    chips.append(b);
+  }
+  row.append(chips);
+  if (w.note) row.append(el("span", "note", w.note));
+  return row;
+}
+function wordContext(a, w) {
+  const full = paraText(a.paras[w.p - 1]);
+  let b = w.b, e = w.e;
+  while (b > 0 && !"。！？；".includes(full[b - 1])) b--;
+  while (e < full.length && !"。！？；".includes(full[e - 1] || "")) e++;
+  return [full.slice(b, w.b), full.slice(w.b, w.e), full.slice(w.e, e)];
+}
+let navTimer; function renderNavLite() { clearTimeout(navTimer); navTimer = setTimeout(renderNav, 150); }
+
+function renderStats() {
+  view = "stats"; renderNav();
+  const wrap = el("div", "wrap");
+  const c = { hit: 0, narrow: 0, level: 0, tail: 0 }; let jr = 0, jt = 0, cr = 0, ct = 0, done = 0;
+  const words = [];
+  for (const a of DATA) {
+    const s = store[a.id]; if (!s) continue;
+    for (const k of Object.values(s.tags || {})) c[k] = (c[k] || 0) + 1;
+    (a.judgments || []).forEach((j, i) => { if (s.judg && s.judg[i] != null) { if (a.kind === "cs") { ct++; if (s.judg[i] === j.answer) cr++; } else { jt++; if (s.judg[i] === j.answer) jr++; } } });
+    if (statusOf(a) === "done") done++;
+    if (s.words && s.words.trim()) words.push("【" + a.title + "】" + s.words.trim());
+  }
+  const total = c.hit + c.narrow + c.level + c.tail;
+  wrap.append(el("h1", "", "我的记录"));
+  const grid = el("div", "stats");
+  const card = (n, l, pct) => { const d = el("div", "stat"); const nn = el("div", "n", String(n)); if (pct) nn.append(el("span", "pct", pct)); d.append(nn, el("div", "l", l)); return d; };
+  grid.append(card(done + " / " + DATA.length, "读完的篇数"), card(total, "对照过的点题句"));
+  for (const [k, name] of TAGS) grid.append(card(c[k], name, total ? Math.round(c[k] * 100 / total) + "%" : ""));
+  grid.append(card(jt ? jr + " / " + jt : "0", "政治理论判断题答对"), card(ct ? cr + " / " + ct : "0", "常识判断题答对"));
+  let wn = 0, wh = 0; const miss = [];
+  for (const a of DATA) {
+    const s = store[a.id]; if (!s || !s.whit) continue;
+    for (const w of a.w || []) {
+      const hit = s.whit[w.id]; if (hit == null) continue;
+      wn++; if (hit) wh++; else if (s.wconf && s.wconf[w.id] === "sure") miss.push([a, w]);
+    }
+  }
+  grid.append(card(wn ? wh + " / " + wn : "0", "词语对上了"), card(miss.length, "有把握却没对上的词"));
+  wrap.append(grid);
+  if (miss.length) {
+    const rsec = el("section", "block");
+    rsec.append(el("h2", "", "有把握却没对上的词（重点复习）"), el("div", "hint", "这些是你以为稳了、结果原文用了别的词的地方，最值得回看。"));
+    const list = el("div", "review");
+    for (const [a, w] of miss) {
+      const [l, m, r] = wordContext(a, w);
+      const it = el("div", "it");
+      const ctx = el("div", "ctx"); ctx.append(document.createTextNode(l), el("mark", "wrev", m), document.createTextNode(r));
+      const src = el("a", "src", "【" + a.title + "】第" + w.p + "段"); src.href = "#" + a.id;
+      src.addEventListener("click", e => { e.preventDefault(); mode = "word"; saveUi(); openArticle(a.id); });
+      it.append(ctx);
+      if (w.note) it.append(el("div", "", w.note));
+      it.append(src);
+      list.append(it);
+    }
+    rsec.append(list);
+    wrap.append(rsec);
+  }
+  const wsec = el("section", "block");
+  wsec.append(el("h2", "", "攒下的措辞（可整段复制给 DeepSeek）"));
+  const pre = el("div", "words-all", words.length ? words.join("\n") : "还没有记录。");
+  const copy = el("button", "", "复制全部"); copy.type = "button";
+  copy.addEventListener("click", async () => { try { await navigator.clipboard.writeText(words.join("\n")); copy.textContent = "已复制"; } catch (e) { const r = document.createRange(); r.selectNodeContents(pre); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); copy.textContent = "已选中，按 Ctrl+C 复制"; } });
+  wsec.append(pre, copy);
+  wrap.append(wsec);
+  const bsec = el("section", "block");
+  bsec.append(el("h2", "", "备份与恢复"), el("div", "hint", "记录保存在这台电脑的浏览器里。换电脑或清理浏览器数据前，先导出备份。"));
+  const tools = el("div", "tools");
+  const ex = el("button", "", "导出备份"); ex.type = "button";
+  ex.addEventListener("click", () => { const blob = new Blob([JSON.stringify(store)], { type: "application/json" }); const u = URL.createObjectURL(blob); const a = document.createElement("a"); a.href = u; a.download = "盖句精读-记录.json"; document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(u), 1000); });
+  const imLabel = el("label", "", "导入备份："); const im = el("input"); im.type = "file"; im.accept = "application/json"; imLabel.append(im);
+  im.addEventListener("change", async () => { const f = im.files[0]; if (!f) return; try { const v = JSON.parse(await f.text()); if (v && typeof v === "object") { store = v; save(); renderStats(); } } catch (e) { imLabel.append(el("span", "", " 文件读不了，请选导出的那份。")); } });
+  tools.append(ex, imLabel);
+  bsec.append(tools);
+  wrap.append(bsec);
+  document.getElementById("main").replaceChildren(wrap);
+}
+
+function render1310() {
+  view = "ref"; renderNav();
+  const wrap = el("div", "wrap");
+  wrap.append(el("h1", "", "广东省委“1310”具体部署"));
+  wrap.append(el("div", "how", REF.intro));
+  const t = el("table", "ref");
+  const tb = el("tbody");
+  REF.items.forEach((x, i) => { const tr = el("tr"); tr.append(el("td", "", String(i + 1)), el("td", "", x)); tb.append(tr); });
+  t.append(tb); wrap.append(t);
+  for (const n of REF.notes) wrap.append(el("div", "hint", n));
+  const l = el("a", "", "原文：广东省人民政府网（需联网）"); l.href = REF.url; l.target = "_blank"; l.rel = "noopener";
+  wrap.append(l);
+  document.getElementById("main").replaceChildren(wrap);
+}
+
+document.querySelectorAll("[data-order]").forEach(b => b.addEventListener("click", () => { order = b.dataset.order; saveUi(); renderNav(); }));
+document.querySelectorAll("[data-src]").forEach(b => b.addEventListener("click", () => { srcFilter = b.dataset.src; saveUi(); renderNav(); }));
+document.getElementById("q").addEventListener("input", e => { query = e.target.value; renderNav(); });
+document.getElementById("go-stats").addEventListener("click", renderStats);
+document.getElementById("go-1310").addEventListener("click", render1310);
+document.addEventListener("keydown", e => {
+  if (view !== "article" || e.target.matches("textarea, input")) return;
+  const list = ordered(); const i = list.findIndex(x => x.id === current);
+  if (e.key === "ArrowRight" && i >= 0 && i < list.length - 1) { openArticle(list[i + 1].id); e.preventDefault(); }
+  else if (e.key === "ArrowLeft" && i > 0) { openArticle(list[i - 1].id); e.preventDefault(); }
+  else if (e.key === " ") {
+    if (e.target.closest && e.target.closest(".pick")) return;
+    const b = document.querySelector(mode === "word" && byId[current] && (byId[current].w || []).length ? "button.blank" : "button.tape");
+    if (b) { b.click(); e.preventDefault(); }
+  }
+});
+
+const start = (location.hash && byId[location.hash.slice(1)]) ? location.hash.slice(1) : (current && byId[current] ? current : ordered()[0].id);
+openArticle(start);
+</script>
+</body>
+</html>
