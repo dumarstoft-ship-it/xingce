@@ -18,7 +18,7 @@
 .qcard .res .bad, .judg .res2 .bad { color: var(--bad); font-weight: 600; }
 .qcard .note { line-height: 1.75; color: var(--ink); }
 .linkish { align-self: flex-start; font: inherit; font-size: 0.75rem; background: none; border: 0; color: var(--ink-soft); text-decoration: underline; cursor: pointer; padding: 0; }
-.badge { font-family: var(--sans); font-size: 0.625rem; font-weight: 600; color: var(--chip-on-fg); background: var(--zhu); border-radius: 3px; padding: 0 4px; margin-left: 6px; vertical-align: 2px; letter-spacing: 0.02em; }
+.badge { font-family: var(--sans); font-size: 0.625rem; font-weight: 600; color: var(--chip-on-fg); background: var(--zhu); border-radius: 3px; padding: 0 4px; margin-left: 6px; vertical-align: 2px; letter-spacing: 0.02em; white-space: nowrap; display: inline-block; }
 .judg .kind { font-family: var(--sans); font-size: 0.75rem; color: var(--ink-soft); margin-right: 4px; }
 .judg .submit { align-self: flex-start; }
 .srcs { display: flex; flex-direction: column; gap: 6px; margin-top: 4px; }
