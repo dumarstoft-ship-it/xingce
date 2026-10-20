@@ -1,10 +1,12 @@
 """检查广东式政治常识题：格式、答案、依据原话能否在原文或已核原话里逐字找到。
-用法：python3 -I check_items.py <结果.json> <base data.json>"""
+用法：python3 -I check_items.py <结果.json> <base data.json> [其他已核原话文件 ...]"""
 import json, sys, re
 res = json.load(open(sys.argv[1], encoding='utf-8'))
 data = json.load(open(sys.argv[2], encoding='utf-8'))
 by = {a['id']: a for a in data}
 verified = [j['source_quote'] for a in data for j in a.get('judgments', [])]
+for f in sys.argv[3:]:                      # 其他核过官方页面的文件（如一文多题答案），整篇当作已核原话来源
+    verified.append(open(f, encoding='utf-8').read())
 def norm(s):
     return re.sub(r'[\s“”"‘’\'「」『』…·]', '', s)
 vn = [norm(v) for v in verified]

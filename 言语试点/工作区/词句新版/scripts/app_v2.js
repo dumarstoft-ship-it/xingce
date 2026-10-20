@@ -354,15 +354,19 @@ function itemBox(a, s, it, ii) {
     res.append(el("span", right ? "ok" : "bad", (right ? "答对了。" : "答错了。") + "正确答案：" + ans + "。"));
     res.append(document.createTextNode(it.explain));
     if ((it.sources || []).length) {
+      const weakN = it.sources.filter(x => x.kind === "搜索佐证").length;
+      const det = el("details", "srcs-d");
+      det.append(el("summary", "", "依据 " + it.sources.length + " 条" + (weakN ? "（其中搜索佐证 " + weakN + " 条）" : "")));
       const ss = el("div", "srcs");
       for (const x of it.sources) {
         const line = el("div", "s");
         line.append(el("span", "tag" + (x.kind === "搜索佐证" ? " weak" : ""), KIND_TAG[x.kind] || x.kind));
-        if (x.quote) line.append(document.createTextNode("“" + x.quote + "” "));
+        if (x.quote) line.append(document.createTextNode(x.kind === "搜索佐证" ? "搜索摘要：" + x.quote.replace(/^【[^】]*】/, "") + " " : "“" + x.quote + "” "));
         if (x.url) { const l = el("a", "", x.url); l.href = x.url; l.target = "_blank"; l.rel = "noopener"; line.append(l); }
         ss.append(line);
       }
-      res.append(ss);
+      det.append(ss);
+      res.append(det);
     }
   };
   if (it.type === "判断") {

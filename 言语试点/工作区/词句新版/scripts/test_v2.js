@@ -15,6 +15,9 @@ const assert = (c, m) => { if (!c) { console.error('FAIL ' + m); process.exitCod
   const pilotN = await page.$$eval('.item', els => els.length);
   const pilotTotal = await page.evaluate(() => DATA.filter(a => a.pilot).length);
   assert(pilotN === pilotTotal, `首次打开只列新版文章（${pilotN}/${pilotTotal}）`);
+  // 先到第一篇有新版遮词句的文章
+  await page.evaluate(() => { const a = ordered().find(x => (x.q || []).length); if (a) openArticle(a.id); });
+  await page.waitForSelector('article');
   const qid = await page.evaluate(() => current);
   const nq = await page.evaluate(() => byId[current].q.length);
   const nb = await page.evaluate(() => byId[current].q.reduce((s, q) => s + q.blanks.length, 0));

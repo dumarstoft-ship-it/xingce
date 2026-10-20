@@ -32,3 +32,5 @@ details.old[open] summary { margin-bottom: 8px; }
 .pilot-note { font-size: 0.75rem; line-height: 1.6; color: var(--ink-soft); background: var(--zhu-soft); border-radius: 4px; padding: 6px 8px; }
 .judg .row button[aria-pressed="true"] { background: var(--chip-on); color: var(--chip-on-fg); border-color: var(--chip-on); }
 .judg .row button:disabled { cursor: default; }
+details.srcs-d { margin-top: 6px; font-size: 0.8125rem; }
+details.srcs-d summary { cursor: pointer; color: var(--ink-soft); }
