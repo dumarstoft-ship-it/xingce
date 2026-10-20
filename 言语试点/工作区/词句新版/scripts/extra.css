@@ -1,0 +1,34 @@
+/* 新版遮词句：空格前的题号、点开后的选项卡；广东式政治常识题 */
+.qno { font-family: var(--sans); font-size: 0.6875rem; color: var(--zhu); vertical-align: super; line-height: 1; margin: 0 1px 0 3px; text-indent: 0; }
+.qcard { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 10px 12px; display: flex; flex-direction: column; gap: 8px; font-size: 0.875rem; }
+.qcard[hidden] { display: none; }
+.qcard .qh { font-size: 0.8125rem; color: var(--ink-soft); display: flex; gap: 4px 10px; flex-wrap: wrap; align-items: baseline; }
+.qcard .qh b { color: var(--ink); font-weight: 600; }
+.opts { display: grid; grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr)); gap: 6px; }
+.opts.long { grid-template-columns: 1fr; }
+.opts button { font: inherit; font-family: var(--serif); font-size: 1rem; text-align: left; border: 1px solid var(--rule); background: var(--sheet); color: var(--ink); border-radius: 4px; padding: 5px 10px; cursor: pointer; line-height: 1.6; }
+.opts button .k { font-family: var(--sans); font-size: 0.75rem; color: var(--ink-soft); margin-right: 6px; }
+.opts button[aria-pressed="true"] { border-color: var(--chip-on); box-shadow: inset 0 0 0 1px var(--chip-on); }
+.opts button.right { border-color: var(--ok); box-shadow: inset 0 0 0 1px var(--ok); }
+.opts button.wrong { border-color: var(--bad); box-shadow: inset 0 0 0 1px var(--bad); }
+.opts button.wrong .t { text-decoration: line-through; text-decoration-color: var(--bad); }
+.opts button:disabled { cursor: default; }
+.qcard .res, .judg .res2 { line-height: 1.7; font-size: 0.875rem; }
+.qcard .res .ok, .judg .res2 .ok { color: var(--ok); font-weight: 600; }
+.qcard .res .bad, .judg .res2 .bad { color: var(--bad); font-weight: 600; }
+.qcard .note { line-height: 1.75; color: var(--ink); }
+.linkish { align-self: flex-start; font: inherit; font-size: 0.75rem; background: none; border: 0; color: var(--ink-soft); text-decoration: underline; cursor: pointer; padding: 0; }
+.badge { font-family: var(--sans); font-size: 0.625rem; font-weight: 600; color: var(--chip-on-fg); background: var(--zhu); border-radius: 3px; padding: 0 4px; margin-left: 6px; vertical-align: 2px; letter-spacing: 0.02em; }
+.judg .kind { font-family: var(--sans); font-size: 0.75rem; color: var(--ink-soft); margin-right: 4px; }
+.judg .submit { align-self: flex-start; }
+.srcs { display: flex; flex-direction: column; gap: 6px; margin-top: 4px; }
+.srcs .s { font-size: 0.8125rem; line-height: 1.6; }
+.srcs .tag { font-family: var(--sans); font-size: 0.6875rem; border: 1px solid var(--rule); border-radius: 3px; padding: 0 4px; margin-right: 6px; color: var(--ink-soft); white-space: nowrap; }
+.srcs .tag.weak { color: var(--bad); border-color: var(--bad); }
+.srcs a { color: var(--focus); word-break: break-all; }
+details.old { font-size: 0.875rem; color: var(--ink-soft); display: flex; flex-direction: column; gap: 8px; }
+details.old summary { cursor: pointer; padding: 4px 0; }
+details.old[open] summary { margin-bottom: 8px; }
+.pilot-note { font-size: 0.75rem; line-height: 1.6; color: var(--ink-soft); background: var(--zhu-soft); border-radius: 4px; padding: 6px 8px; }
+.judg .row button[aria-pressed="true"] { background: var(--chip-on); color: var(--chip-on-fg); border-color: var(--chip-on); }
+.judg .row button:disabled { cursor: default; }
