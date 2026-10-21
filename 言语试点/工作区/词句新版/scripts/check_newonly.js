@@ -5,7 +5,7 @@ const { chromium } = require('playwright');
   const page = await b.newPage(); const errs = [];
   page.on('pageerror', e => errs.push(String(e)));
   await page.goto('file://' + process.argv[2]);
-  const ids = ['20251222_30126193', '20260615_30163086', '20260303_30143191'];
+  const ids = ['20251214_30120296', 'nf20251009_10149560', 'nf20260429_10169309', '20260911_30180489', 'nf20260914_10181306'];
   for (const id of ids) {
     await page.evaluate(id => openArticle(id), id);
     const r = await page.evaluate(id => {

@@ -74,9 +74,12 @@ const assert = (c, m) => { if (!c) { console.error('FAIL ' + m); process.exitCod
   // 全部 / 常识 筛选和旧文章
   await page.click('[data-src="all"]');
   assert(await page.$$eval('.item', els => els.length) === 151, '"全部"列出 151 篇');
-  await page.click('.item:not(:has(.badge))');
-  await page.waitForSelector('article');
-  assert(await page.$$eval('button.blank, button.tape', els => els.length) > 0, '未做新版的文章照旧可用');
+  // 全部做成新版以后就没有旧文章可点了，这项跳过
+  if (await page.$('.item:not(:has(.badge))')) {
+    await page.click('.item:not(:has(.badge))');
+    await page.waitForSelector('article');
+    assert(await page.$$eval('button.blank, button.tape', els => els.length) > 0, '未做新版的文章照旧可用');
+  } else console.log('skip 没有未做新版的文章');
   // 手机宽度
   const m = await ctx.newPage(); await m.setViewportSize({ width: 390, height: 844 });
   await m.goto('file://' + file + '#' + qid); await m.waitForSelector('article');
