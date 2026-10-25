@@ -8,7 +8,7 @@ N, PRICE = 1500, 60
 BUYOUT_COST, RETURN_CAP, RETURN_PRICE = 24, 300, 12
 CONSIGN_COST = 30
 
-OPTIONS = {'A': 420, 'B': 540, 'C': 1000, 'D': 1080}
+OPTIONS = {'A': 1080, 'B': 420, 'C': 540, 'D': 1000}   # 轮转升序排列
 
 
 def profit_buyout(k):

@@ -184,7 +184,7 @@ def assemble(day):
         if not os.path.exists(f'{S}/blueprints/{bp_key}.json') or not glob.glob(f'{S}/gen/D{day:02d}_{part}_*.json'):
             print('skip part (not ready):', part, m); missing.append(PART_TITLE[part]); continue
         parts.append({'title': PART_TITLE[part], 'module': label, 'time_min': TIME_MIN[part], 'items': part_items(day, part, m, db, fix, cls)})
-    note = ('题目页只有题号，不标题型、考法和出处，请自己判断。数学运算由历年真题（直接截取原卷）和依据真题考法改编、经程序验算的新题组成；'
+    note = ('题目页只有题号，不标题型、考法和出处，请自己判断。数学运算由历年真题（直接截取原卷）、老师笔记精选和依据真题考法改编、经程序验算的新题组成，送分题已去掉，每道题都有一个要想清楚的地方；'
             '逻辑判断和综合推理全部是真题。每道题的出处、考法和技巧都写在本册最后的解析里。建议严格计时，做完再对答案。')
     if missing:
         note += '今天的' + '、'.join(missing) + '真题暂缺，等补充新卷子后补发。'

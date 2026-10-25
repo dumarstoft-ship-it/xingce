@@ -24,7 +24,7 @@ items = [
         options={'A': '104', 'B': '107', 'C': '108', 'D': '116'}, answer='C',
         jiexi=('卡点：末态只给比例，要靠“包裹数都是整数”定解。正推更快：每次分出包裹的那一台，新数＝2×原数−200，另两台翻倍，'
                '故末态A＝4(2a−200)、末态C＝8c−200。由末态C＝$\\frac{7}{8}$×末态A得8c＝7a−500，a除以8余4，选项只剩108、116；'
-               'a＝116时b＝45，第二次B台不够分，选108。也可设末态A＝8x、C＝7x带字母倒推，得a＝100＋x。'
+               'a＝116时b＝45，第二次B台不够分，故a＝108。也可设末态A＝8x、C＝7x倒推，得a＝100＋x。'
                '易错：倒推只验到x是4的倍数，选104；不验B台够不够分（末态B＝200−15x＞0），选116；比例看反得107。'),
     ),
     dict(
@@ -47,7 +47,8 @@ items = [
         stem=('某镇调运一批防汛沙袋加固堤围。若派2辆大货车和4辆小货车，运5趟恰好运完；'
               '若派1辆大货车和7辆小货车，运4趟也恰好运完。现调派大、小货车共14辆，运2趟恰好运完。'
               '已知每辆车每趟都满载，同型号货车的载重量相同，则调派的大货车有（ ）辆。'),
-        options={'A': '1', 'B': '2', 'C': '6', 'D': '8'}, answer='D',
+        # 按协调人要求轮转选项（答案移到B，平衡第1天答案分布），不再按数值升序
+        options={'A': '6', 'B': '8', 'C': '1', 'D': '2'}, answer='B', allow_unsorted=True,
         jiexi=('卡点：总量没给，但几种方案运的是同一批沙袋。先定载重比：5×(2大＋4小)＝4×(1大＋7小)，得6大＝8小，大∶小＝4∶3。'
                '设大车每趟4份、小车3份，沙袋共5×(8＋12)＝100份；14辆车2趟运完，每趟要运50份。'
                '若全是小车每趟42份，少8份，每换1辆大车多1份，需大车8辆。'
@@ -107,8 +108,11 @@ for it in items:
         'vid': vid, 'group': it['group'], 'seed': it['seed'], 'direction': it['direction'],
         'kaofa': it['kaofa'], 'technique': it['technique'], 'difficulty': it['difficulty'],
         'time_s': it['time_s'], 'stem': it['stem'], 'options': it['options'], 'answer': it['answer'],
-        'jiexi': it['jiexi'], 'figure_svg': None, 'verify': V.format(k),
+        'jiexi': it['jiexi'] + '选{}。'.format(it['answer']), 'figure_svg': None, 'verify': V.format(k),
     }
+    sel = re.findall(r'选([ABCD])', rec['jiexi'])
+    if sel != [rec['answer']] or not rec['jiexi'].endswith('选{}。'.format(rec['answer'])):
+        problems.append((vid, 'jiexi 选X mismatch', sel))
     # field checks
     if len(rec['kaofa']) > 20: problems.append((vid, 'kaofa too long', len(rec['kaofa'])))
     if len(rec['technique']) > 12: problems.append((vid, 'technique too long', len(rec['technique'])))
@@ -119,7 +123,7 @@ for it in items:
     for w in BANNED:
         if w in txt: problems.append((vid, 'hint word in stem/options', w))
     vals = [float(v) for v in rec['options'].values()]
-    if vals != sorted(vals): problems.append((vid, 'options not ascending'))
+    if vals != sorted(vals) and not it.get('allow_unsorted'): problems.append((vid, 'options not ascending'))
     if rec['stem'].count('$') % 2 or rec['jiexi'].count('$') % 2: problems.append((vid, 'unbalanced $'))
     print(vid, 'jiexi', len(rec['jiexi']), 'stem', len(rec['stem']), 'kaofa', len(rec['kaofa']),
           'tech', len(rec['technique']), 'ans', rec['answer'])

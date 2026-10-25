@@ -4,7 +4,7 @@
 # 求乙在几月初撤回40万元。
 from fractions import Fraction as F
 
-OPTS = {'A': 5, 'B': 7, 'C': 8, 'D': 9}
+OPTS = {'A': 8, 'B': 9, 'C': 5, 'D': 7}
 JIA, YI0, YI_OUT, BING, BING_JOIN, RATIO = 30, 80, 40, 80, 8, 2
 
 
@@ -37,10 +37,10 @@ JIA = 30
 
 # 干扰项来源核对
 need = RATIO * weight('bing', w)
-assert w - 1 == OPTS['C']                                                  # 把“80万元出资了8个月”答成8月
-assert [x for x in range(1, 13) if YI0 * x + (YI0 - YI_OUT) * (13 - x) == need] == [OPTS['B']]   # 月数两头都算
+assert w - 1 == OPTS['A']                                                  # 把“80万元出资了8个月”答成8月
+assert [x for x in range(1, 13) if YI0 * x + (YI0 - YI_OUT) * (13 - x) == need] == [OPTS['D']]   # 月数两头都算
 bing_wrong = BING * (12 - BING_JOIN)                                       # 丙按“12−8＝4”个月算
 assert [x for x in range(1, 13)
-        if YI0 * (x - 1) + (YI0 - YI_OUT) * (13 - x) == RATIO * bing_wrong] == [OPTS['A']]
+        if YI0 * (x - 1) + (YI0 - YI_OUT) * (13 - x) == RATIO * bing_wrong] == [OPTS['C']]
 print('yi weight', weight('yi', w), 'bing weight', weight('bing', w), 'w =', w)
 print(hits[0])

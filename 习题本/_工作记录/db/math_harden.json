@@ -1658,98 +1658,98 @@
    },
    {
     "no": 3,
-    "key": "new_variants[1]",
-    "src": "new_variant",
-    "group": "考法一：基础公式——四量互求与盈亏总账"
-   },
-   {
-    "no": 4,
     "key": "D04-math-1-v07",
     "src": "keep",
     "group": "考法二：折扣、立减与补贴（价格政策）"
    },
    {
-    "no": 5,
+    "no": 4,
     "key": "2022SD-40",
     "src": "add_real",
     "group": "考法二：折扣、立减与补贴（价格政策）"
    },
    {
-    "no": 6,
+    "no": 5,
     "key": "2024SC-47",
     "src": "add_real",
     "group": "考法二：折扣、立减与补贴（价格政策）"
    },
    {
-    "no": 7,
+    "no": 6,
     "key": "new_variants[2]",
     "src": "new_variant",
     "group": "考法二：折扣、立减与补贴（价格政策）"
    },
    {
-    "no": 8,
+    "no": 7,
     "key": "2021GK-75",
     "src": "add_real",
     "group": "考法二：折扣、立减与补贴（价格政策）"
    },
    {
-    "no": 9,
+    "no": 8,
     "key": "2022GK-63",
     "src": "add_real",
     "group": "考法三：单价×数量＝总价（预算与采购）"
    },
    {
-    "no": 10,
+    "no": 9,
     "key": "2021JSA-62",
     "src": "add_real",
     "group": "考法三：单价×数量＝总价（预算与采购）"
    },
    {
-    "no": 11,
+    "no": 10,
     "key": "2020SC0725-50",
     "src": "add_real",
     "group": "考法三：单价×数量＝总价（预算与采购）"
    },
    {
-    "no": 12,
+    "no": 11,
     "key": "T091",
     "src": "add_teacher",
     "group": "考法四：赋值比例型——进价、售价、销量变化"
    },
    {
-    "no": 13,
+    "no": 12,
     "key": "new_variants[3]",
     "src": "new_variant",
     "group": "考法四：赋值比例型——进价、售价、销量变化"
    },
    {
-    "no": 14,
+    "no": 13,
     "key": "new_variants[4]",
     "src": "new_variant",
     "group": "考法四：赋值比例型——进价、售价、销量变化"
    },
    {
-    "no": 15,
+    "no": 14,
     "key": "new_variants[5]",
     "src": "new_variant",
     "group": "考法四：赋值比例型——进价、售价、销量变化"
    },
    {
-    "no": 16,
+    "no": 15,
     "key": "2021ZJA-70",
     "src": "add_real",
     "group": "考法四：赋值比例型——进价、售价、销量变化"
    },
    {
-    "no": 17,
+    "no": 16,
     "key": "2021SD-43",
     "src": "add_real",
     "group": "考法四：赋值比例型——进价、售价、销量变化"
    },
    {
-    "no": 18,
+    "no": 17,
     "key": "D04-math-1-v13",
     "src": "keep",
+    "group": "考法五：成本结构与收入构成"
+   },
+   {
+    "no": 18,
+    "key": "new_variants[1]",
+    "src": "new_variant",
     "group": "考法五：成本结构与收入构成"
    },
    {
@@ -1868,19 +1868,19 @@
    },
    {
     "no": 38,
-    "key": "new_variants[11]",
-    "src": "new_variant",
-    "group": "考法十二：方案比较与盈亏平衡"
-   },
-   {
-    "no": 39,
     "key": "new_variants[12]",
     "src": "new_variant",
     "group": "考法十二：方案比较与盈亏平衡"
    },
    {
-    "no": 40,
+    "no": 39,
     "key": "new_variants[13]",
+    "src": "new_variant",
+    "group": "考法十二：方案比较与盈亏平衡"
+   },
+   {
+    "no": 40,
+    "key": "new_variants[11]",
     "src": "new_variant",
     "group": "考法十二：方案比较与盈亏平衡"
    },

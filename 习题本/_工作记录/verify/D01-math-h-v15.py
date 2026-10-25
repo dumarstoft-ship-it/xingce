@@ -4,7 +4,7 @@
 # 对每种情形枚举大货车辆数 x（0～14），找出"2趟恰好运完"的 x，确认处处唯一且相同；再复核干扰项的错误路径。
 from fractions import Fraction as Fr
 
-OPTS = {'A': 1, 'B': 2, 'C': 6, 'D': 8}
+OPTS = {'A': 6, 'B': 8, 'C': 1, 'D': 2}
 PLAN1 = (2, 4, 5)      # 大车数, 小车数, 趟数
 PLAN2 = (1, 7, 4)
 N_TRUCKS, TRIPS = 14, 2
@@ -39,9 +39,9 @@ def big_count(b, s):
 
 
 # 干扰项的错误路径
-assert big_count(S, B) == OPTS['A']                    # 载重比写反（大∶小＝3∶4）
-assert (per_trip - N_TRUCKS * S) / B == OPTS['B']      # 补差时除以大车载重4，而不是每车差1份
-assert N_TRUCKS - ans == OPTS['C']                     # 求成小货车辆数
+assert big_count(S, B) == OPTS['C']                    # 载重比写反（大∶小＝3∶4）
+assert (per_trip - N_TRUCKS * S) / B == OPTS['D']      # 补差时除以大车载重4，而不是每车差1份
+assert N_TRUCKS - ans == OPTS['A']                     # 求成小货车辆数
 
 hits = [k for k, v in OPTS.items() if v == ans]
 assert len(hits) == 1, hits

@@ -14,10 +14,10 @@ items = [
               '乙年初出资80万元，年内某月初撤回了其中的40万元；丙8月初加入，出资80万元。'
               '除此之外，三人的出资均无变动。年终利润全部按各人“出资额×出资月数”的比例分配，'
               '结果乙分得的利润恰好是丙的2倍。乙撤回40万元是在（ ）月初。'),
-        options={'A': '5', 'B': '7', 'C': '8', 'D': '9'}, answer='D',
+        options={'A': '8', 'B': '9', 'C': '5', 'D': '7'}, answer='B', keep_order=True,
         jiexi=('卡点：分配看“钱×时间”，撤资月份未知时要把“w月初撤资”准确译成月数：80万元出资了(w−1)个月，'
                '40万元出资了(13−w)个月。丙出资8～12月共5个月，权重80×5＝400；乙是丙的2倍即800：'
-               '80(w−1)＋40(13−w)＝800，得w＝9，乙9月初撤资，选D（甲的数据用不上）。'
+               '80(w−1)＋40(13−w)＝800，得w＝9，乙9月初撤资，选B（甲的数据用不上）。'
                '易错：解出“80万元出资了8个月”就答8月（最典型）；月数两头都算，列80w＋40(13−w)＝800，得7；'
                '丙按“12−8＝4”个月算，得5。'),
     ),
@@ -127,7 +127,7 @@ for it in items:
     if '参考用时' in rec['jiexi']: probs.append((vid, 'jiexi has 参考用时'))
     vals = list(rec['options'].values())
     nums = [float(v.rstrip('%')) for v in vals]
-    if nums != sorted(nums): probs.append((vid, 'options not ascending'))
+    if nums != sorted(nums) and not it.get('keep_order'): probs.append((vid, 'options not ascending'))
     print(vid, 'jiexi', len(rec['jiexi']), 'stem', len(rec['stem']), 'kaofa', rec['kaofa'], '|', rec['group'])
     out.append(rec)
 
