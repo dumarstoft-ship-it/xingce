@@ -22,6 +22,8 @@ def load_db():
     return db, fix
 
 OVR = json.load(open(S + '/db/real_overrides.json')) if os.path.exists(S + '/db/real_overrides.json') else {}
+NO_JIEXI_PAPERS = ('2026GZ', '2026CQ', '2026HB')  # originals print only the answer (or nothing): 解析 is written by us
+REALONLY = S + '/db/realonly_plan.json'             # logic / 综合推理 use real questions only (user decision)
 
 def src_label(r):
     return f"{r['paper_name']} 第{r['num']}题"
@@ -33,9 +35,17 @@ def real_item(qid, db, fix, cls):
     official = bool(r['answer_official']) or (f.get('source', '').startswith('官方'))
     it = {'type': 'real', 'id': qid, 'src_label': src_label(r), 'q_img': f'{CR}_nonum/{qid}_q.png' if os.path.exists(f'{CR}_nonum/{qid}_q.png') else f'{CR}/{qid}_q.png', 'answer': ans,
           'kaofa': (cls.get(qid) or {}).get('kaofa'), 'technique': (cls.get(qid) or {}).get('technique')}
-    if os.path.exists(f'{CR}/{qid}_s.png'): it['stem_img'] = f'{CR}/{qid}_s.png'
+    if os.path.exists(f'{CR}/{qid}_s.png'):
+        it['stem_img'] = f'{CR}_nonum/{qid}_s.png' if os.path.exists(f'{CR}_nonum/{qid}_s.png') else f'{CR}/{qid}_s.png'
+        it['stem_key'] = f"{r['paper']}|{(r.get('stem_text') or '').strip()[:40]}"  # 一拖n: print the material once
     jp = f'{CR}/{qid}_j.png'
-    if official and os.path.exists(jp):
+    if r['paper'] in NO_JIEXI_PAPERS:
+        if r['answer_official'] and f.get('answer') and f['answer'] != r['answer_official']:
+            print('WARNING answer mismatch', qid, 'paper', r['answer_official'], 'self', f['answer'])
+        it['jiexi_text'] = f.get('jiexi') or '（本题无解析）'
+        it['src_label'] += '（原卷只附答案，解析为本册补写）' if r['answer_official'] else '（无官方答案，答案与解析为自解）'
+        official = True  # label already set
+    elif official and os.path.exists(jp):
         it['jiexi_img'] = jp
     elif official and r.get('jiexi_raw'):
         it['jiexi_text'] = r['jiexi_raw']
@@ -88,19 +98,36 @@ def part_items(day, part, module, db, fix, cls):
                           'jiexi': v['jiexi'], 'kaofa': v.get('kaofa'), 'technique': v.get('technique'), 'figure': v.get('figure_svg'), 'shared_stem_text': v.get('shared_stem')})
     return items
 
+def realonly_items(day, part, db, fix, cls):
+    if not os.path.exists(REALONLY): return None
+    ids = json.load(open(REALONLY)).get(str(day), {}).get(part)
+    if ids is None: return None
+    return [real_item(i, db, fix, cls) for i in ids]
+
 def assemble(day):
     sched = json.load(open(S + '/db/schedule.json'))
     s = sched['schedule'][day - 1]; names = sched['names']
     db, fix = load_db(); cls = load_cls()
-    parts = []
+    parts = []; missing = []
     for part in ('math', 'logic', 'zh'):
         m = s[part]
+        label = names[m].replace('综合推理·', '')
+        if part in ('logic', 'zh'):
+            items = realonly_items(day, part, db, fix, cls)
+            if items is not None:
+                if items:
+                    parts.append({'title': PART_TITLE[part], 'module': label, 'time_min': TIME_MIN[part], 'items': items})
+                else:
+                    missing.append(PART_TITLE[part])
+                continue
         bp_key = 'C' if part == 'zh' else m
         if not os.path.exists(f'{S}/blueprints/{bp_key}.json') or not glob.glob(f'{S}/gen/D{day:02d}_{part}_*.json'):
-            print('skip part (not ready):', part, m); continue
-        parts.append({'title': PART_TITLE[part], 'module': f"{m} {names[m]}", 'time_min': TIME_MIN[part], 'items': part_items(day, part, m, db, fix, cls)})
-    note = ('题目页只有题号，不标题型、考法和出处，请自己判断。题目由历年真题（直接截取原卷）和依据真题考法改编的新题组成；'
-            '每道题的出处（真题来源与原题号 / 改编）、考法和技巧都写在本册最后的解析里。建议严格计时，做完再对答案。')
+            print('skip part (not ready):', part, m); missing.append(PART_TITLE[part]); continue
+        parts.append({'title': PART_TITLE[part], 'module': label, 'time_min': TIME_MIN[part], 'items': part_items(day, part, m, db, fix, cls)})
+    note = ('题目页只有题号，不标题型、考法和出处，请自己判断。数学运算由历年真题（直接截取原卷）和依据真题考法改编、经程序验算的新题组成；'
+            '逻辑判断和综合推理全部是真题。每道题的出处、考法和技巧都写在本册最后的解析里。建议严格计时，做完再对答案。')
+    if missing:
+        note += '今天的' + '、'.join(missing) + '真题暂缺，等补充新卷子后补发。'
     return {'day': day, 'subtitle': '广东省考 42 天专项训练 · 数量关系 + 判断推理', 'note': note, 'parts': parts}
 
 if __name__ == '__main__':
@@ -111,4 +138,6 @@ if __name__ == '__main__':
     json.dump(d, open(out[:-4] + '.json', 'w'), ensure_ascii=False, indent=1)
     hp = out[:-4] + '.html'
     render_day(d, hp); to_pdf(hp, out)
+    from shrink_pdf import shrink  # crops are embedded as RGB by Chromium: re-encode as 4-bit gray
+    shrink(out, out + '.tmp'); os.replace(out + '.tmp', out)
     print('ok', out, [len(p['items']) for p in d['parts']])

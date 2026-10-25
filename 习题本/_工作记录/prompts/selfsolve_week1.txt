@@ -1,0 +1,21 @@
+你是行测判断推理（逻辑判断、综合推理）的资深讲师。广东省考 42 天习题本第一周要用到 31 道真题，它们没有官方答案或官方解析（多为 2026 年国考、广东、浙江卷的网友回忆版）。请你为每道题给出答案和解析。
+
+必读：/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/briefs/common.md（背景）。
+题目清单：/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/tasks_in/selfsolve_week1.json。每条有 id、所属模块、题目截图 q_crop（一拖 n 的共用材料在 s_crop）和提取文字 text。提取文字可能缺字、错字，一律以截图为准，每道题都要用 Read 看截图。
+
+要求：
+1. 逐题认真作答。
+   - 论证类（加强、削弱、前提、解释、结构相似、评价）：按考场标准找出唯一最优项。先确定论点和论据，再逐项判断方向和力度。
+   - 翻译推理、真假推理、综合推理：写 Python 程序穷举所有情况，验证设问在全部解下的真假（"一定为真/可能为真/不可能为真"等），确认恰好一个选项符合。脚本放在 verify/real_<id>.py，最后 print 出正确选项字母，不能写死答案。
+2. answer_given 不为空的题（原卷附了答案，但没有解析），也要独立求解。如果你的结论和它不同，在 note 里写明理由。
+3. 解析的写法：
+   - 论证题按"题型 → 论点、论据 → 逐项分析（每项一句话说清为什么对或错）→ 故正确答案为 X"来写，250 字以内。
+   - 综合推理写出突破口和推理链。
+   - 不写"参考用时"。可以用 $...$ 写公式。
+4. 每题给出把握程度 confidence：high、medium 或 low。只要你觉得两个选项都说得通，或题目本身有瑕疵（如回忆版缺条件），就标 medium 或 low，并在 note 里写清楚。
+
+输出：一个 JSON 列表，写到 /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/gen/real_week1_logic.json。每个元素格式如下：
+{"id": "2026GD-51", "answer": "B", "jiexi": "……", "confidence": "high", "note": "", "verify": "/tmp/.../verify/real_2026GD-51.py 或 null"}
+
+完成后用 python 检查：JSON 可读，31 条齐全，答案都在 ABCD 内，所有验算脚本都能运行且输出与答案一致。回复里简短汇报：完成条数，各把握程度的题数，与 answer_given 不一致的题，以及 medium、low 的题和原因。
+只在 scratchpad 内工作。只写上面的输出文件、verify/real_<id>.py，以及你自己的工作目录 work_selfsolve_w1/。不要改动其他文件，不要运行 git。

@@ -1,0 +1,78 @@
+你在给一本行测习题本做截图质检。题目和官方解析都是从原卷 PDF 截出来的图片。为了方便查看，我把很多张截图拼成了"拼图页"：每张截图上方有一条灰色标签，写着题目编号和类型——[q] 是题目截图，[shared material] 是一拖 n 的共用材料，[j] 是官方解析截图。
+
+你负责的拼图页：
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D01_j_01.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D01_j_02.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D01_j_03.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D01_j_04.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D01_j_05.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D01_j_06.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D01_j_07.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D01_j_08.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D01_j_09.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D01_j_10.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D01_j_11.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D01_j_12.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D01_j_13.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D01_j_14.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D01_j_15.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D01_j_16.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D01_j_17.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D01_j_18.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D01_j_19.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D01_j_20.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D02_j_01.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D02_j_02.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D02_j_03.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D02_j_04.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D02_j_05.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D02_j_06.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D02_j_07.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D02_j_08.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D02_j_09.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D02_j_10.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D02_j_11.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D02_j_12.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D02_j_13.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D02_j_14.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D02_j_15.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D02_j_16.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D02_j_17.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D02_j_18.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D02_j_19.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D02_j_20.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D03_j_01.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D03_j_02.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D03_j_03.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D03_j_04.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D03_j_05.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D03_j_06.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D03_j_07.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D03_j_08.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D03_j_09.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D03_j_10.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D03_j_11.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D03_j_12.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D03_j_13.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D03_j_14.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D03_j_15.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D03_j_16.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D03_j_17.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D03_j_18.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D03_j_19.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D03_j_20.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D03_j_21.png
+/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/qa_w1/D03_j_22.png
+
+请用 Read 工具逐页查看（每页都要看），找出有问题的截图。要找的问题：
+- 文字被裁掉：第一行或最后一行只剩半行，或者题干、选项缺了一部分（比如只有 A、B，没有 C、D；选项只有字母、没有内容；图看不全）。
+- 混进了别的内容：下一题或上一题的文字、页眉页脚、水印广告（如"淘宝""公众号"）、"【答案】X"这类会泄露答案的文字，或者正确选项被涂了底色、做了标记。
+- 截错了：截图内容和标签上的题号对不上，或者解析讲的不是这道题。
+- 公式、分数、图片缺失，导致题目没法做。
+- 其他明显影响使用的问题，比如严重模糊、整张空白。
+不用管：原卷本身的排版风格、字体大小、轻微灰底、行距。题目开头的原题号已经故意抹掉了，正常。
+
+输出：一个 JSON 文件，写到 /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/review/qa_crops_w1_j1.json。格式如下（没有问题的截图不用列）：
+[{"id": "2024GD-55", "kind": "q|j|s", "problem": "具体描述", "severity": "must_fix|minor"}]
+must_fix 是影响作答或泄露答案的问题；minor 是不影响使用、但最好修的问题。
+回复里简短汇报：看了多少页，must_fix 和 minor 各几条。只写这个输出文件，别的文件都不要动，不要运行 git，不要用前台 sleep。

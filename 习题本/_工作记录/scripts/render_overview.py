@@ -7,12 +7,15 @@ S = '/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratc
 def main(out_pdf):
     sc = json.load(open(S + '/db/schedule.json'))
     names = sc['names']
-    stats = {}
-    for f in os.listdir(S + '/tasks_in'):
-        t = json.load(open(os.path.join(S, 'tasks_in', f)))
-        stats[t['module']] = t['n_real']
+    plan = json.load(open(S + '/db/realonly_plan.json')) if os.path.exists(S + '/db/realonly_plan.json') else {}
+    def cell(d, part, label):
+        n = len(plan.get(str(d['day']), {}).get(part, []))
+        if not plan: return esc(label)
+        return esc(label) + ('' if n >= (45 if part == 'logic' else 15) else (f'<span class="todo">（现有 {n} 题，待补）</span>' if n else '<span class="todo">（待补）</span>'))
     fonts = ''.join(f'<link rel="stylesheet" href="file://{R}/node_modules/@fontsource/{f}/{w}.css">' for f in ('noto-serif-sc', 'noto-sans-sc') for w in (400, 700))
-    rows = ''.join(f"<tr><td>第 {d['day']} 天</td><td>{esc(d['math'])} {esc(names[d['math']])}</td><td>{esc(d['logic'])} {esc(names[d['logic']])}</td><td>{esc(names[d['zh']].replace('综合推理·', ''))}</td></tr>" for d in sc['schedule'])
+    rows = ''.join(f"<tr><td>第 {d['day']} 天</td><td>{esc(names[d['math']])}</td><td>{cell(d, 'logic', names[d['logic']])}</td><td>{cell(d, 'zh', names[d['zh']].replace('综合推理·', ''))}</td></tr>" for d in sc['schedule'])
+    n_logic = sum(1 for d in plan.values() if len(d.get('logic', [])) >= 45)
+    n_zh = sum(1 for d in plan.values() if len(d.get('zh', [])) >= 15)
     css = CSS + """
     table.sched { width: 100%; border-collapse: collapse; font-size: 9.5pt; }
     table.sched th, table.sched td { border: 1px solid #bbb; padding: 1.2mm 2mm; text-align: left; }
@@ -20,6 +23,7 @@ def main(out_pdf):
     table.sched tr:nth-child(7n+2) td { border-top: 2px solid #555; }
     .intro h2 { font-size: 13pt; margin: 6mm 0 2mm 0; }
     .intro p, .intro li { font-size: 10.5pt; }
+    .todo { color: #b00020; font-size: 8.5pt; }
     """
     h = f"""<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>使用说明</title>{fonts}<style>{css}</style></head><body>
 <div class="cover"><h1>广东省考 42 天专项习题本</h1><div class="sub">数量关系（数学运算）+ 判断推理（逻辑判断、综合推理）· 使用说明与日程总表</div>
@@ -33,15 +37,16 @@ def main(out_pdf):
 <h2>题目来源</h2>
 <ul>
 <li><b>题目页只有题号</b>：不标题型、考法和出处，需要你自己判断。</li>
-<li><b>真题</b>：取自你提供的 2020–2026 年广东、国考副省级、深圳、浙江、江苏、山东、四川、河北、重庆等卷子，直接截取原卷（保留原卷题号）。</li>
-<li><b>改编</b>：真题不够的部分，按每个模块的"考法地图"改编：有巩固（换问法、正反推）、深化（多一步转化、考法嵌套）和拓展（新结构、跨模块、题库里少见的考法）三类，不是只换数字。数学、综合推理和翻译推理的改编题答案都经过程序验算，论证类改编题经过独立盲审。</li>
-<li><b>答案与解析</b>：每天最后先给"答案速查"，再给逐题解析；解析里注明每道题的出处（真题来源与原题号 / 改编）、考法和技巧。真题用原版解析（截图）；少数没有官方解析的真题（如 2026 年卷）为自解，已注明。</li>
+<li><b>真题</b>：取自你提供的 2020–2026 年广东、国考副省级、深圳、浙江、江苏、山东、四川、河北、重庆、贵州等卷子，直接截取原卷（原卷题号已去掉，只保留本册题号）。原卷有遮挡、印错或截图不全的题，改为文字录入，并在解析里注明。</li>
+<li><b>数学运算</b>：真题不够的部分，按每个模块的"考法地图"改编：有巩固（换问法、正反推）、深化（多一步转化、考法嵌套）和拓展（新结构、跨模块、题库里少见的考法）三类，不是只换数字。每道改编题的答案都由程序验算，并经过独立盲审。</li>
+<li><b>逻辑判断、综合推理</b>：只用真题，不改编。现有真题够排 {n_logic} 天逻辑判断、{n_zh} 天综合推理；总表里标"待补"的天数，等你补充卷子后再排入。</li>
+<li><b>答案与解析</b>：每天最后先给"答案速查"，再给逐题解析，解析里注明每道题的出处、考法和技巧。真题用原版解析（截图）。没有官方答案的真题（如 2026 年国考、广东、浙江卷），答案和解析为自解，由两人分别独立求解，核对一致后才采用；这类题在解析里都已注明。</li>
 </ul>
 <h2>使用建议</h2>
 <ul>
 <li>每部分整套做完再对答案；同一考法的题目大体相邻，由浅入深。</li>
-<li>每道题按"参考用时"计时，超时的题在题号旁做记号，第二轮专门回看这类题的秒杀方法。</li>
-<li>同一模块会间隔重复出现（数学约 3–4 次、逻辑约 6–7 次），后几次以深化和拓展为主。</li>
+<li>数学改编题的解析末尾有"参考用时"，超时的题在题号旁做记号，第二轮专门回看这类题的快速解法。</li>
+<li>同一模块会间隔重复出现（数学约 2–4 次、逻辑约 4–7 次），数学后几次以深化和拓展为主。</li>
 </ul>
 </div></div>
 <div class="part"><div class="part-h"><span>42 天日程总表</span><span class="meta">每 7 天一条粗线</span></div>

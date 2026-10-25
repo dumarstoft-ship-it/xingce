@@ -37,7 +37,8 @@ def clusters(px, w, y0, y1, ink=160):
 def find_prefix(cl, bh, nd, punct):
     """Return index of the last cluster belonging to the number prefix, or None."""
     need = nd + (1 if punct else 0)
-    if len(cl) > need and all(b - a + 1 <= 0.72 * bh for a, b in cl[:need]) and cl[need][0] - cl[need - 1][1] >= 2:
+    if len(cl) > need and all(b - a + 1 <= 0.72 * bh for a, b in cl[:need]) and cl[need][0] - cl[need - 1][1] >= 2 \
+            and all(cl[j + 1][0] - cl[j][1] < 0.5 * bh for j in range(need - 1)):  # digits sit close together
         return need - 1
     # touching digits: grow from the left while the span stays narrow enough for nd digits (+ punctuation)
     max_w = (0.66 * nd + (0.5 if punct else 0.1)) * bh
@@ -96,3 +97,20 @@ if __name__ == '__main__':
         if r != 'ok': bad.setdefault(r, []).append(i)
     print(dict(res))
     for k, v in bad.items(): print(k, v[:12])
+
+HDR = re.compile(r'^\s*(\d+\s*[~～\-—－至到]\s*\d+\s*题|[（(][一二三四五六七八九十]+[）)]\s*$)')
+
+def mask_stem_header(qid, stem_text):
+    """Drop a leading "97~98题基于如下题干：" line from a shared-material crop (the workbook prints its own numbers)."""
+    src = f'{SRC_DIR}/{qid}_s.png'
+    first = (stem_text or '').strip().split('\n')[0]
+    if not os.path.exists(src) or not HDR.match(first) or len(first) > 30: return 'skip'
+    im = Image.open(src).convert('L'); w, h = im.size; px = im.load()
+    band = first_band(px, w, h)
+    if not band: return 'noband'
+    rest = im.crop((0, band[1] + 1, w, h))
+    bbox = Image.eval(rest, lambda v: 255 - v).getbbox()
+    if not bbox: return 'empty'
+    rest.crop((0, max(0, bbox[1] - 6), w, rest.height)).save(f'{OUT_DIR}/{qid}_s.png')
+    if os.path.exists(src + '.json'): shutil.copy(src + '.json', f'{OUT_DIR}/{qid}_s.png.json')
+    return 'ok'

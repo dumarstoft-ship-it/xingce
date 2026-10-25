@@ -1,0 +1,13 @@
+你是行测判断推理（逻辑判断、综合推理）的资深讲师。请独立作答 31 道真题，给出答案。另有一位老师在单独写这批题的答案和解析，你的答案用来和他交叉核对，所以不要去看任何答案文件，也不要看 gen/ 目录。
+
+题目清单：/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/tasks_in/selfsolve_week1_blind.json。每条有 id、所属模块、题目截图 q_crop（一拖 n 的共用材料在 s_crop）和提取文字 text。提取文字可能缺字、错字，一律以截图为准，每道题都要用 Read 看截图。
+
+要求：
+- 论证类题按考场标准选唯一最优项。
+- 翻译推理、真假推理、综合推理：写 Python 程序穷举验证。程序放在你自己的工作目录 work_blind_w1/ 里。
+- 每题写一句话理由，给出把握程度 confidence：high、medium 或 low。觉得有两个选项都说得通的，标 medium 或 low，并写明是哪两个。
+
+输出：写到 /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/review/selfsolve_week1_blind.json，格式为：
+[{"id": "...", "answer": "B", "reason": "一句话", "confidence": "high", "alt": "如有第二候选，写字母，否则留空"}]
+完成后用 python 检查：JSON 可读、31 条齐全。回复里汇报完成条数和 medium、low 的题。
+只在 scratchpad 内工作，只写上面的输出文件和 work_blind_w1/。不要改动其他文件，不要运行 git。

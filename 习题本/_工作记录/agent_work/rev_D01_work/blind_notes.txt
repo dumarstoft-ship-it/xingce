@@ -1,0 +1,33 @@
+BLIND answers (written before opening D01_math_key.json)
+
+math-1
+v01 A 1.5   per month 2+1=3 credit; 60-36=24 credit/yr -> 2/mo -> 90 min = 1.5 h. Distractors: 2 (no min->h), 2.25 (forgot tests), 18 (yearly).
+v02 B 23    deposit 340 -> raw 300+2*40=380; holiday 10h*15=150; (380-150)/10=23. A19 = ignore half rule; D28 = ignore 1.5x. C24 origin unclear.
+v03 C 26000 I=5/8E, 3/8E=6000 -> E=16000, I=10000. D38000 = base swap (E=1.375I).
+v04 D 1050  1.4G-70=4(0.5G-70) -> G=350, L=700.
+v05 C 1350  S=20 parts: G16 D10 F8; G-F=8 parts=200 -> 54*25. D1800 origin unclear.
+v06 B 160   20% bio, 50% equip, diff 30% = 48. C300 = misread "10个百分点" as 10%.
+v07 A 180   R1=2T/3+20; 2/5 R1 - 6 = 50 -> R1=140 -> T=180. C240 sign, D540 base(3/5 of total), B210 forgot -20.
+v08 D 20    n2/n1 = 1.4/0.7 = 2 -> 10,20 doctors; T1=480/2.4=200 -> 20.
+v09 C 462   L:M:S=8:12:15; weights 80:108:120; 180/120*308.  A336 ignore load, D636 ignore trips, B420 ?
+v10 D 66    2(x+10)=4x-4 -> x=12 -> 22+44. NOTE: group says "抓不变量" but both counts change -> no invariant; model = same as v04 (two quantities, multiple before/after, one-unknown equation).
+v11 A 100   d=2k -> 6k,9k,13k; 6k+30=9k -> k=10 -> 130-30=100.
+
+math-2
+v01 C 600   0.9*0.6N=324.
+v02 B 72%   21+24-9=36/50. Feasible (12 good in 1-20, 15 in 31-50).
+v03 A 21    n=36, total 342, 342/6=57 -> 21.
+v04 C 750   45r+30=50(r-1) -> r=16. Wording "没有座位" acceptable (common in 盈亏).
+v05 B 500   A=2220,B=1380; (840+160)/2.
+v06 D 260   ((15+10)*2+10)*2 ... = 260.
+v07 A 27    oil=3.75 tissue; 45-11.25-6=27.75 -> 27 (floor trap 28).
+v08 D 280   7(b+f)=1960.
+v09 A 57    yi total = 66 - (jia male - yi female) = 57.
+v10 B 645   2460/4=615; 1260-615.
+v11 C 42    8 bags, each 8/3; 48/(8/3)=18 per bag; jia gave 7/3 -> 42.
+
+Preliminary overlap concerns (cross-batch):
+- 1-v07 (three-stage payment, fraction of remainder +/- const, final remainder known, work backwards) vs 2-v06 (三次"一半多10", 剩15, 倒推) vs 2-v01 (10% of total then 40% of remainder, 剩324). Same skeleton: successive fraction-of-remainder, recover the total from the final remainder. 1-v07 = 2-v01's base switch + 2-v06's +/- constant. Suggest making 1-v07 a single-base 量率对应 (all fractions of the contract total).
+- 1-v04 vs 1-v10: same equation model (two quantities with a multiple, both change, new multiple). 1-v10 also mislabelled as 抓不变量.
+- 1-v03 vs 1-v06: both "difference corresponds to a rate -> total", but traps differ (base vs 百分点). Acceptable.
+- 1-v11 transfer step vs 2-v05 transfer: minor.

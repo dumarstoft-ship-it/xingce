@@ -24,6 +24,7 @@ h1, h2, h3, .sans { font-family: 'Noto Sans SC', sans-serif; }
 .grp { font-family: 'Noto Sans SC', sans-serif; font-size: 9.5pt; color: #333; background: #f3f3f3; border-left: 3px solid #555; padding: 1mm 2.5mm; margin: 4mm 0 2.5mm 0; break-after: avoid; }
 .q { margin: 0 0 4.2mm 0; break-inside: avoid; }
 .q.shared { border-left: 2px solid #999; padding-left: 2mm; }
+.mat-h { font-family: 'Noto Sans SC', sans-serif; font-size: 9.5pt; color: #333; margin-bottom: 1mm; }
 .q .qh { font-family: 'Noto Sans SC', sans-serif; font-size: 9pt; margin-bottom: 0.8mm; display: flex; gap: 2mm; align-items: center; }
 .q .no { display: inline-block; min-width: 7mm; padding: 0 1.4mm; background: #222; color: #fff; border-radius: 2px; text-align: center; font-weight: 700; font-size: 9.5pt; }
 .tag { display: inline-block; padding: 0 1.5mm; border: 1px solid #888; border-radius: 2px; color: #333; font-size: 8.5pt; }
@@ -129,10 +130,13 @@ def render_day(day, out_html):
         h.append(f'<div class="part"><div class="part-h"><span>{esc(p["title"])} · {esc(p["module"])}</span><span class="meta">{len(p["items"])} 题 · 建议 {p.get("time_min", "")} 分钟</span></div>')
         cur_grp = None; last_stem = None
         for i, it in enumerate(p['items'], 1):
-            st = it.get('stem_img')
-            if st and st != last_stem and os.path.exists(st):
-                h.append(f'<div class="q shared">{img_tag(st)}</div>')
-            last_stem = st if st else None
+            st = it.get('stem_img'); sk = it.get('stem_key') or st
+            if st and sk != last_stem and os.path.exists(st):
+                k = i
+                while k < len(p['items']) and (p['items'][k].get('stem_key') or p['items'][k].get('stem_img')) == sk: k += 1
+                rng = f'第 {i}～{k} 题' if k > i else f'第 {i} 题'
+                h.append(f'<div class="q shared"><div class="mat-h">根据以下材料，回答{rng}。</div>{img_tag(st)}</div>')
+            last_stem = sk if st else None
             if it.get('shared_stem_text') and it.get('shared_stem_text') != (p['items'][i - 2].get('shared_stem_text') if i > 1 else None):
                 h.append(f'<div class="q shared"><div class="stem">{rich(it["shared_stem_text"])}</div></div>')
             h.append(render_q(i, it))

@@ -156,6 +156,10 @@ def apply_overrides(allq):
     for qid, o in ov.items():
         r = by.get(qid)
         if not r: continue
+        if 'regions' in o:  # hand-trimmed question regions (next question's material removed)
+            r['regions'] = o['regions']
+        if 'jiexi_regions' in o:  # hand-trimmed 解析 regions (next question's 解析 / unrelated material removed)
+            r['jiexi_regions'] = o['jiexi_regions']
         if 'cut_before_re' in o:  # inline answer lines printed under the question (2026CQ / 2026GZ)
             pat = re.compile(o['cut_before_re'])
             doc = load(r['qfile'])

@@ -40,12 +40,24 @@ def strip_slivers(c, thin=9, gap=3, ink=200):
             c = c.crop((0, bands[1][0] - 2, w, h))
     return c
 
-def crop(stem, regions, outpath, dpi=200, mask_junk=True, xpad=4):
+_offsets = None
+def doc_offset(stem):
+    """Vertical offset (pt) between pdfplumber line boxes and rendered ink for this PDF (db/doc_offsets.json)."""
+    global _offsets
+    if _offsets is None:
+        f = os.path.join(S, 'db', 'doc_offsets.json')
+        _offsets = json.load(open(f)) if os.path.exists(f) else {}
+    d = _offsets.get(stem, 0.0)
+    return d if abs(d) >= 1.0 else 0.0
+
+def crop(stem, regions, outpath, dpi=200, mask_junk=True, xpad=4, full_width=False):
     """regions: dict page->[top,bottom] (points). Produces vertically stacked crop."""
     parts = []
     heights = []
+    dy = doc_offset(stem)
     for p in sorted(regions, key=lambda x: int(x)):
         top, bot = regions[p]
+        top, bot = top + dy, bot + dy
         p = int(p)
         pl = page_lines(stem, p)
         W, H = pl['width'], pl['height']
@@ -60,6 +72,7 @@ def crop(stem, regions, outpath, dpi=200, mask_junk=True, xpad=4):
             xs0, xs1 = [0.05 * W], [0.95 * W]
         heights += [L['bottom'] - L['top'] for L in pl['lines'] if L['bottom'] > top and L['top'] < bot and not JUNK.search(L['text']) and len(L['text'].strip()) >= 6]
         x0 = max(0, min(xs0) - xpad); x1 = min(W, max(xs1) + xpad)
+        if full_width: x1 = max(x1, 0.95 * W)  # OCR'd lines can stop short of the real line end
         img = Image.open(page_png(stem, p, dpi)).convert('L')
         sc = img.width / W
         if mask_junk:
