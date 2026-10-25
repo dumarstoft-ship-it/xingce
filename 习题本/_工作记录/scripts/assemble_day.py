@@ -69,10 +69,32 @@ def load_cls():
                 d = json.loads(l); cls[d['id']] = d
     return cls
 
+HARDEN = S + '/db/math_harden.json'  # per-day "去水" decisions: easy questions removed, harder real questions added
+_TBANK = None
+def teacher_bank():
+    """Questions from the teacher's notes (忧郁牛牛 数量关系笔记), cleaned and verified: teacher/bank_B*.json."""
+    global _TBANK
+    if _TBANK is None:
+        _TBANK = {b['tid']: b for f in sorted(glob.glob(S + '/teacher/bank_B*.json')) for b in json.load(open(f))}
+    return _TBANK
+
+def teacher_item(tid):
+    b = teacher_bank()[tid]
+    src = b.get('source') or '未注明出处'
+    jx = b['jiexi'] + ('（原题没有选项，选项为本册补设。）' if b.get('options_added') else '')
+    fig = (b.get('figure') or {}).get('svg') if isinstance(b.get('figure'), dict) else None
+    return {'type': 'teacher', 'tid': tid, 'src_label': f'老师笔记精选 · {src}', 'stem': b['stem'], 'options': b['options'],
+            'answer': b['answer'], 'jiexi': jx, 'kaofa': b.get('kaofa'), 'technique': b.get('method'), 'figure': fig}
+
 def part_items(day, part, module, db, fix, cls):
     bp_key = 'C' if part == 'zh' else module
     bp = json.load(open(f'{S}/blueprints/{bp_key}.json'))
     dayplan = next(d for d in bp['days'] if d['day'] == day)
+    hd = (json.load(open(HARDEN)).get(str(day)) if part == 'math' and os.path.exists(HARDEN) else None) or {}
+    removed = {r['key'] for r in hd.get('remove', [])}
+    added = {}
+    for a in hd.get('add_real', []) + hd.get('add_teacher', []):
+        added.setdefault(a['group'], []).append(a)
     variants = []
     for f in sorted(glob.glob(f'{S}/gen/D{day:02d}_{part}_*.json')):
         variants += json.load(open(f))
@@ -82,16 +104,54 @@ def part_items(day, part, module, db, fix, cls):
             review[it['vid']] = it
     by_group = {}
     for v in variants:
-        if review.get(v['vid'], {}).get('verdict') == 'drop': continue
+        if review.get(v['vid'], {}).get('verdict') == 'drop' or v['vid'] in removed: continue
         by_group.setdefault(v.get('group'), []).append(v)
     items = []
+    titles = [g['title'] for g in dayplan['groups']]
+    for gname in list(added):
+        if gname not in titles:  # unknown group title: append to the last group
+            added.setdefault(titles[-1], []).extend(added.pop(gname))
     for g in dayplan['groups']:
         for qid in g['real']:
+            if qid in removed: continue
             it = real_item(qid, db, fix, cls); it['group'] = g['title']; items.append(it)
+        for a in added.get(g['title'], []):
+            if a.get('tid'):
+                it = teacher_item(a['tid'])
+            else:
+                it = real_item(a['id'], db, fix, cls)
+                if a.get('jiexi_note'):
+                    if not it.get('jiexi_img') and len(a['jiexi_note']) > 60:  # no official 解析: the reviewer's full 解析
+                        it['jiexi_text'] = a['jiexi_note']
+                    else:
+                        it['extra'] = ((it.get('extra') or '') + ' 补充：' + a['jiexi_note']).strip()
+            it['group'] = g['title']
+            items.append(it)
         for v in by_group.pop(g['title'], []):
-            items.append({'type': 'variant', 'vid': v['vid'], 'group': g['title'], 'stem': v['stem'], 'options': v['options'], 'answer': v['answer'],
+            items.append({'type': 'variant', 'vid': v['vid'], 'group': g['title'], 'difficulty': v.get('difficulty'), 'stem': v['stem'], 'options': v['options'], 'answer': v['answer'],
                           'jiexi': v['jiexi'] + (f"（参考用时 {v['time_s']} 秒）" if v.get('time_s') and part == 'math' and '参考用时' not in v['jiexi'] and '用时' not in v['jiexi'][-30:] else ''),
                           'kaofa': v.get('kaofa'), 'technique': v.get('technique'), 'figure': v.get('figure_svg'), 'shared_stem_text': v.get('shared_stem')})
+    if hd:  # after 去水 the groups mix kept, added and new questions: order each group easy -> hard
+        LV = {'基础': 1, '中等': 2, '难': 3, '很难': 4}
+        def level(it):
+            if it['type'] == 'teacher': return LV.get(teacher_bank()[it['tid']].get('level'), 2)
+            if it['type'] == 'real': return (cls.get(it['id']) or {}).get('difficulty') or 2
+            return it.get('difficulty') or 2
+        order = {g['title']: k for k, g in enumerate(dayplan['groups'])}
+        items = sorted(items, key=lambda it: (order.get(it['group'], 99), level(it)))
+        if hd.get('order'):  # the reviewer's own sequence for the day; new variants are referenced by position
+            flat = []
+            for o in hd['order']:
+                if isinstance(o, dict) and 'seq' in o: flat += o['seq']
+                else: flat.append(o['key'] if isinstance(o, dict) else o)
+            pos = {}
+            for k, key in enumerate(flat):
+                m = re.match(r'(?:NEW-|新改编#|NV)(\d+)$', key)
+                m0 = re.match(r'new_variants\[(\d+)\]$', key)
+                if m: key = f'D{day:02d}-math-h-v{int(m.group(1)):02d}'
+                elif m0: key = f'D{day:02d}-math-h-v{int(m0.group(1)) + 1:02d}'
+                pos[key] = k
+            items = sorted(items, key=lambda it: pos.get(it.get('id') or it.get('tid') or it.get('vid'), 999))
     for gname, vs in by_group.items():  # variants whose group title didn't match exactly
         for v in vs:
             items.append({'type': 'variant', 'vid': v['vid'], 'group': gname, 'stem': v['stem'], 'options': v['options'], 'answer': v['answer'],

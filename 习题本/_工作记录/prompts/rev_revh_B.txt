@@ -1,0 +1,13 @@
+你是行测资深审题人。请盲审广东省考习题本第一周"去水"后新出的数学改编题（第 6 天，共 10 道）。
+
+必读：/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/briefs/common.md 和 /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/briefs/review.md（流程与输出格式）。
+背景：考生嫌第一周简单题太多，要求"平时训练的题至少得有意义，得卡住我，让我学到一点什么"。所以这批新题每道都应该有一个真正的卡点：必须想到某个手法或转化，才能又快又准地做出来。同时，难不等于偏、怪、繁。
+题目文件（无答案）：/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/review/revh_B_questions.json
+答案文件（做完全部题后才能打开）：/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/review/revh_B_key.json
+输出：/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/review/revh_B_review.json
+
+除了 review.md 要求的对错检查，每题再判断两件事：
+- 卡点是否真实存在：会不会其实一步就出答案？
+- 有没有歧义或偏怪。
+没有卡点的题记为 fix，并给出加深的建议；有硬伤的记为 drop。
+回复里汇报：题数，与答案一致的题数，fix 和 drop 各几道，以及主要问题类型。

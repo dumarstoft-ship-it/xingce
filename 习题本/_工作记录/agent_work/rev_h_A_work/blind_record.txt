@@ -1,0 +1,15 @@
+BLIND (before key) -- answers from solve_all.py brute force
+Q1  D02-h-v01 B 240  speeds 30/50/80; (560+80)/160=4h; C=80*3. kadian WEAK: speeds read off directly, late start = one linear eq; 进度比 promised by group label absent (D02-1-v09 already has chained progress). -> fix (deepen)
+Q2  D02-h-v02 C 36   20N-30=23(N-6). kadian WEAK: the return-supply twist is spelled out in stem; same model as D02-1-v12 (人·天, change at day k, find original N). distractors 46/30 strong. -> fix? (borderline)
+Q3  D02-h-v03 D 19   r=6,W=72; 4n+2(n-3)=108. kadian routine (牛吃草 + mid change spelled out); scenario duplicates D02-1-v15 (积水+恒速渗入+同型号水泵) same day. -> fix (scenario/deepen)
+Q4  D02-h-v04 C 53   5*T(10)=275, 25 left /11 -> 3 days. real (block sums + ceil trap 52/55). ok
+Q5  D02-h-v05 A 21   eff 5:7:3, half=105: 42 vs 50 -> 21. real-ish (±40% not cancel). ok
+Q6  D03-h-v01 C 7000 gap 6*125=750=15*t -> t=50 -> 140*50. classic three-person model. ok
+Q7  D03-h-v02 D 70   walk:ride=2u:(v+u)=1:5 -> 3/15 km; 25+45 min. real. ok
+Q8  D03-h-v03 A 8    first-of-day effect: only Yi buses s=0..56 (steady-state formula gives 11). real. ok
+Q9  D03-h-v04 B 60   relative vel (-32,24)|40| ; 100*24/40. real. ok
+Q10 D05-h-v01 B 200  220-12-4-4. real (diagonal trap 204). ok
+Q11 D05-h-v02 C 810  (1680-60)/2. real. ok
+Q12 D05-h-v03 D 56   virtual 4th recipient C(8,3). real. ok
+Q13 D07-h-v01 C 12500 AM-GM point (30,20) infeasible (y<=15) -> boundary x=40. real. ok (10250 = forgot one side)
+Q14 D07-h-v02 D 110  1+p+q+r+pq+qr+rp = 22; *5. real (鸟头). ok

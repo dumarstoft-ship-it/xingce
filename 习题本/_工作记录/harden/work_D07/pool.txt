@@ -1,0 +1,184 @@
+============================================================
+2022SD-36 | 2022山东 | ans: D | planned_day: 35 | jiexi: True | kaofa: 立体几何-涂色正方体计数
+  TEXT: 36.将一个立方体的表面涂黑，用刀片平行于立方体各面，将其切割成若干个棱长为1的小立方体，如果只有一个 / 面涂黑的小立方体的个数与没有一个面涂黑的小立方体的个数相等。那么原立方体的棱长为多少？ / A.4                  B.6                  C.16                 D.8
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022SD-36_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022SD-36_j.png
+============================================================
+2020HB-68 | 2020河北 | ans: C | planned_day: 21 | jiexi: True | kaofa: 平面几何-周长定面积最值
+  TEXT: 68、村民陶某承包一长方形地块，他将地分割成如图所示的A、B、C、D四个地块，其中A、B、C的周长分别是 / 20米、24米、28米，D的最大面积是多少平方米？ / A、42   B、49   C、64   D、81
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020HB-68_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020HB-68_j.png
+============================================================
+2020SC0725-55 | 2020四川(7月) | ans: B | planned_day: 35 | jiexi: True | kaofa: 立体几何-组合体表面积
+  TEXT: 55、一个容器由一个长方体和一个半圆柱体如下图组合而成，长方体的长为1米，宽为0.5米、高为2米。在 / 这个容器表面涂漆花费200元，问平均每平方米的涂漆成本在以下哪个范围内？ / A、不超过20元    B、超过20元但不超过25元    C、超过25元但不超过30元    D、超过30元
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020SC0725-55_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020SC0725-55_j.png
+============================================================
+2020SC1206-44 | 2020四川(12月) | ans: A | planned_day: 42 | jiexi: True | kaofa: 平面几何-梯形中位线路程差
+  TEXT: 44、公园修了一个梯形的草坪ABCD，如下图所示，游客只能沿实线行走，其中AB长40米，DC长80米，AD长 / 40米，BC长60米，E、F点为AD和BC的中点。后为了方便游客，拟修一条木质栈道EF穿过草坪，则该栈道 / 至少可以让游客从入口E点到出口C点少走多少米？ / A、10    B、15    C、20    D、25
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020SC1206-44_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020SC1206-44_j.png
+============================================================
+2021GK-70 | 2021国考副省级 | ans: B | planned_day: 42 | jiexi: True | kaofa: 平面几何-梯形面积(正三角形)
+  TEXT: 70.在一块下图所示的梯形土地中种植某种产量为1.2千克/平方米的作物。已知该梯形的高为100米，ABC、BCD、 / 和CDE为正三角形，且BAF和DEG的角度都是90度，问该土地的总产量为多少吨？ / A. / B. / C. / D.
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021GK-70_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021GK-70_j.png
+============================================================
+2021GK-74 | 2021国考副省级 | ans: B | planned_day: 35 | jiexi: True | kaofa: 立体几何-圆锥相似体积比
+  TEXT: 74.一个人工湖的湖面上有一个露出水面3米的圆锥体人工景观（底面朝下）。如人工湖水深减少20%，则该景观露 / 出水面部分的体积将增加  。问原来的人工湖水深为多少米？ / A.3.5                 B.3.75                C.4.25                D.4.5
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021GK-74_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021GK-74_j.png
+============================================================
+2021JSA-65 | 2021江苏A卷 | ans: C | planned_day: 35 | jiexi: True | kaofa: 立体几何-球切线等腰直角
+  TEXT: 65、如图所示，当某航天器飞过地球北极正上方S处时，恰好能够观测到北纬45度，北极圈内的区域。假定地 / 球是半径为R的球体，则点S到地球北极点的距离是： / A、        R   B、        R   C、             D、
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021JSA-65_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021JSA-65_j.png
+============================================================
+2021SD-36 | 2021山东 | ans: D | planned_day: 42 | jiexi: True | kaofa: 平面几何-勾股定理路程比
+  TEXT: 36、甲地在乙地的正东方，在丙地的正南方。甲乙之间距离为2.1千米。小张从甲地骑车直线前往丙地，回程时 / 以相同速度直线前往乙地再直线返回甲地，回程时的路程比去程长  。问甲丙之间的距离在以下哪个范围内？ / A、不到5千米   B、在5—6千米之间   C、在6—7千米之间   D、超过7千米
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021SD-36_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021SD-36_j.png
+============================================================
+2022SC1-53 | 2022四川上半年 | ans: A | planned_day: 21 | jiexi: True | kaofa: 几何-圆与正方形重叠面积
+  TEXT: 53. 在一块边长为 8 米的正方形草坪上架设了 5 个自动洒水器，洒水器的洒水半径为 2 米（如图所示）。 / 问草坪上同时被两个洒水器洒到水的区城（灰色）面积比没有洒到水的区城（黑色）面积: / A 小不到 5 平方米 / B 小 5 平方米以上 / C 大不到 5 平方米 / D 大 5 平方米以上
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022SC1-53_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022SC1-53_j.png
+============================================================
+2022ZJA-67 | 2022浙江A类 | ans: B | planned_day: 21 | jiexi: True | kaofa: 几何最值-造桥最短路径
+  TEXT: 67.A、B两个乡镇分布于山谷两侧，山谷间有一条宽为2km的河道（如下图所示）。当地政府决定在两个乡镇间修 / 建一条跨河公路促进旅游发展。由于架桥费用高昂，所以要求跨河公路中的桥梁路段长度最短。那么根据图中 / 数据，从A镇前往B镇的最短距离为： / A.17km               B.15km               C.19km               D.20km
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022ZJA-67_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022ZJA-67_j.png
+============================================================
+2022ZJA-68 | 2022浙江A类 | ans: D | planned_day: 35 | jiexi: True | kaofa: 立体几何-正四棱锥面积比
+  TEXT: 68.商家门口摆放了一把正四棱锥形（底面为正方形，侧面为四个全等的等腰三角形）的遮阳伞，第一次伞撑开到 / 图1所示的位置，伞柄与伞骨成角     为  ，继续撑开到如图2所示的位置，伞柄与伞骨成角      变为 / ，那么第二次伞撑开后形成的正方形A'B'C'D'是第一次撑开后正方形ABCD面积的： / A.   倍 / B.  倍 / C.2倍 / D.3倍
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022ZJA-68_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022ZJA-68_j.png
+============================================================
+2023GK-67 | 2023国考副省级 | ans: D | planned_day: 21 | jiexi: True | kaofa: 平面几何-面积比求周长比
+  TEXT: 67.在一块正方形土地中，画一条经过某个顶点的规划线，将其分割为三角形和梯形两块土地，且梯形土地的面积 / 正好是三角形土地的2倍。问三角形和梯形土地的周长之比是多少？ / A.1：2 / B.5：7 / C. / D.
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023GK-67_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023GK-67_j.png
+============================================================
+2023HB-69 | 2023河北 | ans: A | planned_day: 35 | jiexi: True | kaofa: 立体几何-不规则体体积(割补)
+  TEXT: 69.下图所示是一种帐篷屋顶的示意图，底面是一个长4米宽3米的长方形，屋顶高1米， / 上棱长2米且平行于底面，那么该帐篷屋顶的体积是： / A.5立方米 / B.11立方米 / C.12立方米 / D.24立方米
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023HB-69_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023HB-69_j.png
+============================================================
+2023JSA-59 | 2023江苏A类 | ans: A | planned_day: 21 | jiexi: True | kaofa: 平面几何-折叠(角平分)相似求面积
+  TEXT: 59. 如图所示，纸片ABC的形状为直角三角形，AB=10厘米，BC=8厘米。若将纸片沿AD / 折叠，直角边AC恰好与斜边AB重叠，则△ABD的面积为 / A.15平方厘米 / B.16平方厘米 / C.18平方厘米 / D.21平方厘米
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023JSA-59_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023JSA-59_j.png
+============================================================
+2023SC-53 | 2023四川 | ans: A | planned_day: 21 | jiexi: True | kaofa: 平面几何-小路面积(平移)
+  TEXT: 53.如下图所示，某地计划修建一个长50米，宽40米的长方形观光园。现在需要在观光园 / 中修建几条鹅卵石小道供游客行走，其中一条是长为50米，宽为2米的水平直线型小路， / 另外两条修成斜线型，并且要求这两条斜线型小路任何地方的水平方向宽度都是1米，问修 / 完小路后观光园剩下部分的面积是多少平方米？ / A.1862 / B.1880 / C.1950 / D.1960
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023SC-53_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023SC-53_j.png
+============================================================
+2023ZJA-62 | 2023浙江A类 | ans: A | planned_day: 21 | jiexi: True | kaofa: 平面几何-两圆相切+勾股求面积
+  TEXT: 62.某地打算在绿地上建两个圆形花坛，如下图所示，大圆的直径为6米，小圆的直径为2米，修建期间暂时在外围 / 设置围栏。已知围栏呈矩形，大圆与围栏的三条边相切，小圆与围栏的两条边相切，且两圆相切，那么矩形围 / 栏的面积是多少平方米？ / A. / B. / C. / D.
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023ZJA-62_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023ZJA-62_j.png
+============================================================
+2024HB-71 | 2024河北 | ans: C | planned_day: 42 | jiexi: True | kaofa: 平面几何-勾股求线段(信号覆盖)
+  TEXT: 71.A、D两地设有通信基站（如下图所示），发射信号范围分别是以A、D为圆心，AE和DB为半径的圆形区域，小 / 林从B地出发，沿与DB垂直的BA方向匀速行进，步行速度为4千米/小时，那么步行约多少分钟后小林的手机能 / 够重新接收到信号？（        ） / A.8                  B.10                 C.12                 D.14
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024HB-71_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024HB-71_j.png
+============================================================
+2024JSA-58 | 2024江苏A类 | ans: B | planned_day: 35 | jiexi: True | kaofa: 立体几何-圆台侧面积比
+  TEXT: 58.某品牌奶茶所用纸杯均为圆台型。已知M型纸杯的上、下口直径分别为70毫米、50毫米，高为80毫米；N型纸杯 / 的上、下口直径分别为60毫米、45毫米，高为60毫米。则M型纸杯与N型纸杯的侧面积之比为（    ）。 / A.16：7               B.32：21              C.48：35              D.64：49
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024JSA-58_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024JSA-58_j.png
+============================================================
+2024ZJA-65 | 2024浙江A类 | ans: A | planned_day: 21 | jiexi: True | kaofa: 平面几何-阴影面积(割补)
+  TEXT: 65.一块空地如下图所示，AD、BC均与底边垂直，三角形ACD为等腰直角三角形，且AG、DE、CF长度均相等。现 / 在图中阴影部分种上草皮，已知DF长80米，BC长160米，那么草皮面积为多少平方米？ / A.3200                B.3600                C.4000                D.4800
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024ZJA-65_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024ZJA-65_j.png
+============================================================
+2025GK-78 | 2025国考副省级 | ans: A | planned_day: 21 | jiexi: True | kaofa: 平面几何-相似三角形求面积
+  TEXT: 78.某厂区如图所示，其中ABCD为矩形，ABEF为直角梯形，AB与DE相交于G点，其中阴影区域ADGF为涉密区 / 域。已知AD、AF、AB长度分别为240米、150米、100米，问涉密区域的面积为多少万平方米？ / A.1.2                 B.1.3                 C.1.4                 D.1.5
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025GK-78_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025GK-78_j.png
+============================================================
+2025GK-80 | 2025国考副省级 | ans: D | planned_day: 35 | jiexi: True | kaofa: 立体几何-圆锥圆柱注水体积比
+  TEXT: 80.一个容器的下部分为高12厘米的倒立圆锥体，上部分为圆柱体，且圆锥和圆柱的底面半径相等。现匀速向容器 / 中注入水，1分钟后液面高6厘米，又过30分钟后注满。问整个容器的高度为多少厘米？ / A.22                 B.22.5                C.23                 D.23.5
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025GK-80_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025GK-80_j.png
+============================================================
+2025HB-74 | 2025河北 | ans: B | planned_day: 42 | jiexi: False | kaofa: 平面几何-梯形分割求面积
+  TEXT: 74.某农科所将一块上底长为20米的直角梯形状实验田划分为4个完全相同的区域（如下图所示），种上4个不同品 / 种的玉米，产量分别为110、115、125和130千克。那么，该实验田玉米的平均产量为多少千克/平方米？ / A.0.6                 B.0.8                 C.1                  D.1.25
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025HB-74_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025HB-74_j.png
+============================================================
+2025HB-77 | 2025河北 | ans: A | planned_day: 35 | jiexi: False | kaofa: 立体几何-组合圆柱表面积
+  TEXT: 77.某三层高的露天平台每层可视作圆柱体（如下图所示）。已知每层高5米，下层直径100米，中层直径80米，上 / 层直径68米，现要对平台的外表面进行清洁维护，共需要维护多少平方米？ / A. / B. / C. / D.
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025HB-77_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025HB-77_j.png
+============================================================
+2025HB-79 | 2025河北 | ans: D | planned_day: 35 | jiexi: False | kaofa: 立体几何-相似圆锥体积比
+  TEXT: 79.妈妈将一个圆锥形冰淇淋（如下图所示，顶面是半径为3厘米的平面）将距离顶面三分之一高的位置平行切 / 开，下面那块给小安，上面那块给小凡，那么小安吃的冰淇淋份量是小凡的多少倍？ / A. / B. / C. / D.
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025HB-79_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025HB-79_j.png
+============================================================
+2025JSA-59 | 2025江苏A类 | ans: C | planned_day: 42 | jiexi: False | kaofa: 几何-相似三角形(视线遮挡)
+  TEXT: 59.借景是古典园林建筑常用的构景手段之一，已知某景区中轴线（在同一水平面）上有两座相距200米的建筑 / 物，其中一座建筑物为平顶，高度为23.7米；另一座建筑物为顶尖，高度为133.7米，其中顶尖的部分高度为22 / 米。若身高为1.7米的小王从中轴线上某处看向平顶建筑物时，发现恰好能够看到尖顶建筑物的整个尖顶部分 / （如图所示）。则小王所站位置和平顶建筑物的直线距离为（    ）。 / A.30米                B.40米                C.50米                D.60米
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025JSA-59_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025JSA-59_j.png
+============================================================
+2026GK-75 | 2026国考副省级 | ans: B | planned_day: 21 | jiexi: False | kaofa: 平面几何-梯形补成矩形
+  TEXT: 75.一块梯形场地如下图所示，已知OA=0.6OD，现在需要将这块场地拓展为一块长方形场地，问扩展后场地面积比 / 原来至少增加： / A.20%                B.25%                C.40%                D.50%
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2026GK-75_q.png  j: None
+============================================================
+2020SC0725-54 | 2020四川(7月) | ans: C | planned_day: 35 | jiexi: True | kaofa: 立体几何-圆台体积比(补锥相似)
+  TEXT: 54、一个重量为x千克的圆台形容器如下所示，其口部半径是底面半径的2倍，在容器中装满水，总重量为9 / 千克，从中倒出部分水使得液面高度为装满水时的一半，总重量下降到4.5千克。问x的值在以下哪个范围内? / A、x＜1.5    B、1.5≤x＜2    C、2≤x＜2.5    D、x≥2.5
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020SC0725-54_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020SC0725-54_j.png
+============================================================
+2020SC1206-49 | 2020四川(12月) | ans: A | planned_day: 21 | jiexi: True | kaofa: 平面几何-正方形全等勾股
+  TEXT: 49、如图所示，在直线L上依次摆放着5个正方形。已知斜放置的2个正方形的面积分别是3和2，正放置的 / 3个正方形的面积依次是S1、S2、S3，且S2=S3。问S1+S2+S3的值为： / A、4    B、5    C、11    D、13
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020SC1206-49_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020SC1206-49_j.png
+============================================================
+2022SC2-44 | 2022四川下半年 | ans: B | planned_day: 42 | jiexi: True | kaofa: 立体几何-正方体贯穿挖空计数
+  TEXT: 44. 如图所示的图形是一个由小正方体组成的大正方体，图中灰色部分的小正方体被挖去且 / 贯穿到对面，则剩下的部分有多少块小正方体？ / A.32       B.40      C.42       D.48
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022SC2-44_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022SC2-44_j.png
+============================================================
+2022ZJA-65 | 2022浙江A类 | ans: B | planned_day: 21 | jiexi: True | kaofa: 平面几何-矩形内三角形面积
+  TEXT: 65.某商场为庆祝开业三周年，制作了一个长方形大蛋糕，并切成四块，如图所示。假设这个蛋糕可供350人享 / 用，左下角那块蛋糕平均可供50人享用，右上角那块蛋糕平均可供70人，则中间最大块蛋糕平均可供多少人享 / 用？ / A.150                B.155                 C.175                 D.180
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022ZJA-65_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022ZJA-65_j.png
+============================================================
+2022ZJA-69 | 2022浙江A类 | ans: C | planned_day: 42 | jiexi: True | kaofa: 立体几何-球体错位排布
+  TEXT: 69.用一个长为20厘米、宽为2厘米、高为1.5厘米的长方体木料，制作一串半径最大的木珠子，不考虑制作过程中 / 的损耗，则这串珠子的数量最多为： / A.10个                B.13个                C.14个                D.20个
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022ZJA-69_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022ZJA-69_j.png
+============================================================
+2023GK-64 | 2023国考副省级 | ans: D | planned_day: 21 | jiexi: True | kaofa: 平面几何-等分点面积比
+  TEXT: 64.一个三角形公园ABC内的道路如下图中实线所示。已知AE=EF=FB，AD=DC，且黑色部分为人工湖。问公园总 / 面积是人工湖面积的多少倍？ / A.9                  B.12                 C.16                 D.18
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023GK-64_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023GK-64_j.png
+============================================================
+2023GK-75 | 2023国考副省级 | ans: A | planned_day: 35 | jiexi: True | kaofa: 立体几何-圆锥浮力相似体积
+  TEXT: 75.将一个高度为x的实心圆锥体零件尖部朝下放入密度为1的液体A中，浮出液面的高度为0.1x。如将其尖部朝上放 / 入密度为1.5的液体B中，浮出液面的高度将在以下哪个范围内？ / A.超过0.8x                                  B.0.7x~0.8x之间 / C.0.6x~0.7x之间                              D.不到0.6x
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023GK-75_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023GK-75_j.png
+============================================================
+2024GK-71 | 2024国考副省级 | ans: C | planned_day: 42 | jiexi: True | kaofa: 平面几何-图形分割面积比
+  TEXT: 71.设计师将一个正方形的大厅分给如下图所示的几个区域，已知所有的三角形都是等腰直角三角形，梯形都是等 / 腰梯形，且所有三角形和梯形面积均相等。在三角形的区域铺设地砖，在中间的正方形区域铺设木地板。问地 / 砖和木地板的面积比是多少？ / A.2：3                B.4：3                C.8：9                D.16：9
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024GK-71_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024GK-71_j.png
+============================================================
+2024HB-69 | 2024河北 | ans: D | planned_day: 42 | jiexi: True | kaofa: 平面几何-莱洛三角形面积
+  TEXT: 69.莱洛三角形是以等边三角形三个顶点为圆心，边长为半径，在顶点的对边画弧所得的封闭图形，这种形状的钻 / 头可钻出四角为圆弧的正方形的孔洞（如左下图所示）。现将某莱洛三角形钻头所钻孔洞近似为正方形，测得 / 该正方形孔洞截面积为     （如右下图所示），则该钻头的截面积为： / A. / B. / C. / D.
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024HB-69_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024HB-69_j.png
+============================================================
+2024HB-70 | 2024河北 | ans: C | planned_day: 35 | jiexi: True | kaofa: 立体几何-圆锥容器水深换算
+  TEXT: 70.气象学中，24小时内降落在某面积上的雨水深度叫做日降雨量（不考虑渗漏、蒸发、流失等损耗，单位： / mm），将日降雨量记为w，其等级划分如下：小雨（         ），中雨（         ），大雨（ / ），暴雨（          ）。某地某日用一个圆锥形容器接了24小时的雨水（如下图所示），则该 / 地日降雨量等级是： / A.暴雨                B.大雨                C.中雨                D.小雨
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024HB-70_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024HB-70_j.png
+============================================================
+2024SC-53 | 2024四川 | ans: B | planned_day: 21 | jiexi: True | kaofa: 平面几何-折叠点位极值(范围)
+  TEXT: 53.一块长13厘米、宽5厘米的长方形纸片如下图所示。将其沿直线折叠后使得点A与BC边上某一点E重合，且折痕 / 分别与纸片的AB边、AD边相交。问BE可能的最大和最小长度相差多少厘米？ / A.3                  B.4                  C.5                  D.6
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024SC-53_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024SC-53_j.png
+============================================================
+2024SC-55 | 2024四川 | ans: D | planned_day: 21 | jiexi: True | kaofa: 几何最值-绕障碍最短路径(方位)
+  TEXT: 55.正方形水池ABCD的边长为80米。E点在AB边正中的正北30米处，F点在C点东偏南  方向，F点到C点距离为 / 米。甲从E点出发前往F点，问他的最短行进距离比途经D点的最短行进距离短多少米？ / A.30 / B.50 / C. / D.80
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024SC-55_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024SC-55_j.png
+============================================================
+2025HB-78 | 2025河北 | ans: C | planned_day: 21 | jiexi: False | kaofa: 几何最值-将军饮马(对称)
+  TEXT: 78.在台风影响下，B、E两个受灾严重的村庄急需电力救援，村庄E位于AB中点处（如下图所示，      为等腰 / 直角三角形），电力救援部门需要在长为6公里的AC路段上确定临时送电站F的位置，从点F分别搭建两条电路 / FE与FB，要求这两条电路长度之和最小，则临时送电站F的位置距离点A： / A.   公里 / B.1.5公里 / C.2公里 / D.3公里
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025HB-78_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025HB-78_j.png
+============================================================
+2025HB-80 | 2025河北 | ans: A | planned_day: 21 | jiexi: False | kaofa: 平面几何-月牙形面积(割补)
+  TEXT: 80.为丰富儿童的暑假生活，某公园在半径为    米的半圆形水池旁修建了一个弯月形儿童戏水池（如下图所 / 示）。该弯月形戏水池可看作是由半径为20米的半圆  和半径为    米的半圆O的圆弧围成的阴影部分，圆 / 心距   为20米且   垂直于直径AB，那么该戏水池的面积为多少平方米？ / A.400 / B. / C.800 / D.
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025HB-80_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025HB-80_j.png
+============================================================
+2025SC-49 | 2025四川 | ans: C | planned_day: 21 | jiexi: False | kaofa: 平面几何-正方形分割矩形面积比
+  TEXT: 49.一块正方形花圃如下图所示。现将其划分为4个矩形，分别种植A、B、C、D四种作物。已知B、C的种植面积比 / 为14：9，B、C的种植面积之和比A的种植面积大  ，则D的种植面积是A的： / A. / B. / C. / D.
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025SC-49_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025SC-49_j.png
+============================================================
+2025ZJA-69 | 2025浙江A类 | ans: B | planned_day: 42 | jiexi: True | kaofa: 平面几何-切圆与三角形面积比
+  TEXT: 69.一块直角梯形空地ABCD如右图所示，其中AD=AC=2AB。现准备在图中三角形区域ABC建设特色生态园，并在 / 图中与两条边相切的圆形区域建设特色花坛。已知D点到圆上任一点最短距离为AB长度的一半，那么特色生态 / 园与特色花坛的面积比值在以下哪个范围？ / A.小于1               B.1-1.5               C.1.5-2               D.大于2
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025ZJA-69_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025ZJA-69_j.png
+============================================================
+2026GK-72 | 2026国考副省级 | ans: C | planned_day: 35 | jiexi: False | kaofa: 立体几何-长方体拼接表面积
+  TEXT: 72.甲和乙两个长方体零件的体积比为3：2，且甲和乙均有2个面为边长n厘米的正方形。将甲和乙粘接为一个长方 / 体之后，表面积比原来2个零件的表面积之和减少了20%。问乙最短棱的长度是最长棱的： / A. / B. / C. / D.
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2026GK-72_q.png  j: None
+============================================================
+2026ZJA-64 | 2026浙江A类 | ans: A | planned_day: 42 | jiexi: False | kaofa: 立体几何-长方体棱与面对角线
+  TEXT: 64.小赵制作一件手工作品，需要将一个长方体纸盒的每条棱和每个面的对角线用细木条加以固定。制作完成后， / 他发现仅用了3种不同长度的细木条，且最短的细木条长度为1分米。问该纸盒的体积为多少立方分米？ / A. / B.2 / C. / D.
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2026ZJA-64_q.png  j: None
+============================================================
+2021HB-66 | 2021河北 | ans: B | planned_day: None | jiexi: True | kaofa: 平面几何-三角形内三等圆外弧长
+  TEXT: 66、某市江滨有一处边长为50米的等边三角形广场。广场里设计有三个大小相等的圆环鹅卵石道路供市民散步， / 如图所示，各圆相切，各圆与三角形也相切，问沿三个圆环外围石道（不含圆切点之间的弧）散步一圈约为多少 / 直、95   B、105   c, 115   D、125
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021HB-66_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021HB-66_j.png
+============================================================
+2021HB-68 | 2021河北 | ans: B | planned_day: None | jiexi: True | kaofa: 几何概型-内接外切图形面积比
+  TEXT: 68、某商场为了促销，进行掷飞镖游戏。每位参与人员投掷一次，假设出的飞镖均扎在飞镖板上且位置完全随 / 机，扎中中间阴影部分区域（含边线）即为中奖。该商场预设中奖概率约为60%，仅考虑中奖概率的前提下，以 / 下四幅图形（图中的正三角形和正方形均与圆外切或内接）最适合作为飞镖板的是：
+  q: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021HB-68_q.png  j: /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021HB-68_j.png

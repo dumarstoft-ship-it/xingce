@@ -1,0 +1,516 @@
+[
+ {
+  "tid": "T237x1",
+  "host_tid": "T237",
+  "keep": true,
+  "db_match": "2024HB-70",
+  "module": "M08",
+  "kaofa": "圆锥容器折算降雨量",
+  "method": "体积÷口面积，半深占1/8",
+  "source": "2024河北",
+  "stem": "气象学中，24 小时内降落在某面积上的雨水深度叫做日降雨量（不考虑渗漏、蒸发、流失等损耗，单位：mm），将日降雨量记为 $w$，其等级划分如下：小雨（$0.1\\le w<10$），中雨（$10\\le w<25$），大雨（$25\\le w<50$），暴雨（$50\\le w<100$）。某地某日用一个圆锥形容器接了 24 小时的雨水（如下图所示），则该地日降雨量等级是：",
+  "options": {
+   "A": "暴雨",
+   "B": "大雨",
+   "C": "中雨",
+   "D": "小雨"
+  },
+  "options_added": false,
+  "answer": "C",
+  "jiexi": "日降雨量是摊平在承接口面积上的水深：$w=$ 接到的雨水体积 ÷ 容器口面积。雨水是尖朝下的小圆锥，深 200 mm，是容器深 400 mm 的一半，体积是整个容器的 $\\frac{1}{8}$。设口面积为 $S$，雨水体积 $=\\frac{1}{8}\\times\\frac{1}{3}S\\times400$，所以 $w=\\frac{400}{24}\\approx16.7$ mm，属中雨。易错：把容器里的水深 200 mm 直接当降雨量（误选暴雨）；或按 $\\frac{1}{2}$ 而不是 $\\frac{1}{8}$ 折算体积，得 66.7 mm（也误选暴雨）。",
+  "learn": "降雨量是“单位面积上的水深”＝体积÷承接口面积；尖朝下的容器装到一半深只有 $\\frac{1}{8}$ 的体积。",
+  "level": "中等",
+  "figure": {
+   "type": "svg",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"340\" height=\"264\" viewBox=\"0 0 340 264\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><path d=\"M 137.5 148.0 L 175 248 L 212.5 148.0 A 37.5 7 0 0 1 137.5 148.0 Z\" fill=\"#9e9e9e\" stroke=\"none\" stroke-linejoin=\"round\" /><ellipse cx=\"175\" cy=\"148\" rx=\"37.5\" ry=\"7\" fill=\"#bdbdbd\" stroke=\"#222\" stroke-width=\"1.0\"/><ellipse cx=\"175\" cy=\"48\" rx=\"75\" ry=\"14\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"100\" y1=\"48\" x2=\"175\" y2=\"248\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"250\" y1=\"48\" x2=\"175\" y2=\"248\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"100\" y1=\"44\" x2=\"100\" y2=\"22\" stroke=\"#222\" stroke-width=\"0.9\"/><line x1=\"250\" y1=\"44\" x2=\"250\" y2=\"22\" stroke=\"#222\" stroke-width=\"0.9\"/><line x1=\"100\" y1=\"28\" x2=\"250\" y2=\"28\" stroke=\"#222\" stroke-width=\"0.9\"/><polygon points=\"250,28 244.6,30.5 244.6,25.5\" fill=\"#222\" stroke=\"none\" stroke-linejoin=\"round\" /><polygon points=\"100,28 105.4,25.5 105.4,30.5\" fill=\"#222\" stroke=\"none\" stroke-linejoin=\"round\" /><text x=\"175\" y=\"28\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\"></text><text x=\"175\" y=\"16\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\">300mm</text><line x1=\"96\" y1=\"48\" x2=\"60\" y2=\"48\" stroke=\"#222\" stroke-width=\"0.9\"/><line x1=\"169\" y1=\"248\" x2=\"60\" y2=\"248\" stroke=\"#222\" stroke-width=\"0.9\"/><line x1=\"66\" y1=\"48\" x2=\"66\" y2=\"248\" stroke=\"#222\" stroke-width=\"0.9\"/><polygon points=\"66,248 63.5,242.6 68.5,242.6\" fill=\"#222\" stroke=\"none\" stroke-linejoin=\"round\" /><polygon points=\"66,48 68.5,53.4 63.5,53.4\" fill=\"#222\" stroke=\"none\" stroke-linejoin=\"round\" /><text x=\"66\" y=\"148\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\"></text><text x=\"61\" y=\"148\" font-size=\"12\" text-anchor=\"end\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\">400mm</text><line x1=\"216.5\" y1=\"148\" x2=\"290\" y2=\"148\" stroke=\"#222\" stroke-width=\"0.9\" stroke-dasharray=\"5 4\"/><line x1=\"181\" y1=\"248\" x2=\"290\" y2=\"248\" stroke=\"#222\" stroke-width=\"0.9\"/><line x1=\"284\" y1=\"148\" x2=\"284\" y2=\"248\" stroke=\"#222\" stroke-width=\"0.9\"/><polygon points=\"284,248 281.5,242.6 286.5,242.6\" fill=\"#222\" stroke=\"none\" stroke-linejoin=\"round\" /><polygon points=\"284,148 286.5,153.4 281.5,153.4\" fill=\"#222\" stroke=\"none\" stroke-linejoin=\"round\" /><text x=\"284\" y=\"198\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\"></text><text x=\"286\" y=\"198\" font-size=\"12\" text-anchor=\"start\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\">200mm</text></svg>",
+   "desc": "倒立圆锥形容器：口径 300mm、深 400mm，容器底部尖端积水深 200mm（灰色）。"
+  },
+  "verify": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/verify/teacher_T237x1.py",
+  "issues": "内嵌于 T237 截图下半部分（排版截图，程序未切分）。"
+ },
+ {
+  "tid": "T241x1",
+  "host_tid": "T241",
+  "keep": false,
+  "db_match": null,
+  "module": "M08",
+  "kaofa": "圆柱侧面展开最短路径",
+  "method": "展开成矩形连对角线",
+  "source": "2017吉林甲",
+  "stem": "在猫鼠游戏中，跑道为无顶和底的圆柱形，底或顶的圆周长度为 5 米。圆柱的高为 12 米，老鼠只能在顶端圆周逃跑并以 0.5 米/秒的速度从 $A$ 点出发，与此同时，猫从 $B$ 点出发匀速追击老鼠，并可以在圆柱形的表面选择任意路线追击。若猫想在 $A$ 点恰好追及到跑了一圈的老鼠，则它至少要保持的速度为：",
+  "options": {
+   "A": "1.1米/秒",
+   "B": "1.4米/秒",
+   "C": "1.3米/秒",
+   "D": "1.2米/秒"
+  },
+  "options_added": false,
+  "answer": "C",
+  "jiexi": "老师/官方思路：老鼠跑一圈用 $5\\div0.5=10$ 秒；把圆柱侧面展开成 $5\\times12$ 的矩形，猫沿对角线走 13 米，速度 1.3 米/秒。",
+  "learn": "",
+  "level": null,
+  "figure": null,
+  "verify": null,
+  "issues": "内嵌于 T241 截图下半部分。原题有歧义，不建议收：图中 B 在 A 的正下方，猫沿母线直线向上爬 12 米，10 秒后恰好到 A，只需 1.2 米/秒（选项 D）；老师/官方答案 1.3 米/秒要求猫绕柱一圈（展开矩形对角线 13 米），题面并未规定。若要收，需把题面改成“猫须沿老鼠逃跑方向绕圆柱侧面一圈追击”。"
+ },
+ {
+  "tid": "T249x1",
+  "host_tid": "T249",
+  "keep": true,
+  "db_match": null,
+  "module": "M08",
+  "kaofa": "补矩形+45°等腰直角转化",
+  "method": "斜边拆成水平/竖直分量",
+  "source": "2024国考地市级",
+  "stem": "某小区内部的道路如下图所示，道路转弯处的 $\\angle A$、$\\angle C$、$\\angle E$ 均为直角，$\\angle B=135°$。已知 $AB$、$CD$、$EA$ 的长度分别为 40 米、50 米、60 米，问整圈道路的总长度在以下哪个范围内？",
+  "options": {
+   "A": "在200～210米之间",
+   "B": "在210～220米之间",
+   "C": "不到200米",
+   "D": "超过220米"
+  },
+  "options_added": false,
+  "answer": "B",
+  "jiexi": "补成矩形看：$AB$ 水平、$AE$ 竖直，$\\angle B=135°$ 说明 $BC$ 向右下 45° 方向，$\\angle C=90°$ 说明 $CD$ 向左下 45° 方向，$DE$ 水平。竖直方向：$BC$、$CD$ 的竖直分量之和为 60，$CD$ 的竖直分量为 $25\\sqrt{2}$，所以 $BC=\\sqrt{2}(60-25\\sqrt{2})=60\\sqrt{2}-50$；水平方向：$DE=40+(60-25\\sqrt{2})-25\\sqrt{2}=100-50\\sqrt{2}$。总长 $=40+(60\\sqrt{2}-50)+50+(100-50\\sqrt{2})+60=200+10\\sqrt{2}\\approx214$ 米。易错：凭图目测 $BC$、$DE$ 的长度。",
+  "learn": "折线图形补成矩形，45° 斜边用等腰直角三角形拆成水平、竖直分量，未知量往往会相互抵消。",
+  "level": "中等",
+  "figure": {
+   "type": "svg",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"257.9\" height=\"232\" viewBox=\"0 0 257.9 232\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><polygon points=\"34,24 154,24 227.9,97.9 121.9,204 34,204\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.4\" stroke-linejoin=\"round\" /><polyline points=\"43,24 43,33 34,33\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.1\" stroke-linejoin=\"round\" /><polyline points=\"221.6,91.6 215.2,97.9 221.6,104.3\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.1\" stroke-linejoin=\"round\" /><polyline points=\"43,204 43,195 34,195\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.1\" stroke-linejoin=\"round\" /><text x=\"24\" y=\"16\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">A</text><text x=\"156\" y=\"13\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">B</text><text x=\"239.9\" y=\"97.9\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">C</text><text x=\"123.9\" y=\"217\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">D</text><text x=\"24\" y=\"213\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">E</text></svg>",
+   "desc": "五边形道路 ABCDE：AB 水平、AE 竖直，A、C、E 处为直角，B 处为 135°。"
+  },
+  "verify": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/verify/teacher_T249x1.py",
+  "issues": "内嵌于 T249 截图（排版截图，程序未切分）；题库只收副省级卷，无匹配。"
+ },
+ {
+  "tid": "T249x2",
+  "host_tid": "T249",
+  "keep": true,
+  "db_match": "2024GK-70",
+  "module": "M08",
+  "kaofa": "特殊角拼直角+勾股",
+  "method": "30°+60°=90°，直接勾股",
+  "source": "2024国考副省级",
+  "stem": "某公园内的道路如下图所示，其中 $AB$、$BC$ 分别为正南北向和正东西向道路，$AB$、$AC$ 分别长 100 米和 200 米。且 $BCD$ 为正三角形，如要用直线道路连接 $AD$，则该道路的长度为多少米？",
+  "options": {
+   "A": "$150\\sqrt{3}$",
+   "B": "$50(\\sqrt{3}+1)$",
+   "C": "$100\\sqrt{7}$",
+   "D": "$200\\sqrt{2}$"
+  },
+  "options_added": false,
+  "answer": "C",
+  "jiexi": "$\\triangle ABC$ 中 $\\angle B=90°$、$AC=2AB$，所以 $\\angle ACB=30°$，$BC=100\\sqrt{3}$。$BCD$ 是正三角形，$\\angle BCD=60°$，于是 $\\angle ACD=30°+60°=90°$，$CD=BC=100\\sqrt{3}$。$AD=\\sqrt{AC^2+CD^2}=\\sqrt{200^2+(100\\sqrt{3})^2}=100\\sqrt{7}$。关键一步：看出 30° 与 60° 拼成直角，直接用勾股。易错：在 $\\triangle ABD$ 中硬算，或误以为 $\\angle ABD$ 是直角。",
+  "learn": "特殊角相加凑直角（30°+60°=90°），把斜三角形问题变成勾股定理。",
+  "level": "中等",
+  "figure": {
+   "type": "svg",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"241.9\" height=\"323.5\" viewBox=\"0 0 241.9 323.5\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><line x1=\"30\" y1=\"35\" x2=\"30\" y2=\"140\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"30\" y1=\"140\" x2=\"211.9\" y2=\"140\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"30\" y1=\"35\" x2=\"211.9\" y2=\"140\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"30\" y1=\"140\" x2=\"120.9\" y2=\"297.5\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"211.9\" y1=\"140\" x2=\"120.9\" y2=\"297.5\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"30\" y1=\"35\" x2=\"120.9\" y2=\"297.5\" stroke=\"#222\" stroke-width=\"1.4\" stroke-dasharray=\"5 4\"/><polyline points=\"30,131 39,131 39,140\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.1\" stroke-linejoin=\"round\" /><text x=\"20\" y=\"29\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">A</text><text x=\"18\" y=\"140\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">B</text><text x=\"223.9\" y=\"140\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">C</text><text x=\"120.9\" y=\"311.5\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">D</text><text x=\"203.9\" y=\"22\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\">北</text><line x1=\"203.9\" y1=\"50\" x2=\"203.9\" y2=\"30\" stroke=\"#222\" stroke-width=\"1.0\"/><polygon points=\"203.9,30 206.4,35.4 201.3,35.4\" fill=\"#222\" stroke=\"none\" stroke-linejoin=\"round\" /></svg>",
+   "desc": "AB 南北向、BC 东西向（∠B=90°），BCD 为正三角形（D 在 BC 南侧），虚线为拟建道路 AD。"
+  },
+  "verify": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/verify/teacher_T249x2.py",
+  "issues": "内嵌于 T249 截图（排版截图，程序未切分）。"
+ },
+ {
+  "tid": "T249x3",
+  "host_tid": "T249",
+  "keep": true,
+  "db_match": null,
+  "module": "M08",
+  "kaofa": "面积相等推线段比",
+  "method": "等积→各占1/3，同高比底",
+  "source": "2018江苏B",
+  "stem": "如图，在长方形 $ABCD$ 中，已知三角形 $ABE$、三角形 $ADF$ 与四边形 $AECF$ 的面积相等，则三角形 $AEF$ 与三角形 $CEF$ 的面积之比是：",
+  "options": {
+   "A": "5:1",
+   "B": "5:2",
+   "C": "5:3",
+   "D": "6:1"
+  },
+  "options_added": false,
+  "answer": "A",
+  "jiexi": "三块面积相等，各占长方形面积 $S$ 的 $\\frac{1}{3}$。$S_{\\triangle ABE}=\\frac{1}{2}AB\\cdot BE=\\frac{1}{3}AB\\cdot BC$，得 $BE=\\frac{2}{3}BC$、$EC=\\frac{1}{3}BC$；同理 $DF=\\frac{2}{3}DC$、$FC=\\frac{1}{3}DC$。$S_{\\triangle CEF}=\\frac{1}{2}\\times\\frac{1}{3}\\times\\frac{1}{3}S=\\frac{S}{18}$，$S_{\\triangle AEF}=\\frac{S}{3}-\\frac{S}{18}=\\frac{5S}{18}$，比为 5:1。（老师做法：设 $S_{\\triangle ABE}=1$，由同高三角形面积比=底之比得 $FC:DC=1:3$，再求 $S_{\\triangle EFC}$。）易错：把 $E$、$F$ 当成中点。",
+  "learn": "“面积相等”直接翻译成线段比（同高面积比=底之比），两条边的比相乘得小三角形面积。",
+  "level": "中等",
+  "figure": {
+   "type": "svg",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"302\" height=\"173\" viewBox=\"0 0 302 173\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><polygon points=\"24,22 274,22 274,147 24,147\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.4\" stroke-linejoin=\"round\" /><line x1=\"24\" y1=\"22\" x2=\"274\" y2=\"105.3\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"24\" y1=\"22\" x2=\"190.7\" y2=\"147\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"274\" y1=\"105.3\" x2=\"190.7\" y2=\"147\" stroke=\"#222\" stroke-width=\"1.4\"/><text x=\"14\" y=\"16\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">A</text><text x=\"284\" y=\"16\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">B</text><text x=\"284\" y=\"155\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">C</text><text x=\"14\" y=\"155\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">D</text><text x=\"285\" y=\"105.3\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">E</text><text x=\"190.7\" y=\"161\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">F</text></svg>",
+   "desc": "长方形 ABCD，E 在 BC 上、F 在 DC 上，连 AE、AF、EF。"
+  },
+  "verify": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/verify/teacher_T249x3.py",
+  "issues": "内嵌于 T249 截图（排版截图，程序未切分）。"
+ },
+ {
+  "tid": "T249x4",
+  "host_tid": "T249",
+  "keep": true,
+  "db_match": "2023GK-64",
+  "module": "M08",
+  "kaofa": "梯形蝴蝶模型求面积比",
+  "method": "1:k:k:k²+同高三等分",
+  "source": "2023国考副省级",
+  "stem": "一个三角形公园 $ABC$ 内的道路如下图中实线所示。已知 $AE=EF=FB$，$AD=DC$，且黑色部分为人工湖。问公园总面积是人工湖面积的多少倍？",
+  "options": {
+   "A": "9",
+   "B": "12",
+   "C": "16",
+   "D": "18"
+  },
+  "options_added": false,
+  "answer": "D",
+  "jiexi": "$E$、$D$ 分别是 $AF$、$AC$ 的中点，$ED\\parallel FC$ 且 $ED=\\frac{1}{2}FC$，$EDCF$ 是上下底之比 1:2 的梯形，对角线 $EC$、$FD$ 交于 $O$。梯形模型：四个三角形面积比为 $1:2:2:4$，设人工湖 $S_{\\triangle EOD}=1$，则 $S_{\\triangle EOF}=S_{\\triangle DOC}=2$，$S_{\\triangle FOC}=4$，$S_{\\triangle CEF}=2+4=6$。$C$ 到 $AB$ 的高相同、$AE=EF=FB$，所以 $S_{\\triangle ABC}=3S_{\\triangle CEF}=18$。易错：漏掉“同高三等分”这一步，只算到 6。",
+  "learn": "梯形对角线模型：上下底之比 $1:k$ 时四个三角形面积比 $1:k:k:k^2$；再用“同高面积比=底之比”放大到整体。",
+  "level": "中等",
+  "figure": {
+   "type": "svg",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"330\" height=\"242\" viewBox=\"0 0 330 242\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><polygon points=\"101.3,86.7 167.6,131.1 220,120\" fill=\"#111\" stroke=\"#111\" stroke-width=\"1.0\" stroke-linejoin=\"round\" /><polygon points=\"140,20 24,220 300,220\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.4\" stroke-linejoin=\"round\" /><line x1=\"101.3\" y1=\"86.7\" x2=\"300\" y2=\"220\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"62.7\" y1=\"153.3\" x2=\"220\" y2=\"120\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"62.7\" y1=\"153.3\" x2=\"300\" y2=\"220\" stroke=\"#222\" stroke-width=\"1.4\"/><text x=\"140\" y=\"9\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">A</text><text x=\"14\" y=\"226\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">B</text><text x=\"310\" y=\"226\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">C</text><text x=\"231\" y=\"118\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">D</text><text x=\"90.3\" y=\"84.7\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">E</text><text x=\"51.7\" y=\"153.3\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">F</text><text x=\"169.6\" y=\"144.1\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">O</text></svg>",
+   "desc": "三角形 ABC，E、F 三等分 AB，D 为 AC 中点；道路 EC、FD、FC，EC 与 FD 交于 O，黑色三角形 EOD 为人工湖。"
+  },
+  "verify": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/verify/teacher_T249x4.py",
+  "issues": "内嵌于 T249 截图（排版截图，程序未切分）。"
+ },
+ {
+  "tid": "T249x5",
+  "host_tid": "T249",
+  "keep": true,
+  "db_match": null,
+  "module": "M08",
+  "kaofa": "仰角测高：正切求水平距",
+  "method": "tan31°求AD，45°得BD=AD",
+  "source": "2023湖北",
+  "stem": "厦门鼓浪屿海滨覆鼎岩上屹立着一尊郑成功雕像。为了测量石像的高度，某测量小组选取的测量点 $A$ 与覆鼎岩底部 $D$ 在同一水平线上，如下图所示。已知覆鼎岩高 $CD$ 为 24 米，在 $A$ 处测得石像头顶部 $B$ 的仰角为 45°，石像底部 $C$ 的仰角为 31°（参考数据：$\\sin31°\\approx0.52$，$\\cos31°\\approx0.86$，$\\tan31°\\approx0.60$），则石像 $BC$ 的高度约为：",
+  "options": {
+   "A": "20米",
+   "B": "18米",
+   "C": "16米",
+   "D": "14米"
+  },
+  "options_added": false,
+  "answer": "C",
+  "jiexi": "在 $\\triangle ACD$ 中，$\\tan31°=\\frac{CD}{AD}$，$AD=\\frac{24}{0.60}=40$ 米；在 $\\triangle ABD$ 中 $\\angle BAD=45°$，$BD=AD=40$ 米。石像高 $BC=BD-CD=40-24=16$ 米。易错：用 $\\sin31°$ 或 $\\cos31°$ 去求水平距离——给了三个参考数据，只用得上正切。",
+  "learn": "解直角三角形：已知对边求邻边用正切；45° 仰角意味着高度等于水平距离。",
+  "level": "基础",
+  "figure": {
+   "type": "svg",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"300\" height=\"290\" viewBox=\"0 0 300 290\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><line x1=\"30\" y1=\"268\" x2=\"270\" y2=\"268\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"270\" y1=\"268\" x2=\"270\" y2=\"28\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"30\" y1=\"268\" x2=\"270\" y2=\"28\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"30\" y1=\"268\" x2=\"270\" y2=\"124\" stroke=\"#222\" stroke-width=\"1.4\"/><polyline points=\"261,268 261,259 270,259\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.1\" stroke-linejoin=\"round\" /><path d=\"M 122 268 A 92 92 0 0 0 95.1 202.9\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.0\" stroke-linejoin=\"round\" /><path d=\"M 86 268 A 56 56 0 0 0 78 239.2\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.0\" stroke-linejoin=\"round\" /><text x=\"116.1\" y=\"199.5\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\">45°</text><text x=\"99.9\" y=\"250.6\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\">31°</text><text x=\"20\" y=\"272\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">A</text><text x=\"281\" y=\"274\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">D</text><text x=\"281\" y=\"124\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">C</text><text x=\"281\" y=\"28\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">B</text></svg>",
+   "desc": "A、D 在同一水平线上，D 处竖直向上依次为 C、B；∠BAD=45°，∠CAD=31°。"
+  },
+  "verify": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/verify/teacher_T249x5.py",
+  "issues": "内嵌于 T249 截图底部（排版截图，程序未切分；原题配有雕像照片，作图时省略）。"
+ },
+ {
+  "tid": "T252x1",
+  "host_tid": "T252",
+  "keep": true,
+  "db_match": null,
+  "module": "M08",
+  "kaofa": "梯形对角线分割：等高面积差",
+  "method": "面积差=½×h×底边差",
+  "source": "2019浙江A",
+  "stem": "如下图所示，$A$、$B$、$C$、$D$ 为一块梯形田地的 4 个顶点。已知 $BC$ 比 $AD$ 长 16 米，三角形 $ACD$ 面积比 $ABC$ 小 200 平方米。问 $AD$ 到 $BC$ 的距离是多少米？",
+  "options": {
+   "A": "12.5",
+   "B": "18.5",
+   "C": "20",
+   "D": "25"
+  },
+  "options_added": false,
+  "answer": "D",
+  "jiexi": "$\\triangle ACD$ 以 $AD$ 为底、$\\triangle ABC$ 以 $BC$ 为底，两底平行，所以两个三角形的高都是梯形的高 $h$。面积差 $=\\frac{1}{2}h(BC-AD)=\\frac{1}{2}\\times16h=200$，$h=25$ 米。关键一步：不必求两底各是多少，面积差只和底边差有关。易错：把 200 当成梯形面积去列式。",
+  "learn": "梯形被对角线分成的两个三角形等高，面积差 = ½ × 高 × 两底之差。",
+  "level": "基础",
+  "figure": {
+   "type": "svg",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"328\" height=\"142\" viewBox=\"0 0 328 142\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><polygon points=\"22,22 300,22 246,116 88,116\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.4\" stroke-linejoin=\"round\" /><line x1=\"22\" y1=\"22\" x2=\"246\" y2=\"116\" stroke=\"#222\" stroke-width=\"1.4\"/><text x=\"14\" y=\"14\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">C</text><text x=\"310\" y=\"14\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">B</text><text x=\"78\" y=\"126\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">D</text><text x=\"254\" y=\"128\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">A</text></svg>",
+   "desc": "梯形田地：上底 CB、下底 DA 平行，连对角线 CA。"
+  },
+  "verify": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/verify/teacher_T252x1.py",
+  "issues": "内嵌于 T252 截图“解梯形”部分（排版截图，程序未切分）。"
+ },
+ {
+  "tid": "T252x2",
+  "host_tid": "T252",
+  "keep": true,
+  "db_match": null,
+  "module": "M08",
+  "kaofa": "构造梯形用蝴蝶模型",
+  "method": "连BF得梯形ABFD套1:k:k:k²",
+  "source": "",
+  "stem": "如图所示，$ABCD$ 为梯形，其中 $CD=2AB=3DF$，则三角形 $ADG$ 占该梯形面积的：",
+  "options": {
+   "A": "$\\frac{1}{3}$",
+   "B": "$\\frac{4}{15}$",
+   "C": "$\\frac{1}{5}$",
+   "D": "$\\frac{2}{15}$"
+  },
+  "options_added": false,
+  "answer": "D",
+  "jiexi": "设 $AB=3$，则 $CD=6$、$DF=2$、$FC=4$。连 $BF$，$AB\\parallel DF$，$ABFD$ 是上下底之比 $3:2$ 的梯形，对角线 $AF$、$BD$ 交于 $G$，四块面积比（靠 $DF$:两腰:靠 $AB$）$=2^2:2\\times3:2\\times3:3^2=4:6:6:9$。设 $S_{\\triangle DFG}=4$，则 $S_{\\triangle ADG}=6$，$S_{\\triangle BDF}=4+6=10$；$\\triangle BFC$ 与 $\\triangle BDF$ 同高、底之比 $4:2$，面积 20。梯形总面积 $=4+6+6+9+20=45$，所求 $=\\frac{6}{45}=\\frac{2}{15}$。易错：直接把整个 $ABCD$ 当成以 $G$ 为对角线交点的梯形套模型。",
+  "learn": "交叉线不在原梯形对角线上时，先连线构造真正的小梯形（连 $BF$ 得 $ABFD$），再用 $1:k:k:k^2$ 和同高比。",
+  "level": "难",
+  "figure": {
+   "type": "svg",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"288\" height=\"194\" viewBox=\"0 0 288 194\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><polygon points=\"70,32 190,32 260,170 20,170\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.4\" stroke-linejoin=\"round\" /><line x1=\"70\" y1=\"32\" x2=\"100\" y2=\"170\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"190\" y1=\"32\" x2=\"20\" y2=\"170\" stroke=\"#222\" stroke-width=\"1.4\"/><text x=\"62\" y=\"23\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">A</text><text x=\"198\" y=\"23\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">B</text><text x=\"270\" y=\"178\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">C</text><text x=\"10\" y=\"178\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">D</text><text x=\"100\" y=\"184\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">F</text><text x=\"75\" y=\"116.8\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">G</text></svg>",
+   "desc": "梯形 ABCD（AB∥DC），F 在 DC 上，AF 与 BD 交于 G。"
+  },
+  "verify": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/verify/teacher_T252x2.py",
+  "issues": "内嵌于 T252 截图（排版截图，程序未切分），原题无出处。"
+ },
+ {
+  "tid": "T252x3",
+  "host_tid": "T252",
+  "keep": true,
+  "db_match": null,
+  "module": "M08",
+  "kaofa": "中位线分梯形+蝴蝶模型",
+  "method": "两个梯形各套模型再统一单位",
+  "source": "",
+  "stem": "如图所示，在梯形 $ABCD$ 中，$DC=3AB$，$EF$ 为梯形 $ABCD$ 的中位线，三角形 $EGF$ 的面积：三角形 $EHF$ 的面积 $=5:3$，则四边形 $EGFH$ 的面积：梯形 $ABCD$ 的面积 $=$（ ）",
+  "options": {
+   "A": "1:6",
+   "B": "1:10",
+   "C": "4:13",
+   "D": "4:15"
+  },
+  "options_added": false,
+  "answer": "D",
+  "jiexi": "设 $AB=1$，则 $DC=3$，中位线 $EF=2$。梯形 $ABFE$ 上下底 $1:2$，四个三角形面积比 $1:2:2:4$，$\\triangle EGF$ 占 4 份；梯形 $EFCD$ 上下底 $2:3$，面积比 $4:6:6:9$，$\\triangle EHF$ 占 4 份。按 $S_{\\triangle EGF}=5$、$S_{\\triangle EHF}=3$ 换算：$ABFE$ 共 $5\\times\\frac{9}{4}=11.25$，$EFCD$ 共 $3\\times\\frac{25}{4}=18.75$，梯形共 30，$EGFH=5+3=8$，比为 $8:30=4:15$。易错：把两个小梯形里的“份”直接相加，忽略两套比例的单位不同。",
+  "learn": "两个梯形各用一次 $1:k:k:k^2$，再借题给的面积把两套“份”统一成同一单位。",
+  "level": "难",
+  "figure": {
+   "type": "svg",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"320\" height=\"234\" viewBox=\"0 0 320 234\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><polygon points=\"112,30 202,30 292,210 22,210\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.4\" stroke-linejoin=\"round\" /><line x1=\"67\" y1=\"120\" x2=\"247\" y2=\"120\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"112\" y1=\"30\" x2=\"247\" y2=\"120\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"202\" y1=\"30\" x2=\"67\" y2=\"120\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"67\" y1=\"120\" x2=\"292\" y2=\"210\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"22\" y1=\"210\" x2=\"247\" y2=\"120\" stroke=\"#222\" stroke-width=\"1.4\"/><text x=\"104\" y=\"21\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">A</text><text x=\"210\" y=\"21\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">B</text><text x=\"302\" y=\"218\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">C</text><text x=\"12\" y=\"218\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">D</text><text x=\"56\" y=\"120\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">E</text><text x=\"258\" y=\"120\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">F</text><text x=\"157\" y=\"48\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">G</text><text x=\"157\" y=\"169\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">H</text></svg>",
+   "desc": "梯形 ABCD（AB∥DC），EF 为中位线；AF 与 BE 交于 G，EC 与 DF 交于 H。"
+  },
+  "verify": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/verify/teacher_T252x3.py",
+  "issues": "内嵌于 T252 截图（排版截图，程序未切分），原题无出处。题给 5:3 可由 DC=3AB 推出（条件冗余但一致）。"
+ },
+ {
+  "tid": "T255x1",
+  "host_tid": "T255",
+  "keep": true,
+  "db_match": null,
+  "module": "M08",
+  "kaofa": "两等圆公共部分面积",
+  "method": "120°扇形+两个弓形",
+  "source": "2021青海",
+  "stem": "太平洋上有一个圆形的平坦小岛，岛上遍布森林，闪电击中处于小岛边缘的树木引发森林火灾（如下图所示）。假设火线是以圆弧状往小岛深处推进，问当大火烧到小岛中心位置时，过火面积占全岛面积的比例大约是多少？",
+  "options": {
+   "A": "45%",
+   "B": "40%",
+   "C": "35%",
+   "D": "30%"
+  },
+  "options_added": false,
+  "answer": "B",
+  "jiexi": "火线是以起火点为圆心的圆弧，烧到岛中心时半径等于岛的半径 $r$。过火区是两个半径都为 $r$、圆心互在对方圆上的圆的公共部分。两交点与两圆心构成两个正三角形，所以过火区 = 以起火点为圆心、圆心角 120° 的扇形（$\\frac{1}{3}\\pi r^2$）+ 两个弓形，每个弓形 = 60° 扇形 − 正三角形 $=\\frac{1}{6}\\pi r^2-\\frac{\\sqrt{3}}{4}r^2$。合计 $\\frac{2}{3}\\pi r^2-\\frac{\\sqrt{3}}{2}r^2$，占比 $\\frac{2}{3}-\\frac{\\sqrt{3}}{2\\pi}\\approx0.667-0.276\\approx39\\%$，约 40%。易错：只算 120° 扇形，得 $\\frac{1}{3}\\approx33\\%$（误选 C）。",
+  "learn": "两等圆互过圆心＝两个正三角形；弓形=扇形−三角形，再组合求面积。",
+  "level": "难",
+  "figure": {
+   "type": "svg",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"300\" height=\"272\" viewBox=\"0 0 300 272\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><circle cx=\"150\" cy=\"142\" r=\"100\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.4\"/><path d=\"M 63.4 192 A 100 100 0 0 1 236.6 192\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.6\" stroke-linejoin=\"round\" /><line x1=\"150\" y1=\"242\" x2=\"150\" y2=\"142\" stroke=\"#222\" stroke-width=\"1.0\" stroke-dasharray=\"5 4\"/><text x=\"159\" y=\"194\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">r</text><circle cx=\"150\" cy=\"242\" r=\"2.6\" fill=\"#222\"/><text x=\"150\" y=\"94\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\">森林</text><text x=\"94\" y=\"144\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\">火</text><text x=\"206\" y=\"144\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\">线</text><text x=\"150\" y=\"258\" font-size=\"12\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\">起火点</text></svg>",
+   "desc": "圆形小岛，起火点在岛边缘；火线是以起火点为圆心、过岛中心的圆弧。（只保留原题图：起火点到岛中心的虚线 r；老师补画的扇形边已去掉。）"
+  },
+  "verify": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/verify/teacher_T255x1.py",
+  "issues": "内嵌于 T255 截图（排版截图，程序未切分）。"
+ },
+ {
+  "tid": "T255x2",
+  "host_tid": "T255",
+  "keep": true,
+  "db_match": "2023ZJA-62",
+  "module": "M08",
+  "kaofa": "相切圆+矩形：圆心距勾股",
+  "method": "圆心距=半径和，构直角三角形",
+  "source": "2023浙江C",
+  "stem": "某地打算在绿地上建两个圆形花坛，如下图所示，大圆的直径为 6 米，小圆的直径为 2 米，修建期间暂时在外围设置围栏。已知围栏呈矩形，大圆与围栏的三条边相切，小圆与围栏的两条边相切，且两圆相切，那么矩形围栏的面积是多少平方米？",
+  "options": {
+   "A": "$12(2+\\sqrt{3})$",
+   "B": "$12(1+2\\sqrt{3})$",
+   "C": "$12\\sqrt{13}$",
+   "D": "$6(3+\\sqrt{13})$"
+  },
+  "options_added": false,
+  "answer": "A",
+  "jiexi": "大圆与三边相切，矩形宽 = 大圆直径 6。两圆相切，圆心距 $=3+1=4$；大圆心离上边 3、小圆心离上边 1，竖直差 $3-1=2$，水平差 $\\sqrt{4^2-2^2}=2\\sqrt{3}$。矩形长 $=3+2\\sqrt{3}+1=4+2\\sqrt{3}$，面积 $6(4+2\\sqrt{3})=12(2+\\sqrt{3})$。易错：以为两圆心在同一水平线上，或把竖直差算成 3。",
+  "learn": "两圆相切⇒圆心距=半径和；再找圆心间的竖直差、水平差，构造直角三角形。",
+  "level": "中等",
+  "figure": {
+   "type": "svg",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"263.9\" height=\"220\" viewBox=\"0 0 263.9 220\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><polygon points=\"20,200 243.9,200 243.9,20 20,20\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.4\" stroke-linejoin=\"round\" /><circle cx=\"110\" cy=\"110\" r=\"90\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.4\"/><circle cx=\"213.9\" cy=\"50\" r=\"30\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.4\"/></svg>",
+   "desc": "矩形围栏内：大圆与左、上、下三边相切，小圆与上、右两边相切，两圆外切。"
+  },
+  "verify": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/verify/teacher_T255x2.py",
+  "issues": "内嵌于 T255 截图（排版截图，程序未切分）；老师标 2023浙江C，题库对应 2023浙江A类第62题（同一道题）。"
+ },
+ {
+  "tid": "T255x3",
+  "host_tid": "T255",
+  "keep": true,
+  "db_match": "2021HB-66",
+  "module": "M08",
+  "kaofa": "等边三角形内三圆相切",
+  "method": "连圆心成正△+重心分高2:1",
+  "source": "2021内蒙古",
+  "stem": "某市江滨有一处边长为 50 米的等边三角形广场。广场里设计有三个大小相等的圆环鹅卵石道路供市民散步。如下图所示，各圆相切，各圆与三角形也相切。问沿三个圆环外围石道（不含圆切点之间的弧）散步一圈约为多少米？",
+  "options": {
+   "A": "95",
+   "B": "105",
+   "C": "115",
+   "D": "125"
+  },
+  "options_added": false,
+  "answer": "B",
+  "jiexi": "三圆心构成边长 $2r$ 的正三角形，与广场共中心 $O$。每个圆上，与另两圆的切点之间的内侧弧是 60°，外侧要走 300°，三段合计 $3\\times\\frac{5}{6}\\times2\\pi r=5\\pi r$。求 $r$：$O$ 到广场边的距离 $=\\frac{50}{2\\sqrt{3}}=\\frac{25\\sqrt{3}}{3}$（正三角形中心即重心，分高 2:1），$O$ 到圆心 $=\\frac{2r}{\\sqrt{3}}$，圆心到边 $=r$，所以 $\\frac{25\\sqrt{3}}{3}=\\frac{2\\sqrt{3}}{3}r+r$，$r=\\frac{25}{2+\\sqrt{3}}=25(2-\\sqrt{3})\\approx6.70$。路程 $5\\pi r\\approx105$ 米。易错：外侧弧按半圆或 240° 计算。",
+  "learn": "多圆相切先连圆心成正三角形，切点间的弧对应 60°；正三角形中心到边的距离是高的 $\\frac{1}{3}$。",
+  "level": "难",
+  "figure": {
+   "type": "svg",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"300\" height=\"260\" viewBox=\"0 0 300 260\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><polygon points=\"150,23.5 25,240 275,240\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.4\" stroke-linejoin=\"round\" /><circle cx=\"150\" cy=\"206.5\" r=\"33.5\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.4\"/><circle cx=\"183.5\" cy=\"148.5\" r=\"33.5\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.4\"/><circle cx=\"116.5\" cy=\"148.5\" r=\"33.5\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.4\"/></svg>",
+   "desc": "边长 50 的正三角形内三个等圆两两外切，各与三角形一边相切。"
+  },
+  "verify": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/verify/teacher_T255x3.py",
+  "issues": "内嵌于 T255 截图（排版截图，程序未切分）；题库对应 2021河北第66题（同一套联考卷）。"
+ },
+ {
+  "tid": "T255x4",
+  "host_tid": "T255",
+  "keep": false,
+  "db_match": null,
+  "module": "M08",
+  "kaofa": "相似构型：面积比=距离比²",
+  "method": "两处构型相似",
+  "source": "2025天津",
+  "stem": "某工业园区内一区域如下图所示，三角形 $ABC$ 与 $ACD$ 为两个面积相等的直角三角形，$AB$ 长度是 $BC$ 的 2 倍。现在区域内划出如图两个圆形区域摆放花坛，两个圆形均与图中两条边相切。已知 $B$ 点到大圆、$D$ 点到小圆上任一点的最短距离分别为 $AD$ 长度的 $\\frac{1}{2}$、$\\frac{1}{5}$，问大圆面积是小圆的多少倍？",
+  "options": {
+   "A": "3倍以下",
+   "B": "3～3.5倍之间",
+   "C": "3.5～4倍之间",
+   "D": "4倍以上"
+  },
+  "options_added": false,
+  "answer": "D",
+  "jiexi": "老师思路：两处“顶点+切两边的圆”构型相似，相似比 2:5，面积比 $(\\frac{5}{2})^2=6.25$，选 D。",
+  "learn": "",
+  "level": null,
+  "figure": null,
+  "verify": null,
+  "issues": "内嵌于 T255 截图且被截断（完整见 pages/p100.png）。数据自相矛盾，不建议收：由条件得 ABCD 为平行四边形，∠B=∠D=60°；若大圆与 BA、BC 相切且 B 到大圆最短距离为 AD/2，则大圆半径=AD/2，大于△ABC 内切圆半径（约0.37AD），会越过 AC 甚至 DC，放不进区域；若改按图把大圆看成与 AB、AC 相切，算出约 2.7 倍（A）。"
+ },
+ {
+  "tid": "T256x1",
+  "host_tid": "T256",
+  "keep": true,
+  "db_match": "2025GK-78",
+  "module": "M08",
+  "kaofa": "等积变换：面积与动点无关",
+  "method": "同底等高换形或极限法",
+  "source": "2025国考副省级",
+  "stem": "某厂区如图所示，其中 $ABCD$ 为矩形，$ABEF$ 为直角梯形，$AB$ 与 $DE$ 相交于 $G$ 点，其中阴影区域 $ADGF$ 为涉密区域。已知 $AD$、$AF$、$AB$ 长度分别为 240 米、150 米、100 米，问涉密区域的面积为多少万平方米？",
+  "options": {
+   "A": "1.2",
+   "B": "1.3",
+   "C": "1.4",
+   "D": "1.5"
+  },
+  "options_added": false,
+  "answer": "A",
+  "jiexi": "连接 $AE$。$ABEF$ 是直角梯形，$AB\\parallel EF$，$\\triangle AGF$ 与 $\\triangle AGE$ 同以 $AG$ 为底、高都等于 $BE$，面积相等。于是 $S_{ADGF}=S_{\\triangle ADG}+S_{\\triangle AGF}=S_{\\triangle ADG}+S_{\\triangle AGE}=S_{\\triangle ADE}$；$E$ 在直线 $BC$ 上，$\\triangle ADE$ 以 $AD$ 为底、高为 $AB$，面积 $\\frac{1}{2}\\times240\\times100=12000$ 平方米 $=1.2$ 万平方米，$AF=150$ 是多余条件。老师的极限法：$F$ 在以 $A$ 为圆心、半径 150 的圆上动，转到 $BA$ 延长线上时 $E$ 与 $B$ 重合，阴影变成 $\\triangle ABD$，面积同样是 1.2 万。易错：想用 150 去求 $BE$ 而卡住。",
+  "learn": "平行线间“同底等高”可以换三角形；阴影面积与动点无关时，直接把动点推到特殊位置（极限法）。",
+  "level": "难",
+  "figure": {
+   "type": "svg",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"306\" height=\"231.5\" viewBox=\"0 0 306 231.5\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><polygon points=\"90,123.5 282,123.5 90,183.5 26,22\" fill=\"#a8a8a8\" stroke=\"none\" stroke-linejoin=\"round\" /><polygon points=\"90,123.5 282,123.5 282,203.5 90,203.5\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.4\" stroke-linejoin=\"round\" /><line x1=\"90\" y1=\"203.5\" x2=\"26\" y2=\"203.5\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"26\" y1=\"203.5\" x2=\"26\" y2=\"22\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"26\" y1=\"22\" x2=\"90\" y2=\"123.5\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"282\" y1=\"123.5\" x2=\"26\" y2=\"203.5\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"26\" y1=\"22\" x2=\"90\" y2=\"183.5\" stroke=\"#222\" stroke-width=\"1.4\"/><text x=\"99\" y=\"114.5\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">A</text><text x=\"90\" y=\"216.5\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">B</text><text x=\"282\" y=\"216.5\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">C</text><text x=\"282\" y=\"112.5\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">D</text><text x=\"26\" y=\"216.5\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">E</text><text x=\"16\" y=\"16\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">F</text><text x=\"101\" y=\"194.5\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">G</text></svg>",
+   "desc": "矩形 ABCD（AB 竖直在左），直角梯形 ABEF（E 在 CB 延长线上，EF⊥BE），DE 交 AB 于 G，阴影为四边形 ADGF。"
+  },
+  "verify": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/verify/teacher_T256x1.py",
+  "issues": "内嵌于 T256 截图（排版截图，程序未切分）。"
+ },
+ {
+  "tid": "T256x2",
+  "host_tid": "T256",
+  "keep": true,
+  "db_match": null,
+  "module": "M08",
+  "kaofa": "等积变换：平行对角线",
+  "method": "FD∥AC，阴影=△ADC",
+  "source": "",
+  "stem": "如图所示为两个相邻的正方形，其中大正方形 $ABCD$ 的周长为 40 cm，连接 $A$、$C$、$F$ 三点，那么阴影部分的面积是多少？",
+  "options": {
+   "A": "40平方厘米",
+   "B": "50平方厘米",
+   "C": "55平方厘米",
+   "D": "60平方厘米"
+  },
+  "options_added": false,
+  "answer": "B",
+  "jiexi": "大正方形边长 10。小正方形的对角线 $FD$ 与大正方形的对角线 $AC$ 都与边成 45°，$FD\\parallel AC$，所以 $F$、$D$ 到 $AC$ 的距离相等，$S_{\\triangle AFC}=S_{\\triangle ADC}=\\frac{1}{2}\\times10\\times10=50$ 平方厘米，与小正方形大小无关。老师的极限法：把 $F$ 推到与 $D$ 重合（小正方形缩成一点），阴影就是 $\\triangle ADC$。易错：以为缺小正方形边长、条件不够。",
+  "learn": "两个正方形并排，对角线互相平行——用“平行线间等积变换”，或让小正方形缩成一点。",
+  "level": "中等",
+  "figure": {
+   "type": "svg",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"338\" height=\"232\" viewBox=\"0 0 338 232\"><defs><pattern id=\"h_sq\" patternUnits=\"userSpaceOnUse\" width=\"6\" height=\"6\" patternTransform=\"rotate(45)\"><line x1=\"0\" y1=\"0\" x2=\"0\" y2=\"6\" stroke=\"#555\" stroke-width=\"1\"/></pattern></defs><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><polygon points=\"132,24 24,96 312,204\" fill=\"url(#h_sq)\" stroke=\"none\" stroke-linejoin=\"round\" /><polygon points=\"132,24 312,24 312,204 132,204\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.4\" stroke-linejoin=\"round\" /><polygon points=\"24,96 132,96 132,204 24,204\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.4\" stroke-linejoin=\"round\" /><line x1=\"132\" y1=\"24\" x2=\"24\" y2=\"96\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"24\" y1=\"96\" x2=\"312\" y2=\"204\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"132\" y1=\"24\" x2=\"312\" y2=\"204\" stroke=\"#222\" stroke-width=\"1.4\"/><text x=\"132\" y=\"13\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">A</text><text x=\"321\" y=\"15\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">B</text><text x=\"321\" y=\"213\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">C</text><text x=\"132\" y=\"218\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">D</text><text x=\"15\" y=\"213\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">E</text><text x=\"13\" y=\"96\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">F</text></svg>",
+   "desc": "大正方形 ABCD 左侧并排一个小正方形（右边贴在 AD 上，底边在 DC 延长线上），F 为小正方形左上顶点；阴影为三角形 AFC。"
+  },
+  "verify": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/verify/teacher_T256x2.py",
+  "issues": "内嵌于 T256 截图（排版截图，程序未切分），原题无出处。"
+ },
+ {
+  "tid": "T256x3",
+  "host_tid": "T256",
+  "keep": true,
+  "db_match": null,
+  "module": "M08",
+  "kaofa": "动点问题：面积与长度无关",
+  "method": "相似消元或极限法B→F",
+  "source": "2025天津",
+  "stem": "某矩形农场 $ABCD$ 如图所示，矩形区域 $ADEF$ 为生产区，矩形区域 $BCEF$ 为休闲区。现连接 $BD$ 将两区域打通，与 $EF$ 相交于 $O$ 点。已知 $AF$ 和 $FE$ 的长度分别为 600 米和 400 米，问 $COD$ 围成的三角形阴影区域面积为多少万平方米？",
+  "options": {
+   "A": "12",
+   "B": "15",
+   "C": "16",
+   "D": "18"
+  },
+  "options_added": false,
+  "answer": "A",
+  "jiexi": "$\\triangle COD$ 以 $DC$ 为底、高为 $OE$。设 $DC=L$，由 $\\triangle DEO\\sim\\triangle DCB$：$OE=BC\\times\\frac{DE}{DC}=400\\times\\frac{600}{L}$，面积 $=\\frac{1}{2}L\\times\\frac{240000}{L}=120000$ 平方米 $=12$ 万平方米，与 $L$ 无关。老师的极限法：让 $B$ 向 $F$ 靠拢直到重合，此时 $C$ 与 $E$ 重合，阴影变成 $\\triangle DFE$，面积 $\\frac{1}{2}\\times600\\times400=12$ 万。易错：以为缺 $FB$ 的长度而无从下手。",
+  "learn": "缺一个长度却要求面积，答案多半与它无关——用相似消元，或用极限法把它推到 0。",
+  "level": "中等",
+  "figure": {
+   "type": "svg",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"308\" height=\"180\" viewBox=\"0 0 308 180\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><polygon points=\"26,152 218,56 282,152\" fill=\"#8f8f8f\" stroke=\"none\" stroke-linejoin=\"round\" /><polygon points=\"26,24 282,24 282,152 26,152\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.4\" stroke-linejoin=\"round\" /><line x1=\"218\" y1=\"24\" x2=\"218\" y2=\"152\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"282\" y1=\"24\" x2=\"26\" y2=\"152\" stroke=\"#222\" stroke-width=\"1.4\"/><line x1=\"218\" y1=\"56\" x2=\"282\" y2=\"152\" stroke=\"#222\" stroke-width=\"1.4\"/><text x=\"17\" y=\"16\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">A</text><text x=\"291\" y=\"16\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">B</text><text x=\"291\" y=\"161\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">C</text><text x=\"17\" y=\"161\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">D</text><text x=\"218\" y=\"13\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">F</text><text x=\"218\" y=\"165\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">E</text><text x=\"207\" y=\"47\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">O</text></svg>",
+   "desc": "矩形 ABCD，F 在 AB 上、E 在 DC 上（EF⊥DC），BD 交 EF 于 O，阴影为三角形 COD。"
+  },
+  "verify": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/verify/teacher_T256x3.py",
+  "issues": "内嵌于 T256 截图（排版截图，程序未切分）。"
+ },
+ {
+  "tid": "T256x4",
+  "host_tid": "T256",
+  "keep": true,
+  "db_match": "2024HB-75",
+  "module": "M08",
+  "kaofa": "圆周运动：周长比定半径",
+  "method": "周长比=速度比×时间比",
+  "source": "2024河北",
+  "stem": "某地人工湖景区开辟了沿湖福道和环湖乐道两条圆形观景道供市民休闲健身（如下图所示）。小李和他的妈妈分别沿乐道和福道从 $A$、$B$ 两地同时同向而行（$A$、$B$ 两点间距离为 50 米），小李骑自行车的速度是妈妈步行速度的 6 倍，已知妈妈步行速度为每小时 5 千米，妈妈沿福道步行一周的时间是小李骑行乐道时间的 4 倍，那么这个湖面的面积约多少万平方米？（圆周率取 3）",
+  "options": {
+   "A": "2",
+   "B": "3",
+   "C": "4",
+   "D": "6"
+  },
+  "options_added": false,
+  "answer": "B",
+  "jiexi": "周长 = 速度 × 一圈时间。速度比 李:妈 = 6:1，一圈时间比 李:妈 = 1:4，周长比 乐道:福道 = 6:4 = 3:2，半径比也是 3:2。两半径相差 1 份 = $AB$ = 50 米，所以福道（湖边）半径 100 米，湖面面积 $3\\times100^2=30000$ 平方米 = 3 万平方米。妈妈的速度 5 千米/小时是多余条件。易错：把乐道围成的大圆当成湖面（半径 150，得 6.75 万）。",
+  "learn": "圆周运动：周长比=速度比×时间比，半径与周长同比例；多余条件不必用。",
+  "level": "中等",
+  "figure": {
+   "type": "svg",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"330\" height=\"300\" viewBox=\"0 0 330 300\"><rect width=\"100%\" height=\"100%\" fill=\"#fff\"/><circle cx=\"160\" cy=\"150\" r=\"85\" fill=\"#ececec\" stroke=\"#333\" stroke-width=\"1.6\" stroke-dasharray=\"1.5 3\"/><circle cx=\"160\" cy=\"150\" r=\"127.5\" fill=\"none\" stroke=\"#222\" stroke-width=\"1.8\" stroke-dasharray=\"12 7\"/><line x1=\"245\" y1=\"150\" x2=\"287.5\" y2=\"150\" stroke=\"#222\" stroke-width=\"1.6\"/><line x1=\"287.5\" y1=\"144\" x2=\"287.5\" y2=\"156\" stroke=\"#222\" stroke-width=\"1.4\"/><circle cx=\"160\" cy=\"150\" r=\"2.4\" fill=\"#222\"/><text x=\"160\" y=\"134\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\">湖面</text><text x=\"210\" y=\"104\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\">福道</text><text x=\"282\" y=\"68\" font-size=\"13\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\">乐道</text><text x=\"234\" y=\"150\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">B</text><text x=\"299.5\" y=\"150\" font-size=\"14\" text-anchor=\"middle\" dominant-baseline=\"central\" fill=\"#222\" font-weight=\"normal\" font-family=\"'Noto Sans SC','Noto Sans CJK SC','PingFang SC','Microsoft YaHei',sans-serif\" font-style=\"italic\">A</text></svg>",
+   "desc": "同心圆：内圆（点线）为沿湖福道，围成湖面；外圆（虚线）为环湖乐道；A 在乐道上、B 在福道上，AB 沿半径方向。"
+  },
+  "verify": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/verify/teacher_T256x4.py",
+  "issues": "内嵌于 T256 截图（排版截图，程序未切分）。"
+ }
+]

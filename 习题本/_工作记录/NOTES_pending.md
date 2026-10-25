@@ -31,3 +31,21 @@
 - real_overrides added: 2021GK-67 (crop has C/D swapped vs official key → typed stem in original order), 2026CQ-56/57 (masked stems + self-written 解析), 2020HB-75 (fraction cut in crop → typed), 2021GK-64 / 2022ZJA-60 (extra notes).
 - j crops to re-crop (top half-line cut, bottom shows next question's answer): 2022ZJA-60, 2022ZJA-63 (day 15), 2024ZJA-64 (day 29); 2023GK-74 j crop right side cut (day 29); 2021ZJA-61 q crop fraction top clipped (day 15).
 - 2026HB-71 duplicates 2026CQ-56 (keep one).
+
+## Teacher bank (忧郁牛牛 26数量关系笔记, uploaded 2026-10-25)
+- teacher/examples.json (267 parsed examples; scripts/teacher_parse.py, teacher_match.py, teacher_crops.py) → teacher/bank_B1..B6.json + bank_B6x.json (16 extra geometry examples found inside long crops). 272 usable, all answers verified (verify/teacher_*.py). Teacher's errors found: T025 answer (44 not 42), T012 stem contradiction (fixed), many solution typos (in issues).
+- Possible missed examples: sections 三/五/八/九/十二/十四 have 1–3 more white boxes than parsed examples — check later.
+- Teacher items that match DB questions (db_match) should be used via the DB crop + official 解析 (+ teacher method as note).
+
+## Week-1 math 去水 (2026-10-25): conflicts to clear when building days 8–42
+- Every real added to week 1 via db/math_harden.json add_real was pulled from a later day's plan → when assembling days 8–42, skip any real already used in days 1–7 (build a global used-set from the delivered week-1 item lists) and refill those slots.
+- D01 pulled seeds from days 15/29/39 → re-plan 〔15-2-2〕〔15-9-1〕〔15-10-2〕〔15-14-1〕〔29-4-2〕〔29-7-2〕〔29-15-2〕〔39-6-1〕〔39-9-2〕〔39-12-2〕〔39-15-2〕.
+- D04 new variants borrowed M05 skeletons of days 18/32 (报童、三套餐、分段变动成本、两级补贴、订货批量、差量反推分界) → change those two days.
+- D07 used 2024SD-60 (teacher T261; DB module M04) → mark as used in M04 later rounds.
+- New-variant overlaps found by the blind reviews (revh_A, revh_B):
+  - D02-h-v01 was the 2026ZJA-56 template (day 16 real; 〔30-5-2〕 same seed) → v01 being rewritten; re-check day 16/30 anyway.
+  - D02-h-v03 ↔ 〔30-7-1〕 (中途减牛/减泵); day 16 has 中途增开窗口.
+  - D03-h-v01 ↔ 〔17-5-3〕; D03-h-v04 ↔ 〔17-15-1〕; D03-h-v02 ↔ 〔31-6-2〕; D03-h-v03 ↔ 〔40-12-2〕.
+  - D07-h-v01 ↔ 〔42-5-1〕; D07-h-v02 ↔ day-42 real 2026CQ-65, 〔42-4-1〕, 〔21-4-5〕.
+  - D06-h-v08 box data (3+2 / 2+3) = 〔34-11-1〕 → change day 34's data/direction.
+- Teacher figures: SVG redraws in teacher/bank_B6x.json; T255x1 had the teacher's added sector edge (dashed r to the intersection) → removed. Check every teacher figure against the original exam figure before use (teacher crops carry handwritten auxiliary lines).

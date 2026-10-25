@@ -1,0 +1,178 @@
+=== CANDIDATE_REAL
+----- {"id": "2020SC1206-43", "paper": "2020四川(12月)", "answer": "C", "planned_day": 18, "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020SC1206-43_q.png", "j_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020SC1206-43_j.png", "has_official_jiexi": true, "kaofa": "经济-销售额最值(高价优先)"}
+TEXT: 43、甲、乙、丙3种商品的库存分别为300件、300件和400件，单价分别为300元、500元和400元。销售出
+总库存量一半的商品后，剩余商品打5折销售，问总销售额最高为多少万元？
+A、28.5    B、30    C、31.5    D、33
+----- {"id": "2023SD-41", "paper": "2023山东", "answer": "B", "planned_day": 18, "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023SD-41_q.png", "j_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023SD-41_j.png", "has_official_jiexi": true, "kaofa": "经济-等额本金还款"}
+TEXT: 41.小张从银行贷款60万元，采取等额本金的还款方式，20年还清，贷款年利率4.1%。小张第二个月需还款多少
+元？
+A.4550.0              B.4541.5              C.5137.0              D.5290.5
+----- {"id": "2020HB-66", "paper": "2020河北", "answer": "A", "planned_day": 18, "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020HB-66_q.png", "j_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020HB-66_j.png", "has_official_jiexi": true, "kaofa": "分段计费-出租车求最远里程"}
+TEXT: 66、某市出租车价格为：2公里以内8元，超过2公里不足5公里的部分，每公里2元；超过5公里不足8公里
+的部分，每公里3元；8公里以上的部分，每公里4元；不足1公里按1公里计算。某位乘客乘坐出租车花了20
+元，该出租车最多行驶了多少公里？
+A、7   B、8   C、9   D、10
+----- {"id": "2020SC0725-51", "paper": "2020四川(7月)", "answer": "A", "planned_day": 32, "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020SC0725-51_q.png", "j_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020SC0725-51_j.png", "has_official_jiexi": true, "kaofa": "利润-两种规格利润方程组"}
+TEXT: 51、某超市出售1.5升装和4升装两种规格的矿泉水，1.5升装的每瓶进价3元，售价4.5元；4升装的每瓶进
+价7元，售价9元。三月份该超市共出售1000升矿泉水，利润（总售价一总进价）为800元。问售出1.5升装
+水的瓶数是4升装的几倍?
+A、4    B、3    C、2    D、1.5
+----- {"id": "2021GK-75", "paper": "2021国考副省级", "answer": "C", "planned_day": 32, "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021GK-75_q.png", "j_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021GK-75_j.png", "has_official_jiexi": true, "kaofa": "经济-满减券方程+最低支付"}
+TEXT: 75.某商业街复工复产之后，向消费者发放满50元减10元、满100元减30元的电子优惠券各若干张，并规定消费者
+在商户处完成交易并核销电子优惠券后，商户可以免除等同于核销优惠券减免金额75%的店面租金。促销期
+内，商户共核销优惠券15.6万张，通过核销优惠券方式减免租金219万元。问该次促销中，消费者实际支付金额
+可能的最低值在以下哪个范围内？
+A.不到750万元                               B.750～800万元之间
+C.800～850万元之间                          D.超过850万元
+----- {"id": "2021JSA-59", "paper": "2021江苏A卷", "answer": "D", "planned_day": 18, "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021JSA-59_q.png", "j_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021JSA-59_j.png", "has_official_jiexi": true, "kaofa": "经济-打折客流变化收入比"}
+TEXT: 59、为促进旅游业复苏，今年8月1日起至年底，某景区门票价格在原定价的基础上，工作日执行两折票价，双
+休日及法定节假日执行五折票价。预计门票打折后，每天的游客人数均比原来翻一番，已知打折前该景区双休日
+平均每天的游客人数是工作日的5倍，则打折后，该景区一周（该周无法定节假日）的门票收入是打折前的：
+A、0.5倍   B、0.6倍   C、0.7倍   D、0.8倍
+----- {"id": "2021JSA-62", "paper": "2021江苏A卷", "answer": "B", "planned_day": 18, "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021JSA-62_q.png", "j_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021JSA-62_j.png", "has_official_jiexi": true, "kaofa": "经济-买赠促销求数量"}
+TEXT: 62、小王去超市购买便携包和小哑铃作为知识竞赛活动的奖品。这两种商品超市正在进行促销，便携包单价18
+元，买2送1; 小哑铃单价12元，买3送1。小王按计划购买了便携包和小哑铃合计56个，共使用活动经费
+606元，则他购买小哑铃的数量是：
+A、24个   B、25个   C、26个   D、27个
+----- {"id": "2021SD-43", "paper": "2021山东", "answer": "B", "planned_day": 32, "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021SD-43_q.png", "j_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021SD-43_j.png", "has_official_jiexi": true, "kaofa": "利润-赋值求利润率(分日)"}
+TEXT: 43、某种商品第一天原价销售，第二天开始每天的销售价格比上一天下降原价的10%。在最后一天前，每天的销
+量比上一天提高100%。最后一天的销量与第三天相同。总共6天全部卖完。如果这种商品的成本为原价60%，问
+销售这种商品的总利润是总成本的：
+A、不到10%   B、10%—20%之间   C、20%—30%之间   D、30%以上
+----- {"id": "2021ZJA-70", "paper": "2021浙江A类", "answer": "B", "planned_day": 18, "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021ZJA-70_q.png", "j_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021ZJA-70_j.png", "has_official_jiexi": true, "kaofa": "利润-赋值求利润占比"}
+TEXT: 70.由于采用了新的种植技术，某种农产品的产量和品质都得到了提升。在平均每亩增产25%的同时，每千克售价
+也增加了20%。尽管每亩生产成本增加了35%，但每亩利润也增加了100%。问采用新种植技术后，每亩利润占
+每亩销售收入的比例在以下哪个范围内？
+A.不到25%                                  B.25%~35%
+C.35%~45%                                 D.超过45%
+----- {"id": "2022GK-63", "paper": "2022国考副省级", "answer": "C", "planned_day": 18, "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022GK-63_q.png", "j_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022GK-63_j.png", "has_official_jiexi": true, "kaofa": "经济-单价数量预算方程"}
+TEXT: 63.企业列出500万元设备采购预算，如用于购买x台进口设备，最后剩余20万元。经董事会研究后，决定购买质量
+更高的同类国产设备，单价仅为进口设备的75%。当前预算可购买x+3台，最后剩余5万元。问国产设备的单价
+在以下哪个范围内？
+A.不到30万元/台                             B.30—40万元/台之间
+C.40—50万元/台之间                          D.50万元/台以上
+----- {"id": "2022GK-75", "paper": "2022国考副省级", "answer": "B", "planned_day": 32, "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022GK-75_q.png", "j_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022GK-75_j.png", "has_official_jiexi": true, "kaofa": "利润-降价打折求成本定价"}
+TEXT: 75.某种商品的定价为成本的1.5倍，如果在降价30元/件的基础上再打八折，则销售5件这种商品的利润比原价销售
+1件时多130元。问用以下哪种折扣销售时，1.5万元能买到的件数正好比原价销售时多4件？
+A.先降价50元/件再打八折                      B.先打九折再降价50元/件
+C.降价150元/件                              D.打八五折
+----- {"id": "2022SD-40", "paper": "2022山东", "answer": "B", "planned_day": 18, "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022SD-40_q.png", "j_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022SD-40_j.png", "has_official_jiexi": true, "kaofa": "经济-分段优惠代入求价"}
+TEXT: 40.某图书网店规定，一次性购买图书定价之和超过100元、500元、1000元，分别优惠总额的2%、5%、10%，优
+惠不叠加，且每笔订单客户需额外支付邮费6元。已知一次性购买10本某种教材的开销比分10次购买单本这种
+教材低174元。问：单次购买1本这种教材的开销是多少元？
+A.123.6               B.153                 C.183.6               D.202
+----- {"id": "2023GK-61", "paper": "2023国考副省级", "answer": "B", "planned_day": 18, "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023GK-61_q.png", "j_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023GK-61_j.png", "has_official_jiexi": true, "kaofa": "利润-打折降价利润相等"}
+TEXT: 61.商店销售某种商品，打八折销售时卖2件的利润与按定价销售时卖1件的利润相同，相当于降价120元/件销售时
+卖3件的利润。问该商品的定价为多少元/件？
+A.360                B.450                 C.540                 D.720
+----- {"id": "2023SC-52", "paper": "2023四川", "answer": "C", "planned_day": 32, "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023SC-52_q.png", "j_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023SC-52_j.png", "has_official_jiexi": true, "kaofa": "经济-预算约束购买方案数"}
+TEXT: 52.为了保护生态环境，某单位需要购买一批污水处理设备，总的预算不超过120万元。现
+有甲、乙两种类型设备可供选择，如果购买2台甲型设备和3台乙型设备，将超出预算10
+万元；若购买3台甲型设备和2台乙型设备，将结余10万元。若该单位最终购买5台污水
+处理设备，问共有几种购买方案？
+A.1
+B.2
+C.3
+D.4
+----- {"id": "2023SD-44", "paper": "2023山东", "answer": "C", "planned_day": 32, "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023SD-44_q.png", "j_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023SD-44_j.png", "has_official_jiexi": true, "kaofa": "经济-改造节约成本回本"}
+TEXT: 44.某企业花费3456万元改造了一条自动化生产线，单位产品人工成本降低了50%，非人工成本降低了10%，单日
+产量扩大了一倍，已知改造前的单位产品人工成本是非人工成本的3倍，改造后每天的人工成本比非人工成本
+高3.6万元。问多少天后新生产线降低的成本可与花费的改造成本相抵？
+A.480                B.300                 C.360                 D.540
+----- {"id": "2023SZ-58", "paper": "2023深圳", "answer": "B", "planned_day": 32, "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023SZ-58_q.png", "j_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023SZ-58_j.png", "has_official_jiexi": true, "kaofa": "经济-两平台计费收益方程"}
+TEXT: 58
+作曲人阿伟不久前创作了一首歌，甲、乙两个音乐平台均获得其使用权，甲平台根据该歌曲播放数乘
+以0.01元给予收益；乙平台除给予10万元基础收益外，另计每次播放收益0.006元，现从甲平台获得的
+收益比乙平台多10000元，且此时该歌曲在甲平台的播放量比在乙平台高500万次，那么该歌曲在甲平台
+的播放量为（     ）万次。
+A、1800
+B、2000
+C、2200
+D、2400
+----- {"id": "2024JSA-53", "paper": "2024江苏A类", "answer": "D", "planned_day": 18, "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024JSA-53_q.png", "j_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024JSA-53_j.png", "has_official_jiexi": true, "kaofa": "利润-打折前后两段销售"}
+TEXT: 53.某商店购进一款无线路由器，进价100元/个，加价30%出售，半年后将剩下的打7折全部售出，共盈利7410元。
+若成本利润率为19%，则打7折售出的无线路由器共有（    ）。
+A.90个                B.100个               C.105个               D.110个
+----- {"id": "2024SC-47", "paper": "2024四川", "answer": "C", "planned_day": 18, "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024SC-47_q.png", "j_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024SC-47_j.png", "has_official_jiexi": true, "kaofa": "打折促销-满额折扣反推原价"}
+TEXT: 47.某店开展打折促销活动：满488元打8折，满688元打7折，满988元打6折。小张两次购物分别实际支付400元和
+630元。问他如果一次性购买所有商品最多可能比分两次购买节省多少元?
+A.100                B.190                 C.250                 D.412
+----- {"id": "2024SD-58", "paper": "2024山东", "answer": "B", "planned_day": 18, "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024SD-58_q.png", "j_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024SD-58_j.png", "has_official_jiexi": true, "kaofa": "利润-提价减量求售价范围"}
+TEXT: 58.某线上店铺将进货单价为8元的商品按每件10元出售，每天可销售100件。该店铺计划提高售价增加利润，若每
+件商品售价每提高1元，每天销售量就要减少10件，为保证每天至少获利350元，问该商品售价应为多少？
+A.不到13元            B.13~15元之间         C.15~17元之间         D.17元以上
+----- {"id": "2024ZJA-59", "paper": "2024浙江A类", "answer": "C", "planned_day": 18, "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024ZJA-59_q.png", "j_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024ZJA-59_j.png", "has_official_jiexi": true, "kaofa": "打折促销-两店方案比较最少花费"}
+TEXT: 59.甲、乙两店同时开展促销活动，甲店单件商品的标价超过50元可以立减20元后再打9折，乙店单件商品的标价
+超过50元可以打8折后再立减10元。现两家店都在销售3种商品，相同商品在两店价格相同，分别为45元、75
+元、85元，某人准备购买其中两种商品各一件，最少的花费在以下哪个范围之内？
+A.90元以下            B.90~93元             C.93~96元             D.96元以上
+----- {"id": "2025GK-76", "paper": "2025国考副省级", "answer": "B", "planned_day": 18, "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025GK-76_q.png", "j_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025GK-76_j.png", "has_official_jiexi": true, "kaofa": "利润-打折+等差销量总利润"}
+TEXT: 76.某种商品在定价基础上打八折销售，打折之前每天卖40件，开始打折第一天起，每天都比前一天多卖10件。打
+折销售15天的利润总额与打折之前销售20天的利润总额相同，问这种商品的成本是定价的：
+A.60%                B.64%                C.70%                D.75%
+----- {"id": "2026ZJA-58", "paper": "2026浙江A类", "answer": "D", "planned_day": 18, "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2026ZJA-58_q.png", "j_img": null, "has_official_jiexi": false, "kaofa": "利润-套餐打折求成本"}
+TEXT: 58.某快餐店1份盒饭售价40元，1杯奶茶售价10元。如果2份盒饭和1杯奶茶配套出售，打九折，可获利20元；如果
+4份盒饭和3杯奶茶配套出售，打八折，可获利24元。那么按原价出售，1份盒饭比1杯奶茶多获利多少元？
+A.7                  B.7.5                 C.8                  D.8.5
+----- {"id": "2020SC0725-50", "paper": "2020四川(7月)", "answer": "A", "planned_day": 32, "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020SC0725-50_q.png", "j_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020SC0725-50_j.png", "has_official_jiexi": true, "kaofa": "经济-包装优惠最优购买"}
+TEXT: 50、某种圆珠笔单支购买1.7元/支，另有5元/3支和15元/10支两种包装供购买，办公室购买这种圆珠笔x
+支，最低可能的购买总价为1.7x-2.3元，问x可能的最大值为：
+A、19    B、21    C、29    D、31
+----- {"id": "2024SZ-57", "paper": "2024深圳", "answer": "B", "planned_day": 32, "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024SZ-57_q.png", "j_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024SZ-57_j.png", "has_official_jiexi": true, "kaofa": "经济-分段计酬(补贴/扣减)"}
+TEXT: 57.某同城速递平台给予骑手每单a 元基础收益（a 为整数），且该平台在鼓励骑手多劳多得
+的同时，还鼓励其关注个人健康，在完成一定数量的订单后及时休息，并为此设定了每日基
+础接单量和健康临界接单量。骑手在完成基础接单量后，超出的订单每单收益平台补贴1.5元
+（a+1.5）；但若持续接单，超出健康临界接单量的订单每 单收益平台扣除1元（a-1）。已知
+某骑手某日完成30单，共获得247.5元；第二日完成40单，共获得315元。若该骑手仅第二
+日超出了健康临界接单量，则扣除后的每单收益为（ ）元。
+A.5               B.6               C.7           
+----- {"id": "2025SD-58", "paper": "2025山东", "answer": "D", "planned_day": 32, "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025SD-58_q.png", "j_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025SD-58_j.png", "has_official_jiexi": true, "kaofa": "利润-多平台多商品利润计算"}
+TEXT: 58  某品牌有甲、乙两种商品在A、B两个跨境电商平台销售。甲商品和乙商品的成本分别为50元/件和70
+元/件，在A平台两种商品的售价均在成本基础上加价60%，在B平台的售价均在成本基础上加价80%。
+上个月A、B两个平台的利润均为123600元。已知乙商品在A平台上售出800件，所得利润是在B平台上
+的2倍。问甲、乙两种商品售出数量之比在下列哪个范围内？
+A、低于3            B、3~4之间          C、4~5之间          D、高于5
+----- {"id": "2021HB-69", "paper": "2021河北", "answer": "D", "planned_day": null, "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021HB-69_q.png", "j_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021HB-69_j.png", "has_official_jiexi": true, "kaofa": "分段计费-稿费纳税反求稿费"}
+TEXT: 69、假设个人出版著作所得稿费纳税方法如下：（1）稿费不超过800元不纳税；（2）超过800元但不超过4000
+元的部分纳税10%；：（3）超过4000元的部分纳税15%。已知张教授出版一部著作，纳税620元，则张教授的这
+笔稿费是多少元？
+1,9000   B、8000   C. 7000   D、6000
+----- {"id": "2021HB-72", "paper": "2021河北", "answer": "C", "planned_day": null, "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021HB-72_q.png", "j_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021HB-72_j.png", "has_official_jiexi": true, "kaofa": "经济-运输方案总费用比较"}
+TEXT: 72、某果品公司急需将一批不易存放的水果且市运到B市销售。现有四家运输公司可供选择，这四家运输公司
+提供的信息如下：
+运输单位  运输速度   运输费用  包装与装卸时间 包装与装卸费用
+(千米/小时)  (元/干米)    (小时)       (元)
+甲公司     60                           1500
+乙公司     50                          1000
+丙公司    100                          700
+丁公司     75                          1200
+如果B两市的距离
+=== TEACHER
+----- {"tid": "T009", "source": "2023国考副省级", "db_match": "2023GK-61", "already_in_day": false, "level": "中等", "method": "赋值定价10份", "kaofa": "打折降价利润相等求定价", "learn": "利润题赋定价为10份，用“利润相等”求出成本份数，再把降价金额对应到份数上。", "answer": "B", "has_figure": false, "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T009.png", "section": "第二节 比例问题"}
+STEM: 商店销售某种商品，打八折销售时卖2件的利润与按定价销售时卖1件的利润相同，相当于降价120元/件销售时卖3件的利润。问该商品的定价为多少元/件？
+OPTS: {'A': '360', 'B': '450', 'C': '540', 'D': '720'}
+JX: 老师赋值：设定价10份，八折售价8份，成本c份。卖2件八折的利润=卖1件原价的利润：2(8−c)=10−c，c=6，原价卖1件利润4份。降价后卖3件利润也是4份，每件利润$\frac{4}{3}$份，售价6+$\frac{4}{3}$=$\frac{22}{3}$份，比定价少10−$\frac{22}{3}$=$\frac{8}{3}$份，对应120元，1份=45元，定价=10×45=450元。易错：求出1份45元后答成八折售价8×45=360元；或把“降价120元”理解成降到120元。
+----- {"tid": "T015", "source": "2022国考", "db_match": "2022GK-63", "already_in_day": false, "level": "中等", "method": "比例乘除：数量=总价÷单价", "kaofa": "预算剩余求单价", "learn": "总价、单价、数量三量中已知两个比，就能直接除出第三个比，免解分式方程。", "answer": "C", "has_figure": false, "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T015.png", "section": "第二节 比例问题"}
+STEM: 企业列出500万元设备采购预算，如用于购买$x$台进口设备，最后剩余20万元。经董事会研究后，决定购买质量更高的同类国产设备，单价仅为进口设备的75%。当前预算可购买$x+3$台，最后剩余5万元。问国产设备的单价在以下哪个范围内？
+OPTS: {'A': '不到30万元/台', 'B': '30—40万元/台之间', 'C': '40—50万元/台之间', 'D': '50万元/台以上'}
+JX: 老师用比例乘除（数量=总价÷单价）。进口设备花500−20=480万元买x台，国产设备花500−5=495万元买x+3台，单价比国产∶进口=3∶4。数量比=总价比÷单价比：(x+3)∶x=$\frac{495}{3}$∶$\frac{480}{4}$=165∶120=11∶8，所以x=8，国产买11台，单价495÷11=45万元，在40～50万元之间。易错：把500万元直接当花费，漏减剩余；或把单价比写反成4∶3。
+----- {"tid": "T090", "source": "2021湖北选调", "db_match": null, "already_in_day": false, "level": "基础", "method": "赋值成本为1，公式法", "kaofa": "收入成本变化求利润率", "learn": "利润率的分母是成本，赋值成本为1，能把各种百分数变化直接变成数值计算。", "answer": "C", "has_figure": false, "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T090.png", "section": "第七节 溶液问题、经济利润问题"}
+STEM: 某企业2020年营业收入比上年降低了10%，但国家减税降费政策使成本比上年降低了20%。若2019年该企业的利润率为20%，则2020年该企业的利润率为多少？
+OPTS: {'A': '25%', 'B': '30%', 'C': '35%', 'D': '40%'}
+JX: 公式法+赋值：利润率=利润÷成本。设2019年成本为1，利润率20%，则利润0.2、营收1.2。2020年营收=1.2×(1−10%)=1.08，成本=1×(1−20%)=0.8，利润=1.08−0.8=0.28，利润率=0.28÷0.8=35%。典型错误：用营收作分母，0.28÷1.08≈26%，误选A；或凭感觉认为“成本比收入多降10个百分点，利润率就加10个百分点”而选B。
+----- {"tid": "T091", "source": "2019四川选调", "db_match": null, "already_in_day": false, "level": "基础", "method": "比例除法，剔除干扰条件", "kaofa": "单利与销量的比例变化", "learn": "乘积型关系（总量=单量×数量）用“前后比相除”求另一个量的变化，同时识别无关的干扰条件。", "answer": "A", "has_figure": false, "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T091.png", "section": "第七节 溶液问题、经济利润问题"}
+STEM: 2016年某电子产品定价为n元/台，2017年由于技术升级成本降低，定价降低10%，每台产品利润提升10%，2017年全年销售这种产品的总利润较2016年增加了21%。那么，2017年的销量比2016年：
+OPTS: {'A': '提高了不到20%', 'B': '提高了20%或以上', 'C': '降低了不到20%', 'D': '降低了20%或以上'}
+JX: 比例除法：总利润=单台利润×销量。总利润前后比为1:1.21，单台利润前后比为1:1.1，所以销量前后比=1.21÷1.1=1.1，即销量提高了10%，属于“提高了不到20%”。“定价n元”“定价降低10%”都与总利润的计算无关，是干扰信息。典型错误：把定价降低10%也代进去，如1.21÷0.9≈1.34或1.21÷(0.9×1.1)≈1.22，得出销量提高20%以上而误选B。
+----- {"tid": "T092", "source": "2022国考副省级", "db_match": "2022GK-72", "already_in_day": false, "level": "难", "method": "比例除法求单利比，赋值9→11", "kaofa": "成本结构变化与利润", "learn": "“日利润=日产量×单利”先用比例除法求出单利变化并赋成整数份，再把成本结构里的不变量和变化量逐项对应。", "answer": "B", "has_figure": false, "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T092.png", "section": "第七节 溶液问题、经济利润问题"}
+STEM: 为降低碳排放，企业对生产设备进行改造，改造后日产量下降了10%，但生产每件产品的能耗成本下降了50%，其他成本和出厂价不变的情况下每天的利润提高了10%。已知单件利润=出厂价−能耗成本−其他成本，且改造前产品的出厂价是单件利润的3倍，则改造前能耗成本为其他成本的：
+OPTS: {'A': '不到1/4', 'B': '1/4～1/3之间', 'C': '1/3～1/2之间', 'D': '超过1/2'}
+JX: ①比例除法：每天利润=日产量×单件利润，日产量前后比1:0.9，日利润前后比1:1.1，所以单利前后比=1.1/0.9=11/9，赋值改造前单利9、改造后11。②看“出厂价=单利+能耗成本+其他成本”：出厂价、其他成本不变，单利增加2，只能是能耗成本减少2；能耗下降50%，说明原能耗成本为4。③原出厂价=3×9=27，其他成本=27−9−4=14。能耗:其他=4:14≈0.29，在1/4～1/3之间。典型错误：用改造后的单利11去乘3，算出出厂价33，得4/20=1/5而误选A。
+----- {"tid": "T093", "source": "2009江苏A", "db_match": null, "already_in_day": false, "level": "中等", "method": "线段法反求打折部分利润率", "kaofa": "部分打折后的总利润", "learn": "整体利润率是各部分利润率按成本加权的平均，可用线段法反求打折部分的利润率。", "answer": "C", "has_figure": false, "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T093.png", "section": "第七节 溶液问题、经济利润问题"}
+STEM: 一批手机，商店按期望获得100%的利润来定价，结果只销售掉70%。为了尽早销售掉剩下的手机，商店决定打折出售，为了获得的全部利润是原来期望利润的91%，则商店所打的折是：
+OPTS: {'A': '六折', 'B': '七折', 'C': '八五折', 'D': '九折'}
+JX: 线段法：设成本1，按100%利润定价为2。70%的手机按100%的利润率卖出，30%打折后利润率为x，全部利润是期望的91%，相当于整体利润率91%。70%与30%的权重比7:3，距离比为3:7：100%−91%=9%对应3份，则91%−x=21%，x=70%。打折后售价=1×(1+70%)=1.7，折扣=新价÷原价=1.7÷2=0.85，即八五折。典型错误：把剩余部分70%的利润率直接当成“七折”，误选B。
+----- {"tid": "T094", "source": "", "db_match": null, "already_in_day": false, "level": "难", "method": "线段法得成本比，再比例除法", "kaofa": "利润率混合求销量比", "learn": "利润率混合时权重是“成本”，线段法求出的是总成本之比，求销量还要再除以单件成本。", "answer": "B", "has_figure": false, "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T094.png", "section": "第七节 溶液问题、经济利润问题"}
+STEM: 咖啡店有拿铁和美式两款售价相同的咖啡，拿铁的售价比利润多200%，美式的成本比拿铁少1/4。某天营业结束后，店长统计两款咖啡的总利润率为80%，问当天拿铁和美式的销量之比为：
+OPTS: {'A': '2:1', 'B': '1:2', 'C': '2:3', 'D': '3:2'}
+JX: 先翻译条件：拿铁售价比利润多200%，即售价是利润的3倍，售价:利润=3:1，成本2份，利润率50%。美式成本比拿铁少1/4，为1.5份，售价同为3份，利润1.5份，利润率100%。线段法：总利润率80%到50%、100%的距离为30%、20%，所以两款的总成本之比=20:30=2:3（利润率按成本加权，权重是总成本而非销量）。再用比例除法：单杯成本拿铁:美式=2:1.5=4:3，销量比=(2÷4):(3÷3)=1:2。典型错误：把2:3直接当作销量比，误选C。

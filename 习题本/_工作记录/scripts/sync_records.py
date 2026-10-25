@@ -2,8 +2,9 @@
 import os, shutil, glob
 S = '/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad'
 D = '/home/user/xingce/习题本/_工作记录'
-FULL = ['briefs', 'blueprints', 'cls', 'gen', 'gen_unused', 'prompts', 'review', 'scripts', 'tasks_in', 'verify']
-DB = ['real_raw.json', 'schedule.json', 'answer_fixes.json', 'overrides.json', 'real_overrides.json', 'recrop.json', 'ocr_answers.json']
+FULL = ['briefs', 'blueprints', 'cls', 'gen', 'gen_unused', 'prompts', 'review', 'scripts', 'tasks_in', 'verify', 'teacher', 'harden', 'cropfix']
+DB = ['real_raw.json', 'schedule.json', 'answer_fixes.json', 'overrides.json', 'real_overrides.json', 'recrop.json', 'ocr_answers.json',
+      'math_harden.json', 'realonly_plan.json', 'realonly_frozen.json', 'doc_offsets.json']
 TEXT_EXT = ('.py', '.md', '.json', '.txt', '.jsonl')
 WORK = ['bp_*', 'bpC*', 'work_*', 'rev_*_work', 'l03_build']
 

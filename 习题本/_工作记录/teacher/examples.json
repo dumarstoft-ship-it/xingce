@@ -1,0 +1,6245 @@
+[
+ {
+  "tid": "T001",
+  "section": "第一节 递推问题",
+  "ex_no": 1,
+  "page": 1,
+  "top": 147.10220599999997,
+  "pages": [
+   1
+  ],
+  "ocr": [
+   "En",
+   "·",
+   "I",
+   "I",
+   "11",
+   "<",
+   "V",
+   "543",
+   "2",
+   "I",
+   "A151063",
+   "I",
+   "35so10",
+   "·",
+   "&",
+   "i"
+  ],
+  "bottom": 281.8418743246,
+  "last_page": 1,
+  "question": "小赵从家出发去单位上班要经过多条街道（如图），假如他只能向西\n或向南行走，则他上班有多少种不同的走法？",
+  "source": null,
+  "has_options": false,
+  "solution": "最后一步：要么在A点，要么在B点，分别求到A和B的走法\n家到单位的走法数=到A的走法数+到B的走法数\n家到任意一点的走法数=到上方点的走法数+到右方点的走法数\n（递推式，状态转移方程）",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T001.png"
+ },
+ {
+  "tid": "T002",
+  "section": "第一节 递推问题",
+  "ex_no": 2,
+  "page": 1,
+  "top": 325.49220599999995,
+  "pages": [
+   1
+  ],
+  "ocr": [],
+  "bottom": 434.44567460999997,
+  "last_page": 1,
+  "question": "你正在爬楼梯需要10级你才能到达楼顶，每次你可以爬1或2级台阶，你\n有多少种不同的方法可以爬到楼顶？",
+  "source": null,
+  "has_options": false,
+  "solution": "最后一步：要么在第8级（爬2级可到顶），要么在第9级（爬1级可到顶）\n递推式：任一级的走法数=上2级的走法数+上1级的走法数\n爬了的级数  0    1    2    3    4    5    6    7    8    9    10 （0代表状态）\n种数  1    1    2    3    5    8   13    21   34   55   89",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T002.png"
+ },
+ {
+  "tid": "T003",
+  "section": "第一节 递推问题",
+  "ex_no": 3,
+  "page": 1,
+  "top": 455.055206,
+  "pages": [
+   1,
+   2
+  ],
+  "ocr": [],
+  "bottom": 32.71751699999993,
+  "last_page": 2,
+  "question": "（2024浙江A）某自助餐厅提供羊肉串，小王怕浪费每次最多只拿3串，\n已知它正好吃了10串，那么他共有多少种不同的拿法？",
+  "source": "2024浙江A",
+  "has_options": false,
+  "solution": "最后一步：拿了9串（拿1串达10串）、拿了8串（拿2串可达）、 拿了7串（拿3串可达）\n递推式：吃串的拿法数=上1级拿法数+上2级拿法数+ 上3级拿法数\n吃了的串  0    1    2    3    4    5    6     7     8    9    10  （0代表状态）\n拿法数  1    1    2    4    7    13   24    44   81   149   274\n9⃣\n🔟",
+  "db_match": "2024ZJA-70",
+  "db_score": 0.98,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T003.png"
+ },
+ {
+  "tid": "T004",
+  "section": "第一节 递推问题",
+  "ex_no": 4,
+  "page": 2,
+  "top": 23.417205999999965,
+  "pages": [
+   2
+  ],
+  "ocr": [
+   "&"
+  ],
+  "bottom": 177.24233704000005,
+  "last_page": 2,
+  "question": "某乡村公路的一侧共有10盏路灯，为了道路安全连续的2盏不能同时熄\n灭，问一共有多少种可能的亮灯方式？",
+  "source": null,
+  "has_options": false,
+  "solution": "最后一步：第9盏亮，第10盏可亮可灭。第9盏灭，第10盏亮。\n递推式：最后一盏亮的种数=上一盏亮的种数+上一盏灭的种数\n亮     亮\n最后一盏灭的种数=上一盏亮的种数\n灭     灭\n灯的序号      1    2    3    4    5     6     7     8    9    10\n状态亮的种数  1    2    3    5    8    13    21    34   55    89\n状态灭的种数  1    1    2    3    5     8    13    21   34    55\n一共有89+55=144种亮灯方式",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T004.png"
+ },
+ {
+  "tid": "T005",
+  "section": "第一节 递推问题",
+  "ex_no": 5,
+  "page": 2,
+  "top": 208.110206,
+  "pages": [
+   2
+  ],
+  "ocr": [],
+  "bottom": 471.87245642999994,
+  "last_page": 2,
+  "question": "你是一个侠盗，计划偷窃沿街的坏人劫富济贫，影响你偷窃的唯一制\n约因素就是相邻的房屋中有相互联通的防盗系统，如果两间相邻的房屋在\n同一晚上被闯入系统会自动报警，沿街房屋内8户人家的金额分别为2，9，\n6，1，4，3，3，8（单位：万元），计算在不触动警报装置的情况下，一夜\n之内能够偷窃到的最高金额。",
+  "source": null,
+  "has_options": false,
+  "solution": "最后一步：第8户最高金额=【第7户最高金额（第8户不偷）】和【第8户偷的金额】中的较大者\n第8户偷的金额=第7户不偷的金额+第8户的财产\n第7户不偷的金额=第6户的最高金额\n递推式：偷至某户的最高金额=（偷上一户的最高金额，偷至上上户的最高金额+本户金额）\n中的较大者\n房屋序号      1       2       3         4             5         6          7            8\n各户财产      2       9       6         1             4         3          3            8\n最大财产      2       9       9         10           13        13          16           21\n本户   本户  上户   上上+本   上上+本   上户   上上+本    上上+本",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T005.png"
+ },
+ {
+  "tid": "T006",
+  "section": "第二节 比例问题",
+  "ex_no": 1,
+  "page": 4,
+  "top": 16.404206000000045,
+  "pages": [
+   4
+  ],
+  "ocr": [
+   "="
+  ],
+  "bottom": 119.24003286000004,
+  "last_page": 4,
+  "question": "两袋大米共重 440 千克，甲袋米吃了 1/3，乙袋米吃了 1/2，这时甲袋\n米的重量与乙袋米的重量之比为 8:5。问：甲袋米原来重多少千克？乙袋米\n原来重多少千克？",
+  "source": null,
+  "has_options": false,
+  "solution": "甲剩2/3 ，乙剩1/2，可得比例关系\n根据甲乙比例，可得甲240kg，乙200kg",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T006.png"
+ },
+ {
+  "tid": "T007",
+  "section": "第二节 比例问题",
+  "ex_no": 2,
+  "page": 4,
+  "top": 142.185206,
+  "pages": [
+   4
+  ],
+  "ocr": [],
+  "bottom": 262.97023386999996,
+  "last_page": 4,
+  "question": "（2023地市）甲和乙两个工程队共同承担某项工程的施工任务。 两队\n合作时各自的效率均比单独施工时高20%。已知两队合作施工需要 25 天完\n工；如甲先施工 15 天后乙加入，两队合作 15 天后剩余工作乙单独施工还\n需要 10 天完成。问甲队的效率是乙队的多少倍？",
+  "source": "2023地市",
+  "has_options": false,
+  "solution": "根据题意列等式，25甲乙=15甲+15甲乙+10乙→10甲乙=15甲+10乙\n根据合作效率高20% （还原单独） →12甲+12乙=15甲+10乙 →甲：乙 = 2 ：3",
+  "db_match": null,
+  "db_score": 0.22,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T007.png"
+ },
+ {
+  "tid": "T008",
+  "section": "第二节 比例问题",
+  "ex_no": 3,
+  "page": 4,
+  "top": 287.183206,
+  "pages": [
+   4
+  ],
+  "ocr": [],
+  "bottom": 443.86520599999994,
+  "last_page": 4,
+  "question": "（2024浙江A）甲乙两个施工队共同完成一项工程，需要20天。甲乙两\n队合作4天后，乙队因故退出6天后回归，回归时工程总量已完成40%。为保\n证按时完工，乙队回归时带来了丙施工队，甲乙丙三队共同工作10天后，\n刚好完成工程。问甲乙丙队的效率比为多少？\nA3:6:10  B4:815  C6:3:2  D10:5:3",
+  "source": "2024浙江A",
+  "has_options": true,
+  "solution": "前10天本可以完成50%，现完成40%（缺6天乙），则10% →6乙\n甲乙共4天完成20%，现完成40%（单独6天甲），则20% →6甲\n后10天甲乙丙完成60%，甲乙10天仅完成50%，多的10%丙完成，即10%→10丙",
+  "db_match": "2024ZJA-60",
+  "db_score": 1.0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T008.png"
+ },
+ {
+  "tid": "T009",
+  "section": "第二节 比例问题",
+  "ex_no": 4,
+  "page": 4,
+  "top": 468.66220599999997,
+  "pages": [
+   4
+  ],
+  "ocr": [],
+  "bottom": 571.49814519,
+  "last_page": 4,
+  "question": "（2022国考 ）商店销售某种商品，打八折销售时卖 2 件的利润与按定\n价销售时卖 1 件的利润相同，相当于降价 120 元/件销售时卖 3 件的利润。\n问该商品的定价为多少元/件？",
+  "source": "2022国考 ",
+  "has_options": false,
+  "solution": "假设定价10份，8折时8份，成本6份。销售3件的定价=成本+利润=6+4/3=22/3份\n10 →22/3 相当于降价了120元，每份为45元，则商品定价为450元",
+  "db_match": "2023GK-61",
+  "db_score": 1.0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T009.png"
+ },
+ {
+  "tid": "T010",
+  "section": "第二节 比例问题",
+  "ex_no": 5,
+  "page": 5,
+  "top": 16.376206000000025,
+  "pages": [
+   5
+  ],
+  "ocr": [],
+  "bottom": 119.21216376999996,
+  "last_page": 5,
+  "question": "原本红球和白球的数量比是 3:4，放入 3 个红球后变成了 6:7，求原本红\n白球的数量是多少?",
+  "source": null,
+  "has_options": false,
+  "solution": "方法：白球数不变，把白球比例数值通分到一致。\n4、7最小公倍数28，则3:4→21:28，6:7→24:28，\n则红球由21→24刚好3个，即1份=1球。所以，原本红球21个，白球28个。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T010.png"
+ },
+ {
+  "tid": "T011",
+  "section": "第二节 比例问题",
+  "ex_no": 6,
+  "page": 5,
+  "top": 142.230206,
+  "pages": [
+   5
+  ],
+  "ocr": [
+   "F",
+   "I",
+   "X",
+   "T",
+   ">"
+  ],
+  "bottom": 263.0151029599999,
+  "last_page": 5,
+  "question": "原本红球和白球的数量比是 3:4，放入等量的红球和白球后变成了\n11:13，求原本球数和新加的球数之比是多少?",
+  "source": null,
+  "has_options": false,
+  "solution": "方法：红白球差值不变（一致），把差值比例数值通分到一致。\n原 3 : 4 （差1份）\n6 ：8\n新11 : 13 （差2份）          11 ：13\n则原球数=6+8=14份，新增球=5+5=10份，所求比值7:5",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T011.png"
+ },
+ {
+  "tid": "T012",
+  "section": "第二节 比例问题",
+  "ex_no": 7,
+  "page": 5,
+  "top": 289.422206,
+  "pages": [
+   5
+  ],
+  "ocr": [
+   "ii",
+   "21",
+   "<"
+  ],
+  "bottom": 392.25790195,
+  "last_page": 5,
+  "question": "原本红球和白球的数量比是 3:4，放入一定量的红球同时拿出相同量的\n白球后变成了 1:2，求新的红球和原本的红球的数量之比？",
+  "source": null,
+  "has_options": false,
+  "solution": "方法：总球数不变，把总量比例数值通分到一致。\n原 3 : 4 （总7份）        9 ：12\n新 1 : 2 （总3份）        7 ：14    则新红球=7份，原红球=9份，所求比例7:9",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T012.png"
+ },
+ {
+  "tid": "T013",
+  "section": "第二节 比例问题",
+  "ex_no": 8,
+  "page": 5,
+  "top": 418.22020599999996,
+  "pages": [
+   5
+  ],
+  "ocr": [
+   "14)",
+   "(31-91=3",
+   ",",
+   "#***",
+   "Di",
+   ">"
+  ],
+  "bottom": 574.90324316,
+  "last_page": 5,
+  "question": "（2018四川）甲和丙的年龄和是乙的 2 倍，今年甲的年龄是丙的 3 倍，\n9 年后甲的年龄是丙的 2.4 倍，则多少年后丙的年龄是乙的4/7 ？",
+  "source": "2018四川",
+  "has_options": false,
+  "solution": "方法：年龄差不变，把差值比例数值通分到一致。\n今年甲：丙      3 : 1（差2份）           21 ：7\n9年后甲：丙     2.4 : 1 （差1.4份）        24 ：10\n则今年甲63岁，丙21岁，乙42岁。\n今年丙：乙    21 ：42（差21份）        21 ：42\n几年后丙：乙    4 ：7（差3份）          28 ：49",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T013.png"
+ },
+ {
+  "tid": "T014",
+  "section": "第二节 比例问题",
+  "ex_no": 9,
+  "page": 6,
+  "top": 20.86020599999995,
+  "pages": [
+   6
+  ],
+  "ocr": [
+   "=",
+   "53",
+   ":"
+  ],
+  "bottom": 79.08830110000002,
+  "last_page": 6,
+  "question": "甲走的路程比乙多 1/3，乙用的时间却比甲多 1/4，甲、乙速度比为？",
+  "source": null,
+  "has_options": false,
+  "solution": "方法：比例乘除法。速度=路程/时间\n甲乙路程比 4 ：3 ，甲乙时间比4 ：5 ，甲乙速度比",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T014.png"
+ },
+ {
+  "tid": "T015",
+  "section": "第二节 比例问题",
+  "ex_no": 10,
+  "page": 6,
+  "top": 110.829206,
+  "pages": [
+   6
+  ],
+  "ocr": [
+   "#48",
+   "15120X",
+   ":",
+   "="
+  ],
+  "bottom": 285.46105143999995,
+  "last_page": 6,
+  "question": "（2022国考）企业列出 500 万元设备采购预算，如用于购买 x 台进口\n设备，最后剩余 20 万元。经董事会研究后，决定购买质量更高的同类国\n产设备，单价仅为进口设备的 75%。当前预算可购买x+3 台，最后剩余 5 万\n元。问国产设备的单价？",
+  "source": "2022国考",
+  "has_options": false,
+  "solution": "方法：比例乘除法。数量=总价/单价\nx台进口480万元，x+3台国产495万元，国产单价：进口单价=3:4\n可列等式\n国产数量=11台，总价495万元，则单价45万元",
+  "db_match": "2022GK-63",
+  "db_score": 0.96,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T015.png"
+ },
+ {
+  "tid": "T016",
+  "section": "第二节 比例问题",
+  "ex_no": 11,
+  "page": 6,
+  "top": 313.672206,
+  "pages": [
+   6
+  ],
+  "ocr": [
+   "i",
+   "z",
+   "#F",
+   "5",
+   "y75",
+   "x+y",
+   "D",
+   ">",
+   "=",
+   "=y",
+   "E",
+   "X",
+   "-",
+   "=",
+   "=",
+   "5",
+   "+",
+   "E",
+   "ID",
+   "?",
+   "=",
+   "y",
+   "X",
+   "-"
+  ],
+  "bottom": 414.08866341,
+  "last_page": 6,
+  "question": "（2022湖北选调）某单位有三个人数相等的科室甲、乙、丙，已知甲\n科室的党员人数等于乙科室的非党员人数，丙科室的党员人数占全单位党\n员的40%，那么该党员人数比非党员人数？A少20%   B少25%   C多20%  D多25%",
+  "source": "2022湖北选调",
+  "has_options": true,
+  "solution": "",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T016.png"
+ },
+ {
+  "tid": "T017",
+  "section": "第二节 比例问题",
+  "ex_no": 12,
+  "page": 6,
+  "top": 440.27320599999996,
+  "pages": [
+   6
+  ],
+  "ocr": [
+   "EM",
+   "D518",
+   "/(52)",
+   "3",
+   "=",
+   "->=",
+   "JypD815x216",
+   "=",
+   "=",
+   "FED",
+   "16",
+   "15",
+   "2024",
+   "↓I",
+   "RE",
+   "EB4"
+  ],
+  "bottom": 579.9218967099999,
+  "last_page": 6,
+  "question": "（2023 广东）某单位去年报名参加志愿活动的党员与非党员之比为\n1∶3。今年的报名总人数提高了 20%，党员与非党员之比为 1∶2，党员人\n数比去年多了 6 人。则今年该单位报名参加志愿活动的党员共有（ ）人\nA16   B24   C32   D48",
+  "source": "2023 广东",
+  "has_options": true,
+  "solution": "去年1:3（总量4x）\n今年1:2（总量3y）\n总量比5:6（20:24）",
+  "db_match": "2023GD-33",
+  "db_score": 1.0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T017.png"
+ },
+ {
+  "tid": "T018",
+  "section": "第三节 数论",
+  "ex_no": 1,
+  "page": 8,
+  "top": 17.353206,
+  "pages": [
+   8
+  ],
+  "ocr": [],
+  "bottom": 156.08691124000006,
+  "last_page": 8,
+  "question": "（2023湖北选调）单位小陈每天都在手机 APP 上学习英语。有一天，\n他的学习天数已有 200多天，是 3 的倍数，且第二天的天数是 5 的倍数，\n第三天的天数是 7 的倍数。问第几天的天数将是 13 的倍数？",
+  "source": "2023湖北选调",
+  "has_options": false,
+  "solution": "第2天是5的倍数，则第2天为2__0或者2__5\n第1天是3的倍数，则为第2天除3余1，可得220、250、280、205、235、265、295\n第3天是7的倍数，则为第2天加1被7整除，可得第2天为265，第1天264\n下一个13的倍数是273，则第10 天是273（13的倍数）",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T018.png"
+ },
+ {
+  "tid": "T019",
+  "section": "第三节 数论",
+  "ex_no": 2,
+  "page": 8,
+  "top": 182.255206,
+  "pages": [
+   8
+  ],
+  "ocr": [],
+  "bottom": 303.0401029599999,
+  "last_page": 8,
+  "question": "（2015黑龙江公检法）小李某月请了连续 5 天的年假，这 5 天的日期数\n字相乘为 7893600，问最后一天年假的日期是？A25日   B26日  C27日  D28日",
+  "source": "2015黑龙江公检法",
+  "has_options": true,
+  "solution": "后2位数为00，说明有且只有一个5的倍数，根据选项为25的倍数，即含25日\n乘数积7893600不能被9整除，则不含两个3，即不含27日\n综上，符合条件的日期为①21日-25日 ②22日-26日\n并且，不含两个3，①中有21、24即有两个3，排除。②符合条件",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T019.png"
+ },
+ {
+  "tid": "T020",
+  "section": "第三节 数论",
+  "ex_no": 3,
+  "page": 8,
+  "top": 327.164206,
+  "pages": [
+   8
+  ],
+  "ocr": [],
+  "bottom": 412.05109367,
+  "last_page": 8,
+  "question": "（2024甘肃）运动会招募志愿者不到 100 人，男女比例 11：7；补招若\n干女性志愿者后男女比例变为 4：3。最多可能补招了多少名女性志愿者？",
+  "source": "2024甘肃",
+  "has_options": false,
+  "solution": "方法：男生数不变，将男生比例通分到一致。（11、4最小公倍44）\n前 44 ：28，后44 ：33，则补招前44、28人（1份=1人），最多补招了33-28=5人",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T020.png"
+ },
+ {
+  "tid": "T021",
+  "section": "第三节 数论",
+  "ex_no": 4,
+  "page": 8,
+  "top": 435.785206,
+  "pages": [
+   8
+  ],
+  "ocr": [
+   "BG",
+   "85",
+   ",",
+   "1",
+   ",",
+   ",",
+   "A4(B+2)5"
+  ],
+  "bottom": 574.51917306,
+  "last_page": 8,
+  "question": "（2022国考）某单位从A大学、B大学和C大学总计招聘毕业生三百多\n人。其中从A大学招聘的人数是B大学和C大学之和的80%，从B大学招聘的\n人数比C大学多60%。问该单位至少再多招多少人，能将3所大学的毕业生\n平均分配到7个部门？A6   B5   C4   D3",
+  "source": "2022国考",
+  "has_options": true,
+  "solution": "（B+C）是5的倍数也是13的倍数，最小公倍数65\n（B+C）为65份，A则为52份，共计117份，人数300+\n每份3人，共351人，再多6人可被7整除",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T021.png"
+ },
+ {
+  "tid": "T022",
+  "section": "第三节 数论",
+  "ex_no": 5,
+  "page": 9,
+  "top": 35.802205999999956,
+  "pages": [
+   9
+  ],
+  "ocr": [],
+  "bottom": 138.6381637699999,
+  "last_page": 9,
+  "question": "(2020 深圳）某快递集散点有一批包裹，由甲、乙、丙三名快递员各自\n独立完成送达。其中有 93 件不是甲派送的，92 件不是乙派送的，91 件不\n是丙派送的，则甲派送了（ ）件。A44   B45   C46   D47",
+  "source": "2020 深圳",
+  "has_options": true,
+  "solution": "常规法：乙+丙=93，甲+丙=92，甲+乙=91，（甲+乙+丙）×2 =276，则甲=45\n尾数法：（甲尾数+3）×2=6，甲尾数为0或5",
+  "db_match": "2020SZS-20",
+  "db_score": 0.91,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T022.png"
+ },
+ {
+  "tid": "T023",
+  "section": "第三节 数论",
+  "ex_no": 6,
+  "page": 9,
+  "top": 164.920206,
+  "pages": [
+   9
+  ],
+  "ocr": [],
+  "bottom": 285.70523387000003,
+  "last_page": 9,
+  "question": "（2013 陕西）五年级一班共有 55 个学生，在暑假期间都参加了特长培\n训班，35 人参加书法班，28 人参加美术班，31 人参加舞蹈班，其中以上\n三种特长培训班都参加的有 6 人，则有多少人只参加了一种特长培训班：\nA 45 B 33 C 29 D 22",
+  "source": "2013 陕西",
+  "has_options": true,
+  "solution": "总=A+B+C-两门-2×三门  可得55=35+28+31-x-12  解得x尾数为7\n总=一门+两门+三门        可得55=y+x+6  解得y尾数为2",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T023.png"
+ },
+ {
+  "tid": "T024",
+  "section": "第三节 数论",
+  "ex_no": 7,
+  "page": 9,
+  "top": 318.793206,
+  "pages": [
+   9,
+   10
+  ],
+  "ocr": [],
+  "bottom": -17.583483,
+  "last_page": 10,
+  "question": "（2015 北京）四人年龄为相邻的自然数列且最年长者不超过 30 岁，四\n人年龄之乘积能被2700 整除且不能被 81 整除。则四人中最年长者多少岁？",
+  "source": "2015 北京",
+  "has_options": false,
+  "solution": "乘积能被2700整除，即能被5整除，被25整除。\n由于乘积数据较大，年龄数列包含25，且相邻，\n年龄可能① 22、23、24、25②23、24、25、26③24、25、26、27④25、26、27、28\n同时，乘积能被2700整除，则年龄包含3×3×3（3个3）；\n不能被81整除，则不包含3×3×3 ×3（4个3）\n④符合条件，最年长者为28岁\n⭐",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T024.png"
+ },
+ {
+  "tid": "T025",
+  "section": "第四节 盈亏问题（鸡兔同笼、牛吃草、还原问题）",
+  "ex_no": 1,
+  "page": 10,
+  "top": 125.48220600000002,
+  "pages": [
+   10
+  ],
+  "ocr": [],
+  "bottom": 228.31803285999996,
+  "last_page": 10,
+  "question": "某班选出部分学生参加广播体操比赛，列队时如果行数固定，每行站7\n人则余下2人；每行站8人则有一行少4人，参加比赛的共有多少人？",
+  "source": null,
+  "has_options": false,
+  "solution": "方程思维：设x行，可列7x+2=8x-4 x=6，总人数6×7=42\n盈亏思维：每行站7人到8人，变化是每行额外分配1人，剩余人数从余2\n变少4（少了6人），即有6行（每行1人）",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T025.png"
+ },
+ {
+  "tid": "T026",
+  "section": "第四节 盈亏问题（鸡兔同笼、牛吃草、还原问题）",
+  "ex_no": 2,
+  "page": 10,
+  "top": 250.086206,
+  "pages": [
+   10
+  ],
+  "ocr": [],
+  "bottom": 406.76924316000003,
+  "last_page": 10,
+  "question": "（2024 青海）某旅游公司定制甲、乙两种纪念品，第一次共定制 50\n个。试销后根据反馈，第二次定制两种纪念品共 70 个，其中乙纪念品个\n数是第一次的 1/4。已知甲纪念品单价为15 元，第一次定制花费 1150 元，\n那么第二次定制花费多少元? A1150  B1725  C2300  D2875",
+  "source": "2024 青海",
+  "has_options": true,
+  "solution": "盈亏思维：关注差异，从第一次到第二次，乙从1份变成1/4份。\n第一步，甲乙各变为1/4，则花费1150/4 （乙全部算出，甲部分算出）\n第二步，剩下的全是甲，剩下70-50/4=57.5个，还花费57.5×15\n第二次花费=1150/4 + 57.5×15=1150",
+  "db_match": "2024HB-73",
+  "db_score": 0.89,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T026.png"
+ },
+ {
+  "tid": "T027",
+  "section": "第四节 盈亏问题（鸡兔同笼、牛吃草、还原问题）",
+  "ex_no": 3,
+  "page": 10,
+  "top": 431.312206,
+  "pages": [
+   10
+  ],
+  "ocr": [],
+  "bottom": 570.04643488,
+  "last_page": 10,
+  "question": "（2021副省）甲和乙两个实验室共同承接 10000 份样本的检验工作。\n甲实验室每小时可检验200 份样本，每检验一份样本的费用为 100 元；乙\n实验室每小时可检验 500 份样本，每检验一份样本的费用为 200 元。问如\n要求 15 小时内检验完毕，最低总检验费用比要求 18 小时内检验完毕时\n高多少万元？A3     B4     C5     D6",
+  "source": "2021副省",
+  "has_options": true,
+  "solution": "思路：要想成本低，甲尽可能多干。18h与15h相比，差异在于多的3h由甲\n干。则甲多干3h，多600份多6万元，则乙少干600份少12万元，共少6万元。",
+  "db_match": "2023GK-66",
+  "db_score": 1.0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T027.png"
+ },
+ {
+  "tid": "T028",
+  "section": "第四节 盈亏问题（鸡兔同笼、牛吃草、还原问题）",
+  "ex_no": 4,
+  "page": 11,
+  "top": 27.56120599999997,
+  "pages": [
+   11
+  ],
+  "ocr": [],
+  "bottom": 193.373517,
+  "last_page": 11,
+  "question": "（2024副省）甲和乙两辆车同时从 A 地出发匀速开往 B 地，甲车出发\n时的速度比乙车快20%，但乙车行驶 1 个小时后速度加快 30 千米/小时继续\n匀速行驶，又用了 3 小时与甲车同时抵达，问 A、B 两地相距多少千米\n（ ） A 540   B 510   C 600   D 570",
+  "source": "2024副省",
+  "has_options": true,
+  "solution": "关注差异。变量是乙提速行驶3h与甲同时抵达，假设不提速则乙比甲少\n90km（还原思想）。变速前速度比甲：乙=6:5，根据路程与速度成正比，所\n以路程比甲：乙=6:5，所以1份代表90km，总路程6 ×90=540km。\n🐮",
+  "db_match": "2024GK-66",
+  "db_score": 0.91,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T028.png"
+ },
+ {
+  "tid": "T029",
+  "section": "第四节 盈亏问题（鸡兔同笼、牛吃草、还原问题）",
+  "ex_no": 5,
+  "page": 11,
+  "top": 203.755206,
+  "pages": [
+   11,
+   12
+  ],
+  "ocr": [],
+  "bottom": 39.30920100000003,
+  "last_page": 12,
+  "question": "（2021副省） 某企业将一批防疫物资赠送给“一带一路”沿线国家的\n若干家医院。如果向每家医院赠送 10 箱口罩和 7 箱防护服，则剩余的口\n罩比防护服多 20 箱。如果向每家医院赠送12 箱口罩和 8 箱防护服，则还\n缺 8 箱口罩和 11 箱防护服。如该企业决定额外采购物资，口罩和防护服\n按 2：1 的比例向每家医院捐赠相同数量的物资，且捐完后没有剩余，问\n口罩和防护服总计至少还要采购多少箱？A 54   B 63   C 75   D 87",
+  "source": "2021副省",
+  "has_options": true,
+  "solution": "①求医院数量。盈亏思维：关注差异。赠送口罩多2箱，防护服多1箱。\n【口罩-防护服】由20变成3（-8-（-11）），相差17。\n赠送口罩比防护服多1箱，多1箱代表有1个医院，共多17箱，有17家医院。\n②求继续采购量。先把差的8箱和11箱补上，口罩防护服比就是12:8，要满\n足2:1的关系，即把口罩补到16（变成16:8），也就是每家医院多4箱口罩，\n<\n>\n4×17+8+11，尾数法7，选87。盈亏思维+比例法，真的\n鸡兔同笼",
+  "db_match": "2021GK-64",
+  "db_score": 1.0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T029.png"
+ },
+ {
+  "tid": "T030",
+  "section": "第四节 盈亏问题（鸡兔同笼、牛吃草、还原问题）",
+  "ex_no": null,
+  "page": 12,
+  "top": 67.73120599999993,
+  "pages": [
+   12
+  ],
+  "ocr": [],
+  "bottom": 170.56703285999993,
+  "last_page": 12,
+  "question": "（鸡兔同笼）鸡兔同笼，头共 20 个，足共 62 只，求鸡与兔各有多少只？",
+  "source": null,
+  "has_options": false,
+  "solution": "方程思维：x鸡，y兔。可列等式，x+y=20，2x+4y=62\n盈亏思维：【逻辑：先假设再作差，假设思想】假设全是鸡，共有20头，\n40足。少22足应由兔补齐，多1只兔则多2只足，则多11只兔。共9鸡11兔。\n公式：兔的数量=总差/单差=22/2=11",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T030.png"
+ },
+ {
+  "tid": "T031",
+  "section": "第四节 盈亏问题（鸡兔同笼、牛吃草、还原问题）",
+  "ex_no": 6,
+  "page": 12,
+  "top": 201.985206,
+  "pages": [
+   12
+  ],
+  "ocr": [],
+  "bottom": 376.61705143999995,
+  "last_page": 12,
+  "question": "（2018 江苏 C）“和谐号”高速列车从甲地出发向相距 1300 千米的乙\n地行驶，列车分别以250 千米/小时和 300 千米/小时的平均速度在两种不同\n路况的路段上行驶，4.5 小时恰好走完全程。则这两种路段的里程数之差\n是？ A 600千米   B 700千米   C 800千米   D 1050千米",
+  "source": "2018 江苏 C",
+  "has_options": true,
+  "solution": "方程思维：x+y=4.5 ，250x+300y=1300\n盈亏思维：（理解：速度为鸡或兔，时间为头，里程为足）\n假设用300km/h速度走4.5h，共走了1350km，多走50km。多的50km由速度慢的\n调整，多1h的250km/h则少50km，则250km/h用1h，300km/h用3.5h，里程之差\n=3.5×300-1×250=1050-250=800",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T031.png"
+ },
+ {
+  "tid": "T032",
+  "section": "第四节 盈亏问题（鸡兔同笼、牛吃草、还原问题）",
+  "ex_no": 7,
+  "page": 12,
+  "top": 414.433206,
+  "pages": [
+   12
+  ],
+  "ocr": [],
+  "bottom": 535.21797205,
+  "last_page": 12,
+  "question": "（2024 副省）甲、乙、丙三种农产品价格分别为 30 元/包、24 元/包和\n20 元/包。某日销售三种农产品共 240 包，总销售额为 6000 元，已知甲的\n销售量是乙的 2 倍，问丙销售了多少包？A 90  B 75  C 60  D 45",
+  "source": "2024 副省",
+  "has_options": true,
+  "solution": "打包思维（甲乙存在倍数关系）。假设2甲+乙=A，3丙=B。A=84元/包，B=60\n元/包。假设全为A，总销售额为6720。总差=6720-6000=720，单差=84-60=24。B\n的数量=总差/单差=720/24=30。丙的数量为30×3=90",
+  "db_match": "2024GK-67",
+  "db_score": 0.92,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T032.png"
+ },
+ {
+  "tid": "T033",
+  "section": "第四节 盈亏问题（鸡兔同笼、牛吃草、还原问题）",
+  "ex_no": 8,
+  "page": 13,
+  "top": 21.89920600000005,
+  "pages": [
+   13
+  ],
+  "ocr": [],
+  "bottom": 232.428206,
+  "last_page": 13,
+  "question": "（2019 重庆选调）某牧场长满牧草，牧草每天均匀生长，牧场可供 100\n头牛吃 20 天，可供150 头牛吃 10 天，则这片牧场可供 250 头牛吃（ ）天。\nA5   B6   C7   D8",
+  "source": "2019 重庆选调",
+  "has_options": true,
+  "solution": "牛吃草\n公式法：原有草量=天数×（牛数×牛吃草速度-长新草速度）\n设长新草的速度为x，可得20（100-x）=10（150-x），x=50，原有草量=1000，\n设可供250牛吃y天，可得1000=y（250-50），y=5\n盈亏法：【逻辑：吃新草、吃旧草的牛数分开看\n】\n①专门吃新草的牛数为常数（每天以固定速度长新草，每天刚好够牛吃）\n②吃旧草的牛数×天数=总存量（原有草量），牛数、天数成反比。\n可列，总牛数=吃新牛数x+吃旧牛数y。100=x+y1，150=x+y2，y1:y2=1:2，1份为50\nx=50。250牛中50牛专门吃新草，200牛吃旧草，能吃5天。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T033.png"
+ },
+ {
+  "tid": "T034",
+  "section": "第四节 盈亏问题（鸡兔同笼、牛吃草、还原问题）",
+  "ex_no": 9,
+  "page": 13,
+  "top": 254.08020599999998,
+  "pages": [
+   13
+  ],
+  "ocr": [],
+  "bottom": 410.76311224999995,
+  "last_page": 13,
+  "question": "（2020 浙江 B）火车站售票窗口一开始有若干乘客排队购票，且之后\n每分钟增加排队购票的乘客人数相同。从开始办理购票手续到没有乘客排\n队，若开放 3 个窗口，需耗时 90 分钟，若开放 5 个窗口，则需耗时 45 分\n钟。问如果开放 6 个窗口，需耗时多少分钟？A 36 B 38 C 40 D 42",
+  "source": "2020 浙江 B",
+  "has_options": true,
+  "solution": "窗口数=处理新人的窗口数量x+处理旧人的数量y\n3=x+y1，5=x+y2，y1:y2=1:2，则1份为2个窗口，则x=1。\n原有存量=处理旧人的数量×时间=2×90=180（单位：窗口•min）\n则开放6个窗口，其中1个专门处理新人，5个处理原有存量，需耗时180/5=36",
+  "db_match": "2020ZJB-17",
+  "db_score": 0.94,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T034.png"
+ },
+ {
+  "tid": "T035",
+  "section": "第四节 盈亏问题（鸡兔同笼、牛吃草、还原问题）",
+  "ex_no": 10,
+  "page": 13,
+  "top": 433.356206,
+  "pages": [
+   13,
+   14
+  ],
+  "ocr": [
+   "2.",
+   "110-5x130",
+   ".",
+   "E"
+  ],
+  "bottom": 42.55620099999999,
+  "last_page": 14,
+  "question": "有三块草地，面积分别是 5、15、24 亩，每亩草地上的草一样厚，且\n长得一样快。第一块草地可供 10 头牛吃 30 天，第二块草地可供 28 头牛\n吃 45 天，问第三块地可供多少头牛吃 80天？",
+  "source": null,
+  "has_options": false,
+  "solution": "设每亩需要x头牛消耗新草，则可列等式（10-5x）30:（28-15x）45=1:3，x=1.6\n牛数=新牛+旧牛=1.6×24 + 24亩草量/80 = 38.4+3.6=42\n还原问题",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T035.png"
+ },
+ {
+  "tid": "T036",
+  "section": "第四节 盈亏问题（鸡兔同笼、牛吃草、还原问题）",
+  "ex_no": 11,
+  "page": 14,
+  "top": 70.41920599999992,
+  "pages": [
+   14
+  ],
+  "ocr": [],
+  "bottom": 227.10211224999983,
+  "last_page": 14,
+  "question": "（2014 黑龙江）甲、乙两村共有 9600 头牛，如果两村分别卖出自己\n村 40%的牛，甲村再赠送120 头牛给乙村，这时两村的牛数量相等，问甲\n村原有多少牛？A 5200 B 5400 C 5600 D 5000",
+  "source": "2014 黑龙江",
+  "has_options": true,
+  "solution": "方程法：0.6x-120=0.6（9600-x）+120\n还原法：【逻辑：倒推】卖出40%再增减变化后数量相等。\n相等的时候数量应为9600×60%×50%=2880，增减变化前甲=2880+120=3000，卖\n出40%前甲=3000/60%=5000\n题型特点：借来借去，总数不变",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T036.png"
+ },
+ {
+  "tid": "T037",
+  "section": "第四节 盈亏问题（鸡兔同笼、牛吃草、还原问题）",
+  "ex_no": 12,
+  "page": 14,
+  "top": 256.962206,
+  "pages": [
+   14
+  ],
+  "ocr": [],
+  "bottom": 503.39020093,
+  "last_page": 14,
+  "question": "（2021 青海）某公园鸟语林共饲养 180 只鸟类动物，为养护方便，园\n方将鸟语林分为 A、B、C 三个区。某日，A 区的一部分鸟飞至 B、C 两\n区，清点时，B、C 两区鸟的数量都增加一倍。次日，一些鸟又从 B 区\n飞至 A、C 两区，清点时，A、C 两区鸟的数量也都增加一倍。第三日，\n一部分鸟又从 C 区飞至 A、B 两区，清点时，A、B 两区鸟的数量同样增\n加一倍，而此时 C 区剩余鸟的数量恰好是 A 区的 7/26，那么，最初 A 区\n有多少只鸟？ A 103   B 104   C 105   D 106",
+  "source": "2021 青海",
+  "has_options": true,
+  "solution": "A              B             C\n第三日         26x           180-33x          7x\n第二日         13x           90-16.5x        90+2.5x\n第一日         6.5x          135-7.75x       45+1.25x      （B+C=180-6.5x）\n原始           90+3.25x                90-3.25x             （BC 一起看）\n所以，A=90+13/4 x →应为整数，则x应为4的倍数，选项-90应为13的倍数",
+  "db_match": "2021HB-62",
+  "db_score": 0.8,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T037.png"
+ },
+ {
+  "tid": "T038",
+  "section": "第五节 行程问题",
+  "ex_no": 1,
+  "page": 15,
+  "top": 71.54720599999996,
+  "pages": [
+   15
+  ],
+  "ocr": [],
+  "bottom": 174.38303285999996,
+  "last_page": 15,
+  "question": "（2019河南 ）小王从乡镇骑自行车前往县城，若他骑行速度为 18 千米/\n时，则下午 5 点钟到达；若他骑行速度为 20 千米/时，则下午 4 点钟到\n达。小王的出发时间为：A早上 6 点 B早上 7 点 C早上 8 点 D中午 12 点",
+  "source": "2019河南 ",
+  "has_options": true,
+  "solution": "骑行速度比为18:20=9:10，则时间比为10:9，实际相差1小时到达，则时间1份为\n1h，则出发时间为早上7点。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T038.png"
+ },
+ {
+  "tid": "T039",
+  "section": "第五节 行程问题",
+  "ex_no": 2,
+  "page": 15,
+  "top": 201.353206,
+  "pages": [
+   15
+  ],
+  "ocr": [],
+  "bottom": 340.08704214999995,
+  "last_page": 15,
+  "question": "（2012 深圳上）小强从学校出发赶往首都机场乘坐飞机回老家，若坐\n平均速度 40 千米/小时的机场大巴，则飞机起飞时他距机场还有 12 公里；\n如果坐出租车，车速 50 千米/小时，他能够先于起飞时间 24 分钟到达，则\n学校距离机场多少公里：A100  B132  C140  D160",
+  "source": "2012 深圳上",
+  "has_options": true,
+  "solution": "坐大巴40km/h →晚到0.3h（12/40），坐出租50km/h →早到0.4h（24/60），\n时间之差为0.7小时。大巴出租速度之比为4:5，则时间之比为5:4，\n所以时间1份为0.7h，出租时间为4×0.7=2.8h，距离为50×2.8=140公里",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T039.png"
+ },
+ {
+  "tid": "T040",
+  "section": "第五节 行程问题",
+  "ex_no": 3,
+  "page": 15,
+  "top": 364.861206,
+  "pages": [
+   15,
+   16
+  ],
+  "ocr": [
+   "VitV",
+   "=",
+   "Zviv",
+   "=",
+   ":",
+   "VotVt",
+   "V",
+   "S",
+   "V",
+   "t",
+   "Votat",
+   "=",
+   "="
+  ],
+  "bottom": 114.27661515,
+  "last_page": 16,
+  "question": "（2017 北京）小刘早上 8 点整出发匀速开车从 A 地前往 B 地，预计 10\n点整到达。但出发不到 1 小时后汽车就发生了故障，小刘骑折叠自行车\n以汽车行驶速度的 1/4 前往 A、B 两地中点位置的维修站借来工具，并用\n30 分钟修好了汽车，抵达 B 地时间为 11 点 50 分。则小刘汽车发生故障的\n时间是早上：A 8 点 40 分 B 8 点 45 分 C 8 点 50 分 D 8 点 55 分",
+  "source": "2017 北京",
+  "has_options": true,
+  "solution": "原10点可到，现11点50分到，晚了1h50min共110min。\n110min=30min（修车）+80min（骑行来回借工具），则骑行单程时间为40min\n且速度为汽车速度的1/4，则该段路程汽车只需10min，则在8点50分故障\n①前后时间相同\n的平均速度：\n匀加速、平均速度\n②前后路程相同\n的平均速度：\n③加速度公式：",
+  "db_match": null,
+  "db_score": 0.19,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T040.png"
+ },
+ {
+  "tid": "T041",
+  "section": "第五节 行程问题",
+  "ex_no": 4,
+  "page": 16,
+  "top": 137.043206,
+  "pages": [
+   16
+  ],
+  "ocr": [],
+  "bottom": 275.77717306,
+  "last_page": 16,
+  "question": "（2020 北京）一辆汽车在高速公路上以 60 公里小时的速度匀速行驶，\n此时司机开始以固定的加速度进行加速，加速后 50 秒内，汽车行驶了 1\n公里。则汽车从开始加速，到加速至高速公路的速度上限 120 公里小时需\n要多长时间？A 100 秒 B 125 秒 C 150 秒 D 180 秒",
+  "source": "2020 北京",
+  "has_options": true,
+  "solution": "加速50s行驶1km，则平均速度为20m/s（1000m/50s），等于72km/h（20×3.6）。\n当速度为72km/h时刚好过去25s，即从60km/h →72km/h花了25s，\n则从60km/h到120km/h需要125s",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T041.png"
+ },
+ {
+  "tid": "T042",
+  "section": "第五节 行程问题",
+  "ex_no": 5,
+  "page": 16,
+  "top": 305.074206,
+  "pages": [
+   16,
+   17
+  ],
+  "ocr": [
+   "v",
+   "<22",
+   ".",
+   "95v",
+   "1",
+   ".",
+   "4V",
+   "0GV",
+   "150",
+   "2",
+   ".",
+   ".",
+   ".",
+   "t"
+  ],
+  "bottom": 61.48434076000001,
+  "last_page": 17,
+  "question": "（2015 警）小李开车去某单位办事，计划全程匀速行驶 2 小时到达目的\n地。出发后头 30 分钟按计划速度行驶，此后 50 分钟交通拥堵，行驶的路\n程和前面 30 分钟相同。最后 40 分钟小李匀加速行驶，最终全程用时 2 小\n时到达。问他最后 10 分钟的平均车速是计划行驶速度的多少倍？\nA 不到 1.8 倍                          B 不低于1.8 倍但低于 2.0 倍\nC 不低于 2.0 倍亦不高于 2.2 倍    D 高于 2.2 倍",
+  "source": "2015 警",
+  "has_options": true,
+  "solution": "全程2h（120min），分为了3 段。第一段以速度V正常走了30min。第二段花\n50min实际走了30min的路程，实际速度为0.6V。第三段，还剩余60min的路\n程，但实际花40min走完，实际速度为1.5V。最后40min图如下，\n核心逻辑：上坡下坡路程不变，\n上坡下坡\n速度和时间成反比",
+  "db_match": "2024SC-50",
+  "db_score": 1.0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T042.png"
+ },
+ {
+  "tid": "T043",
+  "section": "第五节 行程问题",
+  "ex_no": 6,
+  "page": 17,
+  "top": 77.06820599999998,
+  "pages": [
+   17
+  ],
+  "ocr": [],
+  "bottom": 197.8529720499999,
+  "last_page": 17,
+  "question": "（2023 北京）从 A 地到 B 地是下坡路，一辆车从 A 地开往 B 地需要\n三小时，从 B 地开往 A 地需要四小时。已知这辆车下坡速度比上坡速度\n快 15 千米/小时，则 A、B 两地之间的距离是多少千米？\nA120   B180   C240   D300",
+  "source": "2023 北京",
+  "has_options": true,
+  "solution": "下坡上坡时间之比3:4，则速度之比为4:3，已知速度差15，则速度1份为15，\n则下坡实际速度为60km/h，距离=3×60=180km",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T043.png"
+ },
+ {
+  "tid": "T044",
+  "section": "第五节 行程问题",
+  "ex_no": 7,
+  "page": 17,
+  "top": 222.805206,
+  "pages": [
+   17
+  ],
+  "ocr": [
+   "↑",
+   "Es",
+   "Z"
+  ],
+  "bottom": 374.41118907,
+  "last_page": 17,
+  "question": "（2025 天津）从甲地到乙地为下坡路，从乙地到丙地为上坡路。小张\n从甲地开车经过乙地前往丙地，此后原路返回。其上坡速度是下坡的\n60%。已知他从甲地到乙地用时正好是去程全程用时的一半，则他返程全\n程用时比去程全程用时：\nA少不到 10%   B少 10%以上   C多不到 10%   D多10%以上",
+  "source": "2025 天津",
+  "has_options": true,
+  "solution": "下坡上坡速度比5:3，且甲到乙（下坡）时间与乙到丙（上坡）时间相\n等，则距离比 甲到乙：乙到丙=5:3。去程时间为2，返程时间为\n3/5+5/3=34/15，用时多4/15。用时比较4/15 ÷ 2，即多10%以上",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T044.png"
+ },
+ {
+  "tid": "T045",
+  "section": "第五节 行程问题",
+  "ex_no": 8,
+  "page": 17,
+  "top": 406.709206,
+  "pages": [
+   17,
+   18
+  ],
+  "ocr": [
+   "AIt"
+  ],
+  "bottom": 63.16279399999996,
+  "last_page": 18,
+  "question": "（2016 副省）A 地到 B 地的道路是下坡路。小周早上 6:00 从 A 地出发\n匀速骑车前往 B 地，7:00 时到达两地正中间的 C 地。到达 B 地后，小周\n立即匀速骑车返回，在 10:00 时又途经 C地。此后小周的速度在此前速度\n的基础上增加 1 米/秒。最后在 11:30 回到 A 地。问 A、B 两地间的距离在\n以下哪个范围内？A40～50公里 B大于50公里 C小于30公里 D30～40公里",
+  "source": "2016 副省",
+  "has_options": true,
+  "solution": "加速前：下坡上坡速度比为2:1。加速后：上坡加速前：上坡加速后=3:4。\n增加1m/s，则速度1份就是1m/s，即上坡加速前的速度为3m/s，下坡的速度\n为6m/s=21.6km/h，距离=21.6km/h×2h=43.2km\n相遇 S=（V+V）×T=S+S\n12\n12\n相遇追及\n追及 S=（V-V）×T=S-S\n12\n12",
+  "db_match": null,
+  "db_score": 0.29,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T045.png"
+ },
+ {
+  "tid": "T046",
+  "section": "第五节 行程问题",
+  "ex_no": 9,
+  "page": 18,
+  "top": 74.98620599999992,
+  "pages": [
+   18
+  ],
+  "ocr": [
+   "=>"
+  ],
+  "bottom": 194.89963587999995,
+  "last_page": 18,
+  "question": "（2019 江苏 B）甲、乙两人同时从同一地点出发沿同一环形跑道进行\n健身锻炼，甲跑步，乙走路。 若甲追上乙所需时间是两人相向而行相遇\n所需时间的 3 倍， 则甲、 乙的速度之比是 A3:1  B5:2  C2:1  D3:2",
+  "source": "2019 江苏 B",
+  "has_options": true,
+  "solution": "和差问题：V1=中间数，V2=V1到两边相等的距离",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T046.png"
+ },
+ {
+  "tid": "T047",
+  "section": "第五节 行程问题",
+  "ex_no": 10,
+  "page": 18,
+  "top": 221.161206,
+  "pages": [
+   18
+  ],
+  "ocr": [],
+  "bottom": 359.89530397,
+  "last_page": 18,
+  "question": "（2012 北京）甲乙两人早上 10 点同时出发匀速向对方的工作单位行\n进，10 点 30 分两人相遇并继续以原速度前行。10 点 54 分甲到达乙的工作\n单位后，立刻原速返回自己单位。问甲返回自己单位时，乙已经到了甲\n的工作单位多长时间：A42分  B40分30秒  C43分30秒  D45分",
+  "source": "2012 北京",
+  "has_options": true,
+  "solution": "甲乙同时走“相遇点到乙”路程，时间比甲：乙=24:30=4:5\n则乙走“相遇点到甲”路程用时30×5/4=37.5，乙全程用时37.5+30=67.5min\n甲原速往返，总用时54×2=108min。所求时间=108-67.5=40.5min",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T047.png"
+ },
+ {
+  "tid": "T048",
+  "section": "第五节 行程问题",
+  "ex_no": 11,
+  "page": 18,
+  "top": 386.17720599999996,
+  "pages": [
+   18,
+   19
+  ],
+  "ocr": [],
+  "bottom": 62.98117599999989,
+  "last_page": 19,
+  "question": "（2016 河南）出租车以固定速度从乙地出发到甲地再回到乙地，往返\n需要 1 小时 40 分。这一天，小明早上 8 点从甲地出发步行去乙地，出租\n车在上午 9 点从乙地出发，小明中途遇到这辆出租车便坐车去乙地，并\n于早上 10 点 20 分到达。问出租车的速度是小明步行速度的多少倍？\nA4  B6  C8  D10",
+  "source": "2016 河南",
+  "has_options": true,
+  "solution": "出租9点从乙出发，10点20分回到乙，共80min，单程40min。已知走满全程来\n回100min，单程50min，已走40min，只剩10min车程距离。小明8点出发，再加\n车到相遇点的时间40min，共走了100min。即10min车程距离小明步行了\n100min，车速为步行速度的10倍。\n顺流 V=V+V\n0水\n流水行船\n逆流 V=V-V\n0水",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T048.png"
+ },
+ {
+  "tid": "T049",
+  "section": "第五节 行程问题",
+  "ex_no": 12,
+  "page": 19,
+  "top": 79.83020599999998,
+  "pages": [
+   19
+  ],
+  "ocr": [
+   "+  =",
+   "*"
+  ],
+  "bottom": 218.56417305999992,
+  "last_page": 19,
+  "question": "（2017 四川乡镇）处于某河流上的 A、B 两地相距 600 米，B 为上\n游，水流速度为 2.5 米/分钟，乙由 A 到 B 和甲由 B 到 A 都需要 40 分\n钟，现让甲由 A 向 B，乙由 B 向 A，两人相向而行，到达指定的某一点\n后返回，则该点选在距离 A 大约多少米处，两人分别返回到起点时的时\n间大致相同？  A240  B247  C254  D260",
+  "source": "2017 四川乡镇",
+  "has_options": true,
+  "solution": "V甲顺=V乙逆=600/40=15m/min，则V甲逆=15-2.5-2.5=10m/min，\nV乙顺=15+2.5+2.5=20m/min。可列等式",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T049.png"
+ },
+ {
+  "tid": "T050",
+  "section": "第五节 行程问题",
+  "ex_no": 13,
+  "page": 19,
+  "top": 246.868206,
+  "pages": [
+   19,
+   20
+  ],
+  "ocr": [],
+  "bottom": 124.2964010099999,
+  "last_page": 20,
+  "question": "（2017 联考）某机场一条自动人行道长 42m，运行速度 0.75m/s。小王\n在自动人行道的起始点将一件包裹通过自动人行道传递给位于终点位置\n的小明。小明为了节省时间，在包裹开始传递时，沿自动人行道逆行领\n取包裹并返回。假定小明的步行速度是 1m/s，则小明拿到包裹并回到自\n动人行道终点共需要的时间是：A24秒  B42秒  C48秒  D56秒",
+  "source": "2017 联考",
+  "has_options": true,
+  "solution": "变换参考系。假设传送带为参照速度0，则小明速度仍为1，需走42/1=42s。\n实际上小明是先逆行后顺行，速度比为0.25:1.75=1:7，则时间比为7:1，\n即逆行时间：顺行时间=7:1=42:6，总时间为48s\n变换参考系思维\n更换参照物，时间不变，速度相减（注意方向）\n即S新=V新×时间\n头进尾出：S=S车+S桥\n火车过桥\n头进头出：S=S桥\n尾进头出：S=S桥-S车（桥比车长）\n车碰车，用参考系变换\n核心逻辑：以一个固定点来标记车（车头或车尾）",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T050.png"
+ },
+ {
+  "tid": "T051",
+  "section": "第五节 行程问题",
+  "ex_no": 14,
+  "page": 20,
+  "top": 147.557206,
+  "pages": [
+   20
+  ],
+  "ocr": [],
+  "bottom": 304.2392060000001,
+  "last_page": 20,
+  "question": "（2018 广东县乡）一列货运火车和一列客运火车同向匀速行驶，货车\n的速度为 72 千米/时，客车的速度为 108 千米/时。已知货车的长度是客\n车的 1.5 倍，两列火车由车尾平齐到车头平齐共用了 20 秒，则客运火车\n长（ ）米。A160  B240  C400  D600",
+  "source": "2018 广东县乡",
+  "has_options": true,
+  "solution": "车尾齐到车头齐行驶了车长差，即货车长-客车长。\n货车速度72km/h=20m/s，客车长度108km/h=30m/s，相对速度为10m/s，且行驶\n了20s，相对行驶200m，即200m为车长差，已知长度比为3:2，则1份为200m，\n客车长度为200×2=400m",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T051.png"
+ },
+ {
+  "tid": "T052",
+  "section": "第五节 行程问题",
+  "ex_no": 15,
+  "page": 20,
+  "top": 329.57620599999996,
+  "pages": [
+   20,
+   21
+  ],
+  "ocr": [
+   "=",
+   "-3)",
+   "33+",
+   ",2",
+   "on",
+   "%",
+   "5",
+   "-",
+   "2",
+   "31",
+   "-1",
+   "3-",
+   "-4",
+   "Iv",
+   "z",
+   "I",
+   "4",
+   "I",
+   "↳",
+   "↳",
+   "I",
+   "11",
+   "I"
+  ],
+  "bottom": 421.66622457999995,
+  "last_page": 21,
+  "question": "（2015 江苏 C）某列车通过 1200 米长的隧道要用时 33 秒，与另一列\n长 150 米、速度为 50 米/秒的列车错车而过需要 3 秒，则该列车减速一半\n后，通过一座 600 米的桥梁所需的时间为（ ）\nA18秒   B20秒   C30秒   D36秒",
+  "source": "2015 江苏 C",
+  "has_options": true,
+  "solution": "设列车长s，列车速度为v，可列方程\n💡\n多次相遇/追及\n核心考法：求两人第n次迎面相遇/\n追及的位置、时间、两人的方向\nV甲：V乙=3:2\nV甲：V乙=5:1\n特点：\n特点：\n①相遇点每次逆时针移动3格（固定）\n①追及点每次逆时针移动1格\n②时间成等差数列，\n②时间成等差数列，\n公差为甲乙走一圈的用时\n公差为甲套一圈的用时\n③甲乙方向不变，只能相遇\n③甲乙方向不变，只能追及\n甲\n甲\n乙\n乙\nV甲：V乙=3:2\nV甲：V乙=5:1\n如果是单车道往返，有相遇也有追及。\n双车道模型下特点：\n看成直线上下两车道，沿着直线车道往返，\n此时甲乙方向始终不变，只有相遇没有追及。\n①相遇点每次顺时针移动2格\n②甲乙方向不变，只能追及\n双车道模型下特点：\n①相遇点每次逆时针移动4格\n③时间比2:4:6:8…\n②甲乙方向不变，只能相遇\n路程比2:4:6:8…\n③时间比1:3:5:7…\n后面的情况均可根据第二次相遇/追及推导\n路程比1:3:5:7…",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T052.png"
+ },
+ {
+  "tid": "T053",
+  "section": "第五节 行程问题",
+  "ex_no": 16,
+  "page": 21,
+  "top": 436.359206,
+  "pages": [
+   21
+  ],
+  "ocr": [],
+  "bottom": 575.09343488,
+  "last_page": 21,
+  "question": "（2012 广东）甲、乙二人在环湖小路上匀速步行，且绕行方向不\n变。19 时，甲从 A 点、乙从B 点同时出发相向而行。19 时 25 分，两人相\n遇；19 时 45 分，甲到达 B 点；20 时 5 分，两人再次相遇。乙环湖一周\n需要多少分钟： A72  B81  C90  D100",
+  "source": "2012 广东",
+  "has_options": true,
+  "solution": "甲乙同时走了相遇点到B的距离，甲乙时间比20:25=4:5，甲乙速度比5:4。\n40min第二次相遇，甲乙刚好走了一圈。已知速度比（甲+乙）：乙=9:4，\n时间和速度成反比，则乙走一圈的时间为90min",
+  "db_match": null,
+  "db_score": 0.25,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T053.png"
+ },
+ {
+  "tid": "T054",
+  "section": "第五节 行程问题",
+  "ex_no": 17,
+  "page": 22,
+  "top": 15.571205999999961,
+  "pages": [
+   22
+  ],
+  "ocr": [],
+  "bottom": 190.20278961999992,
+  "last_page": 22,
+  "question": "（2019 上海 B）甲、乙两人在 400 米环形跑道上从同一起点反向匀速\n慢跑，甲的速度为 5 米/秒，乙的速度为 3 米/秒，则甲、乙两人经过（）\n再次在起跑点相遇。 A4分10秒  B5分50秒  C6分40秒  D7分30 秒",
+  "source": "2019 上海 B",
+  "has_options": true,
+  "solution": "相遇的时间为跑道长/速度和=400/8=50s，此时甲距离起点250m（50×5），乙\n距离起点150m（50×3）。根据同起点环形模型，每次相遇点移动固定距\n离。从甲视角算，相遇点每次移动250m，要想在起点相遇，则需移动跑道\n长（400m）的倍数，即求250与400最小公倍数，为2000。则2000/250=8，即移动\n8次正好到达起点，时间50×8=400s=6min40s。从乙视角算，相遇点每次移动\n150m，150与400最小公倍数为1500，1500/150=8，即移动8次。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T054.png"
+ },
+ {
+  "tid": "T055",
+  "section": "第五节 行程问题",
+  "ex_no": 18,
+  "page": 22,
+  "top": 214.86920600000002,
+  "pages": [
+   22
+  ],
+  "ocr": [
+   "2",
+   "-",
+   "45Vief",
+   "."
+  ],
+  "bottom": 407.44999062999995,
+  "last_page": 22,
+  "question": "（2021 浙江 B）甲、乙、丙从长 360 米的圆形跑道上的不同点同时出\n发，沿顺时针方向匀速跑步。3 分钟后甲追上乙，又过 1 分 30 秒后丙也\n追上乙，又过 3 分 30 秒后丙追上甲，又过 5分 30 秒后丙第二次追上乙。\n问出发时甲在乙身后多少米? A48  B84  C108  D144",
+  "source": "2021 浙江 B",
+  "has_options": true,
+  "solution": "变换参考系法。求甲在乙身后多少，设乙为参考系（速度为0），甲和丙\n都向乙移动，相关关系如下图。丙第2次追上乙花了9min，即40m/min\n（360/9h）就是丙的速度。且根据甲乙丙\n最初相对位置，可得等式\n8（V丙- V甲）+3V甲=4.5V丙，解得V甲=28m/min\n甲的位置28×3=84m，即在乙身后84m",
+  "db_match": "2021ZJA-71",
+  "db_score": 0.93,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T055.png"
+ },
+ {
+  "tid": "T056",
+  "section": "第五节 行程问题",
+  "ex_no": 19,
+  "page": 22,
+  "top": 430.586206,
+  "pages": [
+   22,
+   23
+  ],
+  "ocr": [],
+  "bottom": 8.993516999999997,
+  "last_page": 23,
+  "question": "（2015 联考）在一次航海模型展示活动中，甲乙两款模型在长 100 米\n的水池两边同时开始相向匀速航行，甲款模型航行 100 米要 72 秒，乙款\n模型航行 100 米要 60 秒，若调头转身时间略去不计，在 12 分钟内甲乙两\n款模型相遇次数是：A9  B10  C11  D12",
+  "source": "2015 联考",
+  "has_options": true,
+  "solution": "相遇的时间为路程/速度和=100/（（100/72）+（100/60））=360/11\n直线相遇时间比为1:3:5…，可列等式360/11 ×？=720（12min）\n？为22，其中比值为21的时候会相遇。21对应第11次（（21-1）/2+1）\n⏰\n1⃣\n2⃣",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T056.png"
+ },
+ {
+  "tid": "T057",
+  "section": "第六节 时钟问题、年龄问题、工程问题",
+  "ex_no": null,
+  "page": 23,
+  "top": 154.93820599999998,
+  "pages": [
+   23
+  ],
+  "ocr": [
+   "300",
+   ">",
+   "-",
+   "%",
+   "05",
+   "=",
+   "mini",
+   "↓",
+   "je"
+  ],
+  "bottom": 314.77421529000003,
+  "last_page": 23,
+  "question": "时钟问题",
+  "source": null,
+  "has_options": false,
+  "solution": "时针的速度：1大格/小时，共12大格，30度/小时，\n分针的速度：1小格/分钟，共60小格，6度/分钟，\n追及问题：第一次时针分针成直角（90度），第二次时针分针成\n直角（90度），分针需追时针180度（说明：从相对角度看，假设时针\n静止，分针走180度再成直角，即从15分到45分）。第一次时针分针\n成直线（180度），第二次时针分针成直线（180度），分针需追时针360\n度（不含重合）。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T057.png"
+ },
+ {
+  "tid": "T058",
+  "section": "第六节 时钟问题、年龄问题、工程问题",
+  "ex_no": 1,
+  "page": 23,
+  "top": 331.29920599999997,
+  "pages": [
+   23
+  ],
+  "ocr": [],
+  "bottom": 416.18609367,
+  "last_page": 23,
+  "question": "（2008云南）在时针的表面上，12时30分的时针与分针的夹角是多少\n度？  A165度   B155度   C150度   D145度",
+  "source": "2008云南",
+  "has_options": true,
+  "solution": "30分的时候，分针走了180度，由于分针时针速度比12:1，则此时夹角为11\n份，则夹角为180×11/12=165度",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T058.png"
+ },
+ {
+  "tid": "T059",
+  "section": "第六节 时钟问题、年龄问题、工程问题",
+  "ex_no": 2,
+  "page": 23,
+  "top": 445.76820599999996,
+  "pages": [
+   23,
+   24
+  ],
+  "ocr": [],
+  "bottom": 35.011517000000026,
+  "last_page": 24,
+  "question": "（2014北京）钟表有一个时针和一个分针，分针每一小时转360度，时\n针每12小时转360度，则24小时内时针和分针成直角共多少次：\nA28  B36  C44  D48",
+  "source": "2014北京",
+  "has_options": true,
+  "solution": "24h内分针走24圈，时针走2圈，速度差22圈。成为直角只需追上180度，\n次数=22× 360/180=44次 【可记住结论：24小时内直角次数44次】\n💡",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T059.png"
+ },
+ {
+  "tid": "T060",
+  "section": "第六节 时钟问题、年龄问题、工程问题",
+  "ex_no": 3,
+  "page": 24,
+  "top": 31.153205999999955,
+  "pages": [
+   24
+  ],
+  "ocr": [],
+  "bottom": 151.93784113999993,
+  "last_page": 24,
+  "question": "（2009河南）某时刻时针和分针正好成90度的夹角，问至少经过多少时\n间，时针和分针又一次成90度夹角？\nA30分钟  B31.5分钟  C32.2分钟  D32.7分钟",
+  "source": "2009河南",
+  "has_options": true,
+  "solution": "又一次成90度，分针需追时针180度。分针转动180度需30min，此时时针也\n转动一定角度，则30min对应的是时间差。因为速度比为12:1，时间差对应\n11份，所求时间为30/11×12=32.7（第一步看追多少度，第二步看速度比）",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T060.png"
+ },
+ {
+  "tid": "T061",
+  "section": "第六节 时钟问题、年龄问题、工程问题",
+  "ex_no": 4,
+  "page": 24,
+  "top": 177.557206,
+  "pages": [
+   24
+  ],
+  "ocr": [],
+  "bottom": 298.341206,
+  "last_page": 24,
+  "question": "（2008吉林）四点半钟后，时针与分针第一次成直线的时刻为：\nA4点40分  B4点45分又4/11分  C4点54份又6/11分  D4点57分",
+  "source": "2008吉林",
+  "has_options": true,
+  "solution": "4点半对应时钟上，分针已领先时针45度，要想成直线，则分针还需领先\n135度，即用相对速度领先135度，相对速度为速度差5.5度/min（分针6，时\n针0.5），还需要135/5.5=24+，此时在4点54分+\n相比例3的解法，直接用速度差更容易理解，两种解法都可",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T061.png"
+ },
+ {
+  "tid": "T062",
+  "section": "第六节 时钟问题、年龄问题、工程问题",
+  "ex_no": 5,
+  "page": 24,
+  "top": 332.784206,
+  "pages": [
+   24,
+   25
+  ],
+  "ocr": [],
+  "bottom": 39.32358799999997,
+  "last_page": 25,
+  "question": "（2024深圳）阿学的爸爸上午七点多出门钓鱼时，发现家里墙上时钟\n的时针与分针夹角为90° ，中午十二点多回家吃饭时，发现墙上时钟的时\n针与分针夹角依然为90°，阿学的爸爸外出期间，时针与分针呈180°至多有\n（ ）次。A4  B5  C6  D7",
+  "source": "2024深圳",
+  "has_options": true,
+  "solution": "至多多少次，则7点尽可能少，12点尽可能多，可粗画图\n在移动过程中，7点多无符合要求的情况\n8点多、9点多、10点多、11点多、12点多有\n至多5次\n快慢钟：《比标准时间每小时快/慢几分钟》，还原成速度比",
+  "db_match": "2024SZ-60",
+  "db_score": 0.95,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T062.png"
+ },
+ {
+  "tid": "T063",
+  "section": "第六节 时钟问题、年龄问题、工程问题",
+  "ex_no": 6,
+  "page": 25,
+  "top": 49.70620599999995,
+  "pages": [
+   25
+  ],
+  "ocr": [
+   "unfomin="
+  ],
+  "bottom": 170.49097204999987,
+  "last_page": 25,
+  "question": "（2016四川选调）有一只机械手表，每小时慢2分钟，某天中午11点50分\n的时候，把手表调成了标准时间，那么当这只手表走到第二天中午12点\n时，此时的标准时间是：A12:50  B13:00  C12:48  D13:02",
+  "source": "2016四川选调",
+  "has_options": true,
+  "solution": "慢表和标准表速度比为58:60=29:39，某天把慢表时间调整为11:50，到第二天\n12点走过了24h+10min，可列等式\n即多走1/29，即1450min×1/29=50min",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T063.png"
+ },
+ {
+  "tid": "T064",
+  "section": "第六节 时钟问题、年龄问题、工程问题",
+  "ex_no": 7,
+  "page": 25,
+  "top": 194.03220599999997,
+  "pages": [
+   25
+  ],
+  "ocr": [],
+  "bottom": 332.76604214999986,
+  "last_page": 25,
+  "question": "（2014江苏B）小张的手表每天快30分钟，小李的手表每天慢20分钟，\n某天中午12点两人同时把表调到标准时间，则两人的手表再次同时显示\n标准时间最少需要的天数为：A24  B36  C72  D114",
+  "source": "2014江苏B",
+  "has_options": true,
+  "solution": "再次显示标准时间则需快/慢一圈（12h=720min）\n对于小张，720/30=24天/次，快12小时需要24天。\n对于小李，720/20=36天/次，慢12小时需要36天。\n同时显示12∶00最少需要的天数为24和36的最小公倍数，即72天。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T064.png"
+ },
+ {
+  "tid": "T065",
+  "section": "第六节 时钟问题、年龄问题、工程问题",
+  "ex_no": 8,
+  "page": 25,
+  "top": 362.20620599999995,
+  "pages": [
+   25,
+   26
+  ],
+  "ocr": [
+   "F"
+  ],
+  "bottom": 29.942206000000056,
+  "last_page": 26,
+  "question": "（2016广东）小王早上看到挂钟显示8点多，急忙赶往公司上班。但是\n到了公司却发现时间和自己出门看到的挂钟时间一样，才明白是自己出\n门前误把挂钟的时针看成分针、分针看成时针。已知小王平时上班路程\n不超过1.5小时，今天上班他花费了（ ） 。\nA48分钟  B55分钟  C1小时  D 1小时3分钟",
+  "source": "2016广东",
+  "has_options": true,
+  "solution": "实际上是时针走到了分钟的位置，分针走到了时针的位置，即分针和时\n针共走了一圈360度。理解后可以看成行程跑步问题，两人合起来跑了一\n圈，即时间=总路程/速度和= 360°/6.5=55min（55.38min取整数）\n•年龄差不变，年龄和倍增。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T065.png"
+ },
+ {
+  "tid": "T066",
+  "section": "第六节 时钟问题、年龄问题、工程问题",
+  "ex_no": null,
+  "page": 26,
+  "top": 31.542205999999965,
+  "pages": [
+   26
+  ],
+  "ocr": [],
+  "bottom": 65.84021529000006,
+  "last_page": 26,
+  "question": "年龄问题",
+  "source": null,
+  "has_options": false,
+  "solution": "•看到几倍/几分之一、多几岁/少几岁考虑列方程。\n•不同时间点的描述可以互相转化。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T066.png"
+ },
+ {
+  "tid": "T067",
+  "section": "第六节 时钟问题、年龄问题、工程问题",
+  "ex_no": 9,
+  "page": 26,
+  "top": 85.06620599999997,
+  "pages": [
+   26
+  ],
+  "ocr": [],
+  "bottom": 187.90216376999996,
+  "last_page": 26,
+  "question": "（2012北京）甲乙丙三人在2008年的年龄（周岁）之和为60，2010年甲\n是丙年龄的两倍，2011 年乙是丙年龄的两倍，问甲是哪一年出生的：\nA1988  B1986  C1984  D1982",
+  "source": "2012北京",
+  "has_options": true,
+  "solution": "方程法：设2010年丙年龄为x，乙年龄为y，可得2008年甲为2x-2，乙为\n2x-1，丙为x-2，可列5x-5=60，x=13，则2008年甲26岁，1984年出生",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T067.png"
+ },
+ {
+  "tid": "T068",
+  "section": "第六节 时钟问题、年龄问题、工程问题",
+  "ex_no": 10,
+  "page": 26,
+  "top": 207.91020600000002,
+  "pages": [
+   26
+  ],
+  "ocr": [],
+  "bottom": 328.6952338699999,
+  "last_page": 26,
+  "question": "（2013河北）今年为2013年，女儿年龄是母亲年龄的1/4，40年后女儿\n的年龄是母亲年龄的2/3。问当女儿年龄是母亲年龄的1/2时是公元多少\n年？  A2021  B2022  C2026  D2029",
+  "source": "2013河北",
+  "has_options": true,
+  "solution": "比例法。由于年龄差不变，则比例差不变，2013年年龄比1:4，40年后年龄\n比2:3=6:9，40年后对应增长5份，即1份对应8年。要求某年年龄比1:2=3:6，增\n长2份，则增长16年，即2029年",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T068.png"
+ },
+ {
+  "tid": "T069",
+  "section": "第六节 时钟问题、年龄问题、工程问题",
+  "ex_no": 11,
+  "page": 26,
+  "top": 353.865206,
+  "pages": [
+   26,
+   27
+  ],
+  "ocr": [
+   "3k",
+   "2010",
+   "1",
+   "3xt",
+   "3",
+   "-",
+   "#Ip",
+   "3x+2"
+  ],
+  "bottom": 52.632181349999996,
+  "last_page": 27,
+  "question": "（ 2022浙江C）2020年时，李某的年龄是自己工龄的4倍，且正好是张\n某年龄的2/3，到2024年时，张某的年龄正好是自己工龄的2倍。已知张某\n参加工作时李某10岁，那么李某参加工作时的年龄是多少？\nA18岁  B21岁  C24岁  D27岁\n工程问题",
+  "source": "2022浙江C",
+  "has_options": true,
+  "solution": "双重年龄（可画线段助理解）。设2020年李某年龄4x（工龄x），张某年\n龄则为6x。2004年，张某年龄6x+4，工龄为3x+2，则2020年张某的工龄为\n3x-2。已知张某参加工作时李某10岁，李某年龄（2020年）-张某工龄\n（2020年）=10，可得4x-（3x-2）=10，x=8，则李某参加工作年龄为3x=24。\n•\n总量=效率×天数\n•通常设总量为1或效率为1",
+  "db_match": "2022ZJA-70",
+  "db_score": 0.98,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T069.png"
+ },
+ {
+  "tid": "T070",
+  "section": "第六节 时钟问题、年龄问题、工程问题",
+  "ex_no": 12,
+  "page": 27,
+  "top": 74.50920599999995,
+  "pages": [
+   27
+  ],
+  "ocr": [],
+  "bottom": 231.19224315999998,
+  "last_page": 27,
+  "question": "（2020新疆）某新型建材生产车间计划生产480个建材，当生产任务\n完成一半时，暂时停止生产，对器械进行维修清理，用时20分钟。恢复\n生产后工作效率提高了三分之一，结果完成任务时间比原计划提前了40\n分钟，问对器械进行维修清理后每小时生产多少个建材？\nA80  B87  C94  D102",
+  "source": "2020新疆",
+  "has_options": true,
+  "solution": "比例法，还原法。效率提升后，共计提前了60min（20+40），且前后效率\n比为3:4，即前后时间比为4:3，即1份为1h，前4h后3h。已知任务一半时暂\n停，则前面240个4h，后面240个3h（每小时80件）",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T070.png"
+ },
+ {
+  "tid": "T071",
+  "section": "第六节 时钟问题、年龄问题、工程问题",
+  "ex_no": 13,
+  "page": 27,
+  "top": 256.97720599999997,
+  "pages": [
+   27
+  ],
+  "ocr": [],
+  "bottom": 406.77961799999997,
+  "last_page": 27,
+  "question": "（2019北京）池中原有一定量的水，如果用一台抽水机向池内灌水，\n6小时可灌至半满；如用3台抽水机灌水，8小时可灌满。如将池中水排\n空，用4台抽水机灌水几小时能灌满？ A6  B7  C8  D9",
+  "source": "2019北京",
+  "has_options": true,
+  "solution": "原池有定量水，关注差异。设效率为1，3×8 - 1×6=18，此时为半满。则\n总量为36，4台机灌水时间36/4=9\n多用等效思想，少用公式，常设总量为1\n一起干活",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T071.png"
+ },
+ {
+  "tid": "T072",
+  "section": "第六节 时钟问题、年龄问题、工程问题",
+  "ex_no": 14,
+  "page": 27,
+  "top": 429.32120599999996,
+  "pages": [
+   27
+  ],
+  "ocr": [],
+  "bottom": 568.05530397,
+  "last_page": 27,
+  "question": "（2019北京）录入员小张和小李需要合作完成一项录入任务，这项任\n务小李一人需要8小时，小张一人需要10小时。两人在共同工作了3个小\n时后，小李因故回了趟家，期间小张一直在工作，小李返回后两个人又\n用了1个小时就完成了任务。在完成这项任务的过程中，小张比小李多\n工作了几个小时？  A1  B1.5  C2  D2.5",
+  "source": "2019北京",
+  "has_options": true,
+  "solution": "设总量为1，李效率为1/8，张效率为1/10，李共计工作4h，则完成\n4×1/8=1/2，则剩下1/2有张完成，则张时间1/2 / 1/10=5，即多工作1h。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T072.png"
+ },
+ {
+  "tid": "T073",
+  "section": "第六节 时钟问题、年龄问题、工程问题",
+  "ex_no": 15,
+  "page": 28,
+  "top": 15.573206000000027,
+  "pages": [
+   28
+  ],
+  "ocr": [],
+  "bottom": 204.07299999999998,
+  "last_page": 28,
+  "question": "（2021广东县级）为支持工程建设，某公司派出甲、乙两队工程人\n员参与一个建设项目。如果由甲队单独施工，200天可完成该项目；如果\n由乙队单独施工，则需要300天。甲、乙两队共同施工60天后，甲队被临\n时调离，由乙队单独完成剩余任务，则完成该项目共需（ ）天。\nA120  B150  C180  D210",
+  "source": "2021广东县级",
+  "has_options": true,
+  "solution": "设总量为1，甲效率为1/200，乙效率为1/300，甲乙工作60天甲撤离，则甲\n实际完成了0.3（60/200），剩下0.7都由乙完成，则时间为0.7/1/300=210\n类比年龄问题，即效率相同每个人每年都是长1岁，\n同效率先后干\n年龄差不变，年龄和倍增",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T073.png"
+ },
+ {
+  "tid": "T074",
+  "section": "第六节 时钟问题、年龄问题、工程问题",
+  "ex_no": 16,
+  "page": 28,
+  "top": 225.106206,
+  "pages": [
+   28
+  ],
+  "ocr": [],
+  "bottom": 363.84030397000004,
+  "last_page": 28,
+  "question": "（2022广东县级）甲、乙两人计划分装会议材料，9点多先后开始工\n作，且两人每分钟完成分装的份数相同。9点38分时，甲完成的份数是乙\n的4倍，9点53分时，甲完成的份数是乙的1.5倍。那么，甲比乙早（ ）分\n钟开始工作。 A4  B6  C8  D9",
+  "source": "2022广东县级",
+  "has_options": true,
+  "solution": "效率相同则比例差不变，甲比乙早多少即求差值（类比年龄差）。\n9:38时，甲乙比4:1。9:53时，甲乙比3:2=9:6。增长5份对应15min，则1份对应\n3min。差值不变为3份即9min，甲比乙早9min。",
+  "db_match": "2022GD-37",
+  "db_score": 0.95,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T074.png"
+ },
+ {
+  "tid": "T075",
+  "section": "第六节 时钟问题、年龄问题、工程问题",
+  "ex_no": 17,
+  "page": 28,
+  "top": 390.988206,
+  "pages": [
+   28,
+   29
+  ],
+  "ocr": [],
+  "bottom": 59.28528000000006,
+  "last_page": 29,
+  "question": "（2025副省）甲、乙、丙 台收割机每小时均能收割2亩小麦，三台机\n器上午先后开始收割工作，12:00时甲收割的面积是乙的1.5倍，且比丙多\n收割6亩，16:00时3台收割机共收割了50亩，问乙是何时开始工作的？\nA6:00  B7:00  C8:00  D9:00",
+  "source": "2025副省",
+  "has_options": true,
+  "solution": "12时，甲乙丙分别为3x，2x，3x-6。12时-16时增加3×2×4=24亩。此时共计50\n亩，可列方程3x+2x+3x-6+24=50，x=4。则12时乙为8亩，“8亩”为乙工作4小\n时的结果，可推乙8点开始。\n1.求时间最短，任务尽可能给高手（效率高的人）\n2.求费用最少，任务尽可能给低手（费用低的人）\n分配工作\n3.多个任务各有所长先分配优势项目，先干完帮后干完。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T075.png"
+ },
+ {
+  "tid": "T076",
+  "section": "第六节 时钟问题、年龄问题、工程问题",
+  "ex_no": 18,
+  "page": 29,
+  "top": 73.89920599999994,
+  "pages": [
+   29
+  ],
+  "ocr": [],
+  "bottom": 266.4792060000001,
+  "last_page": 29,
+  "question": "（2020地市）甲、乙两条生产线生产A和B两种产品。其中甲生产线生\n产A、B产品的效率分别是乙生产线的2倍和3倍。现有2种产品各X件的生\n产任务，企业安排甲和乙生产线合作尽快完成任务，最终甲总共生产了\n1.5X件产品。问乙在单位时间内生产A的件数是生产B件数的多少倍？\nA3/4  B3/5  C4/3  D5/3",
+  "source": "2020地市",
+  "has_options": true,
+  "solution": "多个任务各有所长。甲优先生产B，乙优先生产A。甲共生产1.5X，即包括\nX个B和0.5X个A；乙生产0.5X个A。又因为生产A的甲乙比效率为2:1，假设乙\n生产0.5X个A的时间为1，则甲生产0.5X个A的时间为0.5。即甲生产过程中，\n0.5时间生产X个B，0.5时间生产0.5X个A，即甲生产AB效率比为1:2，则乙生\n产AB效率比为1/2 ：2/3 =3 ：4",
+  "db_match": null,
+  "db_score": 0.32,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T076.png"
+ },
+ {
+  "tid": "T077",
+  "section": "第六节 时钟问题、年龄问题、工程问题",
+  "ex_no": 19,
+  "page": 29,
+  "top": 290.154206,
+  "pages": [
+   29
+  ],
+  "ocr": [],
+  "bottom": 410.93910295999996,
+  "last_page": 29,
+  "question": "（2025地市）某种机械由3个A模块和2个B模块组成。甲车间每天可生\n产6个A模块或3个B模块，乙车间每天可生产1个A模块或2个B模块。现两车\n间合作生产40台该机械所需模块，问至少需要多少天？  A24 B26 C28 D30",
+  "source": "2025地市",
+  "has_options": true,
+  "solution": "多个任务各有所长。甲优先生产A，乙优先生产B。40台需要120个A和80个\nB。120A需由甲20天完成，80B需由乙40天完成，则甲完成后帮乙生产B。生\n产20天后A完成目标值，B还差40个，时间=总量/效率和=40/5=8，共28天",
+  "db_match": "2025GK-73",
+  "db_score": 0.93,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T077.png"
+ },
+ {
+  "tid": "T078",
+  "section": "第六节 时钟问题、年龄问题、工程问题",
+  "ex_no": 20,
+  "page": 29,
+  "top": 440.737206,
+  "pages": [
+   29,
+   30
+  ],
+  "ocr": [],
+  "bottom": 42.08541200000002,
+  "last_page": 30,
+  "question": "（2020江苏B）梳理甲、乙两个文件的资料，张单独完成，分别需要2\n小时、8小时；王单独完成，分别需要1小时、6小时。若两人合作完成，\n则需要的时间至少是？ A3  B4  C5  D6",
+  "source": "2020江苏B",
+  "has_options": true,
+  "solution": "多个任务各有所长。张优先梳理乙，王优先梳理甲。王完成甲后用时\n1h，此时张梳理乙完成了1/8，剩余7/8有张王一起完成。\n时间=总量/效率和=7/8 /（1/8 + 1/6）=3，共计用时1+3=4h\n秒杀技巧\n利用快慢，构造不等式",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T078.png"
+ },
+ {
+  "tid": "T079",
+  "section": "第六节 时钟问题、年龄问题、工程问题",
+  "ex_no": 21,
+  "page": 30,
+  "top": 58.72420599999998,
+  "pages": [
+   30
+  ],
+  "ocr": [
+   "*",
+   "*",
+   "X",
+   "F"
+  ],
+  "bottom": 234.59440117999998,
+  "last_page": 30,
+  "question": "（2022上海B）车辆行驶过程中会造成轮胎磨损，某款汽车后轮行驶\n满4万公里需要更换；前轮磨损较大，行驶满3万公里就需要更换。若前\n后轮使用的轮胎相同，那么大约行驶（ ）万公里后将前后轮胎交换，可\n以实现同一时间更换前后轮胎。 A1.5  B1.7  C2  D2.2",
+  "source": "2022上海B",
+  "has_options": true,
+  "solution": "秒杀法：3W < 总行程 < 4W，1.5W < 半程 < 2W，只有1.7符合半程范围。\n常规法：要想同一时间更换前后轮胎，即前后轮胎磨损总量一致。设x\n万公里后交换，x/3+x/4=1，x=1.7。（假设前段距离，前胎A磨损了x/3，后\n胎B磨损了x/4。为了总计磨损程度一样，后段A轮胎磨损x/4，B轮胎磨损\nx/3。此时，前后半段距离相同，换胎的时间点是路程走到一半）",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T079.png"
+ },
+ {
+  "tid": "T080",
+  "section": "第六节 时钟问题、年龄问题、工程问题",
+  "ex_no": 22,
+  "page": 30,
+  "top": 259.47220599999997,
+  "pages": [
+   30
+  ],
+  "ocr": [],
+  "bottom": 344.35922457999993,
+  "last_page": 30,
+  "question": "（2022云南）一件工作由甲乙丙三人完成，若甲、乙合作先干10小\n时，丙再单干1小时可以完成。已知乙单干用的时间比甲多4小时，丙单\n干用的时间是甲的1/2还多2小时，问甲单干需多少小时？A20 B25 C30 D35",
+  "source": "2022云南",
+  "has_options": true,
+  "solution": "工作用时=10甲+10乙+丙=（全转化为甲）=10甲+10_甲+2_甲=22_甲（小于22）",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T080.png"
+ },
+ {
+  "tid": "T081",
+  "section": "第六节 时钟问题、年龄问题、工程问题",
+  "ex_no": null,
+  "page": 30,
+  "top": 379.509206,
+  "pages": [
+   30,
+   31
+  ],
+  "ocr": [],
+  "bottom": 8.993516999999997,
+  "last_page": 31,
+  "question": "一项工程，若甲队单独工作则恰好按时完成；乙队单独工作则需延后5天\n完成；丙队单独工作则能提前3天完成。假设甲队先工作6天，再由乙队\n工作12天恰好可以完成这项工程。问乙队单独完成这项工程需要多少\n天？ A12  B15  C18  D20",
+  "source": null,
+  "has_options": true,
+  "solution": "已知甲效率高于乙，则工作用时=6甲+12乙<18乙，即乙队单独完成要大于\n18天\n⭐",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T081.png"
+ },
+ {
+  "tid": "T082",
+  "section": "第七节 溶液问题、经济利润问题",
+  "ex_no": null,
+  "page": 31,
+  "top": 76.56320599999998,
+  "pages": [
+   31
+  ],
+  "ocr": [
+   "7",
+   "b",
+   "a",
+   "f",
+   "A",
+   "B",
+   "[",
+   "2"
+  ],
+  "bottom": 280.90498133999984,
+  "last_page": 31,
+  "question": "溶液问题",
+  "source": null,
+  "has_options": false,
+  "solution": "•\n浓度公式：浓度溶质/溶液（例：盐/盐水）\n•\n纯盐浓度是1，纯水浓度是0\n混合问题：线段法，新浓度到原本浓度的距离和原本的权重成反比。\n（十字交叉法）\n例：质量为A浓度为a的溶液，混合质量为B浓度为b的溶液成为新的溶\n液，问新溶液的：\n（1）溶液的量：A+B  （2）溶质的量：Aa+Bb  （3）浓度r：Aa+Bb / A+B\n线段距离成反比推导过程：\n① Aa+Bb / A+B -a = Bb-Ba / A+B\n② Aa+Bb / A+B -b = Aa-Ab / A+B\n①②同时取绝对值，则①/ ②=B:A",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T082.png"
+ },
+ {
+  "tid": "T083",
+  "section": "第七节 溶液问题、经济利润问题",
+  "ex_no": 1,
+  "page": 31,
+  "top": 300.995206,
+  "pages": [
+   31
+  ],
+  "ocr": [],
+  "bottom": 403.83103285999994,
+  "last_page": 31,
+  "question": "（2012江苏 B）某种溶液的浓度为 20%， 加入水后溶液的浓度变为\n15%。如果再加入同样多的水，则溶液浓度变为：A13% B12.5% C12% D10%",
+  "source": "2012江苏 B",
+  "has_options": true,
+  "solution": "方法：加水看盐（盐不变），加盐看水（水不变）。\n根据公式：浓度=盐/盐水，此题盐不变，浓度由20%→15%，即4→3，则盐\n水3→4。再加入同样多的水，即盐水4→5，此时浓度5→4，即15%→12%",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T083.png"
+ },
+ {
+  "tid": "T084",
+  "section": "第七节 溶液问题、经济利润问题",
+  "ex_no": 2,
+  "page": 31,
+  "top": 427.030206,
+  "pages": [
+   31,
+   32
+  ],
+  "ocr": [],
+  "bottom": 35.26482400000009,
+  "last_page": 32,
+  "question": "（2009 江西）在浓度为 40%的酒精中加入 4 千克水，浓度变为 30%，\n再加入 M 千克纯酒精，浓度变为 50%，则M为多少？A8  B12  C4.6  D6.4",
+  "source": "2009 江西",
+  "has_options": true,
+  "solution": "（1）加水酒精不变。浓度40%→30%，则酒精溶液3→4，差值为“加入水\n量”，1份为4kg水，则酒精溶液加水后为16kg，酒精为4.8kg，水为11.2kg。\n（2）加酒精水不变。浓度要50%，则酒精：水=1:1，水为11.2kg，还需酒精\n11.2-4.8=6.4kg\n别关注过程，关注最后溶质的量\n续杯问题",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T084.png"
+ },
+ {
+  "tid": "T085",
+  "section": "第七节 溶液问题、经济利润问题",
+  "ex_no": 3,
+  "page": 32,
+  "top": 49.18620599999997,
+  "pages": [
+   32
+  ],
+  "ocr": [
+   "+x5",
+   "[l",
+   "*xf)x#X5]XY",
+   "%",
+   "x*",
+   "+",
+   "327",
+   "+",
+   "+",
+   "=",
+   "."
+  ],
+  "bottom": 169.97110295999994,
+  "last_page": 32,
+  "question": "（2017 上海）浓度为 50%同一溶液，倒出 1/4，用浓度20%的同一溶液补\n满，重复3次后得到的溶液浓度约为？  A32.7%  B30.3%  C27.0%  D29.4%",
+  "source": "2017 上海",
+  "has_options": true,
+  "solution": "关注溶质的变化。倒出1/4剩3/4，即溶质剩余3/4 × 1/2。1/4的容量用20%的\n浓度补满，即补充溶质1/4 ×1/5。此过程重复3遍。可列等式：\n重复关系：原溶液溶质剩3/4，加新溶质1/20",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T085.png"
+ },
+ {
+  "tid": "T086",
+  "section": "第七节 溶液问题、经济利润问题",
+  "ex_no": 4,
+  "page": 32,
+  "top": 191.978206,
+  "pages": [
+   32
+  ],
+  "ocr": [],
+  "bottom": 326.1554195,
+  "last_page": 32,
+  "question": "（2024四川）现有浓度为70%的盐水100克。从中倒出40克，再加入40克浓\n度为20%的盐水，如此操作共5次后，问盐水的浓度在以下哪个范围内？\nA低于23%  B在23%到25%之间  C在25%到27%之间  D高于27%",
+  "source": "2024四川",
+  "has_options": true,
+  "solution": "重复关系：原溶液溶质剩60%，加新溶8g。解得，重复5次后浓度为23.6%。\n线段法（十字交叉法）：新浓度到原本浓度的距离\n混合问题\n和原本的权重成反比",
+  "db_match": "2024SC-51",
+  "db_score": 1.0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T086.png"
+ },
+ {
+  "tid": "T087",
+  "section": "第七节 溶液问题、经济利润问题",
+  "ex_no": 5,
+  "page": 32,
+  "top": 338.32120599999996,
+  "pages": [
+   32
+  ],
+  "ocr": [
+   "%",
+   "3009",
+   "30995-- 173-",
+   "%",
+   ":",
+   "-75",
+   "%",
+   "-204",
+   "4009",
+   "?60"
+  ],
+  "bottom": 422.74740299999996,
+  "last_page": 32,
+  "question": "（2019 河北县级）将300克95%浓度的酒精与若干60%浓度的酒精，混合成\n75%浓度的酒精，需要60%浓度的酒精多少克？A225  B240  C380  D400",
+  "source": "2019 河北县级",
+  "has_options": true,
+  "solution": "",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T087.png"
+ },
+ {
+  "tid": "T088",
+  "section": "第七节 溶液问题、经济利润问题",
+  "ex_no": 6,
+  "page": 32,
+  "top": 444.817206,
+  "pages": [
+   32,
+   33
+  ],
+  "ocr": [
+   "%.",
+   "100",
+   "+40)+20",
+   "Al-20",
+   "%",
+   "-15",
+   "200+400+100",
+   "X10%",
+   "="
+  ],
+  "bottom": 30.28320599999995,
+  "last_page": 33,
+  "question": "（2013浙江B）瓶中装有浓度为20%的酒精溶液1000克，现在又分别倒入\n200和400克的A、B两种酒精溶液，瓶里的溶液浓度变为15%，已知A种酒精溶\n液的浓度是B种酒精溶液浓度的2倍。那么A种酒精溶液的浓度是多少?\nA5%  B6%  C8%  D10%",
+  "source": "2013浙江B",
+  "has_options": true,
+  "solution": "•利润三要素：利润、成本、定价",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T088.png"
+ },
+ {
+  "tid": "T089",
+  "section": "第七节 溶液问题、经济利润问题",
+  "ex_no": null,
+  "page": 33,
+  "top": 32.935205999999994,
+  "pages": [
+   33
+  ],
+  "ocr": [],
+  "bottom": 66.18121528999995,
+  "last_page": 33,
+  "question": "利润问题",
+  "source": null,
+  "has_options": false,
+  "solution": "•公式：利润+成本=定价\n•利润率=利润/成本",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T089.png"
+ },
+ {
+  "tid": "T090",
+  "section": "第七节 溶液问题、经济利润问题",
+  "ex_no": 7,
+  "page": 33,
+  "top": 87.67420599999997,
+  "pages": [
+   33
+  ],
+  "ocr": [],
+  "bottom": 190.51029468000002,
+  "last_page": 33,
+  "question": "（2021 湖北选调）某企业 2020 年营业收入比上年降低了 10%，但国家减\n税降费政策使成本比上年降低了 20%。 若 2019 年该企业的利润率为 20%，\n则 2020 年该企业的利润率为多少？ A25%  B30%  C35%  D40%",
+  "source": "2021 湖北选调",
+  "has_options": true,
+  "solution": "公式法。设2019年成本为1，利润为0.2，营收为1.2。则2019年营收为\n1.2×0.9=1.08，成本为0.8，则利润为0.28，利润率为0.28/0.8=35%",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T090.png"
+ },
+ {
+  "tid": "T091",
+  "section": "第七节 溶液问题、经济利润问题",
+  "ex_no": 8,
+  "page": 33,
+  "top": 215.805206,
+  "pages": [
+   33
+  ],
+  "ocr": [],
+  "bottom": 354.538206,
+  "last_page": 33,
+  "question": "（2019 四川选调）2016年某电子产品定价为 n 元/台，2017年由于技术升\n级成本降低，定价降低10%，每台产品利润提升10%，2017年全年销售这种\n产品的总利润较2016年增加了21%。那么，2017年的销量比2016年：\nA提高了不到 20%   B提高了 20%或以上\nC降低了不到 20%   D降低了 20%或以上",
+  "source": "2019 四川选调",
+  "has_options": true,
+  "solution": "比例除法。总利润=单利×数量。总利润前后比1:1.21，单利前后比1:1.1，则\n总利润前后比1:1.21 / 1:1.1 = 1:1.1，销量提高了10%",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T091.png"
+ },
+ {
+  "tid": "T092",
+  "section": "第七节 溶液问题、经济利润问题",
+  "ex_no": 9,
+  "page": 33,
+  "top": 377.795206,
+  "pages": [
+   33,
+   34
+  ],
+  "ocr": [
+   "/A",
+   "TN"
+  ],
+  "bottom": 37.19941200000005,
+  "last_page": 34,
+  "question": "（2022 副省）为降低碳排放，企业对生产设备进行改造，改造后日产\n量下降了10%，但生产每件产品的能耗成本下降了50%，其他成本和出厂价\n不变的情况下每天的利润提高了10%。已知单件利润=出厂价-能耗成本-其\n他成本，且改造前产品的出厂价是单件利润的 3倍，则改造前能耗成本为\n其他成本的： A不到 1/4   B1/4-1/3 之间   C1/3-1/2 之间   D超过 1/2",
+  "source": "2022 副省",
+  "has_options": true,
+  "solution": "每天利润=日产量×单利，比例除法，可得单利前后比1:1.1 / 1:0.9=9:11。\n已知出厂价=单利+能耗成本+其他成本，且出厂价、其他成本不变，则单\n利9变11（+2），则能耗成本-2（下降了50%），则原能耗成本为4。原出厂价\n是原单利的3倍，则原出厂价为27，则其他成本为27-9-4=14。原能耗成本/原\n其他成本=4/14=28%\n线段法应用\n适用情况：一批VS另一批、去年VS今年",
+  "db_match": "2022GK-72",
+  "db_score": 1.0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T092.png"
+ },
+ {
+  "tid": "T093",
+  "section": "第七节 溶液问题、经济利润问题",
+  "ex_no": 10,
+  "page": 34,
+  "top": 55.800206,
+  "pages": [
+   34
+  ],
+  "ocr": [
+   "%",
+   "%",
+   "<",
+   "1",
+   "0",
+   "-",
+   "g",
+   "70",
+   "%",
+   "-X=70",
+   ">-"
+  ],
+  "bottom": 176.58523386999997,
+  "last_page": 34,
+  "question": "（2009 江苏 A）一批手机，商店按期望获得 100%的利润来定价，结果\n只销售掉 70%。为了尽早销售掉剩下的手机，商店决定打折出售，为了获\n得的全部利润是原来期望利润的 91%，则商店所打的折是：\nA六折  B七折  C八五折  D九折",
+  "source": "2009 江苏 A",
+  "has_options": true,
+  "solution": "70%的利润出售，则新定价1.7，\n旧定价2，则折扣=旧/新=1.7/2=0.85",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T093.png"
+ },
+ {
+  "tid": "T094",
+  "section": "第七节 溶液问题、经济利润问题",
+  "ex_no": 11,
+  "page": 34,
+  "top": 205.13120600000002,
+  "pages": [
+   34
+  ],
+  "ocr": [
+   "F",
+   "%",
+   "5",
+   "0",
+   "%",
+   "2",
+   "0",
+   "2",
+   "-80-",
+   "%",
+   "!",
+   "i->",
+   "*100%-",
+   "-%3",
+   "30"
+  ],
+  "bottom": 400.43227609999997,
+  "last_page": 34,
+  "question": "咖啡店有拿铁和美式两款售价相同的咖啡，拿铁的售价比利润多\n200%，美式的成本比拿铁少1/4。 某天营业结束后，店长统计两款咖啡的\n总利润率为 80%，问当天拿铁和美式的销量之比为：A2:1  B1:2  C2:3  D3:2",
+  "source": null,
+  "has_options": true,
+  "solution": "拿铁的售价:利润=3:1，则成本占2份，利润率50%。美式成本占1.5份，且售\n价同拿铁，则利润占1.5份，利润率100%。根据线段法（十字相乘法），\n总成本=成本×销量，成本拿铁：美式=4:3\n总成本拿铁:美式=2:3，比例除法2:3/4:3=1:2\n适用情况：方程法、线段法较复杂的时候，且容\n鸡兔同笼法\n易辨析鸡兔同笼中的头、足",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T094.png"
+ },
+ {
+  "tid": "T095",
+  "section": "第七节 溶液问题、经济利润问题",
+  "ex_no": 12,
+  "page": 34,
+  "top": 412.82120599999996,
+  "pages": [
+   34,
+   35
+  ],
+  "ocr": [],
+  "bottom": 77.11720600000001,
+  "last_page": 35,
+  "question": "（2024 副省）某企业去年全年收入1200万元，支出960万元。今年上半\n年和下半年，企业支出比去年同期分别减少20%和15%，且全年收入与去年\n相同，总体盈余（收入-支出）比去年增加172万元。问今年上半年支出比\n下半年： A少160万元  B多160万元  C少108万元  D多108万元\n盐水思想\n其他应用",
+  "source": "2024 副省",
+  "has_options": true,
+  "solution": "总体盈余比去年多172万元，即支出比去年少172万元。假设960万元全是上\n半年，减少20%即减少192万元，多减少了20万元。20万元由下半年补齐，去\n年下半年20/（20%-15%）=400万元，上半年560万元。则今年上半年448万元，\n下半年340万元，上半年-下半年=108万元\n1、瞪眼法求权重比（一眼看不出来就用方程法）",
+  "db_match": "2024GK-64",
+  "db_score": 0.86,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T095.png"
+ },
+ {
+  "tid": "T096",
+  "section": "第七节 溶液问题、经济利润问题",
+  "ex_no": 13,
+  "page": 35,
+  "top": 99.93820599999998,
+  "pages": [
+   35
+  ],
+  "ocr": [],
+  "bottom": 256.6211122499999,
+  "last_page": 35,
+  "question": "（2015 江苏 B）甲、乙两个工程队需要在规定的工期内完成某项工\n程。若甲、乙两队合作，则恰好能按期完成；若甲的效率提高 1/3，乙的\n效率提高 1/2，则用原定工期 5/7 即可完成；若乙的效率降低 1/4，则需要\n推迟 2 天才能完成。那么，该工程原定的工期为（ ）。\nA10天  B12天  C16天  D18天",
+  "source": "2015 江苏 B",
+  "has_options": true,
+  "solution": "甲效率3→4，乙效率2→3，工期7→5（总效率5→7），刚好对应甲乙变化。\n若乙效率2→1.5，则推迟2天。总效率5→4.5（工期4.5→5），即0.5份对应2\n天。原工期为4.5份，即4.5×4=18天",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T096.png"
+ },
+ {
+  "tid": "T097",
+  "section": "第七节 溶液问题、经济利润问题",
+  "ex_no": 14,
+  "page": 35,
+  "top": 291.480206,
+  "pages": [
+   35,
+   36
+  ],
+  "ocr": [
+   "96",
+   "7521",
+   "32-",
+   ":",
+   ":",
+   ":",
+   ":"
+  ],
+  "bottom": 36.116206000000034,
+  "last_page": 36,
+  "question": "（2024 副省）甲、乙、丙三人的年龄之比为 3：4：5。8 年之后，甲、\n乙的年龄之和是丙的 1.5 倍，且这一年甲、乙、丙、丁四人的平均年龄为\n43 岁。问再过 15 年，甲、乙、丙、丁中有几人将超过 60 岁?\nA4  B3  C2  D1",
+  "source": "2024 副省",
+  "has_options": true,
+  "solution": "从（甲+乙）：丙来看，年龄和+增量=新年龄和\n比例等式直接相加即可成立。则增量1份对应8年，8年后丙48岁，甲32岁，\n乙40岁，丁52岁。再过15年，丙丁超过60岁。\n2、定性秒杀：混合后居中，偏向谁谁大，正中间说明1:1",
+  "db_match": "2024GK-61",
+  "db_score": 1.0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T097.png"
+ },
+ {
+  "tid": "T098",
+  "section": "第七节 溶液问题、经济利润问题",
+  "ex_no": 15,
+  "page": 36,
+  "top": 56.63420599999995,
+  "pages": [
+   36
+  ],
+  "ocr": [],
+  "bottom": 249.21499062999982,
+  "last_page": 36,
+  "question": "（2021 副省）某地调派 96 人分赴车站、机场、超市和学校四个人流\n密集的区域进行卫生安全检查，其中公共卫生专业人员有 62 人。已知派\n往机场的人员是四个区域中最多的，派往车站和超市的人员中， 专业人\n员分别占64%和65，派往学校的人员中， 非专业人员比专业人员少30%，问\n派往机场的人员中，专业人员的占比在四个区域中排名第几？\nA第一   B第二   C第三   D第四",
+  "source": "2021 副省",
+  "has_options": true,
+  "solution": "学校的非专:专业=7:10，则专业占比为10/17=59%。\n车站和超市的专业占比为64%、65%。\n总专业占比为62/96=65%（略小于65%）\n根据混合问题线段法，机场的专业占比一定大于65%。",
+  "db_match": "2021GK-73",
+  "db_score": 0.99,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T098.png"
+ },
+ {
+  "tid": "T099",
+  "section": "第七节 溶液问题、经济利润问题",
+  "ex_no": 16,
+  "page": 36,
+  "top": 275.56120599999997,
+  "pages": [
+   36
+  ],
+  "ocr": [],
+  "bottom": 450.1931823499999,
+  "last_page": 36,
+  "question": "（2023 副省）甲、乙、丙三家科技企业 2021 年的收入之和比 2020 年\n提升了 20%。其中甲企业的收入上升了 400 万元，乙企业的收入下降了\n100 万元且是甲企业收入的一半，丙企业的收入上升了 30%且其 2020 年的\n收入与甲、乙两企业同年收入之和相同。问 2020 年甲企业的收入比乙企\n业高多少万元？  A900   B1100   C400   D600",
+  "source": "2023 副省",
+  "has_options": true,
+  "solution": "2020年，甲乙收入和=丙收入，此时两边权重一样。2021年总上升20%，丙上\n升30%，，则甲乙共上升10%（对应上升300万元），即2020年甲乙和3000万\n元；2021年甲乙和3300万元，且甲乙比2:1，则甲2200万元乙1100万元。可推\n2020年甲1800万元，乙1200万元，相差600万元。",
+  "db_match": "2023GK-74",
+  "db_score": 1.0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T099.png"
+ },
+ {
+  "tid": "T100",
+  "section": "第八节 容斥原理",
+  "ex_no": 1,
+  "page": 37,
+  "top": 239.36220600000001,
+  "pages": [
+   37
+  ],
+  "ocr": [],
+  "bottom": 378.0960421499999,
+  "last_page": 37,
+  "question": "（2014 北京）某旅行团共有 48 名游客，都报名参观了三个景点中的至\n少一个。其中，只参观了一个景点的人数与至少参观了两个景点的人数相\n同，是参观了三个景点的人数的 4倍。 则需要为这些游客购买多少张景点\n门票：A48  B72  C78  D84",
+  "source": "2014 北京",
+  "has_options": true,
+  "solution": "参加人数=参观一处+参观两处+参观三处，设参观三处为x，则参观一处为\n4x，参观两处为3x，参加人数8x（48人），x=6。参观一处买一张票，参观两\n处两张票，参观三处三张票。总票数=4x+6x+3x=13x=78",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T100.png"
+ },
+ {
+  "tid": "T101",
+  "section": "第八节 容斥原理",
+  "ex_no": 2,
+  "page": 37,
+  "top": 402.60520599999995,
+  "pages": [
+   37,
+   38
+  ],
+  "ocr": [],
+  "bottom": 31.318206000000032,
+  "last_page": 38,
+  "question": "（2022 北京）单位组织职工前往甲、乙、丙三个爱国主义教育基地学\n习，要求每名职工至少去1个基地。已知有48人去了甲基地，有42人未去乙\n基地，去丙基地的人中，去1个、2个、3个基地的人数比为 3:2:1。如仅去 2\n个基地和去3个基地的职工分别有x人和y人，则x和y的关系为：\nA x=4y+6   B x=4y-6   C x=3y+6   D x=3y-6",
+  "source": "2022 北京",
+  "has_options": true,
+  "solution": "设总人数为a，去2地人数为x，去3地人数为y，则甲=48，乙=a-42，丙=6y。\n可列等式：总人数=甲+乙+丙-仅去2地 - 2×去3地\na= 48 +（a-42）+ 6y - x - 2y         →x=4y+6\n2、具体题：画图辅助理解",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T101.png"
+ },
+ {
+  "tid": "T102",
+  "section": "第八节 容斥原理",
+  "ex_no": 3,
+  "page": 38,
+  "top": 53.21220600000004,
+  "pages": [
+   38
+  ],
+  "ocr": [],
+  "bottom": 174.80879214379996,
+  "last_page": 38,
+  "question": "（2016 副省）某出版社新招了10名英文、法文和日文方向的外文编\n辑，其中既会英文又会日文的小李是唯一掌握一种以上外语的人。在这\n10人中，会法文的比会英文的多4人，是会日文人数的两倍。问只会英文\n的有几人？ A2  B0  C3  D1",
+  "source": "2016 副省",
+  "has_options": true,
+  "solution": "英\nx\n画图，设只会英文为x人，且假设小李只会英文和日文\n01\n0\n可得右图，可列等式x+1+x+5+（x+3）/2=10，x=1\nx+5\n0x+3/2日\n法",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T102.png"
+ },
+ {
+  "tid": "T103",
+  "section": "第八节 容斥原理",
+  "ex_no": 4,
+  "page": 38,
+  "top": 199.473206,
+  "pages": [
+   38
+  ],
+  "ocr": [],
+  "bottom": 367.98520599999995,
+  "last_page": 38,
+  "question": "（2025 地市）某单位65名职工中， 拥有甲、乙、丙三项认证中至少一\n项的职工正好占80%，没有甲认证的职工与有乙认证的职工人数一样多，\n仅有丙认证的职工有3人，三项认证都有的职工有6人，问有多少人仅拥有\n甲、乙两项认证？A10  B13  C16  D19",
+  "source": "2025 地市",
+  "has_options": true,
+  "solution": "甲\na13\nb\n20%职工（13人）没认证，没有甲的用a标记，有乙的\nb6\nab\naba3丙\n用b标记，可列等式13+3=b+6，b=10\n乙\n3、构造题（最值问题）",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T103.png"
+ },
+ {
+  "tid": "T104",
+  "section": "第八节 容斥原理",
+  "ex_no": 5,
+  "page": 38,
+  "top": 389.663206,
+  "pages": [
+   38,
+   39
+  ],
+  "ocr": [],
+  "bottom": 40.73020599999995,
+  "last_page": 39,
+  "question": "（2019 甘肃）某单位工会会员60人，现在组织会员报名参加兴趣活动\n小组，其中报名徒步组的有40人，羽毛球组的有38人，乒乓球组的有31\n人，这三项活动都报名的有18人，问这个单位工会会员中最多有多少人三\n个小组都没有报名？  A14  B15  C16  D18",
+  "source": "2019 甘肃",
+  "has_options": true,
+  "solution": "设三个小组都没有报名为x人，报名了两个小组为y人，根据三集合非标准\n型公式可得，40+38+31-y-2×18=60-x →x=y-13。要让x最多，则让y最多，即除\n了三个小组都报名的会员外，其余会员均报名两个小组，则的最大值为\n（40+38+31-3×18）/2=27.5，则y最大值为27，x最大值为14\n4、结合数论（周期问题）",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T104.png"
+ },
+ {
+  "tid": "T105",
+  "section": "第八节 容斥原理",
+  "ex_no": 6,
+  "page": 39,
+  "top": 65.42720599999996,
+  "pages": [
+   39
+  ],
+  "ocr": [],
+  "bottom": 330.706206,
+  "last_page": 39,
+  "question": "（2016 山东）团体操表演中，编号为 1~100 的学生按顺序排成一列纵\n队，编号为1的学生拿着红、黄、蓝三种颜色的旗帜，以后每隔2个学生有\n1人拿红旗，每隔3个学生有1人拿蓝旗， 每隔6个学生有1人拿黄旗。 问所\n有学生中有多少人拿两种颜色以上的旗帜？ A13  B14  C15  D16",
+  "source": "2016 山东",
+  "has_options": true,
+  "solution": "题意是每3个学生拿一支红旗，每4个学生拿一支蓝旗，每7个学生拿一支\n黄旗。即每12个学生同时拿红旗和蓝旗，每21个学生同时拿红旗和黄旗，\n每个28学生同时拿蓝旗和黄旗，每84个学生同时拿红旗、黄旗和蓝旗。\n排除编号为1的学生，在剩下99个学生中，拿红旗和蓝旗的有99/12=8…3；拿\n红旗和黄旗的有4；拿蓝旗和黄旗的有3。拿红旗、蓝旗和黄旗的有1。计\n算时需排除重复情况，故拿两种颜色以上旗帜的学生有8+4+3-1*2=13人，加\n上第一个同学，共14人。\n5、面积拼凑（用好算的处理不好算的）",
+  "db_match": null,
+  "db_score": 0.05,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T105.png"
+ },
+ {
+  "tid": "T106",
+  "section": "第八节 容斥原理",
+  "ex_no": 7,
+  "page": 39,
+  "top": 354.784206,
+  "pages": [
+   39,
+   40
+  ],
+  "ocr": [],
+  "bottom": 8.993516999999997,
+  "last_page": 40,
+  "question": "（2011 安徽）如图所示：A、B、C 分别是面积为 60、170、150 的三张\n不同卡片，它们部分重叠放在一起盖在桌面上， 总共盖住的面积为\n280， 且 A 与 B、 B 与 C、 C 与 A 重叠部分的面积分别是 22、60、35。问\n阴影部分的面积是多少： A15  B16  C17  D18",
+  "source": "2011 安徽",
+  "has_options": true,
+  "solution": "阴影为x，\n60+170+150-22-60-35+x=280，尾数法，x尾数为7\n1⃣2⃣3⃣4⃣⚡⚡⚡⚡",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T106.png"
+ },
+ {
+  "tid": "T107",
+  "section": "第九节 排列组合",
+  "ex_no": 1,
+  "page": 40,
+  "top": 263.337206,
+  "pages": [
+   40
+  ],
+  "ocr": [
+   "As",
+   ">",
+   "-",
+   "Co",
+   "->",
+   "As/D"
+  ],
+  "bottom": 384.1221029599999,
+  "last_page": 40,
+  "question": "一个班级有 30 名学生。\n(1)从中选出 2 人,一个担任班长,一个担任副班长,共有多少种不同的选法?\n(2)从中选 2 个人去参加数学竞赛,有多少种不同的选法?",
+  "source": null,
+  "has_options": false,
+  "solution": "（1）30选2，一人是班长一人是副班长，有差别，30×29\n（2）30选2，两人去参加竞赛，无差别，30×29 / 2\n（假设有差别，然后再除序可得一样结果）",
+  "db_match": null,
+  "db_score": 0.2,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T107.png"
+ },
+ {
+  "tid": "T108",
+  "section": "第九节 排列组合",
+  "ex_no": 2,
+  "page": 40,
+  "top": 409.99120600000003,
+  "pages": [
+   40
+  ],
+  "ocr": [
+   "Cg\"",
+   "126",
+   "=",
+   "C",
+   "A",
+   "CA",
+   "126",
+   "="
+  ],
+  "bottom": 544.07551295,
+  "last_page": 40,
+  "question": "将10名运动员平均分成两组进行对抗赛，问有多少种不同的分法：\nA120   B126   C240   D252",
+  "source": null,
+  "has_options": true,
+  "solution": "10名运动员分两组，无差别，具有对称性。为了破除对称性构造细微差\n别，假设其中一人叫小明，小明选4名队友，剩下5人自动分组。\n（换种理解：假设10人排序1-10号，10人中选5人，剩下5人自动成组，则\n但是选1-5一组，则剩下6-10一组；选6-10一组，则剩下1-5一组，有重复，\n需要除序    。上面方法引入“小明”破除对称性，不会重复）",
+  "db_match": null,
+  "db_score": 0.23,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T108.png"
+ },
+ {
+  "tid": "T109",
+  "section": "第九节 排列组合",
+  "ex_no": 3,
+  "page": 41,
+  "top": 21.22420599999998,
+  "pages": [
+   41
+  ],
+  "ocr": [
+   "C",
+   "(8",
+   "6",
+   "2",
+   "5",
+   "1",
+   "5",
+   "x",
+   "6",
+   "2",
+   "5",
+   "X",
+   "=",
+   ","
+  ],
+  "bottom": 122.33258329,
+  "last_page": 41,
+  "question": "（2019 河南选调）某小学组织 6 个年级的学生外出参观包括 A 科技馆\n在内的 6 个科技馆，每个年级任选一个科技馆参观，则有且只有两个年\n级选择 A 科技馆的方案有：A1800种  B18750种  C3800种  D9375种",
+  "source": "2019 河南选调",
+  "has_options": true,
+  "solution": "2个年级选A馆，则      ，剩下4个年级都有5种选择，即5×5×5×5=625\n即\n尾数为5。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T109.png"
+ },
+ {
+  "tid": "T110",
+  "section": "第九节 排列组合",
+  "ex_no": 4,
+  "page": 41,
+  "top": 150.32520599999998,
+  "pages": [
+   41
+  ],
+  "ocr": [
+   "C((",
+   "(j(",
+   "12",
+   "=-=",
+   "-"
+  ],
+  "bottom": 245.20581682999995,
+  "last_page": 41,
+  "question": "（2024 广东）某高校中文系计划从 3 名男生和 3 名女生中选派 4 名学\n生参加暑期支教活动。如果选派的女生不少于 2 名，则选派方案共有\n（ ）种。 A4  B8  C12  D16",
+  "source": "2024 广东",
+  "has_options": true,
+  "solution": "减法，减去奇怪要求。即{ 6选4—6选4且女生为0或1}，根据题意女生不可\n能为0人，即{ 6选4—3男1女}=",
+  "db_match": "2024GD-41",
+  "db_score": 0.91,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T110.png"
+ },
+ {
+  "tid": "T111",
+  "section": "第九节 排列组合",
+  "ex_no": 5,
+  "page": 41,
+  "top": 284.673206,
+  "pages": [
+   41
+  ],
+  "ocr": [
+   "Cy(3",
+   "18",
+   ".-=",
+   "C",
+   "S",
+   "-2",
+   "="
+  ],
+  "bottom": 525.21132313,
+  "last_page": 41,
+  "question": "（2022 副省）某县通过发展旅游业来实现乡村振兴，引进了甲、乙、\n丙、丁、戊和己 6 名专家。其中甲、乙、丙是环境保护专家，丁、戊、\n己是旅游行业专家，甲、丁、戊熟悉社交媒体宣传。现要将 6 名专家平\n均分成 2 个小组，每个小组都要有环境保护专家、旅游行业专家和熟悉\n社交媒体宣传的人，问有多少种不同的分组方式？ A12  B24  C4  D8",
+  "source": "2022 副省",
+  "has_options": true,
+  "solution": "方法一：甲乙丙 ｜ 丁戊己，对称性分析。两个组无先后顺序不分你我，\n一定有一个组“前1后2”（1环境2旅游），另一个组“前2后1”，只要\n“前1后2”组不包含“甲丁戊”，其他组合都符合要求。从“前1后2”来\n看，即{前1后2-甲丁戊}=\n方法二：从甲视角看，要甲选队友，只要甲不同时选乙丙或不同时选丁\n戊，其他组合都符合要求，即剩下5个人里面选2人，减去不选的，即",
+  "db_match": "2022GK-69",
+  "db_score": 1.0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T111.png"
+ },
+ {
+  "tid": "T112",
+  "section": "第九节 排列组合",
+  "ex_no": 6,
+  "page": 42,
+  "top": 23.532205999999974,
+  "pages": [
+   42
+  ],
+  "ocr": [],
+  "bottom": 234.06219163999998,
+  "last_page": 42,
+  "question": "（2022 江苏 A）某企业举行职业技能大赛，3 个下属分公司均选 2 名员\n工参赛。若同一分公司的员工比赛时出场顺序不能相邻，则参赛的 6 名员\n工不同的出场顺序共有： A80种  B120种  C160种  D240种",
+  "source": "2022 江苏 A",
+  "has_options": true,
+  "solution": "不能相邻，其中有一种情况abcabc，位置号123456\n①内部交换，两a互换或两b互换或两c互换，有5×5×5=8种情况。\n②外部交换，不改变两a、两b、两c相对位置，将两a看成整体，即ABC互\n换，有3!=3×2×1=6种情况。可得，出场顺序必是8×6=48的倍数，锁定D。\n③枚举法列出其他交换，规定从左到右abc的顺序，假设a在13号，则符合\n条件的情况只有1种，即abacbc；假设a在14号，2种abcabc、abcacb；假设a在\n15号，1种abcbac；假设a 在16号，1种abcbca，共5种。\n则所有情况8×6×5=240种",
+  "db_match": "2022JSA-65",
+  "db_score": 0.87,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T112.png"
+ },
+ {
+  "tid": "T113",
+  "section": "第九节 排列组合",
+  "ex_no": 7,
+  "page": 42,
+  "top": 269.654206,
+  "pages": [
+   42
+  ],
+  "ocr": [
+   "C",
+   "(2(2336",
+   "=",
+   "·."
+  ],
+  "bottom": 498.13299992,
+  "last_page": 42,
+  "question": "（2023 陕西）某空军基地举行飞行训练，有 8 架歼击机、3 架预警直升\n机、2 架反潜直升机参与训练，每架飞机编号不同。训练时，需派出 3 架\n歼击机、2 架预警直升机、1架反潜直升机进行起降飞行。 若每次只能起\n飞 1 架飞机， 其中 3 架歼击机必须相邻起飞，2架预警直升机不能相邻起\n飞，那么不同的起飞方式有多少种？ A504  B4032  C8064  D24192",
+  "source": "2023 陕西",
+  "has_options": true,
+  "solution": "①先选出飞机，即\n②减去奇怪条件，即{3 歼击机相邻—3 歼击机相邻且2预警机相邻}，其中3\n歼击机相邻的时候看成整体，2预警机相邻的时候也看成整体。\n3 歼击机相邻，外部顺序4!=24，内部顺序3!=6，即总情况24×6=144。\n3 歼击机相邻且2预警机相邻，外部顺序3!=6，内部顺序3!×2!=12 ，总=72。\n即{3 歼击机相邻—3 歼击机相邻且2预警机相邻}的情况=144-72=72。\n符合条件的情况336×72",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T113.png"
+ },
+ {
+  "tid": "T114",
+  "section": "第九节 排列组合",
+  "ex_no": 8,
+  "page": 43,
+  "top": 18.873205999999982,
+  "pages": [
+   43
+  ],
+  "ocr": [],
+  "bottom": 157.60720599999996,
+  "last_page": 43,
+  "question": "国庆七天假期，某单位安排甲、乙、丙、丁、戊、己六位干部值班，\n每天仅安排一人值班，每人至少值班一天。因特殊原因，甲、乙、丙均只\n能值班一天且甲必须在乙之前值班，则共有多少种排班情况？\nA360  B758  C1680  D3780",
+  "source": null,
+  "has_options": true,
+  "solution": "①丁戊己中有1人要多值班1天，有3种情况。②甲乙丙丁戊己丁，7人排序\n1\n2\n共7!，但是丁1丁2实际是同一人，需除序，即/2。③甲乙顺序固定，再次除\n序/2。总情况= 3×7!/4",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T114.png"
+ },
+ {
+  "tid": "T115",
+  "section": "第九节 排列组合",
+  "ex_no": 9,
+  "page": 43,
+  "top": 184.56320599999998,
+  "pages": [
+   43
+  ],
+  "ocr": [
+   "A",
+   "="
+  ],
+  "bottom": 377.1439906299999,
+  "last_page": 43,
+  "question": "（2020 副省）扶贫干部某日需要走访村内 6 个贫困户甲、乙、丙、\n丁、戊和己。已知甲和乙的走访次序要相邻，丙要在丁之前走访，戊要\n在丙之前走访，己只能在第一个或最后一个走访。问走访顺序有多少种\n不同的安排方式？A24  B16  C48  D32",
+  "source": "2020 副省",
+  "has_options": true,
+  "solution": "法一：①己第一或最后，×2。②甲乙相邻，内部排序，×2。戊丙丁排\n序，中间有4空，甲乙看成整体再4选1。总情况=2×2×4=16。\n法二：①己第一或最后，×2。②甲乙相邻，内部排序，×2。③甲乙看成\n整体，与丙丁戊一起排序，共4!=24种情况，但戊丙丁的顺序已直接固定，\n需除序\n3!=6（每6个有1个符合条件），只有24/6=4种。\n总情况= 2×2×4=16。",
+  "db_match": null,
+  "db_score": 0.18,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T115.png"
+ },
+ {
+  "tid": "T116",
+  "section": "第九节 排列组合",
+  "ex_no": null,
+  "page": 43,
+  "top": 400.476206,
+  "pages": [
+   43,
+   44
+  ],
+  "ocr": [
+   "/As"
+  ],
+  "bottom": 213.07337059999992,
+  "last_page": 44,
+  "question": "（改上题）扶贫干部某日需要走访村内 6 个贫困户甲、乙、丙、丁、戊\n和己。已知甲和乙的走访次序要相邻，丁要在丙之前走访，戊要在丙之\n前走访，己只能在第一个或最后一个走访。问走访顺序有多少种不同的\n安排方式？",
+  "source": null,
+  "has_options": false,
+  "solution": "①己第一或最后，×2。②甲乙相邻，内部排序，×2。③甲乙看成整体，\n与丙丁戊一起排序，共4!=24种情况，但丙丁戊部分固定顺序，需除序\n（丁戊丙或戊丁丙）（每6个有2个符合条件），只有24/3=8种。\n总情况= 2×2×8=32。\n圆桌的处理：\n圆桌问题\n①确定头位\n②顺时针逆时针是一致的（可以用确定第二位来确定）\n③其他的一样\n另一种思路：视为普通排列再除序（除数量）\n1、ABCDE坐1个圆桌，有几种坐法？（4!=24 或5!/5=24）\n2、ABCDE坐1个圆桌，AB 不能相邻，坐法？（4!—2*3!=12)\n3、ABCDE坐1个圆桌，AB 不能相邻，BC 不能相邻，坐法？(1*2*1*2=4)\n4、ABCDE坐1个圆桌，ABC 三人中任意两人不能相邻，坐法？（0种）",
+  "db_match": null,
+  "db_score": 0.34,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T116.png"
+ },
+ {
+  "tid": "T117",
+  "section": "第九节 排列组合",
+  "ex_no": 10,
+  "page": 44,
+  "top": 234.94320599999998,
+  "pages": [
+   44
+  ],
+  "ocr": [],
+  "bottom": 319.83009366999994,
+  "last_page": 44,
+  "question": "某次晚宴使用的圆桌有 6 个两两相对的座位， 座位号码依次为 1-6。\n张、王、李、赵、周、吴 6 人要在同一圆桌就座，若要求张的正对面必须\n是吴，那么满足要求的就座方式有多少种？A24  B36  C72  D144",
+  "source": null,
+  "has_options": true,
+  "solution": "吴6种情况，张1种，剩下4人4位，总情况=6×1×4!=144",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T117.png"
+ },
+ {
+  "tid": "T118",
+  "section": "第九节 排列组合",
+  "ex_no": 11,
+  "page": 44,
+  "top": 350.06120599999997,
+  "pages": [
+   44,
+   45
+  ],
+  "ocr": [
+   "A",
+   "X",
+   "↓",
+   "I",
+   "I",
+   "2",
+   "23",
+   "Ca",
+   "C",
+   "C",
+   "C"
+  ],
+  "bottom": 322.6003522,
+  "last_page": 45,
+  "question": "（2018 广西选调） 办公室8名员工围着一张圆桌就座准备用餐， 此时\n又有3名加完班的员工在已就座的员工中间加座并参加用餐。已知加座\n后，3名加完班的员工彼此都不相邻， 且8名已就座的员工最多与1名加完\n班的员工相邻。 问有多少种不同的加座方式？A336  B96  C48  D30",
+  "source": "2018 广西选调",
+  "has_options": true,
+  "solution": "①第一个加班的人A有8种选择。②存在对称性，用枚举法。第二个加班的\n人，如果选1，第三个加班的人有3种选择（左右两个1一样情况，再×\n2）。如果选2，第三个加班的人有2种选择。如果选3，第三个加班的人有2\n种选择。总情况=8×（3×2 + 2×2 + 2）=96\n引入问题：10个球分给3个小朋友，每个小朋友\n插板法\n至少分1个，问他们每个人获得的球数一共\n有多少种情况？（只看数量，不看种类）\n【讲故事： 插2块板一定可以把10个球分成3部分，且规定好插板后3部\n分分别给谁。题目要求每人至少1球，则可插的空为9个（不能插2边，\n不能插同一个空），即9选2，则插板的位置和3人分配到的球的情况一\n对应。问获得的球数有多少情况转化为插法数有多少种。】\n1、10个球分给3个小朋友，每个小朋友至少分1个，问他们每个人获得的\n球数一共有多少种情况？（9选2）\n2、10个球分给3个小朋友，每个小朋友至少分0个，问他们每个人获得的\n球数一共有多少种情况？（先加3球让每人分1个，12选2）（球棍模型）\n3、10个球分给3个小朋友，每个小朋友至少分2个，问他们每个人获得的\n球数一共有多少种情况？（先减3球让每人分1个，6选2）\n公式：m人分成n组，每组至少1人，可能数为\n解题技巧之插板法：将题目转化为m人n组至少取1",
+  "db_match": null,
+  "db_score": 0.2,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T118.png"
+ },
+ {
+  "tid": "T119",
+  "section": "第九节 排列组合",
+  "ex_no": 12,
+  "page": 45,
+  "top": 341.322206,
+  "pages": [
+   45
+  ],
+  "ocr": [
+   "C",
+   "35",
+   "="
+  ],
+  "bottom": 419.51869338999995,
+  "last_page": 45,
+  "question": "（2014 四川下）某城市一条道路上有4个十字路口， 每个十字路口至\n少有1名交通协管员，现将 8 个协管员名额分配到这4个路口，则每个路口\n协管员名额的分配方案有： A35种  B70种  C96种  D114种",
+  "source": "2014 四川下",
+  "has_options": true,
+  "solution": "插板法，7选3，",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T119.png"
+ },
+ {
+  "tid": "T120",
+  "section": "第九节 排列组合",
+  "ex_no": 13,
+  "page": 45,
+  "top": 454.55720599999995,
+  "pages": [
+   45,
+   46
+  ],
+  "ocr": [
+   "C",
+   "28",
+   "="
+  ],
+  "bottom": 138.53022457999992,
+  "last_page": 46,
+  "question": "（2014 广东）某办公室接到15份公文的处理任务，分配给甲、乙、丙\n三名工作人员处理。假如每名工作人员处理的公文份数不得少于3份，也\n不得多于10份，则共有多少种分配方式：A15  B18  C21  D28",
+  "source": "2014 广东",
+  "has_options": true,
+  "solution": "先每人分2份，转化为9份每人至少1份，再用插板法。8选2，\n错位重排公式是：D=(n-1)(D+D)，\n错位重排\nn\nn-1n-2\n其中，D=0，D=1，D=2，D=9，D=44，D=265\n1\n2\n3\n4\n5\n6\n例子：三只鸽子对应各自的鸽笼，有一天每只鸽子都没有飞进自己的笼\n子，各自没有回各自的“家”，有三只鸽子分别为A、B、C，它们对应\n的笼子分别为a、b、c，题目的要求其实就是相互连线，但是A-a，B-b，\nC-c不能连接，这样的模型就叫做错位重排模型。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T120.png"
+ },
+ {
+  "tid": "T121",
+  "section": "第九节 排列组合",
+  "ex_no": 14,
+  "page": 46,
+  "top": 159.831206,
+  "pages": [
+   46
+  ],
+  "ocr": [],
+  "bottom": 244.71822457999997,
+  "last_page": 46,
+  "question": "（2014 北京） 相邻的 4 个车位中停放了 4 辆不同的车， 现将所有车\n开出后再重新停入这4 个车位，要求所有车都不得停在原来的车位中，则\n一共有多少种不同的停放方式？  A9   B12   C14   D16",
+  "source": "2014 北京",
+  "has_options": true,
+  "solution": "错位重排公式，D4=9",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T121.png"
+ },
+ {
+  "tid": "T122",
+  "section": "第九节 排列组合",
+  "ex_no": 15,
+  "page": 46,
+  "top": 269.734206,
+  "pages": [
+   46
+  ],
+  "ocr": [],
+  "bottom": 354.621206,
+  "last_page": 46,
+  "question": "（2015 山东）  某单位从下属的 5 个科室各抽调了一名工作人员，  交\n流到其他科室，  如每个科室只能接收一个人的话，有多少种不同的人员\n安排方式？A120   B78   C44   D24",
+  "source": "2015 山东",
+  "has_options": true,
+  "solution": "错位重排公式，D5=44",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T122.png"
+ },
+ {
+  "tid": "T123",
+  "section": "第九节 排列组合",
+  "ex_no": 16,
+  "page": 46,
+  "top": 386.370206,
+  "pages": [
+   46,
+   47
+  ],
+  "ocr": [
+   "[",
+   "Dj",
+   "As",
+   "=",
+   "Do",
+   "p"
+  ],
+  "bottom": -1.0614830000000666,
+  "last_page": 47,
+  "question": "素描课堂上，8位同学每人上交了一幅个人素描作品。为更好地开展\n作品赏析，老师将上交的作品随机分配给这8位同学，每人一幅。问恰好\n3人分配到其本人作品的概率在以下哪个范围内？\nA5%-10%   B10%-15%   C15%以上  D5%以下",
+  "source": null,
+  "has_options": true,
+  "solution": "符合条件的数量：8人挑出3人，剩下5人错位重排。\n总数量（不考虑任何条件）：8人随机排列\n1⃣2⃣3⃣4⃣",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T123.png"
+ },
+ {
+  "tid": "T124",
+  "section": "第十节 概率问题",
+  "ex_no": 1,
+  "page": 47,
+  "top": 152.95320599999997,
+  "pages": [
+   47
+  ],
+  "ocr": [],
+  "bottom": 255.78916376999996,
+  "last_page": 47,
+  "question": "（2021 浙江 C）研究人员在 A、B、C、D、E 五块试验田中种植甲、\n乙、丙、丁、戊五种作物， 每块试验田只种一种作物， 每年都在所有的\n安排中随机挑选一种进行种植。 问在连续的 3 年中，A 试验田至少 2 年\n种植同一种作物的概率为： A36%  B48%  C52%  D64%",
+  "source": "2021 浙江 C",
+  "has_options": true,
+  "solution": "正面不好算，减法。P=1-P{每年都不同}=1- 5×4×3 / 5×5×5 =1-12/25=13/25",
+  "db_match": "2021ZJA-69",
+  "db_score": 0.91,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T124.png"
+ },
+ {
+  "tid": "T125",
+  "section": "第十节 概率问题",
+  "ex_no": 2,
+  "page": 47,
+  "top": 277.243206,
+  "pages": [
+   47
+  ],
+  "ocr": [],
+  "bottom": 398.027206,
+  "last_page": 47,
+  "question": "（2016 山东）某房间共有 6 扇门，甲、乙、丙三人分别从任一扇门进\n去，再从剩下的 5 扇门中的任一扇出来，问甲未经过 1 号门，且乙未经过\n2 号门，且丙未经过 3 号门进出的概率为多少？\nA125/216   B8/27   C27/64   D64/125",
+  "source": "2016 山东",
+  "has_options": true,
+  "solution": "甲未经过1、乙未经过2、丙未经过3，这三种情况的概率相同，求出一种相\n乘即可。P{甲未经过1}=5/6×4/5=2/3，P= 2/3×2/3×2/3=8/27",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T125.png"
+ },
+ {
+  "tid": "T126",
+  "section": "第十节 概率问题",
+  "ex_no": 3,
+  "page": 47,
+  "top": 423.257206,
+  "pages": [
+   47
+  ],
+  "ocr": [],
+  "bottom": 561.99091124,
+  "last_page": 47,
+  "question": "小雨、小雪是一对双胞胎姐妹， 两人所有的衣服和鞋子都一样， 两\n人上衣均有5件， 裙子均有4件，鞋子均有3双。姐妹两人分别住在不同的\n房间，她们随机着装，则两人上衣、裙子、鞋子中至少有两件穿着相同的\n概率是多少？A3/20   B1/6   C1/2   D5/6",
+  "source": null,
+  "has_options": true,
+  "solution": "至少2件相同，则2件相同或者3件相同。P{3件相同}=1/5×1/4×1/3 = 1/60\nP{2件相同}=1/5×1/4×2/3+ 1/5×3/4×1/3+ 4/5×1/4×1/3=9/60\nP= P{3件相同}+ P{2件相同}=1/6",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T126.png"
+ },
+ {
+  "tid": "T127",
+  "section": "第十节 概率问题",
+  "ex_no": 4,
+  "page": 48,
+  "top": 20.540206000000012,
+  "pages": [
+   48
+  ],
+  "ocr": [],
+  "bottom": 159.27404214999996,
+  "last_page": 48,
+  "question": "（2024 江苏 B）财务部推荐本部门员工小王和小李参加公司最佳员工\n评选。若小王、小李成功入选的概率分别为 0.6 和 0.5，两人都成功入选的\n概率为 0.25，则财务部有员工被评为公司最佳员工的概率为：\nA0.6  B0.75  C0.8  D0.85",
+  "source": "2024 江苏 B",
+  "has_options": true,
+  "solution": "两人成功入选的概率为0.25，且不等于0.6×0.5，说明小王、小李入选这两\n件事情不相互独立，会影响（有交集）。\n则P=P{王} + P{李} - P{王且李}=0.6+0.5-0.25=0.85",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T127.png"
+ },
+ {
+  "tid": "T128",
+  "section": "第十节 概率问题",
+  "ex_no": 5,
+  "page": 48,
+  "top": 185.199206,
+  "pages": [
+   48
+  ],
+  "ocr": [
+   "11",
+   "I",
+   "321",
+   "21",
+   "06631",
+   "31",
+   "2216104I",
+   "41111",
+   "53",
+   "4",
+   "311551",
+   "32I"
+  ],
+  "bottom": 358.78288537,
+  "last_page": 48,
+  "question": "（2023 江西）甲乙两地间的纵横道路网如下图所示，若从甲地到乙地\n沿道路铺设电缆，要使铺设的电缆长度最短，则电缆经过丙地的概率为：\nA11/15  B12/53  C11/36  D16/53",
+  "source": "2023 江西",
+  "has_options": true,
+  "solution": "P=电缆经过丙地/所有路线=甲到丙的路线数×丙到乙的路线数/所有路线\nP=4×4 / 53=16/53\n甲到乙\n甲到丙\n丙到乙",
+  "db_match": "2023HB-75",
+  "db_score": 1.0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T128.png"
+ },
+ {
+  "tid": "T129",
+  "section": "第十节 概率问题",
+  "ex_no": 6,
+  "page": 48,
+  "top": 388.238206,
+  "pages": [
+   48,
+   49
+  ],
+  "ocr": [],
+  "bottom": 103.70600875999997,
+  "last_page": 49,
+  "question": "（2014 吉林乙）学校要举行夏令营活动，由于名额有限，需要在符合条\n件的 5 个同学中通过抓阄的方式选择出两个同学去参加此次活动。 于是\n班长就做了 5 个阄， 其中两个阄上写有“去”字，其余三个阄空白，混\n合后 5 个同学依次随机抓取。计算第二个同学抓到“去”字阄的概率为：\nA0.4  B0.25  C0.2  D0.1",
+  "source": "2014 吉林乙",
+  "has_options": true,
+  "solution": "所有人抓到的概率是一样的，P=2/5=0.4。\n【母题：小明去银行取钱，忘记了支付密码的最后一位（0~9）。请问他恰\n好在第 3 次试出密码的概率是多少？任何一次的概率是一样的即1/10。也\n可通过如下计算P=第一次错*第二次错*第三次对=9/10*8/9*1/8=1/10】\n跟屁虫模型\n跟屁虫模型/同排概率\n应用情景：多个人要凑在一起的概率题，先让一个人随便挑，\n再让后面的人去找他。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T129.png"
+ },
+ {
+  "tid": "T130",
+  "section": "第十节 概率问题",
+  "ex_no": null,
+  "page": 49,
+  "top": 119.19820599999997,
+  "pages": [
+   49
+  ],
+  "ocr": [],
+  "bottom": 225.77347700999997,
+  "last_page": 49,
+  "question": "母题：某会议室有5排共40个座位，每排座位数相同，小张、小李随机入\n座，则他们坐在同一排的概率为多少？",
+  "source": null,
+  "has_options": false,
+  "solution": "P=P{张随机坐下} ×P{李跟张坐同一排}=1×7/39=7/39\n（说明：张坐下后还剩39的座位，张那排还剩7个座位，李要想同排\n就要从39个座位中选那7个座位）",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T130.png"
+ },
+ {
+  "tid": "T131",
+  "section": "第十节 概率问题",
+  "ex_no": 7,
+  "page": 49,
+  "top": 255.420206,
+  "pages": [
+   49
+  ],
+  "ocr": [],
+  "bottom": 340.30709367,
+  "last_page": 49,
+  "question": "（2021青海）两个大人带四个孩子去坐只有六个位置的圆型旋转木\n马，那么两个大人不相邻的概率为：  A2/5  B3/5  C1/3  D2/3",
+  "source": "2021青海",
+  "has_options": true,
+  "solution": "大人不相邻，第一个大人随机坐下，还剩5个位置，3个位置符合条件，\nP= 1×3/5=3/5",
+  "db_match": "2021HB-70",
+  "db_score": 0.98,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T131.png"
+ },
+ {
+  "tid": "T132",
+  "section": "第十节 概率问题",
+  "ex_no": 8,
+  "page": 49,
+  "top": 367.351206,
+  "pages": [
+   49,
+   50
+  ],
+  "ocr": [
+   "-",
+   "-",
+   "/",
+   "y",
+   "v-",
+   "E"
+  ],
+  "bottom": 75.50553202000003,
+  "last_page": 50,
+  "question": "（2021青海）某次圆桌会议共设 8 个座位，有 4 个部门参加，每个部\n门 2 人，排座位时，要求同一部门的两人相邻， 若小李和小王代表不\n同部门参加会议， 则他们座位相邻的概率是：A1/48  B1/24  C1/12  D1/6",
+  "source": "2021青海",
+  "has_options": true,
+  "solution": "王随机坐下，还剩6个座位，1个位置符合条件，P=1×1/6=1/6\n技巧：七局四胜或五局三胜转化为打满\n几局几胜\n七局或五局，此时的胜率与未打满就胜\n利的概率一样。",
+  "db_match": "2021JSA-56",
+  "db_score": 0.88,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T132.png"
+ },
+ {
+  "tid": "T133",
+  "section": "第十节 概率问题",
+  "ex_no": 9,
+  "page": 50,
+  "top": 99.19320599999998,
+  "pages": [
+   50
+  ],
+  "ocr": [
+   "552=",
+   "(5x",
+   "0",
+   "0",
+   "..",
+   "=",
+   "(1-06)/2"
+  ],
+  "bottom": 309.72306072999993,
+  "last_page": 50,
+  "question": "（2015 河南）甲、乙两名实力相当（即每一局两人中任意一人获胜的\n概率相同）的棋手进行 7 局 4 胜制的比赛， 前 3 局赛完后， 甲以 2:1 领\n先于乙， 那么甲获得最后胜利的概率是多少？\nA2/3  B3/4  C5/8  D11/16",
+  "source": "2015 河南",
+  "has_options": true,
+  "solution": "转化为打满7局。前3局甲赢2局，甲要想胜利，后4局甲需赢2局以上。后4\n局甲一共有5种情况，即赢4局、赢3局、赢2局、赢1局、赢0局，其中赢2局\n或3局或4局符合条件。\n由于任一人获胜概率相同，则P{赢4局}=P{赢0局}，P{赢3局}=P{赢1局}。\nP{赢2局}=\nP{赢4局}+ P{赢3局}=（1-P{赢2局}）/2=\nP{赢2局或3局或4局} =6/16+5/16=11/16",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T133.png"
+ },
+ {
+  "tid": "T134",
+  "section": "第十节 概率问题",
+  "ex_no": 10,
+  "page": 50,
+  "top": 338.553206,
+  "pages": [
+   50
+  ],
+  "ocr": [
+   "t",
+   "(3X6 x03x1X",
+   "4",
+   "0",
+   "=",
+   ".",
+   "=",
+   "."
+  ],
+  "bottom": 549.0830607299999,
+  "last_page": 50,
+  "question": "（2018 重庆下）甲、乙两队进行一场排球比赛，根据以往经验，单局\n比赛甲队胜乙队的概率均为 0.6，本场比赛采用五局三胜制，即先胜三局\n的队获胜，且比赛到此结束。如果各局比赛相互间没有影响，现已知前\n两局双方战成平手，则甲队获得这场比赛胜利的概率为：\nA9/25   B63/125   C81/125   D101/125",
+  "source": "2018 重庆下",
+  "has_options": true,
+  "solution": "转化为打满5局。前2局甲赢1局，甲要想胜利，后3局甲需赢2局以上。后3\n局甲一共有4种情况，赢3局、赢2局、赢1局、赢0局，其中赢2局或3局符合\n条件。\nP{赢2局}=\nP{赢3局}= 0.6×0.6×0.6= 3/5×3/5×3/5=27/125\nP{赢2局或3局}= 54/125 + 27/125=81/125",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T134.png"
+ },
+ {
+  "tid": "T135",
+  "section": "第十一节 数列方阵问题",
+  "ex_no": 1,
+  "page": 51,
+  "top": 180.137206,
+  "pages": [
+   51
+  ],
+  "ocr": [],
+  "bottom": 300.9222338699999,
+  "last_page": 51,
+  "question": "（2020 山东）公司 2017 年每个月的销售额都比上个月高 x 万元。其 9\n月的销售额是 1月的2倍，11月的销售额为900万元。问该公司2017年全年的\n销售额是多少万元?  A7200  B7650  C8100  D8550",
+  "source": "2020 山东",
+  "has_options": true,
+  "solution": "设1月为a，则9月为a+8x，2倍关系可列2a=a+8x，a=8x，则11月为18x，12月为\n19x，解得x=50。\n求和=（首项+末项）×项数÷2 =（8x+19x）×12÷2=27×50 ×12÷2=8100",
+  "db_match": null,
+  "db_score": 0.3,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T135.png"
+ },
+ {
+  "tid": "T136",
+  "section": "第十一节 数列方阵问题",
+  "ex_no": 2,
+  "page": 51,
+  "top": 324.83320599999996,
+  "pages": [
+   51
+  ],
+  "ocr": [],
+  "bottom": 427.668206,
+  "last_page": 51,
+  "question": "（2022四川下）商场6月6日开始销售某种电器，从 6月7日起，每天这种\n电器的销量都比前一天多 1台。已知6月16日卖了22台这种电器，问其 6月\n共卖了多少台这种电器？  A555  B600  C645  D690",
+  "source": "2022四川下",
+  "has_options": true,
+  "solution": "从6月6日-30日，共销售25天，中间数为6月18日（24台），\n求和=中间数×销售天数=24×25=600",
+  "db_match": "2022SC2-49",
+  "db_score": 0.89,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T136.png"
+ },
+ {
+  "tid": "T137",
+  "section": "第十一节 数列方阵问题",
+  "ex_no": 3,
+  "page": 51,
+  "top": 454.087206,
+  "pages": [
+   51
+  ],
+  "ocr": [],
+  "bottom": 521.02528539,
+  "last_page": 51,
+  "question": "（2012浙江）四个连续奇数的和为32，则它们的积为多少：\nA945  B1875  C2745  D3465",
+  "source": "2012浙江",
+  "has_options": true,
+  "solution": "平均数=中间数=32÷4=8，8为偶数，则所求奇数列为5、7、9、11，积=3465",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T137.png"
+ },
+ {
+  "tid": "T138",
+  "section": "第十一节 数列方阵问题",
+  "ex_no": 4,
+  "page": 52,
+  "top": 28.716205999999943,
+  "pages": [
+   52
+  ],
+  "ocr": [],
+  "bottom": 149.5011029599999,
+  "last_page": 52,
+  "question": "（2020浙江B）一套试卷有若干道题，每题答对得 10分，答错扣5分，不\n答扣3分。小郑答对、答错、不答的题目数量依次成等差数列，最后总分\n为 95分，问这套试卷共有多少道题？\nA15  B30  C36  D45",
+  "source": "2020浙江B",
+  "has_options": true,
+  "solution": "设中间数为x，公差为d，则答对为x+d，答错为x，不答为x-d，题目数为\n3x，分数和为2x+13d=95。代入选项，D：x为15，d为5符合条件。",
+  "db_match": "2020ZJB-13",
+  "db_score": 1.0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T138.png"
+ },
+ {
+  "tid": "T139",
+  "section": "第十一节 数列方阵问题",
+  "ex_no": 5,
+  "page": 52,
+  "top": 180.76120600000002,
+  "pages": [
+   52
+  ],
+  "ocr": [],
+  "bottom": 283.596206,
+  "last_page": 52,
+  "question": "（2019联考）一项工程按计划将用20天完成，为提高效率，从第三天开\n始，每天都比前一天多完成1倍，则完成这个工程至少需要的时间是\nA5天  B6天  C7天  D8天",
+  "source": "2019联考",
+  "has_options": true,
+  "solution": "赋值效率为1，总工程量为20。直接算，1+1+2+4+8+16（6天）此时总量已大于\n20，至少6天。（tips：项数少的时候数数直接算最方便）",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T139.png"
+ },
+ {
+  "tid": "T140",
+  "section": "第十一节 数列方阵问题",
+  "ex_no": 6,
+  "page": 52,
+  "top": 312.426206,
+  "pages": [
+   52
+  ],
+  "ocr": [
+   "L",
+   "654321"
+  ],
+  "bottom": 440.08724089,
+  "last_page": 52,
+  "question": "（2017联考）股神的骗局。就是所谓的“股神”第一天选定一批人，给\n其中一半人传递涨的信息，另一半传递跌的信息。第二天，在被传递正确\n信息的人中，再给其中一半人传递涨的信息，另一半人传递跌的信息。以\n此类推。若保证有人连续六天都接受到正确的消息，那么“股神”最初至\n少要选择的人数是：A8  B64  C32  D16",
+  "source": "2017联考",
+  "has_options": true,
+  "solution": "等比数列，每次减少1/2，六天后仍有人。倒数，1、2、4、8、16、32、64",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T140.png"
+ },
+ {
+  "tid": "T141",
+  "section": "第十一节 数列方阵问题",
+  "ex_no": 7,
+  "page": 52,
+  "top": 466.272206,
+  "pages": [
+   52,
+   53
+  ],
+  "ocr": [
+   "123456"
+  ],
+  "bottom": 50.31180400000005,
+  "last_page": 53,
+  "question": "（2013四川下）假期里，王老师有一个紧急通知要通知到50位同学，假\n如每通知一位同学需要 1分钟，同学接电话后也可以互相通知，要使所有\n同学都要接到通知至少需要几分钟：A5  B6  C7  D8",
+  "source": "2013四川下",
+  "has_options": true,
+  "solution": "等比数列，每次人数翻倍，直接数直到求和数大于50，1、2、4、8、16、32\n结合数论",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T141.png"
+ },
+ {
+  "tid": "T142",
+  "section": "第十一节 数列方阵问题",
+  "ex_no": 8,
+  "page": 53,
+  "top": 66.31420600000001,
+  "pages": [
+   53
+  ],
+  "ocr": [],
+  "bottom": 205.0479112399999,
+  "last_page": 53,
+  "question": "（2015河南）小明买了 7本书共花去 100元，后发现有一本书质量有问\n题，故补了若干元换了另外一本书。回来后发现，退换后7本书的价格成\n等差数列且均为整数元，而最贵的书价格为 26元。问最便宜的书多少\n钱？A2元  B6元  C8元  D14元",
+  "source": "2015河南",
+  "has_options": true,
+  "solution": "代入法。最贵-最便宜=6×公差，即是6的倍数，排除B。\n依次计算ACD总金额，A=98（排除），C=119，D=140（所补金额大于26，排\n除），选定C。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T142.png"
+ },
+ {
+  "tid": "T143",
+  "section": "第十一节 数列方阵问题",
+  "ex_no": 9,
+  "page": 53,
+  "top": 239.834206,
+  "pages": [
+   53
+  ],
+  "ocr": [],
+  "bottom": 342.67003285999994,
+  "last_page": 53,
+  "question": "（2020地市）某种产品每箱48个。小李制作这种产品，第1天制作了1\n个，以后每天都比前1天多制作1个。X天后总共制作了整数箱产品。问X\n的最小值在以下哪个范围内？ A41～60  B超过60  C不到20  D20～40",
+  "source": "2020地市",
+  "has_options": true,
+  "solution": "可列等式X（X+1）/2=48的倍数，即X（X+1）=96的倍数。且X与X+1互质（不\n可能同为2的倍数），可发现32×3=96，则所求为32×33=96×11（96的倍数）",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T143.png"
+ },
+ {
+  "tid": "T144",
+  "section": "第十一节 数列方阵问题",
+  "ex_no": 10,
+  "page": 53,
+  "top": 377.279206,
+  "pages": [
+   53,
+   54
+  ],
+  "ocr": [],
+  "bottom": 66.67908438000006,
+  "last_page": 54,
+  "question": "（2015上海 A）国际象棋棋盘为64方格，用铅笔从第一格开始填写1，\n第二格填写2，第三格填写3，以此类推至64，然后用橡皮将所有能被3整除\n的数全部擦掉，则所剩数字的总和是？ A2408  B1387  C1408  D1487",
+  "source": "2015上海 A",
+  "has_options": true,
+  "solution": "所求总和=所有总和-3倍数总和。\n所有总和=（1+64）×64/2 ，\n3倍数的项数=（63-3）/3+1=21，总和= （3+63）×21/2 ，\n作差得1387\n1、公比为2的等比数列，部分和=下一项-首项\n特殊数列\n2、平方数连续两列的差是等差数列\n3、自然数列出错，考虑用不等式限制范围",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T144.png"
+ },
+ {
+  "tid": "T145",
+  "section": "第十一节 数列方阵问题",
+  "ex_no": 11,
+  "page": 54,
+  "top": 77.97420599999998,
+  "pages": [
+   54
+  ],
+  "ocr": [],
+  "bottom": 144.91215447999997,
+  "last_page": 54,
+  "question": "（2013江苏A）一个公比为2的等比数列，第n项与前 n－1项和的差等于\n5，则此数列前4项之和为： A70  B85  C80  D75",
+  "source": "2013江苏A",
+  "has_options": true,
+  "solution": "第n项-前 n－1项和=首项，即首项为5，则前4项为5、10、20、40，和为75",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T145.png"
+ },
+ {
+  "tid": "T146",
+  "section": "第十一节 数列方阵问题",
+  "ex_no": 12,
+  "page": 54,
+  "top": 167.55620599999997,
+  "pages": [
+   54
+  ],
+  "ocr": [],
+  "bottom": 306.29017306,
+  "last_page": 54,
+  "question": "（2014黑龙江）甲和乙两个汽车销售经理上个月都超额完成了自己的\n月度任务，已知公司奖金计算方法是超任务销售一辆汽车奖励 100 元，第\n2、3、4…辆车奖励 300、500、700…元。 如两人当月合计得到1万元的销售\n奖金， 问他们两人本月合计超任务销售了多少辆车？ A15  B16  C17  D14",
+  "source": "2014黑龙江",
+  "has_options": true,
+  "solution": "奖金数列：100、100+300、100+300+500、100+300+500+700…，\n可转化为1、4、9、16…，即1平方、2平方、3平方、4平方…，假设两人合\n计奖金为100，即10平方，且10平方=6平方+8平方，则合计14辆车（6+8）。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T146.png"
+ },
+ {
+  "tid": "T147",
+  "section": "第十一节 数列方阵问题",
+  "ex_no": 13,
+  "page": 54,
+  "top": 328.988206,
+  "pages": [
+   54
+  ],
+  "ocr": [],
+  "bottom": 431.82429468,
+  "last_page": 54,
+  "question": "（2014山东）某单位举办围棋联赛，所有选手的排名都没有出现并列\n名次。小周发现除自己以外，其他所有人排名数字之和正好是70。 问小\n周排名第几：A7  B8  C9  D10",
+  "source": "2014山东",
+  "has_options": true,
+  "solution": "首先计算1～10之和为55（小于70），再逐步往上加，加11为66，再加12为\n78，78符合条件，则 小周排名为8（78-70）。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T147.png"
+ },
+ {
+  "tid": "T148",
+  "section": "第十一节 数列方阵问题",
+  "ex_no": 14,
+  "page": 54,
+  "top": 453.258206,
+  "pages": [
+   54,
+   55
+  ],
+  "ocr": [
+   "22"
+  ],
+  "bottom": 57.393167059999996,
+  "last_page": 55,
+  "question": "（2023深圳）某书的页码是从1开始的连续自然数，1，2，3，4…莎莎\n将该书页码全部相加时，不小心将其中某页码多加了1次，结果和2003，则\n被多加的页码为（ ） 。 A45  B50  C56  D62",
+  "source": "2023深圳",
+  "has_options": true,
+  "solution": "设总页码为n，则求和为n（n+1）/2 < 2003，则n（n+1）< 4006。根据缩放法，\n可列不等式n（n+1）< 4006 <（n+1）（n+2），即n < 4006 <（n+2），\n最近的平方数为64平方（4096），则n+2=64，n=62，代入计算多加页码为50\n找规律（循环部分：等差、等比）+特殊部分\n数列方阵\n方阵问题中的等腰三角形=等边三角形",
+  "db_match": "2023SZ-54",
+  "db_score": 0.85,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T148.png"
+ },
+ {
+  "tid": "T149",
+  "section": "第十一节 数列方阵问题",
+  "ex_no": 15,
+  "page": 55,
+  "top": 76.615206,
+  "pages": [
+   55
+  ],
+  "ocr": [
+   "2",
+   "2"
+  ],
+  "bottom": 197.40023387000002,
+  "last_page": 55,
+  "question": "（2022浙江 C）某市举行庆典活动，将依次升空 105架无人机，升空方\n式如下：每架无人机间距均相等，第一次升空n架，第二次升空 n-1架，以\n此类推，最终在夜空中组成一个近似等边三角形背景的灯光秀，那么第10\n次升空的无人机数量是： A 3架 B 5架 C 8 架 D 10架",
+  "source": "2022浙江 C",
+  "has_options": true,
+  "solution": "总量为105，求和n（n+1）/2=105，即n < 210 <（n+1），则最接近的平方数为\n14平方（196）和15平方（225），则n=14，则第10次n-9=14-9=5",
+  "db_match": "2022HB-62",
+  "db_score": 0.93,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T149.png"
+ },
+ {
+  "tid": "T150",
+  "section": "第十一节 数列方阵问题",
+  "ex_no": 16,
+  "page": 55,
+  "top": 222.90020599999997,
+  "pages": [
+   55
+  ],
+  "ocr": [],
+  "bottom": 343.68510295999994,
+  "last_page": 55,
+  "question": "（2015上海 B）考场有16排座位，第一排有 16个座位，以后各排都比\n前一排多一个座位，如果允许考生任意坐，但不能坐在其他考生的旁\n边，这考场最多能容纳多少名考生？ A188  B192  C196  D200",
+  "source": "2015上海 B",
+  "has_options": true,
+  "solution": "首先列举找规律，第1排16座可坐8人，第2排17座可坐9人，第3排18座可坐9\n人，第4排19座可坐10人，第5排20座可坐10人…最后第16排31座可坐16人。中\n间第2排至第15排为有两个9～15座，即总人数=8+（9～15）× 2+16=192",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T150.png"
+ },
+ {
+  "tid": "T151",
+  "section": "第十一节 数列方阵问题",
+  "ex_no": 17,
+  "page": 55,
+  "top": 367.045206,
+  "pages": [
+   55
+  ],
+  "ocr": [
+   "It2",
+   "H2+3",
+   "3",
+   "54612",
+   "(+2++41+2+3+4+512+3+4+",
+   "+3+4+5+6+7"
+  ],
+  "bottom": 523.72811225,
+  "last_page": 55,
+  "question": "（2015四川上）把若干个大小相同的水立方摆成如图形状，从上向下\n数，摆 1层有 1个立方体， 摆2层共有4个立方体， 摆3层共有10个立方体，\n问摆7层共有多少个立方体： A60  B64  C80  D84",
+  "source": "2015四川上",
+  "has_options": true,
+  "solution": "枚举法：单看层数，第1层1，第2层3，第3层6，差递增，\n则第4层10，第5层15，第6层21，第7层28，\n加和=1+3+6+10+15+21+28=84\n公式法：三角数公式：每一层数量=n（n+1）/2",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T151.png"
+ },
+ {
+  "tid": "T152",
+  "section": "第十一节 数列方阵问题",
+  "ex_no": 18,
+  "page": 56,
+  "top": 25.19620599999996,
+  "pages": [
+   56
+  ],
+  "ocr": [
+   ":"
+  ],
+  "bottom": 145.98097204999993,
+  "last_page": 56,
+  "question": "（2017河南选调）下边是空心圆有规律生成的一个树形图，由此可\n知，第 10行的空心圆的个数是： A34  B21  C13  D8",
+  "source": "2017河南选调",
+  "has_options": true,
+  "solution": "递推问题。白→黑，黑→黑+白\n序号  1    2    3    4    5     6     7     8    9     10\n白色  1    0    1    1    2     3     5     8    13    21\n黑色  0    1    1    2    3     5     8    13    21    34",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T152.png"
+ },
+ {
+  "tid": "T153",
+  "section": "第十一节 数列方阵问题",
+  "ex_no": 19,
+  "page": 56,
+  "top": 183.52520599999997,
+  "pages": [
+   56
+  ],
+  "ocr": [
+   "22",
+   "D",
+   "3En",
+   "↳",
+   "253",
+   "-",
+   "Fa",
+   "10",
+   "⑳",
+   "3"
+  ],
+  "bottom": 419.72162797,
+  "last_page": 56,
+  "question": "（2022广东县级）如图，仓库有一堆管材，每一层的数量都比上一层\n多 1根。搬运工人将管材逐根搬离，搬了99根后发现，管材堆少了 3层，\n且剩余每层的管材数量都减少了3根。如果这堆管材刚好还剩 10层，则剩\n下的管材共有（ ）根。 A245  B265  C305  D325",
+  "source": "2022广东县级",
+  "has_options": true,
+  "solution": "剩下的部分为蓝色梯形，分块求减少的部分。\n紫色部分为10层3根，共30根。\n则橙色部分为3层69根，则中间层为23根。\n则蓝色梯形的第1层为25-3=22根，\n第10层为31根（22+9），\n求和为（22+31）× 10/2=265",
+  "db_match": "2022GD-40",
+  "db_score": 0.92,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T153.png"
+ },
+ {
+  "tid": "T154",
+  "section": "第十二节 周期日期问题",
+  "ex_no": null,
+  "page": 57,
+  "top": 41.85520599999995,
+  "pages": [
+   57
+  ],
+  "ocr": [
+   "L"
+  ],
+  "bottom": 185.81523387000004,
+  "last_page": 57,
+  "question": "日期问题",
+  "source": null,
+  "has_options": false,
+  "solution": "日期问题基础思考框架\n都是多一 二 三\n1、任意一个月=4周+若干天\n2、平移碰到整数周直接跳过\n3、剩下的若干天放在哪里无所谓      一 二 三 四 五 六 天 一 二 三\n4、4月1日等价于3月32日\n5、一年52周余1天或2天→过1年加1天，过闰年加1天，日期多加少减\n6、一季度90天或91天，二季度91天，三季度92天，四季度92天",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T154.png"
+ },
+ {
+  "tid": "T155",
+  "section": "第十二节 周期日期问题",
+  "ex_no": 1,
+  "page": 57,
+  "top": 207.71520599999997,
+  "pages": [
+   57
+  ],
+  "ocr": [],
+  "bottom": 292.6022245799999,
+  "last_page": 57,
+  "question": "（2015上海 B）某年 2月份有5个星期日，4个星期六，则2月 1日是？\nA星期四  B星期五  C星期六  D星期日",
+  "source": "2015上海 B",
+  "has_options": true,
+  "solution": "该年2月份有4周+1天，即29天，且多了1个星期日。多的1天放前或后都可\n以，放前面即2月1日为星期天。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T155.png"
+ },
+ {
+  "tid": "T156",
+  "section": "第十二节 周期日期问题",
+  "ex_no": 2,
+  "page": 57,
+  "top": 323.892206,
+  "pages": [
+   57
+  ],
+  "ocr": [],
+  "bottom": 390.83015448,
+  "last_page": 57,
+  "question": "（2022青海）2021年 7月1日是建D100周年的纪念日，这一天是星期四，\n那么建D110周年纪念日是： A星期一  B星期二  C星期三  D星期四",
+  "source": "2022青海",
+  "has_options": true,
+  "solution": "过10年加10天，过2个闰年加2天，共推迟12天（1周多5天），即星期二。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T156.png"
+ },
+ {
+  "tid": "T157",
+  "section": "第十二节 周期日期问题",
+  "ex_no": 3,
+  "page": 57,
+  "top": 421.194206,
+  "pages": [
+   57
+  ],
+  "ocr": [],
+  "bottom": 506.08109367,
+  "last_page": 57,
+  "question": "（2015江苏 B）某年的3月有5个星期一和4个星期二，则该年的国庆节\n是（ ） 。A星期二  B星期三  C星期四  D星期五",
+  "source": "2015江苏 B",
+  "has_options": true,
+  "solution": "3月有31天，即4周多3天，多余三天为周六、周日、周一，即3月31日为周\n一。3月31日～10月1日共经过184天，即26周多2天，则国庆为周三。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T157.png"
+ },
+ {
+  "tid": "T158",
+  "section": "第十二节 周期日期问题",
+  "ex_no": 4,
+  "page": 58,
+  "top": 24.406205999999997,
+  "pages": [
+   58
+  ],
+  "ocr": [],
+  "bottom": 145.19110296000002,
+  "last_page": 58,
+  "question": "（2023深圳）博物馆员工周二至周六上班，周日、周一休息。某月有\n31天，员工小王工作了22天，则该月的4号是周几？\nA周一   B周二   C周一或周四   D周四或周日",
+  "source": "2023深圳",
+  "has_options": true,
+  "solution": "31天即4周多3天，4周工作20天，则多余3天需工作2天。多余几天放哪都可\n以，放前面，则1-3号可能为周一、周二、周三，也可能为周五、周六、\n周日。则4号可能为周四也可能为周一。",
+  "db_match": "2023SZ-59",
+  "db_score": 0.98,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T158.png"
+ },
+ {
+  "tid": "T159",
+  "section": "第十二节 周期日期问题",
+  "ex_no": 5,
+  "page": 58,
+  "top": 174.39320600000002,
+  "pages": [
+   58
+  ],
+  "ocr": [],
+  "bottom": 277.22916377,
+  "last_page": 58,
+  "question": "（2021 四川下）已知 A 单位在 3 月 x 日（x≤10）举行校招会，B 单\n位在 4 月 y 日（y≥20）举行校招会，两个单位的校招会都在星期五举\n行，已知x+y=32，问y的值为： A24  B25  C26  D27",
+  "source": "2021 四川下",
+  "has_options": true,
+  "solution": "B单位转化为3月31+y日，都是星期五举行即过整数周，即31+y-x是7的倍\n数，且x+y=32，代入上式则2y-1为7的倍数。代入选项，25符合条件。",
+  "db_match": "2021SC2-55",
+  "db_score": 0.91,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T159.png"
+ },
+ {
+  "tid": "T160",
+  "section": "第十二节 周期日期问题",
+  "ex_no": 6,
+  "page": 58,
+  "top": 302.095206,
+  "pages": [
+   58
+  ],
+  "ocr": [],
+  "bottom": 422.88023387000004,
+  "last_page": 58,
+  "question": "（2020深圳）王老师的日历如下图所示。他每天清晨撕下前一天的那\n页日历，某天下午，王老师将最近撕下的 10页日历中的阿拉伯数字相\n加，算得总和为244。则当天该日历展示为（ ）日。 A29  B30  C1  D2",
+  "source": "2020深圳",
+  "has_options": true,
+  "solution": "244的平均值为24.4，如果为连续数列加和，平均数尾数应该为0或0.5，所\n以此时不是连续数列，直接排除ABC。（C是指今天1号，撕下了前面10天\n的日历，即还是连续数列）",
+  "db_match": "2020SZS-17",
+  "db_score": 0.93,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T160.png"
+ },
+ {
+  "tid": "T161",
+  "section": "第十二节 周期日期问题",
+  "ex_no": 7,
+  "page": 58,
+  "top": 446.284206,
+  "pages": [
+   58
+  ],
+  "ocr": [],
+  "bottom": 567.06923387,
+  "last_page": 58,
+  "question": "（2017河南）小张每周一到周五都要去健身房锻炼。某年小张每个季\n度去健身房锻炼的天数相同，问当年的国庆节是星期几？\nA星期一  B星期五  C星期六  D星期日",
+  "source": "2017河南",
+  "has_options": true,
+  "solution": "一季度90天或91天，二季度91天，三季度92天，四季度92天。一周锻炼5\n天，二季度是固定的13周65天锻炼，三四季度也是65天锻炼，即多出的一\n天都是休息日且连续，则9月30日为周六，10月1日为周天。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T161.png"
+ },
+ {
+  "tid": "T162",
+  "section": "第十二节 周期日期问题",
+  "ex_no": 8,
+  "page": 59,
+  "top": 47.143205999999964,
+  "pages": [
+   59
+  ],
+  "ocr": [],
+  "bottom": 257.6730607299998,
+  "last_page": 59,
+  "question": "（2021广东县级）7月的某一天，小张制定了一个读书计划：从今天开\n始，在每周的周一至周五晚上读系列丛书。 如果小张每晚读20页， 到7\n月 28日刚好能读完第一卷，如果每天读30页，则到7月20日刚好能读完第\n一卷。如果 7月1日是星期三，则小张是在7月（ ）日制定的读书计划。\nA2  B3  C5  D7",
+  "source": "2021广东县级",
+  "has_options": true,
+  "solution": "盈亏思想。7月1日是周三，则7月22日是周三，则7月21日-28日分别为周\n二、周三、周四、周五、周六、周天、周一、周二，实际多读了6天（周\n末不读）。且读书的速度比为2:3，则实际读书时间为3:2，即18:12。\n所以每晚读30页需要读12天，12天实际花费两周（读10天）+2天读书日，\n20号-14天=6号，且6号周一要读，则5号周日、4号周六不读，即3号周五开\n始做计划并读书。【3号、6号是多出来的2天】",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T162.png"
+ },
+ {
+  "tid": "T163",
+  "section": "第十二节 周期日期问题",
+  "ex_no": 9,
+  "page": 59,
+  "top": 310.273206,
+  "pages": [
+   59,
+   60
+  ],
+  "ocr": [],
+  "bottom": 32.79520600000001,
+  "last_page": 60,
+  "question": "（2025行政执法） 小张每周一到周四夜跑， 周五到周日休息， 已知\n某年 2月他夜跑17次，3月夜跑 19次，问 4月他夜跑多少次？\nA16  B17  C18  D19",
+  "source": "2025行政执法",
+  "has_options": true,
+  "solution": "4月30天（4周+2天），判断多出来的2天是周几。\n2月可能是28天（4周），可能是29天（4周+1天）。但4周只能跑16次，不符\n合条件，则2月为29天，且多出来的1天要跑步。3月31天（4周+3天），多出\n来的3天都要跑步。要跑步的天都在周一～周四范围内。\n把2月多出来的1天放在最后即2月29日，把3月多出来的3天放在最前即3月1\n～3日，则3月1日为周二。则4月1日为周五，4月2日为周六，均不跑步，即\n4月跑步16次。\n周期问题：公倍数。两个元素的周期是T1和T2，",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T163.png"
+ },
+ {
+  "tid": "T164",
+  "section": "第十二节 周期日期问题",
+  "ex_no": null,
+  "page": 60,
+  "top": 26.84920599999998,
+  "pages": [
+   60
+  ],
+  "ocr": [],
+  "bottom": 50.74414519000004,
+  "last_page": 60,
+  "question": "周期问题",
+  "source": null,
+  "has_options": false,
+  "solution": "那么他们放在一起的周期是T1和T2的公倍数",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T164.png"
+ },
+ {
+  "tid": "T165",
+  "section": "第十二节 周期日期问题",
+  "ex_no": 10,
+  "page": 60,
+  "top": 62.079206,
+  "pages": [
+   60
+  ],
+  "ocr": [],
+  "bottom": 164.91516376999994,
+  "last_page": 60,
+  "question": "（2018北京） 有一种电子铃， 每到整点就响一次铃， 每走9分钟亮\n一次灯。 正午12点时，它既亮灯又响铃。它下一次既响铃又亮灯是下午\n几点钟？ A1点钟  B2点钟  C3点钟  D4点钟",
+  "source": "2018北京",
+  "has_options": true,
+  "solution": "整点响，周期为60min。亮灯周期为9min。两者最小公倍数为180min=3h，即\n下午3点响铃。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T165.png"
+ },
+ {
+  "tid": "T166",
+  "section": "第十二节 周期日期问题",
+  "ex_no": 11,
+  "page": 60,
+  "top": 186.536206,
+  "pages": [
+   60
+  ],
+  "ocr": [],
+  "bottom": 361.16831326,
+  "last_page": 60,
+  "question": "（2012北京）运动会上100名运动员排成一列，从左向右依次编号为1\n～100，选出编号为3的倍数的运动员参加开幕式队列，而编号为 5的倍数\n的运动员参加闭幕式队列。问既不参加开幕式又不参加闭幕式队列的运\n动员有多少人？  A46  B47  C53  D54",
+  "source": "2012北京",
+  "has_options": true,
+  "solution": "容斥原理。不参加开且不参加闭人数=100-（参加开+参加闭-参加开且闭）\n参加开的是3的倍数，最大为99，人数为99/3=33人。\n参加闭的是5的倍数，最大为100，人数为100/5=20人。\n参加开且闭的是15的倍数，最大为90，人数为90/15=6人。\n不参加开且不参加闭人数=100-（33+20-6）=53人。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T166.png"
+ },
+ {
+  "tid": "T167",
+  "section": "第十二节 周期日期问题",
+  "ex_no": 12,
+  "page": 60,
+  "top": 383.55220599999996,
+  "pages": [
+   60
+  ],
+  "ocr": [],
+  "bottom": 576.1328597199999,
+  "last_page": 60,
+  "question": "（2014联考）工厂需要加工一批零件，甲单干工作需要96个小时完\n成，乙需要 90个小时、丙需要 80个小时。现在按照第一天甲乙合作，第\n二天甲丙合作，第三天乙丙合作的顺序轮班工作，每天工作8小时，当全\n部零件完成时，甲工作了多少小时：A16  B24  C44  D32",
+  "source": "2014联考",
+  "has_options": true,
+  "solution": "假设工程量为1，甲效率为1/96，乙效率为1/90，丙效率为1/80。一个周期为\n甲乙+甲丙+乙丙，即16甲+16乙+16丙，一个周期后，已完成\n16/96+16/90+16/80=49/90，剩余41/90无需一个周期。新一个周期前两天甲乙+甲\n丙=16甲+8乙+8丙=16/96+8/90+8/80=32/90<41/90。即甲干满2周期，即32h。\n{秒杀：总周期大于1小于等于2，排除AC，且剩余工作量约等于1个周期完\n成的工作量，则大概需要完成2天以上，排除B}",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T167.png"
+ },
+ {
+  "tid": "T168",
+  "section": "第十二节 周期日期问题",
+  "ex_no": 13,
+  "page": 61,
+  "top": 27.118205999999986,
+  "pages": [
+   61
+  ],
+  "ocr": [
+   "O",
+   "%%",
+   "O",
+   "O",
+   "I2",
+   "3",
+   "E",
+   "O",
+   "O5",
+   "4",
+   "O",
+   "8",
+   "&O",
+   "O",
+   "P8",
+   "7",
+   "O",
+   "⑧",
+   "8",
+   "8",
+   "O",
+   "O",
+   "f9",
+   "10",
+   "O",
+   "O",
+   "O",
+   "1",
+   "XXXX",
+   "O"
+  ],
+  "bottom": 233.67072765999995,
+  "last_page": 61,
+  "question": "（2019青海省市州A）小王负责甲、乙、丙、丁四个采购基地的采购任\n务，甲、乙、丙、丁四基地分别需要每隔2天、4天、6天、7天去采购一\n次。7月1日，小王分别去了四个基地采购，问他整个7月有几天不用去采购\n基地采购？ A10天  B11天  C12天  D13天",
+  "source": "2019青海省市州A",
+  "has_options": true,
+  "solution": "数据量多，用日历计算法。7月31天。甲蓝色，乙橙色，丙绿色，丁粉色\n1234567\n一\n二\n三\n四\n五",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T168.png"
+ },
+ {
+  "tid": "T169",
+  "section": "第十二节 周期日期问题",
+  "ex_no": 14,
+  "page": 61,
+  "top": 275.795206,
+  "pages": [
+   61
+  ],
+  "ocr": [
+   "st",
+   "In",
+   "8",
+   "62-6",
+   "-",
+   "A",
+   "B",
+   "AB",
+   "62",
+   "AB"
+  ],
+  "bottom": 556.493066,
+  "last_page": 61,
+  "question": "（2021江苏 C）某公司举办迎新晚会，参加者每人都领取一个按入场\n顺序编号的号牌，晚会结束时宣布：从 1 号开始向后每隔 6 个号的号码\n可获得纪念品 A，从最后一个号码开始向前每隔 8个号的号码可获得纪念\n品 B。 最后发现没有人同时获得纪念品A和B， 则参加迎新晚会的人数最\n多有：A 46人 B 48人 C 52人 D 54人",
+  "source": "2021江苏 C",
+  "has_options": true,
+  "solution": "公式法：若ab互质，首尾分开倒数不重合最多有（a-1）（b-1）。\nA周期为7，B周期为9，AB互质，则最多为（7-1）×（9-1）=48\n构造法：构造一个无限人数的序列，其中中间某一段没有人同时获得纪\n念品A和B，假设同向标记AB，且假设第一个不算，则间距应该为62（最\n小公倍数63-1）。但此时反向标记AB，即第一个必须为A，最后一个必须\n为B，则间距应该为48（62-6-8）。",
+  "db_match": "2021JSA-64",
+  "db_score": 0.97,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T169.png"
+ },
+ {
+  "tid": "T170",
+  "section": "第十二节 周期日期问题",
+  "ex_no": null,
+  "page": 62,
+  "top": 20.376206000000025,
+  "pages": [
+   62
+  ],
+  "ocr": [],
+  "bottom": 166.568804,
+  "last_page": 62,
+  "question": "【母题】蜗牛从深12米的井底向上爬，每个白天可以向上爬 3米，夜晚会\n向下滑2米。假设从某天的清晨开始爬，问第多少天可以爬到地面？",
+  "source": null,
+  "has_options": false,
+  "solution": "以黄昏为节点看问题，黄昏之前在上爬3m，黄昏之后在下滑2m，则黄昏-\n黄昏上爬1m。第1天黄昏3m，第2天4m，第3天5m…第9天11m，第10天黄昏之\n前爬3m已经爬出去了。{时间节点的确定：下落前的临界点。黄昏之后下\n落，即黄昏为时间节点}\n蜗牛爬墙",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T170.png"
+ },
+ {
+  "tid": "T171",
+  "section": "第十二节 周期日期问题",
+  "ex_no": 15,
+  "page": 62,
+  "top": 183.84920599999998,
+  "pages": [
+   62
+  ],
+  "ocr": [],
+  "bottom": 394.3793225499999,
+  "last_page": 62,
+  "question": "（2019北京）早上7点之前，某小区门口停有 100辆共享单车。7点开\n始，每20秒就有一辆共享单车被骑走。共享单车企业雇佣三轮车从附近的\n地铁站将无人使用的车辆拉到小区门口，7点拉来第一趟，往后每 15分钟\n拉一趟，每趟拉来30辆共享单车。则下列哪个时间段会出现小区门口没有\n共享单车的情况？（不存在共享单车损坏和被骑来小区门口的情况）\nA 8 点 21 分至 25 分     B 8 点 36 分至 40 分\nC 8 点 41 分至 45 分     D 8点 46分至50分",
+  "source": "2019北京",
+  "has_options": true,
+  "solution": "法1:7点时130辆，每15分钟骑走45辆且拉来30辆，即减少15辆，到8:30减少90\n辆，还剩40辆，等不到8:45补车，40辆已经被骑完了。\n法2:平均下来，假设每分钟走3来2，100=(3-2)T，T=100分钟。即8:40没有车。\n{秒杀：每15分钟补充一次车，所以后面的时间肯定是15的倍数}",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T171.png"
+ },
+ {
+  "tid": "T172",
+  "section": "第十二节 周期日期问题",
+  "ex_no": 16,
+  "page": 62,
+  "top": 417.70120599999996,
+  "pages": [
+   62,
+   63
+  ],
+  "ocr": [],
+  "bottom": 53.44235923999997,
+  "last_page": 63,
+  "question": "（2012国考）甲乙两人计划从A地步行去B地，乙早上7:00出发，匀速步\n行前往，甲因事耽搁，9:00才出发。为了追上乙，甲决定跑步前进，跑步\n的速度是乙步行速度的2.5倍，但每跑半小时都需要休息半小时，那么甲什\n么时候才能追上乙：A 10:20   B 12:10   C 14:30   D 16:10",
+  "source": "2012国考",
+  "has_options": true,
+  "solution": "设乙速度为1，甲速度为2.5，乙早出发两小时已走2。每1小时内，前半小时\n甲追0.75（2.5*0.5-1*0.5），后半小时甲落后0.5（1*0.5），即每小时内追0.75落\n0.5，即实际追0.25。后半小时落后，30分时确定为时间节点，9:30时甲乙距离\n为1.25，10:30时距离为1…14:30时距离为0。\n1、快的先来，总体就快\n交替工作\n2、多余的放哪无所谓",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T172.png"
+ },
+ {
+  "tid": "T173",
+  "section": "第十二节 周期日期问题",
+  "ex_no": 17,
+  "page": 63,
+  "top": 66.77920599999993,
+  "pages": [
+   63
+  ],
+  "ocr": [],
+  "bottom": 241.41020600000002,
+  "last_page": 63,
+  "question": "（2019新疆）一批药品需要检测，若第一天由甲检测，第二天由乙检\n测，按此方式交替完成的天数为整数。若第一天由乙检测，第二天由甲\n检测，按此轮替，那么在按前者轮流方式完工的天数后，还有56个药品未\n检测。已知甲、乙工作效率之比为9:5。问甲每天检测多少个药品？（ ）\nA72   B99   C112   D126",
+  "source": "2019新疆",
+  "has_options": true,
+  "solution": "同样的天数，但完成度不同，即最后一天不同，差的是最后一天的量。\n方式一：甲乙甲乙…甲。方式二：乙甲乙甲…乙。\n方式一最后一天是甲，方式二最后一天是乙，则甲-乙=56。\n根据比例关系9:5，即4份代表56，甲每天检测126。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T173.png"
+ },
+ {
+  "tid": "T174",
+  "section": "第十二节 周期日期问题",
+  "ex_no": 18,
+  "page": 63,
+  "top": 264.498206,
+  "pages": [
+   63
+  ],
+  "ocr": [],
+  "bottom": 385.2831029599999,
+  "last_page": 63,
+  "question": "（2019辽宁） 在一块草场上老李养了若干头牛和若干只羊。 如果只\n有羊吃草， 够吃16天；如果第一天牛吃，第二天羊吃，这样交替，正好\n整数天吃完；如果第一天羊吃，第二天牛吃，这样交替，那么比上次轮\n流的做法多吃半天；牛单独吃能够吃（）天。 A8  B7  C6  D5",
+  "source": "2019辽宁",
+  "has_options": true,
+  "solution": "方式一：牛羊牛羊…牛。方式二：羊牛羊牛…羊。\n即牛-羊=1/2 牛，牛羊效率比为2:1，羊吃完用16天，牛吃完用8天。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T174.png"
+ },
+ {
+  "tid": "T175",
+  "section": "第十二节 周期日期问题",
+  "ex_no": 19,
+  "page": 63,
+  "top": 410.74420599999996,
+  "pages": [
+   63,
+   64
+  ],
+  "ocr": [],
+  "bottom": 32.11320599999999,
+  "last_page": 64,
+  "question": "一项工程， 交由甲、 乙两个工人做。 若按照甲1天、乙1天、甲1天、\n乙1天…的顺序交替工作， 恰好用整数天完成；若按照乙1天、甲1天、乙1\n天、甲1天…的顺序交替工作，需要多1/4天才能完成；若甲单独工作8天\n后，两人合作 4天才能完成。问若将这项工程单独交给甲，需要多少天完\n成？ A 14   B 15   C 16   D 18",
+  "source": null,
+  "has_options": true,
+  "solution": "方式一：甲乙甲乙…甲。方式二：乙甲乙甲…乙。最后1天 甲-乙=1/4 甲，\n则3甲=4乙，甲乙效率比为4:3。总工程量=12甲+4乙，且4乙=3甲，即总工程量\n为15甲，甲15天可完工。\n心法：找到问题的主要矛盾",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T175.png"
+ },
+ {
+  "tid": "T176",
+  "section": "第十三节 构造问题",
+  "ex_no": 1,
+  "page": 64,
+  "top": 85.00620600000002,
+  "pages": [
+   64
+  ],
+  "ocr": [],
+  "bottom": 223.74004214999997,
+  "last_page": 64,
+  "question": "（2023 江西）某小区物业准备了 230 盒口罩免费派发给 10 栋楼，要求\n任意两栋楼派发的口罩数量都不相同，但最多相差不超过1倍。假设口罩\n不拆盒发放，那么派发口罩数量最少的那栋楼最少可派发口罩：\nA18盒  B15盒  C14盒  D12盒",
+  "source": "2023 江西",
+  "has_options": true,
+  "solution": "平均数为23盒。代入最少（12盒），最多不超过24盒，而平均数为23不符合\n条件。代入14盒，最多不超过28盒，可假设14、20、21、…28，20～28加和为\n216，加14刚好为230，符合条件。",
+  "db_match": "2023HB-73",
+  "db_score": 1.0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T176.png"
+ },
+ {
+  "tid": "T177",
+  "section": "第十三节 构造问题",
+  "ex_no": 2,
+  "page": 64,
+  "top": 248.76520599999998,
+  "pages": [
+   64
+  ],
+  "ocr": [],
+  "bottom": 387.49904214999987,
+  "last_page": 64,
+  "question": "（2022重庆选调）某单位招标信息化建设项目，预算为 400万元。甲、\n乙、丙、丁 4家投标企业的平均报价为预算金额的 95%，已知只有甲企业\n的报价超过预算金额，任意 2家企业的报价相差均不少于 10 万元且不多\n于 100 万元。问甲企业的报价最高可能为多少万元？\nA440  B442.5  C445  D447.5",
+  "source": "2022重庆选调",
+  "has_options": true,
+  "solution": "平均报价为380元。代入最多甲为447.5，假设其他三家尽可能少，可设其他\n三家为347.5、357.5、367.5，四家平均数刚好为380。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T177.png"
+ },
+ {
+  "tid": "T178",
+  "section": "第十三节 构造问题",
+  "ex_no": 3,
+  "page": 64,
+  "top": 413.902206,
+  "pages": [
+   64,
+   65
+  ],
+  "ocr": [],
+  "bottom": 47.795803999999976,
+  "last_page": 65,
+  "question": "（2018四川下）企业今年从全国6所知名大学招聘了500名应届生，从其\n中任意2所大学招聘的应届生数量均不相同。其中从A大学招聘的应届生数\n量最少且正好为B大学的一半。从B大学招聘的应届生数量为6所大学中最\n多的。则该企业今年从A大学至少招聘了多少名应届生？\nA48   B47   C46   D45",
+  "source": "2018四川下",
+  "has_options": true,
+  "solution": "平均数为83.3。代入A为45人，B为90人，因平均数靠近90，则其他4所人数尽\n可能靠近在90，假设人数为89、88、87、86，此时平均数约为80（小于83）。\n进一步调整，当A为47时（原A+2，原B+4），平均数+3，符合条件。\n做题方法：一分为二\n中间计算",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T178.png"
+ },
+ {
+  "tid": "T179",
+  "section": "第十三节 构造问题",
+  "ex_no": 4,
+  "page": 65,
+  "top": 73.07720599999993,
+  "pages": [
+   65
+  ],
+  "ocr": [],
+  "bottom": 193.86236477999995,
+  "last_page": 65,
+  "question": "（2017江苏）在一次竞标中，评标小组对参加竞标的公司进行评分，\n满分120分。按得分排名，前5名的平均分为 115分，且得分是互不相同的\n整数，则第三名得分至少是： A112分  B113分  C115分  D116分",
+  "source": "2017江苏",
+  "has_options": true,
+  "solution": "一分为二，1-2名看成一组，3-5名看成一组。问第3名至少，则第1、2名要\n尽可能高，即分别为120、119。3-5名尽可能低，代入112分，假设45名分数\n为111、110，不符合条件。代入113分，假设45名分数为112、111，符合。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T179.png"
+ },
+ {
+  "tid": "T180",
+  "section": "第十三节 构造问题",
+  "ex_no": 5,
+  "page": 65,
+  "top": 223.459206,
+  "pages": [
+   65
+  ],
+  "ocr": [],
+  "bottom": 362.19317305999994,
+  "last_page": 65,
+  "question": "（2022上海 B）某单位进行了一次绩效考评打分，满分为100分。有 5位\n员工的平均分为90分，而且他们的分数各不相同，其中分数最低的员工\n得分为77分，那么排第二名的员工至少得（）分。（员工分数取整数）\nA90  B92  C94  D96",
+  "source": "2022上海 B",
+  "has_options": true,
+  "solution": "问第2名至少，则第1名尽可能多，即第1名100分，且高于平均分10分。最\n低分77分低于平均分13分，则剩下三个成绩需高于平均分3分，即92、91、\n90，第2名为92。（削峰填谷，高出平均数部分和=低于平均数部分和）",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T180.png"
+ },
+ {
+  "tid": "T181",
+  "section": "第十三节 构造问题",
+  "ex_no": 6,
+  "page": 65,
+  "top": 391.89520600000003,
+  "pages": [
+   65,
+   66
+  ],
+  "ocr": [],
+  "bottom": 52.50080400000002,
+  "last_page": 66,
+  "question": "（2017 山东选调）某大型跨国连锁零售企业在世界 8 个城市共有 76 家\n超市，每个城市的超市数量都不相同。 如果超市数量排名第四的城市有10\n家超市， 那么超市数量排名最后的城市最多有几家超市？\nA3  B4  C5  D6",
+  "source": "2017 山东选调",
+  "has_options": true,
+  "solution": "问排最后最多几家，则排名前的超市尽可能少，则1～4名超市数量为13、\n12、11、10。剩下30家分给5～8名，平均数为7.5，则超市数为9、8、7、6，符\n合条件。\n做题方法：人群作为对象，划分群体\n统计模型",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T181.png"
+ },
+ {
+  "tid": "T182",
+  "section": "第十三节 构造问题",
+  "ex_no": 7,
+  "page": 66,
+  "top": 76.92220600000002,
+  "pages": [
+   66
+  ],
+  "ocr": [],
+  "bottom": 215.65617305999996,
+  "last_page": 66,
+  "question": "（2014北京） 一个 20人的班级举行百分制测验，平均分为79分，所有人\n得分都是整数且任意两人得分不同。班级前 5 名的平均分正好是 16 到 20\n名平均分的 2 倍。则班级第6 名和第15名之间的分差最大为多少分：\nA34  B37  C40  D43",
+  "source": "2014北京",
+  "has_options": true,
+  "solution": "问分差最大，则1～5名分数要尽可能大，16～20分数要尽可能小。则构造1\n～5名分数为100、99、98、97、96，平均数为98，则16～20的平均数为49。则\n第6名分数为95，第15名分数为52，分差为43。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T182.png"
+ },
+ {
+  "tid": "T183",
+  "section": "第十三节 构造问题",
+  "ex_no": 8,
+  "page": 66,
+  "top": 243.17920599999997,
+  "pages": [
+   66
+  ],
+  "ocr": [],
+  "bottom": 399.86211225,
+  "last_page": 66,
+  "question": "（2018浙江选调）某次百分制考试共有 30名考生参加，每人的成绩均为\n正整数，所有考生平均成绩为 80分， 且所有考生成绩均不相同。 问成绩\n低于60分的考生最多有多少人？ A7   B8   C9   D10",
+  "source": "2018浙江选调",
+  "has_options": true,
+  "solution": "平均数为80。低于60分的人尽可能靠近60分。①代入最多（10人），则构造\n10人为50～59，则平均分为54.5，另20人81～100平均分为90.5，总平均分为78.5\n（小于80），不符要求。②调整，如果为9人，原10人少个50，原20人多个\n80，总分多30分，平均分多1分（79.5），不符要求。③再调，如果为8人，\n一边再少51，一边再多79，总分再多28，平均分再多14/15，符合要求。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T183.png"
+ },
+ {
+  "tid": "T184",
+  "section": "第十三节 构造问题",
+  "ex_no": 9,
+  "page": 66,
+  "top": 426.482206,
+  "pages": [
+   66,
+   67
+  ],
+  "ocr": [],
+  "bottom": 67.84808438000005,
+  "last_page": 67,
+  "question": "某次数学测验，A班有 40人，平均分为 65分。因 B班汇总成绩时遗漏\n了两位同学，导致B班的平均分为 72分，两班整体的平均分为68分。已知\nB班最高分为96分，且最低分不低于最高分的一半， 如果算上遗漏的两位\n同学， 则 B班的平均分最少比 A班高多少分？ A4  B4.5  C5  D5.5",
+  "source": null,
+  "has_options": true,
+  "solution": "根据线段法，可求B班总人数为32人（加上遗漏）。要求B班最少比A班多\n多少，则B班成绩尽可能低，则遗漏2人的成绩均为48分，即平均分为\n（30×72 + 2×48）÷32=70.5，高5.5分。\n每个抽屉只能装固定数，每个抽屉都装满，\n直到装不下，再多一个就爆了。\n抽屉原理\n也称最不不利构造。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T184.png"
+ },
+ {
+  "tid": "T185",
+  "section": "第十三节 构造问题",
+  "ex_no": 10,
+  "page": 67,
+  "top": 84.66420599999998,
+  "pages": [
+   67
+  ],
+  "ocr": [],
+  "bottom": 205.4489720499999,
+  "last_page": 67,
+  "question": "（2023浙江 C）某部门举行年会抽奖活动。抽奖箱里有 80个抽奖券，\n共 20个不同的数字，每个数字均出现 4次，且分别对应一份礼品，不同\n的数字对应的礼品不同。每人当天限抽 1次。 那么最少多少人当天参加\n抽奖活动， 才能保证至少有 3人领取的礼品相同?\nA41  B42  C61  D62",
+  "source": "2023浙江 C",
+  "has_options": true,
+  "solution": "20个数字均有2人取，再加1人必然符合至少3人礼品相同。即 2×20+1=41",
+  "db_match": "2023ZJA-56",
+  "db_score": 1.0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T185.png"
+ },
+ {
+  "tid": "T186",
+  "section": "第十三节 构造问题",
+  "ex_no": 11,
+  "page": 67,
+  "top": 233.031206,
+  "pages": [
+   67
+  ],
+  "ocr": [],
+  "bottom": 389.7139813399999,
+  "last_page": 67,
+  "question": "（2014陕西）（2020浙江选调）箱子内有标号分别为1、2、3······25的 25\n个乒乓球，问至少需要取出多少个乒乓球才能保证有两个的标号之差为\n6的倍数？ A6  B7  C9  D10",
+  "source": "2014陕西",
+  "has_options": true,
+  "solution": "法1:要想差为6，2个球是关于6的余数相同。按余数分抽屉，余数有5种 。\n余数  0  1  2  3  4  5\n个数  4  5  4  4  4  4  ，6种余数各取1再加1必有两个差为6，即6+1=7。\n法2:要取标号之差为6的倍数，即考虑1-6连续取出，此时最大差为5，则第\n7个取出一定差有6",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T186.png"
+ },
+ {
+  "tid": "T187",
+  "section": "第十三节 构造问题",
+  "ex_no": 12,
+  "page": 67,
+  "top": 410.554206,
+  "pages": [
+   67,
+   68
+  ],
+  "ocr": [
+   "C",
+   "CoC(i",
+   "+++"
+  ],
+  "bottom": 47.83580400000005,
+  "last_page": 68,
+  "question": "某地方性体育体育彩票“10选4”的投注规则如下：投注者可以从\n01-10（共10个号码）中投选1-4个号码合成一组，称为“一注”（号码不区\n分排列顺序，如02 06 03 和02 03 06是由该3个号码组成的同一注）。当投注\n了（）注时，会出现至少5注相同号码。\nA1255  B1361  C1401  D1541",
+  "source": null,
+  "has_options": true,
+  "solution": "求出投注的可能性。即\n共385种注数，且均取4次，再加1次必有5注相同，\n即385×4+1=1541\n集合构造",
+  "db_match": "2020SZS-21",
+  "db_score": 0.99,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T187.png"
+ },
+ {
+  "tid": "T188",
+  "section": "第十三节 构造问题",
+  "ex_no": 13,
+  "page": 68,
+  "top": 65.82720600000005,
+  "pages": [
+   68
+  ],
+  "ocr": [
+   "2374"
+  ],
+  "bottom": 222.50985042999991,
+  "last_page": 68,
+  "question": "（2008浙江）小明、小刚和小红三人一起参加一次英语考试，已知考\n试共有100道题，且小明做对了 68题，小刚做对了58题，小红做对了 78题。\n问三人都做对的题目至少有几题？A 4题  B 8题  C 12题  D 16题",
+  "source": "2008浙江",
+  "has_options": true,
+  "solution": "构造思路：往人少的地方钻。先考虑两集合，剩下往人少的地方钻。\n先考虑小明和小刚，两人共做对26题，剩下74题不对，则小红78题\n最多只有74题能往少的地方走，最后剩4题。\n反向思考：求至少对几题，可先求至多错几题。小明错32题，小刚错42\n题，小红错22题，则三人至多错32+42+22=96题，则至少对4题。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T188.png"
+ },
+ {
+  "tid": "T189",
+  "section": "第十三节 构造问题",
+  "ex_no": 14,
+  "page": 68,
+  "top": 249.01520599999998,
+  "pages": [
+   68
+  ],
+  "ocr": [],
+  "bottom": 369.80036478,
+  "last_page": 68,
+  "question": "（2010浙江 A）建华中学共有1600名学生，其中喜欢乒乓球的有 1180\n人，喜欢羽毛球的有1360人，喜欢篮球的有1250人，喜欢足球的有 1040人，\n问以上四项球类运动都喜欢的至少有几人： A 20人 B 30人 C 40人 D 50人",
+  "source": "2010浙江 A",
+  "has_options": true,
+  "solution": "先两两求交叉集合，再交叉。同时喜欢乒乓和羽毛球的有1180+1360-1600=940\n人，同时篮球和足球的有1250+1040-1600=690人，同时喜欢四项球类的有\n940+690-1600=30人。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T189.png"
+ },
+ {
+  "tid": "T190",
+  "section": "第十三节 构造问题",
+  "ex_no": 15,
+  "page": 68,
+  "top": 399.030206,
+  "pages": [
+   68,
+   69
+  ],
+  "ocr": [],
+  "bottom": 47.12780399999997,
+  "last_page": 69,
+  "question": "某次测试共有5道题，做对第1、2、3、4、5题的人分别占测试人数的\n95%、85%、75%、65%、50%，若做对4道及以上者为优秀，则这次测试的优秀\n率至少是多少？  A35%  B40%  C48%  D50%",
+  "source": null,
+  "has_options": true,
+  "solution": "反向思考。求优秀率至少，可求非优秀至多。假设测试人数为100人，错\n题人次=5+15+25+35+50=130。要非优秀尽可能多，则做错2题及以上的人尽可\n能多，当所有错题人都只错2题的时候，此时人数最多，即非优秀人数\n130/2=65人，优秀人数35人，优秀率为35%。\n思考：全给最强对手都能胜利所要求的最少票数\n得票必胜",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T190.png"
+ },
+ {
+  "tid": "T191",
+  "section": "第十三节 构造问题",
+  "ex_no": 16,
+  "page": 69,
+  "top": 65.27320599999996,
+  "pages": [
+   69
+  ],
+  "ocr": [],
+  "bottom": 186.05810295999993,
+  "last_page": 69,
+  "question": "（2008山东）四年级一班选班长，每人投票从甲、乙、丙三个候选人\n中选一人，已知全班共有 52 人，并且在计票过程中的某一时刻，甲得到\n17 票，乙得到 16 票，丙得到 11票。如果得票最多的候选人将成为班长，\n甲最少再得多少张票就能够保证当选：A1张  B2张  C4张  D8张",
+  "source": "2008山东",
+  "has_options": true,
+  "solution": "甲只要保证始终比乙多1票即可获胜。此时已投票44票，还剩8票。甲要获\n胜，乙是最强对手，则甲4票，乙4票，能保证甲比乙始终多1票",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T191.png"
+ },
+ {
+  "tid": "T192",
+  "section": "第十三节 构造问题",
+  "ex_no": 17,
+  "page": 69,
+  "top": 213.94820599999997,
+  "pages": [
+   69
+  ],
+  "ocr": [],
+  "bottom": 391.809757,
+  "last_page": 69,
+  "question": "（2013辽宁）60名员工投票从甲、乙、丙三人中评选最佳员工，选举\n时每人只能投票选举一人，得票最多的人当选。开票中途累计，前 30张\n选票中，甲得15票，乙得10票，丙得5票。在尚未统计的选票中，甲至少再\n得多少票就一定当选：A15  B13  C10  D8",
+  "source": "2013辽宁",
+  "has_options": true,
+  "solution": "甲只要保证始终比乙多1票可获胜。此时还剩30票，甲的最强对手为乙，\n先分4票给乙，还剩26票再平分，甲乙分别13票，能保证甲比乙始终多1票\n取物必胜",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T192.png"
+ },
+ {
+  "tid": "T193",
+  "section": "第十三节 构造问题",
+  "ex_no": 18,
+  "page": 69,
+  "top": 404.17220599999996,
+  "pages": [
+   69
+  ],
+  "ocr": [
+   "S"
+  ],
+  "bottom": 542.90617306,
+  "last_page": 69,
+  "question": "甲乙两人在玩一个沙盘游戏，比赛的规则是在一个分为50个单元的区\n域上，每人轮流去划定这些区域作为自己的领地，每次可以划定1到5个单\n位，谁作为最后划定区域的人则为胜利者，如果由甲划定，那么甲一开\n始要划定多少个单位才能保证自己获胜：A1  B2  C3  D4",
+  "source": null,
+  "has_options": true,
+  "solution": "总数A     最大+最小=n    A/n=k…x   自己胜，第一次取x\n对方胜，第一次取x-1\n总数50，最大+最小=5+1=6，50/6=8…2，则第一次取2",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T193.png"
+ },
+ {
+  "tid": "T194",
+  "section": "第十四节 统筹规划问题",
+  "ex_no": null,
+  "page": 70,
+  "top": 79.82020599999998,
+  "pages": [
+   70
+  ],
+  "ocr": [],
+  "bottom": 104.30427115000003,
+  "last_page": 70,
+  "question": "满减问题",
+  "source": null,
+  "has_options": false,
+  "solution": "刚好的时候",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T194.png"
+ },
+ {
+  "tid": "T195",
+  "section": "第十四节 统筹规划问题",
+  "ex_no": 1,
+  "page": 70,
+  "top": 124.995206,
+  "pages": [
+   70
+  ],
+  "ocr": [],
+  "bottom": 209.88209366999996,
+  "last_page": 70,
+  "question": "（2020北京乡镇）A公园规定，个人票每张10元，团体票每张60元（可\n供10人参观） ，无其他票价优惠政策。五年级二班共有58人逛A公园，则\n最少应付多少元？A350  B360  C380  D390",
+  "source": "2020北京乡镇",
+  "has_options": true,
+  "solution": "① 5张团体票+8张个人票，380元。 ② 6张团体票，360元（浪费2名额）。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T195.png"
+ },
+ {
+  "tid": "T196",
+  "section": "第十四节 统筹规划问题",
+  "ex_no": 2,
+  "page": 70,
+  "top": 234.572206,
+  "pages": [
+   70
+  ],
+  "ocr": [],
+  "bottom": 391.254206,
+  "last_page": 70,
+  "question": "（2013江苏A）有89吨货物要从甲地运往乙地，大卡车的载重量是7吨，\n小卡车的载重量是4吨。大卡车与小卡车每次的耗油量分别是 14升、9\n升，如果使所派车辆运完货物耗油量最小，则最小耗油量是：\nA141升  B162升  C181升  D193升",
+  "source": "2013江苏A",
+  "has_options": true,
+  "solution": "大卡车能耗为2升/吨，小卡车能耗为2.25升每吨。①11大+33小→181升，\n②13大→182升，③12大+2小→186升，情况①耗油最小。\n【秒杀：理论上限法，假设不考虑分配，89吨货物至少要消耗89×2=178升\n油量，排除AB。并且略大于178，锁定181升】",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T196.png"
+ },
+ {
+  "tid": "T197",
+  "section": "第十四节 统筹规划问题",
+  "ex_no": 3,
+  "page": 70,
+  "top": 416.961206,
+  "pages": [
+   70,
+   71
+  ],
+  "ocr": [],
+  "bottom": 48.79020600000001,
+  "last_page": 71,
+  "question": "（2014河北）甲地有177吨货物要一起运到乙地，大卡车的载重量是5\n吨，小卡车的载重量是 2吨， 大小卡车从甲地到乙地的耗油量分别是10升\n和 5升， 则使用大小卡车将货物从甲地运到乙地最少要耗油多少升？\nA442.5升 B356升 C355升 D354升\n空瓶换酒",
+  "source": "2014河北",
+  "has_options": true,
+  "solution": "大卡车能耗为2升/吨，小卡车能耗为2.5升每吨。理论上限法，177吨至少需\n要354吨，排除A。 35大+1小=355升是最优解。\n❗\n核心思路：理论上限。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T197.png"
+ },
+ {
+  "tid": "T198",
+  "section": "第十四节 统筹规划问题",
+  "ex_no": 4,
+  "page": 71,
+  "top": 68.99020599999994,
+  "pages": [
+   71
+  ],
+  "ocr": [],
+  "bottom": 243.62108437999996,
+  "last_page": 71,
+  "question": "（2019山东选调）某啤酒厂为促销啤酒，开展 6个空啤酒瓶换1瓶啤酒\n的活动，孙先生去年花钱先后买了109瓶该品牌啤酒，期间不断用空啤酒\n瓶去换啤酒，请问孙先生去年一共喝掉了多少瓶啤酒？\nA127  B128  C129  D130",
+  "source": "2019山东选调",
+  "has_options": true,
+  "solution": "6空瓶=1瓶酒=1空瓶+1酒液，即5空瓶=1酒液。109瓶酒=109空瓶+109酒液，109\n空瓶可换21酒液…4空瓶，即共计109+21=130瓶。\n注意：最后一步拿了空瓶换酒，喝完之后手上一定会剩下空瓶，而不\n会剩酒液。例如，假设题目改成买了110瓶酒，则按关系可推110瓶酒可换\n22瓶酒液，即空瓶余数为0，没有剩空瓶，不符合，此时最多换21瓶。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T198.png"
+ },
+ {
+  "tid": "T199",
+  "section": "第十四节 统筹规划问题",
+  "ex_no": 5,
+  "page": 71,
+  "top": 267.478206,
+  "pages": [
+   71
+  ],
+  "ocr": [],
+  "bottom": 388.26336477999996,
+  "last_page": 71,
+  "question": "9个空瓶合起来可以换2瓶汽水，某旅游团喝了263瓶汽水，其中有一些\n是喝剩下来的空瓶换的，那么他们至少要买多少瓶汽水？\nA259   B243   C221   D205",
+  "source": null,
+  "has_options": true,
+  "solution": "法1:代入法，问至少，代入205。根据关系，7空瓶=2汽水液，205空瓶可换58\n汽水液，即共计205+58=263，刚好符合条件。\n法2: 263/9=29，29X2=58，263-58=205。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T199.png"
+ },
+ {
+  "tid": "T200",
+  "section": "第十四节 统筹规划问题",
+  "ex_no": 6,
+  "page": 71,
+  "top": 415.901206,
+  "pages": [
+   71,
+   72
+  ],
+  "ocr": [],
+  "bottom": 55.95378754000012,
+  "last_page": 72,
+  "question": "（2019 山东选调）某老旧写字楼重新装修，需要将原有的窗户全部更\n换为单价 90 元每扇的新窗户。已知每 7扇换下来的旧窗户可以跟厂商兑\n换一个新窗户。全部更换完毕后共花费 16560元且剩余4个旧窗户没有兑\n换，那么该写字楼一共有多少扇窗户？ A214  B218  C184  D188\n排队问题",
+  "source": "2019 山东选调",
+  "has_options": true,
+  "solution": "可列关系，7旧扇=1新扇+1旧扇（1新扇会更换下1旧扇），即6旧扇=1新\n扇。买了16560/90=184新扇，即更换了184旧扇，可兑换184/6=30新扇…4旧扇，\n即共计184+30=214扇\n理论上限思维，短任务优先原则，\n不浪费原则",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T200.png"
+ },
+ {
+  "tid": "T201",
+  "section": "第十四节 统筹规划问题",
+  "ex_no": 7,
+  "page": 72,
+  "top": 75.31420600000001,
+  "pages": [
+   72
+  ],
+  "ocr": [],
+  "bottom": 178.15016377,
+  "last_page": 72,
+  "question": "（2013江苏）局长找甲、乙、丙三位处长谈话，计划与甲交谈10分钟，\n与乙交谈12分钟，与丙交谈8分钟。办公室助理通过合理调整三人交谈的\n顺序，使得三人交谈和等待的总时间最少。请问调整后的总时间为多\n少： A46分钟   B48分钟   C50分钟   D56分钟",
+  "source": "2013江苏",
+  "has_options": true,
+  "solution": "交谈+等待的时间，即先丙、再甲、再乙。8×3+10×2+12=56分钟",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T201.png"
+ },
+ {
+  "tid": "T202",
+  "section": "第十四节 统筹规划问题",
+  "ex_no": 8,
+  "page": 72,
+  "top": 208.629206,
+  "pages": [
+   72
+  ],
+  "ocr": [
+   "#=",
+   "5",
+   "X"
+  ],
+  "bottom": 365.3121122499999,
+  "last_page": 72,
+  "question": "（2013广州）某单位前台有两个窗口，办理业务的人员要先到1号窗口\n审核资料，审核通过的才可以到2号窗口缴费。已知平均一份资料的审核\n时间为1.5分钟，且审核通过率仅有 1/3，而一份资料的缴费时间仅为 50\n秒。假设前台共有 10 名工作人员，且各窗口的人员数量固定，则1号窗口\n应安排多少人，才能使得前台运作效率最高：A9  B8  C7  D6",
+  "source": "2013广州",
+  "has_options": true,
+  "solution": "思路：运作效率要最高，审核和缴费的运作时间应相等。\n设1号审核人口为x，2号缴费人口为y，可列等式\n解得x/y=27/5，则x占总人数的27/32，题目中总人数为10，此时1号安排8人",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T202.png"
+ },
+ {
+  "tid": "T203",
+  "section": "第十四节 统筹规划问题",
+  "ex_no": 9,
+  "page": 72,
+  "top": 395.836206,
+  "pages": [
+   72
+  ],
+  "ocr": [],
+  "bottom": 570.46818235,
+  "last_page": 72,
+  "question": "师徒二人在非遗展馆现场为游客剪纸，有 6名游客各自挑选了心仪的\n花样。已知徒弟制作这6种剪纸的时间分别为 2、6、10、12、15、25 （单\n位：分钟） ， 师傅的工作效率是徒弟的 1. 5倍，则这6名游客中最后一个\n拿到剪纸的游客，需要等待的时间至少是：\nA25分钟  B27分钟  C28分钟  D30分钟",
+  "source": null,
+  "has_options": true,
+  "solution": "理论上限法，徒弟总用时= 2+6+10+12+15+25=70min，师徒总用时=70/2.5=28min，\n则用时至少为28min，排除AB。此时判断28min是否能成立，则判断徒弟能\n否凑齐28min完成剪纸，完成6、10、12符合条件。即此时徒弟完成28min的工\n作量，师傅完成42分钟的工作量，此时28min可以完成。",
+  "db_match": "2021JSA-60",
+  "db_score": 1.0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T203.png"
+ },
+ {
+  "tid": "T204",
+  "section": "第十四节 统筹规划问题",
+  "ex_no": null,
+  "page": 73,
+  "top": 30.026206000000002,
+  "pages": [
+   73,
+   74
+  ],
+  "ocr": [
+   "8",
+   "45",
+   "1014",
+   "3"
+  ],
+  "bottom": 8.993516999999997,
+  "last_page": 74,
+  "question": "最短路径",
+  "source": null,
+  "has_options": false,
+  "solution": "标数法，标记最小的\n2个奇点，需两笔画完成，要一笔画完成需走重\n复，重复部分为连接奇点的最短距离，即AE或CF\n最少路程=5×BD+4×BF+AE=1100+400\n⭐⭐❗⭐⭐",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T204.png"
+ },
+ {
+  "tid": "T205",
+  "section": "第十五节 数论",
+  "ex_no": 1,
+  "page": 75,
+  "top": 23.22420599999998,
+  "pages": [
+   75
+  ],
+  "ocr": [],
+  "bottom": 144.00910296000006,
+  "last_page": 75,
+  "question": "（2021 上海 B）公司购买某设备 24 套，现要登记单价，但是数据上没\n有标注单价，且总价第一位和最后一位模糊不清，只看到是☆579△元。\n则☆可能是 。A3  B5  C7  D9",
+  "source": "2021 上海 B",
+  "has_options": true,
+  "solution": "24=3×8，即总价是3的倍数也是8的倍数。是否为8的倍数看后三位，79△为8\n的倍数，已知800为8的倍数，则792是8的倍数（800-8），△为2。是否为3的\n倍数看各位数和，☆+5+7+9+2=☆+23，代入7符合条件。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T205.png"
+ },
+ {
+  "tid": "T206",
+  "section": "第十五节 数论",
+  "ex_no": 2,
+  "page": 75,
+  "top": 168.18820599999998,
+  "pages": [
+   75
+  ],
+  "ocr": [
+   "18",
+   "225",
+   "2x13",
+   "x",
+   "1022x3x7104",
+   "1053x5x7",
+   "=",
+   "=",
+   "=",
+   "="
+  ],
+  "bottom": 217.27085017000002,
+  "last_page": 75,
+  "question": "（2022 江苏 B）下列可以分解为三个质数相乘的最小的三位数是：\nA100  B102  C104  D105",
+  "source": "2022 江苏 B",
+  "has_options": true,
+  "solution": "",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T206.png"
+ },
+ {
+  "tid": "T207",
+  "section": "第十五节 数论",
+  "ex_no": 3,
+  "page": 75,
+  "top": 243.52020599999997,
+  "pages": [
+   75
+  ],
+  "ocr": [],
+  "bottom": 364.3052338699999,
+  "last_page": 75,
+  "question": "（2015 河南） 箱子里有标号 1 至 10 共 10 个球， 小张随机取了三个球\n并记下号码后将球放回，小李也随机取了三个并记下号码。这时发现两\n人取的球的号数之积都恰好是 144。已知小张的号数之和比小李的大，那\n么小张取的球的号数之和是多少？ A19  B17  C16  D14",
+  "source": "2015 河南",
+  "has_options": true,
+  "solution": "均值不等式：和固定，差距越小，乘积越大；积固定，差距越大，和越\n大。144= 12×12= 3×4×3×4=2×8×9，和为19，也是选项中最大，符合。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T207.png"
+ },
+ {
+  "tid": "T208",
+  "section": "第十五节 数论",
+  "ex_no": 4,
+  "page": 75,
+  "top": 394.20120599999996,
+  "pages": [
+   75
+  ],
+  "ocr": [],
+  "bottom": 461.13915448,
+  "last_page": 75,
+  "question": "（2019 河北县乡）三个自然数分别是一位数、两位数和三位数，其积\n为 3930，其和最小为多少？A144  B146  C148  D162",
+  "source": "2019 河北县乡",
+  "has_options": true,
+  "solution": "即分解为一位数、两位数和三位数的质数。3930= 3×10×131，和为144",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T208.png"
+ },
+ {
+  "tid": "T209",
+  "section": "第十五节 数论",
+  "ex_no": 5,
+  "page": 75,
+  "top": 488.031206,
+  "pages": [
+   75
+  ],
+  "ocr": [],
+  "bottom": 554.96902357,
+  "last_page": 75,
+  "question": "（2012 江苏 A）设有三个自然数，分别是一位数、两位数和三位数，\n这个数的乘积为 2004，则三数之和为： A100  B180  C179  D178",
+  "source": "2012 江苏 A",
+  "has_options": true,
+  "solution": "2004= 4×501=3×4×167 = 1×12×167，三数之和为180",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T209.png"
+ },
+ {
+  "tid": "T210",
+  "section": "第十五节 数论",
+  "ex_no": 6,
+  "page": 76,
+  "top": 24.29120599999999,
+  "pages": [
+   76
+  ],
+  "ocr": [
+   "26",
+   "3",
+   "1468",
+   "2",
+   "31",
+   "15",
+   "104",
+   "5"
+  ],
+  "bottom": 170.55152678999997,
+  "last_page": 76,
+  "question": "某条道路两侧各有 50 盏路灯，左侧路灯序号为 1-50，右侧路灯序号为\n51-100。现有三个开关 A、B、C 分别能控制序号为 2 的倍数、3 的倍数、5\n的倍数的路灯。若在所有路灯都关闭的状态下，先后按下开关 A、B、C，\n则道路右侧有（ ）盏路灯处于打开状态。A22  B23  C26  D28",
+  "source": null,
+  "has_options": true,
+  "solution": "打开状态：打开1次或打开3次。\n即14+8+4+2=28",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T210.png"
+ },
+ {
+  "tid": "T211",
+  "section": "第十五节 数论",
+  "ex_no": 7,
+  "page": 76,
+  "top": 189.591206,
+  "pages": [
+   76
+  ],
+  "ocr": [
+   "PMDa",
+   ",."
+  ],
+  "bottom": 346.2742431599999,
+  "last_page": 76,
+  "question": "（2015 河南）编号为 1—50 的选手参加一个爬楼比赛，楼高为 60 层。\n所有选手在第 1 层均获得一个特别的号牌，此后每经过一个楼层，如果选\n手的编号正好是楼层数的整数倍，就将得到一个特别的号牌。所有选手都\n到达终点后，正好持有 3 个特别号牌的选手有多少人？\nA1  B4  C7  D10",
+  "source": "2015 河南",
+  "has_options": true,
+  "solution": "持3个号码牌，意思是含3个约数，号码牌=\nn1*n2=3，可得组合解为（1，3），即号码牌= 质数的平方。\n1～50，符合条件的有2的平方、3的平方、5的平方、7的平方，共4个。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T211.png"
+ },
+ {
+  "tid": "T212",
+  "section": "第十五节 数论",
+  "ex_no": 8,
+  "page": 76,
+  "top": 375.406206,
+  "pages": [
+   76
+  ],
+  "ocr": [
+   "M",
+   "D,DR",
+   ".",
+   "2x32",
+   "Y"
+  ],
+  "bottom": 567.98596276,
+  "last_page": 76,
+  "question": "（2020 北京区级）某单位有不到 100 人参加远足活动，如将该单位人员\n平均分成 N 组（N>1且每组人数>1） ，则每组的人数有且仅有 6 种不同的\n可能性。则该单位参加活动的人数可能的最小值和最大值之间相差多少\n人？  A32  B48  C56  D64",
+  "source": "2020 北京区级",
+  "has_options": true,
+  "solution": "组数大于1且每组人数大于1，则总人数共有8个约数（6、1、自身），\nn*n=8，可得组合解为（1，8）（2，4）。\n12\n当解（1，8）时，即有一个质数的7次幂，2的7次幂=128，大于100，不符。\n解只能为（2，4），即总人数=质数① ×质数②的3次幂。\n最小值=\n最大值=",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T212.png"
+ },
+ {
+  "tid": "T213",
+  "section": "第十五节 数论",
+  "ex_no": 9,
+  "page": 77,
+  "top": 39.98820599999999,
+  "pages": [
+   77
+  ],
+  "ocr": [
+   "2"
+  ],
+  "bottom": 142.82403286,
+  "last_page": 77,
+  "question": "（2013 山东）100 个编号为 1～100 的罐子，第 1 个人在所有编号为 1 的\n倍数的罐子中倒入 1毫升水，第 2 个人在所有编号为 2 的倍数的罐子中倒\n入 1 毫升水······第 100 个人在所有编号为 100 的倍数的罐子中倒入 1 毫升\n水，问此时第 92 号罐子中装了多少毫升的水？A2  B6  C46  D92",
+  "source": "2013 山东",
+  "has_options": true,
+  "solution": "求92有多少个约数，92=4×23=2×23，约数个数= 3×2=6",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T213.png"
+ },
+ {
+  "tid": "T214",
+  "section": "第十五节 数论",
+  "ex_no": 10,
+  "page": 77,
+  "top": 170.040206,
+  "pages": [
+   77
+  ],
+  "ocr": [
+   "2",
+   "011I",
+   "2x3",
+   "2x23'",
+   "%23°,",
+   "2%,",
+   "2x232x23's",
+   "2",
+   "+13",
+   ",",
+   ",",
+   ","
+  ],
+  "bottom": 303.46160986999996,
+  "last_page": 77,
+  "question": "100 个编号为 1～100 的罐子，第 1 个人在所有编号为 1 的倍数的罐子\n中倒入 1 毫升水，第 2个人在所有编号为 2 的倍数的罐子中倒入 2 毫升水\n······第 100 个人在所有编号为100 的倍数的罐子中倒入 100 毫升水，问此时\n第 92 号罐子中装了多少毫升的水？",
+  "source": null,
+  "has_options": false,
+  "solution": "求约数和，写出约数组合，两两相乘构成约数。92=4×23=2×23\n约数和=（2 + 2 + 2 ）（23 + 23 ）=7×24=168\n<所有约数为：",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T214.png"
+ },
+ {
+  "tid": "T215",
+  "section": "第十五节 数论",
+  "ex_no": 11,
+  "page": 77,
+  "top": 347.549206,
+  "pages": [
+   77,
+   78
+  ],
+  "ocr": [
+   "2",
+   "3",
+   "A12=2 x 2 x]",
+   "=",
+   "22x33",
+   "B182x3x3",
+   "=="
+  ],
+  "bottom": 164.642206,
+  "last_page": 78,
+  "question": "（2018 广州）用全部 156 个边长为 1 的小正方形，最多可以拼成（ ）\n种形状不同的长方形。 A5  B6  C7  D8",
+  "source": "2018 广州",
+  "has_options": true,
+  "solution": "要求156可以拼成多少个长方形，即长×宽=156，即长宽都是156的约数。\n求156的约数，156= 2×3×13，约数个数= 3×2×2=12，且要长宽成对出现，\n即有6对长宽相乘可以得156。\n注意：约数都是成对出现，例如，24= 2×3，约数为8个，分别为1、2、3、\n4、6、8、12、24，其中（1，24）（2，12）（3，8）（4，6）成对出现，两两\n相乘等于24。\n⭐⭐❗\n重要模型：交集和并集\n1.A和B两个数的最大公约数是p，最小公倍数是q，有A*B=p*q\n2.所有公约数都是最大公约数的约数，所有公倍数都是最小公倍数的倍数\n求两个数的最小公倍数：提取最大公因数，再相乘（剩下数互质）\n求三个数的最小公倍数：先算两个，结果再和第三个算\n注意：1和任何数都互质，相邻的两数互质。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T215.png"
+ },
+ {
+  "tid": "T216",
+  "section": "第十五节 数论",
+  "ex_no": 12,
+  "page": 78,
+  "top": 180.69520599999998,
+  "pages": [
+   78
+  ],
+  "ocr": [],
+  "bottom": 283.53116377,
+  "last_page": 78,
+  "question": "（2014 山东）甲、乙、丙三个办公室的职工参加植树活动，三个办公\n室人均植树分别为 4、5、6 棵，三个办公室植树总数彼此相等。问这三\n个办公室总共至少有多少职工：A37  B53  C74  D106",
+  "source": "2014 山东",
+  "has_options": true,
+  "solution": "植树总数为4、5、6的公倍数，4、6提取最大公因数2，剩下2、3互质，最\n小公倍数为12（2×2×3）。12和5的最小公倍数60。甲15人乙12人丙10人。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T216.png"
+ },
+ {
+  "tid": "T217",
+  "section": "第十五节 数论",
+  "ex_no": 13,
+  "page": 78,
+  "top": 311.062206,
+  "pages": [
+   78,
+   79
+  ],
+  "ocr": [],
+  "bottom": 139.338206,
+  "last_page": 79,
+  "question": "（2019 辽宁） 某大型相亲类综艺节目举办线下联谊活动， 在签到时\n每人可以抽取一张礼物卡，凡是抽中有编号的礼物卡均有玫瑰花赠送，\n抽到“谢谢参与”的则赠送一盒面巾纸。带有编号的礼物卡共 100 张，编\n号 1-100，按礼物卡标签号发放奖品的规则如下：\n（1）标签号为 2 的倍数，领 2 枝玫瑰\n（2）标签号为 3 的倍数，领 3 枝玫瑰\n（3）标签号既是 2 的倍数，又是 3 的倍数可重复领奖\n（4）其他标签号均领 1 枝玫瑰\n那么本次联谊活动应准备玫瑰花（）枝。\nA215  B232  C312  D416\n余数理论",
+  "source": "2019 辽宁",
+  "has_options": true,
+  "solution": "标签为2倍数的个数=1+（100-2）/2=50，标签为3倍数的个数=1+（99-3）/2=33，\n标签为6倍数（2、3的最小公倍数）=1+（96-6）/6=16，\n非2、3倍数的个数=100-（50+33-16）=100-67=33\n玫瑰花数=50×2 + 33×3 + 33×1=232\n1⃣2⃣\n余数的加减乘可直接运算。\n例如，7和11相乘后，除3的余数是多少？\n7除3余数1，11除3余数2，\n相乘后除3余数为1*2=2（余数直接相乘）\n计算表达式 ：7=1（mod 3），11=2（mod 3），7*11=1*2（mod 3）\n（或7 mod 3=1，11 mod 3 =2，余数1*2=2，mod是取余的意思）\n被除数、模数互质的时候，除法可用（可能的情况）",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T217.png"
+ },
+ {
+  "tid": "T218",
+  "section": "第十五节 数论",
+  "ex_no": 1,
+  "page": 79,
+  "top": 153.71020599999997,
+  "pages": [
+   79
+  ],
+  "ocr": [],
+  "bottom": 471.9339576899999,
+  "last_page": 79,
+  "question": "（1）一个正整数除以 3 余 2，除以 5 余 4，除以 7 余 6，求满足条件的\n最小正整数。\n（2）一个正整数除以 3 余 2，除以 5 余 4，除以 7 余 5，求满足条件的最\n小正整数。\n（3）一个正整数除以 3 余 2，除以 5 余 3，除以 7 余 2，除以 11 余 8，求\n满足条件的最小正整数。",
+  "source": null,
+  "has_options": false,
+  "solution": "（1）加1是3、5、7的倍数，三数的最小公倍数是105，则最小正整数为104。\n（2）加1是3、5的倍数，两数的最小公倍数是15，\n则可列等式15k-1=5（mod 7），15k=6（mod 7），k=6÷1=6，（15mod7=1）\n15k-1=6×15-1=89，这个解就是取3、5、7最小公倍数需加的最小余数，\n则满足条件的所有数为105x+89，当x为0时，最小正数即为89。\n（3）根据“除以 3 余 2，除以 7 余 2”可列等式21k+2，且“除5余3”，\n则21k+2=3（mod 5），21k=1（mod 5），k= 1÷1=1，（21 mod 5=1），\n求余21k+2=23，则满足前三条件的所有数为105x+23，且“除11余8”，\n则105x+23=8（mod 11），105x=-15（mod 11），x= （-15）÷（-5）=3，\n求余105x+23=105×3+23=338，则满足条件的所有数为1155y+338\n当y为0时，最小正数为338。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T218.png"
+ },
+ {
+  "tid": "T219",
+  "section": "第十五节 数论",
+  "ex_no": 2,
+  "page": 79,
+  "top": 498.675206,
+  "pages": [
+   79
+  ],
+  "ocr": [],
+  "bottom": 565.6131544799999,
+  "last_page": 79,
+  "question": "（2010 浙江）一个自然数x，除以 3 的余数是 2，除以 4 的余数是 3，\n问x除以12的余数是： A1  B5  C9  D11",
+  "source": "2010 浙江",
+  "has_options": true,
+  "solution": "加1是3、4的倍数，最小公倍数为12，则该数可能为12-1=11，除12即余11。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T219.png"
+ },
+ {
+  "tid": "T220",
+  "section": "第十五节 数论",
+  "ex_no": 3,
+  "page": 80,
+  "top": 18.13420599999995,
+  "pages": [
+   80
+  ],
+  "ocr": [],
+  "bottom": 138.91897204999992,
+  "last_page": 80,
+  "question": "（2008 湖北）一个小于 100 的整数与 5 的差是 4 的倍数，与 5 的和是 7\n的倍数，这个数最大是多少？",
+  "source": "2008 湖北",
+  "has_options": false,
+  "solution": "x-5=0（mod 4）→x=5（mod 4）→x=1（mod 4），即除4余1。\nx+5=0（mod 7）→x=-5（mod 7）→x=2（mod 7），即除7余2。\n求余数，可列等式4k+1=2（mod 7），4k=1（mod 7）=8（mod 7），k=8÷4=2，\n余数为4k+1=4×2+1=9，该数表达式为=28k+9，k取3时，该数为93，符合条件",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T220.png"
+ },
+ {
+  "tid": "T221",
+  "section": "第十五节 数论",
+  "ex_no": 4,
+  "page": 80,
+  "top": 161.278206,
+  "pages": [
+   80
+  ],
+  "ocr": [],
+  "bottom": 389.75713082999994,
+  "last_page": 80,
+  "question": "（2023 湖北选调）单位小陈每天都在手机 APP 上学习英语。有一天，\n他的学习天数已有 200多天，是 3 的倍数，且第二天的天数是 5 的倍数，\n第三天的天数是 7 的倍数。问第几天的天数将是 13 的倍数？\nA9  B10  C11  D12",
+  "source": "2023 湖北选调",
+  "has_options": true,
+  "solution": "当天，x=0（mod 3）。第二天，x+1=0（mod 5）→x=4（mod 5）。\n第三天，x+2=0（mod 7）→x=5（mod 7）。\n前两个关系，可列等式3k=4（mod 5）=9（mod 5）→k= 9÷3=3，余数为9。\n则符合前两条件的表达式为15k+9。再结合第三个关系，\n可列等式15k+9= 5（mod 7）→15k=3（mod 7）→k=3÷1=3（15 mod 7=1）。\n余数为15k+9=15×3+9=54，则符合所有条件的表达式为105k+54，\n当k取2时，符合条件，天数为264天。且260是13的倍数，则273是13倍数，264\n到273，经过9天，即第10天是13的倍数（第10天为273天）。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T221.png"
+ },
+ {
+  "tid": "T222",
+  "section": "第十五节 数论",
+  "ex_no": 5,
+  "page": 80,
+  "top": 415.708206,
+  "pages": [
+   80,
+   81
+  ],
+  "ocr": [],
+  "bottom": 65.92221529000005,
+  "last_page": 81,
+  "question": "某商场举行抽奖活动，规定从编号 1-10 的 10 个小球中不放回地随机\n抽取 3 个小球，若 3 个小球编号数字加和为 3 的倍数即视为中奖，求中\n奖的概率是多少？",
+  "source": null,
+  "has_options": false,
+  "solution": "将1-10分为3个集合，即{1、4、7、10} {2、5、8} {3、6、9}，同一个集合取3\n个或不同集合任取1个将是3的倍数。\n(x2\n(i\n+\n+4x3x37\nP\n=\n=\nzo\nGo\n多位数的代数表示（思考框架）\n位数操作\n例如：形如“abc”的三位数可以写成100a+10b+c\n①百位与个位互换，相差99（a-c） ②十位和个位互换，相差9（b-c）",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T222.png"
+ },
+ {
+  "tid": "T223",
+  "section": "第十五节 数论",
+  "ex_no": 6,
+  "page": 81,
+  "top": 80.42420599999997,
+  "pages": [
+   81
+  ],
+  "ocr": [],
+  "bottom": 183.2600328599999,
+  "last_page": 81,
+  "question": "（2011 浙江）一个三位数的各位数字之和是 16。其中十位数字比个位\n数字小 3。如果把这个三位数的百位数字与个位数字对调， 得到一个新\n的三位数， 则新的三位数比原三位数大 495，则原来的三位数是：\nA169  B358  C469  D736",
+  "source": "2011 浙江",
+  "has_options": true,
+  "solution": "个位百位互换，差495（5×99），即个百差5，排除AD。且和为16，选B。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T223.png"
+ },
+ {
+  "tid": "T224",
+  "section": "第十五节 数论",
+  "ex_no": 7,
+  "page": 81,
+  "top": 207.25120599999997,
+  "pages": [
+   81
+  ],
+  "ocr": [],
+  "bottom": 345.98530396999996,
+  "last_page": 81,
+  "question": "（2017 天津选调）一个五位数，左边三位数是右边两位数的 5 倍，如\n果把右边两位数移到前面，所得到的新的五位数要比原来的五位数的 2\n倍还多 75，原来五位数的值是多少？\nA22545  B17535  C12525  D11575",
+  "source": "2017 天津选调",
+  "has_options": true,
+  "solution": "法1:代入法计算，12525符合条件。\n法2:设右边两位数为x，则左边三位数为3x。\n原：5x*100+x=501x，新：x*1000+5x=1005x，可列等式1005x=2*501x+75，解得x=25。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T224.png"
+ },
+ {
+  "tid": "T225",
+  "section": "第十五节 数论",
+  "ex_no": 8,
+  "page": 81,
+  "top": 373.222206,
+  "pages": [
+   81,
+   82
+  ],
+  "ocr": [],
+  "bottom": 57.57814518999999,
+  "last_page": 82,
+  "question": "（2023 福建）一辆出租车的计价器出现故障，显示屏上保留了一个两\n位数，无法清除，但还能按行驶路程准确地将应付的车费累加上去。小\n王乘坐该车匀速行驶了 2 小时，当行驶 1 小时的时候，计价器上的两个\n数字刚好交换了位置，在 2 小时的时候，计价器上的两个数字又交换了\n位置，但他们中间多了一个 0。如车费按里程计，问小王应付多少元车\n费？  A82  B86  C90  D95",
+  "source": "2023 福建",
+  "has_options": true,
+  "solution": "车费应该是最后显示数字与最初显示数字的差。假设最初为ab，第1小时\n则为ba，第2小时则为a0b。两个两位数相加肯定为100多，a肯定为1，\n则ab等价于10+b，a0b等价于100+b，车费为两者差100+b-（10+b）=90。\n（车费变化：ab →ba →a0b，10+b →10b+1 →100+b）\n方法：1、平推\n报数问题\n2、写数量表达式",
+  "db_match": "2023SC-54",
+  "db_score": 1.0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T225.png"
+ },
+ {
+  "tid": "T226",
+  "section": "第十五节 数论",
+  "ex_no": 9,
+  "page": 82,
+  "top": 74.04520600000001,
+  "pages": [
+   82
+  ],
+  "ocr": [],
+  "bottom": 212.77904214999995,
+  "last_page": 82,
+  "question": "（2024 浙江 A）某工厂有 100 个零件，从 1-100 编号后将编号为奇数的\n零件拿掉，余下 50 个零件按顺序重新从 1 开始编号后将编号为奇数的零\n件拿掉，重复上述操作直到剩下一个零件，那么余下这个零件最初的编\n号是多少？ A32  B50  C64  D100",
+  "source": "2024 浙江 A",
+  "has_options": true,
+  "solution": "① 1、2、3、4…，去奇数，剩2、4、6…，即表达式为2k，共50个。\n②剩 4k，25个（排除B）。③剩 8k，12个（排除D）。④剩 16k，6个。\n⑤剩 32k，3个。⑥剩64k，1个。即最后剩64。",
+  "db_match": "2024ZJA-66",
+  "db_score": 0.93,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T226.png"
+ },
+ {
+  "tid": "T227",
+  "section": "第十五节 数论",
+  "ex_no": 10,
+  "page": 82,
+  "top": 245.226206,
+  "pages": [
+   82,
+   83
+  ],
+  "ocr": [],
+  "bottom": 8.993516999999997,
+  "last_page": 83,
+  "question": "（2014 天津）100 个骨牌整齐地排成一列，依次编号为 1、2、3、4、\n···99、100。如果第一次拿走所有偶数位置上的牌，第二次再从剩余牌中拿\n走所有偶数位置上的牌，第三次再从剩余牌中拿走所有奇数位置上的\n牌，第四次再从剩余牌中拿走所有奇数位置上的牌，第五次再从剩余牌\n中拿走所有偶数位置上的牌，以此类推，问最后剩下的一张骨牌的编号\n是多少： A77  B53  C39  D27",
+  "source": "2014 天津",
+  "has_options": true,
+  "solution": "去牌的周期是偶偶奇奇偶偶奇奇…\n① 1、2、3、4…，去偶数，剩1、3、5、7…，即表达式2k+1，50个。\n②去偶数，剩1、5、9、13…，即表达式4k+1，25个。（排除CD）\n③去奇数，剩5、13、21、29…，即表达式8k+5，12个。\n④去奇数，剩13、29、45、61…，即表达式16k+13，6个。（排除B）\n⭐⭐⭐⭐⭐",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T227.png"
+ },
+ {
+  "tid": "T228",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 85,
+  "top": 265.545206,
+  "pages": [
+   85
+  ],
+  "ocr": [],
+  "bottom": 350.43222457999997,
+  "last_page": 85,
+  "question": "（2013天津）正六面体的表面积增加96%，棱长增加多少？\nA20%  B30%  C40%  D50%",
+  "source": "2013天津",
+  "has_options": true,
+  "solution": "正六面体表面积为6a平方，表面积变化是棱长变化的平方。\n表面积1 →1.96，则棱长1 →1.4，增加40%。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T228.png"
+ },
+ {
+  "tid": "T229",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 85,
+  "top": 378.367206,
+  "pages": [
+   85
+  ],
+  "ocr": [
+   "22",
+   "W"
+  ],
+  "bottom": 535.05011225,
+  "last_page": 85,
+  "question": "（2024江西）一个机器零部件的三视图如下图所示。为防生锈，要给其内\n部以及外表面均匀涂抹机油，若零件厚度忽略不计，则涂抹机油的面积\n为多少平方厘米？  A (16+2√5)兀  B (18+2√5)兀  C 22兀  D 20兀",
+  "source": "2024江西",
+  "has_options": true,
+  "solution": "涂油面积为圆锥面（不含底面）内外和阴影圆环内外（算一面× 2）\n圆锥表面积= 兀rl = √5兀，阴影圆环=大圆-小圆=（3 - 1 ）兀=8兀\n空\n涂油面积=（8+ √5）兀× 2= (16+2√5)兀",
+  "db_match": null,
+  "db_score": 0.23,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T229.png"
+ },
+ {
+  "tid": "T230",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 86,
+  "top": 28.011206000000016,
+  "pages": [
+   86
+  ],
+  "ocr": [
+   "7",
+   "I"
+  ],
+  "bottom": 148.79623387000004,
+  "last_page": 86,
+  "question": "如图，沙漏计时器由上下两个大小相同、相互连通且底面互相平行的圆\n锥组成，下面的圆锥内装有细沙。计时开始时，将沙漏倒置，已知上面\n圆锥中细沙全部流下恰好需要1小时，则细沙高度下降一半所需的时间\n是：A30分钟   B45分钟   C47.5分钟   D52.5分钟",
+  "source": null,
+  "has_options": true,
+  "solution": "下降一半，剩余上圆锥与原上圆锥比为1:8，\n则漏8份的时间为1h，漏7份的时间为7/8 ×60min=52.5min",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T230.png"
+ },
+ {
+  "tid": "T231",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 86,
+  "top": 176.78920599999998,
+  "pages": [
+   86
+  ],
+  "ocr": [
+   "12",
+   "-",
+   "2",
+   "12"
+  ],
+  "bottom": 297.57423387,
+  "last_page": 86,
+  "question": "某合金加工车间打造模具，在一个长宽高分别为10厘米、10厘米、24厘米\n的实心长方体合金中挖出两个大小相同的正圆锥，且正圆锥的底面为长\n方体底面的内切圆，正圆锥的高是长方体高的一半，则该合金剩余体积\n为多少立方厘米？\nA2400-100兀    B2400-200兀   C2400-300兀    D2400-600兀",
+  "source": null,
+  "has_options": true,
+  "solution": "剩余体积=长方体-圆锥=2400-1/3 兀×5×12×2=2400-200 兀",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T231.png"
+ },
+ {
+  "tid": "T232",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 86,
+  "top": 337.570206,
+  "pages": [
+   86
+  ],
+  "ocr": [
+   "↳↳",
+   "Es",
+   "It v",
+   "=",
+   "zr?Eh=",
+   "Earth"
+  ],
+  "bottom": 510.89536411999995,
+  "last_page": 86,
+  "question": "（2021甘肃）一个底面半径为10厘米，体积为V的实心正圆锥体模具水平放\n置在台面上，并用一个钻孔半径为2厘米的钻头在模具上钻出一个垂直于\n底面的洞直达底部。 那么模具剩余部分的体积至少为：\nA0.868V  B0.876V  C0.892V  D0.896V",
+  "source": "2021甘肃",
+  "has_options": true,
+  "solution": "求剩余部分至少，则钻掉的部分为最多，从中间钻出可钻最多，即钻掉\n了1个圆柱和1个小圆锥。剩余部分为阴影部分，V=V-V- V。\n剩余小圆柱小圆锥\n小圆锥与原圆锥相似比为1:5，体积比为相似比的立方，则V=\n小圆锥\n小圆柱底面与原圆锥底面相似比为1:5，且高比为4:5，则V=\n小圆柱\n原圆锥的体积为V=           ，则V=12V/125，V=V-V/125-12V/125=0.896V\n小圆柱\n剩余",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T232.png"
+ },
+ {
+  "tid": "T233",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 87,
+  "top": 31.080205999999976,
+  "pages": [
+   87
+  ],
+  "ocr": [],
+  "bottom": 223.66125244999995,
+  "last_page": 87,
+  "question": "（2022浙江A）商家门口摆放了一把正四棱锥形（底面为正方形，侧面为\n四个全等的等腰三角形）的遮阳伞，第一次伞撑开到图1所示的位置，伞\n柄与伞骨成角∠CPQ为30°，继续撑开到如图2所示的位置，伞柄与伞骨成\n角∠C'PQ'变为60°，那么第二次伞撑开后形成的A'B'C'D'正方形 是第一次撑\n开后正方形ABCD面积的：\nA3√2倍  B√3倍  C2倍   D3倍",
+  "source": "2022浙江A",
+  "has_options": true,
+  "solution": "伞柄长度不变，设CP=1，则C'P=1\n则CQ=0.5，C'Q=0.5√3，对角线之比1: √3\n正方形面积=对角线×对角线÷2\n面积之比=对角线比的平方，面积比1:3",
+  "db_match": "2022ZJA-68",
+  "db_score": 0.87,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T233.png"
+ },
+ {
+  "tid": "T234",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 87,
+  "top": 250.51320599999997,
+  "pages": [
+   87
+  ],
+  "ocr": [],
+  "bottom": 371.2981029599999,
+  "last_page": 87,
+  "question": "（2022江西）在屋内墙角处堆放稻谷（如图，谷堆为一个圆锥的四分之\n一） ，谷堆底部的弧长为6米，高为2米，经过一夜发现谷堆在重力作用\n下底部的弧长变为8米，若谷堆的谷量不变，那么此时谷堆的高为：\nA9/8米  B8/9米  C9/16米  D4/9米",
+  "source": "2022江西",
+  "has_options": true,
+  "solution": "体积不变，体积=底面积×高。弧长比6:8=3:4，底面积比9:16\n则高比16:9，且高实际为2m，则变化后高为2×9/16=9/8m",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T234.png"
+ },
+ {
+  "tid": "T235",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 87,
+  "top": 399.993206,
+  "pages": [
+   87
+  ],
+  "ocr": [
+   "2",
+   "3",
+   "3"
+  ],
+  "bottom": 555.36936412,
+  "last_page": 87,
+  "question": "（2023江苏B）某食品企业为丰富产品造型，将一款甜点的外形由圆柱形\n改为半球形。若圆柱形甜点的底面半径是高的2倍，半球形甜点的体积缩\n小到圆柱形甜点的9/16，则半球形甜点的底面半径是圆柱形甜点底面半径\n的（ ） 。 A 1/4   B 1/3   C 2/3   D 3/4",
+  "source": "2023江苏B",
+  "has_options": true,
+  "solution": "根据体积可列等式，9/16圆柱体积=半球体积，\n9/16 ×圆柱底面积×圆柱高=1/2 × 4/3 兀R\n半球\n9/16 ×兀R×1/2 R =1/2 × 4/3 兀R\n圆柱\n圆柱\n半球\n→（R/R）=27/64，则R/R=3/4\n半球圆柱\n半球圆柱",
+  "db_match": "2023JSA-57",
+  "db_score": 0.92,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T235.png"
+ },
+ {
+  "tid": "T236",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 88,
+  "top": 25.71020599999997,
+  "pages": [
+   88
+  ],
+  "ocr": [
+   "'s",
+   "22"
+  ],
+  "bottom": 162.48989856000003,
+  "last_page": 88,
+  "question": "（江西2023 ）下图所示是一种帐篷屋顶的示意图，底面是一个长4米宽3米\n的长方形，屋顶高1米，上棱长2米且平行于底面，那么该帐篷屋顶的体\n积是： A5立方米   B11立方米   C12立方米   D24立方米",
+  "source": null,
+  "has_options": true,
+  "solution": "将左顶点往左平移，使左边三角形垂直于水平面，\n求所几何体变成柱体+锥体。\n柱体体积=底面积× 高=1/2 ×3 ×1 ×2=3\n锥体体积=1/3 ×底面积 × 高=1/3 ×2 ×3=2，总体积为5",
+  "db_match": "2023HB-69",
+  "db_score": 0.8,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T236.png"
+ },
+ {
+  "tid": "T237",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 88,
+  "top": 191.34220599999998,
+  "pages": [
+   88,
+   89
+  ],
+  "ocr": [
+   "3075",
+   "2",
+   "3"
+  ],
+  "bottom": 200.17620599999998,
+  "last_page": 89,
+  "question": "（2021副省）一个人工湖的湖面上有一个露出水面3米的圆锥体人工景观\n（底面朝下，固定在湖底） 。如人工湖水深减少20%，则该景观露出水面\n部分的体积将增加61/64。问原来的人工湖水深为多少米？\nA3.5  B3.75  C4.25  D4.5",
+  "source": "2021副省",
+  "has_options": true,
+  "solution": "变化前后体积比64:125，则相似比为4:5，露出水面高度比3:3.75。\n即水深减少20%，高度增加0.75m，则水深=0.75/20%=3.75m\n本题所求日降雨量w是降落在直径为300mm面积上\n的水深。所求日降雨量w=总降水量/圆锥开口面积\n（单位面积降水量）\n小圆锥是大圆锥体积的1/8，\nw=（大底面S×高400mm×1/3×1/8）/S=50/3=17不到\n在魔方结构中，角块是位于魔方角落、具有三种颜\n魔方问题\n色的方块；棱块是位于边缘、具有两种颜色的方\n块，面块是位于魔方表面，具有一种颜色的方块。\n已知立方体有6个面、12个棱、8个顶点，若表面涂\n黑，设边长为a的立方体切割为棱长为1的小立方\n体，则有以下结论：\n① 3面涂黑→角块→8个\n② 2面涂黑→棱块→12 ×（a-2）\n③1面涂黑→面块→6×（a-2）\n④无涂黑→中间→（a-2）",
+  "db_match": "2021GK-74",
+  "db_score": 0.93,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T237.png"
+ },
+ {
+  "tid": "T238",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 89,
+  "top": 224.57520599999998,
+  "pages": [
+   89
+  ],
+  "ocr": [
+   "2",
+   "3",
+   "2",
+   "3"
+  ],
+  "bottom": 345.36023386999995,
+  "last_page": 89,
+  "question": "（2022山东）将一个立方体的表面涂黑，用刀片平行于立方体各面，将\n其切割成若干个棱长为1的小立方体， 如果只有一个面涂黑的小立方体\n的个数与没有一个面涂黑的小立方体的个数相等。那么原立方体的棱\n长为多少？ A4  B6  C16  D8",
+  "source": "2022山东",
+  "has_options": true,
+  "solution": "设棱长为a，一面涂黑为面块，数量有6（a-2）。\n没有涂黑是内部，数量有（a-2）。可列等式：6（a-2）= （a-2），a=8",
+  "db_match": "2022SD-36",
+  "db_score": 0.95,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T238.png"
+ },
+ {
+  "tid": "T239",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 89,
+  "top": 378.46720600000003,
+  "pages": [
+   89,
+   90
+  ],
+  "ocr": [
+   "2"
+  ],
+  "bottom": 48.722804,
+  "last_page": 90,
+  "question": "若干个边长为1的小正方体组成一个边长为7的大正方体，现将大正方体\n表面涂成黑色，问仅有一面涂黑的小正方体数量比两面和三面涂黑的\n小正方体数量之和多多少个？ A52  B62  C72  D82",
+  "source": null,
+  "has_options": true,
+  "solution": "一面涂黑为面块，有6×（7-2）=150，\n两面涂黑为棱块，有12×（7-2）=60，三面涂黑为角块，有8个，共68，\n多150-68=82块\n方法：展开成平面图，连接两点\n蚂蚁爬路",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T239.png"
+ },
+ {
+  "tid": "T240",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 90,
+  "top": 65.89820599999996,
+  "pages": [
+   90
+  ],
+  "ocr": [
+   "=zab",
+   "ab",
+   "+",
+   "b)0",
+   "(a-=",
+   "22"
+  ],
+  "bottom": 222.58114518999997,
+  "last_page": 90,
+  "question": "（ 2019河北县乡）长、宽、高分别为12cm、4cm、3cm的长方体ABCD-\nA'B'C'D'上，有一个蚂蚁从A出发沿长方体表面爬行到C'获取食物，其路程\n最小值是多少 ？ A13   B√193   C√241   D17",
+  "source": "2019河北县乡",
+  "has_options": true,
+  "solution": "展开图，将CDCD翻转，连接AC\n11\n1\nAC是直角三角形ABC的斜边，要让斜边最短，\n1\n1\n则两直角边的平方和要尽可能小。差尽可能小。\n当AB=12，BC=7时，两直角边的平方和最小。\n1\n则所求最短，√（12 +7 ）= √193",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T240.png"
+ },
+ {
+  "tid": "T241",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 90,
+  "top": 245.415206,
+  "pages": [
+   90,
+   91
+  ],
+  "ocr": [
+   ">A",
+   "A",
+   "127",
+   "13",
+   "B"
+  ],
+  "bottom": 53.15580399999999,
+  "last_page": 91,
+  "question": "（2020上海A）如图，圆锥高6√3 厘米，底面半径为6厘米，一只蚂蚁从A\n点沿圆锥侧面爬行到B点，则最短的距离为多少厘米？\nA12   B12√2   C6兀   D24",
+  "source": "2020上海A",
+  "has_options": true,
+  "solution": "圆心角 = 360° × (底面半径 ÷ 母线长度)\n根据关系，半径为6，母线为12，则对应圆心角为180°，\n展开如图，连接AB点，虚线为最短距离即12√2\n展开平面图，\n老鼠跑5m用时10s，\n猫需用10s跑13m，速度1.3m/s\n水的总体积不变，涨水速度和有效底面积成反比\n玩水问题",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T241.png"
+ },
+ {
+  "tid": "T242",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 91,
+  "top": 70.93620599999997,
+  "pages": [
+   91
+  ],
+  "ocr": [
+   "3/",
+   ":",
+   "in",
+   "12min",
+   "30cm",
+   "6",
+   "Fe15CM",
+   "min",
+   "↓",
+   "zmin"
+  ],
+  "bottom": 283.81199609,
+  "last_page": 91,
+  "question": "（2024江苏C）圆柱形容器底部放有一个长方体铁块，打开水龙头开始往容\n器中注水，6分钟水面恰好淹没铁块，再过16分钟灌满容器。 若容器和铁\n块的高分别为45厘米和15厘米，则铁块和容器的体积之比是：\nA 1:12    B 1:9    C 1:6    D 1:3",
+  "source": "2024江苏C",
+  "has_options": true,
+  "solution": "方法1: 6min →水深15cm →底面积S- S。16min →水深30cm→底面积Ｓ。\n容铁\n容\n可得12min →水深30cm →底面积S- S，4min →水深30cm→底面积S，\n容铁\n铁\n则S：S- S =1:3，则S：S=1:4。\n铁容铁\n铁容\n体积=底面积×高，底面积比1:4，高比1:3，则体积比1:12。\n方法2:注水速度恒定，注水时间比为体积比，\n则铁块代表时间2min，容器代表时间12+4+6+2=24min，\n则体积比1:12。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T242.png"
+ },
+ {
+  "tid": "T243",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 91,
+  "top": 314.781206,
+  "pages": [
+   91,
+   92
+  ],
+  "ocr": [
+   "564*",
+   "↓",
+   "(x65x?",
+   "=",
+   "?1",
+   "=2",
+   "."
+  ],
+  "bottom": 56.75180399999999,
+  "last_page": 92,
+  "question": "一个长方体水箱，从里面量长为60cm，宽为40cm，高为30cm，水箱中的水深\n为15cm。如果先将一个棱长为20cm的正方体铁块直立放入水箱中，然后再\n把铁块往上提起6cm，问水位线下降了多少厘米？\nA1.5  B2  C1  D1.2",
+  "source": null,
+  "has_options": true,
+  "solution": "正方体铁块底面积=20×20水箱底面积= 60×40，底面积比1:6。\n首先判断水箱中的水是否没过铁块，原水6×15 < 刚好没过5×20，未没过。\n然后判断铁块提起的变化，因水的体积不变，\n铁块提起6cm，水的体积变化=高6×底面1=6，又水底面积5，则下降6/5=1.2。\n（做题时大胆假定水未没过铁块）\n阿基米德原理：浮力=排开水的重力\n浮力问题",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T243.png"
+ },
+ {
+  "tid": "T244",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 92,
+  "top": 75.93620599999997,
+  "pages": [
+   92
+  ],
+  "ocr": [
+   "A",
+   "8",
+   "333",
+   ".",
+   "3"
+  ],
+  "bottom": 286.4659298199999,
+  "last_page": 92,
+  "question": "（河南2022 ）一个高为10厘米，底面半径为5厘米的圆锥体塑料零件置于\n水中，底面朝上且与水面平行，其浮出水面部分的高为2厘米。那么当该\n零件底面朝下且与水面平行置于水中时，浮出水面部分的高在以下哪个\n范围内？（零件始终不接触水底）\nA不到6厘米   B 6～7厘米之间   C 7～8厘米之间   D 超过8厘米",
+  "source": null,
+  "has_options": true,
+  "solution": "方法1:根据浮力公式，水下体积应相同。（水上体积也相同）\n底上尖下时，水下与整体相似比为4:5，体积比为64:125，则水上与整体体\n积比61:125。底下尖上时，水上为小圆锥，小圆锥与整体体积比也为\n61:125，略低于64:125，则高度略低于8cm。\n方法2:三个圆锥彼此相似，\n可列等式8 + x =10 ，解得343< x\n<512，则7<x<8",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T244.png"
+ },
+ {
+  "tid": "T245",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 92,
+  "top": 318.598206,
+  "pages": [
+   92,
+   93
+  ],
+  "ocr": [
+   "55 2",
+   "I",
+   "Ea",
+   "145",
+   ":",
+   "16",
+   ",",
+   "I"
+  ],
+  "bottom": 102.13713134,
+  "last_page": 93,
+  "question": "（2023副省）将一个高度为x的实心圆锥体零件尖部朝下放入密度为1的液\n体 A中，浮出液面的高度为0.1x。如将其尖部朝上放入密度为1.5的液体B\n中， 浮出液面的高度将在以下哪个范围内？\nA超过0.8x   B 0.7x~0.8x之间  C 0.6x~0.7x之间  D不到0.6x",
+  "source": "2023副省",
+  "has_options": true,
+  "solution": "F浮=G排=液体密度×排开体积×g\n重力不变，浮力不变，液体密度比为1:1.5，则排开体积比为1.5:1\n底上尖下时，根据高度相似比9:10，则体积比为729:1000，排开体积729\n尖上底下时，排开体积为729/1.5=486，则浮出体积为514，体积比为514/1000，\n略大于512/1000，相似比>8/10\n特殊三角形\n解三角形",
+  "db_match": "2023GK-75",
+  "db_score": 1.0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T245.png"
+ },
+ {
+  "tid": "T246",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 93,
+  "top": 109.45520599999998,
+  "pages": [
+   93
+  ],
+  "ocr": [
+   "2"
+  ],
+  "bottom": 129.49184560999998,
+  "last_page": 93,
+  "question": "369直角△           等边△（边长a）    等腰直角△",
+  "source": null,
+  "has_options": false,
+  "solution": "‼",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T246.png"
+ },
+ {
+  "tid": "T247",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 93,
+  "top": 127.40414518999995,
+  "pages": [
+   93
+  ],
+  "ocr": [
+   "sa",
+   "ou",
+   "a",
+   "mo",
+   "base"
+  ],
+  "bottom": 227.376197,
+  "last_page": 93,
+  "question": "边之比1: √3: 2     面积= √3a /4          直角边：斜边上的高= √2:1",
+  "source": null,
+  "has_options": false,
+  "solution": "三角形面积基本模型",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T247.png"
+ },
+ {
+  "tid": "T248",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 93,
+  "top": 241.130206,
+  "pages": [
+   93
+  ],
+  "ocr": [],
+  "bottom": 254.221206,
+  "last_page": 93,
+  "question": "同底不等高             不同底同高              共用角\n共用角",
+  "source": null,
+  "has_options": false,
+  "solution": "(a:c)×(b:d)",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T248.png"
+ },
+ {
+  "tid": "T249",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 93,
+  "top": 259.07914518999996,
+  "pages": [
+   93,
+   94,
+   95
+  ],
+  "ocr": [
+   "A=D",
+   "11805312",
+   "+",
+   "100 FT2",
+   "=",
+   "10067",
+   "=",
+   "2"
+  ],
+  "bottom": 294.05857655,
+  "last_page": 95,
+  "question": "面积比是高的比       面积比是底的比        面积比是边长比×边长比",
+  "source": null,
+  "has_options": false,
+  "solution": "背\nsin对边/斜边，sin30°=1/2       sin45°= √2/2   sin60°= √3/2\n√2=1.414\ncos邻边/斜边，cos30°= √3/2   cos45°= √2/2   cos60°=1/2\n√2/2=0.707\ntan对边/邻边，tan30°= √3/3   tan45°=1\n√3=1.732\n常见勾股数：3:4:5、6:8:10、5:12:13、7:24:25、8:15:17、9:40:41、20:21:29\n√3/2=0.866\n√5=2.236\n补全矩形，根据角度关系可解，\nAB+BC+CD+DE+EA=200+10√2\n设S△ABE= S△ADF=1，因S△ABC= S△ADC，\n则S△AEC= S△AFC=0.5，则S△ADC= S△BDC=1.5，\nS△ADF与S△AFC同高不同底，则DF:FC=2:1，DC:FC=3:1，\nS△EFC：S△BDC=1:9，又S△BDC=1.5，则S△EFC=1/6，S△AEF=5/6\n若上底：下底=1:k，则梯形内部的面积关系：1:k:k:k\nED平行FC，EDCF为梯形，且ED分别为中点，则ED=1/2FC，设S△EOD=1\n则S△EOF=2，S△DOC=2，S△COF=4，则S△CEF=6，\nEF将△ABC分为三等份，则S△CAE= S△CEF= S△CFB=6，则S△ABC=18\n公园面积/人工湖面积=S△ABC/S△EOD=18\ntan31° =CD/AD=24/AD=0.6，可得AD=40\n且角∠BAD=45°，则BD=AD=40，则BC=BD-CD=40-24=16",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T249.png"
+ },
+ {
+  "tid": "T250",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 95,
+  "top": 308.772206,
+  "pages": [
+   95
+  ],
+  "ocr": [
+   "B",
+   "D",
+   "E",
+   "A",
+   "*"
+  ],
+  "bottom": 553.192487,
+  "last_page": 95,
+  "question": "（2022广东县级）楼道上方有一盏灯，小刘径直走向这盏灯。一开始, 他\n发现自己影子的长度为3.2米，前进1米后，发现影子缩短为 1.6米。已知小\n刘身高为1.6米，则这盏灯的高度约为（ ）米。\nA2.6  B2.8  C3.2  D3.4",
+  "source": "2022广东县级",
+  "has_options": true,
+  "solution": "第一次影子:身高为2:1，即AG/DG=2:1，根据相似三角形，得AC:BC=2:1，\n设BC为x，则AC为2x，第一次人到灯的距离CG=2x-3.2。\n第二次影子:身高=1:1，FH:EH=1:1， 相似三角形，FC:BC=1:1，FC=BC=x\n则第二次人到灯的距离CH=x-1.6。\n两次人到灯的距离相差GH=1，即CG- CH=1\n2x-3.2-（x-1.6）=1，解得x=2.6",
+  "db_match": "2022GD-39",
+  "db_score": 1.0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T250.png"
+ },
+ {
+  "tid": "T251",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 96,
+  "top": 30.334205999999995,
+  "pages": [
+   96
+  ],
+  "ocr": [
+   "#"
+  ],
+  "bottom": 265.3375,
+  "last_page": 96,
+  "question": "（2019黑龙江）一位学生在距离热气球100米处观看它起飞。在热气球起\n飞后，学生注意到热气球顶部从他的仰角 30°上升到 45°，再从45°上升到\n60°的位置分别用了 11秒和17秒。则前后两段时间热气球平均上升速度的\n比值约为：A0.89  B0.91  C1.12  D1.10",
+  "source": "2019黑龙江",
+  "has_options": true,
+  "solution": "速度=路程/时间，已知BC用时11s，DC用时17s，则速度比=BC/11 : DC/17\n根据直角三角形，AB=100/√3，AC=100，AD= 100√3\nBC=AC-AB=100-100/√3，DC=AD-AC= 100√3-100\n速度比BC/11 : DC/17=",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T251.png"
+ },
+ {
+  "tid": "T252",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 96,
+  "top": 314.155206,
+  "pages": [
+   96,
+   97,
+   98
+  ],
+  "ocr": [
+   "-",
+   "-C",
+   "=",
+   "2",
+   "=",
+   "z",
+   "2",
+   "I*",
+   "3",
+   "45",
+   ".",
+   "3",
+   "3",
+   "10",
+   "z",
+   "z",
+   "4",
+   "I",
+   "5",
+   "2",
+   "Y",
+   "3"
+  ],
+  "bottom": 46.781803999999966,
+  "last_page": 98,
+  "question": "（2024海南）一块直角三角形绿地的三边均铺有长度为整数米的水管，\n其一条直角边外的水管长7米。若在水管上随机任选1个点做标记，则该\n标记点在斜边上的概率在以下哪个范围内？（忽略水管直径）\nA 小于0.35   B在0.35~0.42之间  C在0.42~0.50之间  D大于 0.50",
+  "source": "2024海南",
+  "has_options": true,
+  "solution": "7、24、25是勾股数，则斜边为25，即概率P=25/（7+24+25）=25/56=0.44\n计算勾股数：a + b\n=c\n，c\n- b =a  →(c+b)(c-b)=a\n已知一条直角边为7，a=7，7平方=49，即两数相加×两数相减=49=49 ×1\nc+b=49，c-b=1，b=24，c=25，即7、24、25是一组勾股数。\n（判断相加数和相减数，一般先找平方数的质因数，49分解质因数有49\n×1、7 ×7，显然7 ×7不符合）\n⭐⭐\n面积公式：（上底+下底）×高÷2=中位线× 2\n解梯形\n若上底：下底=1:k，\n则梯形内部的面积关系：1:k:k:k\n16 ×h ×1/2=200\nh=25\n连接BF，ABFD为梯形，可用面积关系。\n上下底比例为2:3，即k=1.5，则面积关系为1: 1.5: 1.5: 2.25\n设S△DFG=2，面积关系为2: 3: 3: 4.5\n则S△BDF=5，且△BDF与△BFC同高不同底，底比为1:2，\n面积比为1:2，S△BFC=10，则所求占比=3/22.5=6/45=2/15\nABFE、EFCD均为梯形，可用面积关系。\n梯形ABFE中，上下底比例1:2，k=2，面积关系1:2:2:4\n已知S△EGF=5，则面积关系等价为1.25:2.5:2.5:5（共11.25）\n梯形EFCD中，上下底比例2:3，k=1.5，面积关系1:1.5:1.5:2.25\n已知S△EFH=3，则面积关系等价为3:4.5:4.5:6.75（共18.75）\n所求比例=8:30=4:15\n基本模型\n解圆形",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T252.png"
+ },
+ {
+  "tid": "T253",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 98,
+  "top": 140.834206,
+  "pages": [
+   98
+  ],
+  "ocr": [
+   "3",
+   "3",
+   "2",
+   "55"
+  ],
+  "bottom": 257.14772333999997,
+  "last_page": 98,
+  "question": "（2020重庆选调）工厂有一种测量中控工件内径的方法，就是用半径为R\n的钢珠放在圆柱形内孔上， 只要测得钢珠顶端与工件顶端面之间的距离\nX， 就可以求出工件内孔径 （如下图所示） 。已知 X=5cm，R=3cm，那么\n该工件内径的直径是（ ） 。A2√5cm   B√5cm   C√10cm   D4cm",
+  "source": "2020重庆选调",
+  "has_options": true,
+  "solution": "",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T253.png"
+ },
+ {
+  "tid": "T254",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 98,
+  "top": 282.935206,
+  "pages": [
+   98
+  ],
+  "ocr": [
+   "''I",
+   ","
+  ],
+  "bottom": 408.46321529,
+  "last_page": 98,
+  "question": "（2019广东县级）某小区规划建设一块边长为 10米的正方形绿地。如图所\n示，以绿地的2 个顶点为圆心，边长为半径分别作扇形，把绿地划分为\n不同的区域。小区现准备在图中阴影部分种植杜鹃，则杜鹃种植面积为\n（ ）平方米。 A100-25兀   B 200-35兀   C 200-50兀   D100兀-100",
+  "source": "2019广东县级",
+  "has_options": true,
+  "solution": "所求面积为阴影部分\n扇形面积：正方形面积=兀：4\n即25兀：100，阴影=100-25兀",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T254.png"
+ },
+ {
+  "tid": "T255",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 98,
+  "top": 429.462206,
+  "pages": [
+   98,
+   99,
+   100,
+   101
+  ],
+  "ocr": [
+   "A",
+   "·",
+   "Y",
+   "=",
+   "art",
+   "↑",
+   "Er",
+   "Itzr2",
+   "2X",
+   "=",
+   "-",
+   "_Sp2",
+   "=202",
+   "PH-086-0",
+   "~",
+   "zu",
+   "z",
+   "10672812",
+   "-0",
+   "%",
+   "..",
+   "40",
+   "=>",
+   "=",
+   "z",
+   "3",
+   "I",
+   "1",
+   "252",
+   "S",
+   "Xb",
+   "14",
+   "253)",
+   "+",
+   "=",
+   "2",
+   "4",
+   "b",
+   "12 (253)",
+   "+",
+   "=",
+   "*",
+   "Fir",
+   "Far",
+   "?",
+   "dyFi3xX225=",
+   "=",
+   "=",
+   "25AD1553OD",
+   "BD=",
+   "=",
+   ",",
+   ",",
+   "93",
+   "Er",
+   "0,03=25001=",
+   ",",
+   "=>35",
+   "0",
+   "5",
+   "OD-00D=",
+   "-",
+   "=r",
+   "=,",
+   "-",
+   "y",
+   "25",
+   "r",
+   ".105",
+   "=-",
+   "His5",
+   "=",
+   "2+53",
+   "=",
+   "25",
+   ":"
+  ],
+  "bottom": 63.28020600000002,
+  "last_page": 101,
+  "question": "（2021江苏 C）如图所示，当某航天器飞过地球北极正上方S处时，恰好能\n够观测到北纬45度，北极圈内的区域。假定地球是半径为R的球体，则点S\n到地球北极点的距离是：A (√2-1)R/2  B (2-√2)R/2  C (√2-1)R  D (2-√2)R",
+  "source": "2021江苏 C",
+  "has_options": true,
+  "solution": "求SA，SA=SO-AO= (√2-1)R\n所求比例=（紫色扇形+蓝色阴影）/圆\n紫色扇形=1/3圆\n蓝色阴影=2×（1/6圆-三角形）\n⁉\n等边三角形的中心即为三角形的重心，连接重心与顶点到对边的\n线段被重心分成2：1的比例，而这条边恰好就是等边三角形的高。\n相似比是2:5，对应的边（题中的\n“最短距离”）成比例，面积比\n是相似比平方\n⭐⭐\n动点问题：画图思维（某一点移动会影响其\n他，从不好算的图形变成好算的图形）\n动点问题\n特殊技巧：赋值法（极限法）",
+  "db_match": "2021JSA-65",
+  "db_score": 0.84,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T255.png"
+ },
+ {
+  "tid": "T256",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 101,
+  "top": 73.43920600000001,
+  "pages": [
+   101,
+   102
+  ],
+  "ocr": [
+   "Fl",
+   "50"
+  ],
+  "bottom": 234.20703285999997,
+  "last_page": 102,
+  "question": "（2024浙江A）一块空地如下图所示，AD、BC均与底边垂直，三角形 ACD\n为等腰直角三角形，且 AG、DE、CF长度均相等。现在图中阴影部分种上\n草皮，已知 DF长80米，BC长160米，那么草皮面积为多少平方米？\nA 3200   B 3600   C 4000   D 4800",
+  "source": "2024浙江A",
+  "has_options": true,
+  "solution": "极限法，E是动点，假设ED=0，则AG=CF=0，DG=DC（即DF）=80\n所求面积=80×80÷2=3200\n以A为圆心半径150画圈，F是圈上动点。\n当F与AB在一条直线上，EB重合，所求面\n积为S△ABD=240×100×1/2=1.2万平方米\nF是动点，F与D重合时，\n小正方形就是一个点，\n所求阴影为S△ADC=50\nB是动点，B与F重合时，\nE与C重合，所求阴影\nS△DFE=12万平方米\n平面运动\n小李和妈妈分别在大圆、小圆上运动。\n周长=速度×时间，\n速度比李:妈=6:1，时间比李:妈=1:4，\n则周长比=6:4=3:2，半径比=周长比=3:2，\n则大圆小圆相差一份即为AB（50m），\n则小圆半径为100m，面积为3万平方米。",
+  "db_match": "2024ZJA-65",
+  "db_score": 1.0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T256.png"
+ },
+ {
+  "tid": "T257",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 102,
+  "top": 264.93620599999997,
+  "pages": [
+   102
+  ],
+  "ocr": [
+   "*",
+   "=",
+   "-+X",
+   ")",
+   "X",
+   "(x",
+   "=",
+   "="
+  ],
+  "bottom": 358.99237323,
+  "last_page": 102,
+  "question": "（2021北京区以上）A 地在B地正北方 x千米处，甲从A地出发以 4千米/小\n时的速度向南行走，同时乙从B地出发以 8千米/小时的速度向西慢跑，出\n发20分钟后，甲与乙的距离为 x千米。问x的值为：\nA 5/3   B 6   C 3   D 10/3",
+  "source": "2021北京区以上",
+  "has_options": true,
+  "solution": "",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T257.png"
+ },
+ {
+  "tid": "T258",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 102,
+  "top": 400.800206,
+  "pages": [
+   102
+  ],
+  "ocr": [
+   "I",
+   "55-1",
+   "=",
+   "==",
+   "x60",
+   "12 min",
+   "55-1",
+   "3-55",
+   "t",
+   "D"
+  ],
+  "bottom": 535.83560242,
+  "last_page": 102,
+  "question": "（2024青海）A、D两地设有通信基站(如下图所示)，发射信号范围分别是\n以A、D为圆心，AE和DB为半径的圆形区域，小林从B地出发，沿与 DB垂\n直的 BA方向匀速行进，步行速度为 4 千米/小时，那么步行约多少分钟\n后小林的手机能够重新接收到信号?(√5≈ 2.23)\nA8  B10  C12  D14",
+  "source": "2024青海",
+  "has_options": true,
+  "solution": "BC段接受不到信号，求经过BC段的时间。",
+  "db_match": "2024HB-71",
+  "db_score": 0.97,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T258.png"
+ },
+ {
+  "tid": "T259",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 103,
+  "top": 26.036205999999993,
+  "pages": [
+   103
+  ],
+  "ocr": [
+   "B",
+   "I",
+   "2",
+   "A",
+   "55",
+   "C"
+  ],
+  "bottom": 151.9501454,
+  "last_page": 103,
+  "question": "（2022北京）一个圆形水库的半径为1千米。一艘船从水库边的A点出\n发，直线行驶1千米后到达水库边的 B点，又从B点出发直线行驶2千米后\n到达水库边的C点。则 C点与A点的直线距离最短可能为多少千米？\nA不到 1千米   B1—1.3千米之间   C1.3—1.6千米之间   D超过 1.6千米",
+  "source": "2022北京",
+  "has_options": true,
+  "solution": "圆形水库最长距离为2（直径），BC一定是直径，\n则AC= √3=1.732>1.6",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T259.png"
+ },
+ {
+  "tid": "T260",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 103,
+  "top": 170.993206,
+  "pages": [
+   103
+  ],
+  "ocr": [
+   "4"
+  ],
+  "bottom": 399.47121529,
+  "last_page": 103,
+  "question": "（2022副省）甲地在丙地正西17千米，乙地在丙地正北8千米。张从甲\n地、李从乙地同时出发，分别向正东和正南方向匀速行走。两人速度均\n为整数千米/小时，且1小时后两人的直线距离为13千米，又经过3小时后\n两人均经过了丙地且直线距离为5千米。已知李的速度是张的60%，则张\n经过丙地的时间比李？\nA 早不到 分钟   B早10分钟以上   C 晚不到 分钟   D 晚10分钟以上",
+  "source": "2022副省",
+  "has_options": true,
+  "solution": "根据勾股数3、4、5，需判断丙甲'是3km还是4km。\n已知速度为整数，若丙甲'=4km，计算出来速度不是整数。\n若丙甲'=3km，则甲甲'是=20km，V=20/4=5km/h，\n张\n同理，V=12/4=3km/h，符合条件。\n李\n张：甲丙的时间=17/5=3h24min\n李：乙丙的时间=8/3=2h40min，张比李晚44min",
+  "db_match": "2022GK-68",
+  "db_score": 1.0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T260.png"
+ },
+ {
+  "tid": "T261",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 103,
+  "top": 424.37420599999996,
+  "pages": [
+   103,
+   104
+  ],
+  "ocr": [
+   "4",
+   "5",
+   "S",
+   "*",
+   "25"
+  ],
+  "bottom": 50.586145190000025,
+  "last_page": 104,
+  "question": "（2024山东）某巡逻艇在海域 A 点发现正南方 30 千米处的 B 点有一艘可\n疑船只正匀速向正西方行驶，巡逻艇以比该可疑船只快 1/3的速度沿某一\n方向直线追击，两船恰好在C点相遇。问B、C两点之间的距离约为多少\n千米？A26   B28   C30   D34\n:将军每天从军营A出发，先到\n:将军每天从军营A出发，先到\n河边饮马，然后再去草场吃草，然",
+  "source": "2024山东",
+  "has_options": true,
+  "solution": "速度比AC：BC=4:3，则AB速度为√7，\n时间一定，路程比=速度比，BC:AB=3:√7，\nBC=90/√7 > 90/√8>32，即BC>32，选D\n母题2\n母题1",
+  "db_match": "2024SD-60",
+  "db_score": 0.83,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T261.png"
+ },
+ {
+  "tid": "T262",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 104,
+  "top": 39.41804806000005,
+  "pages": [
+   104
+  ],
+  "ocr": [
+   "G",
+   "C2",
+   "C",
+   "A",
+   "A",
+   "B'",
+   "B",
+   "A",
+   "A"
+  ],
+  "bottom": 203.57327610000004,
+  "last_page": 104,
+  "question": "河边饮马，然后再去河岸同侧的B地\n后再去河岸同侧的B地开会，求怎样\n开会，求怎样走才能使路程最短？\n走才能使路程最短？（红色路线）\n（红色路线）\nB",
+  "source": null,
+  "has_options": false,
+  "solution": "河\n河\n草\n方法：利用“两点之间线段最短”，A'点是A点关于\n将军饮马\n河的对称点，连接A' B，与河面交点即为饮水点。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T262.png"
+ },
+ {
+  "tid": "T263",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 104,
+  "top": 219.77720599999998,
+  "pages": [
+   104
+  ],
+  "ocr": [
+   "A",
+   "B",
+   "I",
+   "E",
+   "A"
+  ],
+  "bottom": 374.854206,
+  "last_page": 104,
+  "question": "（2017吉林乙）悟空与二郎神在离地面1米的空中决斗，两人相距 2米，悟\n空想用分身直接偷袭二郎神，为了不引起对方的警觉，分身必须在地面\n反弹一次再进行攻击，则分身到达二郎神的位置所走的最短距离为：\nA 2√2米   B √3米   C √2米   D 2√3米\nA、B两村在一条笔直公路的同侧，到公路的垂直距离分别是3公里和 7公",
+  "source": "2017吉林乙",
+  "has_options": true,
+  "solution": "找悟空关于地面的对称点，链接悟空\n和二郎神，两点之间距离为2√2米",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T263.png"
+ },
+ {
+  "tid": "T264",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 104,
+  "top": 379.71214519,
+  "pages": [
+   104,
+   105
+  ],
+  "ocr": [
+   "75",
+   "P.",
+   "B",
+   "8.5",
+   "A",
+   "7",
+   "3",
+   "C",
+   "A"
+  ],
+  "bottom": 56.51480400000003,
+  "last_page": 105,
+  "question": "里，两村相距8.5 公里，现需在公路边建一个物资集散中心，为节约物资\n配送成本，集散中心到两个村的直线路程之和应尽可能小，若货车的速\n度约为60公里/小时，那么货车从集散中心出发，到两村送货后返回中\n心，路途所花费的最少时间为：\nA 18分钟  B 21分钟  C 24 分钟  D 27分钟",
+  "source": null,
+  "has_options": true,
+  "solution": "翻转A，得到A'，链接A'B，C点为集散中心，\n送货后返回的路程为△ABC的周长，且AC=A'C，\n所求路程=AB+A'B，根据勾股定理，直角△ABD可求BD=7.5，\n直角△A'BD可求得A'B=12.5，则所求= AB+A'B=8.5+12.5=21km\n已知速度为60km/h，即1km/min，时间=21/1=21min\n几何概型",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T264.png"
+ },
+ {
+  "tid": "T265",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 105,
+  "top": 75.92720600000001,
+  "pages": [
+   105
+  ],
+  "ocr": [
+   "~"
+  ],
+  "bottom": 209.9028,
+  "last_page": 105,
+  "question": "某商场为了促销，进行掷飞镖游戏。每位参与人员投掷一次，假设掷\n出的飞镖均扎在飞镖板上且位置完全随机，扎中阴影部分区域（含边\n线）即为中奖。该商场预设中奖概率约为60%，仅考虑中奖概率的前提\n下，以下四幅图形（图中的正三角形和正方形均与圆外切或内接）最\n适合作为飞镖板的是？",
+  "source": null,
+  "has_options": false,
+  "solution": "",
+  "db_match": "2021HB-68",
+  "db_score": 0.98,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T265.png"
+ },
+ {
+  "tid": "T266",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 105,
+  "top": 286.499206,
+  "pages": [
+   105
+  ],
+  "ocr": [
+   "30",
+   "I",
+   "In",
+   "20",
+   "a",
+   "im",
+   "102030"
+  ],
+  "bottom": 412.80699583,
+  "last_page": 105,
+  "question": "（2020云南）某公司职员预约某快递员上午9点30分到10点在公司大楼前\n取件，假设两人均在这段时间内到达， 且在这段时间到达的概率相\n等。 约定先到者等后到者 10分钟，过时交易取消。快递员取件成功的\n概率为：A1/3   B2/3    C5/9    D7/9",
+  "source": "2020云南",
+  "has_options": true,
+  "solution": "坐标系构建，红色范围是符合条件的时间段，\n坐标系中总共有9份，其中5份符合条件，P=5/9",
+  "db_match": "2020HB-62",
+  "db_score": 0.91,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T266.png"
+ },
+ {
+  "tid": "T267",
+  "section": "第十六节 几何问题",
+  "ex_no": null,
+  "page": 105,
+  "top": 434.525206,
+  "pages": [
+   105
+  ],
+  "ocr": [
+   "↓",
+   "4",
+   "A",
+   "to"
+  ],
+  "bottom": 552.48079636,
+  "last_page": 105,
+  "question": "(2024浙江A)同学在某天12:15-13:15内随机一个时刻开始午睡，午睡时长为0-1\n小时内的随机时间。问该同学在14:00之后起床的概率为：\nA1/16    B1/32    C1/48    D1/64",
+  "source": "2024浙江A",
+  "has_options": true,
+  "solution": "坐标系构建，横轴为过了xmin睡觉，纵轴为睡了ymin\n过了45min后此时为13点，要刚好睡1h才能在14点起床\n红色范围是符合条件的时间段，P=1/32",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T267.png"
+ }
+]

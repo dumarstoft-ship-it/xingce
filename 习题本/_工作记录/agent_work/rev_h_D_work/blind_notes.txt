@@ -1,0 +1,20 @@
+BLIND (before key) answers + preliminary 卡点 judgement
+v01 D 400  | 0.765P-255>=51 ; pure arithmetic, no technique -> weak 卡点 (fix?)
+v02 B 4/9  | 1.1a-0.6b=1.5(a-b); loss = negative profit, mixed growth outside range -> ok
+v03 A 11000| caps regime; naive 8100/0.72=11250 trap -> ok
+v04 A 25%  | per-unit profit x1.5, rise 0.1p = 0.5m -> ok
+v05 C 20%  | (1+r)*11/12=(1+r)-0.1 -> ok (substitution also fast)
+v06 C 3.75 | weekend revenue unchanged, 5 vs 2 days weight -> ok ; "原价" assumed same weekday/weekend (minor)
+v07 B 25%  | fixed/variable split, f=v -> ok
+v08 B 500  | EOQ equal terms; options brute-forceable; group label 二次函数与区间 mismatch -> ok w/ note
+v09 B 6    | ceil 5h/8h, diff -> b=5,a=3; 丙 6 billed h, max 6 -> ok
+v10 D 44   | offset: +20 over, -1.5 each beyond 30 -> 14 more -> 44 ; 43 trap -> ok
+v11 A 8400 | 840 over 6000 -> 14% -> 3600@10% + 2400@20% -> ok
+v12 C 12000| one linear inequality, definition given -> weak 卡点 (fix?)
+v13 C 24   | breakeven 7500 > cap 6000 -> don't build -> ok
+v14 A (15,40)| piecewise, crossovers inside included hours -> ok
+v15 B 8000 | tiered cost one equation; same skeleton as v12 -> weak (fix?)
+v16 C 24   | 0.81 compounding, 0.875 avg; 12.15/0.81=15 ->21 ->24 -> light but ok
+v17 D 4.6  | one inequality; purchase cost cancels -> weak (fix?)
+v18 D 1200 | one inequality 60k-36000>=30k -> weak (fix?)
+v19 B 100  | marginal analysis 17*4-3*6>0, 11*4-9*6<0 -> ok

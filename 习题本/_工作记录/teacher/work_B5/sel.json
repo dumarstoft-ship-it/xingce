@@ -1,0 +1,1124 @@
+[
+ {
+  "tid": "T176",
+  "section": "第十三节 构造问题",
+  "ex_no": 1,
+  "page": 64,
+  "top": 85.00620600000002,
+  "pages": [
+   64
+  ],
+  "ocr": [],
+  "bottom": 223.74004214999997,
+  "last_page": 64,
+  "question": "（2023 江西）某小区物业准备了 230 盒口罩免费派发给 10 栋楼，要求\n任意两栋楼派发的口罩数量都不相同，但最多相差不超过1倍。假设口罩\n不拆盒发放，那么派发口罩数量最少的那栋楼最少可派发口罩：\nA18盒  B15盒  C14盒  D12盒",
+  "source": "2023 江西",
+  "has_options": true,
+  "solution": "平均数为23盒。代入最少（12盒），最多不超过24盒，而平均数为23不符合\n条件。代入14盒，最多不超过28盒，可假设14、20、21、…28，20～28加和为\n216，加14刚好为230，符合条件。",
+  "db_match": "2023HB-73",
+  "db_score": 1.0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T176.png"
+ },
+ {
+  "tid": "T177",
+  "section": "第十三节 构造问题",
+  "ex_no": 2,
+  "page": 64,
+  "top": 248.76520599999998,
+  "pages": [
+   64
+  ],
+  "ocr": [],
+  "bottom": 387.49904214999987,
+  "last_page": 64,
+  "question": "（2022重庆选调）某单位招标信息化建设项目，预算为 400万元。甲、\n乙、丙、丁 4家投标企业的平均报价为预算金额的 95%，已知只有甲企业\n的报价超过预算金额，任意 2家企业的报价相差均不少于 10 万元且不多\n于 100 万元。问甲企业的报价最高可能为多少万元？\nA440  B442.5  C445  D447.5",
+  "source": "2022重庆选调",
+  "has_options": true,
+  "solution": "平均报价为380元。代入最多甲为447.5，假设其他三家尽可能少，可设其他\n三家为347.5、357.5、367.5，四家平均数刚好为380。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T177.png"
+ },
+ {
+  "tid": "T178",
+  "section": "第十三节 构造问题",
+  "ex_no": 3,
+  "page": 64,
+  "top": 413.902206,
+  "pages": [
+   64,
+   65
+  ],
+  "ocr": [],
+  "bottom": 47.795803999999976,
+  "last_page": 65,
+  "question": "（2018四川下）企业今年从全国6所知名大学招聘了500名应届生，从其\n中任意2所大学招聘的应届生数量均不相同。其中从A大学招聘的应届生数\n量最少且正好为B大学的一半。从B大学招聘的应届生数量为6所大学中最\n多的。则该企业今年从A大学至少招聘了多少名应届生？\nA48   B47   C46   D45",
+  "source": "2018四川下",
+  "has_options": true,
+  "solution": "平均数为83.3。代入A为45人，B为90人，因平均数靠近90，则其他4所人数尽\n可能靠近在90，假设人数为89、88、87、86，此时平均数约为80（小于83）。\n进一步调整，当A为47时（原A+2，原B+4），平均数+3，符合条件。\n做题方法：一分为二\n中间计算",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T178.png"
+ },
+ {
+  "tid": "T179",
+  "section": "第十三节 构造问题",
+  "ex_no": 4,
+  "page": 65,
+  "top": 73.07720599999993,
+  "pages": [
+   65
+  ],
+  "ocr": [],
+  "bottom": 193.86236477999995,
+  "last_page": 65,
+  "question": "（2017江苏）在一次竞标中，评标小组对参加竞标的公司进行评分，\n满分120分。按得分排名，前5名的平均分为 115分，且得分是互不相同的\n整数，则第三名得分至少是： A112分  B113分  C115分  D116分",
+  "source": "2017江苏",
+  "has_options": true,
+  "solution": "一分为二，1-2名看成一组，3-5名看成一组。问第3名至少，则第1、2名要\n尽可能高，即分别为120、119。3-5名尽可能低，代入112分，假设45名分数\n为111、110，不符合条件。代入113分，假设45名分数为112、111，符合。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T179.png"
+ },
+ {
+  "tid": "T180",
+  "section": "第十三节 构造问题",
+  "ex_no": 5,
+  "page": 65,
+  "top": 223.459206,
+  "pages": [
+   65
+  ],
+  "ocr": [],
+  "bottom": 362.19317305999994,
+  "last_page": 65,
+  "question": "（2022上海 B）某单位进行了一次绩效考评打分，满分为100分。有 5位\n员工的平均分为90分，而且他们的分数各不相同，其中分数最低的员工\n得分为77分，那么排第二名的员工至少得（）分。（员工分数取整数）\nA90  B92  C94  D96",
+  "source": "2022上海 B",
+  "has_options": true,
+  "solution": "问第2名至少，则第1名尽可能多，即第1名100分，且高于平均分10分。最\n低分77分低于平均分13分，则剩下三个成绩需高于平均分3分，即92、91、\n90，第2名为92。（削峰填谷，高出平均数部分和=低于平均数部分和）",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T180.png"
+ },
+ {
+  "tid": "T181",
+  "section": "第十三节 构造问题",
+  "ex_no": 6,
+  "page": 65,
+  "top": 391.89520600000003,
+  "pages": [
+   65,
+   66
+  ],
+  "ocr": [],
+  "bottom": 52.50080400000002,
+  "last_page": 66,
+  "question": "（2017 山东选调）某大型跨国连锁零售企业在世界 8 个城市共有 76 家\n超市，每个城市的超市数量都不相同。 如果超市数量排名第四的城市有10\n家超市， 那么超市数量排名最后的城市最多有几家超市？\nA3  B4  C5  D6",
+  "source": "2017 山东选调",
+  "has_options": true,
+  "solution": "问排最后最多几家，则排名前的超市尽可能少，则1～4名超市数量为13、\n12、11、10。剩下30家分给5～8名，平均数为7.5，则超市数为9、8、7、6，符\n合条件。\n做题方法：人群作为对象，划分群体\n统计模型",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T181.png"
+ },
+ {
+  "tid": "T182",
+  "section": "第十三节 构造问题",
+  "ex_no": 7,
+  "page": 66,
+  "top": 76.92220600000002,
+  "pages": [
+   66
+  ],
+  "ocr": [],
+  "bottom": 215.65617305999996,
+  "last_page": 66,
+  "question": "（2014北京） 一个 20人的班级举行百分制测验，平均分为79分，所有人\n得分都是整数且任意两人得分不同。班级前 5 名的平均分正好是 16 到 20\n名平均分的 2 倍。则班级第6 名和第15名之间的分差最大为多少分：\nA34  B37  C40  D43",
+  "source": "2014北京",
+  "has_options": true,
+  "solution": "问分差最大，则1～5名分数要尽可能大，16～20分数要尽可能小。则构造1\n～5名分数为100、99、98、97、96，平均数为98，则16～20的平均数为49。则\n第6名分数为95，第15名分数为52，分差为43。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T182.png"
+ },
+ {
+  "tid": "T183",
+  "section": "第十三节 构造问题",
+  "ex_no": 8,
+  "page": 66,
+  "top": 243.17920599999997,
+  "pages": [
+   66
+  ],
+  "ocr": [],
+  "bottom": 399.86211225,
+  "last_page": 66,
+  "question": "（2018浙江选调）某次百分制考试共有 30名考生参加，每人的成绩均为\n正整数，所有考生平均成绩为 80分， 且所有考生成绩均不相同。 问成绩\n低于60分的考生最多有多少人？ A7   B8   C9   D10",
+  "source": "2018浙江选调",
+  "has_options": true,
+  "solution": "平均数为80。低于60分的人尽可能靠近60分。①代入最多（10人），则构造\n10人为50～59，则平均分为54.5，另20人81～100平均分为90.5，总平均分为78.5\n（小于80），不符要求。②调整，如果为9人，原10人少个50，原20人多个\n80，总分多30分，平均分多1分（79.5），不符要求。③再调，如果为8人，\n一边再少51，一边再多79，总分再多28，平均分再多14/15，符合要求。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T183.png"
+ },
+ {
+  "tid": "T184",
+  "section": "第十三节 构造问题",
+  "ex_no": 9,
+  "page": 66,
+  "top": 426.482206,
+  "pages": [
+   66,
+   67
+  ],
+  "ocr": [],
+  "bottom": 67.84808438000005,
+  "last_page": 67,
+  "question": "某次数学测验，A班有 40人，平均分为 65分。因 B班汇总成绩时遗漏\n了两位同学，导致B班的平均分为 72分，两班整体的平均分为68分。已知\nB班最高分为96分，且最低分不低于最高分的一半， 如果算上遗漏的两位\n同学， 则 B班的平均分最少比 A班高多少分？ A4  B4.5  C5  D5.5",
+  "source": null,
+  "has_options": true,
+  "solution": "根据线段法，可求B班总人数为32人（加上遗漏）。要求B班最少比A班多\n多少，则B班成绩尽可能低，则遗漏2人的成绩均为48分，即平均分为\n（30×72 + 2×48）÷32=70.5，高5.5分。\n每个抽屉只能装固定数，每个抽屉都装满，\n直到装不下，再多一个就爆了。\n抽屉原理\n也称最不不利构造。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T184.png"
+ },
+ {
+  "tid": "T185",
+  "section": "第十三节 构造问题",
+  "ex_no": 10,
+  "page": 67,
+  "top": 84.66420599999998,
+  "pages": [
+   67
+  ],
+  "ocr": [],
+  "bottom": 205.4489720499999,
+  "last_page": 67,
+  "question": "（2023浙江 C）某部门举行年会抽奖活动。抽奖箱里有 80个抽奖券，\n共 20个不同的数字，每个数字均出现 4次，且分别对应一份礼品，不同\n的数字对应的礼品不同。每人当天限抽 1次。 那么最少多少人当天参加\n抽奖活动， 才能保证至少有 3人领取的礼品相同?\nA41  B42  C61  D62",
+  "source": "2023浙江 C",
+  "has_options": true,
+  "solution": "20个数字均有2人取，再加1人必然符合至少3人礼品相同。即 2×20+1=41",
+  "db_match": "2023ZJA-56",
+  "db_score": 1.0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T185.png"
+ },
+ {
+  "tid": "T186",
+  "section": "第十三节 构造问题",
+  "ex_no": 11,
+  "page": 67,
+  "top": 233.031206,
+  "pages": [
+   67
+  ],
+  "ocr": [],
+  "bottom": 389.7139813399999,
+  "last_page": 67,
+  "question": "（2014陕西）（2020浙江选调）箱子内有标号分别为1、2、3······25的 25\n个乒乓球，问至少需要取出多少个乒乓球才能保证有两个的标号之差为\n6的倍数？ A6  B7  C9  D10",
+  "source": "2014陕西",
+  "has_options": true,
+  "solution": "法1:要想差为6，2个球是关于6的余数相同。按余数分抽屉，余数有5种 。\n余数  0  1  2  3  4  5\n个数  4  5  4  4  4  4  ，6种余数各取1再加1必有两个差为6，即6+1=7。\n法2:要取标号之差为6的倍数，即考虑1-6连续取出，此时最大差为5，则第\n7个取出一定差有6",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T186.png"
+ },
+ {
+  "tid": "T187",
+  "section": "第十三节 构造问题",
+  "ex_no": 12,
+  "page": 67,
+  "top": 410.554206,
+  "pages": [
+   67,
+   68
+  ],
+  "ocr": [
+   "C",
+   "CoC(i",
+   "+++"
+  ],
+  "bottom": 47.83580400000005,
+  "last_page": 68,
+  "question": "某地方性体育体育彩票“10选4”的投注规则如下：投注者可以从\n01-10（共10个号码）中投选1-4个号码合成一组，称为“一注”（号码不区\n分排列顺序，如02 06 03 和02 03 06是由该3个号码组成的同一注）。当投注\n了（）注时，会出现至少5注相同号码。\nA1255  B1361  C1401  D1541",
+  "source": null,
+  "has_options": true,
+  "solution": "求出投注的可能性。即\n共385种注数，且均取4次，再加1次必有5注相同，\n即385×4+1=1541\n集合构造",
+  "db_match": "2020SZS-21",
+  "db_score": 0.99,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T187.png"
+ },
+ {
+  "tid": "T188",
+  "section": "第十三节 构造问题",
+  "ex_no": 13,
+  "page": 68,
+  "top": 65.82720600000005,
+  "pages": [
+   68
+  ],
+  "ocr": [
+   "2374"
+  ],
+  "bottom": 222.50985042999991,
+  "last_page": 68,
+  "question": "（2008浙江）小明、小刚和小红三人一起参加一次英语考试，已知考\n试共有100道题，且小明做对了 68题，小刚做对了58题，小红做对了 78题。\n问三人都做对的题目至少有几题？A 4题  B 8题  C 12题  D 16题",
+  "source": "2008浙江",
+  "has_options": true,
+  "solution": "构造思路：往人少的地方钻。先考虑两集合，剩下往人少的地方钻。\n先考虑小明和小刚，两人共做对26题，剩下74题不对，则小红78题\n最多只有74题能往少的地方走，最后剩4题。\n反向思考：求至少对几题，可先求至多错几题。小明错32题，小刚错42\n题，小红错22题，则三人至多错32+42+22=96题，则至少对4题。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T188.png"
+ },
+ {
+  "tid": "T189",
+  "section": "第十三节 构造问题",
+  "ex_no": 14,
+  "page": 68,
+  "top": 249.01520599999998,
+  "pages": [
+   68
+  ],
+  "ocr": [],
+  "bottom": 369.80036478,
+  "last_page": 68,
+  "question": "（2010浙江 A）建华中学共有1600名学生，其中喜欢乒乓球的有 1180\n人，喜欢羽毛球的有1360人，喜欢篮球的有1250人，喜欢足球的有 1040人，\n问以上四项球类运动都喜欢的至少有几人： A 20人 B 30人 C 40人 D 50人",
+  "source": "2010浙江 A",
+  "has_options": true,
+  "solution": "先两两求交叉集合，再交叉。同时喜欢乒乓和羽毛球的有1180+1360-1600=940\n人，同时篮球和足球的有1250+1040-1600=690人，同时喜欢四项球类的有\n940+690-1600=30人。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T189.png"
+ },
+ {
+  "tid": "T190",
+  "section": "第十三节 构造问题",
+  "ex_no": 15,
+  "page": 68,
+  "top": 399.030206,
+  "pages": [
+   68,
+   69
+  ],
+  "ocr": [],
+  "bottom": 47.12780399999997,
+  "last_page": 69,
+  "question": "某次测试共有5道题，做对第1、2、3、4、5题的人分别占测试人数的\n95%、85%、75%、65%、50%，若做对4道及以上者为优秀，则这次测试的优秀\n率至少是多少？  A35%  B40%  C48%  D50%",
+  "source": null,
+  "has_options": true,
+  "solution": "反向思考。求优秀率至少，可求非优秀至多。假设测试人数为100人，错\n题人次=5+15+25+35+50=130。要非优秀尽可能多，则做错2题及以上的人尽可\n能多，当所有错题人都只错2题的时候，此时人数最多，即非优秀人数\n130/2=65人，优秀人数35人，优秀率为35%。\n思考：全给最强对手都能胜利所要求的最少票数\n得票必胜",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T190.png"
+ },
+ {
+  "tid": "T191",
+  "section": "第十三节 构造问题",
+  "ex_no": 16,
+  "page": 69,
+  "top": 65.27320599999996,
+  "pages": [
+   69
+  ],
+  "ocr": [],
+  "bottom": 186.05810295999993,
+  "last_page": 69,
+  "question": "（2008山东）四年级一班选班长，每人投票从甲、乙、丙三个候选人\n中选一人，已知全班共有 52 人，并且在计票过程中的某一时刻，甲得到\n17 票，乙得到 16 票，丙得到 11票。如果得票最多的候选人将成为班长，\n甲最少再得多少张票就能够保证当选：A1张  B2张  C4张  D8张",
+  "source": "2008山东",
+  "has_options": true,
+  "solution": "甲只要保证始终比乙多1票即可获胜。此时已投票44票，还剩8票。甲要获\n胜，乙是最强对手，则甲4票，乙4票，能保证甲比乙始终多1票",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T191.png"
+ },
+ {
+  "tid": "T192",
+  "section": "第十三节 构造问题",
+  "ex_no": 17,
+  "page": 69,
+  "top": 213.94820599999997,
+  "pages": [
+   69
+  ],
+  "ocr": [],
+  "bottom": 391.809757,
+  "last_page": 69,
+  "question": "（2013辽宁）60名员工投票从甲、乙、丙三人中评选最佳员工，选举\n时每人只能投票选举一人，得票最多的人当选。开票中途累计，前 30张\n选票中，甲得15票，乙得10票，丙得5票。在尚未统计的选票中，甲至少再\n得多少票就一定当选：A15  B13  C10  D8",
+  "source": "2013辽宁",
+  "has_options": true,
+  "solution": "甲只要保证始终比乙多1票可获胜。此时还剩30票，甲的最强对手为乙，\n先分4票给乙，还剩26票再平分，甲乙分别13票，能保证甲比乙始终多1票\n取物必胜",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T192.png"
+ },
+ {
+  "tid": "T193",
+  "section": "第十三节 构造问题",
+  "ex_no": 18,
+  "page": 69,
+  "top": 404.17220599999996,
+  "pages": [
+   69
+  ],
+  "ocr": [
+   "S"
+  ],
+  "bottom": 542.90617306,
+  "last_page": 69,
+  "question": "甲乙两人在玩一个沙盘游戏，比赛的规则是在一个分为50个单元的区\n域上，每人轮流去划定这些区域作为自己的领地，每次可以划定1到5个单\n位，谁作为最后划定区域的人则为胜利者，如果由甲划定，那么甲一开\n始要划定多少个单位才能保证自己获胜：A1  B2  C3  D4",
+  "source": null,
+  "has_options": true,
+  "solution": "总数A     最大+最小=n    A/n=k…x   自己胜，第一次取x\n对方胜，第一次取x-1\n总数50，最大+最小=5+1=6，50/6=8…2，则第一次取2",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T193.png"
+ },
+ {
+  "tid": "T194",
+  "section": "第十四节 统筹规划问题",
+  "ex_no": null,
+  "page": 70,
+  "top": 79.82020599999998,
+  "pages": [
+   70
+  ],
+  "ocr": [],
+  "bottom": 104.30427115000003,
+  "last_page": 70,
+  "question": "满减问题",
+  "source": null,
+  "has_options": false,
+  "solution": "刚好的时候",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T194.png"
+ },
+ {
+  "tid": "T195",
+  "section": "第十四节 统筹规划问题",
+  "ex_no": 1,
+  "page": 70,
+  "top": 124.995206,
+  "pages": [
+   70
+  ],
+  "ocr": [],
+  "bottom": 209.88209366999996,
+  "last_page": 70,
+  "question": "（2020北京乡镇）A公园规定，个人票每张10元，团体票每张60元（可\n供10人参观） ，无其他票价优惠政策。五年级二班共有58人逛A公园，则\n最少应付多少元？A350  B360  C380  D390",
+  "source": "2020北京乡镇",
+  "has_options": true,
+  "solution": "① 5张团体票+8张个人票，380元。 ② 6张团体票，360元（浪费2名额）。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T195.png"
+ },
+ {
+  "tid": "T196",
+  "section": "第十四节 统筹规划问题",
+  "ex_no": 2,
+  "page": 70,
+  "top": 234.572206,
+  "pages": [
+   70
+  ],
+  "ocr": [],
+  "bottom": 391.254206,
+  "last_page": 70,
+  "question": "（2013江苏A）有89吨货物要从甲地运往乙地，大卡车的载重量是7吨，\n小卡车的载重量是4吨。大卡车与小卡车每次的耗油量分别是 14升、9\n升，如果使所派车辆运完货物耗油量最小，则最小耗油量是：\nA141升  B162升  C181升  D193升",
+  "source": "2013江苏A",
+  "has_options": true,
+  "solution": "大卡车能耗为2升/吨，小卡车能耗为2.25升每吨。①11大+33小→181升，\n②13大→182升，③12大+2小→186升，情况①耗油最小。\n【秒杀：理论上限法，假设不考虑分配，89吨货物至少要消耗89×2=178升\n油量，排除AB。并且略大于178，锁定181升】",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T196.png"
+ },
+ {
+  "tid": "T197",
+  "section": "第十四节 统筹规划问题",
+  "ex_no": 3,
+  "page": 70,
+  "top": 416.961206,
+  "pages": [
+   70,
+   71
+  ],
+  "ocr": [],
+  "bottom": 48.79020600000001,
+  "last_page": 71,
+  "question": "（2014河北）甲地有177吨货物要一起运到乙地，大卡车的载重量是5\n吨，小卡车的载重量是 2吨， 大小卡车从甲地到乙地的耗油量分别是10升\n和 5升， 则使用大小卡车将货物从甲地运到乙地最少要耗油多少升？\nA442.5升 B356升 C355升 D354升\n空瓶换酒",
+  "source": "2014河北",
+  "has_options": true,
+  "solution": "大卡车能耗为2升/吨，小卡车能耗为2.5升每吨。理论上限法，177吨至少需\n要354吨，排除A。 35大+1小=355升是最优解。\n❗\n核心思路：理论上限。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T197.png"
+ },
+ {
+  "tid": "T198",
+  "section": "第十四节 统筹规划问题",
+  "ex_no": 4,
+  "page": 71,
+  "top": 68.99020599999994,
+  "pages": [
+   71
+  ],
+  "ocr": [],
+  "bottom": 243.62108437999996,
+  "last_page": 71,
+  "question": "（2019山东选调）某啤酒厂为促销啤酒，开展 6个空啤酒瓶换1瓶啤酒\n的活动，孙先生去年花钱先后买了109瓶该品牌啤酒，期间不断用空啤酒\n瓶去换啤酒，请问孙先生去年一共喝掉了多少瓶啤酒？\nA127  B128  C129  D130",
+  "source": "2019山东选调",
+  "has_options": true,
+  "solution": "6空瓶=1瓶酒=1空瓶+1酒液，即5空瓶=1酒液。109瓶酒=109空瓶+109酒液，109\n空瓶可换21酒液…4空瓶，即共计109+21=130瓶。\n注意：最后一步拿了空瓶换酒，喝完之后手上一定会剩下空瓶，而不\n会剩酒液。例如，假设题目改成买了110瓶酒，则按关系可推110瓶酒可换\n22瓶酒液，即空瓶余数为0，没有剩空瓶，不符合，此时最多换21瓶。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T198.png"
+ },
+ {
+  "tid": "T199",
+  "section": "第十四节 统筹规划问题",
+  "ex_no": 5,
+  "page": 71,
+  "top": 267.478206,
+  "pages": [
+   71
+  ],
+  "ocr": [],
+  "bottom": 388.26336477999996,
+  "last_page": 71,
+  "question": "9个空瓶合起来可以换2瓶汽水，某旅游团喝了263瓶汽水，其中有一些\n是喝剩下来的空瓶换的，那么他们至少要买多少瓶汽水？\nA259   B243   C221   D205",
+  "source": null,
+  "has_options": true,
+  "solution": "法1:代入法，问至少，代入205。根据关系，7空瓶=2汽水液，205空瓶可换58\n汽水液，即共计205+58=263，刚好符合条件。\n法2: 263/9=29，29X2=58，263-58=205。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T199.png"
+ },
+ {
+  "tid": "T200",
+  "section": "第十四节 统筹规划问题",
+  "ex_no": 6,
+  "page": 71,
+  "top": 415.901206,
+  "pages": [
+   71,
+   72
+  ],
+  "ocr": [],
+  "bottom": 55.95378754000012,
+  "last_page": 72,
+  "question": "（2019 山东选调）某老旧写字楼重新装修，需要将原有的窗户全部更\n换为单价 90 元每扇的新窗户。已知每 7扇换下来的旧窗户可以跟厂商兑\n换一个新窗户。全部更换完毕后共花费 16560元且剩余4个旧窗户没有兑\n换，那么该写字楼一共有多少扇窗户？ A214  B218  C184  D188\n排队问题",
+  "source": "2019 山东选调",
+  "has_options": true,
+  "solution": "可列关系，7旧扇=1新扇+1旧扇（1新扇会更换下1旧扇），即6旧扇=1新\n扇。买了16560/90=184新扇，即更换了184旧扇，可兑换184/6=30新扇…4旧扇，\n即共计184+30=214扇\n理论上限思维，短任务优先原则，\n不浪费原则",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T200.png"
+ },
+ {
+  "tid": "T201",
+  "section": "第十四节 统筹规划问题",
+  "ex_no": 7,
+  "page": 72,
+  "top": 75.31420600000001,
+  "pages": [
+   72
+  ],
+  "ocr": [],
+  "bottom": 178.15016377,
+  "last_page": 72,
+  "question": "（2013江苏）局长找甲、乙、丙三位处长谈话，计划与甲交谈10分钟，\n与乙交谈12分钟，与丙交谈8分钟。办公室助理通过合理调整三人交谈的\n顺序，使得三人交谈和等待的总时间最少。请问调整后的总时间为多\n少： A46分钟   B48分钟   C50分钟   D56分钟",
+  "source": "2013江苏",
+  "has_options": true,
+  "solution": "交谈+等待的时间，即先丙、再甲、再乙。8×3+10×2+12=56分钟",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T201.png"
+ },
+ {
+  "tid": "T202",
+  "section": "第十四节 统筹规划问题",
+  "ex_no": 8,
+  "page": 72,
+  "top": 208.629206,
+  "pages": [
+   72
+  ],
+  "ocr": [
+   "#=",
+   "5",
+   "X"
+  ],
+  "bottom": 365.3121122499999,
+  "last_page": 72,
+  "question": "（2013广州）某单位前台有两个窗口，办理业务的人员要先到1号窗口\n审核资料，审核通过的才可以到2号窗口缴费。已知平均一份资料的审核\n时间为1.5分钟，且审核通过率仅有 1/3，而一份资料的缴费时间仅为 50\n秒。假设前台共有 10 名工作人员，且各窗口的人员数量固定，则1号窗口\n应安排多少人，才能使得前台运作效率最高：A9  B8  C7  D6",
+  "source": "2013广州",
+  "has_options": true,
+  "solution": "思路：运作效率要最高，审核和缴费的运作时间应相等。\n设1号审核人口为x，2号缴费人口为y，可列等式\n解得x/y=27/5，则x占总人数的27/32，题目中总人数为10，此时1号安排8人",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T202.png"
+ },
+ {
+  "tid": "T203",
+  "section": "第十四节 统筹规划问题",
+  "ex_no": 9,
+  "page": 72,
+  "top": 395.836206,
+  "pages": [
+   72
+  ],
+  "ocr": [],
+  "bottom": 570.46818235,
+  "last_page": 72,
+  "question": "师徒二人在非遗展馆现场为游客剪纸，有 6名游客各自挑选了心仪的\n花样。已知徒弟制作这6种剪纸的时间分别为 2、6、10、12、15、25 （单\n位：分钟） ， 师傅的工作效率是徒弟的 1. 5倍，则这6名游客中最后一个\n拿到剪纸的游客，需要等待的时间至少是：\nA25分钟  B27分钟  C28分钟  D30分钟",
+  "source": null,
+  "has_options": true,
+  "solution": "理论上限法，徒弟总用时= 2+6+10+12+15+25=70min，师徒总用时=70/2.5=28min，\n则用时至少为28min，排除AB。此时判断28min是否能成立，则判断徒弟能\n否凑齐28min完成剪纸，完成6、10、12符合条件。即此时徒弟完成28min的工\n作量，师傅完成42分钟的工作量，此时28min可以完成。",
+  "db_match": "2021JSA-60",
+  "db_score": 1.0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T203.png"
+ },
+ {
+  "tid": "T204",
+  "section": "第十四节 统筹规划问题",
+  "ex_no": null,
+  "page": 73,
+  "top": 30.026206000000002,
+  "pages": [
+   73,
+   74
+  ],
+  "ocr": [
+   "8",
+   "45",
+   "1014",
+   "3"
+  ],
+  "bottom": 8.993516999999997,
+  "last_page": 74,
+  "question": "最短路径",
+  "source": null,
+  "has_options": false,
+  "solution": "标数法，标记最小的\n2个奇点，需两笔画完成，要一笔画完成需走重\n复，重复部分为连接奇点的最短距离，即AE或CF\n最少路程=5×BD+4×BF+AE=1100+400\n⭐⭐❗⭐⭐",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T204.png"
+ },
+ {
+  "tid": "T205",
+  "section": "第十五节 数论",
+  "ex_no": 1,
+  "page": 75,
+  "top": 23.22420599999998,
+  "pages": [
+   75
+  ],
+  "ocr": [],
+  "bottom": 144.00910296000006,
+  "last_page": 75,
+  "question": "（2021 上海 B）公司购买某设备 24 套，现要登记单价，但是数据上没\n有标注单价，且总价第一位和最后一位模糊不清，只看到是☆579△元。\n则☆可能是 。A3  B5  C7  D9",
+  "source": "2021 上海 B",
+  "has_options": true,
+  "solution": "24=3×8，即总价是3的倍数也是8的倍数。是否为8的倍数看后三位，79△为8\n的倍数，已知800为8的倍数，则792是8的倍数（800-8），△为2。是否为3的\n倍数看各位数和，☆+5+7+9+2=☆+23，代入7符合条件。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T205.png"
+ },
+ {
+  "tid": "T206",
+  "section": "第十五节 数论",
+  "ex_no": 2,
+  "page": 75,
+  "top": 168.18820599999998,
+  "pages": [
+   75
+  ],
+  "ocr": [
+   "18",
+   "225",
+   "2x13",
+   "x",
+   "1022x3x7104",
+   "1053x5x7",
+   "=",
+   "=",
+   "=",
+   "="
+  ],
+  "bottom": 217.27085017000002,
+  "last_page": 75,
+  "question": "（2022 江苏 B）下列可以分解为三个质数相乘的最小的三位数是：\nA100  B102  C104  D105",
+  "source": "2022 江苏 B",
+  "has_options": true,
+  "solution": "",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T206.png"
+ },
+ {
+  "tid": "T207",
+  "section": "第十五节 数论",
+  "ex_no": 3,
+  "page": 75,
+  "top": 243.52020599999997,
+  "pages": [
+   75
+  ],
+  "ocr": [],
+  "bottom": 364.3052338699999,
+  "last_page": 75,
+  "question": "（2015 河南） 箱子里有标号 1 至 10 共 10 个球， 小张随机取了三个球\n并记下号码后将球放回，小李也随机取了三个并记下号码。这时发现两\n人取的球的号数之积都恰好是 144。已知小张的号数之和比小李的大，那\n么小张取的球的号数之和是多少？ A19  B17  C16  D14",
+  "source": "2015 河南",
+  "has_options": true,
+  "solution": "均值不等式：和固定，差距越小，乘积越大；积固定，差距越大，和越\n大。144= 12×12= 3×4×3×4=2×8×9，和为19，也是选项中最大，符合。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T207.png"
+ },
+ {
+  "tid": "T208",
+  "section": "第十五节 数论",
+  "ex_no": 4,
+  "page": 75,
+  "top": 394.20120599999996,
+  "pages": [
+   75
+  ],
+  "ocr": [],
+  "bottom": 461.13915448,
+  "last_page": 75,
+  "question": "（2019 河北县乡）三个自然数分别是一位数、两位数和三位数，其积\n为 3930，其和最小为多少？A144  B146  C148  D162",
+  "source": "2019 河北县乡",
+  "has_options": true,
+  "solution": "即分解为一位数、两位数和三位数的质数。3930= 3×10×131，和为144",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T208.png"
+ },
+ {
+  "tid": "T209",
+  "section": "第十五节 数论",
+  "ex_no": 5,
+  "page": 75,
+  "top": 488.031206,
+  "pages": [
+   75
+  ],
+  "ocr": [],
+  "bottom": 554.96902357,
+  "last_page": 75,
+  "question": "（2012 江苏 A）设有三个自然数，分别是一位数、两位数和三位数，\n这个数的乘积为 2004，则三数之和为： A100  B180  C179  D178",
+  "source": "2012 江苏 A",
+  "has_options": true,
+  "solution": "2004= 4×501=3×4×167 = 1×12×167，三数之和为180",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T209.png"
+ },
+ {
+  "tid": "T210",
+  "section": "第十五节 数论",
+  "ex_no": 6,
+  "page": 76,
+  "top": 24.29120599999999,
+  "pages": [
+   76
+  ],
+  "ocr": [
+   "26",
+   "3",
+   "1468",
+   "2",
+   "31",
+   "15",
+   "104",
+   "5"
+  ],
+  "bottom": 170.55152678999997,
+  "last_page": 76,
+  "question": "某条道路两侧各有 50 盏路灯，左侧路灯序号为 1-50，右侧路灯序号为\n51-100。现有三个开关 A、B、C 分别能控制序号为 2 的倍数、3 的倍数、5\n的倍数的路灯。若在所有路灯都关闭的状态下，先后按下开关 A、B、C，\n则道路右侧有（ ）盏路灯处于打开状态。A22  B23  C26  D28",
+  "source": null,
+  "has_options": true,
+  "solution": "打开状态：打开1次或打开3次。\n即14+8+4+2=28",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T210.png"
+ },
+ {
+  "tid": "T211",
+  "section": "第十五节 数论",
+  "ex_no": 7,
+  "page": 76,
+  "top": 189.591206,
+  "pages": [
+   76
+  ],
+  "ocr": [
+   "PMDa",
+   ",."
+  ],
+  "bottom": 346.2742431599999,
+  "last_page": 76,
+  "question": "（2015 河南）编号为 1—50 的选手参加一个爬楼比赛，楼高为 60 层。\n所有选手在第 1 层均获得一个特别的号牌，此后每经过一个楼层，如果选\n手的编号正好是楼层数的整数倍，就将得到一个特别的号牌。所有选手都\n到达终点后，正好持有 3 个特别号牌的选手有多少人？\nA1  B4  C7  D10",
+  "source": "2015 河南",
+  "has_options": true,
+  "solution": "持3个号码牌，意思是含3个约数，号码牌=\nn1*n2=3，可得组合解为（1，3），即号码牌= 质数的平方。\n1～50，符合条件的有2的平方、3的平方、5的平方、7的平方，共4个。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T211.png"
+ },
+ {
+  "tid": "T212",
+  "section": "第十五节 数论",
+  "ex_no": 8,
+  "page": 76,
+  "top": 375.406206,
+  "pages": [
+   76
+  ],
+  "ocr": [
+   "M",
+   "D,DR",
+   ".",
+   "2x32",
+   "Y"
+  ],
+  "bottom": 567.98596276,
+  "last_page": 76,
+  "question": "（2020 北京区级）某单位有不到 100 人参加远足活动，如将该单位人员\n平均分成 N 组（N>1且每组人数>1） ，则每组的人数有且仅有 6 种不同的\n可能性。则该单位参加活动的人数可能的最小值和最大值之间相差多少\n人？  A32  B48  C56  D64",
+  "source": "2020 北京区级",
+  "has_options": true,
+  "solution": "组数大于1且每组人数大于1，则总人数共有8个约数（6、1、自身），\nn*n=8，可得组合解为（1，8）（2，4）。\n12\n当解（1，8）时，即有一个质数的7次幂，2的7次幂=128，大于100，不符。\n解只能为（2，4），即总人数=质数① ×质数②的3次幂。\n最小值=\n最大值=",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T212.png"
+ },
+ {
+  "tid": "T213",
+  "section": "第十五节 数论",
+  "ex_no": 9,
+  "page": 77,
+  "top": 39.98820599999999,
+  "pages": [
+   77
+  ],
+  "ocr": [
+   "2"
+  ],
+  "bottom": 142.82403286,
+  "last_page": 77,
+  "question": "（2013 山东）100 个编号为 1～100 的罐子，第 1 个人在所有编号为 1 的\n倍数的罐子中倒入 1毫升水，第 2 个人在所有编号为 2 的倍数的罐子中倒\n入 1 毫升水······第 100 个人在所有编号为 100 的倍数的罐子中倒入 1 毫升\n水，问此时第 92 号罐子中装了多少毫升的水？A2  B6  C46  D92",
+  "source": "2013 山东",
+  "has_options": true,
+  "solution": "求92有多少个约数，92=4×23=2×23，约数个数= 3×2=6",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T213.png"
+ },
+ {
+  "tid": "T214",
+  "section": "第十五节 数论",
+  "ex_no": 10,
+  "page": 77,
+  "top": 170.040206,
+  "pages": [
+   77
+  ],
+  "ocr": [
+   "2",
+   "011I",
+   "2x3",
+   "2x23'",
+   "%23°,",
+   "2%,",
+   "2x232x23's",
+   "2",
+   "+13",
+   ",",
+   ",",
+   ","
+  ],
+  "bottom": 303.46160986999996,
+  "last_page": 77,
+  "question": "100 个编号为 1～100 的罐子，第 1 个人在所有编号为 1 的倍数的罐子\n中倒入 1 毫升水，第 2个人在所有编号为 2 的倍数的罐子中倒入 2 毫升水\n······第 100 个人在所有编号为100 的倍数的罐子中倒入 100 毫升水，问此时\n第 92 号罐子中装了多少毫升的水？",
+  "source": null,
+  "has_options": false,
+  "solution": "求约数和，写出约数组合，两两相乘构成约数。92=4×23=2×23\n约数和=（2 + 2 + 2 ）（23 + 23 ）=7×24=168\n<所有约数为：",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T214.png"
+ },
+ {
+  "tid": "T215",
+  "section": "第十五节 数论",
+  "ex_no": 11,
+  "page": 77,
+  "top": 347.549206,
+  "pages": [
+   77,
+   78
+  ],
+  "ocr": [
+   "2",
+   "3",
+   "A12=2 x 2 x]",
+   "=",
+   "22x33",
+   "B182x3x3",
+   "=="
+  ],
+  "bottom": 164.642206,
+  "last_page": 78,
+  "question": "（2018 广州）用全部 156 个边长为 1 的小正方形，最多可以拼成（ ）\n种形状不同的长方形。 A5  B6  C7  D8",
+  "source": "2018 广州",
+  "has_options": true,
+  "solution": "要求156可以拼成多少个长方形，即长×宽=156，即长宽都是156的约数。\n求156的约数，156= 2×3×13，约数个数= 3×2×2=12，且要长宽成对出现，\n即有6对长宽相乘可以得156。\n注意：约数都是成对出现，例如，24= 2×3，约数为8个，分别为1、2、3、\n4、6、8、12、24，其中（1，24）（2，12）（3，8）（4，6）成对出现，两两\n相乘等于24。\n⭐⭐❗\n重要模型：交集和并集\n1.A和B两个数的最大公约数是p，最小公倍数是q，有A*B=p*q\n2.所有公约数都是最大公约数的约数，所有公倍数都是最小公倍数的倍数\n求两个数的最小公倍数：提取最大公因数，再相乘（剩下数互质）\n求三个数的最小公倍数：先算两个，结果再和第三个算\n注意：1和任何数都互质，相邻的两数互质。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T215.png"
+ },
+ {
+  "tid": "T216",
+  "section": "第十五节 数论",
+  "ex_no": 12,
+  "page": 78,
+  "top": 180.69520599999998,
+  "pages": [
+   78
+  ],
+  "ocr": [],
+  "bottom": 283.53116377,
+  "last_page": 78,
+  "question": "（2014 山东）甲、乙、丙三个办公室的职工参加植树活动，三个办公\n室人均植树分别为 4、5、6 棵，三个办公室植树总数彼此相等。问这三\n个办公室总共至少有多少职工：A37  B53  C74  D106",
+  "source": "2014 山东",
+  "has_options": true,
+  "solution": "植树总数为4、5、6的公倍数，4、6提取最大公因数2，剩下2、3互质，最\n小公倍数为12（2×2×3）。12和5的最小公倍数60。甲15人乙12人丙10人。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T216.png"
+ },
+ {
+  "tid": "T217",
+  "section": "第十五节 数论",
+  "ex_no": 13,
+  "page": 78,
+  "top": 311.062206,
+  "pages": [
+   78,
+   79
+  ],
+  "ocr": [],
+  "bottom": 139.338206,
+  "last_page": 79,
+  "question": "（2019 辽宁） 某大型相亲类综艺节目举办线下联谊活动， 在签到时\n每人可以抽取一张礼物卡，凡是抽中有编号的礼物卡均有玫瑰花赠送，\n抽到“谢谢参与”的则赠送一盒面巾纸。带有编号的礼物卡共 100 张，编\n号 1-100，按礼物卡标签号发放奖品的规则如下：\n（1）标签号为 2 的倍数，领 2 枝玫瑰\n（2）标签号为 3 的倍数，领 3 枝玫瑰\n（3）标签号既是 2 的倍数，又是 3 的倍数可重复领奖\n（4）其他标签号均领 1 枝玫瑰\n那么本次联谊活动应准备玫瑰花（）枝。\nA215  B232  C312  D416\n余数理论",
+  "source": "2019 辽宁",
+  "has_options": true,
+  "solution": "标签为2倍数的个数=1+（100-2）/2=50，标签为3倍数的个数=1+（99-3）/2=33，\n标签为6倍数（2、3的最小公倍数）=1+（96-6）/6=16，\n非2、3倍数的个数=100-（50+33-16）=100-67=33\n玫瑰花数=50×2 + 33×3 + 33×1=232\n1⃣2⃣\n余数的加减乘可直接运算。\n例如，7和11相乘后，除3的余数是多少？\n7除3余数1，11除3余数2，\n相乘后除3余数为1*2=2（余数直接相乘）\n计算表达式 ：7=1（mod 3），11=2（mod 3），7*11=1*2（mod 3）\n（或7 mod 3=1，11 mod 3 =2，余数1*2=2，mod是取余的意思）\n被除数、模数互质的时候，除法可用（可能的情况）",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T217.png"
+ },
+ {
+  "tid": "T218",
+  "section": "第十五节 数论",
+  "ex_no": 1,
+  "page": 79,
+  "top": 153.71020599999997,
+  "pages": [
+   79
+  ],
+  "ocr": [],
+  "bottom": 471.9339576899999,
+  "last_page": 79,
+  "question": "（1）一个正整数除以 3 余 2，除以 5 余 4，除以 7 余 6，求满足条件的\n最小正整数。\n（2）一个正整数除以 3 余 2，除以 5 余 4，除以 7 余 5，求满足条件的最\n小正整数。\n（3）一个正整数除以 3 余 2，除以 5 余 3，除以 7 余 2，除以 11 余 8，求\n满足条件的最小正整数。",
+  "source": null,
+  "has_options": false,
+  "solution": "（1）加1是3、5、7的倍数，三数的最小公倍数是105，则最小正整数为104。\n（2）加1是3、5的倍数，两数的最小公倍数是15，\n则可列等式15k-1=5（mod 7），15k=6（mod 7），k=6÷1=6，（15mod7=1）\n15k-1=6×15-1=89，这个解就是取3、5、7最小公倍数需加的最小余数，\n则满足条件的所有数为105x+89，当x为0时，最小正数即为89。\n（3）根据“除以 3 余 2，除以 7 余 2”可列等式21k+2，且“除5余3”，\n则21k+2=3（mod 5），21k=1（mod 5），k= 1÷1=1，（21 mod 5=1），\n求余21k+2=23，则满足前三条件的所有数为105x+23，且“除11余8”，\n则105x+23=8（mod 11），105x=-15（mod 11），x= （-15）÷（-5）=3，\n求余105x+23=105×3+23=338，则满足条件的所有数为1155y+338\n当y为0时，最小正数为338。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T218.png"
+ },
+ {
+  "tid": "T219",
+  "section": "第十五节 数论",
+  "ex_no": 2,
+  "page": 79,
+  "top": 498.675206,
+  "pages": [
+   79
+  ],
+  "ocr": [],
+  "bottom": 565.6131544799999,
+  "last_page": 79,
+  "question": "（2010 浙江）一个自然数x，除以 3 的余数是 2，除以 4 的余数是 3，\n问x除以12的余数是： A1  B5  C9  D11",
+  "source": "2010 浙江",
+  "has_options": true,
+  "solution": "加1是3、4的倍数，最小公倍数为12，则该数可能为12-1=11，除12即余11。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T219.png"
+ },
+ {
+  "tid": "T220",
+  "section": "第十五节 数论",
+  "ex_no": 3,
+  "page": 80,
+  "top": 18.13420599999995,
+  "pages": [
+   80
+  ],
+  "ocr": [],
+  "bottom": 138.91897204999992,
+  "last_page": 80,
+  "question": "（2008 湖北）一个小于 100 的整数与 5 的差是 4 的倍数，与 5 的和是 7\n的倍数，这个数最大是多少？",
+  "source": "2008 湖北",
+  "has_options": false,
+  "solution": "x-5=0（mod 4）→x=5（mod 4）→x=1（mod 4），即除4余1。\nx+5=0（mod 7）→x=-5（mod 7）→x=2（mod 7），即除7余2。\n求余数，可列等式4k+1=2（mod 7），4k=1（mod 7）=8（mod 7），k=8÷4=2，\n余数为4k+1=4×2+1=9，该数表达式为=28k+9，k取3时，该数为93，符合条件",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T220.png"
+ },
+ {
+  "tid": "T221",
+  "section": "第十五节 数论",
+  "ex_no": 4,
+  "page": 80,
+  "top": 161.278206,
+  "pages": [
+   80
+  ],
+  "ocr": [],
+  "bottom": 389.75713082999994,
+  "last_page": 80,
+  "question": "（2023 湖北选调）单位小陈每天都在手机 APP 上学习英语。有一天，\n他的学习天数已有 200多天，是 3 的倍数，且第二天的天数是 5 的倍数，\n第三天的天数是 7 的倍数。问第几天的天数将是 13 的倍数？\nA9  B10  C11  D12",
+  "source": "2023 湖北选调",
+  "has_options": true,
+  "solution": "当天，x=0（mod 3）。第二天，x+1=0（mod 5）→x=4（mod 5）。\n第三天，x+2=0（mod 7）→x=5（mod 7）。\n前两个关系，可列等式3k=4（mod 5）=9（mod 5）→k= 9÷3=3，余数为9。\n则符合前两条件的表达式为15k+9。再结合第三个关系，\n可列等式15k+9= 5（mod 7）→15k=3（mod 7）→k=3÷1=3（15 mod 7=1）。\n余数为15k+9=15×3+9=54，则符合所有条件的表达式为105k+54，\n当k取2时，符合条件，天数为264天。且260是13的倍数，则273是13倍数，264\n到273，经过9天，即第10天是13的倍数（第10天为273天）。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T221.png"
+ },
+ {
+  "tid": "T222",
+  "section": "第十五节 数论",
+  "ex_no": 5,
+  "page": 80,
+  "top": 415.708206,
+  "pages": [
+   80,
+   81
+  ],
+  "ocr": [],
+  "bottom": 65.92221529000005,
+  "last_page": 81,
+  "question": "某商场举行抽奖活动，规定从编号 1-10 的 10 个小球中不放回地随机\n抽取 3 个小球，若 3 个小球编号数字加和为 3 的倍数即视为中奖，求中\n奖的概率是多少？",
+  "source": null,
+  "has_options": false,
+  "solution": "将1-10分为3个集合，即{1、4、7、10} {2、5、8} {3、6、9}，同一个集合取3\n个或不同集合任取1个将是3的倍数。\n(x2\n(i\n+\n+4x3x37\nP\n=\n=\nzo\nGo\n多位数的代数表示（思考框架）\n位数操作\n例如：形如“abc”的三位数可以写成100a+10b+c\n①百位与个位互换，相差99（a-c） ②十位和个位互换，相差9（b-c）",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T222.png"
+ },
+ {
+  "tid": "T223",
+  "section": "第十五节 数论",
+  "ex_no": 6,
+  "page": 81,
+  "top": 80.42420599999997,
+  "pages": [
+   81
+  ],
+  "ocr": [],
+  "bottom": 183.2600328599999,
+  "last_page": 81,
+  "question": "（2011 浙江）一个三位数的各位数字之和是 16。其中十位数字比个位\n数字小 3。如果把这个三位数的百位数字与个位数字对调， 得到一个新\n的三位数， 则新的三位数比原三位数大 495，则原来的三位数是：\nA169  B358  C469  D736",
+  "source": "2011 浙江",
+  "has_options": true,
+  "solution": "个位百位互换，差495（5×99），即个百差5，排除AD。且和为16，选B。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T223.png"
+ },
+ {
+  "tid": "T224",
+  "section": "第十五节 数论",
+  "ex_no": 7,
+  "page": 81,
+  "top": 207.25120599999997,
+  "pages": [
+   81
+  ],
+  "ocr": [],
+  "bottom": 345.98530396999996,
+  "last_page": 81,
+  "question": "（2017 天津选调）一个五位数，左边三位数是右边两位数的 5 倍，如\n果把右边两位数移到前面，所得到的新的五位数要比原来的五位数的 2\n倍还多 75，原来五位数的值是多少？\nA22545  B17535  C12525  D11575",
+  "source": "2017 天津选调",
+  "has_options": true,
+  "solution": "法1:代入法计算，12525符合条件。\n法2:设右边两位数为x，则左边三位数为3x。\n原：5x*100+x=501x，新：x*1000+5x=1005x，可列等式1005x=2*501x+75，解得x=25。",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T224.png"
+ },
+ {
+  "tid": "T225",
+  "section": "第十五节 数论",
+  "ex_no": 8,
+  "page": 81,
+  "top": 373.222206,
+  "pages": [
+   81,
+   82
+  ],
+  "ocr": [],
+  "bottom": 57.57814518999999,
+  "last_page": 82,
+  "question": "（2023 福建）一辆出租车的计价器出现故障，显示屏上保留了一个两\n位数，无法清除，但还能按行驶路程准确地将应付的车费累加上去。小\n王乘坐该车匀速行驶了 2 小时，当行驶 1 小时的时候，计价器上的两个\n数字刚好交换了位置，在 2 小时的时候，计价器上的两个数字又交换了\n位置，但他们中间多了一个 0。如车费按里程计，问小王应付多少元车\n费？  A82  B86  C90  D95",
+  "source": "2023 福建",
+  "has_options": true,
+  "solution": "车费应该是最后显示数字与最初显示数字的差。假设最初为ab，第1小时\n则为ba，第2小时则为a0b。两个两位数相加肯定为100多，a肯定为1，\n则ab等价于10+b，a0b等价于100+b，车费为两者差100+b-（10+b）=90。\n（车费变化：ab →ba →a0b，10+b →10b+1 →100+b）\n方法：1、平推\n报数问题\n2、写数量表达式",
+  "db_match": "2023SC-54",
+  "db_score": 1.0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T225.png"
+ },
+ {
+  "tid": "T226",
+  "section": "第十五节 数论",
+  "ex_no": 9,
+  "page": 82,
+  "top": 74.04520600000001,
+  "pages": [
+   82
+  ],
+  "ocr": [],
+  "bottom": 212.77904214999995,
+  "last_page": 82,
+  "question": "（2024 浙江 A）某工厂有 100 个零件，从 1-100 编号后将编号为奇数的\n零件拿掉，余下 50 个零件按顺序重新从 1 开始编号后将编号为奇数的零\n件拿掉，重复上述操作直到剩下一个零件，那么余下这个零件最初的编\n号是多少？ A32  B50  C64  D100",
+  "source": "2024 浙江 A",
+  "has_options": true,
+  "solution": "① 1、2、3、4…，去奇数，剩2、4、6…，即表达式为2k，共50个。\n②剩 4k，25个（排除B）。③剩 8k，12个（排除D）。④剩 16k，6个。\n⑤剩 32k，3个。⑥剩64k，1个。即最后剩64。",
+  "db_match": "2024ZJA-66",
+  "db_score": 0.93,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T226.png"
+ },
+ {
+  "tid": "T227",
+  "section": "第十五节 数论",
+  "ex_no": 10,
+  "page": 82,
+  "top": 245.226206,
+  "pages": [
+   82,
+   83
+  ],
+  "ocr": [],
+  "bottom": 8.993516999999997,
+  "last_page": 83,
+  "question": "（2014 天津）100 个骨牌整齐地排成一列，依次编号为 1、2、3、4、\n···99、100。如果第一次拿走所有偶数位置上的牌，第二次再从剩余牌中拿\n走所有偶数位置上的牌，第三次再从剩余牌中拿走所有奇数位置上的\n牌，第四次再从剩余牌中拿走所有奇数位置上的牌，第五次再从剩余牌\n中拿走所有偶数位置上的牌，以此类推，问最后剩下的一张骨牌的编号\n是多少： A77  B53  C39  D27",
+  "source": "2014 天津",
+  "has_options": true,
+  "solution": "去牌的周期是偶偶奇奇偶偶奇奇…\n① 1、2、3、4…，去偶数，剩1、3、5、7…，即表达式2k+1，50个。\n②去偶数，剩1、5、9、13…，即表达式4k+1，25个。（排除CD）\n③去奇数，剩5、13、21、29…，即表达式8k+5，12个。\n④去奇数，剩13、29、45、61…，即表达式16k+13，6个。（排除B）\n⭐⭐⭐⭐⭐",
+  "db_match": null,
+  "db_score": 0,
+  "review_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/teacher/crops/T227.png"
+ }
+]
