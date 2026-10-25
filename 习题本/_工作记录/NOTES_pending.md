@@ -49,3 +49,8 @@
   - D07-h-v01 ↔ 〔42-5-1〕; D07-h-v02 ↔ day-42 real 2026CQ-65, 〔42-4-1〕, 〔21-4-5〕.
   - D06-h-v08 box data (3+2 / 2+3) = 〔34-11-1〕 → change day 34's data/direction.
 - Teacher figures: SVG redraws in teacher/bank_B6x.json; T255x1 had the teacher's added sector edge (dashed r to the intersection) → removed. Check every teacher figure against the original exam figure before use (teacher crops carry handwritten auxiliary lines).
+
+## New daily volume (2026-10-25): 20 math / 20 logic / 10 综合推理
+- Week 1 math re-cut to 20/day via db/math_harden.json "round1"; the other 175 week-1 items are in db/math_deferred.json (per module) → use them first in each module's next round (M01 d15, M03 d16, M04 d17, M05 d18, M06 d19, M07 d20, M08 d21 per schedule; check db/schedule.json).
+- Logic/zh real-only plan re-made at 20/10 per day (week 1 frozen). 综合推理: only 5 real left after week 1 → from day 8 use program-verified deep variants by sub-type (user approved), real first.
+- Math total target ~1000 (user): 20/day × 42 = 840 + review; focus on method convergence and 手感.

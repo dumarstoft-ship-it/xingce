@@ -11,11 +11,11 @@ def main(out_pdf):
     def cell(d, part, label):
         n = len(plan.get(str(d['day']), {}).get(part, []))
         if not plan: return esc(label)
-        return esc(label) + ('' if n >= (45 if part == 'logic' else 15) else (f'<span class="todo">（现有 {n} 题，待补）</span>' if n else '<span class="todo">（待补）</span>'))
+        return esc(label) + ('' if n >= (20 if part == 'logic' else 10) else (f'<span class="todo">（现有 {n} 题，待补）</span>' if n else '<span class="todo">（待补）</span>'))
     fonts = ''.join(f'<link rel="stylesheet" href="file://{R}/node_modules/@fontsource/{f}/{w}.css">' for f in ('noto-serif-sc', 'noto-sans-sc') for w in (400, 700))
     rows = ''.join(f"<tr><td>第 {d['day']} 天</td><td>{esc(names[d['math']])}</td><td>{cell(d, 'logic', names[d['logic']])}</td><td>{cell(d, 'zh', names[d['zh']].replace('综合推理·', ''))}</td></tr>" for d in sc['schedule'])
-    n_logic = sum(1 for d in plan.values() if len(d.get('logic', [])) >= 45)
-    n_zh = sum(1 for d in plan.values() if len(d.get('zh', [])) >= 15)
+    n_logic = sum(1 for d in plan.values() if len(d.get('logic', [])) >= 20)
+    n_zh = sum(1 for d in plan.values() if len(d.get('zh', [])) >= 10)
     css = CSS + """
     table.sched { width: 100%; border-collapse: collapse; font-size: 9.5pt; }
     table.sched th, table.sched td { border: 1px solid #bbb; padding: 1.2mm 2mm; text-align: left; }
@@ -30,16 +30,17 @@ def main(out_pdf):
 <div class="intro">
 <h2>每天的内容</h2>
 <ul>
-<li><b>数学运算 45 题</b>：当天只练一个模块（不含数字推理），建议用时约 90 分钟。</li>
-<li><b>逻辑判断 45 题</b>：当天只练一个模块（不含图推、定义、类比，广东 2024 年起不考后两者），建议用时约 45 分钟。</li>
-<li><b>综合推理 15 题</b>：排序、匹配、分组、数量比较、真假综合等"组合排列"题，每天主攻一个子类，建议用时约 30 分钟。</li>
+<li><b>数学运算 20 题</b>：当天只练一个模块（不含数字推理），建议用时约 40 分钟，做完精细复盘。</li>
+<li><b>逻辑判断 20 题</b>：当天主练一个模块（不含图推、定义、类比，广东 2024 年起不考后两者），建议用时约 20 分钟。</li>
+<li><b>综合推理 10 题</b>：排序、匹配、分组、数量比较、真假综合等"组合排列"题，每天主攻一个子类，建议用时约 20 分钟。</li>
 </ul>
 <h2>题目来源</h2>
 <ul>
 <li><b>题目页只有题号</b>：不标题型、考法和出处，需要你自己判断。</li>
 <li><b>真题</b>：取自你提供的 2020–2026 年广东、国考副省级、深圳、浙江、江苏、山东、四川、河北、重庆、贵州等卷子，直接截取原卷（原卷题号已去掉，只保留本册题号）。原卷有遮挡、印错或截图不全的题，改为文字录入，并在解析里注明。</li>
 <li><b>数学运算</b>：每道题至少有一个要想清楚的地方（一步转化、一个手法或一个陷阱），设元后一个方程、一步比例就能出的送分题已经去掉。题目有三种：真题；老师笔记精选（你提供的数量关系笔记里的例题，解析用笔记的方法，配图为本册重画，去掉了手写标注）；真题和笔记都覆盖不到的难点，按真题考法写的改编题。改编题不是只换数字，每道都练一个具体的卡点，答案由程序验算，并经过独立盲审。</li>
-<li><b>逻辑判断、综合推理</b>：只用真题，不改编。现有真题够排 {n_logic} 天逻辑判断、{n_zh} 天综合推理；总表里标"待补"的天数，等你补充卷子后再排入。</li>
+<li><b>逻辑判断</b>：只用真题，不改编。现有真题够排 {n_logic} 天；总表里标"待补"的天数，等你补充卷子后再排入。</li>
+<li><b>综合推理</b>：真题优先，现有真题够排 {n_zh} 天；之后用改编题补齐，每道都由程序穷举验证答案唯一，并经过独立盲审。</li>
 <li><b>答案与解析</b>：每天最后先给"答案速查"，再给逐题解析，解析里注明每道题的出处、考法和技巧。真题用原版解析（截图）。没有官方答案的真题（如 2026 年国考、广东、浙江卷），答案和解析为自解，由两人分别独立求解，核对一致后才采用；这类题在解析里都已注明。</li>
 </ul>
 <h2>使用建议</h2>

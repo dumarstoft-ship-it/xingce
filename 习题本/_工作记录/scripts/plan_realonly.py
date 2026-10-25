@@ -1,10 +1,10 @@
-"""Plan the 逻辑判断 / 综合推理 parts from real questions only (no variants): 45 logic + 15 综合推理 per day,
+"""Plan the 逻辑判断 / 综合推理 parts from real questions only (no variants): 20 logic + 10 综合推理 per day,
 module of the day from db/schedule.json. Days are filled in order; when the day's module runs out, the day is
 topped up from related modules. Days already delivered can be frozen (db/realonly_frozen.json) so that newly
 added papers only fill later days. Writes db/realonly_plan.json."""
 import json, os, re, glob, collections
 S = '/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad'
-PER_DAY = {'logic': 45, 'zh': 15}
+PER_DAY = {'logic': 20, 'zh': 10}
 EXCLUDE = {'2020SZ1-40'}                                    # L03 blueprint: official key indefensible
 LATE = {'2021SD-74', '2025GK-111', '2020HB-109', '2020SD-75'}  # disputed keys: keep for late "讲评" days
 TOPUP = {'L01': ['L02', 'L07', 'L05'], 'L02': ['L01', 'L07', 'L03'], 'L03': ['L05', 'L04'], 'L04': ['L06', 'L03'],
@@ -18,7 +18,9 @@ def load_pool():
     fix = json.load(open(S + '/db/answer_fixes.json'))
     items = {}
     for f in glob.glob(S + '/tasks_in/*.json'):
-        for q in json.load(open(f))['real']:
+        t = json.load(open(f))
+        if not isinstance(t, dict): continue  # other lists kept in tasks_in (not module task files)
+        for q in t['real']:
             if q['module'][0] in 'LC':
                 items[q['id']] = {'id': q['id'], 'module': q['module'], 'difficulty': q['difficulty'] or 2, 'kaofa': q.get('kaofa') or ''}
     for l in open(S + '/cls/out_new_batch.jsonl'):
