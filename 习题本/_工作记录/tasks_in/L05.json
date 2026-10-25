@@ -94,17 +94,17 @@
    "difficulty": 1,
    "kaofa": "前提-搭桥(证据→陨石撞击)",
    "technique": "搭桥",
-   "answer_official": null,
+   "answer_official": "A",
    "needs_self_solve": false,
-   "answer_pending_ocr": true,
+   "answer_pending_ocr": false,
    "q_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021GK-112_q.png",
-   "j_crop": null,
+   "j_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021GK-112_j.png",
    "s_crop": null,
    "needs_figure": false,
    "note": null,
    "text": "112.地质学家在澳大利亚中部距地表3公里的地下发现了两处直径超过200公里的神秘自然景观，景观所含有的石英\n砂中有着一簇簇的细线，这些细线大部分是互相平行的直线。地质学家认为，这些景观很可能是巨大陨石撞击\n形成的陨石坑，而石英砂的结构就是造成断裂的证据。\n以下哪项是上述论证的必要前提？\nA.只有经历高速的陨石撞击，地层中石英砂才会显示出含有平行直线的断裂结构\nB.石英砂普遍存在于地球表面，由于坚硬、耐磨、化学性能稳定而很少发生变化\nC.该景观的直径之大，并不同于其他的陨石坑，很可能不是一次形成的\nD.该景观周围的岩石是3亿年到4.2亿年之前形成的，那么撞击也应发生在那一时期",
    "stem_text": null,
-   "jiexi_excerpt": null
+   "jiexi_excerpt": "112、正确答案：A，全站正确率：89%，易错项：B。\n解析\n第一步，确定题型。\n根据提问方式中的“前提”，确定为加强论证，\n第二步，找论点和论据。\n论点：这些景观很可能是巨大陨石撞击形成的陨石坑，而石英砂的结构就是造成断裂的证据\n论据：无景观所含的石英砂中有这一簇簇的细线，这些细线大部分是互相平行的直线，\n第三步，辨析选项。\nA项：建立联系。该项建立了论据平行直线的断裂结构和论点陨石撞击之间的联系，属于前提。\nB项：无关选项。该项讨论的是石英砂的化学性能等问题，与论点景观的形成原因无关，论题不一致，排除。\nC项："
   },
   {
    "id": "2022GD-63",
@@ -512,17 +512,17 @@
    "difficulty": 2,
    "kaofa": "前提-搭桥(埋藏相↔生态气候)",
    "technique": "搭桥",
-   "answer_official": null,
+   "answer_official": "C",
    "needs_self_solve": false,
-   "answer_pending_ocr": true,
+   "answer_pending_ocr": false,
    "q_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022SC1-81_q.png",
-   "j_crop": null,
+   "j_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022SC1-81_j.png",
    "s_crop": null,
    "needs_figure": false,
    "note": null,
    "text": "81. 一些对生态和气候感兴趣的古生物学研究者发现，中国东部与国外相比，虽然化石产出的具体时期有所\n差异，但埋藏于紫红色岩石地层的恐龙骨骼化石的埋藏相具有相似性，这是因为晚白垩世全球古生态及古\n气候是相似的。在中国，埋藏的恐龙骨骼化石种以鸟脚类鸭嘴恐龙与兽脚类恐龙为主，埋藏环境主要为冲\n积扇与河流环境；美洲以鸭嘴龙科为主，埋藏环境主要为平原。要得到上述古生物学研究者的结论，需要\n补充的前提是：\nA 晚白垩世的河流与平原具有不相同的埋藏环境\nB 中国鸟脚类鸭嘴恐龙与美洲的鸭嘴龙科是不同种族\nC 骨酪化石在不同地层的埋藏学特征取决于生态及气候\nD 晚白垩世全球各地的紫红色岩石地层具有相同的埋藏环境",
    "stem_text": null,
-   "jiexi_excerpt": null
+   "jiexi_excerpt": "81、正确答案：C。\n解析\n第一步，确定题型。\n根据提问方式中的“前提”，确定为加强论证\n第二步，找论点和论据\n论点：中国东部与国外相比，虽然化石产出的具体时期有所差异，但埋藏于紫红色岩石地层的恐\n龙骨骼化石的埋藏相具有相似性。\n论据：晚白垩世全球古生态及古气候是相似的。\n第三步，辨析选项。\nA项：无关选项。该项指出晚白垩世的河流与平原具有不相同的埋藏环境，与论点所述恐龙骨骼\n化石的埋藏相具有相似性的原因无关，无法加强。\nB项：无关选项。该项指出中国鸟脚类鸭嘴恐龙与美洲的鸭嘴龙科是不同种族，与论点所述恐龙\n骨骼化石"
   },
   {
    "id": "2022SD-72",

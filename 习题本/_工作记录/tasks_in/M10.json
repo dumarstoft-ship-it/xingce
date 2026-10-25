@@ -91,17 +91,17 @@
    "difficulty": 2,
    "kaofa": "统筹-车辆最少再求大巴最少",
    "technique": "不等式分析",
-   "answer_official": null,
+   "answer_official": "C",
    "needs_self_solve": false,
-   "answer_pending_ocr": true,
+   "answer_pending_ocr": false,
    "q_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021GK-69_q.png",
-   "j_crop": null,
+   "j_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021GK-69_j.png",
    "s_crop": null,
    "needs_figure": false,
    "note": "",
    "text": "69.某村居民整体进行搬迁移民，现安排载客（不含司机）20人/辆的中巴车和30人/辆的大巴车运载所有村民到搬\n迁地实地考察。如安排12辆中巴车，则大巴车需要18辆，且除一辆大巴车载6人以外，其他车全部载满。现本\n着安排车辆数最少的原则派车，问最少要安排多少辆大巴车？\nA.20 B.22 C.24 D.26",
    "stem_text": null,
-   "jiexi_excerpt": null
+   "jiexi_excerpt": "69、正确答案：C，全站正确率：44%，易错项：B。\n解析\n第一步，本题考查基础应用题，用方程法解题\n第二步，根据题目描述，总人数=12×20+17×30+6=756人。\n756\n第三步，安排车辆数最少的原则派车，如果全用大巴车，需要30辆，需要25辆大巴车还余下6人，那么至少\n需要26辆车。如果用24辆大巴车，2辆中巴车可以运走720+40=760人>756人，此时也是总共用26辆车，大巴\n车最少，只需24辆。\n因此，选择C选项。"
   },
   {
    "id": "2021JSA-55",
@@ -414,17 +414,17 @@
    "difficulty": 3,
    "kaofa": "统筹-装车堆放方案最少车辆",
    "technique": "枚举最优组合",
-   "answer_official": null,
+   "answer_official": "B",
    "needs_self_solve": false,
-   "answer_pending_ocr": true,
+   "answer_pending_ocr": false,
    "q_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022SC1-50_q.png",
-   "j_crop": null,
+   "j_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022SC1-50_j.png",
    "s_crop": null,
    "needs_figure": false,
    "note": "按线性约束优化归M10(非抽屉构造)",
    "text": "50. 石雕厂有 48 个石质圆柱要发往外地。这些圆柱的底面直径均为 1.5 米，其中 30个石柱高 0.8 米，\n18 个石柱高 0.6 米。该厂租用的运输车辆除去固定桩之后，可用的空间长 3 米，宽 1.5 米。为保证安\n全，圆柱只能底面朝下堆放，且堆叠高度不得超过 2 米。问一次性运完这些圆柱，至少需要租用几辆运输\n车辆?\nA9 B10 C11 D12",
    "stem_text": null,
-   "jiexi_excerpt": null
+   "jiexi_excerpt": "50、正确答案：B。\n解析\n第一步，本题考查几何问题，属于立体几何类\n第二步，高度不得超过2米，为了最大限度利用空间，应该有1个0.8米高的圆柱和2个0.6米\n高的圆柱堆叠，正好为2米。底面3×1.5，圆柱直径为1.5米，可以放两堆，即每辆车4个小\n圆柱2个大圆柱。这种方法可以放4辆车，共运输16个小圆柱和8个大圆柱。其余2个小圆柱\n和3个大圆柱放在1辆车上：最后剩余的30一8一3=19个大圆柱每车最多放4个，需要19一4=4\n（辆）3，至少需要5辆车。一共需要4+1+5=10辆车。\n因此，选择B选项"
   },
   {
    "id": "2024SZ-53",

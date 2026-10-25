@@ -1,8 +1,8 @@
-# D06-math-1-v13: 综合科 5 人 + 党建科 4 人，每周有放回抽 1 人，3 周中恰 2 周是综合科的概率所在区间
+# D06-math-1-v13: 综合科 6 人 + 党建科 4 人，每周有放回抽 1 人，3 周中恰 2 周是综合科的概率所在区间
 from fractions import Fraction as F
 from itertools import product
-zonghe = set(range(5))
-allc = list(product(range(9), repeat=3))
+zonghe = set(range(6))
+allc = list(product(range(10), repeat=3))
 ans = F(sum(1 for t in allc if sum(x in zonghe for x in t) == 2), len(allc))
 ranges = {'A': (F(0), F(3, 10), 'lt'), 'B': (F(3, 10), F(4, 10), 'in'),
           'C': (F(4, 10), F(5, 10), 'in'), 'D': (F(5, 10), F(1), 'gt')}

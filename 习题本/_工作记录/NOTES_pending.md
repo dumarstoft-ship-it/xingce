@@ -14,3 +14,20 @@
 ## Rendering
 - Option fractions → \dfrac (done). Group titles not shown on question pages (done); kaofa/technique/source shown in 解析.
 - Duplicate 参考用时 guarded (done).
+
+## Answer leaks in question crops (found 2026-10-25 after resume)
+- 2026CQ / 2026GZ printed "【答案】X" under each question → cut via scripts/fix_answer_leaks.py (73 crops re-made; overrides.json has cut_before_re; build_db.apply_overrides handles it).
+- 2026JS marks the correct option with a gray highlight. scripts/fix_js_highlight.py removes most of it, but faint traces remain → when 2026JS questions are scheduled, retype them in db/real_overrides.json (stem + options) instead of using the crop. Original crops backed up in crops/js_backup/.
+- 2026CQ stems contain "****" masks (网友回忆版). Retype with completed stems in db/real_overrides.json when scheduled (done: CQ-61, CQ-62). Scheduled later: CQ-56 (M01 d15), CQ-57 (M01 d39), CQ-63 (M07 d20), CQ-65/66 (M08 d42).
+- Original question numbers are whited out in crops/real2_nonum/ (scripts/mask_qnum.py); render uses those when present.
+
+## User decision 2026-10-25: NO variants for 逻辑判断 and 综合推理
+- "逻辑判断和综合推理不要自编了" → logic and 综合推理 use real questions only. Math keeps verified variants.
+- Stopped: logic/C blueprint agents (L01 L02 L05 L06 L07 C), D02 logic generation, D03 logic review. gen/D03_logic_*.json (19 variants) are NOT to be used (moved to gen_unused/).
+- Pool now: 逻辑 435, 综合推理 75 (54 papers; ~8 logic and ~1.4 综合 per paper after dedupe).
+- Asked the user to pick daily volume / whether to upload more papers (recommendation: 逻辑 20/day + 综合推理 3/day; needs ~50 more papers for logic, ~15 江苏/深圳 papers for 综合).
+
+## From M01 blueprint (2026-10-25)
+- real_overrides added: 2021GK-67 (crop has C/D swapped vs official key → typed stem in original order), 2026CQ-56/57 (masked stems + self-written 解析), 2020HB-75 (fraction cut in crop → typed), 2021GK-64 / 2022ZJA-60 (extra notes).
+- j crops to re-crop (top half-line cut, bottom shows next question's answer): 2022ZJA-60, 2022ZJA-63 (day 15), 2024ZJA-64 (day 29); 2023GK-74 j crop right side cut (day 29); 2021ZJA-61 q crop fraction top clipped (day 15).
+- 2026HB-71 duplicates 2026CQ-56 (keep one).

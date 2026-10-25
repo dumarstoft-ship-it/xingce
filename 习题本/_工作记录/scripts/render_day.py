@@ -78,7 +78,7 @@ def opt_cols(opts):
 
 def render_q(n, it):
     tag = ''
-    if it['type'] == 'real':
+    if it['type'] == 'real' and not it.get('stem'):
         body = img_tag(it['q_img'])
     else:
         body = f'<div class="stem">{rich(it["stem"])}</div>'

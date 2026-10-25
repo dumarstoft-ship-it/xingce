@@ -1,0 +1,17 @@
+你是行测命题专家。请为广东省考 42 天习题本第 2 天的逻辑判断（模块「L03」）出改编题。
+
+必读：
+1. /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/briefs/common.md
+2. /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/briefs/generate.md（出题要求、验算、输出格式——务必遵守）
+3. 考法地图：/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/blueprints/L03.md 和 /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/blueprints/L03.json（找到 day=2 的配置）
+4. 种子真题截图在 /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/ 下（<id>_q.png 原题，<id>_j.png 官方解析，<id>_s.png 共用材料），真题清单 /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/tasks_in/L03.json
+
+你负责第 2 天的这些组（标题与 json 里一致）：
+  - 考法一：概念搭桥（论据新词↔论点新词）
+  - 考法三：因果机理（说明 X 如何导致 Y）
+  - 考法四：观点理由（判断·评价·预测型论点）
+  - 考法五：新证据（实例·数据·物证）
+按 json 里每组 variants 的数量和 idea 出题，共 14 道。vid 用 "D02-logic-1-v01" 起连续编号；group 字段填所属组标题（原样）。本批组里需要你写解析的自解真题：2026GK-112（写到 /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/gen/real_D02-logic-1.json）。
+验算脚本放在 /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/verify/ 下（文件名用 vid），verify 字段写绝对路径。
+输出文件：/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/gen/D02_logic_1.json
+完成后运行 python3 /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/scripts/check_gen.py "D02_logic_1.json" 自检（它会重跑所有验算脚本），修到没有 PROBLEM 为止，然后按 generate.md 的要求简要汇报。

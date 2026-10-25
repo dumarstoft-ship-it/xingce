@@ -414,17 +414,17 @@
    "difficulty": 3,
    "kaofa": "整除特性-百分比定人数排序",
    "technique": "整除特性+枚举",
-   "answer_official": null,
+   "answer_official": "A",
    "needs_self_solve": false,
-   "answer_pending_ocr": true,
+   "answer_pending_ocr": false,
    "q_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021GK-73_q.png",
-   "j_crop": null,
+   "j_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021GK-73_j.png",
    "s_crop": null,
    "needs_figure": false,
    "note": "",
    "text": "73.某地调派96人分赴车站、机场、超市和学校四个人流密集的区域进行卫生安全检查，其中公共卫生专业人员有\n62人。已知派往机场的人员是四个区域中最多的，派往车站和超市的人员中，专业人员分别占64%和65%，派\n往学校的人员中，非专业人员比专业人员少30%，问派往机场的人员中，专业人员的占比在四个区域中排名\nA.第一 B.第二 C.第三 D.第四",
    "stem_text": null,
-   "jiexi_excerpt": null
+   "jiexi_excerpt": "73、正确答案：A，全站正确率：7%，易错项：C。\n解析\n第一步，本题考查基础应用题，用数字特性解题、\n64\n第二步，车站的专业人员与去往车站的总人数之比为64%，即100，化简为25，根据倍数特性可知车站的总人\n65 13\n员是25的倍数；同理超市的专业人员与去往车站的总人数之比为65%，即100，化简为20，根据倍数特性可知\n超市的总人员是20的倍数。学校的非专业人员比专业人员少30%，那么专业人员如果是100%则总人员为\n100%+70%=170%，占比为17，总人员是17的倍数。\n第三步，由于总数96人而机"
   },
   {
    "id": "2021JSA-61",

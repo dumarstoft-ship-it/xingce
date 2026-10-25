@@ -1,0 +1,160 @@
+赛道解 [{'罗': 5, '方': 1, '许': 6, '吕': 4, '田': 2, '石': 3}, {'罗': 6, '方': 1, '许': 5, '吕': 4, '田': 3, '石': 2}, {'罗': 6, '方': 2, '许': 1, '吕': 5, '田': 3, '石': 4}]
+2020JSA-99: {'A': True, 'B': False, 'C': False, 'D': False} -> 程序答案 ['A'] | 官方 A OK
+2020JSA-100: {'A': False, 'B': False, 'C': True, 'D': False} -> 程序答案 ['C'] | 官方 C OK
+2020SC1206-85: {'A': True, 'B': False, 'C': False, 'D': False} -> 程序答案 ['A'] | 官方 A OK
+2025GD-59: {'A': False, 'B': False, 'C': False, 'D': True} -> 程序答案 ['D'] | 官方 D OK
+数独解个数 1
+①-④ [('华', '嵩', '恒', '泰')]
+2025JSA-96: {'A': False, 'B': False, 'C': True, 'D': False} -> 程序答案 ['C'] | 官方 C OK
+2025SC-85[左=i+1]: {'A': True, 'B': False, 'C': False, 'D': False} -> 程序答案 ['A'] | 官方 A OK
+2025SC-85[左=i-1]: {'A': True, 'B': False, 'C': False, 'D': False} -> 程序答案 ['A'] | 官方 A OK
+排班解个数 6
+2021SC2-85: {'A': True, 'B': False, 'C': False, 'D': False} -> 程序答案 ['A'] | 官方 A OK
+2021GK-114(待OCR参考): {'A': False, 'B': False, 'C': True, 'D': False} -> 程序答案 ['C'] | 官方 None OK
+2023SZ-38 差值=n 解个数 6 ['滑拖篮牛拖篮凉', '拖篮牛滑篮凉拖', '拖滑篮牛拖篮凉', '拖牛篮滑拖篮凉', '拖牛篮拖滑篮凉', '拖拖篮牛滑篮凉']
+2023SZ-38(待OCR参考,差值=n): {'A': False, 'B': False, 'C': False, 'D': False} -> 程序答案 [] | 官方 None OK
+2023SZ-38 中间隔n天 解个数 2 ['拖篮牛滑拖篮凉', '拖篮牛拖滑篮凉']
+2023SZ-38(待OCR参考,中间隔n天): {'A': False, 'B': True, 'C': False, 'D': False} -> 程序答案 ['B'] | 官方 None OK
+2023SZ-39(待OCR参考): {'A': False, 'B': False, 'C': False, 'D': True} -> 程序答案 ['D'] | 官方 None OK
+2020JSA-94: {'A': False, 'B': True, 'C': False, 'D': False} -> 程序答案 ['B'] | 官方 B OK
+2020JSA-97: {'A': False, 'B': False, 'C': False, 'D': True} -> 程序答案 ['D'] | 官方 D OK
+2021ZJA-106: {'A': False, 'B': True, 'C': False, 'D': False} -> 程序答案 ['B'] | 官方 B OK
+2022JSA-103: {'A': False, 'B': False, 'C': True, 'D': False} -> 程序答案 ['C'] | 官方 C OK
+2022SC2-84: {'A': False, 'B': False, 'C': True, 'D': False} -> 程序答案 ['C'] | 官方 C OK
+2023JSA-93: {'A': False, 'B': False, 'C': False, 'D': True} -> 程序答案 ['D'] | 官方 D OK
+2023ZJA-101: {'A': False, 'B': False, 'C': False, 'D': True} -> 程序答案 ['D'] | 官方 D OK
+2024GK-109: {'A': False, 'B': False, 'C': True, 'D': False} -> 程序答案 ['C'] | 官方 C OK
+2025JSA-94: {'A': False, 'B': False, 'C': False, 'D': True} -> 程序答案 ['D'] | 官方 D OK
+2025ZJA-102: {'A': True, 'B': False, 'C': False, 'D': False} -> 程序答案 ['A'] | 官方 A OK
+2020SZ1-33 解个数 1
+2020SZ1-33: {'A': False, 'B': False, 'C': True, 'D': False} -> 程序答案 ['C'] | 官方 C OK
+2024SZ-40 解 [{'簪': '铜', '钗': '金', '钿': '玉', '篦': '银'}]
+2024SZ-40: {'A': False, 'B': False, 'C': True, 'D': False} -> 程序答案 ['C'] | 官方 C OK
+2024SZ-43 候选 [(15, 12), (30, 12), (30, 16)] [(30, 16)] [(30, 16)]
+2024SZ-43: {'A': False, 'B': False, 'C': True, 'D': False} -> 程序答案 ['C'] | 官方 C OK
+2022JSA-97: {'A': False, 'B': False, 'C': True, 'D': False} -> 程序答案 ['C'] | 官方 C OK
+2022SC1-84(待OCR参考): {'A': True, 'B': False, 'C': False, 'D': False} -> 程序答案 ['A'] | 官方 None OK
+2023SZ-43(待OCR参考): {'A': False, 'B': False, 'C': False, 'D': True} -> 程序答案 ['D'] | 官方 None OK
+2024GD-58: {'A': True, 'B': False, 'C': False, 'D': False} -> 程序答案 ['A'] | 官方 A OK
+2024HB-105: {'A': True, 'B': False, 'C': False, 'D': False} -> 程序答案 ['A'] | 官方 A OK
+2024SD-100: {'A': False, 'B': False, 'C': False, 'D': True} -> 程序答案 ['D'] | 官方 D OK
+2024ZJA-102: {'A': False, 'B': False, 'C': False, 'D': True} -> 程序答案 ['D'] | 官方 D OK
+2025GD-53: {'A': False, 'B': True, 'C': False, 'D': False} -> 程序答案 ['B'] | 官方 B OK
+2025HB-109: {'A': False, 'B': False, 'C': False, 'D': True} -> 程序答案 ['D'] | 官方 D OK
+2023GK-115: {'A': False, 'B': False, 'C': False, 'D': True} -> 程序答案 ['D'] | 官方 D OK
+2025SC-84 解 [{'甲': 'K', '乙': 'L', '丙': 'K', '丁': 'L', '戊': 'J', '己': 'J', '庚': 'J'}, {'甲': 'K', '乙': 'L', '丙': 'K', '丁': 'L', '戊': 'J', '己': 'J', '庚': 'K'}, {'甲': 'K', '乙': 'L', '丙': 'K', '丁': 'L', '戊': 'J', '己': 'J', '庚': 'L'}] 留学集合 [['丁', '乙'], ['丁', '乙'], ['丁', '乙', '庚']]
+2025SC-84: {'A': False, 'B': False, 'C': True, 'D': False} -> 程序答案 ['C'] | 官方 C OK
+2026CQ-100: {'A': True, 'B': False, 'C': False, 'D': False} -> 程序答案 ['A'] | 官方 A OK
+2024GD-55: {'A': False, 'B': False, 'C': True, 'D': False} -> 程序答案 ['C'] | 官方 C OK
+2023ZJA-103: {'A': True, 'B': False, 'C': False, 'D': False} -> 程序答案 ['A'] | 官方 A OK
+2025JSA-99: {'A': False, 'B': True, 'C': False, 'D': False} -> 程序答案 ['B'] | 官方 B OK
+2020SZ1-38 共同项 [{6}, {6}, {6}, {6}]
+2020SZ1-38: {'A': False, 'B': False, 'C': False, 'D': True} -> 程序答案 ['D'] | 官方 D OK
+2020SZS-73 可能的说谎人数 [2, 3, 4]
+2020SZS-73: {'A': False, 'B': False, 'C': True, 'D': True} -> 程序答案 ['C', 'D'] | 官方 D !!! MISMATCH
+2025ZJA-104 局况数 1320
+2025ZJA-104: {'A': False, 'B': False, 'C': False, 'D': True} -> 程序答案 ['D'] | 官方 D OK
+2024JSA-97: {'A': False, 'B': False, 'C': True, 'D': False} -> 程序答案 ['C'] | 官方 C OK
+2024JSA-98: {'A': False, 'B': False, 'C': False, 'D': True} -> 程序答案 ['D'] | 官方 D OK
+2025JSA-95: {'A': False, 'B': False, 'C': True, 'D': False} -> 程序答案 ['C'] | 官方 C OK
+2020JSA-95 解 [('苏', '皖', '皖'), ('皖', '浙', '浙')]
+2020JSA-95: {'A': False, 'B': False, 'C': False, 'D': True} -> 程序答案 ['D'] | 官方 D OK
+2020SZS-78: {'A': False, 'B': False, 'C': False, 'D': True} -> 程序答案 ['D'] | 官方 D OK
+2021JSA-94: {'A': False, 'B': False, 'C': False, 'D': True} -> 程序答案 ['D'] | 官方 D OK
+2021JSA-99: {'A': True, 'B': False, 'C': False, 'D': False} -> 程序答案 ['A'] | 官方 A OK
+2021JSA-100: {'A': False, 'B': True, 'C': False, 'D': False} -> 程序答案 ['B'] | 官方 B OK
+2021SD-71(待OCR参考): {'A': False, 'B': False, 'C': False, 'D': True} -> 程序答案 ['D'] | 官方 None OK
+2022SC1-85 解 [(2, 2, 2, 4)]
+2022SC1-85(待OCR参考): {'A': False, 'B': False, 'C': True, 'D': False} -> 程序答案 ['C'] | 官方 None OK
+2023HB-109: {'A': False, 'B': True, 'C': False, 'D': False} -> 程序答案 ['B'] | 官方 B OK
+2023JSA-97: {'A': False, 'B': True, 'C': False, 'D': False} -> 程序答案 ['B'] | 官方 B OK
+2023JSA-98: {'A': False, 'B': False, 'C': True, 'D': False} -> 程序答案 ['C'] | 官方 C OK
+2023JSA-103: {'A': False, 'B': False, 'C': False, 'D': True} -> 程序答案 ['D'] | 官方 D OK
+2023JSA-104: {'A': True, 'B': False, 'C': False, 'D': False} -> 程序答案 ['A'] | 官方 A OK
+2023JSA-105: {'A': False, 'B': False, 'C': True, 'D': False} -> 程序答案 ['C'] | 官方 C OK
+2024JSA-104: {'A': False, 'B': False, 'C': True, 'D': False} -> 程序答案 ['C'] | 官方 C OK
+2024JSA-105: {'A': True, 'B': False, 'C': False, 'D': False} -> 程序答案 ['A'] | 官方 A OK
+2024SC-85 解 [('钱', '男', '其他', '采编'), ('其他', '女', '馆员', '其他'), ('李', '男', '副研究馆员', '咨询')]
+2024SC-85: {'A': False, 'B': False, 'C': False, 'D': False} -> 程序答案 [] | 官方 A !!! MISMATCH
+2024SZ-44 解 [['乙', '戊', '甲']]
+2024SZ-44: {'A': True, 'B': False, 'C': False, 'D': False} -> 程序答案 ['A'] | 官方 A OK
+2025ZJA-103: {'A': True, 'B': False, 'C': False, 'D': False} -> 程序答案 ['A'] | 官方 A OK
+2020SZ1-34: {'A': True, 'B': False, 'C': False, 'D': False} -> 程序答案 ['A'] | 官方 A OK
+2025GK-110: {'A': True, 'B': False, 'C': False, 'D': False} -> 程序答案 ['A'] | 官方 A OK
+2022JSA-98/99 解 [{'甲': 1, '乙': 2, '丙': 3, '丁': 4}, {'甲': 2, '乙': 1, '丙': 4, '丁': 3}, {'甲': 3, '乙': 4, '丙': 1, '丁': 2}]
+2022JSA-98(题库外): {'A': False, 'B': False, 'C': True, 'D': False} -> 程序答案 ['C'] | 官方 C OK
+2022JSA-99(题库外): {'A': False, 'B': True, 'C': False, 'D': False} -> 程序答案 ['B'] | 官方 B OK
+2022JSA-104(题库外): {'A': False, 'B': False, 'C': False, 'D': True} -> 程序答案 ['D'] | 官方 D OK
+2022JSA-105(题库外): {'A': False, 'B': False, 'C': True, 'D': False} -> 程序答案 ['C'] | 官方 C OK
+
+==== 汇总 ====
+('2020JSA-99', ['A'], 'A', 'OK')
+('2020JSA-100', ['C'], 'C', 'OK')
+('2020SC1206-85', ['A'], 'A', 'OK')
+('2025GD-59', ['D'], 'D', 'OK')
+('2025JSA-96', ['C'], 'C', 'OK')
+('2025SC-85[左=i+1]', ['A'], 'A', 'OK')
+('2025SC-85[左=i-1]', ['A'], 'A', 'OK')
+('2021SC2-85', ['A'], 'A', 'OK')
+('2021GK-114(待OCR参考)', ['C'], None, 'OK')
+('2023SZ-38(待OCR参考,差值=n)', [], None, 'OK')
+('2023SZ-38(待OCR参考,中间隔n天)', ['B'], None, 'OK')
+('2023SZ-39(待OCR参考)', ['D'], None, 'OK')
+('2020JSA-94', ['B'], 'B', 'OK')
+('2020JSA-97', ['D'], 'D', 'OK')
+('2021ZJA-106', ['B'], 'B', 'OK')
+('2022JSA-103', ['C'], 'C', 'OK')
+('2022SC2-84', ['C'], 'C', 'OK')
+('2023JSA-93', ['D'], 'D', 'OK')
+('2023ZJA-101', ['D'], 'D', 'OK')
+('2024GK-109', ['C'], 'C', 'OK')
+('2025JSA-94', ['D'], 'D', 'OK')
+('2025ZJA-102', ['A'], 'A', 'OK')
+('2020SZ1-33', ['C'], 'C', 'OK')
+('2024SZ-40', ['C'], 'C', 'OK')
+('2024SZ-43', ['C'], 'C', 'OK')
+('2022JSA-97', ['C'], 'C', 'OK')
+('2022SC1-84(待OCR参考)', ['A'], None, 'OK')
+('2023SZ-43(待OCR参考)', ['D'], None, 'OK')
+('2024GD-58', ['A'], 'A', 'OK')
+('2024HB-105', ['A'], 'A', 'OK')
+('2024SD-100', ['D'], 'D', 'OK')
+('2024ZJA-102', ['D'], 'D', 'OK')
+('2025GD-53', ['B'], 'B', 'OK')
+('2025HB-109', ['D'], 'D', 'OK')
+('2023GK-115', ['D'], 'D', 'OK')
+('2025SC-84', ['C'], 'C', 'OK')
+('2026CQ-100', ['A'], 'A', 'OK')
+('2024GD-55', ['C'], 'C', 'OK')
+('2023ZJA-103', ['A'], 'A', 'OK')
+('2025JSA-99', ['B'], 'B', 'OK')
+('2020SZ1-38', ['D'], 'D', 'OK')
+('2020SZS-73', ['C', 'D'], 'D', '!!! MISMATCH')
+('2025ZJA-104', ['D'], 'D', 'OK')
+('2024JSA-97', ['C'], 'C', 'OK')
+('2024JSA-98', ['D'], 'D', 'OK')
+('2025JSA-95', ['C'], 'C', 'OK')
+('2020JSA-95', ['D'], 'D', 'OK')
+('2020SZS-78', ['D'], 'D', 'OK')
+('2021JSA-94', ['D'], 'D', 'OK')
+('2021JSA-99', ['A'], 'A', 'OK')
+('2021JSA-100', ['B'], 'B', 'OK')
+('2021SD-71(待OCR参考)', ['D'], None, 'OK')
+('2022SC1-85(待OCR参考)', ['C'], None, 'OK')
+('2023HB-109', ['B'], 'B', 'OK')
+('2023JSA-97', ['B'], 'B', 'OK')
+('2023JSA-98', ['C'], 'C', 'OK')
+('2023JSA-103', ['D'], 'D', 'OK')
+('2023JSA-104', ['A'], 'A', 'OK')
+('2023JSA-105', ['C'], 'C', 'OK')
+('2024JSA-104', ['C'], 'C', 'OK')
+('2024JSA-105', ['A'], 'A', 'OK')
+('2024SC-85', [], 'A', '!!! MISMATCH')
+('2024SZ-44', ['A'], 'A', 'OK')
+('2025ZJA-103', ['A'], 'A', 'OK')
+('2020SZ1-34', ['A'], 'A', 'OK')
+('2025GK-110', ['A'], 'A', 'OK')
+('2022JSA-98(题库外)', ['C'], 'C', 'OK')
+('2022JSA-99(题库外)', ['B'], 'B', 'OK')
+('2022JSA-104(题库外)', ['D'], 'D', 'OK')
+('2022JSA-105(题库外)', ['C'], 'C', 'OK')

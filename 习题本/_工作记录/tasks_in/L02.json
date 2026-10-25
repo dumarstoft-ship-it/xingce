@@ -377,17 +377,17 @@
    "difficulty": 2,
    "kaofa": "真假-找矛盾+至多一假",
    "technique": "找矛盾",
-   "answer_official": null,
+   "answer_official": "B",
    "needs_self_solve": false,
-   "answer_pending_ocr": true,
+   "answer_pending_ocr": false,
    "q_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021SD-66_q.png",
-   "j_crop": null,
+   "j_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021SD-66_j.png",
    "s_crop": null,
    "needs_figure": false,
    "note": "名次情境但核心是矛盾",
    "text": "66、运动会长跑成绩公布后，小张说：“我的排名在前五名，小夏的名次不好，小王是最后过终点的。”小夏说：\n“我的长跑成绩一直都在这个水平，我紧跟着小王的后面跑过终点。”小王说：“小张和小夏的成绩都比我好。”\n三个人中最多一个人说假话。据此，可以推出：\nA、小张说了假话 B、小夏说了假话 C、小王说了假话 D、三人都没说假话",
    "stem_text": null,
-   "jiexi_excerpt": null
+   "jiexi_excerpt": "66、正确案：B，全站正确率：82%，易错项：C。\n解析\n第一步，确定题型。\n题干有若干论断和真假限定，确定为真假推理。\n第二步，找关系。\n小张说：“小王是最后过终点的”，即小夏名次在小王之前；\n小夏说：“我是紧跟小王的后面跑过终点”，即小夏名次在小王之后；\n小王说：“小张和小夏的成绩都比我好”，即小夏名次在小王之前。\n第三步，采用假设法解题。\n假设没有人说假话，则三人的话都为真，但小张小王的话与小夏的话不一致，假设错误；\n假设小张说了假话，则小王与小夏的话为真，但两人的话不一致，假设错误；\n假设小王说了假话，则小"
   },
   {
    "id": "2022GD-61",

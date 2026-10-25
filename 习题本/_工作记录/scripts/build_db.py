@@ -156,6 +156,18 @@ def apply_overrides(allq):
     for qid, o in ov.items():
         r = by.get(qid)
         if not r: continue
+        if 'cut_before_re' in o:  # inline answer lines printed under the question (2026CQ / 2026GZ)
+            pat = re.compile(o['cut_before_re'])
+            doc = load(r['qfile'])
+            pages = {pg['page']: pg for pg in doc['pages']}
+            for pk in sorted(r['regions'], key=int):
+                t, b = r['regions'][pk]
+                hit = [L for L in pages[int(pk)]['lines'] if pat.search(L['text']) and t <= L['top'] <= b]
+                if hit:
+                    r['regions'][pk] = [t, round(hit[0]['top'] - 0.5, 1)]
+                    for later in [k for k in r['regions'] if int(k) > int(pk)]: del r['regions'][later]
+                    r['text'] = pat.split(r['text'])[0].rstrip()
+                    break
         if 'cut_before' in o:
             doc = load(r['qfile'])
             pages = {pg['page']: pg for pg in doc['pages']}

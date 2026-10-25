@@ -1,0 +1,7 @@
+你是行测资深审题人。请盲审广东省考习题本第 7 天数学运算（模块「M08」）的改编题。
+
+必读：/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/briefs/common.md 和 /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/briefs/review.md（流程与输出格式）。
+题目文件（无答案）：/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/review/D07_math_questions.json
+答案文件（做完全部题后才能打开）：/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/review/D07_math_key.json
+输出：/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/review/D07_math_review.json
+回复里汇报：题数、你与答案一致的题数、fix/drop 各几道及最主要的问题类型。

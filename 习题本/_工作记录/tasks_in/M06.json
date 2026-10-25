@@ -16,17 +16,17 @@
    "difficulty": 1,
    "kaofa": "排列组合-分步组合计数",
    "technique": "分步相乘",
-   "answer_official": null,
+   "answer_official": "B",
    "needs_self_solve": false,
-   "answer_pending_ocr": true,
+   "answer_pending_ocr": false,
    "q_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021GK-61_q.png",
-   "j_crop": null,
+   "j_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021GK-61_j.png",
    "s_crop": null,
    "needs_figure": false,
    "note": "",
    "text": "61.某商场开展“助农销售”活动，凡购买某种农产品满300元者可获得一个礼盒，其中装有6种干货中的随机3种\n各1小袋，以及1袋小米或红豆。问内容不完全相同的礼盒共有多少种可能？\nA.50 B.45 C.40 D.30",
    "stem_text": null,
-   "jiexi_excerpt": null
+   "jiexi_excerpt": "61、正确答案：B，全站正确率：56%，易错项：C。\n解析\n第一步，本题考查排列组合问题，\n种，其次从1袋小米或者红豆中选择一\n因此，选择B选项。"
   },
   {
    "id": "2022GD-34",
@@ -358,17 +358,17 @@
    "difficulty": 2,
    "kaofa": "排列组合-相同元素选不同方案",
    "technique": "组合数",
-   "answer_official": null,
+   "answer_official": "B",
    "needs_self_solve": false,
-   "answer_pending_ocr": true,
+   "answer_pending_ocr": false,
    "q_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021SD-45_q.png",
-   "j_crop": null,
+   "j_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021SD-45_j.png",
    "s_crop": null,
    "needs_figure": false,
    "note": "",
    "text": "45、将5个相同的圆锥体零件表面涂上红、黄、蓝三种颜色。要求同一个零件的底面只能用一种颜色，同一个零\n件的斜面也只能用一种颜色，且5个零件的颜色彼此不完全相同，问总共有多少种不同的涂色方式？\nA、84 B、126 C、172 D、180",
    "stem_text": null,
-   "jiexi_excerpt": null
+   "jiexi_excerpt": "45、正确案：B，全站正确率：52%，易错项：C。\n第一步，本题考查排列组合问题。\n第二步，每个圆锥体有底面、斜面（即侧面展开面）两个面需要涂色，每个面都可以在3种颜色里任选一种，则\n每个圆锥体有\n底面一个颜色但斜面不同），那么即在9种涂色方式中选择5种作为零件涂色方式即可，共有C9=126种。\n因此，选择B选项。"
   },
   {
    "id": "2021ZJA-73",

@@ -223,17 +223,17 @@
    "difficulty": 2,
    "kaofa": "浓度-字母型溶质守恒",
    "technique": "赋值法",
-   "answer_official": null,
+   "answer_official": "B",
    "needs_self_solve": false,
-   "answer_pending_ocr": true,
+   "answer_pending_ocr": false,
    "q_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021SD-40_q.png",
-   "j_crop": null,
+   "j_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021SD-40_j.png",
    "s_crop": null,
    "needs_figure": false,
    "note": "选项公式缺失",
    "text": "40、X千克甲盐水和Y千克乙盐水中的含盐量相同。将X千克乙盐水与X千克甲盐水混合，并蒸发掉X千克水之\n后，得到的溶液浓度是乙盐水的Z倍。问乙盐水的浓度是甲盐水的多少倍？\nA、 B、 C、 D、",
    "stem_text": null,
-   "jiexi_excerpt": null
+   "jiexi_excerpt": "40、正确案：B，全站正确率：49%，易错项：C。\n解析\n第一步，本题考查溶液问题。\n第二步，设甲盐水浓度为Ⅲ，乙盐水的浓度为n。浓度三溶质/溶液，根据题意“将X干克乙盐水与X干克甲盐水\nnxX+mxX\nZn\n混合，并蒸发掉X干克水之后，得到的溶液浓度是乙盐水的Z倍”，可得 X-X+X ，化简得n+\nm=Zn,解得 Z-1，故乙盐水的浓度是甲盐水的Z-1倍。\n因此，选择B选项。"
   },
   {
    "id": "2022SC2-41",
@@ -280,17 +280,17 @@
    "difficulty": 2,
    "kaofa": "混合配比-单价涨跌求配比",
    "technique": "十字交叉/方程",
-   "answer_official": null,
+   "answer_official": "C",
    "needs_self_solve": false,
-   "answer_pending_ocr": true,
+   "answer_pending_ocr": false,
    "q_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023SZ-55_q.png",
-   "j_crop": null,
+   "j_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023SZ-55_j.png",
    "s_crop": null,
    "needs_figure": false,
    "note": "成本情境，按加权平均归M12；无答案/解析，难度为估计",
    "text": "55\n有甲、乙两种咖啡豆，按照质量比a：b相混合制成一种拼配豆，已知甲咖啡豆每公斤60元，乙咖啡\n豆每公斤80元，现因产量变化，甲咖啡豆单价上涨15%，乙咖啡豆单价下降15%，以致该拼配咖啡豆的成\n本上调了5%，则a：b为（ ）。\nA、1：1\nB、5：3\nC、8：3\nD、2：1",
    "stem_text": null,
-   "jiexi_excerpt": null
+   "jiexi_excerpt": "55\n总成本 60xa+80xb\n方法一：根据公式：每公斤成本： 可得原拼配豆每公斤的成本： 元，产量变\n重量 a+b\n60×(1+15%)×a+80×(1-15%)×b 69a+68b\n化后拼配豆每公斤的成本： 元。根据“该拼配咖啡豆的\nq+D q+D\n60×a+80×b 69a+68b\n成本上调了5%”可列式： ×(1+5%) ，解得a：b=8：3。\na+b a+b\n方法二：由于甲咖啡豆单价上涨15%，乙咖啡豆单价下降15%，拼配咖啡豆成本上调5%，根据线段法：\n量和距离成反比，可知甲咖啡豆总成本：乙咖啡豆总成"
   },
   {
    "id": "2024SC-51",

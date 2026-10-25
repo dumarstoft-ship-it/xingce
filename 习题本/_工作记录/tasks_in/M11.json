@@ -128,17 +128,17 @@
    "difficulty": 2,
    "kaofa": "容斥-三集合韦恩分区列方程",
    "technique": "画图分区",
-   "answer_official": null,
+   "answer_official": "B",
    "needs_self_solve": false,
-   "answer_pending_ocr": true,
+   "answer_pending_ocr": false,
    "q_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023SZ-57_q.png",
-   "j_crop": null,
+   "j_crop": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023SZ-57_j.png",
    "s_crop": null,
    "needs_figure": false,
    "note": "无答案/解析，难度为估计",
    "text": "57\n小明对甲、乙、丙三种手机软件的安装情况进行街头调查。随机选取的一批调查对象中，手机安装了\n甲、乙、丙三种软件的人数分别是40，36，35，只安装了其中一种软件的人数分别占其中的25%、25%、20%，\n同时安装了甲、乙两种软件而未安装丙软件的有4人，同时安装了甲、丙两种软件而未安装乙软件的人数\n比同时安装乙、丙两种软件而未安装甲软件的人数多3人，有（ ）人同时安装了甲、乙、丙三种\n软件。\nA、15\nB、21\nC、27\nD、33",
    "stem_text": null,
-   "jiexi_excerpt": null
+   "jiexi_excerpt": "57\n如图所示，根据题意，只安装甲软件的人数为40×25%=10人，只安装乙软件的人数为36×25%=9人，\n只安装丙软件的人数为35×20%=7人。设有x人同时安装了甲、乙、丙三种软件，则同时安装了甲、丙两\n种软件而未安装乙软件的人数为40-10-4-x=（26-x）人，同时安装乙、丙两种软件而未安装甲软件的人数\n为26-x-3=（23-x）人。安装丙软件的人数为（26-x）+x+（23-x）+7=35，解得：x=21，即有21人同时安\n装了甲、乙、丙三种软件。\n甲40 乙36\n10\n26-x\n23-x\n丙35\n"
   },
   {
    "id": "2023ZJA-63",
