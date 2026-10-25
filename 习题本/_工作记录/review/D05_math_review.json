@@ -1,0 +1,222 @@
+{
+ "items": [
+  {
+   "vid": "D05-math-1-v01",
+   "my_answer": "D",
+   "key": "D",
+   "verdict": "fix",
+   "problem": "答案 D 无误、唯一。问题：同组真题 2023GD-39 就是“2 荤 2 素、6 荤 4 素→90 种”，本题沿用完全相同的数据（荤比素多 2 种、共 90 种），只是把已知和所求互换。学生刚做完真题就能直接回忆出 6 和 4，“由方案数反求种类”的训练落空。建议换数：保留“荤菜比素菜多 2 种”，改成“共可搭配出 210 种”，选项 5/6/7/8，答案 7（$C_7^2\\times C_5^2=21\\times10=210$；荤 6 种只有 90 种），素菜 5 种（A 项）仍可作“问荤答素”的干扰。另一方案：荤比素多 1 种、共 60 种，选项 4/5/6/7，答案 5（$C_5^2\\times C_4^2=10\\times6$）。两种方案都已验算唯一。解析里的数字和易错项相应改写，验算脚本只需改 OPTIONS 和 TARGET。"
+  },
+  {
+   "vid": "D05-math-1-v02",
+   "my_answer": "B",
+   "key": "B",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D05-math-1-v03",
+   "my_answer": "C",
+   "key": "C",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D05-math-1-v04",
+   "my_answer": "C",
+   "key": "C",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D05-math-1-v05",
+   "my_answer": "B",
+   "key": "B",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D05-math-1-v06",
+   "my_answer": "C",
+   "key": "C",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D05-math-1-v07",
+   "my_answer": "A",
+   "key": "A",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D05-math-1-v08",
+   "my_answer": "A",
+   "key": "A",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D05-math-1-v09",
+   "my_answer": "C",
+   "key": "C",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D05-math-1-v10",
+   "my_answer": "D",
+   "key": "D",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D05-math-1-v11",
+   "my_answer": "B",
+   "key": "B",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D05-math-1-v12",
+   "my_answer": "C",
+   "key": "C",
+   "verdict": "fix",
+   "problem": "答案 C（16）无误，脚本也是按“两名副职左右可以互换”计数的。问题在措辞：题干“2 名副职分别坐在紧挨他左右两侧的座位上”没写明二人能否互换。现实座次礼仪里副职的左右通常按位次固定，按这种理解得 8，而 8 恰好是 A 项，认真的考生反而会犹豫。建议改为“2 名副职坐在紧挨他左右两侧的两个座位上（二人谁左谁右不限）”。解析已写了“副职可以左右互换”这一易错点，不用改。"
+  },
+  {
+   "vid": "D05-math-1-v13",
+   "my_answer": "D",
+   "key": "D",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D05-math-1-v14",
+   "my_answer": "A",
+   "key": "A",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D05-math-1-v15",
+   "my_answer": "D",
+   "key": "D",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D05-math-1-v16",
+   "my_answer": "B",
+   "key": "B",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D05-math-1-v17",
+   "my_answer": "A",
+   "key": "A",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D05-math-1-v18",
+   "my_answer": "A",
+   "key": "A",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D05-math-1-v19",
+   "my_answer": "B",
+   "key": "B",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D05-math-1-v20",
+   "my_answer": "D",
+   "key": "D",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D05-math-2-v01",
+   "my_answer": "B",
+   "key": "B",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D05-math-2-v02",
+   "my_answer": "D",
+   "key": "D",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D05-math-2-v03",
+   "my_answer": "B",
+   "key": "B",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D05-math-2-v04",
+   "my_answer": "A",
+   "key": "A",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D05-math-2-v05",
+   "my_answer": "C",
+   "key": "C",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D05-math-2-v06",
+   "my_answer": "D",
+   "key": "D",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D05-math-2-v07",
+   "my_answer": "B",
+   "key": "B",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D05-math-2-v08",
+   "my_answer": "C",
+   "key": "C",
+   "verdict": "fix",
+   "problem": "答案 C（90）无误。问题在解析：“间接法里算‘广深相遇’写成 $C_6^2C_4^2C_2^2=90$ 却忘了除以 $A_3^3$，得 15”读起来像是“漏除 $A_3^3$ 得 15”。实际上漏除得到的是相遇数 90，再用 105−90 才得 15。而且总数会除以 $A_4^4$ 的人一般不会在子问题里漏除，这条错误路径不自然，不宜称“最典型”。建议改为“易错：只算出广深相遇的 15 种就选，或逐个找对手时漏乘广州队的 6 种选择，都会得 15（A 项）”。同时压缩“取舍”一句，全文控制在 250 字以内（现在约 300 字）。"
+  },
+  {
+   "vid": "D05-math-2-v09",
+   "my_answer": "C",
+   "key": "C",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D05-math-2-v10",
+   "my_answer": "A",
+   "key": "A",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D05-math-2-v11",
+   "my_answer": "A",
+   "key": "A",
+   "verdict": "ok",
+   "problem": ""
+  }
+ ],
+ "overall": "31 题先盲做（手算 + 逐题暴力枚举），31/31 与答案一致，每题恰有一个正确选项。31 个验算脚本都从题面数据独立穷举，没有写死答案，运行结果与答案一致，OPTIONS 与题面选项一致。KaTeX 共 116 段，全部能渲染。没有 drop；3 道 fix：1-v01 与同组真题数据相同，学生能直接背出答案，需换数；1-v12 措辞有歧义，8 恰好是干扰项；2-v08 解析里 A 项陷阱的描述讲不通。整体质量好：考法覆盖完整（分类分步、间接法与容斥、捆绑、插空与间隔选取、定序、插入、相同元素排列、最短路径、分组分配、隔板与上下限）；巩固/深化/拓展为 12/12/7，组内难度由易到难；干扰项大多对应真实错误路径（如 1-v09 的 71/144、1-v14 的 144/108、2-v05 和 2-v07 的 540、2-v07 的 300）；情境贴近广东政务，语言像真题。建议：① 组 1 的 5 道改编里有 4 道（全卷共 7 道：1-v01/02/04/05/06/15/16）沿用种子真题原数据、只改一个条件。作对照题可以，但组 1 偏集中，至少 1-v01 应换数。② 考法四的 6 题里有 5 题是同一个间隔选取模型：1-v15 和 1-v20 都考“再乘 $A_3^3$”，1-v19 和 1-v20 都是“相差≥3”的平移转化。可以考虑把 1-v16 或 1-v20 换成“恰有两个相邻”或“相同元素不相邻”一类的变式，以拓宽覆盖面。③ 第二部分（2-v01 至 2-v11）题干用“共有多少种……？”，解析里标“（X 项，最典型）”；第一部分用“（ ）种”，不标选项字母。建议统一风格（广东卷多用“（ ）”），标字母的写法在选项重排后也容易出错。④ 2-v07、2-v08、2-v11 的解析约 280–300 字，略超 250 字的规定，可以精简。⑤ 分组标题里的“（题库缺）”是内部备注，成书时应删去；考法十四排在考法五之前，编号顺序也可以理顺。"
+}

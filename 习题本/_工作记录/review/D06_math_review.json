@@ -1,0 +1,180 @@
+{
+ "items": [
+  {
+   "vid": "D06-math-1-v01",
+   "my_answer": "B",
+   "key": "B",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D06-math-1-v02",
+   "my_answer": "C",
+   "key": "C",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D06-math-1-v03",
+   "my_answer": "A",
+   "key": "A",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D06-math-1-v04",
+   "my_answer": "D",
+   "key": "D",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D06-math-1-v05",
+   "my_answer": "D",
+   "key": "D",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D06-math-1-v06",
+   "my_answer": "A",
+   "key": "A",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D06-math-1-v07",
+   "my_answer": "C",
+   "key": "C",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D06-math-1-v08",
+   "my_answer": "B",
+   "key": "B",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D06-math-1-v09",
+   "my_answer": "D",
+   "key": "D",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D06-math-1-v10",
+   "my_answer": "A",
+   "key": "A",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D06-math-1-v11",
+   "my_answer": "D",
+   "key": "D",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D06-math-1-v12",
+   "my_answer": "B",
+   "key": "B",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D06-math-1-v13",
+   "my_answer": "C",
+   "key": "C",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D06-math-1-v14",
+   "my_answer": "C",
+   "key": "C",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D06-math-2-v01",
+   "my_answer": "B",
+   "key": "B",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D06-math-2-v02",
+   "my_answer": "D",
+   "key": "D",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D06-math-2-v03",
+   "my_answer": "C",
+   "key": "C",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D06-math-2-v04",
+   "my_answer": "C",
+   "key": "C",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D06-math-2-v05",
+   "my_answer": "B",
+   "key": "B",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D06-math-2-v06",
+   "my_answer": "B",
+   "key": "B",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D06-math-2-v07",
+   "my_answer": "C",
+   "key": "C",
+   "verdict": "fix",
+   "problem": "与 2-v05 情境、数据完全相同（5∶3∶2、2%/3%/5%），同一天做完 2-v05 后本题只剩“10÷29”一步，训练价值低；相对种子 2022JSA-54 也只是两类变三类，“变”偏弱，不符合考生“覆盖面更广”的要求。建议换一组独立数据，例如：“某外贸企业从甲、乙、丙三家供应商采购同一种配件，采购量之比为 4∶3∶3，三家配件的不合格率依次为 1%、2%、4%。质检员随机抽到 1 件不合格品，它来自丙供应商的概率为：”答案 $\\frac{6}{11}$（赋值 1000 件，不合格品分别为 4、6、12 件），选项 A $\\frac{3}{10}$（只看采购占比）、B $\\frac{3}{11}$（看成乙）、C $\\frac{6}{11}$、D $\\frac{4}{7}$（只看不合格率占比，与正解只差约 2.6 个百分点，迷惑性强），答案仍为 C，已用脚本验算唯一。若坚持“连做”设计，至少在解析里点明与 2-v05 同数据，并强调分母从“全部产品”缩小为“全部次品”。"
+  },
+  {
+   "vid": "D06-math-2-v08",
+   "my_answer": "A",
+   "key": "A",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D06-math-2-v09",
+   "my_answer": "B",
+   "key": "B",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D06-math-2-v10",
+   "my_answer": "A",
+   "key": "A",
+   "verdict": "ok",
+   "problem": ""
+  },
+  {
+   "vid": "D06-math-2-v11",
+   "my_answer": "D",
+   "key": "D",
+   "verdict": "ok",
+   "problem": ""
+  }
+ ],
+ "overall": "25 道均先盲做（穷举、精确分数）后再对答案：25/25 一致。25 个验算脚本都从题面独立求解（穷举、递推、线性求解），没有写死答案，全部运行通过且恰有一个选项成立；189 处 KaTeX 公式全部能解析；分组标题与考法地图一致；答案分布 A5/B7/C7/D6；难度 1/2/3 = 7/16/2，符合第 6 天“基础到中等”的试点定位。整体质量好：每题都有明确的“变”（正推改反推、问法互换、“隔 k 个先拿走”、单元素与偶数次、十字交叉、补考/赛制/期望决策等新变形），干扰项基本都来自真实的错误路径，情境贴近广东，解析都正确并点到了最快方法。问题：① 2-v07 与 2-v05 数据雷同（fix，见条目）。② 系统性排版问题（请在组装时处理）：1-v01～1-v14 的解析末尾已写“参考用时：XX 秒。”，而 scripts/assemble_day.py 第 68 行还会再追加“（参考用时 XX 秒）”，成书时会重复显示（D05 的 31 道同样如此）。建议在 assemble 时，jiexi 已含“参考用时”就不追加，或者删掉解析里的内联用时。③ 可选润色：解析正文的时间说法与 time_s 不一致——1-v02“1 分钟内可完成”对 80 秒，2-v06、2-v08“60 秒内”对 70/75 秒，2-v09、2-v11“30 秒”对 60 秒，建议统一。1-v09 的“任意一盏灯”沿用了 2020 四川真题“任一张”的说法，可以用，但改成“其中某一盏灯”可避免被读成“所有灯”（那样概率是 16/2025，不在选项中，所以不影响作答）。1-v11、1-v13 沿用了种子的人名和数据（2/3/4 天；5 人/4 人、7 月前 N 周），又紧跟在原真题之后；作为巩固题可以接受，若想更“广”可以换数。13 道解析可见字数略超 250 字（最长约 295 字），可以接受。"
+}

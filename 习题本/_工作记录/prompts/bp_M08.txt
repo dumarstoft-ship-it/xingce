@@ -1,0 +1,21 @@
+你是行测命题与教研专家。请为广东省考 42 天习题本的模块「M08 几何问题」画考法地图并规划各天配置。
+
+必读（按顺序）：
+1. /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/briefs/common.md（背景、底线、排版约定）
+2. /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/briefs/blueprint.md（本任务的具体要求和交付格式）
+3. /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/taxonomy.md（模块划分与边界规则）
+4. 本模块真题清单：/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/tasks_in/M08.json（78 道，含 id、来源、难度、考法标签、官方答案、截图路径、提取文字）。文字缺公式或图时，用 Read 看截图 q_crop / s_crop / j_crop。
+
+本模块在第 7, 21, 35, 42 天出现，每天 45 题。
+交付：/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/blueprints/M08.md 和 /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/blueprints/M08.json（格式见 blueprint.md）。
+
+补充说明：
+- 需要你自解答案的真题（无官方答案）：2026ZJA-55, 2026GK-75, 2026ZJA-59, 2026GD-41, 2026GK-72, 2026ZJA-64。数学题用 Python 验算，写进 json 的 self_solved。
+- 以下真题的官方答案还在识别中，你不用解：2021GK-70, 2021GK-74, 2021SD-36, 2021SD-41, 2022SC1-53, 2023SZ-51。
+- 之后还会补进少量真题（扫描版卷子 OCR 中：2021 广东县级/乡镇卷、2021 四川和河北、2022 深圳、2026 贵州和河北联考），会替换后面几天的一部分改编名额，你照常规划即可。
+- 考生要求改编"覆盖面更广、可以更深也可以更广、不局限于原题"，这是本任务的重点：考法清单里要主动补上题库里缺的考法，改编方向要具体、有层次。
+- 第一次出现的那一天（试点周会先做这一天）请规划得特别细，idea 写到能直接出题的程度。
+完成后用 python 校验 json（每天真题+改编=45、真题不重不漏），回复一段简短汇报：考法数、各天真题/改编数量、你认为本模块最该加练的 3 个点、问题清单里的条目数。
+
+注意：上一次执行被中断。scratchpad 里可能留有你这个模块的部分中间文件（如 bp_M08_work/、work_M08/、blueprints/M08.json 等），可以参考以节省时间，但必须重新核对；最终以你这次交付的 md 和 json 为准（两者都要交付）。
+另外，考生新要求：题目页不显示考法和出处，考生要自己识别题型，所以改编的 idea 里不要设计任何会在题干里提示考法的写法。

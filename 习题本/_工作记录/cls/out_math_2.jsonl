@@ -1,0 +1,150 @@
+{"id": "2022SC1-50", "kind": "数学运算", "module": "M10", "kaofa": "统筹-装车堆放方案最少车辆", "technique": "枚举最优组合", "difficulty": 3, "needs_figure": false, "incomplete": false, "note": "按线性约束优化归M10(非抽屉构造)"}
+{"id": "2022SC1-51", "kind": "数学运算", "module": "M05", "kaofa": "经济-促销件数单价方程", "technique": "方程法", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022SC1-52", "kind": "数学运算", "module": "M13", "kaofa": "周期-多周期日期倒推起点", "technique": "代入排除", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "日期情境的多周期同余，按周期归M13(也可视为M14同余)；'每3天'需含首日计数"}
+{"id": "2022SC1-53", "kind": "数学运算", "module": "M08", "kaofa": "几何-圆与正方形重叠面积", "technique": "整体容斥思想", "difficulty": 2, "needs_figure": true, "incomplete": false, "note": "洒水器布局只在图中"}
+{"id": "2022SC1-54", "kind": "数学运算", "module": "M03", "kaofa": "工程-两工程分配方案时长比较", "technique": "赋值总量", "difficulty": 3, "needs_figure": false, "incomplete": false, "note": "含方案比较(统筹)色彩，按工程核心归M03"}
+{"id": "2022SC1-55", "kind": "数学运算", "module": "M09", "kaofa": "最值-分组构造最少男性", "technique": "构造+枚举", "difficulty": 3, "needs_figure": false, "incomplete": false}
+{"id": "2022SC2-41", "kind": "数学运算", "module": "M12", "kaofa": "平均数-加权平均求总均分", "technique": "线段法", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022SC2-42", "kind": "数学运算", "module": "M03", "kaofa": "牛吃草-库存消耗求最小车数", "technique": "牛吃草公式", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022SC2-43", "kind": "数学运算", "module": "M04", "kaofa": "行程-分段路程用时比例", "technique": "比例法", "difficulty": 1, "needs_figure": false, "incomplete": true, "note": "题干分数在原卷页面图中也缺失(非仅提取问题)；据解析PDF可补：前1/6为下坡路，剩下路程中前2/3平路、后1/3上坡路"}
+{"id": "2022SC2-44", "kind": "数学运算", "module": "M08", "kaofa": "立体几何-正方体贯穿挖空计数", "technique": "容斥计数", "difficulty": 3, "needs_figure": true, "incomplete": false, "note": "挖空位置只在图中"}
+{"id": "2022SC2-45", "kind": "数学运算", "module": "M10", "kaofa": "统筹-每日限量最少天数", "technique": "总量均摊", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022SC2-46", "kind": "数学运算", "module": "M08", "kaofa": "几何-方位角等腰三角形求距", "technique": "外角+特殊角", "difficulty": 2, "needs_figure": false, "incomplete": true, "note": "两处方位角及C/D选项在原卷页面图中也缺失；据解析PDF为北偏西15°、北偏西30°，答案A=10，C/D选项仍需补"}
+{"id": "2022SC2-47", "kind": "数学运算", "module": "M07", "kaofa": "概率-至少一件(对立事件)", "technique": "逆向求解", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022SC2-48", "kind": "数学运算", "module": "M06", "kaofa": "排列组合-数字等差枚举计数", "technique": "枚举法", "difficulty": 3, "needs_figure": false, "incomplete": false, "note": "十位、个位分别成等差；也用到奇偶特性"}
+{"id": "2022SC2-49", "kind": "数学运算", "module": "M14", "kaofa": "数列-等差数列求和(中项)", "technique": "中项×项数", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2022SC2-50", "kind": "数学运算", "module": "M04", "kaofa": "行程-流水往返迎面相遇", "technique": "比例法", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022GK-61", "kind": "数学运算", "module": "M01", "kaofa": "盈亏问题-人数与总额方程", "technique": "盈亏公式", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2022GK-62", "kind": "数学运算", "module": "M01", "kaofa": "和差倍比-平均分关系排序", "technique": "赋值法", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022GK-63", "kind": "数学运算", "module": "M05", "kaofa": "经济-单价数量预算方程", "technique": "方程法", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "单价×数量=总价(无利润)，按经济问题归M05"}
+{"id": "2022GK-64", "kind": "数学运算", "module": "M01", "kaofa": "和差倍比-和差关系转移", "technique": "方程法", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2022GK-65", "kind": "数学运算", "module": "M04", "kaofa": "行程-匀加速平均速度求路程", "technique": "平均速度公式", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022GK-66", "kind": "数学运算", "module": "M02", "kaofa": "整除特性-百分比定总人数", "technique": "整除特性", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2022GK-67", "kind": "数学运算", "module": "M05", "kaofa": "经济-价格产量变化求收入", "technique": "方程法", "difficulty": 1, "needs_figure": false, "incomplete": false, "note": "收入=单价×产量，按经济问题归M05(也可M01增长率应用)"}
+{"id": "2022GK-68", "kind": "数学运算", "module": "M04", "kaofa": "行程-垂直方向运动勾股", "technique": "勾股数代入", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "用勾股但核心为行程"}
+{"id": "2022GK-69", "kind": "数学运算", "module": "M06", "kaofa": "排列组合-平均分组(限制条件)", "technique": "分类枚举", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022GK-70", "kind": "数学运算", "module": "M14", "kaofa": "数列-等差数列差值求和", "technique": "等差求和", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022GK-71", "kind": "数学运算", "module": "M01", "kaofa": "比例-分配量反推人数比", "technique": "赋值法", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022GK-72", "kind": "数学运算", "module": "M05", "kaofa": "利润-单件利润构成变化", "technique": "赋值法", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022GK-73", "kind": "数学运算", "module": "M08", "kaofa": "立体几何-圆柱切割表面积", "technique": "公式法", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022GK-74", "kind": "数学运算", "module": "M03", "kaofa": "工程-效率相同时间差恒定", "technique": "差值不变", "difficulty": 3, "needs_figure": false, "incomplete": false, "note": "类似年龄差思想"}
+{"id": "2022GK-75", "kind": "数学运算", "module": "M05", "kaofa": "利润-降价打折求成本定价", "technique": "方程法", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022SD-36", "kind": "数学运算", "module": "M08", "kaofa": "立体几何-涂色正方体计数", "technique": "公式法", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2022SD-37", "kind": "数学运算", "module": "M12", "kaofa": "平均数-两组加权求人数比", "technique": "十字交叉", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2022SD-38", "kind": "数学运算", "module": "M10", "kaofa": "统筹-预算内运量最大", "technique": "性价比优先", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2022SD-39", "kind": "数学运算", "module": "M09", "kaofa": "最不利-选举确保当选", "technique": "最不利原则", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022SD-40", "kind": "数学运算", "module": "M05", "kaofa": "经济-分段优惠代入求价", "technique": "代入排除", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022SD-41", "kind": "数学运算", "module": "M02", "kaofa": "倍数特性-配比定总量", "technique": "最小公倍数", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "条件1000≤x≤1200为公式图，原卷页面可见"}
+{"id": "2022SD-42", "kind": "数学运算", "module": "M03", "kaofa": "工程-效率比型多队调配", "technique": "赋值效率", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022SD-43", "kind": "数学运算", "module": "M05", "kaofa": "经济-单价数量总价方程", "technique": "方程法", "difficulty": 1, "needs_figure": false, "incomplete": false, "note": "单价×数量=总价，按经济问题归M05"}
+{"id": "2022SD-44", "kind": "数学运算", "module": "M07", "kaofa": "概率-古典与独立重复比较", "technique": "逆向求解", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022SD-45", "kind": "数学运算", "module": "M06", "kaofa": "排列组合-数字时钟分步计数", "technique": "分类分步", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022GD-28", "kind": "数字推理", "module": null, "kaofa": "数字推理-数表(幂次修正)", "technique": "幂次修正", "difficulty": 2, "needs_figure": true, "incomplete": false, "note": "题干为表格图片(文本缺失)；第2列n²+1、第3列n³+2，推得66"}
+{"id": "2022GD-31", "kind": "数学运算", "module": "M01", "kaofa": "基础-比例倍数直接计算", "technique": "直接计算", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2022GD-32", "kind": "数学运算", "module": "M03", "kaofa": "工程-给具体单位(计划天数)", "technique": "方程法", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "'完成…每天做N题'按总量=效率×时间归M03，也可视为M01方程"}
+{"id": "2022GD-33", "kind": "数学运算", "module": "M11", "kaofa": "容斥-两集合标准型", "technique": "公式法", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2022GD-34", "kind": "数学运算", "module": "M06", "kaofa": "排列组合-有上下限分配计数", "technique": "枚举法", "difficulty": 1, "needs_figure": false, "incomplete": false, "note": "有序7种/无序2种，选项均有；甲乙丙有区分应为7"}
+{"id": "2022GD-35", "kind": "数学运算", "module": "M07", "kaofa": "概率-古典概率(对立事件)", "technique": "逆向求解", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2022GD-36", "kind": "数学运算", "module": "M13", "kaofa": "植树-封闭(顶点必栽)最多棵", "technique": "分段计算", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2022GD-37", "kind": "数学运算", "module": "M03", "kaofa": "工程-效率相同时间差恒定", "technique": "差值不变", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "类似年龄差思想"}
+{"id": "2022GD-38", "kind": "数学运算", "module": "M05", "kaofa": "经济-折扣补贴求原价", "technique": "方程法", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2022GD-39", "kind": "数学运算", "module": "M08", "kaofa": "几何-相似三角形(影长)", "technique": "相似比", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022GD-40", "kind": "数学运算", "module": "M14", "kaofa": "数列-等差堆垛求和", "technique": "等差求和", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "有'如图'但文字足以理解"}
+{"id": "2022JSA-51", "kind": "数字推理", "module": null, "kaofa": "数字推理-根式数列多级做差", "technique": "化根号做差", "difficulty": 3, "needs_figure": false, "incomplete": false, "note": "各项为根式公式图(原卷可见)：根号内2,27,100,245,486，三级做差"}
+{"id": "2022JSA-53", "kind": "数学运算", "module": "M01", "kaofa": "基础-直接计算(加权求和)", "technique": "直接计算", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2022JSA-54", "kind": "数学运算", "module": "M07", "kaofa": "概率-条件概率(赋值)", "technique": "赋值法", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2022JSA-55", "kind": "数学运算", "module": "M08", "kaofa": "几何-曲边面积(定积分)", "technique": "定积分", "difficulty": 2, "needs_figure": true, "incomplete": false, "note": "江苏特有微积分题，四个选项均为函数图像；广东不考，建议剔除"}
+{"id": "2022JSA-56", "kind": "数学运算", "module": "M09", "kaofa": "多集合反向构造-至少都", "technique": "反向求和做差", "difficulty": 1, "needs_figure": false, "incomplete": false, "note": "按分类表归M09(也可视为M11容斥极值)"}
+{"id": "2022JSA-57", "kind": "数学运算", "module": "M01", "kaofa": "比例-多重比例合并", "technique": "赋值法", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022JSA-58", "kind": "数学运算", "module": "M04", "kaofa": "行程-周期休息多次相遇", "technique": "s-t图像法", "difficulty": 3, "needs_figure": false, "incomplete": false}
+{"id": "2022JSA-59", "kind": "数学运算", "module": "M08", "kaofa": "几何-相似三角形面积比", "technique": "相似比", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "有图但文字足以确定D在AC、E在AB"}
+{"id": "2022JSA-60", "kind": "数学运算", "module": "M13", "kaofa": "周期-多周期余数定位", "technique": "代入排除", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022JSA-61", "kind": "数学运算", "module": "M02", "kaofa": "不定方程组-消元尾数", "technique": "尾数法+代入", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022JSA-62", "kind": "数学运算", "module": "M13", "kaofa": "钟表-相邻面时针垂直", "technique": "空间想象", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022JSA-63", "kind": "数学运算", "module": "M03", "kaofa": "工程-给具体单位(效率变化)", "technique": "方程法", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022JSA-64", "kind": "数学运算", "module": "M13", "kaofa": "鸡兔同笼-两种单价求数量", "technique": "假设法", "difficulty": 1, "needs_figure": false, "incomplete": false, "note": "鸡兔同笼结构归M13，也可作M01方程"}
+{"id": "2022JSA-65", "kind": "数学运算", "module": "M06", "kaofa": "排列组合-同组不相邻", "technique": "插空+分类", "difficulty": 3, "needs_figure": false, "incomplete": false, "note": "也可容斥：720-720+288-48=240"}
+{"id": "2022JSA-66", "kind": "数学运算", "module": "M13", "kaofa": "比赛-单循环积分推理", "technique": "胜平场数分析", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022JSA-67", "kind": "数学运算", "module": "M08", "kaofa": "立体几何-仰角勾股综合", "technique": "勾股定理", "difficulty": 3, "needs_figure": false, "incomplete": false, "note": "有图辅助，文字数据已足"}
+{"id": "2022HB-61", "kind": "数学运算", "module": "M06", "kaofa": "排列组合-不平均分配", "technique": "分步组合", "difficulty": 1, "needs_figure": false, "incomplete": false, "note": "官方解析注明名额是否固定有歧义(A/C)"}
+{"id": "2022HB-62", "kind": "数学运算", "module": "M14", "kaofa": "数列-等差数列求和(三角阵)", "technique": "求和公式", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2022HB-63", "kind": "数学运算", "module": "M03", "kaofa": "工程-效率变化同时完成", "technique": "赋值效率", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022HB-64", "kind": "数学运算", "module": "M05", "kaofa": "利润最值-二次函数", "technique": "两根求中点", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2022HB-65", "kind": "数学运算", "module": "M13", "kaofa": "周期-多周期同时发生", "technique": "最小公倍数", "difficulty": 1, "needs_figure": false, "incomplete": false, "note": "核心为最小公倍数，可视为M14；按时间周期情境归M13"}
+{"id": "2022HB-66", "kind": "数学运算", "module": "M01", "kaofa": "和差倍比-倒推还原", "technique": "逆推法", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022HB-67", "kind": "数学运算", "module": "M01", "kaofa": "比例-比值计算", "technique": "直接计算", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2022HB-68", "kind": "数学运算", "module": "M14", "kaofa": "余数-带余除法列方程", "technique": "方程法", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2022HB-69", "kind": "数学运算", "module": "M07", "kaofa": "概率-古典概率(数字计数)", "technique": "分步计数", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2022HB-70", "kind": "数学运算", "module": "M04", "kaofa": "行程-环形追及", "technique": "赋值路程", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2022HB-71", "kind": "数学运算", "module": "M08", "kaofa": "平面几何-矩形内三角形面积", "technique": "赋值+割补", "difficulty": 3, "needs_figure": true, "incomplete": false, "note": "切分方式只在图中"}
+{"id": "2022HB-72", "kind": "数学运算", "module": "M09", "kaofa": "抽屉原理-几何分割", "technique": "构造/抽屉", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "几何情境的抽屉原理，也可归M08几何最值"}
+{"id": "2022HB-73", "kind": "数学运算", "module": "M08", "kaofa": "几何最值-造桥最短路径", "technique": "平移+勾股", "difficulty": 2, "needs_figure": true, "incomplete": false, "note": "距离数据只在图中"}
+{"id": "2022HB-74", "kind": "数学运算", "module": "M09", "kaofa": "最不利-保证N个同类", "technique": "最不利原则", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2022HB-75", "kind": "数学运算", "module": "M08", "kaofa": "立体几何-球体错位排布", "technique": "勾股定理", "difficulty": 3, "needs_figure": false, "incomplete": false}
+{"id": "2022ZJA-52", "kind": "数字推理", "module": null, "kaofa": "数字推理-分数数列(相邻作积)", "technique": "相邻项作积", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "分数为公式图(原卷可见)：4/3,3/2,2,2,( )"}
+{"id": "2022ZJA-56", "kind": "数学运算", "module": "M06", "kaofa": "排列组合-组合数间接法", "technique": "总数-反面", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2022ZJA-57", "kind": "数学运算", "module": "M07", "kaofa": "概率-分组分配(对立事件)", "technique": "逆向求解", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022ZJA-58", "kind": "数学运算", "module": "M14", "kaofa": "数列-等差数列求和(三角阵)", "technique": "求和公式", "difficulty": 1, "needs_figure": false, "incomplete": false, "note": "与2022HB-62同题"}
+{"id": "2022ZJA-59", "kind": "数学运算", "module": "M07", "kaofa": "概率-古典概率(数字计数)", "technique": "分步计数", "difficulty": 1, "needs_figure": false, "incomplete": false, "note": "与2022HB-69同题"}
+{"id": "2022ZJA-60", "kind": "数学运算", "module": "M01", "kaofa": "比例-比值计算", "technique": "直接计算", "difficulty": 1, "needs_figure": false, "incomplete": false, "note": "与2022HB-67同题"}
+{"id": "2022ZJA-61", "kind": "数学运算", "module": "M05", "kaofa": "利润最值-二次函数", "technique": "两根求中点", "difficulty": 1, "needs_figure": false, "incomplete": false, "note": "与2022HB-64同题"}
+{"id": "2022ZJA-62", "kind": "数学运算", "module": "M03", "kaofa": "工程-效率变化同时完成", "technique": "赋值效率", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "与2022HB-63同题"}
+{"id": "2022ZJA-63", "kind": "数学运算", "module": "M01", "kaofa": "和差倍比-变化后相等列方程", "technique": "方程法", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022ZJA-64", "kind": "数学运算", "module": "M06", "kaofa": "排列组合-分排计数间接法", "technique": "间接法", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2022ZJA-65", "kind": "数学运算", "module": "M08", "kaofa": "平面几何-矩形内三角形面积", "technique": "赋值+割补", "difficulty": 3, "needs_figure": true, "incomplete": false, "note": "与2022HB-71同题；切分方式只在图中"}
+{"id": "2022ZJA-66", "kind": "数学运算", "module": "M09", "kaofa": "最不利-抽屉原理综合", "technique": "整除+最不利", "difficulty": 3, "needs_figure": false, "incomplete": false, "note": "先整除定总数52，再最不利+抽屉"}
+{"id": "2022ZJA-67", "kind": "数学运算", "module": "M08", "kaofa": "几何最值-造桥最短路径", "technique": "平移+勾股", "difficulty": 2, "needs_figure": true, "incomplete": false, "note": "与2022HB-73同题；距离数据只在图中"}
+{"id": "2022ZJA-68", "kind": "数学运算", "module": "M08", "kaofa": "立体几何-正四棱锥面积比", "technique": "特殊角三角", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "角度30°/60°为公式图(原卷可见)"}
+{"id": "2022ZJA-69", "kind": "数学运算", "module": "M08", "kaofa": "立体几何-球体错位排布", "technique": "勾股定理", "difficulty": 3, "needs_figure": false, "incomplete": false, "note": "与2022HB-75同题"}
+{"id": "2022ZJA-70", "kind": "数学运算", "module": "M13", "kaofa": "年龄-年龄与工龄关系", "technique": "方程法", "difficulty": 3, "needs_figure": false, "incomplete": false, "note": "缺失分数为2/3(原卷可见)"}
+{"id": "2023SC-46", "kind": "数学运算", "module": "M03", "kaofa": "工程-依次加入效率变化", "technique": "赋值效率", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "缺失分数为1/2、1/3(原卷可见)"}
+{"id": "2023SC-47", "kind": "数学运算", "module": "M08", "kaofa": "平面几何-勾股射影求面积", "technique": "勾股+射影", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "有图但文字足够"}
+{"id": "2023SC-48", "kind": "数学运算", "module": "M01", "kaofa": "百分数-命中率计算", "technique": "直接计算", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2023SC-49", "kind": "数学运算", "module": "M07", "kaofa": "概率-枚举古典概率", "technique": "枚举法", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2023SC-50", "kind": "数学运算", "module": "M04", "kaofa": "行程-扶梯中途登梯", "technique": "方程法", "difficulty": 3, "needs_figure": false, "incomplete": false, "note": "缺失分数为1/2(原卷可见)"}
+{"id": "2023SC-51", "kind": "数学运算", "module": "M01", "kaofa": "比例-分数分配列方程", "technique": "整除+方程", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "缺失分数为1/3、1/4(原卷可见)"}
+{"id": "2023SC-52", "kind": "数学运算", "module": "M05", "kaofa": "经济-预算约束购买方案数", "technique": "方程+枚举", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "先解单价再数可行方案，也可视为M10/M02"}
+{"id": "2023SC-53", "kind": "数学运算", "module": "M08", "kaofa": "平面几何-小路面积(平移)", "technique": "平移法", "difficulty": 2, "needs_figure": true, "incomplete": false, "note": "两条斜路位置(分处横路两侧)只在图中"}
+{"id": "2023SC-54", "kind": "数学运算", "module": "M14", "kaofa": "多位数-数字交换(里程碑型)", "technique": "设数位列方程", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "也可归M02不定方程"}
+{"id": "2023SC-55", "kind": "数学运算", "module": "M06", "kaofa": "排列组合-区域涂色", "technique": "分类分步", "difficulty": 2, "needs_figure": true, "incomplete": false, "note": "区域相邻关系只在图中"}
+{"id": "2023GK-61", "kind": "数学运算", "module": "M05", "kaofa": "利润-打折降价利润相等", "technique": "方程法", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2023GK-62", "kind": "数学运算", "module": "M03", "kaofa": "工程-给定时间型(方程)", "technique": "代入排除", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2023GK-63", "kind": "数学运算", "module": "M10", "kaofa": "线性规划-整数约束求最多", "technique": "极端分析", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "线性约束下求最多，按规则归M10"}
+{"id": "2023GK-64", "kind": "数学运算", "module": "M08", "kaofa": "平面几何-等分点面积比", "technique": "等高模型", "difficulty": 3, "needs_figure": true, "incomplete": false, "note": "道路与人工湖位置只在图中"}
+{"id": "2023GK-65", "kind": "数学运算", "module": "M07", "kaofa": "概率-独立重复事件", "technique": "乘法原理", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2023GK-66", "kind": "数学运算", "module": "M10", "kaofa": "统筹-时间限制费用最低", "technique": "优先低价", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2023GK-67", "kind": "数学运算", "module": "M08", "kaofa": "平面几何-面积比求周长比", "technique": "赋值+勾股", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2023GK-68", "kind": "数学运算", "module": "M06", "kaofa": "排列组合-同类不相邻(捆绑)", "technique": "枚举/分步", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2023GK-69", "kind": "数学运算", "module": "M06", "kaofa": "排列组合-预算约束分类计数", "technique": "分类讨论", "difficulty": 3, "needs_figure": false, "incomplete": false}
+{"id": "2023GK-70", "kind": "数学运算", "module": "M11", "kaofa": "容斥-两集合(百分比整除)", "technique": "整除特性", "difficulty": 3, "needs_figure": false, "incomplete": false}
+{"id": "2023GK-71", "kind": "数学运算", "module": "M07", "kaofa": "概率-限制排列相邻概率", "technique": "分类计数", "difficulty": 3, "needs_figure": false, "incomplete": false}
+{"id": "2023GK-72", "kind": "数学运算", "module": "M04", "kaofa": "行程-匀加速追及", "technique": "平均速度公式", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2023GK-73", "kind": "数学运算", "module": "M01", "kaofa": "比例分配-利润按比例分", "technique": "方程法", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "利润分配本质为比例分配，非利润率题，归M01"}
+{"id": "2023GK-74", "kind": "数学运算", "module": "M01", "kaofa": "增长率-多主体收入方程", "technique": "方程法", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2023GK-75", "kind": "数学运算", "module": "M08", "kaofa": "立体几何-圆锥浮力相似体积", "technique": "相似立方比", "difficulty": 3, "needs_figure": false, "incomplete": false}
+{"id": "2023SD-36", "kind": "数学运算", "module": "M04", "kaofa": "行程-接人提前到家", "technique": "往返对称", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2023SD-37", "kind": "数学运算", "module": "M13", "kaofa": "比赛-淘汰赛轮数", "technique": "逐轮计算", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2023SD-38", "kind": "数学运算", "module": "M09", "kaofa": "最不利-保证N个同类", "technique": "最不利原则", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2023SD-39", "kind": "数学运算", "module": "M09", "kaofa": "抽屉原理-几何分割", "technique": "抽屉原理", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "缺失根式为√2(原卷可见)；也可归M08几何最值"}
+{"id": "2023SD-40", "kind": "数学运算", "module": "M02", "kaofa": "整数特性-百分比区间最少人数", "technique": "代入排除", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2023SD-41", "kind": "数学运算", "module": "M05", "kaofa": "经济-等额本金还款", "technique": "直接计算", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2023SD-42", "kind": "数学运算", "module": "M14", "kaofa": "数列-等比数列求和(药量)", "technique": "等比求和", "difficulty": 2, "needs_figure": false, "incomplete": true, "note": "选项A/C/D原卷即印'缺失'(回忆版)；题干可算出≈40mg(B)，但无法作选择题使用"}
+{"id": "2023SD-43", "kind": "数学运算", "module": "M04", "kaofa": "行程-匀变速v-t图像", "technique": "平均速度公式", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2023SD-44", "kind": "数学运算", "module": "M05", "kaofa": "经济-改造节约成本回本", "technique": "赋值+方程", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2023SD-45", "kind": "数学运算", "module": "M13", "kaofa": "周期-轮流接力计数", "technique": "周期余数", "difficulty": 1, "needs_figure": false, "incomplete": false, "note": "行程只用于算半圈用时，核心为周期"}
+{"id": "2023GD-28", "kind": "数字推理", "module": null, "kaofa": "数字推理-分数递推(前÷后)", "technique": "递推作商", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "题干与选项为分数公式图(原卷可见)：1/3,1/2,2/3,3/4,8/9,27/32,( )，第三项=前两项相除"}
+{"id": "2023GD-30", "kind": "数字推理", "module": null, "kaofa": "数字推理-数表(列内做差)", "technique": "行列做差", "difficulty": 1, "needs_figure": true, "incomplete": false, "note": "题干为3×4数表图片(文本缺失)"}
+{"id": "2023GD-31", "kind": "数学运算", "module": "M01", "kaofa": "百分数-连续变化计算", "technique": "直接计算", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2023GD-32", "kind": "数学运算", "module": "M14", "kaofa": "余数-同余(余同取余)", "technique": "余同取余", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2023GD-33", "kind": "数学运算", "module": "M01", "kaofa": "比例-比例变化求人数", "technique": "赋值法", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2023GD-34", "kind": "数学运算", "module": "M08", "kaofa": "立体几何-正方体切割体积", "technique": "代入排除", "difficulty": 1, "needs_figure": false, "incomplete": false, "note": "有'如图'但文字足以理解"}
+{"id": "2023GD-35", "kind": "数学运算", "module": "M11", "kaofa": "容斥-两集合(百分比整除)", "technique": "整除特性", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2023GD-36", "kind": "数学运算", "module": "M03", "kaofa": "牛吃草-标准型(牛羊换算)", "technique": "牛吃草公式", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2023GD-37", "kind": "数学运算", "module": "M03", "kaofa": "工程-效率变化推迟完成", "technique": "比例法", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2023GD-38", "kind": "数学运算", "module": "M04", "kaofa": "行程-分段等距整体求路程", "technique": "整体代换", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "A项'无法计算'为陷阱"}
+{"id": "2023GD-39", "kind": "数学运算", "module": "M06", "kaofa": "排列组合-分步组合", "technique": "分步乘法", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2023GD-40", "kind": "数学运算", "module": "M13", "kaofa": "周期-循环排班", "technique": "周期余数", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2023JSA-51", "kind": "数学运算", "module": "M01", "kaofa": "基础-直接计算(热量)", "technique": "直接计算", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2023JSA-52", "kind": "数学运算", "module": "M01", "kaofa": "增长率-多主体方程", "technique": "方程法", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2023JSA-53", "kind": "数学运算", "module": "M08", "kaofa": "平面几何-面积比(相似平方)", "technique": "平方比", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2023JSA-54", "kind": "数学运算", "module": "M01", "kaofa": "比例-多重比例合并", "technique": "赋值法", "difficulty": 1, "needs_figure": false, "incomplete": false}

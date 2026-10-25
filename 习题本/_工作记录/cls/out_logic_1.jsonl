@@ -1,0 +1,105 @@
+{"id": "2020SD-56", "kind": "类比", "module": null, "kaofa": "类比-两词-并列+动力来源", "technique": "二级辨析", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020SD-57", "kind": "类比", "module": null, "kaofa": "类比-两词-近义+反义构词", "technique": "二级辨析", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020SD-58", "kind": "类比", "module": null, "kaofa": "类比-两词-交叉关系", "technique": "集合关系判断", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020SD-59", "kind": "类比", "module": null, "kaofa": "类比-三词-近义语素组词", "technique": "拆字辨析", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020SD-60", "kind": "类比", "module": null, "kaofa": "类比-三词-并列+种属", "technique": "二级辨析", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020SD-61", "kind": "类比", "module": null, "kaofa": "类比-三词-因果链+主体一致", "technique": "二级辨析", "difficulty": 3, "needs_figure": false, "incomplete": false, "note": "正确率10%"}
+{"id": "2020SD-62", "kind": "类比", "module": null, "kaofa": "类比-三词-器械人物场所对应", "technique": "造句法", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020SD-63", "kind": "类比", "module": null, "kaofa": "类比-三词-身份与职责对应", "technique": "造句法", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020SD-66", "kind": "逻辑", "module": "L02", "kaofa": "真假-矛盾+两真两假", "technique": "找矛盾", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020SD-67", "kind": "逻辑", "module": "L03", "kaofa": "加强-补充对照组(无因无果)", "technique": "无因无果", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020SD-68", "kind": "逻辑", "module": "L05", "kaofa": "前提-搭桥(颞叶与记忆)", "technique": "搭桥", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020SD-69", "kind": "逻辑", "module": "L03", "kaofa": "加强-终止刺激症状加重", "technique": "无因无果", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020SD-70", "kind": "逻辑", "module": "L04", "kaofa": "削弱-否定论据(当时仍有森林)", "technique": "否定论据", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020SD-71", "kind": "逻辑", "module": "L03", "kaofa": "加强-补充论据(灯光扰睡眠)", "technique": "增加论据", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020SD-72", "kind": "逻辑", "module": "L05", "kaofa": "前提-搭桥(该时期实体化石稀缺)", "technique": "搭桥", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020SD-73", "kind": "逻辑", "module": "L01", "kaofa": "翻译-事实递推+德摩根", "technique": "事实信息递推", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020SD-74", "kind": "逻辑", "module": "L03", "kaofa": "加强-补充论据(语言源于大脑)", "technique": "增加论据", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020SD-75", "kind": "逻辑", "module": "L04", "kaofa": "削弱-拆桥(旧款续航已够用)", "technique": "拆桥", "difficulty": 3, "needs_figure": false, "incomplete": false, "note": "正确率27%；官方答A，易错项D(新款涨价=他因)，答案有争议"}
+{"id": "2020SC0725-69", "kind": "类比", "module": null, "kaofa": "类比-两词-工具与使用者", "technique": "造句法", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020SC0725-70", "kind": "类比", "module": null, "kaofa": "类比-两词-物品与量词", "technique": "造句法", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020SC0725-71", "kind": "类比", "module": null, "kaofa": "类比-两词-成语近义", "technique": "词义辨析", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020SC0725-72", "kind": "类比", "module": null, "kaofa": "类比-三词-种属+组成", "technique": "二级辨析", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020SC0725-73", "kind": "类比", "module": null, "kaofa": "类比-三词-标识与地点对应", "technique": "造句法", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020SC0725-77", "kind": "逻辑", "module": "L03", "kaofa": "加强-干预实验验证因果", "technique": "有因有果", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020SC0725-78", "kind": "逻辑", "module": "L04", "kaofa": "削弱-溯源(DNA致杏仁核活跃)", "technique": "因果链溯源", "difficulty": 1, "needs_figure": false, "incomplete": false, "note": "削弱的是反对者观点：其原因本身由DNA变异引起"}
+{"id": "2020SC0725-79", "kind": "逻辑", "module": "L04", "kaofa": "削弱-因果倒置", "technique": "因果倒置", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020SC0725-80", "kind": "逻辑", "module": "L03", "kaofa": "加强-干预后症状缓解", "technique": "无因无果", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020SC0725-82", "kind": "逻辑", "module": "L05", "kaofa": "前提-搭桥(快速眼动与做梦)", "technique": "搭桥", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020SC0725-83", "kind": "逻辑", "module": "L04", "kaofa": "削弱-拆桥(另有食物来源)", "technique": "拆桥", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020SC0725-84", "kind": "逻辑", "module": "L04", "kaofa": "削弱-溯源(市场化由三方决定)", "technique": "因果链溯源", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020SC0725-85", "kind": "逻辑", "module": "L01", "kaofa": "翻译-至多至少+假设归谬", "technique": "假设归谬", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "买花取舍外形但条件全为或/且/如果，按边界规则归L01(近C03)"}
+{"id": "2020ZJB-56", "kind": "类比", "module": null, "kaofa": "类比-两词-行为与目的", "technique": "造句法", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020ZJB-57", "kind": "类比", "module": null, "kaofa": "类比-两词-词与成语反义", "technique": "词义辨析", "difficulty": 3, "needs_figure": false, "incomplete": false}
+{"id": "2020ZJB-58", "kind": "类比", "module": null, "kaofa": "类比-两词-成语形容词语", "technique": "造句法", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020ZJB-59", "kind": "类比", "module": null, "kaofa": "类比-两词-问题与对策", "technique": "造句法", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020ZJB-60", "kind": "类比", "module": null, "kaofa": "类比-两词-交叉+命名角度", "technique": "二级辨析", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020ZJB-61", "kind": "逻辑", "module": "L03", "kaofa": "加强-补充作用机制", "technique": "解释原因", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020ZJB-62", "kind": "逻辑", "module": "L04", "kaofa": "削弱-直接否定论点", "technique": "否定论点", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020ZJB-63", "kind": "逻辑", "module": "L01", "kaofa": "翻译-除非否则+递推逆否", "technique": "逆否等价", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020ZJB-64", "kind": "逻辑", "module": "L03", "kaofa": "加强-补充论据(长期效果)", "technique": "增加论据", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020ZJB-65", "kind": "逻辑", "module": "L04", "kaofa": "削弱-因果倒置", "technique": "因果倒置", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020ZJB-66", "kind": "逻辑", "module": "L03", "kaofa": "加强-补充作用机制", "technique": "解释原因", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020ZJB-67", "kind": "逻辑", "module": "L04", "kaofa": "削弱-他因(猎物体型小)", "technique": "他因", "difficulty": 3, "needs_figure": false, "incomplete": false, "note": "正确率28%，易错项B"}
+{"id": "2020ZJB-68", "kind": "逻辑", "module": "L04", "kaofa": "削弱-否定论点(仍需养牛)", "technique": "否定论点", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020ZJB-69", "kind": "逻辑", "module": "L03", "kaofa": "加强-补充论据(小飞机更颠簸)", "technique": "增加论据", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020ZJB-70", "kind": "逻辑", "module": "L04", "kaofa": "削弱-否定论点(技术矛盾未解)", "technique": "否定论点", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020HB-91", "kind": "类比", "module": null, "kaofa": "类比-两词-原物与仿制", "technique": "二级辨析", "difficulty": 3, "needs_figure": false, "incomplete": false}
+{"id": "2020HB-92", "kind": "类比", "module": null, "kaofa": "类比-两词-全同关系", "technique": "集合关系判断", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020HB-93", "kind": "类比", "module": null, "kaofa": "类比-三词-种属+具体品种", "technique": "二级辨析", "difficulty": 3, "needs_figure": false, "incomplete": false}
+{"id": "2020HB-94", "kind": "类比", "module": null, "kaofa": "类比-两词-组成关系", "technique": "集合关系判断", "difficulty": 3, "needs_figure": false, "incomplete": false}
+{"id": "2020HB-95", "kind": "类比", "module": null, "kaofa": "类比-两词-雌雄矛盾并列", "technique": "二级辨析", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020HB-96", "kind": "类比", "module": null, "kaofa": "类比-三词-产出+味道属性", "technique": "二级辨析", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020HB-97", "kind": "类比", "module": null, "kaofa": "类比-三词-并列+随时间转化", "technique": "二级辨析", "difficulty": 3, "needs_figure": false, "incomplete": false, "note": "正确率13%"}
+{"id": "2020HB-98", "kind": "类比", "module": null, "kaofa": "类比-三词-并列方式与上位", "technique": "二级辨析", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020HB-101", "kind": "逻辑", "module": "L04", "kaofa": "削弱-拆桥(非前者决定后者)", "technique": "拆桥", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020HB-102", "kind": "逻辑", "module": "L01", "kaofa": "翻译-且关系前件+否前可能", "technique": "否前无必然", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020HB-103", "kind": "逻辑", "module": "L02", "kaofa": "归纳-可以推出(必要条件表述)", "technique": "排除无中生有", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020HB-104", "kind": "逻辑", "module": "L03", "kaofa": "加强-补充论据(举例证作用)", "technique": "增加论据", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020HB-105", "kind": "逻辑", "module": "L04", "kaofa": "削弱-他因(缺乏锻炼)", "technique": "他因", "difficulty": 3, "needs_figure": false, "incomplete": false, "note": "正确率42%，易错项C"}
+{"id": "2020HB-106", "kind": "逻辑", "module": "L03", "kaofa": "加强-补充论据(早期商贸往来)", "technique": "增加论据", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020HB-107", "kind": "逻辑", "module": "L05", "kaofa": "前提-补充论据(发射窗口周期)", "technique": "补充论据", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020HB-108", "kind": "逻辑", "module": "L02", "kaofa": "归纳-可以推出(措施类结论)", "technique": "排除无中生有", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020HB-109", "kind": "逻辑", "module": "L04", "kaofa": "削弱-否定论点(高海拔未融化)", "technique": "否定论点", "difficulty": 3, "needs_figure": false, "incomplete": false, "note": "正确率25%；也可视作论据样本代表性不足"}
+{"id": "2020HB-110", "kind": "逻辑", "module": "L07", "kaofa": "结构-逻辑错误相似(集合概念)", "technique": "符号化对比", "difficulty": 3, "needs_figure": false, "incomplete": false, "note": "正确率27%；题干与C均为集合概念误用"}
+{"id": "2020SC1206-55", "kind": "图推", "module": null, "kaofa": "图推-立体组合体一致性", "technique": "特殊结构定位", "difficulty": 2, "needs_figure": true, "incomplete": false, "note": "题图缺失"}
+{"id": "2020SC1206-76", "kind": "逻辑", "module": "L03", "kaofa": "加强-补充原因(智能无法生情感)", "technique": "解释原因", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020SC1206-77", "kind": "逻辑", "module": "L04", "kaofa": "削弱-选非(找话题不一致项)", "technique": "排除无关项", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "除…外均能反驳"}
+{"id": "2020SC1206-78", "kind": "逻辑", "module": "L03", "kaofa": "加强-补充论据(爱收藏)", "technique": "增加论据", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020SC1206-79", "kind": "逻辑", "module": "L05", "kaofa": "前提-搭桥(吻合观测即正确)", "technique": "搭桥", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020SC1206-80", "kind": "逻辑", "module": "L04", "kaofa": "削弱-否定论点(乙醇副作用)", "technique": "否定论点", "difficulty": 3, "needs_figure": false, "incomplete": false, "note": "正确率43%，易错项A"}
+{"id": "2020SC1206-81", "kind": "逻辑", "module": "L01", "kaofa": "翻译-长链递推+或关系", "technique": "事实信息递推", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020SC1206-82", "kind": "逻辑", "module": "L03", "kaofa": "加强-解释差距成因(方法不同)", "technique": "解释原因", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020SC1206-83", "kind": "逻辑", "module": "L04", "kaofa": "削弱-建议类他因(保修期内)", "technique": "他因", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020SC1206-84", "kind": "逻辑", "module": "L02", "kaofa": "归纳-可以推出(收费×数量)", "technique": "就题论题", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020SC1206-85", "kind": "逻辑", "module": "C01", "kaofa": "综合-六人名次链+补充条件", "technique": "排序链+代入", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020JSA-74", "kind": "图推", "module": null, "kaofa": "图推-符号串相同符号位置", "technique": "相同符号定位", "difficulty": 2, "needs_figure": true, "incomplete": false, "note": "江苏特色符号串题；题干与选项符号未提取"}
+{"id": "2020JSA-75", "kind": "图推", "module": null, "kaofa": "图推-符号串相同符号位置", "technique": "相同符号定位", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "江苏特色符号串题"}
+{"id": "2020JSA-91", "kind": "逻辑", "module": "L01", "kaofa": "翻译-否后必否前(不…就无法)", "technique": "逆否等价", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020JSA-92", "kind": "逻辑", "module": "L03", "kaofa": "加强-补充作用机制", "technique": "解释原因", "difficulty": 1, "needs_figure": false, "incomplete": false, "note": "A为因果倒置陷阱"}
+{"id": "2020JSA-93", "kind": "逻辑", "module": "L05", "kaofa": "前提-搭桥(孩子与原谅)", "technique": "搭桥", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020JSA-94", "kind": "逻辑", "module": "C02", "kaofa": "综合-四人四月匹配+条件选项", "technique": "列表+代入", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "人-月份一一对应，无先后约束，归匹配"}
+{"id": "2020JSA-95", "kind": "逻辑", "module": "C05", "kaofa": "综合-猜对个数+籍贯匹配", "technique": "代入排除", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "每人猜对1个的真假限定+三维匹配"}
+{"id": "2020JSA-96", "kind": "逻辑", "module": "L04", "kaofa": "削弱-因果倒置", "technique": "因果倒置", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020JSA-97", "kind": "逻辑", "module": "C02", "kaofa": "综合-五人五窗口一一匹配", "technique": "列表排除", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020JSA-98", "kind": "逻辑", "module": "L04", "kaofa": "削弱-他因(法规限高)", "technique": "他因", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "需比较C他因与D无因有果；text末尾混入99-100共用题干"}
+{"id": "2020JSA-99", "kind": "逻辑", "module": "C01", "kaofa": "综合-六人赛道相邻间隔(可能)", "technique": "代入排除", "difficulty": 2, "needs_figure": false, "incomplete": true, "note": "一拖二；共用题干在2020JSA-98的text末尾，可拼接修复"}
+{"id": "2020JSA-100", "kind": "逻辑", "module": "C01", "kaofa": "综合-六人赛道分情况(必然)", "technique": "分类讨论", "difficulty": 2, "needs_figure": false, "incomplete": true, "note": "一拖二；共用题干在2020JSA-98的text末尾，可拼接修复；需枚举3种情况"}
+{"id": "2020JSA-101", "kind": "定义", "module": null, "kaofa": "定义-单定义选是(造血式扶贫)", "technique": "关键词对比", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020JSA-102", "kind": "定义", "module": null, "kaofa": "定义-单定义选是(分众化教育)", "technique": "关键词对比", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020JSA-103", "kind": "定义", "module": null, "kaofa": "定义-单定义选是(喘息服务)", "technique": "关键词对比", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020JSA-104", "kind": "定义", "module": null, "kaofa": "定义-单定义选是(口述登记制)", "technique": "关键词对比", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020JSA-105", "kind": "定义", "module": null, "kaofa": "定义-单定义选是(垃圾资源化)", "technique": "关键词对比", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020JSA-106", "kind": "定义", "module": null, "kaofa": "定义-单定义选是(良性冲突)", "technique": "关键词对比", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020JSA-107", "kind": "定义", "module": null, "kaofa": "定义-单定义选非(乡贤调解)", "technique": "关键词对比", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020JSA-108", "kind": "定义", "module": null, "kaofa": "定义-单定义选非(等待经济)", "technique": "关键词对比", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020JSA-109", "kind": "定义", "module": null, "kaofa": "定义-单定义选是(信息污染)", "technique": "关键词对比", "difficulty": 1, "needs_figure": false, "incomplete": true, "note": "C项缺失"}
+{"id": "2020JSA-110", "kind": "定义", "module": null, "kaofa": "定义-单定义选非(痕迹管理)", "technique": "关键词对比", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020JSA-111", "kind": "定义", "module": null, "kaofa": "定义-单定义选非(抢跑焦虑症)", "technique": "关键词对比", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020JSA-112", "kind": "定义", "module": null, "kaofa": "定义-单定义选是(情感营销)", "technique": "关键词对比", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2020JSA-113", "kind": "定义", "module": null, "kaofa": "定义-单定义选是(同辈压力)", "technique": "关键词对比", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020JSA-114", "kind": "定义", "module": null, "kaofa": "定义-多定义匹配(谜语猜法)", "technique": "逐一匹配", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2020JSA-115", "kind": "定义", "module": null, "kaofa": "定义-单定义选非(层递修辞)", "technique": "关键词对比", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "选项为古文"}
+{"id": "2021SC2-77", "kind": "逻辑", "module": "L04", "kaofa": "削弱-否定论点(另有决定因素)", "technique": "否定论点", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "A为加强陷阱"}
+{"id": "2021SC2-78", "kind": "逻辑", "module": "L04", "kaofa": "削弱-否定论据(效应可逆)", "technique": "否定论据", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2021SC2-79", "kind": "逻辑", "module": "L04", "kaofa": "削弱-措施达不到目的", "technique": "否定论点", "difficulty": 1, "needs_figure": false, "incomplete": false}

@@ -1,0 +1,9 @@
+{"1-v01":"D","1-v02":"B","1-v03":"C","1-v04":"C","1-v05":"B","1-v06":"C","1-v07":"A","1-v08":"A","1-v09":"C","1-v10":"D",
+ "1-v11":"B","1-v12":"C","1-v13":"D","1-v14":"A","1-v15":"D","1-v16":"B","1-v17":"A","1-v18":"A","1-v19":"B","1-v20":"D",
+ "2-v01":"B","2-v02":"D","2-v03":"B","2-v04":"A","2-v05":"C","2-v06":"D","2-v07":"B","2-v08":"C","2-v09":"C","2-v10":"A","2-v11":"A",
+ "_notes_blind":{
+  "1-v12":"wording: '2 名副职分别坐在紧挨他左右两侧' does not say whether the two deputies can swap; 16 if they can, 8 (= option A) if fixed. Suggest clarifying.",
+  "1-v15/1-v16":"same setting (Mon-Sun choose 3 non-adjacent days); v16 answer pool overlaps with v15 dates-only count (10).",
+  "1-v19/1-v20":"same gap>=3 model; v20 adds the x3! ordering trap already tested in v15.",
+  "group label":"'（题库缺）' in group title looks like an internal note"
+ }}

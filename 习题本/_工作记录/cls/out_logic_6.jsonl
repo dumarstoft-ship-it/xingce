@@ -1,0 +1,105 @@
+{"id": "2025GD-57", "kind": "逻辑", "module": "L06", "kaofa": "解释-收益大于成本调和", "technique": "找矛盾双方", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2025GD-58", "kind": "逻辑", "module": "L07", "kaofa": "结构-不仅…更…推理结构对比", "technique": "符号化对比", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2025GD-59", "kind": "逻辑", "module": "C01", "kaofa": "综合-四人名次+好友关系", "technique": "最大信息突破", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2025GD-60", "kind": "逻辑", "module": "L03", "kaofa": "加强-搭桥（专注度→掌握效果）", "technique": "搭桥", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2025GD-61", "kind": "逻辑", "module": "L07", "kaofa": "评价-逻辑漏洞（否前推否后）", "technique": "识别否前", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "问'主要逻辑错误在于'，按论证评价归L07"}
+{"id": "2025GD-62", "kind": "逻辑", "module": "L07", "kaofa": "结构-条件推理逆否结构对比", "technique": "符号化对比", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2025GD-63", "kind": "逻辑", "module": "L04", "kaofa": "削弱-拆桥（泡沫≠有害残留）", "technique": "拆桥", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2025GD-64", "kind": "逻辑", "module": "L01", "kaofa": "翻译-选言条件假设归谬", "technique": "假设归谬", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "5景点取舍，但条件全为选言/条件句、无总数约束，可纯翻译解，归L01（可商榷C03）"}
+{"id": "2025GD-65", "kind": "逻辑", "module": "L04", "kaofa": "削弱-否定质疑论据", "technique": "否定论据", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2025JSA-91", "kind": "逻辑", "module": "L01", "kaofa": "翻译-只有才/只要就推出", "technique": "逆否等价", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2025JSA-92", "kind": "逻辑", "module": "L07", "kaofa": "结构-对话反驳方式对比", "technique": "论证方式对比", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2025JSA-93", "kind": "逻辑", "module": "L03", "kaofa": "加强-补充论据（解释原因）", "technique": "补充论据", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2025JSA-94", "kind": "逻辑", "module": "C02", "kaofa": "综合-人/专业/持书三维匹配", "technique": "列表排除", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2025JSA-95", "kind": "逻辑", "module": "C05", "kaofa": "综合-一真两假+三人部门匹配", "technique": "代入排除", "difficulty": 1, "needs_figure": false, "incomplete": false, "note": "猜测间无矛盾/反对关系，需代入判真假再匹配，按边界规则归C05"}
+{"id": "2025JSA-96", "kind": "逻辑", "module": "C01", "kaofa": "综合-5×5数独填词", "technique": "最大信息突破", "difficulty": 2, "needs_figure": true, "incomplete": false, "note": "数独型推理，taxonomy无专门类，暂归C01（位置）；表格缺失"}
+{"id": "2025JSA-97", "kind": "逻辑", "module": "L03", "kaofa": "加强-补充论据（碳封存必要性）", "technique": "补充论据", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2025JSA-98", "kind": "逻辑", "module": "L04", "kaofa": "削弱-说明担心不必要", "technique": "否定论点", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2025JSA-99", "kind": "逻辑", "module": "C04", "kaofa": "综合-计数误差反推真实票数", "technique": "差值代入", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2025JSA-100", "kind": "逻辑", "module": "L03", "kaofa": "加强-选非（补充论据）", "technique": "排除可加强项", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2025JSA-101", "kind": "逻辑", "module": "L07", "kaofa": "评价-评价型问题（必要条件）", "technique": "正反回答法", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "'回答哪个问题最有助于评价'，按论证评价归L07"}
+{"id": "2025JSA-102", "kind": "逻辑", "module": "L06", "kaofa": "解释-选非（解释重要地位）", "technique": "排除可解释项", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2025JSA-103", "kind": "逻辑", "module": "L01", "kaofa": "翻译-补充条件倒推结论", "technique": "倒推+逆否", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "文本末尾混入2025JSA-104/105的共用题干（环太湖赛道题），需拆分"}
+{"id": "2025JSA-104", "kind": "逻辑", "module": "C05", "kaofa": "综合-一拖二四维匹配（赛道方位）", "technique": "最大信息突破", "difficulty": 3, "needs_figure": true, "incomplete": true, "note": "共用题干误并入2025JSA-103文本末尾；需赛道选手位置图"}
+{"id": "2025JSA-105", "kind": "逻辑", "module": "C05", "kaofa": "综合-一拖二追问（附加白色条件）", "technique": "沿用前题结论", "difficulty": 2, "needs_figure": true, "incomplete": true, "note": "共用题干在2025JSA-103文本末尾；需赛道图；依赖104结论"}
+{"id": "2025JSA-106", "kind": "定义", "module": null, "kaofa": "定义-单定义选是", "technique": "抓主体关键词", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2025JSA-107", "kind": "定义", "module": null, "kaofa": "定义-单定义选是", "technique": "抓关键词", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2025JSA-108", "kind": "定义", "module": null, "kaofa": "定义-单定义选是", "technique": "抓关键词", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2025JSA-109", "kind": "定义", "module": null, "kaofa": "定义-单定义选是", "technique": "抓关键词", "difficulty": 1, "needs_figure": false, "incomplete": true, "note": "D项文本缺失（仅剩'不会随意乱扔电池'）"}
+{"id": "2025JSA-110", "kind": "定义", "module": null, "kaofa": "定义-单定义选非", "technique": "抓主体（平台）", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2025JSA-111", "kind": "定义", "module": null, "kaofa": "定义-单定义选是", "technique": "抓关键词", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2025JSA-112", "kind": "定义", "module": null, "kaofa": "定义-单定义选是", "technique": "抓关键词", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2025JSA-113", "kind": "定义", "module": null, "kaofa": "定义-单定义选是", "technique": "抓关键词", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2025JSA-114", "kind": "定义", "module": null, "kaofa": "定义-单定义选是", "technique": "抓关键词", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2025JSA-115", "kind": "定义", "module": null, "kaofa": "定义-单定义选是", "technique": "抓关键词", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2025HB-86", "kind": "定义", "module": null, "kaofa": "定义-诗句体现定义", "technique": "抓关键词", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2025HB-87", "kind": "定义", "module": null, "kaofa": "定义-单定义选不符合", "technique": "抓关键词", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2025HB-88", "kind": "定义", "module": null, "kaofa": "定义-数学概念代入验证", "technique": "代入验证", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2025HB-101", "kind": "逻辑", "module": "L03", "kaofa": "加强-补充机理（因果解释）", "technique": "补充论据", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2025HB-102", "kind": "逻辑", "module": "L03", "kaofa": "加强-补充论据（躲避天敌）", "technique": "补充论据", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2025HB-103", "kind": "逻辑", "module": "L04", "kaofa": "削弱-选非（排除可削弱项）", "technique": "排除可削弱项", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2025HB-104", "kind": "逻辑", "module": "L04", "kaofa": "削弱-否定论点（生态受损）", "technique": "否定论点", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2025HB-105", "kind": "逻辑", "module": "L04", "kaofa": "削弱-否定论点（无法看清翅膀）", "technique": "否定论点", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2025HB-106", "kind": "逻辑", "module": "L05", "kaofa": "前提-搭桥（水运↔瓷器外销）", "technique": "搭桥", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2025HB-108", "kind": "逻辑", "module": "L02", "kaofa": "归纳-日常结论（推出因果）", "technique": "排除无中生有", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2025HB-109", "kind": "逻辑", "module": "C03", "kaofa": "综合-五选≥3+条件约束", "technique": "假设归谬", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "有'至少选3种'总数约束，需计数归谬，归C03"}
+{"id": "2025HB-110", "kind": "逻辑", "module": "L02", "kaofa": "真假-矛盾关系+一真其余假", "technique": "找矛盾", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2025ZJA-101", "kind": "逻辑", "module": "L01", "kaofa": "翻译-直言命题串联推出", "technique": "串联推理", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2025ZJA-102", "kind": "逻辑", "module": "C02", "kaofa": "综合-人/营类/数量三维对应", "technique": "列表排除", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2025ZJA-103", "kind": "逻辑", "module": "C05", "kaofa": "综合-一真三假+名次代入", "technique": "代入排除", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "猜测间无矛盾/反对关系，需代入定名次，按边界规则归C05"}
+{"id": "2025ZJA-104", "kind": "逻辑", "module": "C04", "kaofa": "综合-猜拳手指数推局况", "technique": "枚举组合", "difficulty": 3, "needs_figure": false, "incomplete": false}
+{"id": "2025ZJA-105", "kind": "逻辑", "module": "L03", "kaofa": "加强-补充论据（找论据）", "technique": "补充论据", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2025ZJA-106", "kind": "逻辑", "module": "L03", "kaofa": "加强-搭桥（矿物↔地幔来源）", "technique": "搭桥", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2025ZJA-107", "kind": "逻辑", "module": "L04", "kaofa": "削弱-选非（拆桥/否定论点）", "technique": "排除可削弱项", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2025ZJA-108", "kind": "逻辑", "module": "L04", "kaofa": "削弱-样本不具代表性+他因", "technique": "他因削弱", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2025ZJA-109", "kind": "逻辑", "module": "L03", "kaofa": "加强-补充论据（无甲醛残留）", "technique": "补充论据", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2025ZJA-110", "kind": "逻辑", "module": "L04", "kaofa": "削弱-他因削弱（家族遗传）", "technique": "他因", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2026GK-88", "kind": "图推", "module": null, "kaofa": "图推-多面体组合（选非）", "technique": "找特殊块", "difficulty": 3, "needs_figure": true, "incomplete": false, "note": "图形推理，混入逻辑批次"}
+{"id": "2026GK-101", "kind": "类比", "module": null, "kaofa": "类比-两词型（手段与目的）", "technique": "造句法", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2026GK-102", "kind": "类比", "module": null, "kaofa": "类比-三词型（分泌与成分）", "technique": "造句法", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2026GK-103", "kind": "类比", "module": null, "kaofa": "类比-三词型（运算关系）", "technique": "代入运算", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2026GK-105", "kind": "类比", "module": null, "kaofa": "类比-概念集合关系图", "technique": "逐项画图", "difficulty": 2, "needs_figure": true, "incomplete": false, "note": "用圆表示概念集合的文氏图题，位于国考类比块；图缺失"}
+{"id": "2026GK-106", "kind": "逻辑", "module": "L03", "kaofa": "加强-选非（话题不一致）", "technique": "排除可加强项", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2026GK-107", "kind": "逻辑", "module": "L04", "kaofa": "削弱-他因削弱", "technique": "他因", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2026GK-108", "kind": "逻辑", "module": "L03", "kaofa": "加强-选非（削弱项）", "technique": "排除可加强项", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2026GK-109", "kind": "逻辑", "module": "L03", "kaofa": "加强-选非（他因项）", "technique": "排除可加强项", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2026GK-110", "kind": "逻辑", "module": "C03", "kaofa": "综合-七选四+条件约束", "technique": "假设归谬", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "有'安排4人'总数约束，归C03"}
+{"id": "2026GK-111", "kind": "逻辑", "module": "L01", "kaofa": "翻译-多重只有才串联推出", "technique": "逆否+串联", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2026GK-112", "kind": "逻辑", "module": "L03", "kaofa": "加强-补充机理（免疫防御）", "technique": "补充论据", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2026GK-113", "kind": "逻辑", "module": "L04", "kaofa": "削弱-选非（他因削弱）", "technique": "排除他因项", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2026GK-114", "kind": "逻辑", "module": "L04", "kaofa": "削弱-选非（范围无关项）", "technique": "排除可削弱项", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2026GK-115", "kind": "逻辑", "module": "L07", "kaofa": "结构-肯后式结构对比", "technique": "符号化对比", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2026GD-51", "kind": "逻辑", "module": "L01", "kaofa": "翻译-逆否推出", "technique": "逆否等价", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2026GD-52", "kind": "逻辑", "module": "L05", "kaofa": "前提-搭桥（需求→扩种）", "technique": "搭桥", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2026GD-53", "kind": "逻辑", "module": "L06", "kaofa": "解释-矛盾双方调和", "technique": "找矛盾双方", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2026GD-54", "kind": "逻辑", "module": "L01", "kaofa": "翻译-补充条件得结论", "technique": "倒推+逆否", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2026GD-55", "kind": "逻辑", "module": "L05", "kaofa": "前提-搭桥（能力↔领域需求）", "technique": "搭桥", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2026GD-56", "kind": "逻辑", "module": "L06", "kaofa": "解释-选非（时间错位项）", "technique": "排除可解释项", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2026GD-57", "kind": "逻辑", "module": "L07", "kaofa": "结构-条件推理（否前式）对比", "technique": "符号化对比", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2026GD-58", "kind": "逻辑", "module": "L06", "kaofa": "解释-矛盾双方调和", "technique": "找矛盾双方", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2026GD-59", "kind": "逻辑", "module": "L04", "kaofa": "削弱-否定论点（老手不可或缺）", "technique": "否定论点", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2026GD-60", "kind": "逻辑", "module": "L03", "kaofa": "加强-选非（无关项）", "technique": "排除可加强项", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2026GD-61", "kind": "逻辑", "module": "L07", "kaofa": "结构-三段论结构对比", "technique": "符号化对比", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2026GD-62", "kind": "逻辑", "module": "C01", "kaofa": "综合-六局座位相邻约束", "technique": "画图+假设", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2026GD-63", "kind": "逻辑", "module": "C02", "kaofa": "综合-奖项匹配+收入比较", "technique": "列表+分类讨论", "difficulty": 3, "needs_figure": false, "incomplete": false, "note": "匹配为主、以收入大小比较为条件，亦可归C04"}
+{"id": "2026GD-64", "kind": "逻辑", "module": "L03", "kaofa": "加强-补充论据（证明调温功能）", "technique": "补充论据", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2026GD-65", "kind": "逻辑", "module": "L07", "kaofa": "结构-选言否定肯定式对比", "technique": "符号化对比", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2026ZJA-96", "kind": "逻辑", "module": "L01", "kaofa": "翻译-负命题（条件的矛盾）", "technique": "矛盾命题", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2026ZJA-97", "kind": "逻辑", "module": "C01", "kaofa": "综合-六格货架相邻约束", "technique": "代入排除", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2026ZJA-98", "kind": "逻辑", "module": "C03", "kaofa": "综合-奖项分组+条件假设", "technique": "假设归谬", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "条件虽为条件句，但须用1/2/3人名额计数归谬，归C03"}
+{"id": "2026ZJA-99", "kind": "逻辑", "module": "L01", "kaofa": "翻译-诗句条件关系识别", "technique": "翻译对比", "difficulty": 2, "needs_figure": false, "incomplete": false, "note": "比较诗句中两命题的条件关系，归L01（亦可视作L07结构比较）"}
+{"id": "2026ZJA-100", "kind": "逻辑", "module": "L04", "kaofa": "削弱-选非（否定论点）", "technique": "排除可削弱项", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2026ZJA-101", "kind": "逻辑", "module": "L05", "kaofa": "前提-搭桥（miR-205↔软化）", "technique": "搭桥", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2026ZJA-102", "kind": "逻辑", "module": "L04", "kaofa": "削弱-否定论点（另有途径）", "technique": "否定论点", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2026ZJA-103", "kind": "逻辑", "module": "L03", "kaofa": "加强-选非（削弱项）", "technique": "排除可加强项", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2026ZJA-104", "kind": "逻辑", "module": "L04", "kaofa": "削弱-拆桥（非过量摄入）", "technique": "拆桥", "difficulty": 2, "needs_figure": false, "incomplete": false}
+{"id": "2026ZJA-105", "kind": "逻辑", "module": "L07", "kaofa": "结构-逻辑谬误对比（滑坡）", "technique": "识别谬误", "difficulty": 1, "needs_figure": false, "incomplete": false}
+{"id": "2026CQ-91", "kind": "逻辑", "module": "L03", "kaofa": "加强-选非（样本问题）", "technique": "排除可加强项", "difficulty": 2, "needs_figure": false, "incomplete": true, "note": "题干结论引导语及A/C/D项被****遮挡"}
+{"id": "2026CQ-92", "kind": "逻辑", "module": "L03", "kaofa": "加强-补充论据（可行性）", "technique": "补充论据", "difficulty": 2, "needs_figure": false, "incomplete": true, "note": "题干结论引导语及A/B/C项被****遮挡"}
+{"id": "2026CQ-93", "kind": "逻辑", "module": "L03", "kaofa": "加强-文言材料举例证明", "technique": "补充论据", "difficulty": 2, "needs_figure": false, "incomplete": true, "note": "题干因果机制被****遮挡"}
+{"id": "2026CQ-94", "kind": "逻辑", "module": "L03", "kaofa": "加强-选非（削弱项）", "technique": "排除可加强项", "difficulty": 1, "needs_figure": false, "incomplete": true, "note": "题干及A/B/D项被****遮挡"}
+{"id": "2026CQ-95", "kind": "逻辑", "module": "L04", "kaofa": "削弱-拆桥（含量不足）", "technique": "拆桥", "difficulty": 1, "needs_figure": false, "incomplete": true, "note": "题干及A/C/D项被****遮挡"}
+{"id": "2026CQ-96", "kind": "逻辑", "module": "L04", "kaofa": "削弱-举反例否定论点", "technique": "举反例", "difficulty": 2, "needs_figure": false, "incomplete": true, "note": "题干结论严重****遮挡"}
+{"id": "2026CQ-98", "kind": "逻辑", "module": "L05", "kaofa": "前提-搭桥（指标有效性）", "technique": "搭桥", "difficulty": 2, "needs_figure": false, "incomplete": true, "note": "题干及A/B/C项被****遮挡"}
+{"id": "2026CQ-99", "kind": "逻辑", "module": "L02", "kaofa": "归纳-日常结论（合理推断）", "technique": "排除无中生有", "difficulty": 2, "needs_figure": false, "incomplete": true, "note": "题干多处****遮挡"}
+{"id": "2026CQ-100", "kind": "逻辑", "module": "C03", "kaofa": "综合-七人分四点+人数约束", "technique": "数量突破+假设", "difficulty": 3, "needs_figure": false, "incomplete": false, "note": "****仅遮连接词（条件(2)应为'那么'），可补全；按此可验证官方答案A"}

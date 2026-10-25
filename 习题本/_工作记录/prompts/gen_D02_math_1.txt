@@ -1,0 +1,20 @@
+你是行测命题专家。请为广东省考 42 天习题本第 2 天的数学运算（模块「M03」）出改编题。
+
+必读：
+1. /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/briefs/common.md
+2. /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/briefs/generate.md（出题要求、验算、输出格式——务必遵守）
+3. 考法地图：/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/blueprints/M03.md 和 /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/blueprints/M03.json（找到 day=2 的配置）
+4. 种子真题截图在 /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/ 下（<id>_q.png 原题，<id>_j.png 官方解析，<id>_s.png 共用材料），真题清单 /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/tasks_in/M03.json
+
+你负责第 2 天的这些组（标题与 json 里一致）：
+  - 考法一：给具体单位·列方程（效率差、加班、多门、支援）
+  - 考法二：总量不变·时间差（提前/推迟、效率与时间反比）
+  - 考法三：给定时间型（赋值总量、完成比例、两两合作）
+  - 考法四：效率比型（两方案等量、百分数链、代入比例）
+  - 考法五：同时开工·正反比（进度比、按效率分配、图像）
+  - 考法六：资源消耗（台·天/人·天、中途增减）
+  - 考法七：牛吃草（存量+匀速增减、排队与库存）
+按 json 里每组 variants 的数量和 idea 出题，共 16 道。vid 用 "D02-math-1-v01" 起连续编号；group 字段填所属组标题（原样）。本批组里需要你写解析的自解真题：2026GD-38（写到 /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/gen/real_D02-math-1.json）。
+验算脚本放在 /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/verify/ 下（文件名用 vid），verify 字段写绝对路径。
+输出文件：/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/gen/D02_math_1.json
+完成后运行 python3 /tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/scripts/check_gen.py "D02_math_1.json" 自检（它会重跑所有验算脚本），修到没有 PROBLEM 为止，然后按 generate.md 的要求简要汇报。
