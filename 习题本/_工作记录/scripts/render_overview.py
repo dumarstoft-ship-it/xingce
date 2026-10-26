@@ -11,11 +11,11 @@ def main(out_pdf):
     def cell(d, part, label):
         n = len(plan.get(str(d['day']), {}).get(part, []))
         if not plan: return esc(label)
-        return esc(label) + ('' if n >= (20 if part == 'logic' else 10) else (f'<span class="todo">（现有 {n} 题，待补）</span>' if n else '<span class="todo">（待补）</span>'))
+        return esc(label) + ('' if n >= (20 if part == 'logic' else 5) else (f'<span class="todo">（现有 {n} 题，待补）</span>' if n else '<span class="todo">（待补）</span>'))
     fonts = ''.join(f'<link rel="stylesheet" href="file://{R}/node_modules/@fontsource/{f}/{w}.css">' for f in ('noto-serif-sc', 'noto-sans-sc') for w in (400, 700))
     rows = ''.join(f"<tr><td>第 {d['day']} 天</td><td>{esc(names[d['math']])}</td><td>{cell(d, 'logic', names[d['logic']])}</td><td>{cell(d, 'zh', names[d['zh']].replace('综合推理·', ''))}</td></tr>" for d in sc['schedule'])
     n_logic = sum(1 for d in plan.values() if len(d.get('logic', [])) >= 20)
-    n_zh = sum(1 for d in plan.values() if len(d.get('zh', [])) >= 10)
+    n_zh = sum(1 for d in plan.values() if len(d.get('zh', [])) >= 5)
     css = CSS + """
     table.sched { width: 100%; border-collapse: collapse; font-size: 9.5pt; }
     table.sched th, table.sched td { border: 1px solid #bbb; padding: 1.2mm 2mm; text-align: left; }
@@ -33,7 +33,7 @@ def main(out_pdf):
 <li><b>数字推理 10 题</b>：找规律的数列与数阵题，用历年真题，题不够时轮换重做，建议用时约 10 分钟。</li>
 <li><b>数学运算 30 题</b>：当天只练一个模块，建议用时约 60 分钟，做完精细复盘。</li>
 <li><b>逻辑判断 20 题</b>：当天主练一个模块（不含图推、定义、类比，广东 2024 年起不考后两者），建议用时约 20 分钟。</li>
-<li><b>综合推理 10 题</b>：排序、匹配、分组、数量比较、真假综合等"组合排列"题，每天主攻一个子类，建议用时约 20 分钟。</li>
+<li><b>综合推理 5 题</b>：排序、匹配、分组、数量比较、真假综合等"组合排列"题，每天主攻一个子类，建议用时约 10 分钟（第 1 天为 10 题）。</li>
 </ul>
 <h2>题目来源</h2>
 <ul>
