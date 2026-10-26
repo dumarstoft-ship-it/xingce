@@ -1,0 +1,113 @@
+[
+  {"mat": "2015GK-M4", "q": [
+    {"type": "growth rate", "work": "Text: 384 increase on 44260; 384/43876≈0.9%; options far apart, one subtraction plus division.", "acc": 70, "sec": 35},
+    {"type": "average + unit (monthly)", "work": "15.13万场/6022/12≈2.1; trap forgetting ÷12 gives 25 (option A).", "acc": 58, "sec": 45},
+    {"type": "ratio comparison", "work": "Table 参加人数/活动次数 for 4 items; 展览≈669 clear max; lure: 文艺 has largest total.", "acc": 65, "sec": 50},
+    {"type": "count growth > threshold", "work": "Bar chart 2006-2013: test 7 yearly growths vs 10%; 2008-2011 qualify → 4; none borderline.", "acc": 58, "sec": 75},
+    {"type": "综合判断 (能推出)", "work": "A 71× not 50; B 2012=156228 not 16万多; C 249.1/123.5≈2.02 true; D 乡镇 growth 0.71%<0.88% so share fell.", "acc": 55, "sec": 100}
+  ], "mat_acc": 61.2, "hard_points": "Clean text, table and labeled bar chart; mostly one-step calculations with well-separated options. Only the ÷12 monthly lure and 2012-base subtraction; difficulty is mainly last-passage time pressure in 国考."},
+
+  {"mat": "2019GK-M4", "q": [
+    {"type": "mixed growth (range)", "work": "邮电=电信+邮政; rate lies between 32% and 75.8%; base weights 2034 vs 1886 put it ≈55% → 50-75%.", "acc": 48, "sec": 70},
+    {"type": "share change direction", "work": "Compare 同城29.3, 异地33.0, 国际33.1 with total 31.0%; higher growth means share up → 异地, 国际.", "acc": 58, "sec": 35},
+    {"type": "ratio growth, decoded rates", "work": "Decode 前三季度 rates 5.2% and 7.0% from '比前三季度提高'; 1.070/1.052→+1.7%; full-year trap gives >2%.", "acc": 40, "sec": 70},
+    {"type": "base-period share ratio", "work": "2016 高铁 share 62.7−4.3=58.4%; 58.4/41.6≈1.4; lure 2017 62.7/37.3≈1.7.", "acc": 46, "sec": 50},
+    {"type": "count derivable (4 items)", "work": "All four derivable: increments from rates, daily increment, 2015 via growth up 0.5pt, rail total via 62.7% share; most undercount.", "acc": 30, "sec": 110}
+  ], "mat_acc": 44.4, "hard_points": "Pure dense text as the final 国考 passage; percentage-point phrases (比前三季度/比上年提高) must be decoded, Q3/Q4 have built-in lures, mixed growth needs base weights, and the derivability count requires judging all four items."},
+
+  {"mat": "2024GK-M4", "q": [
+    {"type": "base-period + annual increment", "work": "2013 GDP=10/1.8≈5.56; (10−5.56)/9≈0.49 → 0.5; lure 10/9≈1.1.", "acc": 60, "sec": 45},
+    {"type": "past share difference", "work": "2013 tertiary shares 83.8−4.3=79.5 and 61.3−7.2=54.1 → 25.4pp; lure 2022 gap 22.5.", "acc": 62, "sec": 35},
+    {"type": "simple share", "work": "288.1/(288.1+405.5+748.4)=288/1442≈20%; options 5pp apart.", "acc": 68, "sec": 35},
+    {"type": "text lookup + ranking", "work": "Map 城镇 7.3/6.9/7.1 vs 农村 8.2/7.3/8.6; gaps 0.9, 0.4, 1.5 → 冀京津.", "acc": 66, "sec": 45},
+    {"type": "count derivable (3 items)", "work": "① 2013 GDP and 6.2% share → yes; ② 1.6/1.6 and 2013 tertiary share → yes; ③ sector of new jobs unknown → 2.", "acc": 40, "sec": 90}
+  ], "mat_acc": 59.2, "hard_points": "Dense text, but most items need one or two simple steps with spaced options; mild lures (2022 vs 2013 shares, 10/9). Real difficulty only in the derivability count, plus last-passage time pressure."},
+
+  {"mat": "2016GKD-M4", "q": [
+    {"type": "simple ratio", "work": "5.6万亿/213.5万亿×100≈2.6; lures 5.6 (raw) and 5.0 (using 总费用 10.6).", "acc": 64, "sec": 35},
+    {"type": "share change direction", "work": "Category growth vs total 7.9% (2014) and 9.5% (2013); 进口, 农产品 below total → eliminate to B.", "acc": 64, "sec": 50},
+    {"type": "cumulative to single quarter", "work": "Bars are 累计: differences 47.8, 53.7, 56.6, 55.4 → Q3 max; classic lure Q4 213.5.", "acc": 45, "sec": 40},
+    {"type": "two-period base", "work": "Chart: 2014 H1 101.5 at 8.7%, 2013 H1 rate 9.1%; 101.5/1.087/1.091≈86; one-year lure 93.", "acc": 50, "sec": 60},
+    {"type": "综合判断 (能推出)", "work": "A via cumulative-rate logic (Q3 single >9.5 = Q4); B equal 7.9% growth; C 3.3/213.5 unit lure; D 1.33×1.30<2.", "acc": 40, "sec": 120}
+  ], "mat_acc": 52.6, "hard_points": "Combo chart of cumulative bars and two cumulative growth lines; cumulative→quarterly traps in Q3 and Q5, units mixing 亿 and 万亿, a two-year base calculation; last passage of the 地市级 paper."},
+
+  {"mat": "2018ZJA-M4", "q": [
+    {"type": "chart max increment", "work": "Read bars 2011-2015; 2013 rise 0.09 largest; bases nearly equal so rate ranking identical.", "acc": 84, "sec": 25},
+    {"type": "base-period share", "work": "2015 share 9.5−0.4=9.1% × chart 2015 total 12.70 → 1.16万公里.", "acc": 68, "sec": 45},
+    {"type": "share (sum then divide)", "work": "Sum 7 water systems ≈114000 km; 64883/114000≈57%; options 6pp apart.", "acc": 75, "sec": 50},
+    {"type": "growth comparison", "work": "Increment/base from table: 内河10万吨级 3/9≈33% far above others (4-9%).", "acc": 85, "sec": 30},
+    {"type": "综合判断 (不正确)", "work": "Back out 2015: 沿海 5899/31259<20%; 3万吨+ 2221−793=1428 not <1400 → D; B, C simple half checks.", "acc": 60, "sec": 90}
+  ], "mat_acc": 74.4, "hard_points": "Long material yet clean table and chart; most items are lookups or single ratios with an obvious winner. Only Q5 requires several 2015 back-calculations; slight last-passage pressure."},
+
+  {"mat": "2020JSA-M1", "q": [
+    {"type": "growth rate (base-year trap)", "work": "'1981-1990这十年' needs 1980年末 9.9 as base: 11.4/9.9−1≈15.2%; using 10.0 gives lure 14.0%.", "acc": 34, "sec": 40},
+    {"type": "annual avg growth compare", "work": "Census 5.67, 6.99, 8.08, 9.16; note 8- vs 10-year spans; V1>V2>V3 clear.", "acc": 72, "sec": 50},
+    {"type": "derived level (averages)", "work": "28×878−18×711=11786万 added to 1990's 11.4亿 → 12.58; naive 11.4+0.88 lure → 12.1.", "acc": 50, "sec": 80},
+    {"type": "pp change compare", "work": "大专 share rises 0.8, 2.2, 5.3, 4.1pp across periods → 2001-2010.", "acc": 82, "sec": 25},
+    {"type": "综合判断 (不能推出)", "work": "A: 711 is a period average, single-year unknown; B follows peak+decline; C 8.97/14>60%; D share×population both up.", "acc": 62, "sec": 90}
+  ], "mat_acc": 60.0, "hard_points": "Dense historical text with many year-end figures. Q1's base-year trap (1980年末) catches most users and Q3 needs creative use of two average-increment figures; the rest are direct lookups."},
+
+  {"mat": "2021ZJA-M3", "q": [
+    {"type": "sum + unit", "work": "Add 6 first-level liabilities ≈141769亿=14.2万亿; lure adding 其中 sub-rows → ~16.", "acc": 74, "sec": 45},
+    {"type": "difference ratio", "work": "所有者权益=资产−负债: 50173/4952≈10.", "acc": 84, "sec": 35},
+    {"type": "count vs threshold", "work": "10 sub-industries 负债/资产 vs 60%; several at 57-59% need care; 3 qualify.", "acc": 58, "sec": 90},
+    {"type": "share of differences", "work": "(9600.7−5651.2)/(46939.4−26358.9)=3950/20580≈19.2%, near the 20% boundary.", "acc": 66, "sec": 50},
+    {"type": "综合判断 (能推出)", "work": "A 73%; B 35200/9847≈3.6 true; C least-asset 居民服务 vs least-liability 教育; D 58%.", "acc": 78, "sec": 70}
+  ], "mat_acc": 72.0, "hard_points": "Single static table without growth rates; difficulty is volume (ten-item threshold count) and one near-boundary ratio. Other items are direct sums or differences with spaced options."},
+
+  {"mat": "2022JSA-M3", "q": [
+    {"type": "annual avg increment", "work": "十三五 = 2016-2020 on 2015 base: (7.30−4.07)/5≈0.65; ÷6 or 2016-base lures → 0.54.", "acc": 64, "sec": 40},
+    {"type": "per-capita division", "work": "2.62万亿/1.53亿=1.71万元; unit conversion only.", "acc": 84, "sec": 30},
+    {"type": "growth ranking", "work": "2020 rates 10.5, 11.6, 2.7, 13.4%; v3 smallest and v1<v4 eliminate to A.", "acc": 77, "sec": 50},
+    {"type": "count growth > 4%", "work": "Bars 1.24→1.53: check 5 years; 2017 4.6% nearest; 3 years exceed.", "acc": 75, "sec": 50},
+    {"type": "综合判断 (能推出)", "work": "A false at a glance; B 10.3% vs 11.5%; C 1.53亿/365万≈42; D yearly increments ≥0.21万亿 true.", "acc": 74, "sec": 75}
+  ], "mat_acc": 74.8, "hard_points": "Small clean table plus bar/line chart; short calculations with elimination shortcuts. Only the 十三五 base-year/÷5 lure is notable; an easy passage."},
+
+  {"mat": "2023GD-M2", "q": [
+    {"type": "share compare (qualitative)", "work": "Rural 经营 6972 exceeds urban 5584 although rural total far smaller → share obviously higher.", "acc": 82, "sec": 30},
+    {"type": "lookup min", "work": "Table: 衣着 lowest in both urban and rural columns, so national lowest.", "acc": 80, "sec": 25},
+    {"type": "difference growth (base-period)", "work": "Surplus 12345 vs 2021 35127−24104≈11023 → +12%; or income outgrows spending so >5%.", "acc": 64, "sec": 60},
+    {"type": "weighted average (十字交叉)", "work": "(36883−20133)/(49283−20133)≈0.575 urban weight → 1.35 ≈ 4:3; needs weighting insight.", "acc": 50, "sec": 60},
+    {"type": "综合判断 (正确)", "work": "B: rural consumption/income ~84% vs urban ~64%; C 食品 increment beats 居住; D 居住>交通; A no data.", "acc": 66, "sec": 90}
+  ], "mat_acc": 68.4, "hard_points": "Text, bar chart and table but data well labeled; Q4 needs the weighted-average (population ratio) insight and Q3 a base-period difference; other items are visual comparisons."},
+
+  {"mat": "2023SC-M3", "q": [
+    {"type": "base-period", "work": "8059/1.045≈7712; option 7800 close, so moderate precision.", "acc": 77, "sec": 35},
+    {"type": "increment", "work": "7586×12.5%/112.5% = 7586/9 ≈ 843; lure multiplying gives ~948.", "acc": 76, "sec": 30},
+    {"type": "base-period share difference", "work": "2021: (1591/1.115 − 1480/1.268)/(8324/1.063) = (1427−1167)/7831 ≈ 3.3pp higher.", "acc": 60, "sec": 75},
+    {"type": "base-period cumulative difference", "work": "2021 1-7 49303/1.034 minus July 8324/1.063 → 39851; lure using 2022 1-6 → 41279.", "acc": 58, "sec": 70},
+    {"type": "综合判断 (能推出)", "work": "A, B lack data; C 5132 > (32552−5132)/6≈4570 true; D 105.9 vs 77.5 false.", "acc": 62, "sec": 90}
+  ], "mat_acc": 66.6, "hard_points": "All dense text with many similar 1-7月 versus 7月 figures; base-period share and cumulative subtraction require locating the right pairs, but options are reasonably spaced."},
+
+  {"mat": "2024HB-M4", "q": [
+    {"type": "interval growth (negative)", "work": "2021 decline 38.23−7.22=31.01%; 0.6177×0.6899≈0.426 → −57%; lures 66% (wrong rate) and 69% (adding).", "acc": 44, "sec": 60},
+    {"type": "multi base-period", "work": "2021 total 27.65/0.9534≈29.0 minus 理财公司 22.24/1.2936≈17.2 → 11.8; lure 2022 5.4.", "acc": 47, "sec": 70},
+    {"type": "two rankings compare", "work": "Extract 6 counts and 6 scales from text; rank both; 大型 and 其他 swap → 2.", "acc": 60, "sec": 60},
+    {"type": "average ranking", "work": "Scale/count: 理财 15.9, 大型 13.8, 股份 7.3亿 per product; 理财 vs 大型 needs care.", "acc": 60, "sec": 60},
+    {"type": "综合判断 (能推出)", "work": "A base share 99.2%; B per-product rose; C 2.45/5.41 not 8.85%; D (9671.27−95.95)×35.44%≈3393 true.", "acc": 48, "sec": 100}
+  ], "mat_acc": 51.8, "hard_points": "Dense text of near-identical figures as the last passage; negative-rate interval growth with 降幅扩大 wording, bank-only 2021 base-period, and options built on precise lures (8.85%, 3427 vs 3393)."},
+
+  {"mat": "2024SZ-M1", "q": [
+    {"type": "implied base (via rate)", "work": "建成区面积 = 覆盖面积/覆盖率 = 41457.5/43.09% ≈ 9.62万; options 9.6-10.0 tight.", "acc": 60, "sec": 50},
+    {"type": "hidden population derivation", "work": "Population = 3119/1.77 ≈ 1762万 from 绿道 data; 22219/1762 ≈ 12.6; tempting 无法判断.", "acc": 40, "sec": 70},
+    {"type": "growth compare (inferred)", "work": "Park count +22 (sum of 3 types)/1238≈1.8%; 居住用地 tracks covered area 1.35%; others ≤1%.", "acc": 45, "sec": 80},
+    {"type": "computability judgement", "work": "2003 parks ÷5.6, area 3119/1.56, 2021 population all feasible; 2020 per-capita 绿道 lacks 2021 rate.", "acc": 45, "sec": 90},
+    {"type": "综合判断 (错误)", "work": "A: 2022 绿地率 36613/96211≈38.1% → 2021 ≈37.1%, not 38.2; B shares up; C 1652; D 2462<2500.", "acc": 40, "sec": 140}
+  ], "mat_acc": 46.0, "hard_points": "Very dense indicator text with unusual definitional reasoning (覆盖率, per-10k measures, 绿道密度); several items need hidden totals (population, built-up area), a computability judgement, and a multi-step 综合判断."},
+
+  {"mat": "2025HB-M3", "q": [
+    {"type": "base-period (tight range)", "work": "12.33/1.134 ≈ 10.87, just under the 10.9 boundary; rounding 1.134 to 1.13 gives wrong range.", "acc": 58, "sec": 45},
+    {"type": "table lookup count", "work": "Compare 互联网 vs 电子信息 rates for 5 years; only 2022 fails → 4.", "acc": 86, "sec": 25},
+    {"type": "two-year projection", "work": "1.75×1.068² ≈ 1.996 → 1.8-2.0, right at 2.0 boundary; 1.07 rounding or 3-year compounding lure to C.", "acc": 52, "sec": 50},
+    {"type": "pattern match", "work": "Shape mid-low-peak-low-lowest; only 电子信息 (9.3, 7.7, 15.7, 7.6, 3.4) fits.", "acc": 80, "sec": 35},
+    {"type": "综合判断 (能推出)", "work": "B ratios 0.161→0.194→0.212 rising; A no levels; C 3.43<12.33; D 1.223×1.188×1.093≈1.59.", "acc": 68, "sec": 80}
+  ], "mat_acc": 68.8, "hard_points": "Organized table and chart; lookups and pattern matching are easy, but two range questions sit right on boundaries (10.87 vs 10.9, 1.996 vs 2.0) and need precise calculation."},
+
+  {"mat": "2025SD-M4", "q": [
+    {"type": "simple division", "work": "Locate 德州 109.0亿 and intensity 3.00% in two lists; 109/0.03=3633.", "acc": 84, "sec": 30},
+    {"type": "base-period shares (pie)", "work": "Faster-growing 基础/应用 had lower 2021 shares; 4.1×1.121/1.214≈3.8 → C; A repeats 2022 data.", "acc": 68, "sec": 50},
+    {"type": "increment ratio", "work": "1728.7×10.4/110.4≈163 vs 363.6×33.7/133.7≈92 → 1.78; 1.8 vs 1.9 close; ×rate lure 1.5.", "acc": 56, "sec": 60},
+    {"type": "growth of implied denominator", "work": "Revenue = R&D/intensity: 1.337×3.39/3.86−1≈17.4%; naive rate subtraction gives 20%.", "acc": 42, "sec": 70},
+    {"type": "综合判断 (正确)", "work": "D directly 88.4%<90% true; A 3.39 not 4.33; B 43%>40%; C GDP increase ≈4800.", "acc": 70, "sec": 60}
+  ], "mat_acc": 64.0, "hard_points": "Long text but each item maps to clearly stated numbers; difficulty concentrated in Q4 (intensity to revenue growth) and close options in Q3; Q5 answerable directly."}
+]

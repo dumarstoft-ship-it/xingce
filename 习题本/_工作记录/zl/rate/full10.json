@@ -1,0 +1,113 @@
+[
+  {"mat": "2018GK-M3", "q": [
+    {"type": "平均数", "work": "佛山 2033/202≈10; single table division, options 10/15/20/25 far apart.", "acc": 80, "sec": 25},
+    {"type": "总量+单位换算", "work": "89591÷14%≈64万公顷; trap 640 if 公顷→万公顷 conversion slips.", "acc": 66, "sec": 40},
+    {"type": "读数计数", "work": "Compare 公园面积 vs 绿地面积 in 10 rows; only 东莞、深圳 → 2.", "acc": 80, "sec": 30},
+    {"type": "比重", "work": "217/1171≈18.5%; must match 浙江=1171 in text list; 江苏 942 gives trap 23%.", "acc": 74, "sec": 35},
+    {"type": "综合判断", "work": "A needs 10 averages (南京 largest, not 深圳); B 广州 ranks 4th; C 463>220 true; D 4825 not 400多.", "acc": 60, "sec": 80}
+  ], "mat_acc": 72.0, "hard_points": "Easy park table: single divisions, a count, locating a province figure. Mild traps only—万公顷 conversion, mismatching 浙江/江苏 numbers, 南京's outsized average in 综合. Little real calculation; low-tier difficulty for 国考."},
+
+  {"mat": "2023GK-M3", "q": [
+    {"type": "求和", "work": "Add eight table values for 2020-2021 → 353.8; options ~20 apart, careful addition.", "acc": 72, "sec": 50},
+    {"type": "增长率差", "work": "Four 2018 growth rates; AI 58.2% minus 尖端 4.8% ≈53; options 6 apart, 业务/通用 decoys.", "acc": 56, "sec": 60},
+    {"type": "比重(图+表)", "work": "Stacked bar 11.7+6.6=18.3 over table total 125.5 ≈14.6%; options 3 points apart.", "acc": 64, "sec": 50},
+    {"type": "增量追赶", "work": "Increments 4.3 vs 3.3 shrink 4.5 gap by 1/yr → first exceeds 2026; 2025 borderline check.", "acc": 58, "sec": 50},
+    {"type": "综合判断", "work": "A/B sums false; C increments 1.6,3.0,3.3,3.3 not strictly rising; D four falling growth rates—correct, last option.", "acc": 50, "sec": 100}
+  ], "mat_acc": 60.0, "hard_points": "Table plus stacked bar chart; most items need several growth-rate computations with 6-point option gaps, reading stacked labels, catch-up year logic; 综合 hides an equal-increment trap and the correct answer is last."},
+
+  {"mat": "2026GK-M3", "q": [
+    {"type": "减法+单位换算", "work": "47.34−31.58=15.76亿个×1000千瓦时=1.58万亿; traps 15.8 (unit) and 3.2 (可交易).", "acc": 55, "sec": 45},
+    {"type": "倍数(累计差分)", "work": "Chart is cumulative: (22075−5954)/(5954−3893)≈7.8; direct ratio 3.7 is the trap.", "acc": 50, "sec": 45},
+    {"type": "比重(排序求和)", "work": "Scan 31-province table for top five, sum ≈19.98亿 ÷ 47.34亿 ≈42%; 万/亿 care.", "acc": 56, "sec": 75},
+    {"type": "比重差", "work": "(19.07−8.03)/46.77≈23.6% → 24; one subtraction, one division.", "acc": 72, "sec": 40},
+    {"type": "综合判断", "work": "A needs annual = cumulative differences (296<1230); B 2.21亿 vs 22075万 unit trap; C 33.7%>1/3; D share gap 1.25%.", "acc": 44, "sec": 100}
+  ], "mat_acc": 55.4, "hard_points": "Trap-dense: 亿个→万亿千瓦时 conversion, a cumulative chart that must be differenced (3.7 decoy), scanning 31 provinces for top five, and a 综合 where misreading the cumulative chart or units makes wrong options look true."},
+
+  {"mat": "2018JSA-M3", "q": [
+    {"type": "简单减法", "work": "546−123=423 straight from text.", "acc": 92, "sec": 15},
+    {"type": "同比转环比", "work": "环比 below last year's same month ⇔ 同比 falls from prior month; count Mar, May, Jul, Aug, Sep = 5.", "acc": 48, "sec": 60},
+    {"type": "间隔基期", "work": "2015 growth 11.6+8.8=20.4%; 153.6/(1.116×1.204)≈114.3; one-year decoys 137.6/127.6.", "acc": 65, "sec": 50},
+    {"type": "基期比重", "work": "苏中 9.0% < total 10.8%, so 2015 share >32.5%; only 33.1% fits.", "acc": 78, "sec": 35},
+    {"type": "综合判断", "work": "A 153.6/2720.5≈5.6% true fast; B ratio ≈9.7 not >11; C only 2 negative months; D average ≈11%.", "acc": 68, "sec": 70}
+  ], "mat_acc": 70.2, "hard_points": "Mostly easy text reads plus one conceptual killer: inferring 环比-vs-last-year from a 同比 line (count months where 同比 drops). 隔年基期 needs 回落 conversion; 综合 needs 利润率 definition. Pie data make base-share trivial."},
+
+  {"mat": "2019ZJA-M3", "q": [
+    {"type": "求和", "work": "Sum eight 2017 Q1+Q2 values ≈358; 100-wide intervals allow rough addition.", "acc": 85, "sec": 40},
+    {"type": "增长率(总量×比重)", "work": "Mobile ad = total×share: 109.24×70% vs 78.61×71.4% → +36%; interval options.", "acc": 74, "sec": 50},
+    {"type": "比重阈值计数", "work": "2倍以上 ⇔ share >66.7%; only 16Q3 (67.4) in 2015-16; traps 65.9 and 2017 quarters.", "acc": 66, "sec": 40},
+    {"type": "增长率趋势图", "work": "Yoy ratios 2.22, 2.79, 2.48, 2.03 → up, down, down; match polyline D.", "acc": 70, "sec": 60},
+    {"type": "综合判断", "work": "B true: non-mobile share and total both rise; C decline 47.8% near 50%; D '增加不到1倍' vs 1.78倍.", "acc": 62, "sec": 90}
+  ], "mat_acc": 71.4, "hard_points": "Dense 10×4 table plus share line; requires total×share products, translating '2倍以上' into a 2/3 share threshold with near-boundary values, growth-trend shape matching, and a 综合 with near-threshold and 倍数-wording traps."},
+
+  {"mat": "2021SC2-M2", "q": [
+    {"type": "混合增长率", "work": "单产 = 产量/面积: (1−4.6%)/(1−11.1%)≈+7.2%; both bases needed; 2.6% decoy.", "acc": 66, "sec": 60},
+    {"type": "基期量", "work": "Increase 63.3 equals 6.0% → base 63.3/0.06≈1055; 1118 (current year) decoy.", "acc": 76, "sec": 30},
+    {"type": "增量加减", "work": "Residual = −26.0 − (−10.0 −23.0 +9.1) = −2.1; sign handling only trap.", "acc": 70, "sec": 40},
+    {"type": "增长率比较", "work": "Stated declines 14.3%, 19.8%, 5.2%, national ≈11%; 长江 clearly largest.", "acc": 85, "sec": 30},
+    {"type": "综合判断(不能)", "work": "D contradicted directly (黄河 单产 rose 63.3); C's ≈50.2% base share not needed.", "acc": 75, "sec": 50}
+  ], "mat_acc": 74.4, "hard_points": "Pure dense text but every quantity explicit. Mixed growth for national 单产, simple base from increment and rate, signed residual sum. 不能推出 answer directly contradicted by text. Moderate-easy overall."},
+
+  {"mat": "2022HB-M2", "q": [
+    {"type": "比重", "work": "10.75/43.69≈24.6%, direct from text; 11.7% (团体 share) decoy.", "acc": 86, "sec": 25},
+    {"type": "增长率", "work": "296.80/135.02≈2.2 → grew ≈120%; options 20 points apart.", "acc": 84, "sec": 30},
+    {"type": "平均数(精算)", "work": "Ten revenues sum 1002.74 → mean 100.27 >100; needs exact deviation-from-100 summation.", "acc": 56, "sec": 60},
+    {"type": "趋势图匹配", "work": "Trace ten audience values: rise, 2018 dip, 2019 rebound, 2020 plunge; only C shows that.", "acc": 70, "sec": 60},
+    {"type": "综合判断(不能)", "work": "B false: 2018 growth ≈3% vs 2016 ≈29%; A (87万), C, D quick checks.", "acc": 80, "sec": 60}
+  ], "mat_acc": 75.2, "hard_points": "Clean ten-year table with easy lookups. Difficulty concentrated in one knife-edge average (100.27 vs 100) needing exact addition and a curve-shape match hinging on the small 2018 dip. 不能推出 is obvious."},
+
+  {"mat": "2022SC2-M3", "q": [
+    {"type": "平均数倍数", "work": "Use given shares: 24.6%/11.7%≈2.1; inverse 0.5 decoy.", "acc": 78, "sec": 35},
+    {"type": "基期平均数变化", "work": "2020 avg 86.63亿/225.61万≈3840元; 2019 via two base periods ≈4270; drop ≈430 <1000; unit conversion.", "acc": 55, "sec": 70},
+    {"type": "比重", "work": "(7075+17969)/185076≈13.5% → 14%; locate numbers in dense text.", "acc": 82, "sec": 30},
+    {"type": "增长率", "work": "−2022/(143714+2022)≈−1.4%; base from stated decrease.", "acc": 82, "sec": 35},
+    {"type": "可推出计数", "work": "Judge data availability: ① no 2019 subgroup data; ②③ via base periods; ④ add back 386 → 3.", "acc": 60, "sec": 70}
+  ], "mat_acc": 71.4, "hard_points": "Five dense text paragraphs, no tables. Average-per-show change needs two base periods plus 亿/万→元 conversion; count-type 推出 needs data-availability judgments for four statements. Remaining items are direct shares and rates."},
+
+  {"mat": "2023JSA-M2", "q": [
+    {"type": "增量比较", "work": "Five yearly differences of 播出影视剧; 2017 +33.6 largest.", "acc": 88, "sec": 30},
+    {"type": "年均增量", "work": "Convention base 2016: (388.3−354.3)/5=6.8; options cover every base/divisor misreading.", "acc": 55, "sec": 40},
+    {"type": "增长率比较", "work": "Mix text rates (−12.2, −5.5) with table: 制作影视剧 7.5/9.5 ≈ −21% smallest; 电视/广播 mix-ups.", "acc": 70, "sec": 45},
+    {"type": "平均数比较", "work": "十三五 = 2016-2020 average 205.3; 193.9 is 5.5% lower; wrong-year decoys.", "acc": 62, "sec": 50},
+    {"type": "综合判断", "work": "C 193.9/7.5≈25.9 true; A '2016-2021逐年增加' needs absent 2015 data—tempting; B, D false.", "acc": 40, "sec": 80}
+  ], "mat_acc": 63.0, "hard_points": "Convention traps dominate: 2017-2021 年均 uses 2016 base with every misreading offered; 综合 hinges on '2016-2021逐年增加' needing absent 2015 data while the 25.9倍 statement is true; 电视/广播 and 十三五 definitions."},
+
+  {"mat": "2024GKD-M1", "q": [
+    {"type": "增长率比较", "work": "Bases = current − increment: 14/41.6, 8.9/17.4, 16/122.5 → 举报>投诉>咨询.", "acc": 72, "sec": 45},
+    {"type": "比重差", "work": "304498/556063≈55% vs 61021/263129≈23%; gap ≈32, far above 20.", "acc": 74, "sec": 40},
+    {"type": "环比增量图匹配", "work": "Compute monthly increments; 3–6月 (+7.3, −3.5, +1.9, +2.7) matches high-low-mid-mid shape.", "acc": 66, "sec": 60},
+    {"type": "求和比较", "work": "Sum three bars per quarter; Q1 48.1 clearly smallest.", "acc": 78, "sec": 35},
+    {"type": "综合判断(不能)", "work": "C false: 官网 举报 share ≈66% beats 来函 52%; A, B quick; D sums ≈44.8万.", "acc": 66, "sec": 80}
+  ], "mat_acc": 71.2, "hard_points": "Clear table plus monthly bars; first passage of 地市级. Needs bases from increments, many monthly differences to match a polyline, quarter sums; 不能推出 resolved by spotting 官网's high 举报 share. Moderate-easy."},
+
+  {"mat": "2024SC-M3", "q": [
+    {"type": "读数计数", "work": "Compare 12 production/sales pairs; ≤0.5 in Aug, Sep, Oct, Mar, Jun (exactly 0.5) → 5.", "acc": 66, "sec": 60},
+    {"type": "基期差", "work": "2018年1月 from 2019年1月 via 同比: 149.4 vs 133.2 → 多≈16; 2019-value decoy.", "acc": 58, "sec": 50},
+    {"type": "隐含基期+增长率", "work": "2018年6月 sales = 147.2/1.067≈138; July 130.3 → −5.6%; vs 2019年6月 gives 12% trap.", "acc": 45, "sec": 50},
+    {"type": "求和排序", "work": "Quarterly production sums; ① 379.4 vs ② 373.8 close; ③ lowest, ④ highest.", "acc": 75, "sec": 45},
+    {"type": "综合判断", "work": "Count both-negative months (9 not 10), months above prior (6), compare increments, half-year sums; tedious.", "acc": 52, "sec": 110}
+  ], "mat_acc": 59.2, "hard_points": "Two combo charts with 48 numbers. Items require reaching back a year through 同比 (2018年1月, 2018年6月), a 0.5 boundary count, and a tedious 综合 of month-by-month counts. Strong decoys from using 2019 values directly."},
+
+  {"mat": "2025GKD-M2", "q": [
+    {"type": "比值趋势", "work": "律师/事务所 18.1→21.0→23.0 rising; or compare growth rates.", "acc": 76, "sec": 40},
+    {"type": "求和倍数", "work": "Sum four values each: 319.6/26.9≈11.9 → 12; options 3 apart.", "acc": 76, "sec": 45},
+    {"type": "倍数(加总)", "work": "Must add 村(社区) row: 135463/98892≈1.37 → 1.4; one-row decoy 1.6.", "acc": 62, "sec": 35},
+    {"type": "增量外推", "work": "Increment 12.31/yr; (150−93.55)/12.31≈4.6 → 5 years → 2028.", "acc": 66, "sec": 40},
+    {"type": "增量柱图匹配", "work": "Need positive shrinking increments; only 法律顾问(不含) 16711, 12801, 9560 fits.", "acc": 68, "sec": 60}
+  ], "mat_acc": 69.6, "hard_points": "Small clean table, ratio and sum work with wide options. Traps: 含村社区 requires adding two rows, first year exceeding 150 under constant increment, matching bar heights to increments across four indicators."},
+
+  {"mat": "2025SC-M2", "q": [
+    {"type": "基期比重", "work": "(33530+328)/(44073+391)≈76%; current-year share also ≈76%.", "acc": 82, "sec": 35},
+    {"type": "增长率比较", "work": "Four growth rates from bar labels; 2014 +20.06/249 ≈8% clear max.", "acc": 80, "sec": 45},
+    {"type": "饼图比重", "work": "高级 3.5%, 中级 9.2% → tiny black, small hatched slice (D).", "acc": 85, "sec": 40},
+    {"type": "平均数比较", "work": "服务人次/活动次数: 展览 ≈760 clearly highest.", "acc": 83, "sec": 40},
+    {"type": "综合判断", "work": "C: 245.11×11.7/111.7≈25.7 <30; A 年均 12.7; B ≈76%; D ratio falls (4.7<5.5).", "acc": 68, "sec": 75}
+  ], "mat_acc": 79.6, "hard_points": "Easy: short text, small table, labeled bars. Direct shares, a growth comparison with a clear winner, pie recognition, per-activity averages; only 综合 needs one base-period increment and a ratio-direction check."},
+
+  {"mat": "2026CQ-M4", "q": [
+    {"type": "比重", "work": "65+ (table 22023) ÷ 60+ (text 31031) ≈71%; cross-source lookup.", "acc": 66, "sec": 25},
+    {"type": "平均数(多步)", "work": "507.7万×65.7%÷4.0万≈83; 127 decoy omits 护理型 share.", "acc": 58, "sec": 40},
+    {"type": "增长率倍数", "work": "机构 growth 21.4% vs 65+ 6.24% → 3.4; 3.1/3.4 options need precision.", "acc": 52, "sec": 50},
+    {"type": "公式多步", "work": "15-64 = 20978/21.8%≈96229; 0-14 = 141175−20978−96229 = 23968; close decoy 24522.", "acc": 40, "sec": 70},
+    {"type": "趋势图匹配", "work": "Beds per institution 43→38→25→23→21→20→20 fits; check other indicators' trends.", "acc": 48, "sec": 90}
+  ], "mat_acc": 52.8, "hard_points": "Last passage of the paper. Dependency-ratio formula must be inverted to get 15-64 then 0-14 with close options; growth multiple with near options; shape item needs seven bed-per-institution ratios."}
+]

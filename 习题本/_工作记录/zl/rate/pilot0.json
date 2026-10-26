@@ -1,0 +1,86 @@
+[
+  {"mat": "2021JSA-M3", "q": [
+    {"type": "贡献率(给定公式)", "work": "Δ网络经济 253.5×0.2 ÷ Δ总指数 63.0 ≈ 80.5%; formula supplied, options well spread", "acc": 74, "sec": 40},
+    {"type": "增量比较", "work": "Five subtractions on total index; 2018 (64.9) vs 2019 (63.0) close, but highest growth rate also 2018", "acc": 80, "sec": 30},
+    {"type": "贡献率比较计数", "work": "Ten sub-index increments 2018/2019 vs Δtotal 64.9/63.0; only 网络、知识 rise; growth-rate shortcut trap gives 1", "acc": 54, "sec": 90},
+    {"type": "累计增量比较", "work": "2018 minus 2015 for five sub-indices; max 网络, min 知识, robust to base-year reading", "acc": 76, "sec": 45},
+    {"type": "综合判断(能推出)", "work": "A trap 201.4/5; B needs 2014=100 base contributions; C avg growth >25% true; D refuted by 2018 知识", "acc": 58, "sec": 100}
+  ], "mat_acc": 68.4, "hard_points": "Unfamiliar index/contribution-rate setup; Q3 needs ten differences plus denominator comparison with a growth-rate trap, Q5 needs base-year (2014=100) reasoning. Calculations mostly subtraction, so moderate overall."},
+  {"mat": "2021JSA-M4", "q": [
+    {"type": "比重", "work": "125/2707 ≈ 4.6%; options far apart", "acc": 85, "sec": 15},
+    {"type": "增速比较", "work": "Bar values: 2014 increment 157 on smallest base clearly fastest", "acc": 78, "sec": 30},
+    {"type": "多年间隔增长", "work": "Chain seven annual rates 2013–2019 from line chart for two series; products ≈0.86, 0.84 (<1); sums also negative", "acc": 46, "sec": 110},
+    {"type": "增速比较计数", "work": "Six industry growth rates from bars vs launch-rate labels; 2016 close (2.2% vs 1.9%); answer 4", "acc": 52, "sec": 90},
+    {"type": "综合判断(能推出)", "work": "A −67/2774 ≈ −2.4% true; traps: B sums rates, C share actually fell 3.1pp, D ignores sign (51.3−35)", "acc": 60, "sec": 80}
+  ], "mat_acc": 64.2, "hard_points": "Last passage; dual-axis chart with two growth lines. Q3 chained seven-year growth for two series and Q4 six growth comparisons with a close 2016 case eat time; Q1–Q2 trivial."},
+  {"mat": "2021SD-M3", "q": [
+    {"type": "增量占比", "work": "828×11.2/111.2 ≈ 83 vs 6583×6.7/106.7 ≈ 413 → ~20%; options 10pp apart", "acc": 70, "sec": 55},
+    {"type": "累计值拆分", "work": "Monthly = cumulative differences; Jan 496 just below 500; only May, June exceed; cumulative-value trap", "acc": 74, "sec": 40},
+    {"type": "混合增速反推", "work": "December growth from Jan–Nov 6.3% and full-year 6.7%, weights ≈5574:596 → ≈10.4%", "acc": 54, "sec": 65},
+    {"type": "季度环比排序", "work": "Quarters from cumulative: 1433, 1644, 1702, 1804; ratios 14.7%, 3.5%, 6.0%", "acc": 64, "sec": 70},
+    {"type": "综合判断(能推出)", "work": "A 479.6<500; B Q4 growth <6.7 via mixing; C increments 33/78/18; D two base-period values; answer D", "acc": 50, "sec": 120}
+  ], "mat_acc": 62.4, "hard_points": "Cumulative monthly data throughout: must difference cumulative values and reverse-engineer December/Q4 growth by mixing logic; Q5 has four computational statements with the answer last."},
+  {"mat": "2021GK-M3", "q": [
+    {"type": "增量比较", "work": "Bar differences 747/476/702 vs text 739; 2016 narrowly beats 2019; text figure tempts", "acc": 62, "sec": 30},
+    {"type": "比重差", "work": "(4312−2022)/9775 ≈ 23.4%; trap: summing multi-service categories as denominator gives 13", "acc": 56, "sec": 35},
+    {"type": "容斥+比例", "work": "视力 1430 split 1.2:1 → overlap 780; neither = 9775−(1430+1669−780) = 7456; ignoring overlap → 6676", "acc": 36, "sec": 80},
+    {"type": "平均数之比", "work": "(584.5/2341)/(414.2/1006) ≈ 0.61; inverted ratio 1.65 matches option D", "acc": 52, "sec": 50},
+    {"type": "综合判断(能推出)", "work": "A 1.74%, B 16.4/month, C 22.9% all false; D needs 亿元÷万m² conversion → ≈3133 元; answer last", "acc": 46, "sec": 90}
+  ], "mat_acc": 50.4, "hard_points": "国考副省级 late passage. Q3 set-overlap with ratio split is a classic killer; Q4 inverse trap, Q5 unit conversion after three false options; single calculations light but traps everywhere."},
+  {"mat": "2021GKD-M1", "q": [
+    {"type": "翻番所需增速", "work": "Identify 2015 and 2020 targets: 2×4245 = 8490 vs 2019 7548 → 12.5%", "acc": 60, "sec": 40},
+    {"type": "增速阈值计数", "work": "Up to 18 growth checks vs 10% for 2014–2019; close cases 2015 芯片 9.4%, 2018 封装 9.4%", "acc": 52, "sec": 80},
+    {"type": "年均增速比较+比重", "work": "Compare 2019/2013 multiples of seven markets (显示屏 4.5×), then 1089/7548 ≈ 14%; traps 17% (/应用市场), 36%, 85%", "acc": 46, "sec": 85},
+    {"type": "增量趋势图", "work": "通用照明 increments 406, 489, 511, 128 → rise, slight rise, plunge; easy once increments computed", "acc": 68, "sec": 45},
+    {"type": "综合判断(能推出)", "work": "A 971>738, B 12.7%<14.7%, C sum 424 all false; D scan seven years (2015: 478 vs 475)", "acc": 62, "sec": 75}
+  ], "mat_acc": 57.6, "hard_points": "Clean single table and first passage, but 国考 user base. Q2's many threshold checks and Q3's two-step selection with denominator traps pull it down; chart-shape and judgment questions easy."},
+  {"mat": "2016JSA-M4", "q": [
+    {"type": "倍数", "work": "71.4/28.6 ≈ 2.5", "acc": 85, "sec": 15},
+    {"type": "百分点差", "work": "+7.0 vs −3.9 relative to average → 10.9; trap 3.1", "acc": 78, "sec": 20},
+    {"type": "多步计算", "work": "Total 593/28.6% ≈ 2073; non-plan 1480 × 58.8% ≈ 870; traps 349, 1480", "acc": 74, "sec": 45},
+    {"type": "饼图读数", "work": "Match legend patterns: ≤2万 12.8% + 2–10万 45.2% = 58% × 593 ≈ 344", "acc": 66, "sec": 45},
+    {"type": "综合判断", "work": "A via weighted mix (34.5/23.3 around 28.6) → males fewer; B base trap; C 1480×11.4% ≈ 168.7 borderline; D 9.5%", "acc": 42, "sec": 100}
+  ], "mat_acc": 69.0, "hard_points": "Survey shares on different bases; pie-legend matching; Q5 needs mixture reasoning and option C (≈168.7 vs 'at least 168') is borderline, splitting answers. Q1–Q3 routine; last passage."},
+  {"mat": "2021SC0327-M1", "q": [
+    {"type": "基期量", "work": "1.31/1.008 ≈ 1.30", "acc": 88, "sec": 15},
+    {"type": "读图比较", "work": "Max growth 2017 (6.6%); mobile share 71.5→71.9 = +0.4pp", "acc": 80, "sec": 25},
+    {"type": "比重×总量判断", "work": "Fixed revenue = share × total; combine total growth with share change for 2015–2018; share-only reading gives 2", "acc": 52, "sec": 75},
+    {"type": "比重升降", "work": "Part vs whole growth: 5.1>0.8, 1.5>0.8, IPTV 21.1<21.2 (close trap)", "acc": 64, "sec": 40},
+    {"type": "可推出性", "work": "Only 2018 物联网 growth lacks data; other three computable by base-period", "acc": 72, "sec": 45}
+  ], "mat_acc": 71.2, "hard_points": "Mostly direct reads; difficulty concentrated in Q3 (fixed revenue needs share × total-growth combination) and Q4's 21.1 vs 21.2 trap."},
+  {"mat": "2015ZJA-M2", "q": [
+    {"type": "基期量", "work": "22706.22/1.176 ≈ 19308; options well spread", "acc": 86, "sec": 25},
+    {"type": "比重", "work": "(29.57−19.33)/29.57 ≈ 34.6%", "acc": 84, "sec": 30},
+    {"type": "比重阈值计数", "work": "Pick European countries from 20-row table vs 11% × 592.16 = 65.1; 德国 65.96 borderline", "acc": 56, "sec": 60},
+    {"type": "基期量差", "work": "Three base-period values (美洲, 美国, 加拿大); options 10 apart so even 2012 values give 33.8", "acc": 74, "sec": 50},
+    {"type": "综合判断(不能推出)", "work": "Count Asian countries 12/20; Africa 52.49/2720 ≈ 1.93% ≠ 2.1%; 韩国, 越南 maxima direct", "acc": 62, "sec": 85}
+  ], "mat_acc": 72.4, "hard_points": "Text plus long 20-country table; difficulty lies in classifying countries by continent (Q3 borderline 德国, Q5 counting Asia), not calculation."},
+  {"mat": "2020ZJB-M2", "q": [
+    {"type": "多步比重", "work": "3335×40% = 1334, ÷71% ≈ 1879; trap 1334", "acc": 78, "sec": 30},
+    {"type": "增量计数", "work": "Sum wind+PV each year, increments vs 100GW; 2014 is 91.4, three years qualify", "acc": 70, "sec": 70},
+    {"type": "比重差", "work": "73.7/99.1 ≈ 74% vs 221.3/404.5 ≈ 55% → higher by ~20pp", "acc": 80, "sec": 35},
+    {"type": "增速趋势图", "work": "PV cumulative growth 47%, 74%, 75%, 43% → low-high-high-low", "acc": 70, "sec": 55},
+    {"type": "可推出性", "work": "Only 2016 growth computable using 2015 peak 3485 in text; easy to overlook", "acc": 60, "sec": 55}
+  ], "mat_acc": 71.6, "hard_points": "Clear chart and short text; Q2 needs many additions, Q4 four growth rates, Q5 hinges on noticing the 2015 peak. No close-option precision traps."},
+  {"mat": "2020SC1206-M1", "q": [
+    {"type": "两期基期量", "work": "2014 rate 8.2+0.8 = 9.0%; 31195/(1.082×1.09) ≈ 2.6万; one-period trap → 3.0", "acc": 72, "sec": 45},
+    {"type": "直接比较", "work": "Lookup four growth rates; 10.0% max", "acc": 90, "sec": 15},
+    {"type": "增长率", "work": "2014 = 35361−1236, 2013 = 35361−3133; 1897/32228 ≈ 5.9%; options 0.5pp apart, wrong-base trap 5.4%", "acc": 58, "sec": 55},
+    {"type": "基期比重", "work": "(37675−6225)/(66570−6823) ≈ 52.6%", "acc": 72, "sec": 45},
+    {"type": "综合判断(能推出)", "work": "A: 2014 工伤 20639 > 生育 17039 true; B 1.66%, C 365<407, D 68.6% quick refutations", "acc": 80, "sec": 50}
+  ], "mat_acc": 74.4, "hard_points": "Dense pure text, but every question is a simple base-period/increment calculation; only Q3 has tight options and a base-year trap."},
+  {"mat": "2015JSA-M4", "q": [
+    {"type": "简单加减", "work": "8.6 + 2.9 = 11.5%", "acc": 89, "sec": 15},
+    {"type": "简单计算", "work": "100 − 12.8 − 12.0 = 75.2% → 752", "acc": 88, "sec": 20},
+    {"type": "容斥最小值", "work": "66 + 64.7 − 100 = 30.7%", "acc": 72, "sec": 30},
+    {"type": "直接读图", "work": "Noise reason highest in all three areas", "acc": 90, "sec": 15},
+    {"type": "综合判断", "work": "A/B/C misapply percentages to wrong groups; D compare 21.7, 20.8, 11.1 bars", "acc": 66, "sec": 60}
+  ], "mat_acc": 81.0, "hard_points": "Easy: lookups and one-step arithmetic; only the inclusion-exclusion minimum and concept-trap judgment need care; last-passage position is the main risk."},
+  {"mat": "2017JSA-M3", "q": [
+    {"type": "百分点差", "work": "43.8 − 16.8 = 27.0", "acc": 92, "sec": 10},
+    {"type": "年均增量", "work": "(227 − 146)/5 = 16.2; trap dividing by 6", "acc": 83, "sec": 20},
+    {"type": "比重乘积", "work": "2.7% × 89% ≈ 2.4%", "acc": 87, "sec": 15},
+    {"type": "比率推导", "work": "S rate = (16.8/43.8)·a ≈ 0.38a; abstract set-up", "acc": 74, "sec": 45},
+    {"type": "综合判断(不正确)", "work": "C false: largest annual share rise 2013 (+8.6); D 7.93−5.48 = 2.45 vs '2' distracts; A 24.66, B true", "acc": 58, "sec": 85}
+  ], "mat_acc": 78.8, "hard_points": "Small table, short text, mostly one-step arithmetic; Q4 needs ratio-of-ratios setup and Q5's imprecise D (2.45 vs 2) competes with intended answer C."}
+]

@@ -1,0 +1,135 @@
+{
+ "2021SD-Z84": {
+  "answer": "A",
+  "source": "OCR 官方解析"
+ },
+ "2025SC-Z86": {
+  "answer": "C",
+  "source": "OCR 官方解析"
+ },
+ "2025SC-Z88": {
+  "answer": "C",
+  "source": "OCR 官方解析"
+ },
+ "2025SC-Z90": {
+  "answer": "A",
+  "source": "OCR 官方解析",
+  "check": true
+ },
+ "2025SC-Z91": {
+  "answer": "C",
+  "source": "OCR 官方解析"
+ },
+ "2025SC-Z92": {
+  "answer": "C",
+  "source": "OCR 官方解析"
+ },
+ "2025SC-Z93": {
+  "answer": "D",
+  "source": "OCR 官方解析"
+ },
+ "2025SC-Z94": {
+  "answer": "A",
+  "source": "OCR 官方解析"
+ },
+ "2025SC-Z95": {
+  "answer": "C",
+  "source": "OCR 官方解析"
+ },
+ "2025SC-Z96": {
+  "answer": "B",
+  "source": "OCR 官方解析"
+ },
+ "2025SC-Z97": {
+  "answer": "B",
+  "source": "OCR 官方解析"
+ },
+ "2025SC-Z98": {
+  "answer": "C",
+  "source": "OCR 官方解析"
+ },
+ "2025SC-Z99": {
+  "answer": "D",
+  "source": "OCR 官方解析"
+ },
+ "2025JSA-Z116": {
+  "answer": "C",
+  "source": "OCR 官方解析"
+ },
+ "2025JSA-Z117": {
+  "answer": "B",
+  "source": "OCR 官方解析"
+ },
+ "2025JSA-Z118": {
+  "answer": "C",
+  "source": "OCR 官方解析"
+ },
+ "2025JSA-Z119": {
+  "answer": "D",
+  "source": "OCR 官方解析"
+ },
+ "2025HB-Z111": {
+  "answer": "A",
+  "source": "OCR 官方解析"
+ },
+ "2025HB-Z112": {
+  "answer": "D",
+  "source": "OCR 官方解析"
+ },
+ "2025HB-Z113": {
+  "answer": "C",
+  "source": "OCR 官方解析"
+ },
+ "2025HB-Z114": {
+  "answer": "C",
+  "source": "OCR 官方解析"
+ },
+ "2025HB-Z115": {
+  "answer": "B",
+  "source": "OCR 官方解析"
+ },
+ "2025HB-Z116": {
+  "answer": "D",
+  "source": "OCR 官方解析"
+ },
+ "2025HB-Z117": {
+  "answer": "A",
+  "source": "OCR 官方解析"
+ },
+ "2025HB-Z118": {
+  "answer": "C",
+  "source": "OCR 官方解析"
+ },
+ "2025HB-Z120": {
+  "answer": "B",
+  "source": "OCR 官方解析"
+ },
+ "2025HB-Z121": {
+  "answer": "A",
+  "source": "OCR 官方解析"
+ },
+ "2025HB-Z123": {
+  "answer": "B",
+  "source": "OCR 官方解析"
+ },
+ "2025GKD-Z124": {
+  "answer": "A",
+  "source": "OCR 官方解析"
+ },
+ "2018JSA-Z130": {
+  "answer": "A",
+  "source": "OCR 官方解析（故正确选项为A）"
+ },
+ "2015GK-Z119": {
+  "answer": "C",
+  "source": "官方解析（手动定位）"
+ },
+ "2017JSA-Z135": {
+  "answer": "C",
+  "source": "官方解析（手动定位）"
+ },
+ "2019ZJA-Z126": {
+  "answer": "C",
+  "source": "官方解析（手动定位）"
+ }
+}

@@ -1,0 +1,97 @@
+[
+{"mat": "2015ZJA-M1", "q": [
+ {"type": "base-period", "work": "Total 59260.61/1.079 ≈ 54922; rate given in text; options widely spaced, one division.", "acc": 85, "sec": 35},
+ {"type": "share of increment", "work": "Sum three 增收 ≈ 703; divide by total increase ≈ 4339 → 16.2%; 1.2% trap if divided by total revenue.", "acc": 72, "sec": 60},
+ {"type": "two-year base-period", "work": "2012关税 1443 from table; 2012 rate −16+22.9 = 6.9% from 回落 text; 1443/1.069 ≈ 1350; ×1.069 trap 1540.", "acc": 62, "sec": 75},
+ {"type": "growth compare", "work": "契税 554/1392 ≈ 40% vs text 6.6%, 14.2%; negative 出口退税 row is a confusing distractor.", "acc": 85, "sec": 30},
+ {"type": "count true statements", "work": "① Q2 months ≥7.9 so Q1 <7.9; ② doubling '预计' not inferable; ③ 60574/54922 ≈ 10.3% vs 9.8%; ④ 29283 < 29630 → 2.", "acc": 36, "sec": 150}
+], "mat_acc": 68.0, "hard_points": "Text plus long tax table; Q1, Q2, Q4 are one-step base-period/growth. Hard core: Q3 two-year base via 回落 wording, and Q5 count question mixing weighted-month logic, an ambiguous 预计 claim and a multi-step hypothetical."},
+
+{"mat": "2020SC0725-M3", "q": [
+ {"type": "unit division", "work": "105.39亿 ÷ 510.63万 ≈ 2064户 (or assets ÷ 户均); only trap is 亿/万 conversion; wide bands.", "acc": 78, "sec": 35},
+ {"type": "two-year ratio growth", "work": "Recover 2016 rates via 回落: revenue 18.8%, assets 5.1%; (1.031×1.188)/(1.042×1.051) ≈ +11.8%; one-year shortcut gives C.", "acc": 48, "sec": 80},
+ {"type": "base-period + per-household", "work": "2016 tax 1.09/0.705 ≈ 1.546亿; drop 0.456亿 ÷ ~2064户 ≈ 2.2万; needs Q1 count, options well spaced.", "acc": 58, "sec": 70},
+ {"type": "base-period + reverse average", "work": "2016 payroll 19.28/1.093 ≈ 17.64亿 ÷ 6.04万 ≈ 29205; trap 29028/1.093 ≈ 26565.", "acc": 60, "sec": 65},
+ {"type": "comprehensive judgment", "work": "A 2016 ratio 2.06/1.55 ≈ 1.3 (2017's 2.1 is trap); B no 2016 rate; C true by mixture logic; D tax per revenue fell.", "acc": 52, "sec": 85}
+], "mat_acc": 59.2, "hard_points": "Text-only material with no free lookups; every item is two-step (回落 to recover prior-year rates, 亿/万 conversion, per-household reverse calculations), and the correct judgment relies on mixture-growth reasoning rather than computation."},
+
+{"mat": "2020SZ1-M2", "q": [
+ {"type": "average price difference", "work": "642.66/17.27 ≈ 37.2 vs 440.69/12.60 ≈ 35.0 → +2.2元; two divisions, direction matters.", "acc": 74, "sec": 55},
+ {"type": "growth min + growth", "work": "Box-office growth lowest in 2016 (+16 on 441); 13.72/12.60 ≈ +8.9%; 2019's 0.6% is the trap.", "acc": 80, "sec": 45},
+ {"type": "count growth >10%", "work": "Sum stacked bars 358/471/464/515/541; 2016 +31.6%, 2018 515/464 ≈ +11% borderline → 2.", "acc": 68, "sec": 60},
+ {"type": "trend-shape matching", "work": "Increments: attendance 1.12/2.48/0.97/0.10 vs imports 10/19/13/7 both rise-fall-fall; match relative heights → attendance.", "acc": 55, "sec": 90},
+ {"type": "comprehensive judgment", "work": "A 2017 film count dips; B film growth peaks 2016; C 2016 457 < 471 films; D mean 541.9, three years above.", "acc": 65, "sec": 75}
+], "mat_acc": 68.4, "hard_points": "Two clean labelled charts and light arithmetic; difficulty comes from a trend-shape item where two candidate series both rise-fall-fall, a borderline 11% growth count, and a four-option check needing several divisions."},
+
+{"mat": "2021JSA-M1", "q": [
+ {"type": "direct subtraction", "work": "99.9% − 64.0% = 35.9 points, both stated in text.", "acc": 88, "sec": 15},
+ {"type": "pie reconstruction", "work": "2000 shares: food 28.2+14.0 = 42.2, transport 13.3−6.1 ≈ 7.2, medical 8.8−2.9 ≈ 5.9, other ≈ 44.7; reject 50/33 pie.", "acc": 65, "sec": 70},
+ {"type": "growth projection", "work": "1902 × 1.134² ≈ 2446; 50-yuan bands need the squared factor computed carefully.", "acc": 75, "sec": 40},
+ {"type": "mixture / weighted average", "work": "Urban share = (21559−13328)/(28063−13328) ≈ 55.9%; options within 3 points; Engel-coefficient route misleads.", "acc": 58, "sec": 60},
+ {"type": "comprehensive judgment", "work": "C: 增长4.4倍 means ÷5.4, rise ≈ 25042 > 24000 (÷4.4 trap gives 23748); A, B lack 2018 data; D gap 9.1.", "acc": 60, "sec": 60}
+], "mat_acc": 69.2, "hard_points": "Dense text with many indicators; one free subtraction and a projection, then concept-heavy items: rebuilding 2000 shares for a pie, mixture-based urban population share, and a 增长4.4倍 trap in the judgment."},
+
+{"mat": "2021GK-M2", "q": [
+ {"type": "count growth >20%", "work": "Six bar-to-bar growth checks; only 2017 (22.6%) qualifies; 2016 (19.2%) and 2019 (19.0%) are borderline traps.", "acc": 54, "sec": 60},
+ {"type": "ratio max", "work": "Trains per line for four cities; 成都 410/7 ≈ 58.6 clearly highest.", "acc": 74, "sec": 35},
+ {"type": "share vs boundary", "work": "Locate four municipalities, sum 88.9; ÷ 227.76 ≈ 39.0%, just under the 40% cut.", "acc": 60, "sec": 45},
+ {"type": "filter + count", "work": "Pick 7 cities with ridership >10亿, compute km per line; 上海 44.6, 成都 43.2 pass; 深圳 38.05 near-miss → 2.", "acc": 55, "sec": 75},
+ {"type": "comprehensive judgment", "work": "A 5181/0.768 ≈ 6746; B increment 2012 < 2×1096; C 34.7%; D per-line ridership min 重庆 0.87 vs 苏州 0.90, ranks 10th.", "acc": 52, "sec": 90}
+], "mat_acc": 59.0, "hard_points": "国考 population; data are clean (bar chart plus city table) and arithmetic moderate, but most answers hinge on borderline thresholds (19% vs 20%, 39% vs 40%, 38 vs 40 km) and a many-division judgment item."},
+
+{"mat": "2020ZJB-M1", "q": [
+ {"type": "monthly average", "work": "(15220 − 3339)/3 ≈ 3960; traps: forgetting ÷3 (11881) or using 限额以上 (2851).", "acc": 76, "sec": 30},
+ {"type": "single-month growth from cumulative", "work": "April 批发 2338; base 10251/1.118 − 7913/1.12 ≈ 2104 → ≈ 11.1%, 0.9 below 12%; close options need precision.", "acc": 42, "sec": 100},
+ {"type": "increment ranking", "work": "国有 ≈ 64, 外商 ≈ 141, 民营 ≈ 806 by quick estimation; ordering clear.", "acc": 82, "sec": 40},
+ {"type": "pie matching", "work": "April by size = cumulative difference 430/965/1159 (≈ 17/38/45%); only pie A has one small, two large slices.", "acc": 78, "sec": 50},
+ {"type": "comprehensive judgment", "work": "A 零售 April 216 > Q1 avg 213 (trap); B ≈88 <100; C 483 > 310 true; D 10% < 10.5%, share fell.", "acc": 60, "sec": 90}
+], "mat_acc": 67.6, "hard_points": "Cumulative 1–3月 vs 1–4月 table forces differencing; Q2 reverse-engineers one month's growth from cumulative rates with close options, and Q5 hides a 216 vs 213 trap; other items routine."},
+
+{"mat": "2020ZJB-M3", "q": [
+ {"type": "growth rate", "work": "3.80/1.43 − 1 ≈ 166%; single division from labelled bars, 166 vs 173 needs some care.", "acc": 82, "sec": 25},
+ {"type": "growth compare", "work": "2016 jump 0.66 on 2.43 (≈ 27%) clearly beats other years.", "acc": 88, "sec": 30},
+ {"type": "increment compare", "work": "财产 10770×9.51/109.51 ≈ 935 vs 健康 5448×24.12/124.12 ≈ 1059; 寿险 negative; two estimates.", "acc": 72, "sec": 50},
+ {"type": "count across two charts", "work": "Total × (人身% − 财产%) by year; only 2016–2018 exceed 1万亿 (2015 ≈ 0.83).", "acc": 70, "sec": 60},
+ {"type": "comprehensive judgment", "work": "B false (2018 > 1万亿); C 174 < 200; D 8-year sum 19.70 < 20; A needs three base-period values → +1.9%.", "acc": 62, "sec": 90}
+], "mat_acc": 74.8, "hard_points": "Clean labelled charts and mostly single-step calculations; moderate work only in combining the share chart with totals and in Q5, where A needs mixed base-period work and D's sum sits just under 20."},
+
+{"mat": "2020SD-M3", "q": [
+ {"type": "base ×1% concept", "work": "Each point = base value × 1%: 7217/1.092 ≈ 6609 → 66; current × 1% gives the 72 trap.", "acc": 60, "sec": 30},
+ {"type": "share change", "work": "9.3% × (9.2 − 6.9)/109.2 ≈ +0.2 point; options far apart.", "acc": 80, "sec": 40},
+ {"type": "lookup ranking", "work": "Locate six growth rates in text (46.3, 43.3, 8.3, 12.6, 228.5, 3) and check orderings.", "acc": 88, "sec": 40},
+ {"type": "base-period ratio", "work": "(93.1/1.03)/(53/0.966) ≈ 1.65; current ratio 1.76 is the 1.8 trap.", "acc": 68, "sec": 45},
+ {"type": "comprehensive judgment", "work": "B: 46.3% > 16.6% so share rose; A 424 < 1493; C 0.076万 not 0.8万 unit trap; D 88.6 < 100.", "acc": 72, "sec": 60}
+], "mat_acc": 73.6, "hard_points": "Long but plain text; mostly lookups and standard formulas. Traps: base-period meaning of 每增长1个百分点 (66 vs 72), current-vs-base ratio (1.6 vs 1.8), and 0.08 vs 0.8万 in Q5."},
+
+{"mat": "2016ZJA-M3", "q": [
+ {"type": "sum", "work": "Add six monthly bars Jul–Dec 2014 ≈ 67.2; just pick the right months.", "acc": 85, "sec": 30},
+ {"type": "MoM growth compare", "work": "Ratio to previous month: 18.26/6.22 ≈ 2.9 dominates; don't confuse with YoY line (124.6).", "acc": 85, "sec": 30},
+ {"type": "quarter change", "work": "Q1 2015 = 24.28 vs Q4 2014 = 34.02 → −28.6% ≈ −30%.", "acc": 82, "sec": 40},
+ {"type": "count dual condition", "work": "For 12 months check both bar and YoY line rose vs previous month; careful reading → 6.", "acc": 70, "sec": 65},
+ {"type": "comprehensive judgment", "work": "A 2013.4 ≈ 5.8, not doubled; B mean 7.81 < 8; C 10.19 + 10.51 ≈ 20.7 > 20 true; D 4/13 ≠ 1/3.", "acc": 48, "sec": 100}
+], "mat_acc": 74.0, "hard_points": "Single dual-axis chart with every value labelled; first four items are additions and visual comparisons. Only Q5 is hard: three near-threshold statements (7.8 vs 8, 20.7 vs 20, 4/13 vs 1/3) plus two-step base-period."},
+
+{"mat": "2020HB-M3", "q": [
+ {"type": "lookup", "work": "Read 2017 bar: 152.1亿元.", "acc": 94, "sec": 10},
+ {"type": "growth compare", "work": "2018 given 56.6%; 2017 152.1/100.6 ≈ 51%; earlier years lower.", "acc": 86, "sec": 30},
+ {"type": "growth projection", "work": "238.2 × 1.566 ≈ 373; rounding to 1.56 gives the 371 trap, so precise multiplication needed.", "acc": 72, "sec": 30},
+ {"type": "simple ratio", "work": "广东 185 ÷ (1+3+5+6 = 15) ≈ 12.3.", "acc": 88, "sec": 25},
+ {"type": "simple judgment", "work": "2015 growth 36% < 50; 北京 is most; 368 far above half of 131; 16 = 5+10+1 true.", "acc": 90, "sec": 25}
+], "mat_acc": 86.0, "hard_points": "Very easy: two labelled charts, a direct read, single-step ratios and an arithmetic-check judgment. Only Q3's 371/373 options demand precision."},
+
+{"mat": "2016JSA-M2", "q": [
+ {"type": "sum compare", "work": "Add 满意 + 基本满意 per column: 林区 77.1 beats 垦区 74.8.", "acc": 88, "sec": 25},
+ {"type": "headcount from overall %", "work": "Use text totals: (63.6% − 36.4%) × 10100 ≈ 2747; table columns unusable without weights.", "acc": 72, "sec": 40},
+ {"type": "count with 多1倍", "work": "满意 ≥ 2 × 不满意 only for 垦区 (36.5 vs 27.4) and 其他 (24.8 vs 18.6); concept trap on 多1倍.", "acc": 72, "sec": 45},
+ {"type": "range", "work": "不清楚 max 29.4 − min 7.6 = 21.8 points.", "acc": 88, "sec": 20},
+ {"type": "comprehensive judgment", "work": "A, B quickly false; D fails only at 其他 36.5 < 38.7; C true by mixture bound (垦+林 < half) or elimination.", "acc": 52, "sec": 90}
+], "mat_acc": 74.4, "hard_points": "Small percentage table, mostly additions; moderate traps: using text overall rates for headcounts, the meaning of 多1倍, and a judgment whose answer needs mixture-bound reasoning while the distractor fails in one column only."},
+
+{"mat": "2015JSA-M1", "q": [
+ {"type": "lookup", "work": "Bars above 40%: 衣着 78.7, 食品 49.5; 日用 39.7 just below.", "acc": 93, "sec": 15},
+ {"type": "weighted average", "work": "Female 21.1, male 17.3, overall 19.4 → 2.1/3.8 ≈ 55.3%; 44.7% (male share) trap.", "acc": 68, "sec": 45},
+ {"type": "lookup compare", "work": "Compare per-capita counts in text: 31.0 (月收入1万以上) highest.", "acc": 87, "sec": 15},
+ {"type": "simple ratio", "work": "36.8/17.8 ≈ 2.07 → 2.1.", "acc": 90, "sec": 15},
+ {"type": "cannot-infer judgment", "work": "A 3000×39.7% = 1191; B stated; C 28.0−17.8 = 10.2; D simple mean of 27.3/21.8 lacks weights → not inferable.", "acc": 63, "sec": 60}
+], "mat_acc": 80.2, "hard_points": "Easy survey passage: labelled bar chart and short text, mostly direct reads; only the gender mixture (Q2) and spotting the unweighted average in Q5 need thought."}
+]

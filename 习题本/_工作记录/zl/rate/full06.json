@@ -1,0 +1,170 @@
+[
+  {
+    "mat": "2017GK-M3",
+    "q": [
+      {"type": "interval growth", "work": "Clock output 2015 vs 2013: derive 2014 rate -3.4% from '降幅扩大1.3个百分点', combine with -4.7% ≈ -7.9%; misreading gives the -11% trap.", "acc": 56, "sec": 55},
+      {"type": "simple division", "work": "Watch output 417亿元 ÷ 10.7亿只 ≈ 39元; trap 63 from using whole-industry 675亿.", "acc": 70, "sec": 30},
+      {"type": "ratio vs benchmark", "work": "Profit margin 23.4/365.8 ≈ 6.4% vs 7.57% → about 1.2 points lower; one division.", "acc": 72, "sec": 35},
+      {"type": "base-period difference", "work": "2014 export 57.7/1.083, total 92.5/1.04, import = total - export, surplus ≈ 17.6; 2015 surplus 23 offered as trap.", "acc": 46, "sec": 65},
+      {"type": "multi-statement", "work": "A: 14.3% two years ≈ 31% > 20% (vague '基本保持'); B 47%×57.7/92.5 ≈ 29%; C 2014 rates 2.4 vs 1.5; D 162 < 208.", "acc": 56, "sec": 90}
+    ],
+    "mat_acc": 60.0,
+    "hard_points": "Short text but traps everywhere: deriving 2014 rate from '降幅扩大', 2014 surplus needing two base periods with the 2015 value as an option, vague '基本保持上年水平' in the inference question; GK population depresses rates."
+  },
+  {
+    "mat": "2022GK-M3",
+    "q": [
+      {"type": "base-period average", "work": "9635.6万/1.061/6 ≈ 0.151亿; options 0.01 apart; skipping base period gives 0.16 trap; unit 万→亿.", "acc": 54, "sec": 50},
+      {"type": "chart sum difference", "work": "Sum Oct–Dec minus Jul–Sep Li-ion bars: 61.3 - 54.0 ≈ 7.3.", "acc": 75, "sec": 35},
+      {"type": "share range", "work": "Add six H2 bars (231.4) plus H1 178.2; share ≈ 56.5%, inside 55–60%.", "acc": 64, "sec": 50},
+      {"type": "chart comparison count", "work": "Compare two growth lines month by month; only July fails → 5 months.", "acc": 82, "sec": 25},
+      {"type": "multi-statement", "work": "A: 71.5×1.3%/1.013 ≈ 0.92 < 1 true; C needs running cumulative sum (passes 2亿 in Nov, trap); D two MoM rates; B min months.", "acc": 54, "sec": 100}
+    ],
+    "mat_acc": 65.8,
+    "hard_points": "Three charts plus text; mostly lookups and sums, but Q1 has 0.01-spaced options with base-period/unit trap, and the inference question needs a running cumulative sum to expose the 'December first' trap."
+  },
+  {
+    "mat": "2025GK-M3",
+    "q": [
+      {"type": "ratio comparison", "work": "Participants per school for four regions; 广东 12118/62 ≈ 195 clearly lowest.", "acc": 78, "sec": 25},
+      {"type": "multiple/ratio", "work": "13.88/28.84 × 10.85 ≈ 5.2; options spaced 3/5/7/9.", "acc": 76, "sec": 30},
+      {"type": "linear projection", "work": "Increment 28.84 - 23.18 = 5.66; add until > 50 → 19th edition; off-by-one or 'rate' misreading risk.", "acc": 70, "sec": 40},
+      {"type": "sum then share", "work": "Sum ten finalist counts (642) ÷ 1169 ≈ 55%; wide ranges.", "acc": 70, "sec": 50},
+      {"type": "trend chart match", "work": "Five ratios finalists/participants (38.8, 35.4, 31.2, 34.2, 39.8); only option with minimum at third point fits.", "acc": 57, "sec": 75}
+    ],
+    "mat_acc": 70.2,
+    "hard_points": "Clean chart plus table, all labelled, wide option spacing; mostly sums and simple ratios. Only the novel line-shape question needs five divisions. Easy-to-moderate for a GK passage."
+  },
+  {
+    "mat": "2017ZJA-M2",
+    "q": [
+      {"type": "base period (MoM)", "work": "May = 26857/1.0092 ≈ 26612; trap uses YoY 10.6% (24283).", "acc": 78, "sec": 30},
+      {"type": "base-period share", "work": "71075/156138 × 1.103/1.075 ≈ 46.7%; current share 45.5% offered as trap.", "acc": 66, "sec": 55},
+      {"type": "lookup", "work": "Read 1–6月 growth column: 通讯器材 14.9 highest; 6月 column would wrongly give 家电.", "acc": 86, "sec": 20},
+      {"type": "growth projection", "work": "134249 × 1.102 ≈ 147942; single multiplication.", "acc": 88, "sec": 25},
+      {"type": "multi-statement", "work": "C: 2015 ratio ≈ 8.4 > 7; A and D lack prior-year data; B direct comparison false.", "acc": 76, "sec": 60}
+    ],
+    "mat_acc": 78.8,
+    "hard_points": "Dense text plus table but questions mostly single-step; only the base-period share and MoM-vs-YoY trap need care. Inference question largely eliminated by 'no data' logic."
+  },
+  {
+    "mat": "2019JSA-M3",
+    "q": [
+      {"type": "base period", "work": "3667/1.131 ≈ 3242; options well separated.", "acc": 88, "sec": 25},
+      {"type": "simple share", "work": "8594/9562 ≈ 89.9%.", "acc": 90, "sec": 20},
+      {"type": "increment comparison", "work": "2013 increment needs growth rate: 3317×32.1/132.1 ≈ 806 < 2014's 912; skipping 2013 gives trap.", "acc": 62, "sec": 45},
+      {"type": "average growth projection", "work": "Five-year multiple 9562/3317 ≈ 2.88 reused for 2019–2023 → 9562²/3317 ≈ 27565; laborious without this trick.", "acc": 68, "sec": 70},
+      {"type": "multi-statement", "work": "C: R&D growth 19% < revenue 21%, ratio falls; traps: A wrong period (1067), B simple average 23.9%, D '各类' incomplete.", "acc": 66, "sec": 75}
+    ],
+    "mat_acc": 74.8,
+    "hard_points": "Two easy lookups; difficulty comes from the 2013 increment hidden in a growth rate, a five-year compound projection, and an inference question packed with period/average traps."
+  },
+  {
+    "mat": "2020JSA-M4",
+    "q": [
+      {"type": "growth rate", "work": "220.4/164.7 - 1 ≈ 33.8% from bar chart.", "acc": 86, "sec": 25},
+      {"type": "share-change logic", "work": "Revenue share up for east, flat central, down west → east fastest, west slowest.", "acc": 72, "sec": 40},
+      {"type": "base period × share", "work": "3396.7/1.237 × 11.1% ≈ 305; 2019 value 377 is the trap.", "acc": 75, "sec": 40},
+      {"type": "base period", "work": "1479/(1 - 68.5%) ≈ 4695.", "acc": 82, "sec": 25},
+      {"type": "multi-statement (cannot)", "work": "A needs per-item revenue: national falls (1.237/1.257), east share ratio barely up → east falls; B, C, D quick checks.", "acc": 56, "sec": 80}
+    ],
+    "mat_acc": 74.2,
+    "hard_points": "Last passage; mostly one-step calculations, but share-change reasoning (Q2) and the per-item revenue mixed-growth judgement in the final question trip weaker candidates."
+  },
+  {
+    "mat": "2022GD-M3",
+    "q": [
+      {"type": "share change", "work": "Domestic share 97.7% now, base 97.7×0.633/0.697 ≈ 88.7% → +9 points; negative growth rates confuse.", "acc": 58, "sec": 60},
+      {"type": "base-period ratio compare", "work": "Hours per departure by route type; international ≈ 4.9 vs ≈ 2.2–2.5 for others, obvious even roughly.", "acc": 80, "sec": 45},
+      {"type": "multiple count (多N倍)", "work": "'多4倍' means > 5×: only 2020 (5.24); reading as 4× gives all 5 years.", "acc": 52, "sec": 45},
+      {"type": "growth compare", "work": "Use bottom row (不重复 国际): 2017 +14.8% highest; must avoid wrong row.", "acc": 78, "sec": 40},
+      {"type": "multi-statement", "work": "B true (passengers fell far more than routes); C trap ÷5 vs ÷4 (109.6); A 80.6%; D 2019 ≈ 497万.", "acc": 60, "sec": 90}
+    ],
+    "mat_acc": 65.6,
+    "hard_points": "Long text with many parallel numbers plus a dense 15-row table; classic traps ('多4倍', 4 vs 5 intervals, negative-growth share change); last passage of the paper."
+  },
+  {
+    "mat": "2022SC1-M2",
+    "q": [
+      {"type": "lookup", "work": "Read growth rates in text: 专业技术人员 20.7% highest.", "acc": 92, "sec": 15},
+      {"type": "simple ratio", "work": "Highest-pay industry 电力: 148922/101058 ≈ 1.47.", "acc": 85, "sec": 30},
+      {"type": "count vs benchmark", "work": "Scan 16 rows of manager column against 126154; count 7 (制造 128227 close).", "acc": 74, "sec": 50},
+      {"type": "base-period difference", "work": "Education 2018: 77593/1.207 - 74531/1.057 ≈ -6200; current-year sign flips (高不到4000 trap).", "acc": 62, "sec": 60},
+      {"type": "multi-statement", "work": "C: scan 16 rows clerk vs industry average → 3 (住宿 very close); A 51103 > 5万; B 电力 higher; D 3.84 < 4.", "acc": 66, "sec": 80}
+    ],
+    "mat_acc": 75.8,
+    "hard_points": "Big 17×7 table invites misreading, but calculations are simple; only Q4's two base periods with sign flip and the row-by-row scans in Q3/Q5 cost time."
+  },
+  {
+    "mat": "2023HB-M2",
+    "q": [
+      {"type": "growth amount", "work": "105.99 × 5.26/105.26 ≈ 5.3; options close; 5.6 trap from ignoring base.", "acc": 68, "sec": 40},
+      {"type": "base period", "work": "673.34/1.0696 ≈ 629.5 → 630; 620 is close.", "acc": 80, "sec": 30},
+      {"type": "count vs benchmark", "work": "Count bars above 185.03: 6.", "acc": 88, "sec": 20},
+      {"type": "trend chart match", "work": "2021 jump (+3.1%) largest and 2020 negative; only option A ends with a spike.", "acc": 80, "sec": 45},
+      {"type": "multi-statement", "work": "D (cut off in crop, likely '2倍以上'): top-3 sum 822 ≈ 2.1× bottom-3 386; C mean 177.3 > 176; A no data; B false.", "acc": 64, "sec": 80}
+    ],
+    "mat_acc": 76.0,
+    "hard_points": "Simple text plus two bar charts; mostly one-step. Close options in Q1 and averaging ten values / summing extremes in the inference question are the only time sinks."
+  },
+  {
+    "mat": "2023SD-M3",
+    "q": [
+      {"type": "unit conversion share", "work": "45.5/6.5 = 7万亿美元; 7/38.1 ≈ 18.4%.", "acc": 80, "sec": 30},
+      {"type": "growth compare", "work": "Compute 2018–2020 growth from bars (15.1, 14.4, 9.5) vs given 16.2% for 2021.", "acc": 74, "sec": 40},
+      {"type": "share difference", "work": "Global: 38.2% - (45.0×5.7/38.1 ≈ 6.7%) ≈ 31.5; China's 32.5 - 7.3 = 25 is the trap.", "acc": 62, "sec": 45},
+      {"type": "share change (precise)", "work": "81.76% × (17.2 - 16.2)/117.2 ≈ 0.70; options 0.1 apart.", "acc": 50, "sec": 60},
+      {"type": "multi-statement", "work": "D: GDP growth 12.8%, base share 32.5×1.128/1.172 → 1.22 points; A needs 2020 shares; C sign trap (lower, not higher).", "acc": 45, "sec": 110}
+    ],
+    "mat_acc": 62.2,
+    "hard_points": "Concept-heavy text (digital economy components, shares of GDP, implied GDP growth). Two share-change calculations with tight options and a multi-step inference question with sign traps."
+  },
+  {
+    "mat": "2024JSA-M3",
+    "q": [
+      {"type": "growth amount", "work": "2091 × 4%/1.04 ≈ 80; 84 trap without base.", "acc": 80, "sec": 25},
+      {"type": "back out prior rate", "work": "64.8 + 0.1 = 64.9 vs 63.6 - 0.8 = 62.8 → 2.1; current difference 1.2 is the trap.", "acc": 72, "sec": 30},
+      {"type": "MoM increment compare", "work": "Half-year profit differences: 2023H1 678 - 504 = 174 largest; needs the text value.", "acc": 78, "sec": 35},
+      {"type": "formula selection", "work": "City = total - province; base each with own growth; pick correct coefficient placement among permutations.", "acc": 64, "sec": 60},
+      {"type": "multi-statement (cannot)", "work": "A, C via growth comparison; B 34.5% vs 21.7%; D trends differ / 2020H2 YoY missing → answer.", "acc": 62, "sec": 85}
+    ],
+    "mat_acc": 71.2,
+    "hard_points": "Mixed text plus chart with total/province/city levels; formula-derivation question and trend-matching statement need careful algebra and many half-year ratios, though elimination helps."
+  },
+  {
+    "mat": "2024ZJA-M1",
+    "q": [
+      {"type": "two base periods sum", "work": "748.6/1.106 + 1072/0.968 ≈ 1784; options 30 apart need precise division.", "acc": 62, "sec": 55},
+      {"type": "MoM back-out average", "work": "May = 130.8/0.995; (748.6 - 130.8 - 131.5)/4 ≈ 121.6; naive ÷6 gives 125 trap.", "acc": 58, "sec": 60},
+      {"type": "share difference", "work": "71.8/130.8 ≈ 55% vs 58.6/189 ≈ 31% → more than 20 points higher.", "acc": 82, "sec": 35},
+      {"type": "base-period pie match", "work": "Three base periods (460.7, 131.8, 84.5) → 68/19/12.5%; distinguish pies B and C.", "acc": 62, "sec": 75},
+      {"type": "multi-statement", "work": "A: 0.0046亿 = 46万, decline ≈ 16万 > 15万 (unit trap); C 即开 25.9 < 26.85; D 1.43 < 1.5; B 62%.", "acc": 50, "sec": 100}
+    ],
+    "mat_acc": 62.8,
+    "hard_points": "Nearly every question needs base-period work on a dense table; tight options, MoM back-calculation, pie-chart matching, and an inference question with a 亿→万 unit trap and near-threshold comparisons."
+  },
+  {
+    "mat": "2025JSA-M2",
+    "q": [
+      {"type": "average increment (period trap)", "work": "'2020–2023' uses 2019 base, 4 intervals → 1753/4 ≈ 438; every other period choice is also an option.", "acc": 47, "sec": 30},
+      {"type": "product difference", "work": "30002×19.2% - 26015×19.1% ≈ 792.", "acc": 85, "sec": 40},
+      {"type": "growth compare", "work": "Fee increments 24.3, 20.7, 22.8, 4.6 on similar bases → 2020.", "acc": 88, "sec": 25},
+      {"type": "growth projection compare", "work": "Staff grows 10% and is already 1.26×; others grow 1.5–4% → staff doubles first.", "acc": 76, "sec": 60},
+      {"type": "multi-statement", "work": "A: 50623/40050 ≈ 1.264 > 1.26 (close); B per-hospital beds fall 2021/2022; C 2019 exception; D gap widens 2021.", "acc": 72, "sec": 70}
+    ],
+    "mat_acc": 73.6,
+    "hard_points": "Single tidy table; most items are one-step. The hard point is Q1's period-convention trap where all four options match different base/interval choices; Q5 has a near-threshold 26% check."
+  },
+  {
+    "mat": "2025ZJA-M3",
+    "q": [
+      {"type": "sum then share", "work": "24975 + 14967 + 35933 = 75875; ÷ 79209 ≈ 95.8%.", "acc": 85, "sec": 30},
+      {"type": "sum count", "work": "Sum three bars per year; only 2022 and 2023 exceed 70000.", "acc": 84, "sec": 35},
+      {"type": "rank lookup", "work": "Max 生效裁判 year is 2023; its 执行 35933 ranks third (behind 42448, 36785).", "acc": 84, "sec": 25},
+      {"type": "average increment", "work": "(22602 - 8697)/5 ≈ 2781 → 2800.", "acc": 82, "sec": 25},
+      {"type": "share change", "work": "Non-applicant share 1 - 22602/24975 ≈ 9.5% vs 1 - 8697/9350 ≈ 7.0% → +2.5 points.", "acc": 74, "sec": 45}
+    ],
+    "mat_acc": 81.8,
+    "hard_points": "Two clear bar charts with all values labelled; questions are sums, ranks and simple ratios with wide options. Only Q5 combines both charts. Easy passage."
+  }
+]

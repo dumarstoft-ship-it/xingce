@@ -1,0 +1,2382 @@
+[
+{
+"mat": "2021JSA-M3",
+"score": 48.6,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2024SZ-M1",
+"score": 50.60931593170467,
+"src": "rated",
+"raw_pred": 46.0,
+"pos_adj": 0.0,
+"hard_points": "Very dense indicator text with unusual definitional reasoning (覆盖率, per-10k measures, 绿道密度); several items need hidden totals (population, built-up area), a computability judgement, and a multi-step 综合判断."
+},
+{
+"mat": "2021GK-M4",
+"score": 51.0,
+"src": "acc",
+"pos_adj": 10.0
+},
+{
+"mat": "2024SD-M2",
+"score": 52.56053739412239,
+"src": "rated",
+"raw_pred": 49.2,
+"pos_adj": 0.0,
+"hard_points": "Computation-heavy: yearly totals built from four columns, five-year ratios, 万亿元/万公顷→万元/亩 conversion with a borderline 2018 value, and close growth comparisons. Hard passage."
+},
+{
+"mat": "2019JSA-M1",
+"score": 52.82251317484993,
+"src": "rated",
+"raw_pred": 54.0,
+"pos_adj": 0.0,
+"hard_points": "Dense text of minutes and participation rates, no table; every question needs a concept (hidden residual, participant average, mixture/cross method, set overlap, weekday weighting). Hardest provincial target."
+},
+{
+"mat": "2015ZJA-M1",
+"score": 53.8,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2020JSA-M3",
+"score": 53.832183450007435,
+"src": "rated",
+"raw_pred": 56.2,
+"pos_adj": 0.0,
+"hard_points": "Survey pie/bar of respondent shares; four of five items are set-overlap logic (一定/至少/可能/exact-count traps) rather than arithmetic. Q3 conditional minimum and Q4 '说不清' range are classic error sources. Hard."
+},
+{
+"mat": "2018ZJA-M1",
+"score": 54.03061731475172,
+"src": "rated",
+"raw_pred": 51.8,
+"pos_adj": 0.0,
+"hard_points": "Short text but logic-heavy: 达标/超标 complements, percentage points turned into days, a novel target-allocation problem and an inference item with a growth-rate-vs-increment trap. Reasoning over arithmetic."
+},
+{
+"mat": "2025GKD-M3",
+"score": 54.24657469041608,
+"src": "rated",
+"raw_pred": 50.0,
+"pos_adj": 1.0,
+"hard_points": "Two dual-axis charts, 10 cities, four series; many divisions with borderline cases, a derived seats-per-screening statement and occupancy-rate modelling; mid-late 国考 passage."
+},
+{
+"mat": "2024HB-M3",
+"score": 54.88627921727188,
+"src": "rated",
+"raw_pred": 57.6,
+"pos_adj": 0.0,
+"hard_points": "Every item needs real computation: unit conversions (亿元/万吨, ‰), near-threshold calls (10.4%, 75.95%), residual pie share chained with growth, and line-chart matching; distractors mirror common slips."
+},
+{
+"mat": "2019GK-M1",
+"score": 55.048364952110504,
+"src": "rated",
+"raw_pred": 53.6,
+"pos_adj": 0.0,
+"hard_points": "Two dual-axis monthly charts; several items need hidden 2016 values via base-period, a line-shape matching item and unit conversion. Strong traps for directly using displayed 2017 data."
+},
+{
+"mat": "2026GK-M3",
+"score": 55.284515733278,
+"src": "rated",
+"raw_pred": 55.4,
+"pos_adj": 1.0,
+"hard_points": "Trap-dense: 亿个→万亿千瓦时 conversion, a cumulative chart that must be differenced (3.7 decoy), scanning 31 provinces for top five, and a 综合 where misreading the cumulative chart or units makes wrong options look true."
+},
+{
+"mat": "2022GK-M1",
+"score": 55.31034073283803,
+"src": "rated",
+"raw_pred": 58.4,
+"pos_adj": 0.0,
+"hard_points": "Two cumulative-data charts force repeated differencing; Q3 hinges on the 累计 vs 当月 mixed-growth insight; Q5 has a same-shape distractor needing magnitudes. Hardest of the 国考 targets."
+},
+{
+"mat": "2017JSA-M1",
+"score": 55.4,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2019ZJA-M2",
+"score": 55.70209279959914,
+"src": "rated",
+"raw_pred": 59.0,
+"pos_adj": 0.0,
+"hard_points": "Concept traps dominate: January 环比 needs derived Dec-2016, '变化最大' means increment not rate, derivability logic for ②③, plus a residual mixed-growth sign check."
+},
+{
+"mat": "2023JSA-M3",
+"score": 56.412900673310034,
+"src": "rated",
+"raw_pred": 55.6,
+"pos_adj": 0.0,
+"hard_points": "Survey with two sample sizes and multi-select data: Q3 base-change trap (percent up but count down), 容斥 minimum overlap and multi-select averaging; material spread over a table and two charts."
+},
+{
+"mat": "2020GKD-M1",
+"score": 56.52598374412767,
+"src": "rated",
+"raw_pred": 55.8,
+"pos_adj": 0.0,
+"hard_points": "Two clear charts, but a period-counting trap (2011初–2018末), eight growth checks, unit conversion and a 1%-close per-park comparison inside the judgment item; average 国考 opening passage."
+},
+{
+"mat": "2016JSA-M1",
+"score": 56.6,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2025HB-M1",
+"score": 56.654144557721,
+"src": "rated",
+"raw_pred": 60.4,
+"pos_adj": 0.0,
+"hard_points": "Dense text of 6-7 digit numbers and look-alike figures; most questions chain base-period steps (增速增加39个百分点, 比例增加4.86个百分点) with year and share-change traps. Calculation-heavy."
+},
+{
+"mat": "2024GK-M1",
+"score": 56.85769408519275,
+"src": "rated",
+"raw_pred": 56.8,
+"pos_adj": 0.0,
+"hard_points": "One clean table, but most items need summing 3-6 provinces then judging against tight thresholds (30%, 4.5x, 10%); Q4 hides a 万公斤 vs 万吨 unit trap. Moderate-hard for a first passage."
+},
+{
+"mat": "2024HB-M4",
+"score": 56.88872498541626,
+"src": "rated",
+"raw_pred": 51.8,
+"pos_adj": 3.0,
+"hard_points": "Dense text of near-identical figures as the last passage; negative-rate interval growth with 降幅扩大 wording, bank-only 2021 base-period, and options built on precise lures (8.85%, 3427 vs 3393)."
+},
+{
+"mat": "2017GK-M3",
+"score": 56.92825894123442,
+"src": "rated",
+"raw_pred": 60.0,
+"pos_adj": 1.0,
+"hard_points": "Short text but traps everywhere: deriving 2014 rate from '降幅扩大', 2014 surplus needing two base periods with the 2015 value as an option, vague '基本保持上年水平' in the inference question; GK population depresses rates."
+},
+{
+"mat": "2024GK-M3",
+"score": 57.13019299626593,
+"src": "rated",
+"raw_pred": 59.8,
+"pos_adj": 1.0,
+"hard_points": "Text mixes cumulative stock and 2022 additions; three items require backing out 2021 values or mixture reasoning, with distractors built from using 2022 stock or counts only."
+},
+{
+"mat": "2020SZ1-M3",
+"score": 57.2,
+"src": "acc",
+"pos_adj": 3.0
+},
+{
+"mat": "2024SC-M2",
+"score": 57.39833886186376,
+"src": "rated",
+"raw_pred": 62.0,
+"pos_adj": 0.0,
+"hard_points": "Built on the 两年平均增长 concept (Q1, Q4), plus a residual mixed-growth and a close increment comparison; long table to scan."
+},
+{
+"mat": "2016GKD-M2",
+"score": 57.44572605344449,
+"src": "rated",
+"raw_pred": 61.8,
+"pos_adj": 0.0,
+"hard_points": "Three-part material (two dual-axis charts plus text). Unit pitfalls (亿人次, 万个), growth comparisons on coarse two-decimal series, and a seven-year check in Q5 make it slow and error-prone."
+},
+{
+"mat": "2024ZJA-M1",
+"score": 57.5114219326814,
+"src": "rated",
+"raw_pred": 62.8,
+"pos_adj": 0.0,
+"hard_points": "Nearly every question needs base-period work on a dense table; tight options, MoM back-calculation, pie-chart matching, and an inference question with a 亿→万 unit trap and near-threshold comparisons."
+},
+{
+"mat": "2021JSA-M4",
+"score": 57.6,
+"src": "acc",
+"pos_adj": 3.0
+},
+{
+"mat": "2020GKD-M3",
+"score": 57.76722762853865,
+"src": "rated",
+"raw_pred": 60.6,
+"pos_adj": 1.0,
+"hard_points": "Single decimal-heavy table; nothing conceptually hard, but many multi-digit additions and subtractions, 万亿/亿 switches, and a laborious increment-shape question late in the GK section."
+},
+{
+"mat": "2024SD-M3",
+"score": 57.784975265897415,
+"src": "rated",
+"raw_pred": 62.4,
+"pos_adj": 0.0,
+"hard_points": "Short text, but nearly every item needs base-period reconstruction (同比下降, 恢复至2019年%) chained across steps; Q4 needs three precise divisions with tight options. Calculation-heavy."
+},
+{
+"mat": "2020GKD-M2",
+"score": 57.87544172255153,
+"src": "rated",
+"raw_pred": 58.6,
+"pos_adj": 0.0,
+"hard_points": "Clean table plus bar-line chart; moderate work: base-period year for a cumulative sum, unit-price growth, 24-month average. Traps: omitting 2012, 亿/万亿 units, a close 450 threshold."
+},
+{
+"mat": "2023GK-M3",
+"score": 57.88542636208375,
+"src": "rated",
+"raw_pred": 60.0,
+"pos_adj": 1.0,
+"hard_points": "Table plus stacked bar chart; most items need several growth-rate computations with 6-point option gaps, reading stacked labels, catch-up year logic; 综合 hides an equal-increment trap and the correct answer is last."
+},
+{
+"mat": "2026GK-M1",
+"score": 57.943560810448815,
+"src": "rated",
+"raw_pred": 61.6,
+"pos_adj": 0.0,
+"hard_points": "Dense two-level table (quarter vs March, volume vs value, growth). Three items need growth algebra: reverse mixed growth, base-period difference with sign/unit trap, ratio-of-growths where the subtraction shortcut fails."
+},
+{
+"mat": "2017GK-M2",
+"score": 58.01625707026015,
+"src": "rated",
+"raw_pred": 63.6,
+"pos_adj": 0.0,
+"hard_points": "Text + 7-year table. Q3 needs derived 'other institutions' with an all-average trap, Q4 seven borderline ratio checks, Q5 four statements with unit/derived values. Moderate 国考 passage, no single brutal item."
+},
+{
+"mat": "2019GK-M2",
+"score": 58.23730754916798,
+"src": "rated",
+"raw_pred": 63.2,
+"pos_adj": 0.0,
+"hard_points": "Clean labelled charts, light arithmetic, but decisive traps: hidden base-period increment for 2011, simple-vs-weighted average price, and volume×price unit insight for amount."
+},
+{
+"mat": "2019JSA-M4",
+"score": 58.26995392183173,
+"src": "rated",
+"raw_pred": 56.0,
+"pos_adj": 3.0,
+"hard_points": "Busy four-series quarterly line chart; annual totals must be built from quarters; Q3 hinges on base-period convention with every variant offered; Q5 has a near-tie growth comparison. Last passage of the paper."
+},
+{
+"mat": "2024SC-M1",
+"score": 58.39589309371938,
+"src": "rated",
+"raw_pred": 62.4,
+"pos_adj": 0.0,
+"hard_points": "Rate-heavy text where every past figure comes from 增速回落 wording. Interval growth with cross-term trap, and an abstract derivability count that many misjudge (② looks underivable)."
+},
+{
+"mat": "2020JSA-M1",
+"score": 58.52513088893954,
+"src": "rated",
+"raw_pred": 60.0,
+"pos_adj": 0.0,
+"hard_points": "Dense historical text with many year-end figures. Q1's base-year trap (1980年末) catches most users and Q3 needs creative use of two average-increment figures; the rest are direct lookups."
+},
+{
+"mat": "2023JSA-M2",
+"score": 58.581672424348355,
+"src": "rated",
+"raw_pred": 63.0,
+"pos_adj": 0.0,
+"hard_points": "Convention traps dominate: 2017-2021 年均 uses 2016 base with every misreading offered; 综合 hinges on '2016-2021逐年增加' needing absent 2015 data while the 25.9倍 statement is true; 电视/广播 and 十三五 definitions."
+},
+{
+"mat": "2026GK-M4",
+"score": 58.723251857710444,
+"src": "rated",
+"raw_pred": 42.0,
+"pos_adj": 10.0,
+"hard_points": "Dense numeric text; mixed growth with tight options, novel matching between near-identical pies, multi-step base-period monthly average, 钢材/铜材 reading trap; last 国考 passage, so many guess."
+},
+{
+"mat": "2023GK-M2",
+"score": 58.98150185331073,
+"src": "rated",
+"raw_pred": 64.8,
+"pos_adj": 0.0,
+"hard_points": "Single clean table, but every question needs many row calculations; Q3 has 14 growth checks across two years and Q4 a fairly close ratio ranking; few genuine traps."
+},
+{
+"mat": "2020SC0725-M3",
+"score": 59.0,
+"src": "acc",
+"pos_adj": 3.0
+},
+{
+"mat": "2020SZ1-M2",
+"score": 59.0,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2020HB-M1",
+"score": 59.2,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2020HB-M4",
+"score": 59.4,
+"src": "acc",
+"pos_adj": 3.0
+},
+{
+"mat": "2021SD-M3",
+"score": 59.4,
+"src": "acc",
+"pos_adj": 3.0
+},
+{
+"mat": "2024SC-M3",
+"score": 59.433094078813184,
+"src": "rated",
+"raw_pred": 59.2,
+"pos_adj": 3.0,
+"hard_points": "Two combo charts with 48 numbers. Items require reaching back a year through 同比 (2018年1月, 2018年6月), a 0.5 boundary count, and a tedious 综合 of month-by-month counts. Strong decoys from using 2019 values directly."
+},
+{
+"mat": "2025SD-M1",
+"score": 59.4586047139985,
+"src": "rated",
+"raw_pred": 61.4,
+"pos_adj": 0.0,
+"hard_points": "Simple text and bar-line chart, but options are tight (Q1 within 1%, Q2 2-point steps); Q4/Q5 need several divisions, compound growth and two-period share estimates."
+},
+{
+"mat": "2018GK-M2",
+"score": 59.546917207398934,
+"src": "rated",
+"raw_pred": 65.8,
+"pos_adj": 0.0,
+"hard_points": "Mostly direct table/chart lookups; main hurdle is Q2's hidden base (2015Q4 via 2016Q1 环比) with a near-miss trap, plus pie matching and a two-year projection."
+},
+{
+"mat": "2025GKD-M4",
+"score": 59.62037755286372,
+"src": "rated",
+"raw_pred": 44.0,
+"pos_adj": 10.0,
+"hard_points": "Last 国考 passage with dense text; most items need multi-step derivations (export from 高技术 share, two increments, two-period share) plus pie matching and a computability item; time pressure."
+},
+{
+"mat": "2024SZ-M3",
+"score": 59.65926022044846,
+"src": "rated",
+"raw_pred": 61.2,
+"pos_adj": 3.0,
+"hard_points": "One 28-row table with no year column (year inferred from event codes); almost every question needs grouping and summing many 5–6 digit entries. Arithmetic load and counting slips, not concepts, make it hard."
+},
+{
+"mat": "2018JSA-M2",
+"score": 59.660000278216586,
+"src": "rated",
+"raw_pred": 66.0,
+"pos_adj": 0.0,
+"hard_points": "Two hard items: Q3 needs the concept target population = poor/incidence plus precise subtraction of large quotients; Q4 is a near-tie in average growth with base-year ambiguity. Rest straightforward."
+},
+{
+"mat": "2019GK-M4",
+"score": 59.70465136516354,
+"src": "rated",
+"raw_pred": 44.4,
+"pos_adj": 10.0,
+"hard_points": "Pure dense text as the final 国考 passage; percentage-point phrases (比前三季度/比上年提高) must be decoded, Q3/Q4 have built-in lures, mixed growth needs base weights, and the derivability count requires judging all four items."
+},
+{
+"mat": "2019GK-M3",
+"score": 59.73110362507168,
+"src": "rated",
+"raw_pred": 64.4,
+"pos_adj": 1.0,
+"hard_points": "One table but many boundary calls (6985 vs 7000, 66.0 vs 66.6), a trend-line option format needing three yoy rates, and share×total mixing; no heavy traps, moderate overall."
+},
+{
+"mat": "2021GKD-M4",
+"score": 59.8,
+"src": "acc",
+"pos_adj": 10.0
+},
+{
+"mat": "2025GK-M4",
+"score": 59.841966522584954,
+"src": "rated",
+"raw_pred": 46.4,
+"pos_adj": 10.0,
+"hard_points": "Single dense paragraph with ~40 figures in mixed units (亿笔/万笔, 万亿元/亿元/亿美元), last 国考 passage; unit conversion (Q1), 92-day quarter (Q3) and a near-threshold 95% check (Q5)."
+},
+{
+"mat": "2022JSA-M4",
+"score": 60.11966986592029,
+"src": "rated",
+"raw_pred": 61.6,
+"pos_adj": 3.0,
+"hard_points": "Text plus daily-average table plus import chart; must juggle daily averages vs totals, day counts, weighted growth and '多…倍' wording. Q5 very laborious; last-passage position adds time pressure."
+},
+{
+"mat": "2023SD-M3",
+"score": 60.172172720228474,
+"src": "rated",
+"raw_pred": 62.2,
+"pos_adj": 3.0,
+"hard_points": "Concept-heavy text (digital economy components, shares of GDP, implied GDP growth). Two share-change calculations with tight options and a multi-step inference question with sign traps."
+},
+{
+"mat": "2023GK-M4",
+"score": 60.19333177833977,
+"src": "rated",
+"raw_pred": 44.6,
+"pos_adj": 10.0,
+"hard_points": "Long dense text; nearly every item is base-period work (two-base growth, increments with negatives, −76% base, surplus) with current-year-value traps; final 国考 passage under heavy time pressure."
+},
+{
+"mat": "2022GK-M3",
+"score": 60.20766799494601,
+"src": "rated",
+"raw_pred": 65.8,
+"pos_adj": 1.0,
+"hard_points": "Three charts plus text; mostly lookups and sums, but Q1 has 0.01-spaced options with base-period/unit trap, and the inference question needs a running cumulative sum to expose the 'December first' trap."
+},
+{
+"mat": "2015GK-M2",
+"score": 60.27280282388551,
+"src": "rated",
+"raw_pred": 66.8,
+"pos_adj": 0.0,
+"hard_points": "Dense single-block text covering seven industries; calculations are one-step, but each item hides a reading trap (高出/放缓/减亏 direction, profit vs revenue growth, derivability). Moderate GK passage."
+},
+{
+"mat": "2022SC1-M1",
+"score": 60.39100155743063,
+"src": "rated",
+"raw_pred": 67.8,
+"pos_adj": 0.0,
+"hard_points": "Text + table + 100% bar + combo chart. Q2 multiplies two shares where 2017 and 2020 differ by <1%, Q4 needs share-adjusted growth; the rest are reading/subtraction. Moderate."
+},
+{
+"mat": "2021GK-M3",
+"score": 60.4,
+"src": "acc",
+"pos_adj": 1.0
+},
+{
+"mat": "2020SZ1-M1",
+"score": 60.4,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2023GK-M1",
+"score": 60.43138836843691,
+"src": "rated",
+"raw_pred": 66.0,
+"pos_adj": 0.0,
+"hard_points": "Large 11-month table where every item needs subtractions or a back-calculated 2020 base. Traps: ÷2 in Q1 and novel line-chart matching; arithmetic simple, options mostly far apart."
+},
+{
+"mat": "2026ZJA-M2",
+"score": 60.476352351357264,
+"src": "rated",
+"raw_pred": 63.2,
+"pos_adj": 0.0,
+"hard_points": "Text-only with many 万元/亿元 figures and both 环比/同比 rates; must pick the right rate, convert units and compute fairly precise products; Q5 option D sits at 49% vs 50%."
+},
+{
+"mat": "2023HB-M3",
+"score": 60.6979413210785,
+"src": "rated",
+"raw_pred": 65.6,
+"pos_adj": 0.0,
+"hard_points": "Clean bar chart and 8x10 table with easy arithmetic; difficulty from traps: Q1 requires inferring the three provinces missing from the table, Q4 has the 9-vs-10 interval trap."
+},
+{
+"mat": "2024ZJA-M3",
+"score": 60.71739466881354,
+"src": "rated",
+"raw_pred": 61.2,
+"pos_adj": 3.0,
+"hard_points": "Very dense text of week-on-week, year-on-year and pp changes. Q4 chains a base period with the ILI% definition under close options; judgement needs several base-period calcs near thresholds."
+},
+{
+"mat": "2022GKD-M3",
+"score": 60.75288994353107,
+"src": "rated",
+"raw_pred": 64.8,
+"pos_adj": 1.0,
+"hard_points": "One big 33-row table; Q1–Q2 trivial. Difficulty sits in Q5: three statements all false with near-threshold values and an error-prone count, plus tiny-rate comparison in Q4."
+},
+{
+"mat": "2021JSA-M1",
+"score": 60.8,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2023ZJA-M2",
+"score": 60.88372065170748,
+"src": "rated",
+"raw_pred": 66.8,
+"pos_adj": 0.0,
+"hard_points": "Dense four-paragraph text mixing increments and rates. Needs the two-year-average concept, growth from increments and a base-period share; moderate precision in Q2 and Q4, otherwise routine."
+},
+{
+"mat": "2015GK-M1",
+"score": 60.92868463462783,
+"src": "rated",
+"raw_pred": 64.0,
+"pos_adj": 0.0,
+"hard_points": "Quarterly bar chart with only odd quarters labeled; questions need summing many bars (annual totals, 2012 rural 9788 near 10000). Arithmetic simple and options coarse; misassigning quarters is the main risk."
+},
+{
+"mat": "2022GD-M2",
+"score": 60.95641691151883,
+"src": "rated",
+"raw_pred": 68.8,
+"pos_adj": 0.0,
+"hard_points": "Text plus two dual-axis charts with 亩/公顷 unit traps. Q2 needs the constant-land-area idea, Q4 legend matching, Q5 several growth checks including derived per-wetland area. Moderate."
+},
+{
+"mat": "2025GKD-M1",
+"score": 61.01699712802828,
+"src": "rated",
+"raw_pred": 68.4,
+"pos_adj": 0.0,
+"hard_points": "Cross-chart totals (882, 12950) must be summed before shares; a near-threshold 苏州 case, a subtract-listed trap, and a five-slice pie judgement."
+},
+{
+"mat": "2025HB-M4",
+"score": 61.024334432461416,
+"src": "rated",
+"raw_pred": 63.2,
+"pos_adj": 3.0,
+"hard_points": "Dense text only, with '增速扩大X个百分点' two-step back-outs, two different national rates (industry vs paper) and '多…倍' wording. Traps rather than heavy arithmetic; last passage."
+},
+{
+"mat": "2025JSA-M3",
+"score": 61.15027360434907,
+"src": "rated",
+"raw_pred": 66.4,
+"pos_adj": 0.0,
+"hard_points": "Compact table with paired quantity/amount growths; Q1-Q4 routine. Q5 combines the '高N倍' wording trap with a weighted mixed-growth check, where most errors occur."
+},
+{
+"mat": "2021GKD-M1",
+"score": 61.2,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2021SC0327-M2",
+"score": 61.2,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2026GK-M2",
+"score": 61.243163269663555,
+"src": "rated",
+"raw_pred": 68.8,
+"pos_adj": 0.0,
+"hard_points": "No conceptual traps; difficulty is volume: dozens of additions across two stacked bar charts, close cases (Aug, Dec), and screening increments of four series."
+},
+{
+"mat": "2024HB-M1",
+"score": 61.38101691789839,
+"src": "rated",
+"raw_pred": 64.8,
+"pos_adj": 0.0,
+"hard_points": "Bar-line chart plus 13-row table with mixed units (万个 vs 个); many additions (type totals, full sum) and an interval-count trap in 年均增量. Moderate overall."
+},
+{
+"mat": "2021GK-M1",
+"score": 61.4,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2019JSA-M2",
+"score": 61.40874919478938,
+"src": "rated",
+"raw_pred": 69.6,
+"pos_adj": 0.0,
+"hard_points": "Three-part material (text, 14-row table, two charts) is dense. Q2 is a tedious 14-row ratio count with a borderline reversed row; Q5 has a near-threshold one-fifth statement. Other three are routine."
+},
+{
+"mat": "2025GK-M1",
+"score": 61.41682655699066,
+"src": "rated",
+"raw_pred": 69.2,
+"pos_adj": 0.0,
+"hard_points": "Single clean bar chart; difficulty comes from tedium (nine-year sum, nine near-0.9 ratios) rather than concepts. Q1 cumulative back-out and Q4 borderline ratios are the main error points."
+},
+{
+"mat": "2023ZJA-M3",
+"score": 61.52916957004017,
+"src": "rated",
+"raw_pred": 64.0,
+"pos_adj": 3.0,
+"hard_points": "Online-pharmacy data must be derived as total minus physical; average-increment base ambiguity and 2013 back-calculation traps; Q5 needs several derived series."
+},
+{
+"mat": "2021GK-M2",
+"score": 61.6,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2023HB-M4",
+"score": 61.622059235354655,
+"src": "rated",
+"raw_pred": 62.8,
+"pos_adj": 3.0,
+"hard_points": "Long pure-text passage of dates and deviations, last passage of the paper (time pressure). Arithmetic simple but deviation-direction, 高出-vs-是 and calendar-count traps."
+},
+{
+"mat": "2025SD-M3",
+"score": 61.67126346633033,
+"src": "rated",
+"raw_pred": 69.6,
+"pos_adj": 0.0,
+"hard_points": "Two dense monthly charts with a combined 1–2月 bar; several items need back-calculating prior-year months from yoy rates, mixed-growth reasoning with rounded totals, and sign/direction traps."
+},
+{
+"mat": "2016JSA-M3",
+"score": 61.8,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2016ZJA-M1",
+"score": 61.8,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2024GK-M2",
+"score": 61.969048886150134,
+"src": "rated",
+"raw_pred": 69.8,
+"pos_adj": 0.0,
+"hard_points": "Two dual-axis charts with all values labelled and no real traps; effort is in Q3's five yield checks (answer 'all') and Q5's multi-series increments. Easy-to-medium for GK."
+},
+{
+"mat": "2025SD-M2",
+"score": 61.969048886150134,
+"src": "rated",
+"raw_pred": 69.8,
+"pos_adj": 0.0,
+"hard_points": "Simple table and short text; difficulty is conceptual (增速 vs 百分点, 新登记−注销=净增) plus a Q5 whose right answer is a loose '约2倍' amid direction and 30%-threshold traps."
+},
+{
+"mat": "2021ZJA-M2",
+"score": 62.01051267878327,
+"src": "rated",
+"raw_pred": 70.2,
+"pos_adj": 0.0,
+"hard_points": "Three-page text demands locating data; arithmetic is simple, but options are tightly spaced (Q1, Q2) and wording traps (略降, 收窄, 加快) govern prior-month derivations."
+},
+{
+"mat": "2018GK-M1",
+"score": 62.014551359883896,
+"src": "rated",
+"raw_pred": 68.8,
+"pos_adj": 0.0,
+"hard_points": "Easy-moderate: one clean table plus three totals, options mostly far apart. Only Q4 (deriving world GDP, ‰ magnitude) and the four-statement judgement need care; no growth-rate algebra."
+},
+{
+"mat": "2022GD-M3",
+"score": 62.09458492412837,
+"src": "rated",
+"raw_pred": 65.6,
+"pos_adj": 3.0,
+"hard_points": "Long text with many parallel numbers plus a dense 15-row table; classic traps ('多4倍', 4 vs 5 intervals, negative-growth share change); last passage of the paper."
+},
+{
+"mat": "2018JSA-M4",
+"score": 62.12689437293341,
+"src": "rated",
+"raw_pred": 60.4,
+"pos_adj": 3.0,
+"hard_points": "Survey percentages in two pies; arithmetic trivial, but three logic items (rounding/unknown range, pigeonhole overlap, 容斥 inference) plus a 多几倍 wording trap; unfamiliar reasoning, not computation, costs points."
+},
+{
+"mat": "2024JSA-M3",
+"score": 62.26091090702232,
+"src": "rated",
+"raw_pred": 71.2,
+"pos_adj": 0.0,
+"hard_points": "Mixed text plus chart with total/province/city levels; formula-derivation question and trend-matching statement need careful algebra and many half-year ratios, though elimination helps."
+},
+{
+"mat": "2025GKD-M2",
+"score": 62.31341376133051,
+"src": "rated",
+"raw_pred": 69.6,
+"pos_adj": 0.0,
+"hard_points": "Small clean table, ratio and sum work with wide options. Traps: 含村社区 requires adding two rows, first year exceeding 150 under constant increment, matching bar heights to increments across four indicators."
+},
+{
+"mat": "2025ZJA-M2",
+"score": 62.31341376133052,
+"src": "rated",
+"raw_pred": 71.2,
+"pos_adj": 0.0,
+"hard_points": "Country-share text plus 6-year table. Q1, Q2, Q4 all require combining export and import bases (unit conversion, weighted average, cross-base comparison) where naive percentage comparison misleads. Rest routine. Moderate."
+},
+{
+"mat": "2020HB-M2",
+"score": 62.4,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2020ZJA-M1",
+"score": 62.4,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2021JSA-M2",
+"score": 62.4,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2021SC0327-M1",
+"score": 62.4,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2024JSA-M2",
+"score": 62.539579902965784,
+"src": "rated",
+"raw_pred": 71.6,
+"pos_adj": 0.0,
+"hard_points": "Cumulative-only table forces de-cumulation, but Q1–Q4 options are robust even to naive reading. Q5 is the killer: correct B needs share-based 环比 reasoning while C is a strong trap (forgetting 2022Q2)."
+},
+{
+"mat": "2024SZ-M2",
+"score": 62.54765726516706,
+"src": "rated",
+"raw_pred": 71.2,
+"pos_adj": 0.0,
+"hard_points": "Two clean charts; most items single-step. Main pitfalls: base-year choice in Q2 (both 6.3 and 6.9 offered) and nominal vs real growth; Q5 needs four yearly nominal growths."
+},
+{
+"mat": "2026ZJA-M3",
+"score": 62.59430439897966,
+"src": "rated",
+"raw_pred": 65.6,
+"pos_adj": 3.0,
+"hard_points": "Survey percentages scattered in text with chained '高/低…个百分点' relations, an unusual 容斥 minimum-overlap item and a precision-sensitive population product; last passage of the paper adds time pressure."
+},
+{
+"mat": "2018JSA-M3",
+"score": 62.652662973783436,
+"src": "rated",
+"raw_pred": 70.2,
+"pos_adj": 0.0,
+"hard_points": "Mostly easy text reads plus one conceptual killer: inferring 环比-vs-last-year from a 同比 line (count months where 同比 drops). 隔年基期 needs 回落 conversion; 综合 needs 利润率 definition. Pie data make base-share trivial."
+},
+{
+"mat": "2018GK-M4",
+"score": 62.68115933632788,
+"src": "rated",
+"raw_pred": 49.0,
+"pos_adj": 10.0,
+"hard_points": "Four near-identical paragraphs (national vs 重点, all vs export) invite mis-location; two-base and share-direction logic; arithmetic light. Last 国考 passage, so time-pressure guessing depresses every item."
+},
+{
+"mat": "2025GK-M3",
+"score": 62.69549555293412,
+"src": "rated",
+"raw_pred": 70.2,
+"pos_adj": 1.0,
+"hard_points": "Clean chart plus table, all labelled, wide option spacing; mostly sums and simple ratios. Only the novel line-shape question needs five divisions. Easy-to-moderate for a GK passage."
+},
+{
+"mat": "2024GKD-M4",
+"score": 62.79424240714552,
+"src": "rated",
+"raw_pred": 49.2,
+"pos_adj": 10.0,
+"hard_points": "Stacked bars with a data table; first three items simple. Monthly catch-up modelling and matching an increment line to a negative-increment series are unusual; last 国考 passage, so heavy time-pressure guessing."
+},
+{
+"mat": "2022JSA-M2",
+"score": 62.80209417450675,
+"src": "rated",
+"raw_pred": 71.6,
+"pos_adj": 0.0,
+"hard_points": "Small clean table with easy arithmetic, but two novel formats: an ambiguous 'maximum per launch' pigeonhole item and a pie-chart matching item requiring four years of shares."
+},
+{
+"mat": "2022GKD-M2",
+"score": 62.84651966661369,
+"src": "rated",
+"raw_pred": 69.4,
+"pos_adj": 0.0,
+"hard_points": "Single clean bar+line chart with labeled values; mostly lookups, sums, differences. Only the 2025 projection (Q5) is multi-step; 国考 population keeps even easy items in the 70s."
+},
+{
+"mat": "2022SC2-M1",
+"score": 63.1453820680603,
+"src": "rated",
+"raw_pred": 70.8,
+"pos_adj": 0.0,
+"hard_points": "Quarter-vs-March growth table testing standard techniques (interval base period, mixed-growth direction, share-direction rule). Routine for trained users; few traps, options reasonably far apart."
+},
+{
+"mat": "2015ZJA-M2",
+"score": 63.2,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2021SD-M2",
+"score": 63.2,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2024GKD-M1",
+"score": 63.21807832787165,
+"src": "rated",
+"raw_pred": 71.2,
+"pos_adj": 0.0,
+"hard_points": "Clear table plus monthly bars; first passage of 地市级. Needs bases from increments, many monthly differences to match a polyline, quarter sums; 不能推出 resolved by spotting 官网's high 举报 share. Moderate-easy."
+},
+{
+"mat": "2023GD-M2",
+"score": 63.27461986328048,
+"src": "rated",
+"raw_pred": 68.4,
+"pos_adj": 0.0,
+"hard_points": "Text, bar chart and table but data well labeled; Q4 needs the weighted-average (population ratio) insight and Q3 a base-period difference; other items are visual comparisons."
+},
+{
+"mat": "2022GK-M4",
+"score": 63.34754171793183,
+"src": "rated",
+"raw_pred": 52.6,
+"pos_adj": 10.0,
+"hard_points": "Final 国考副省级 passage: four dense paragraphs of look-alike monthly/annual figures; Jan values must be derived as 1-2月 minus Feb (Q1, Q5). Calculations otherwise standard share change and base period."
+},
+{
+"mat": "2022HB-M1",
+"score": 63.39174161519874,
+"src": "rated",
+"raw_pred": 72.6,
+"pos_adj": 0.0,
+"hard_points": "Simple charts and calculations; the one real trap is Q4, where both base-year conventions for the 2016–2021 average increment appear as options."
+},
+{
+"mat": "2022HB-M3",
+"score": 63.42405106400378,
+"src": "rated",
+"raw_pred": 68.0,
+"pos_adj": 0.0,
+"hard_points": "Three quick chart items, but Q4 needs the 结余率 definition and a precise two-step growth projection with tight options, and Q5 mixes a near-flat ratio comparison with a missing-data trap."
+},
+{
+"mat": "2025HB-M3",
+"score": 63.50078600491575,
+"src": "rated",
+"raw_pred": 68.8,
+"pos_adj": 0.0,
+"hard_points": "Organized table and chart; lookups and pattern matching are easy, but two range questions sit right on boundaries (10.87 vs 10.9, 1.996 vs 2.0) and need precise calculation."
+},
+{
+"mat": "2021ZJA-M1",
+"score": 63.5522118775971,
+"src": "rated",
+"raw_pred": 72.6,
+"pos_adj": 0.0,
+"hard_points": "Very long two-page text with look-alike figures (入境 vs 入境过夜, 人次 vs 花费); locating data is the main cost. Arithmetic mostly simple except Q3 precision and Q2 base period."
+},
+{
+"mat": "2020SD-M1",
+"score": 63.6,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2025JSA-M2",
+"score": 63.617907756834015,
+"src": "rated",
+"raw_pred": 73.6,
+"pos_adj": 0.0,
+"hard_points": "Single tidy table; most items are one-step. The hard point is Q1's period-convention trap where all four options match different base/interval choices; Q5 has a near-threshold 26% check."
+},
+{
+"mat": "2025SC-M1",
+"score": 63.617907756834015,
+"src": "rated",
+"raw_pred": 73.0,
+"pos_adj": 0.0,
+"hard_points": "Text-only and mostly one-step; main hurdles are the residual mixed growth (Q2), a 亿/万 unit conversion, and derivability logic in Q5."
+},
+{
+"mat": "2022GK-M2",
+"score": 63.6704106111422,
+"src": "rated",
+"raw_pred": 73.6,
+"pos_adj": 0.0,
+"hard_points": "Dense 3-crop cost table, but questions are mostly one-step lookups/base-period with robust options. Only Q3 needs the 产值=亩产×价格 insight with near-equal 稻谷 rates. Column-choice traps mild. Fairly easy for 国考."
+},
+{
+"mat": "2025GK-M2",
+"score": 63.6704106111422,
+"src": "rated",
+"raw_pred": 73.6,
+"pos_adj": 0.0,
+"hard_points": "Clean table + labeled bar chart. Four questions are sums/threshold counts with one borderline item each; only Q5 (line-shape choice) needs five divisions and a fine 2021-vs-2022 comparison. Easy-moderate."
+},
+{
+"mat": "2017GK-M1",
+"score": 63.678487973343465,
+"src": "rated",
+"raw_pred": 73.2,
+"pos_adj": 0.0,
+"hard_points": "Easy first 国考 passage: short text plus one bar/line chart, mostly lookups and single base-period steps; only traps are current-vs-base difference in Q1 and chart-matching of increments in Q4."
+},
+{
+"mat": "2021SD-M1",
+"score": 63.75576140506885,
+"src": "rated",
+"raw_pred": 69.0,
+"pos_adj": 0.0,
+"hard_points": "Clearly labeled stacked bars; Q1 needs the insight that the total is two components with opposite-sign base-period increments. Others are routine growth, count and projection items with mild traps."
+},
+{
+"mat": "2025SD-M4",
+"score": 63.786792305292366,
+"src": "rated",
+"raw_pred": 64.0,
+"pos_adj": 3.0,
+"hard_points": "Long text but each item maps to clearly stated numbers; difficulty concentrated in Q4 (intensity to revenue growth) and close options in Q3; Q5 answerable directly."
+},
+{
+"mat": "2017ZJA-M1",
+"score": 63.89657675277749,
+"src": "rated",
+"raw_pred": 74.0,
+"pos_adj": 0.0,
+"hard_points": "One dense paragraph but every figure is explicit. Q1, Q2 trivial; Q5 statements mostly direct. Difficulty sits in Q3 share change (two base-period values, close options) and Q4 rate-direction reasoning. Easy-moderate."
+},
+{
+"mat": "2022HB-M4",
+"score": 63.92868463462783,
+"src": "rated",
+"raw_pred": 64.0,
+"pos_adj": 3.0,
+"hard_points": "Text-only, data scattered over paragraphs; need to derive industry total and average growth (15.2-1.9). Arithmetic light, but last-passage time pressure plus denominator and sign traps."
+},
+{
+"mat": "2018ZJA-M3",
+"score": 63.93292488268315,
+"src": "rated",
+"raw_pred": 73.6,
+"pos_adj": 0.0,
+"hard_points": "Clean single chart; most items are subtraction or counting. Harder spots: population via 普及率 with close options and the judgment item's period-base and percentage-point-direction traps."
+},
+{
+"mat": "2020SD-M2",
+"score": 64.0,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2019ZJA-M1",
+"score": 64.05004663460143,
+"src": "rated",
+"raw_pred": 72.4,
+"pos_adj": 0.0,
+"hard_points": "Single clean table, small calculations. Mild traps only: ÷4 vs ÷5 years in Q1 and two close growth rates in Q2; judgement answer visible at a glance."
+},
+{
+"mat": "2017GK-M4",
+"score": 64.13912321365532,
+"src": "rated",
+"raw_pred": 54.0,
+"pos_adj": 10.0,
+"hard_points": "Plain integer table with easy arithmetic, but it is the final 国考副省级 passage (time pressure, guessing) and Q4/Q5 require tedious scanning of many cells; Q2 needs five-year-plan years."
+},
+{
+"mat": "2023GD-M1",
+"score": 64.27217409513608,
+"src": "rated",
+"raw_pred": 74.2,
+"pos_adj": 0.0,
+"hard_points": "Mostly easy table lookups; the opener hides an unstated identity (province-level = total − regions) and the judgment item needs a close growth comparison plus counting categories."
+},
+{
+"mat": "2019JSA-M3",
+"score": 64.29640618173985,
+"src": "rated",
+"raw_pred": 74.8,
+"pos_adj": 0.0,
+"hard_points": "Two easy lookups; difficulty comes from the 2013 increment hidden in a growth rate, a five-year compound projection, and an inference question packed with period/average traps."
+},
+{
+"mat": "2016GKD-M4",
+"score": 64.34105726868682,
+"src": "rated",
+"raw_pred": 52.6,
+"pos_adj": 10.0,
+"hard_points": "Combo chart of cumulative bars and two cumulative growth lines; cumulative→quarterly traps in Q3 and Q5, units mixing 亿 and 万亿, a two-year base calculation; last passage of the 地市级 paper."
+},
+{
+"mat": "2018ZJA-M2",
+"score": 64.3437933733206,
+"src": "rated",
+"raw_pred": 74.0,
+"pos_adj": 0.0,
+"hard_points": "Two clean tables with explicit growth figures; mostly one-step base-period work. Only Q3's threshold comparison and Q5's 0.88-vs-1亿 precision need care. Easy-medium."
+},
+{
+"mat": "2016GKD-M3",
+"score": 64.36750952859495,
+"src": "rated",
+"raw_pred": 72.6,
+"pos_adj": 1.0,
+"hard_points": "Dense text but questions mostly direct; difficulty concentrates in the two-year base period with a derived prior growth rate and the close 101-vs-100 statement."
+},
+{
+"mat": "2022SC1-M3",
+"score": 64.37643974598434,
+"src": "rated",
+"raw_pred": 66.8,
+"pos_adj": 3.0,
+"hard_points": "Short text plus stacked-bar table; standard ratio and average-growth work. Q4 projection with a negative 同城 increment and Q5 near-threshold checks are the hard parts."
+},
+{
+"mat": "2015ZJA-M3",
+"score": 64.4,
+"src": "acc",
+"pos_adj": 3.0
+},
+{
+"mat": "2021SC2-M1",
+"score": 64.4094892525575,
+"src": "rated",
+"raw_pred": 74.4,
+"pos_adj": 0.0,
+"hard_points": "Clean single table with easy lookups; real difficulty only in Q1's near-tie of increments and Q5's several multi-number sums."
+},
+{
+"mat": "2024ZJA-M2",
+"score": 64.42968265806066,
+"src": "rated",
+"raw_pred": 72.2,
+"pos_adj": 0.0,
+"hard_points": "Dense but clean numeric table; standard base period, share and count. Q4 needs increment estimates across many provinces to find max and min; Q5 needs three subtractions before pie matching."
+},
+{
+"mat": "2023GD-M3",
+"score": 64.52990962780828,
+"src": "rated",
+"raw_pred": 69.4,
+"pos_adj": 3.0,
+"hard_points": "Totals are given only for 2022 and must be backed out through a growth-rate chain; traps around base years and simple averages of rates; Q5 pie matching is laborious estimation."
+},
+{
+"mat": "2020ZJX-M2",
+"score": 64.56221907661333,
+"src": "rated",
+"raw_pred": 68.0,
+"pos_adj": 3.0,
+"hard_points": "Text plus combo chart. Close options in Q1 (2017 trap), boundary check in the GDP count, and razor-thin 40.1% / 0.975 in judgement; other items easy."
+},
+{
+"mat": "2018GK-M3",
+"score": 64.6704106111422,
+"src": "rated",
+"raw_pred": 72.0,
+"pos_adj": 1.0,
+"hard_points": "Easy park table: single divisions, a count, locating a province figure. Mild traps only—万公顷 conversion, mismatching 浙江/江苏 numbers, 南京's outsized average in 综合. Little real calculation; low-tier difficulty for 国考."
+},
+{
+"mat": "2016JSA-M4",
+"score": 64.8,
+"src": "acc",
+"pos_adj": 3.0
+},
+{
+"mat": "2023SD-M1",
+"score": 64.80931868151988,
+"src": "rated",
+"raw_pred": 75.2,
+"pos_adj": 0.0,
+"hard_points": "Rates-of-rates data: chart plus small size table, few numbers. Lookups easy; difficulty from relative growth of a percentage with borderline thresholds (Q3) and the computation-heavy Q5."
+},
+{
+"mat": "2022SC1-M2",
+"score": 64.86182153582807,
+"src": "rated",
+"raw_pred": 75.8,
+"pos_adj": 0.0,
+"hard_points": "Big 17×7 table invites misreading, but calculations are simple; only Q4's two base periods with sign flip and the row-by-row scans in Q3/Q5 cost time."
+},
+{
+"mat": "2025JSA-M1",
+"score": 64.91432439013626,
+"src": "rated",
+"raw_pred": 75.8,
+"pos_adj": 0.0,
+"hard_points": "Text-only but each question is one standard operation. Q3 two-part base-period with a 2023-value trap and Q5 wording traps (period mismatch, 增长n倍) are the main pitfalls. Easy-moderate."
+},
+{
+"mat": "2024JSA-M1",
+"score": 64.92240175233752,
+"src": "rated",
+"raw_pred": 75.4,
+"pos_adj": 0.0,
+"hard_points": "Long dense text with many similar categories, but each question is one standard formula (growth amount, per-capita, share, average-growth rule). Close options demand precision; Q5 has 同比/环比 and 多倍 wording traps."
+},
+{
+"mat": "2023HB-M2",
+"score": 64.97490460664571,
+"src": "rated",
+"raw_pred": 76.0,
+"pos_adj": 0.0,
+"hard_points": "Simple text plus two bar charts; mostly one-step. Close options in Q1 and averaging ten values / summing extremes in the inference question are the only time sinks."
+},
+{
+"mat": "2021SC2-M2",
+"score": 65.0274074609539,
+"src": "rated",
+"raw_pred": 74.4,
+"pos_adj": 0.0,
+"hard_points": "Pure dense text but every quantity explicit. Mixed growth for national 单产, simple base from increment and rate, signed residual sum. 不能推出 answer directly contradicted by text. Moderate-easy overall."
+},
+{
+"mat": "2020JSA-M2",
+"score": 65.03548482315514,
+"src": "rated",
+"raw_pred": 75.6,
+"pos_adj": 0.0,
+"hard_points": "Clean table and one text paragraph; most items are lookups or one-step growth. Difficulty concentrated in Q4 base-year convention (2012 vs 2013 flips the answer) and Q5 '多2倍多' wording plus an 8-number sum."
+},
+{
+"mat": "2015GK-M3",
+"score": 65.0460079535008,
+"src": "rated",
+"raw_pred": 73.8,
+"pos_adj": 1.0,
+"hard_points": "Easy overall: big but clean 15-city table, mostly lookups and simple sums with well-spaced options. Only the judgment item takes real scanning and one close average comparison."
+},
+{
+"mat": "2020ZJA-M2",
+"score": 65.2,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2023SC-M3",
+"score": 65.2568722259217,
+"src": "rated",
+"raw_pred": 66.6,
+"pos_adj": 3.0,
+"hard_points": "All dense text with many similar 1-7月 versus 7月 figures; base-period share and cumulative subtraction require locating the right pairs, but options are reasonably spaced."
+},
+{
+"mat": "2016GKD-M1",
+"score": 65.45200746733347,
+"src": "rated",
+"raw_pred": 72.0,
+"pos_adj": 0.0,
+"hard_points": "Small clean table, mostly one-step lookups or ratios with well-separated options; mild traps only (growth formula direction, 80% threshold near 山东, units in Q4). Easy passage."
+},
+{
+"mat": "2022HB-M2",
+"score": 65.47973974422446,
+"src": "rated",
+"raw_pred": 75.2,
+"pos_adj": 0.0,
+"hard_points": "Clean ten-year table with easy lookups. Difficulty concentrated in one knife-edge average (100.27 vs 100) needing exact addition and a curve-shape match hinging on the small 2018 dip. 不能推出 is obvious."
+},
+{
+"mat": "2018JSA-M1",
+"score": 65.52012655523076,
+"src": "rated",
+"raw_pred": 75.0,
+"pos_adj": 0.0,
+"hard_points": "Short text, mostly one-step base period and share with far options. Only the 30%-female reverse share and spotting the averaged-regional-growth trap need thought."
+},
+{
+"mat": "2020ZJX-M1",
+"score": 65.56051336623706,
+"src": "rated",
+"raw_pred": 74.2,
+"pos_adj": 0.0,
+"hard_points": "Three pages of text but clearly labeled data and simple arithmetic; only Q3 (percentage-point wording) and Q5 (mixed-growth logic trap) need real thought."
+},
+{
+"mat": "2020GKD-M4",
+"score": 65.56477764217772,
+"src": "rated",
+"raw_pred": 58.8,
+"pos_adj": 10.0,
+"hard_points": "Long dense text of look-alike indicators; every item needs locating the right sentence plus multi-step reasoning (contribution rate, totals from shares, prior-year share), with unit and monthly-average traps."
+},
+{
+"mat": "2025JSA-M4",
+"score": 65.69304978478974,
+"src": "rated",
+"raw_pred": 70.0,
+"pos_adj": 3.0,
+"hard_points": "Short text and a simple bar-line chart; Q1–Q4 are one-step. Last passage of the paper, so time pressure; the correct judgement D is a conceptual bound many hesitate on."
+},
+{
+"mat": "2022JSA-M1",
+"score": 65.70079022313229,
+"src": "rated",
+"raw_pred": 76.4,
+"pos_adj": 0.0,
+"hard_points": "Dense one-paragraph text with many growth rates, but most questions are one-step. Difficulty lies in the algebraic formula item and the averaged-growth trap in Q5. Easy-medium."
+},
+{
+"mat": "2022GD-M1",
+"score": 65.71398324806101,
+"src": "rated",
+"raw_pred": 76.8,
+"pos_adj": 0.0,
+"hard_points": "Pure text but numbers are clearly labeled; Q1-Q2 trivial, Q4 is reading care. Effort concentrated in the Q3 counterfactual and Q5 with four computations including a projection."
+},
+{
+"mat": "2024JSA-M4",
+"score": 65.73343659579604,
+"src": "rated",
+"raw_pred": 69.2,
+"pos_adj": 3.0,
+"hard_points": "Short text plus small table; most items one-step. Q2 needs the insight amount = users x per-capita spend; Q5 hinges on '增长N倍' and boundary '超' wording. Last passage of the paper."
+},
+{
+"mat": "2025HB-M2",
+"score": 65.74225401576541,
+"src": "rated",
+"raw_pred": 76.8,
+"pos_adj": 0.0,
+"hard_points": "Clear chart and small table; standard averages and growth counts with a couple of close calls. The judgment item needs annual-minus-half-year derivation but yields to elimination."
+},
+{
+"mat": "2020ZJA-M3",
+"score": 65.8,
+"src": "acc",
+"pos_adj": 3.0
+},
+{
+"mat": "2025ZJA-M1",
+"score": 65.82706631887864,
+"src": "rated",
+"raw_pred": 77.0,
+"pos_adj": 0.0,
+"hard_points": "Clean table with clear labels; four items are one-step. Only Q3's close 环比-growth comparison (国际 route) needs precision; Q5 requires remembering the December base."
+},
+{
+"mat": "2022SD-M1",
+"score": 66.02496169280951,
+"src": "rated",
+"raw_pred": 72.6,
+"pos_adj": 0.0,
+"hard_points": "One clean table; standard base-period, mixed-growth and ratio-direction tasks. Traps: 民航 in 万吨 and close rail/water increments. Moderate-easy."
+},
+{
+"mat": "2022SD-M2",
+"score": 66.13050589223931,
+"src": "rated",
+"raw_pred": 73.2,
+"pos_adj": 0.0,
+"hard_points": "Several charts (yearly bars, province and city rankings) but each item uses one or two labeled values; pitfalls are the 多几倍 wording and cross-chart city/province matching in Q5. Easy-moderate."
+},
+{
+"mat": "2019ZJA-M3",
+"score": 66.33116139868928,
+"src": "rated",
+"raw_pred": 71.4,
+"pos_adj": 3.0,
+"hard_points": "Dense 10×4 table plus share line; requires total×share products, translating '2倍以上' into a 2/3 share threshold with near-boundary values, growth-trend shape matching, and a 综合 with near-threshold and 倍数-wording traps."
+},
+{
+"mat": "2022SC2-M3",
+"score": 66.33116139868928,
+"src": "rated",
+"raw_pred": 71.4,
+"pos_adj": 3.0,
+"hard_points": "Five dense text paragraphs, no tables. Average-per-show change needs two base periods plus 亿/万→元 conversion; count-type 推出 needs data-availability judgments for four statements. Remaining items are direct shares and rates."
+},
+{
+"mat": "2020SC0725-M2",
+"score": 66.4,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2023SC-M2",
+"score": 66.42075244067127,
+"src": "rated",
+"raw_pred": 78.0,
+"pos_adj": 0.0,
+"hard_points": "Clean charts; four items are lookups or simple growth. Difficulty lies only in the final count-the-wrong-statements item with a near-tie year and subjective '大体一致' wording."
+},
+{
+"mat": "2024SD-M1",
+"score": 66.47729397608009,
+"src": "rated",
+"raw_pred": 73.4,
+"pos_adj": 0.0,
+"hard_points": "Mostly straightforward lookups; traps are 产值 vs 增加值 in the share change, base-period bar-chart matching (2021 vs 2022 heights) and 万吨→亿斤 conversion."
+},
+{
+"mat": "2017ZJA-M2",
+"score": 66.55806759809268,
+"src": "rated",
+"raw_pred": 78.8,
+"pos_adj": 0.0,
+"hard_points": "Dense text plus table but questions mostly single-step; only the base-period share and MoM-vs-YoY trap need care. Inference question largely eliminated by 'no data' logic."
+},
+{
+"mat": "2023ZJA-M1",
+"score": 66.57826100359583,
+"src": "rated",
+"raw_pred": 76.0,
+"pos_adj": 0.0,
+"hard_points": "Single well-organized table; all questions are lookups, sums or simple shares with wide option gaps. Mild traps: row scope in Q1; Q5 needs several checks."
+},
+{
+"mat": "2020SD-M3",
+"score": 66.8,
+"src": "acc",
+"pos_adj": 3.0
+},
+{
+"mat": "2022JSA-M3",
+"score": 66.89327812944498,
+"src": "rated",
+"raw_pred": 74.8,
+"pos_adj": 0.0,
+"hard_points": "Small clean table plus bar/line chart; short calculations with elimination shortcuts. Only the 十三五 base-year/÷5 lure is notable; an easy passage."
+},
+{
+"mat": "2020JSA-M4",
+"score": 66.95715696928694,
+"src": "rated",
+"raw_pred": 74.2,
+"pos_adj": 3.0,
+"hard_points": "Last passage; mostly one-step calculations, but share-change reasoning (Q2) and the per-item revenue mixed-growth judgement in the final question trip weaker candidates."
+},
+{
+"mat": "2017ZJA-M3",
+"score": 67.09043344560773,
+"src": "rated",
+"raw_pred": 71.6,
+"pos_adj": 3.0,
+"hard_points": "Short text plus small table; Q1-Q4 routine (base period, interval growth, share comparison, chart shape). Difficulty concentrated in Q5, where B's negative-growth comparison distracts from the true C."
+},
+{
+"mat": "2025SC-M3",
+"score": 67.10254948890963,
+"src": "rated",
+"raw_pred": 69.2,
+"pos_adj": 3.0,
+"hard_points": "Table of cumulative Q1/H1 values forces repeated Q2-by-subtraction; cumulative-growth logic in Q5. Numbers are clean and options reasonably apart, so moderate."
+},
+{
+"mat": "2023HB-M1",
+"score": 67.28906887730672,
+"src": "rated",
+"raw_pred": 80.0,
+"pos_adj": 0.0,
+"hard_points": "Bar chart + 10-year price table; questions are single-step lookups/growths with clear options. Only Q5 needs several year-on-year egg-price growths (2018 vs 2021). Easy."
+},
+{
+"mat": "2016ZJA-M2",
+"score": 67.6,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2020SC1206-M1",
+"score": 67.8,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2025SC-M2",
+"score": 67.96756730221256,
+"src": "rated",
+"raw_pred": 79.6,
+"pos_adj": 0.0,
+"hard_points": "Easy: short text, small table, labeled bars. Direct shares, a growth comparison with a clear winner, pie recognition, per-activity averages; only 综合 needs one base-period increment and a ratio-direction check."
+},
+{
+"mat": "2024GK-M4",
+"score": 68.07279860566898,
+"src": "rated",
+"raw_pred": 59.2,
+"pos_adj": 10.0,
+"hard_points": "Dense text, but most items need one or two simple steps with spaced options; mild lures (2022 vs 2013 shares, 10/9). Real difficulty only in the derivability count, plus last-passage time pressure."
+},
+{
+"mat": "2021ZJA-M3",
+"score": 68.31011513799801,
+"src": "rated",
+"raw_pred": 72.0,
+"pos_adj": 3.0,
+"hard_points": "Single static table without growth rates; difficulty is volume (ten-item threshold count) and one near-boundary ratio. Other items are direct sums or differences with spaced options."
+},
+{
+"mat": "2024SD-M4",
+"score": 68.4030048033125,
+"src": "rated",
+"raw_pred": 76.2,
+"pos_adj": 3.0,
+"hard_points": "First three items are quick lookups or one division; difficulty is the 2021 back-calculation of shares and amount and a judgment item mixing similar shares (风光 vs all renewables)."
+},
+{
+"mat": "2023JSA-M4",
+"score": 68.90433975060404,
+"src": "rated",
+"raw_pred": 72.8,
+"pos_adj": 3.0,
+"hard_points": "Short text plus ranked table; arithmetic trivial (subtractions, one base-period). Friction only from matching reordered countries across years, typos, and last-passage time pressure."
+},
+{
+"mat": "2022SD-M3",
+"score": 68.92695636476756,
+"src": "rated",
+"raw_pred": 76.8,
+"pos_adj": 3.0,
+"hard_points": "Text + bar chart + 16-row table (chart/table taken from unlisted crop p3), yet questions are routine: one two-period share, simple bar differences, obvious comparisons. Only Q5 needs mixed-growth reasoning and scope care."
+},
+{
+"mat": "2015JSA-M2",
+"score": 69.0,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2023SD-M2",
+"score": 69.09839801038899,
+"src": "rated",
+"raw_pred": 83.2,
+"pos_adj": 0.0,
+"hard_points": "Short text plus one combo chart; each question is one standard operation (share, base-period, mixed growth, average) with well-separated options. Q4's five divisions are the only real work. Easy."
+},
+{
+"mat": "2015GK-M4",
+"score": 69.2036293138454,
+"src": "rated",
+"raw_pred": 61.2,
+"pos_adj": 10.0,
+"hard_points": "Clean text, table and labeled bar chart; mostly one-step calculations with well-separated options. Only the ÷12 monthly lure and 2012-base subtraction; difficulty is mainly last-passage time pressure in 国考."
+},
+{
+"mat": "2024HB-M2",
+"score": 69.54561463093208,
+"src": "rated",
+"raw_pred": 83.2,
+"pos_adj": 0.0,
+"hard_points": "One sorted table of three-digit values; four questions are pure lookups or tiny sums. Only Q5's close decline-rate comparison and counting traps need care. Very easy passage."
+},
+{
+"mat": "2022SC2-M2",
+"score": 69.61131051016899,
+"src": "rated",
+"raw_pred": 83.6,
+"pos_adj": 0.0,
+"hard_points": "Easy passage: direct lookups and wide option gaps; only Q1 needs two base-period increments."
+},
+{
+"mat": "2017JSA-M4",
+"score": 69.61864781460213,
+"src": "rated",
+"raw_pred": 78.4,
+"pos_adj": 3.0,
+"hard_points": "Large table plus two bar charts, but every question is a single sum or ratio with spread options; tail-digit tricks work. Only mild traps (资助率 definition, close 47-48% ratios); last-passage time pressure."
+},
+{
+"mat": "2026ZJA-M1",
+"score": 69.64361995897403,
+"src": "rated",
+"raw_pred": 79.0,
+"pos_adj": 0.0,
+"hard_points": "Two clean tables; standard share, increment and trend calculations with well-separated options. Only the implied exchange-rate conversion in Q4 adds real work. Easy passage."
+},
+{
+"mat": "2018ZJA-M4",
+"score": 69.6671119878097,
+"src": "rated",
+"raw_pred": 74.4,
+"pos_adj": 3.0,
+"hard_points": "Long material yet clean table and chart; most items are lookups or single ratios with an obvious winner. Only Q5 requires several 2015 back-calculations; slight last-passage pressure."
+},
+{
+"mat": "2016ZJA-M3",
+"score": 70.2,
+"src": "acc",
+"pos_adj": 3.0
+},
+{
+"mat": "2020HB-M3",
+"score": 70.8,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2023JSA-M1",
+"score": 70.85522428916305,
+"src": "rated",
+"raw_pred": 85.8,
+"pos_adj": 0.0,
+"hard_points": "Short text with one-step calculations and well-separated options; only mild traps (annual average vs single-year growth, direction of '60%以上')."
+},
+{
+"mat": "2025ZJA-M3",
+"score": 71.2543136603573,
+"src": "rated",
+"raw_pred": 81.8,
+"pos_adj": 3.0,
+"hard_points": "Two clear bar charts with all values labelled; questions are sums, ranks and simple ratios with wide options. Only Q5 combines both charts. Easy passage."
+},
+{
+"mat": "2021SC2-M3",
+"score": 71.39970617997999,
+"src": "rated",
+"raw_pred": 76.8,
+"pos_adj": 3.0,
+"hard_points": "Easy: clear chart plus text, mostly lookups and coarse estimation with far-apart options. Only the five-year sum and the constant-increment projection need care."
+},
+{
+"mat": "2017JSA-M2",
+"score": 72.8,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2020SC1206-M3",
+"score": 74.6,
+"src": "acc",
+"pos_adj": 3.0
+},
+{
+"mat": "2015JSA-M4",
+"score": 75.0,
+"src": "acc",
+"pos_adj": 3.0
+},
+{
+"mat": "2016JSA-M2",
+"score": 75.0,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2020SC0725-M1",
+"score": 76.8,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2017JSA-M3",
+"score": 77.4,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2020SC1206-M2",
+"score": 77.8,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2015JSA-M1",
+"score": 79.4,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "2015JSA-M3",
+"score": 83.6,
+"src": "acc",
+"pos_adj": 0.0
+},
+{
+"mat": "MK26ZX-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK26ZX-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK26ZX-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK26ZX-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2701X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2701X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2701X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2701X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2702X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2702X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2702X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2702X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2704X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2704X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2704X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2704X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2705X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2705X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2705X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2705X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2706X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2706X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2706X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2706X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2707X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2707X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2707X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2707X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2708X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2708X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2708X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2708X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2709X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2709X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2709X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2709X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2710X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2710X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2710X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2710X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2711X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2711X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2711X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2711X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2712X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2712X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2712X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2712X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2713X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2713X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2713X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2713X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2714X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2714X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2714X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2714X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2715X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2715X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2715X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2715X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2717X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2717X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2717X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2717X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2718X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2718X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2718X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2718X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2719X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2719X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2719X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2719X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2720X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2720X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2720X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2720X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2721X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2721X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2721X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2721X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2722X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2722X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2722X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2722X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2723X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2723X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2723X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2723X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2724X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2724X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2724X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2724X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2726X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2726X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2726X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2726X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2727X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2727X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2727X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2727X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2728X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2728X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2728X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2728X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2729X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2729X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2729X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2729X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2730X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2730X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2730X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2730X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2731X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2731X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2731X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2731X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2732X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2732X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2732X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2732X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2733X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2733X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2733X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2733X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2734X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2734X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2734X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2734X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2735D-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2735D-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2735D-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2735D-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2736F-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2736F-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2736F-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2736F-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2737D-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2737D-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2737D-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2737D-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2738X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2738X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2738X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2738X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2739X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2739X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2739X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2739X-M4",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2740X-M1",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2740X-M2",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2740X-M3",
+"score": null,
+"src": "missing"
+},
+{
+"mat": "MK2740X-M4",
+"score": null,
+"src": "missing"
+}
+]

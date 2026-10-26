@@ -1,0 +1,121 @@
+[
+  {"mat": "2015GK-M2", "q": [
+    {"type": "share→total", "work": "Locate 37864亿 and 3.7% share; 37864/3.7% ≈ 102万亿 with 亿→万亿 conversion; options ~5% apart, single division.", "acc": 74, "sec": 35},
+    {"type": "growth-rate difference", "work": "Map '分别高出全国7.9/8.4/14.2' to items: national tax 11.0% vs profit 12.2% → 低1.2; −5.8 and 7.0 distractors.", "acc": 70, "sec": 40},
+    {"type": "derivability concept", "work": "Decide which indicator is computable: only 百户重点 margin = 2080×27.6%/(37864×29.5%); others lack national or sub-industry bases.", "acc": 60, "sec": 60},
+    {"type": "lookup/rank", "work": "Rank profit (not revenue) growth of six industries; option C matches revenue-growth order, a trap.", "acc": 75, "sec": 35},
+    {"type": "综合判断 base period", "work": "2012 food growth 20.8+9.2, auto tax share ≈150/1407, margin via profit vs revenue growth, loss 0.2+13.6; A/D sign traps.", "acc": 55, "sec": 100}
+  ], "mat_acc": 66.8, "hard_points": "Dense single-block text covering seven industries; calculations are one-step, but each item hides a reading trap (高出/放缓/减亏 direction, profit vs revenue growth, derivability). Moderate GK passage."},
+
+  {"mat": "2019GK-M2", "q": [
+    {"type": "increment count", "work": "Bar differences 2012-2017 plus 2011 increment from 12.4% growth (≈75<80); forgetting 2011 gives the '3' trap.", "acc": 50, "sec": 60},
+    {"type": "sum + unit", "work": "Add 2011-2015 bars = 4185万辆 → 0.42亿辆.", "acc": 80, "sec": 30},
+    {"type": "monthly average", "work": "Nov = 123/1.074 ≈ 114.5 via 环比; (1240−123−114.5)/10 ≈ 100; options forgiving.", "acc": 68, "sec": 55},
+    {"type": "product comparison", "work": "Amount = volume×price (万辆×万元=亿元): 942×5.9 vs 920×6.1 → fell ≈54亿, under 100.", "acc": 64, "sec": 50},
+    {"type": "综合判断", "work": "Weighted 2016-17 price ≈6.19 (simple mean 6.15 trap), 4th-highest growth year price, increment ratio 201/22≈9.1, count <10%.", "acc": 54, "sec": 100}
+  ], "mat_acc": 63.2, "hard_points": "Clean labelled charts, light arithmetic, but decisive traps: hidden base-period increment for 2011, simple-vs-weighted average price, and volume×price unit insight for amount."},
+
+  {"mat": "2024GK-M2", "q": [
+    {"type": "lookup/rank", "work": "Find peak export-volume year (2017 50.95 vs 2019 50.33), rank its export value: third.", "acc": 79, "sec": 30},
+    {"type": "sum + unit", "work": "Sum 2016-2020 output = 8843万吨 → under 0.9亿吨; interval options.", "acc": 76, "sec": 35},
+    {"type": "ratio trend count", "work": "Yield = output/area 2018-22; area falls while output rises except 2019 (−1.1% vs −1.9%); answer is all 5.", "acc": 60, "sec": 75},
+    {"type": "share trend", "work": "Export volume/output 2020-22: volume drops then rebounds, output steady → 先降后升.", "acc": 74, "sec": 45},
+    {"type": "increment line match", "work": "Compute 2019-22 increments for four series; only output (−20,+20,+33,+21) fits low-high-higher-lower shape.", "acc": 60, "sec": 90}
+  ], "mat_acc": 69.8, "hard_points": "Two dual-axis charts with all values labelled and no real traps; effort is in Q3's five yield checks (answer 'all') and Q5's multi-series increments. Easy-to-medium for GK."},
+
+  {"mat": "2016GKD-M2", "q": [
+    {"type": "average with units", "work": "5.30亿人次 ÷ 3117 libraries ÷ 12 months ≈ 1.4万; unit and monthly-step traps.", "acc": 63, "sec": 50},
+    {"type": "increment ratio", "work": "Increments 50674×34.2/134.2 ≈ 12900 vs 79092×5.6/105.6 ≈ 4200; ratio ≈3, options far apart.", "acc": 66, "sec": 60},
+    {"type": "sum ratio", "work": "Sum 2012-14 loans 12.08 over visits 14.56 ≈ 0.83; identify bar vs line series.", "acc": 74, "sec": 40},
+    {"type": "growth-rate comparison count", "work": "Growth of two-decimal per-capita holdings 2007-14 via Δ/base; count years faster than prior: 2008, 2009, 2012.", "acc": 52, "sec": 90},
+    {"type": "综合判断", "work": "Sum 2006-10 visits 14.44<15, seats 85.55万/3117≈274 (二十多 trap), seven growth checks <12%, increment comparison 2008 vs 2011.", "acc": 54, "sec": 110}
+  ], "mat_acc": 61.8, "hard_points": "Three-part material (two dual-axis charts plus text). Unit pitfalls (亿人次, 万个), growth comparisons on coarse two-decimal series, and a seven-year check in Q5 make it slow and error-prone."},
+
+  {"mat": "2018ZJA-M2", "q": [
+    {"type": "table subtraction", "work": "30.15−7.13−16.02 = 7.00; components sum to total.", "acc": 86, "sec": 25},
+    {"type": "growth from increment", "work": "16.02/(47.57−16.02) ≈ 50.8% → 51%; dividing by current value gives 37% trap.", "acc": 80, "sec": 30},
+    {"type": "share-change count", "work": "Items whose growth exceeds total 50.8%: 教育51.7, 科技, 节能, 资源 = 4; borderline 51.7 and 48.7.", "acc": 66, "sec": 50},
+    {"type": "increment ratio", "work": "6.03×51.7/151.7 ≈ 2.06 vs 2.28×14.4/114.4 ≈ 0.29 → ≈7; options far apart.", "acc": 72, "sec": 60},
+    {"type": "综合判断", "work": "Budget 109.16/0.992 (gap 0.88<1), fund budget 35.33/0.951<40, increment 6.68×567/667≈5.7, lowest growth is 交通.", "acc": 66, "sec": 90}
+  ], "mat_acc": 74.0, "hard_points": "Two clean tables with explicit growth figures; mostly one-step base-period work. Only Q3's threshold comparison and Q5's 0.88-vs-1亿 precision need care. Easy-medium."},
+
+  {"mat": "2020GKD-M3", "q": [
+    {"type": "sum share", "work": "Sum three 2018 online segments 9754亿, divide by 5.97万亿 (unit switch) ≈ 16%.", "acc": 69, "sec": 45},
+    {"type": "increment of sums", "work": "2017 and 2016 row sums, difference 1529亿 → 0.15万亿; unit trap.", "acc": 63, "sec": 55},
+    {"type": "share change", "work": "Each segment's 2014 growth (33-50%) vs total 14.6% → all three shares rose.", "acc": 69, "sec": 50},
+    {"type": "increment line match", "work": "About 20 subtractions: 2014-18 increments of four series; 度假 103-202-207-190-104 fits plateau shape.", "acc": 51, "sec": 110},
+    {"type": "综合判断", "work": "Five-year sum 23.57<25, growth not monotone, transport 62% vs 46%, lodging +295/yr crosses 3000 in 2022 not 2023.", "acc": 51, "sec": 110}
+  ], "mat_acc": 60.6, "hard_points": "Single decimal-heavy table; nothing conceptually hard, but many multi-digit additions and subtractions, 万亿/亿 switches, and a laborious increment-shape question late in the GK section."},
+
+  {"mat": "2021ZJA-M1", "q": [
+    {"type": "lookup subtraction", "work": "Find 入境13948 and 出境13051万人次 in two-page text; difference 897.", "acc": 85, "sec": 35},
+    {"type": "base-period ratio", "work": "(50.01/1.128)/(2.7/1.037) ≈ 17; using 2017 data gives 18.5→19 trap.", "acc": 68, "sec": 50},
+    {"type": "average difference", "work": "3.77万亿/36.77亿 ≈ 1025 vs 0.80万亿/13.24亿 ≈ 604 → 421; options 3-4% apart need precision.", "acc": 62, "sec": 70},
+    {"type": "lookup ordering", "work": "Verify four orderings; 入境过夜 vs 入境 growth confusion; 印度 precedes 印度尼西亚 in source list.", "acc": 72, "sec": 60},
+    {"type": "综合判断", "work": "7990/10.28% ≈ 7.8亿<8, 695/1234>50%, 301<2×155, 3.1+13.2+49.9=66.2%<70%.", "acc": 76, "sec": 70}
+  ], "mat_acc": 72.6, "hard_points": "Very long two-page text with look-alike figures (入境 vs 入境过夜, 人次 vs 花费); locating data is the main cost. Arithmetic mostly simple except Q3 precision and Q2 base period."},
+
+  {"mat": "2022JSA-M1", "q": [
+    {"type": "growth difference", "work": "规上工业 = 11.0−5.5 = 5.5%; 数字创意 19.8−5.5 = 14.3; 5.5 trap.", "acc": 82, "sec": 30},
+    {"type": "simple division", "work": "32亿/1.8万公顷 ≈ 17.8万元.", "acc": 86, "sec": 25},
+    {"type": "base-period share", "work": "GDP growth 5.6−1.5 = 4.1%; 24.5%×1.041/1.056 ≈ 24.2%; options far apart.", "acc": 79, "sec": 40},
+    {"type": "formula selection", "work": "2019 total 10602/1.1 minus 实物 37086×0.249/1.139 over common denominator; 1.052 distractors, swapped D.", "acc": 70, "sec": 70},
+    {"type": "综合判断", "work": "GDP 25177/24.5% >10万亿; non-physical growth <10%; share rise means faster; simple mean of growth rates invalid (26.9 trap).", "acc": 65, "sec": 70}
+  ], "mat_acc": 76.4, "hard_points": "Dense one-paragraph text with many growth rates, but most questions are one-step. Difficulty lies in the algebraic formula item and the averaged-growth trap in Q5. Easy-medium."},
+
+  {"mat": "2022SD-M3", "q": [
+    {"type": "share change", "work": "713.67/833.82 × (6.1−7.0)/106.1 ≈ −0.7pp; magnitude must be below 0.9.", "acc": 74, "sec": 45},
+    {"type": "increment line match", "work": "Bar differences 2015-18: 54, 122, 62, 79 → low-peak-low-rise (D).", "acc": 80, "sec": 45},
+    {"type": "base-period ratio", "work": "653.54/1.072 ÷ 180.28/1.059 ≈ 3.6; wide interval options.", "acc": 82, "sec": 35},
+    {"type": "increment comparison", "work": "书报 has both larger value and higher rate than other options; minimal calculation.", "acc": 84, "sec": 30},
+    {"type": "综合判断", "work": "限额以上 vs 全市 scope trap (11.79 vs 120.15), three-bar sum 2319<2500, five negative categories, mixing → 限下 >7%.", "acc": 64, "sec": 90}
+  ], "mat_acc": 76.8, "hard_points": "Text + bar chart + 16-row table (chart/table taken from unlisted crop p3), yet questions are routine: one two-period share, simple bar differences, obvious comparisons. Only Q5 needs mixed-growth reasoning and scope care."},
+
+  {"mat": "2023SC-M1", "q": [
+    {"type": "two-period ratio", "work": "Margin change ≈ margin×(profit growth−revenue growth)/(1+profit growth); profit grew slower → small decline under 2pp.", "acc": 76, "sec": 45},
+    {"type": "growth count", "work": "Read 2014-2020 growth labels, count years above 15%; values near threshold (e.g., 14.9, 15.4).", "acc": 79, "sec": 30},
+    {"type": "lookup max", "work": "Compare four segment growth rates; 信息技术服务 fastest.", "acc": 87, "sec": 25},
+    {"type": "pie share match", "work": "Compute 电商平台 and 云/大数据 shares of 信息技术服务收入 (~18%, ~8%), match wedge angles; C vs D close.", "acc": 65, "sec": 70},
+    {"type": "increment line match", "work": "Revenue increments from bars 2014-2020, find four-year window with low-rise-flat-jump shape.", "acc": 62, "sec": 90}
+  ], "mat_acc": 73.8, "hard_points": "Material crop missing (14-px header only); rated from questions, assuming the 2020 software-industry bulletin text plus revenue chart. Routine growth/share items; pie and increment-shape matching add moderate effort."},
+
+  {"mat": "2024HB-M2", "q": [
+    {"type": "growth compare", "work": "2012→2022 change for four countries; only China jumps (45.4→55.3).", "acc": 92, "sec": 25},
+    {"type": "lookup ordering", "work": "Check four 2021 orderings; 巴西34.2 < 印度36.4 breaks D.", "acc": 90, "sec": 30},
+    {"type": "average", "work": "Top five of 2022 are the first five rows: 305.7/5 = 61.14.", "acc": 88, "sec": 30},
+    {"type": "sum growth", "work": "Sum five countries: 2021 194.7 vs 2022 188.5 → −3.2%.", "acc": 84, "sec": 50},
+    {"type": "综合判断", "work": "Decline rates 1.5/59.3 vs 1.4/57.3 (close), global rank not inferable, count ≥58 all years = 4, India +0.2<0.5.", "acc": 62, "sec": 80}
+  ], "mat_acc": 83.2, "hard_points": "One sorted table of three-digit values; four questions are pure lookups or tiny sums. Only Q5's close decline-rate comparison and counting traps need care. Very easy passage."},
+
+  {"mat": "2024SD-M3", "q": [
+    {"type": "mixed growth / base period", "work": "2021 base = 19.28/0.823 + 6.02/0.665 ≈ 32.5亿; decline ≈ 22%; options 19/20/22 close.", "acc": 62, "sec": 60},
+    {"type": "growth max", "work": "Sum stacked bars per year; 2021 rebound 2.23→2.91 (+30%) is largest.", "acc": 84, "sec": 35},
+    {"type": "base-period share", "work": "2019 Spring = 3758.43/73.1% ≈ 5141亿 ÷ 5.72万亿 ≈ 9%; skipping the 恢复至 step gives 7% trap.", "acc": 62, "sec": 50},
+    {"type": "multi-step per-capita", "work": "Rebuild 2021 trips (32.48亿); 2.91万亿/32.48亿 − 2.05万亿/25.30亿 ≈ 86元; 10元-spaced options demand precision.", "acc": 46, "sec": 100},
+    {"type": "综合判断", "work": "Net decreases 4.15 vs 3.03, recovery 73.1<88.6, urban-rural gaps 3.78/1.33≈2.8, Spring 2019 per-capita ≈1479>1300.", "acc": 58, "sec": 100}
+  ], "mat_acc": 62.4, "hard_points": "Short text, but nearly every item needs base-period reconstruction (同比下降, 恢复至2019年%) chained across steps; Q4 needs three precise divisions with tight options. Calculation-heavy."},
+
+  {"mat": "2025HB-M1", "q": [
+    {"type": "two-step base period", "work": "2022 growth = 40.46−39 = 1.46%; 8923901/1.4046/1.0146 ≈ 626万.", "acc": 65, "sec": 60},
+    {"type": "base-period share", "work": "Beijing 2022 = 1101072−53802; national 2022 = 6428277/1.423; ≈23%; 2023 data gives ~17% trap.", "acc": 60, "sec": 60},
+    {"type": "share change + base period", "work": "2022 share 95.32−4.86 = 90.46% × national 2022 ≈ 451.7万 ≈ 409万; unchanged-share route gives 429 trap.", "acc": 50, "sec": 75},
+    {"type": "average difference", "work": "917149.06/361 − 78668.34/50 ≈ 2541−1573 = 967万元.", "acc": 72, "sec": 50},
+    {"type": "不能推出", "work": "Software = total − works − pledges exactly; works increment 642.8×42.3/142.3 ≈ 191万<200; pledge share up; average debt down.", "acc": 55, "sec": 100}
+  ], "mat_acc": 60.4, "hard_points": "Dense text of 6-7 digit numbers and look-alike figures; most questions chain base-period steps (增速增加39个百分点, 比例增加4.86个百分点) with year and share-change traps. Calculation-heavy."},
+
+  {"mat": "2025SD-M2", "q": [
+    {"type": "formula concept", "work": "Growth of urbanization rate = (2023 rate / 2022 rate) − 1; reject percentage-point difference forms and inverse.", "acc": 74, "sec": 40},
+    {"type": "unit conversion", "work": "1647.88亿元 ÷ 7 ≈ 235亿美元; 1648 and 2022-base distractors.", "acc": 86, "sec": 20},
+    {"type": "flow concept", "work": "Net increase = 42.81 − 42.81/1.033 ≈ 1.37; cancellations = 5.97 − 1.37 = 4.60; 1.37 trap.", "acc": 63, "sec": 50},
+    {"type": "mixed growth", "work": "民营 = 私营+个体+合作社 (99% of total), growth between −2.4% and 6.1% ≈ 3.3%; 6.0 trap.", "acc": 78, "sec": 45},
+    {"type": "综合判断", "work": "Rural pop 2022 higher by 0.09 (direction trap), co-op/state 2022 ≈1.8 '约2倍', enterprise share 30.45%, foreign avg capital largest.", "acc": 48, "sec": 100}
+  ], "mat_acc": 69.8, "hard_points": "Simple table and short text; difficulty is conceptual (增速 vs 百分点, 新登记−注销=净增) plus a Q5 whose right answer is a loose '约2倍' amid direction and 30%-threshold traps."},
+
+  {"mat": "2026ZJA-M3", "q": [
+    {"type": "ratio lookup", "work": "2025 bars: 10.08%/1.24% ≈ 8; using 2023 data gives ≈1.6 trap.", "acc": 82, "sec": 25},
+    {"type": "product difference", "work": "14.12×64.01% − 14.08×63.29% ≈ 0.127亿 → fewer by >0.1亿; share-only estimate ≈0.10 is borderline.", "acc": 62, "sec": 60},
+    {"type": "multi-step subtraction", "work": "70后 = 69.8−53.79 = 16.0; 务农 = 50.18−11.66−19.74 = 18.8; 初中 22.6 → order.", "acc": 68, "sec": 55},
+    {"type": "set overlap (容斥)", "work": "Not-decreased 48.07+22.01 = 70.08%; overlap with 46.10% ≥ 16.18%; unfamiliar inclusion-exclusion in 资料.", "acc": 50, "sec": 60},
+    {"type": "reading judgment", "work": "Check qualitative claims; 品质/性价比 shares fell 2023→2025 so D wrong; A's '多数' needs 46.10+19.04.", "acc": 66, "sec": 60}
+  ], "mat_acc": 65.6, "hard_points": "Survey percentages scattered in text with chained '高/低…个百分点' relations, an unusual 容斥 minimum-overlap item and a precision-sensitive population product; last passage of the paper adds time pressure."}
+]

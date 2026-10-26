@@ -126,12 +126,14 @@ def render_day(day, out_html):
         nr = sum(1 for i in p['items'] if i['type'] == 'real'); nt = sum(1 for i in p['items'] if i['type'] == 'teacher')
         nv = len(p['items']) - nr - nt
         return f'{len(p["items"])} 题（真题 {nr}' + (f'，老师精选 {nt}' if nt else '') + f'，改编 {nv}）'
-    rows = ''.join(f'<tr><td>{esc(p["title"])}</td><td>{esc(p["module"])}</td><td>{cnt(p)}</td><td>{p.get("time_min", "")} 分钟</td></tr>' for p in day['parts'])
+    rows = ''.join(f'<tr><td>{esc(p["title"])}</td><td>{esc(p["module"])}</td><td>{cnt(p) if not p.get("print_only") else str(len(p["items"])) + " 题（真题，题目在打印册）"}</td><td>{p.get("time_min", "")} 分钟</td></tr>' for p in day['parts'])
     h.append(f'<div class="cover"><h1>第 {day["day"]} 天</h1><div class="sub">{esc(day.get("subtitle", "广东省考 42 天专项训练 · 数量关系 + 判断推理"))}</div>'
              f'<table><tr><th>部分</th><th>今日模块</th><th>题量</th><th>建议用时</th></tr>{rows}</table>'
              f'<div class="note">{esc(day.get("note", ""))}</div></div>')
     # parts
     for p in day['parts']:
+        if p.get('print_only'):  # questions live in the printed booklet: this page only points to it
+            continue
         h.append(f'<div class="part"><div class="part-h"><span>{esc(p["title"])} · {esc(p["module"])}</span><span class="meta">{len(p["items"])} 题 · 建议 {p.get("time_min", "")} 分钟</span></div>')
         cur_grp = None; last_stem = None
         for i, it in enumerate(p['items'], 1):
@@ -149,12 +151,21 @@ def render_day(day, out_html):
     # answers
     h.append('<div class="keys"><div class="part-h"><span>答案速查</span><span class="meta">先对答案，再看解析</span></div>')
     for p in day['parts']:
+        if p.get('print_only'):
+            for sn in dict.fromkeys(it['set'] for it in p['items']):
+                its = [it for it in p['items'] if it['set'] == sn]
+                h.append(f'<h3 style="font-size:11pt;margin:2mm 0 1.5mm 0">{esc(p["title"])} · 打印册第 {sn} 套</h3>' + key_table(its))
+            continue
         h.append(f'<h3 style="font-size:11pt;margin:2mm 0 1.5mm 0">{esc(p["title"])}</h3>' + key_table(p['items']))
     h.append('</div>')
     for p in day['parts']:
         h.append(f'<div class="part"><div class="part-h"><span>解析 · {esc(p["title"])}</span><span class="meta">{esc(p["module"])}</span></div>')
+        cur_set = None
         for i, it in enumerate(p['items'], 1):
-            h.append(render_ana(i, it))
+            if p.get('print_only') and it['set'] != cur_set:
+                cur_set = it['set']
+                h.append(f'<div class="grp">打印册第 {cur_set} 套</div>')
+            h.append(render_ana(it['zl_no'] if p.get('print_only') else i, it))
         h.append('</div>')
     h.append('<script>document.addEventListener("DOMContentLoaded",function(){if(window.renderMathInElement)renderMathInElement(document.body,{delimiters:[{left:"$",right:"$",display:false}],throwOnError:false});});</script>')
     h.append('</body></html>')

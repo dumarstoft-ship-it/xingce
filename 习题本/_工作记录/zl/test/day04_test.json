@@ -1,0 +1,1246 @@
+{
+ "day": 4,
+ "subtitle": "广东省考 42 天专项训练 · 数量关系 + 判断推理 + 资料分析",
+ "note": "题目页只有题号，不标题型、考法和出处，请自己判断。数字推理用历年真题，题不够时轮换重做。数学运算由历年真题（直接截取原卷）、老师笔记精选和依据真题考法改编、经程序验算的新题组成，送分题已去掉，每道题都有一个要想清楚的地方；逻辑判断和综合推理全部是真题。资料分析每天两套，题目在单独的打印册里，都是按篇挑出的高难度真题。每道题的出处、考法和技巧都写在本册最后的解析里。建议严格计时，做完再对答案。",
+ "parts": [
+  {
+   "title": "数字推理",
+   "module": "数列与数阵规律",
+   "time_min": 10,
+   "items": [
+    {
+     "type": "real",
+     "id": "2025ZJA-53",
+     "src_label": "2025浙江A类 第53题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025ZJA-53_q.png",
+     "answer": "C",
+     "kaofa": null,
+     "technique": null,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025ZJA-53_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2018ZJA-45",
+     "src_label": "2018浙江A卷 第45题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2018ZJA-45_q.png",
+     "answer": "D",
+     "kaofa": null,
+     "technique": null,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2018ZJA-45_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2022GD-29",
+     "src_label": "2022广东县级 第29题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022GD-29_q.png",
+     "answer": "B",
+     "kaofa": null,
+     "technique": null,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022GD-29_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2015ZJA-58",
+     "src_label": "2015浙江A卷 第58题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2015ZJA-58_q.png",
+     "answer": "A",
+     "kaofa": null,
+     "technique": null,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2015ZJA-58_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2023JSA-47",
+     "src_label": "2023江苏A类 第47题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023JSA-47_q.png",
+     "answer": "D",
+     "kaofa": null,
+     "technique": null,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023JSA-47_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2020SZS-5",
+     "src_label": "2020深圳思维能力 第5题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020SZS-5_q.png",
+     "answer": "A",
+     "kaofa": null,
+     "technique": null,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020SZS-5_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2021JSA-49",
+     "src_label": "2021江苏A卷 第49题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021JSA-49_q.png",
+     "answer": "B",
+     "kaofa": null,
+     "technique": null,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021JSA-49_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2024JSA-50",
+     "src_label": "2024江苏A类 第50题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024JSA-50_q.png",
+     "answer": "C",
+     "kaofa": "分数数列-分子分母和成等比",
+     "technique": "整体看",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024JSA-50_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2016JSA-57",
+     "src_label": "2016江苏A卷 第57题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2016JSA-57_q.png",
+     "answer": "A",
+     "kaofa": null,
+     "technique": null,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2016JSA-57_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2017JSA-57",
+     "src_label": "2017江苏A类 第57题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2017JSA-57_q.png",
+     "answer": "D",
+     "kaofa": null,
+     "technique": null,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2017JSA-57_j.png"
+    }
+   ]
+  },
+  {
+   "title": "数学运算",
+   "module": "经济利润",
+   "time_min": 60,
+   "items": [
+    {
+     "type": "teacher",
+     "tid": "T094",
+     "src_label": "老师笔记精选 · 未注明出处",
+     "stem": "咖啡店有拿铁和美式两款售价相同的咖啡，拿铁的售价比利润多200%，美式的成本比拿铁少1/4。某天营业结束后，店长统计两款咖啡的总利润率为80%，问当天拿铁和美式的销量之比为：",
+     "options": {
+      "A": "2:1",
+      "B": "1:2",
+      "C": "2:3",
+      "D": "3:2"
+     },
+     "answer": "B",
+     "jiexi": "先翻译条件：拿铁售价比利润多200%，即售价是利润的3倍，售价:利润=3:1，成本2份，利润率50%。美式成本比拿铁少1/4，为1.5份，售价同为3份，利润1.5份，利润率100%。线段法：总利润率80%到50%、100%的距离为30%、20%，所以两款的总成本之比=20:30=2:3（利润率按成本加权，权重是总成本而非销量）。再用比例除法：单杯成本拿铁:美式=2:1.5=4:3，销量比=(2÷4):(3÷3)=1:2。典型错误：把2:3直接当作销量比，误选C。",
+     "kaofa": "利润率混合求销量比",
+     "technique": "线段法得成本比，再比例除法",
+     "figure": null,
+     "group": "考法一：基础公式——四量互求与盈亏总账"
+    },
+    {
+     "type": "real",
+     "id": "2022SD-40",
+     "src_label": "2022山东 第40题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022SD-40_q.png",
+     "answer": "B",
+     "kaofa": "经济-分段优惠代入求价",
+     "technique": "代入排除",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022SD-40_j.png",
+     "extra": "补充：结构化做法（补充官方的代入法）：设单价p，单本落2%档、10本落10%档，两种买法差＝10p×(10%－2%)＋9×6＝174，得p＝150，单次开销150×0.98＋6＝153元；若p≤100，差额最多10p×5%＋54，解出的p与档位矛盾。",
+     "group": "考法二：折扣、立减与补贴（价格政策）"
+    },
+    {
+     "type": "real",
+     "id": "2024SC-47",
+     "src_label": "2024四川 第47题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024SC-47_q.png",
+     "answer": "C",
+     "kaofa": "打折促销-满额折扣反推原价",
+     "technique": "分类讨论",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024SC-47_j.png",
+     "group": "考法二：折扣、立减与补贴（价格政策）"
+    },
+    {
+     "type": "variant",
+     "vid": "D04-math-h-v03",
+     "group": "考法二：折扣、立减与补贴（价格政策）",
+     "difficulty": 3,
+     "stem": "某市开展家电以旧换新活动，购买一级能效空调可叠加享受两项补贴：国家补贴按最终售价的20%计算，每台最高2000元；在此基础上，市级补贴按扣除国家补贴后价格的10%计算，每台最高1000元。小李买了一台一级能效空调，扣除两项补贴后实际支付8100元。这台空调的最终售价是（ ）元。",
+     "options": {
+      "A": "11000",
+      "B": "11100",
+      "C": "11250",
+      "D": "11375"
+     },
+     "answer": "A",
+     "jiexi": "卡点：先用节点定位哪项补贴封顶，再列式。售价10000元时国家补贴封顶，实付 $10000\\times0.8\\times0.9=7200$ 元；扣国补后价格达10000元、即售价12000元时市级补贴才封顶，实付9000元。8100元介于两者之间，只有国家补贴封顶：$(P-2000)\\times0.9=8100$，$P=11000$。选A。易错：默认两项都封顶得11100（市补实为910元）；都不封顶连除0.72得11250、以为只有市补封顶得11375（两者的国补都超过2000元）。（参考用时 75 秒）",
+     "kaofa": "国补地补叠加封顶的反求",
+     "technique": "节点试算定封顶区间",
+     "figure": null,
+     "shared_stem_text": null
+    },
+    {
+     "type": "real",
+     "id": "2021GK-75",
+     "src_label": "2021国考副省级 第75题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021GK-75_q.png",
+     "answer": "C",
+     "kaofa": "经济-满减券方程+最低支付",
+     "technique": "方程法",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021GK-75_j.png",
+     "extra": "补充：老师鸡兔同笼法：减免总额219÷75%＝292万元；假设15.6万张全是满50减10，只减156万元，差136万元，每换一张满100减30多减20元，故6.8万张，另8.8万张；最低实付＝8.8万×40＋6.8万×70＝828万元。易错：答成门槛之和（最低消费额1120万元）或漏除75%。",
+     "group": "考法二：折扣、立减与补贴（价格政策）"
+    },
+    {
+     "type": "real",
+     "id": "2022GK-63",
+     "src_label": "2022国考副省级 第63题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022GK-63_q.png",
+     "answer": "C",
+     "kaofa": "经济-单价数量预算方程",
+     "technique": "方程法",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022GK-63_j.png",
+     "extra": "补充：老师比例乘除：进口设备480万元买x台，国产495万元买x＋3台，单价比国产∶进口＝3∶4；数量比＝(495÷3)∶(480÷4)＝165∶120＝11∶8，故x＝8，国产11台，单价495÷11＝45万元。易错：直接拿500万元列式漏减剩余；单价比写反。",
+     "group": "考法三：单价×数量＝总价（预算与采购）"
+    },
+    {
+     "type": "real",
+     "id": "2020SC0725-50",
+     "src_label": "2020四川(7月) 第50题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020SC0725-50_q.png",
+     "answer": "A",
+     "kaofa": "经济-包装优惠最优购买",
+     "technique": "优惠额分析",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020SC0725-50_j.png",
+     "extra": "补充：10支装省2元、3支装省0.1元，2.3＝2＋3×0.1，对应1包10支＋3包3支＝19支；x＝20、21时直接买两包10支装（可多买）只要30元或30元加零头，低于1.7x－2.3，所以最大为19。这正是老师统筹一节“可以浪费，最优解不一定恰好用完”的用法。",
+     "group": "考法三：单价×数量＝总价（预算与采购）"
+    },
+    {
+     "type": "teacher",
+     "tid": "T091",
+     "src_label": "老师笔记精选 · 2019四川选调",
+     "stem": "2016年某电子产品定价为n元/台，2017年由于技术升级成本降低，定价降低10%，每台产品利润提升10%，2017年全年销售这种产品的总利润较2016年增加了21%。那么，2017年的销量比2016年：",
+     "options": {
+      "A": "提高了不到20%",
+      "B": "提高了20%或以上",
+      "C": "降低了不到20%",
+      "D": "降低了20%或以上"
+     },
+     "answer": "A",
+     "jiexi": "比例除法：总利润=单台利润×销量。总利润前后比为1:1.21，单台利润前后比为1:1.1，所以销量前后比=1.21÷1.1=1.1，即销量提高了10%，属于“提高了不到20%”。“定价n元”“定价降低10%”都与总利润的计算无关，是干扰信息。典型错误：把定价降低10%也代进去，如1.21÷0.9≈1.34或1.21÷(0.9×1.1)≈1.22，得出销量提高20%以上而误选B。",
+     "kaofa": "单利与销量的比例变化",
+     "technique": "比例除法，剔除干扰条件",
+     "figure": null,
+     "group": "考法四：赋值比例型——进价、售价、销量变化"
+    },
+    {
+     "type": "variant",
+     "vid": "D04-math-h-v04",
+     "group": "考法四：赋值比例型——进价、售价、销量变化",
+     "difficulty": 2,
+     "stem": "某便利店把一款瓶装凉茶的售价提高10%后，这款凉茶的日销量下降了20%，但每天销售这款凉茶的利润反而增加了20%。已知进价不变，提价前每瓶凉茶的利润是进价的（ ）。",
+     "options": {
+      "A": "25%",
+      "B": "37.5%",
+      "C": "50%",
+      "D": "100%"
+     },
+     "answer": "A",
+     "jiexi": "卡点：日利润＝日销量×单件利润，先相除求单利之比，再抓“进价不变”。新单利是原单利的 $1.2\\div0.8=1.5$ 倍，赋原单利2、新单利3；进价不变，单利多出的1全部来自提价，即原售价的10%，故原售价10、进价8，所求 $2\\div8=25\\%$。选A。易错：答成提价后的 $3\\div8=37.5\\%$；把单利增幅50%当答案；忽略销量下降，以为单利也只增20%，得100%。（参考用时 60 秒）",
+     "kaofa": "比例除法求单利再定原利润率",
+     "technique": "比例除法＋不变量对应",
+     "figure": null,
+     "shared_stem_text": null
+    },
+    {
+     "type": "variant",
+     "vid": "D04-math-h-v06",
+     "group": "考法四：赋值比例型——进价、售价、销量变化",
+     "difficulty": 2,
+     "stem": "为推广全民健身，某区体育中心游泳馆调整门票价格：调价前每天的票价相同，调价后工作日按原价的五折售票，双休日按原价的八折售票。调价后，工作日日均入场人次变为原来的3倍，双休日日均入场人次比原来增加了25%，该馆一周（无节假日）的门票收入比调价前增加了20%。调价前，双休日日均入场人次是工作日日均入场人次的（ ）倍。",
+     "options": {
+      "A": "1.5",
+      "B": "2.5",
+      "C": "3.75",
+      "D": "7.5"
+     },
+     "answer": "C",
+     "jiexi": "卡点：先看出双休日收入不变——人次×1.25、票价×0.8，乘积为1，增收全部来自工作日。原票价相同，收入比即人次比。赋调价前工作日每天收入1，五天共5；调价后每天 $3\\times0.5=1.5$，五天共7.5，多出2.5，恰是原一周收入的20%，故原一周收入12.5，双休日两天共7.5，每天3.75，即3.75倍。选C。易错：不按5天、2天加权得1.5；把20%的基数当成调价后收入得2.5；答成双休日两天合计得7.5。（参考用时 70 秒）",
+     "kaofa": "工作日双休日加权与不变量",
+     "technique": "找收入不变量＋按天加权",
+     "figure": null,
+     "shared_stem_text": null
+    },
+    {
+     "type": "real",
+     "id": "2021SD-43",
+     "src_label": "2021山东 第43题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021SD-43_q.png",
+     "answer": "B",
+     "kaofa": "利润-赋值求利润率(分日)",
+     "technique": "赋值法",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021SD-43_j.png",
+     "group": "考法四：赋值比例型——进价、售价、销量变化"
+    },
+    {
+     "type": "variant",
+     "vid": "D04-math-h-v02",
+     "group": "考法一：基础公式——四量互求与盈亏总账",
+     "difficulty": 3,
+     "stem": "某食品企业只经营速冻食品和预制菜两块业务。2024年，速冻食品业务盈利，预制菜业务亏损。2025年，速冻食品业务的利润比上年增长10%，预制菜业务的亏损额比上年减少40%，企业总利润比上年增长50%。2024年预制菜业务的亏损额是速冻食品业务利润的（ ）。",
+     "options": {
+      "A": "约44.4%",
+      "B": "约55.6%",
+      "C": "80%",
+      "D": "400%"
+     },
+     "answer": "A",
+     "jiexi": "卡点：亏损额减少，对总利润是正贡献。设2024年速冻利润 $a$、预制菜亏损 $b$，按增量列式 $0.1a+0.4b=0.5(a-b)$，得 $0.9b=0.4a$，$b\\div a=\\frac{4}{9}\\approx44.4\\%$。巧法：速冻利润＝总利润＋亏损额，10%居于50%与−40%之间，距离40、50，权重与距离成反比，总利润∶亏损额＝5∶4，速冻利润为9份，亏损额∶速冻利润＝4∶9。选A。易错：亏损减少当负贡献（$0.1a-0.4b$）得400%；权重按距离正比取得约55.6%；把亏损额与总利润相比得80%。（参考用时 80 秒）",
+     "kaofa": "亏损业务扭亏中的增长率混合",
+     "technique": "亏损记负＋线段法",
+     "figure": null,
+     "shared_stem_text": null
+    },
+    {
+     "type": "variant",
+     "vid": "D04-math-h-v07",
+     "group": "考法五：成本结构与收入构成",
+     "difficulty": 3,
+     "stem": "某社区长者饭堂每月的场地租金、人员工资等固定支出不变，每份餐的食材成本也不变。该饭堂每份餐的平均成本由两部分组成：当月固定支出平均分摊到每份餐的部分，以及每份餐的食材成本。今年3月的供餐份数比1月增加了25%，每份餐的平均成本比1月下降了10%。若某月的供餐份数是1月的2倍，则该月每份餐的平均成本比1月下降（ ）。",
+     "options": {
+      "A": "40%",
+      "B": "50%",
+      "C": "20%",
+      "D": "25%"
+     },
+     "answer": "D",
+     "jiexi": "卡点：分摊部分与份数成反比，不能线性外推。份数变为1.25倍，分摊部分变为原来的 $\\frac{1}{1.25}=0.8$，即降20%；整体只降10%，说明分摊部分占1月平均成本的 $10\\%\\div20\\%=50\\%$。份数翻倍时分摊部分减半，整体下降 $50\\%\\times\\frac{1}{2}=25\\%$。选D。易错：按“份数增25%、成本降10%”线性外推得40%；误以为分摊部分也降25%，算出占比40%，得20%；当成全是固定支出得50%。（参考用时 75 秒）",
+     "kaofa": "固定成本摊薄的非线性",
+     "technique": "摊销与份数成反比",
+     "figure": null,
+     "shared_stem_text": null
+    },
+    {
+     "type": "real",
+     "id": "2023SD-44",
+     "src_label": "2023山东 第44题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023SD-44_q.png",
+     "answer": "C",
+     "kaofa": "经济-改造节约成本回本",
+     "technique": "赋值+方程",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023SD-44_j.png",
+     "group": "考法五：成本结构与收入构成"
+    },
+    {
+     "type": "real",
+     "id": "2025SD-58",
+     "src_label": "2025山东 第58题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025SD-58_q.png",
+     "answer": "D",
+     "kaofa": "利润-多平台多商品利润计算",
+     "technique": "列表计算",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025SD-58_j.png",
+     "group": "考法五：成本结构与收入构成"
+    },
+    {
+     "type": "teacher",
+     "tid": "T093",
+     "src_label": "老师笔记精选 · 2009江苏A",
+     "stem": "一批手机，商店按期望获得100%的利润来定价，结果只销售掉70%。为了尽早销售掉剩下的手机，商店决定打折出售，为了获得的全部利润是原来期望利润的91%，则商店所打的折是：",
+     "options": {
+      "A": "六折",
+      "B": "七折",
+      "C": "八五折",
+      "D": "九折"
+     },
+     "answer": "C",
+     "jiexi": "线段法：设成本1，按100%利润定价为2。70%的手机按100%的利润率卖出，30%打折后利润率为x，全部利润是期望的91%，相当于整体利润率91%。70%与30%的权重比7:3，距离比为3:7：100%−91%=9%对应3份，则91%−x=21%，x=70%。打折后售价=1×(1+70%)=1.7，折扣=新价÷原价=1.7÷2=0.85，即八五折。典型错误：把剩余部分70%的利润率直接当成“七折”，误选B。",
+     "kaofa": "部分打折后的总利润",
+     "technique": "线段法反求打折部分利润率",
+     "figure": null,
+     "group": "考法六：分批销售与多方案利润等量"
+    },
+    {
+     "type": "real",
+     "id": "2024JSA-53",
+     "src_label": "2024江苏A类 第53题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024JSA-53_q.png",
+     "answer": "D",
+     "kaofa": "利润-打折前后两段销售",
+     "technique": "方程法",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024JSA-53_j.png",
+     "extra": "补充：老师鸡兔同笼法：总成本7410÷19%＝39000元，即390个；假设全按原价每个赚30元共11700元，比实际多4290元，每打折一个由赚30元变为亏9元，差39元，4290÷39＝110个。也可用线段法：30%与－9%到19%的距离为11∶28，打折部分占11/39。",
+     "group": "考法六：分批销售与多方案利润等量"
+    },
+    {
+     "type": "real",
+     "id": "2025GK-76",
+     "src_label": "2025国考副省级 第76题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025GK-76_q.png",
+     "answer": "B",
+     "kaofa": "利润-打折+等差销量总利润",
+     "technique": "方程法",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025GK-76_j.png",
+     "group": "考法六：分批销售与多方案利润等量"
+    },
+    {
+     "type": "variant",
+     "vid": "D04-math-2-v04",
+     "group": "考法七：利润最值（二次函数与区间）",
+     "difficulty": 2,
+     "stem": "某景区文创店销售一款醒狮主题摆件，进价45元，售价定为65元时每天可卖出180个；售价每上涨1元，每天就少卖出3个。景区对园内商品实行限价，该摆件售价不得高于75元。该店准备在限价范围内上调售价，则每天能获得的最大利润为多少元？",
+     "options": {
+      "A": "3600",
+      "B": "4500",
+      "C": "4800",
+      "D": "5400"
+     },
+     "answer": "B",
+     "jiexi": "二次函数利润最值，两根取中后还要看顶点是否在允许区间内。设提价 $x$ 元，利润 $=(20+x)(180-3x)$，两根 $x=-20$、$x=60$，顶点 $x=20$（售价85元）；但限价75元要求 $x\\le10$，顶点在区间外，区间内利润随 $x$ 增大而增大，最大值在端点 $x=10$：$30\\times150=4500$ 元。易错：忽略限价直接取顶点得4800；以为顶点取不到就维持原价得3600；按75元算单件利润却仍按日销180个算得5400。（参考用时 55 秒）",
+     "kaofa": "利润最值-限价使顶点落在区间外",
+     "technique": "两根取中+端点取值",
+     "figure": null,
+     "shared_stem_text": null
+    },
+    {
+     "type": "variant",
+     "vid": "D04-math-h-v08",
+     "group": "考法七：利润最值（二次函数与区间）",
+     "difficulty": 3,
+     "stem": "某粮油配送站每年要向社区门店供应某品牌大米3000袋，这些大米分若干批向厂家进货，每批袋数相同。每进一批货，不论数量多少，都要支付运输、装卸费用160元；每袋大米存放一年的仓储费为6元，全年的平均库存量按每批进货量的一半计算。要使全年的运输装卸费与仓储费之和最少，每批应进货（ ）袋。",
+     "options": {
+      "A": "400",
+      "B": "500",
+      "C": "300",
+      "D": "375"
+     },
+     "answer": "D",
+     "jiexi": "卡点：理论最优不能等分时，比较两侧的可行解。设每批 $x$ 袋，全年费用 $\\frac{480000}{x}+3x$，两项积为定值、相等时最小，得 $x=400$，但要分7.5批，不可行。费用在400两侧各自单调，只需比较能等分且最靠近400的375袋（8批）和500袋（6批）：$1280+1125=2405$ 元＜$960+1500=2460$ 元。这是费用函数最值，不是统筹排序。易错：直接答理论值400袋；只向一侧取整得500袋；漏掉“平均库存按一半计”，算得约283袋而选300袋。选D。（参考用时 75 秒）",
+     "kaofa": "订货批量最值（批数须为整数）",
+     "technique": "均值定点＋两侧比较",
+     "figure": null,
+     "shared_stem_text": null
+    },
+    {
+     "type": "variant",
+     "vid": "D04-math-2-v06",
+     "group": "考法七：利润最值（二次函数与区间）",
+     "difficulty": 3,
+     "stem": "某小家电企业在直播间销售一款电饭煲，每台进价60元，售价100元时每天可卖出80台。为促销，企业决定降价，降价幅度只能是2元的整数倍，且每降价2元，每天可多卖出15台。要使每天的销售利润最大，售价应定为多少元？",
+     "options": {
+      "A": "82元",
+      "B": "84元",
+      "C": "85元",
+      "D": "86元"
+     },
+     "answer": "D",
+     "jiexi": "步长为2元、顶点非整数的利润最值。设降价 $n$ 次（每次2元），利润 $=(40-2n)(80+15n)$，两根 $n=20$、$n=-\\frac{16}{3}$，中点 $n=\\frac{22}{3}\\approx7.3$；抛物线对称，离中点近的整数利润更大，取 $n=7$（验算 $26\\times185=4810>24\\times200=4800$），售价86元。易错：顶点价约85.3元四舍五入得85（降15元不合规）；取 $n=8$ 得84；误作每降1元多卖15台，按2元整数倍取值得82（不按整数倍取则得83）。考场取舍：本组最难，想不到“设降价次数”和“近中点取整”就先跳过。（参考用时 90 秒）",
+     "kaofa": "利润最值-步长2元且顶点非整数",
+     "technique": "设调价次数+近中点取整",
+     "figure": null,
+     "shared_stem_text": null
+    },
+    {
+     "type": "variant",
+     "vid": "D04-math-h-v09",
+     "group": "考法八：分段计费与阶梯计价",
+     "difficulty": 2,
+     "stem": "某商业综合体地下停车场按小时收费，不足1小时的按1小时计：前 $a$ 小时每小时收费3元，超过 $a$ 小时的部分每小时收费 $b$ 元（$a$ 为正整数）。甲停车4小时20分钟，付费19元；乙停车7小时35分钟，付费34元。丙在该停车场停车付费24元，则丙的停车时长最多为（ ）小时。",
+     "options": {
+      "A": "6",
+      "B": "7",
+      "C": "8",
+      "D": "5"
+     },
+     "answer": "A",
+     "jiexi": "卡点：规则未知时用差量法。先按“不足1小时按1小时计”得计费时长：甲5小时、乙8小时。甲付19元＞5×3元，说明甲已超过 $a$ 小时，乙更是如此，两人的费用差全按 $b$ 计：$b=\\frac{34-19}{8-5}=5$（由 $3a+5(5-a)=19$ 还可得 $a=3$）。丙比甲多付5元，即多计费1小时，共计费6小时，实际时长在5小时（不含）到6小时（含）之间，最多6小时。易错：全按3元算得8小时；全按5元算再进位得5小时；误以为计费6小时可停到7小时，得7小时。选A。（参考用时 60 秒）",
+     "kaofa": "两组数据差量反推分界与单价",
+     "technique": "差量求高档单价",
+     "figure": null,
+     "shared_stem_text": null
+    },
+    {
+     "type": "variant",
+     "vid": "D04-math-h-v10",
+     "group": "考法八：分段计费与阶梯计价",
+     "difficulty": 2,
+     "stem": "某市地铁实行月度累计优惠：同一自然月内，乘客的乘车费用按原票价累计，累计金额不超过100元的部分按原价支付，超过100元但不超过150元的部分打八折，超过150元的部分打五折。小陈每次乘车的原票价都是5元，若要使当月平均每次实际支付的金额不超过4元，他当月至少要乘车（ ）次。",
+     "options": {
+      "A": "21",
+      "B": "40",
+      "C": "43",
+      "D": "44"
+     },
+     "answer": "D",
+     "jiexi": "卡点：把实付拆成“全按五折”加“前150元多付的固定部分”：前100元比五折多付50元，100～150元多付 $50\\times0.3=15$ 元，共65元。累计超过150元后，平均每次实付 $2.5+\\frac{65}{n}\\le4$，得 $n\\ge\\frac{130}{3}\\approx43.3$，“至少”向上取整为44次；累计不超过150元时平均都高于4元。易错：当成全额打折或只看单次票价（第21次起每次4元），得21次；100～150元段按多付2折算，得40次；向下取整得43次。选D。（参考用时 75 秒）",
+     "kaofa": "累计分档折扣的平均实付",
+     "technique": "全按低档加固定溢价",
+     "figure": null,
+     "shared_stem_text": null
+    },
+    {
+     "type": "variant",
+     "vid": "D04-math-h-v11",
+     "group": "考法八：分段计费与阶梯计价",
+     "difficulty": 3,
+     "stem": "某月度个人所得税税率表规定：应纳税所得额不超过3000元的部分，税率为3%；超过3000元至12000元的部分，税率为10%；超过12000元至25000元的部分，税率为20%。某月，甲的应纳税所得额比乙少6000元，应纳税额比乙少840元。甲当月的应纳税所得额为（ ）元。",
+     "options": {
+      "A": "8400",
+      "B": "9600",
+      "C": "12000",
+      "D": "14400"
+     },
+     "answer": "A",
+     "jiexi": "卡点：用平均税率定段。多出的6000元平均税率为 $840\\div6000=14\\%$，介于10%与20%之间，说明它跨过了12000元的分界（全在10%档或20%档时差额为600元或1200元，跨3000元分界时不超过600元）。线段法：14%到10%、20%的距离之比为4∶6，两档金额之比为6∶4，即10%档3600元、20%档2400元。故甲为 $12000-3600=8400$ 元，乙为14400元。易错：比例放反得9600元；以为甲恰在分界点得12000元；答成乙的14400元。选A。（参考用时 80 秒）",
+     "kaofa": "税额差跨档的定段与混合",
+     "technique": "平均税率定段＋线段法",
+     "figure": null,
+     "shared_stem_text": null
+    },
+    {
+     "type": "variant",
+     "vid": "D04-math-h-v13",
+     "group": "考法十二：方案比较与盈亏平衡",
+     "difficulty": 2,
+     "stem": "东莞某玩具企业每年需要8000个专用包装箱。若全部外购，每个30元；若自建车间生产，每年的固定成本为9万元，每个包装箱的变动成本为18元，但车间每年最多只能生产6000个，不足的部分仍需外购。仅从成本考虑，该企业每年在包装箱上的支出最少为（ ）万元。",
+     "options": {
+      "A": "19.8",
+      "B": "23.4",
+      "C": "24",
+      "D": "25.8"
+     },
+     "answer": "C",
+     "jiexi": "卡点：临界点要回头核对产能。只看“固定成本÷单价差”，临界量为 $90000\\div(30-18)=7500$ 个，需求8000个似乎该自制；但产能只有6000个，自制最多省 $12\\times6000=7.2$ 万元，抵不上9万元固定成本（满负荷时每个成本 $18+15=33$ 元，仍高于30元），故应全部外购，支出 $30\\times8000=24$ 万元。易错：忽略产能，得23.4万元；按产能自制再外购2000个，得25.8万元，反而更贵；漏算外购的2000个，得19.8万元。选C。（参考用时 60 秒）",
+     "kaofa": "自制外购临界点受产能约束",
+     "technique": "临界点回查约束",
+     "figure": null,
+     "shared_stem_text": null
+    },
+    {
+     "type": "variant",
+     "vid": "D04-math-h-v12",
+     "group": "考法十二：方案比较与盈亏平衡",
+     "difficulty": 3,
+     "stem": "佛山某陶瓷企业推出一款茶具套装，售价为每套60元，每月固定成本为12万元。每月前6000套的变动成本为每套40元，因批量采购原料，超过6000套的部分每套变动成本降为30元。每月生产的套装都能全部售出。要使当月的成本利润率（利润÷总成本）不低于20%，当月至少要销售（ ）套。",
+     "options": {
+      "A": "9000",
+      "B": "10000",
+      "C": "12000",
+      "D": "18000"
+     },
+     "answer": "A",
+     "jiexi": "卡点：先判段，再化为平均成本上限：利润率≥20%⇔平均成本≤60÷1.2＝50元。设销量为 $Q$ 套，若 $Q\\le6000$，需 $40+\\frac{120000}{Q}\\le50$，得 $Q\\ge12000$，矛盾；故 $Q>6000$，总成本 $=360000+30(Q-6000)$，平均成本 $30+\\frac{180000}{Q}\\le50$，得 $Q\\ge9000$。易错：不判段全按40元，得12000；按利润÷收入，得10000；超出部分漏减6000套，得18000。选A。（参考用时 85 秒）",
+     "kaofa": "分段变动成本下的目标利润率",
+     "technique": "先判段再化平均成本",
+     "figure": null,
+     "shared_stem_text": null
+    },
+    {
+     "type": "variant",
+     "vid": "D04-math-h-v15",
+     "group": "考法十二：方案比较与盈亏平衡",
+     "difficulty": 3,
+     "stem": "某服装厂每月最多能生产10000件T恤，目前每月生产并销售8000件，售价为每件60元。按目前的产量核算，每件T恤的成本为45元，其中材料、计件工资等变动成本为30元，其余是按产量分摊的固定成本。现有一外贸客户要求当月加订3000件，由于产能不足，工厂接单就要相应减少当月的常规销售。仅从当月利润考虑，要使接单后当月利润不减少，这批外贸订单的单价至少为（ ）元。",
+     "options": {
+      "A": "30",
+      "B": "35",
+      "C": "40",
+      "D": "45"
+     },
+     "answer": "C",
+     "jiexi": "卡点：接不接单只比“变化的部分”。每月固定成本总额（$15\\times8000=120000$ 元）不因接单而变，单件成本里分摊的15元与决策无关；产能只剩2000件，接单要挤掉1000件常规销售，每件损失的是 $60-30=30$ 元。所以 $3000(p-30)\\ge1000\\times30$，$p\\ge40$。易错：只看变动成本、忘了被挤掉的常规销售，得30；被挤掉的每件按利润 $60-45=15$ 元算，得35；以为单价不能低于成本45元，得45。选C。（参考用时 75 秒）",
+     "kaofa": "接单报价：固定成本与产能挤占",
+     "technique": "只比变化量，固定成本不计",
+     "figure": null,
+     "shared_stem_text": null
+    },
+    {
+     "type": "variant",
+     "vid": "D04-math-h-v16",
+     "group": "考法十三：损耗、滞销与进货决策",
+     "difficulty": 2,
+     "stem": "某生鲜店从产地购进一批杨梅，进价为每斤9元。运输途中共2天，每天都损耗当天开始时所剩杨梅的同一个百分比，损耗的杨梅不能出售。运到后，可售杨梅的80%按每斤16元售出，其余的降价到每斤11元清仓，全部卖完。结果这批杨梅的利润率恰好为35%。运输途中每天损耗的百分比为（ ）。",
+     "options": {
+      "A": "约2.6%",
+      "B": "9.5%",
+      "C": "10%",
+      "D": "19%"
+     },
+     "answer": "C",
+     "jiexi": "卡点：两天损耗是连乘，要用 $(1-x)^2$ 反解，不能按“两天约损耗 $2x$”线性估算。每斤可售杨梅平均卖 $0.8\\times16+0.2\\times11=15$ 元；进价9元、利润率35%，每斤进货要收回 $9\\times1.35=12.15$ 元，可售比例 $12.15\\div15=0.81=(1-x)^2$，$x=10\\%$。易错：按 $1-2x=0.81$ 得9.5%（最典型）；答成两天共损耗19%；漏算清仓收入，由 $12.8(1-x)^2=12.15$ 得约2.6%。选C。（参考用时 60 秒）",
+     "kaofa": "连续损耗反求每天损耗率",
+     "technique": "损耗连乘，开方反解",
+     "figure": null,
+     "shared_stem_text": null
+    },
+    {
+     "type": "variant",
+     "vid": "D04-math-h-v18",
+     "group": "考法十三：损耗、滞销与进货决策",
+     "difficulty": 3,
+     "stem": "某超市计划引进1500盒新款月饼，每盒定价60元。厂家提供两种合作方式：一是买断，进价每盒24元，卖不完的月饼中最多有300盒可按每盒12元退给厂家，其余不能退；二是代销，进价每盒30元，卖不完的可以按进价全部退回。两种方式下超市都按定价销售，其他费用不计。仅从利润考虑，要使选买断的利润不低于选代销，这批月饼至少要卖出（ ）盒。",
+     "options": {
+      "A": "1080",
+      "B": "420",
+      "C": "540",
+      "D": "1000"
+     },
+     "answer": "A",
+     "jiexi": "卡点：退货有300盒上限，买断的利润要分段讨论。剩余不少于300盒时只能退300盒：$60x-36000+12\\times300\\ge30x$，得 $x\\ge1080$，此时剩420盒，确实不少于300，成立；剩余少于300盒（$x>1200$）时，买断利润 $48x-18000$ 一定不低于 $30x$。故至少卖出1080盒。易错：忽略上限、把剩余的全按12元退，得1000（此时剩500盒，与上限矛盾）；答成剩余量420；只求买断不亏本，得540。选A。（参考用时 75 秒）",
+     "kaofa": "限量退货下买断与代销的临界销量",
+     "technique": "按退货上限分段检验",
+     "figure": null,
+     "shared_stem_text": null
+    },
+    {
+     "type": "variant",
+     "vid": "D04-math-h-v19",
+     "group": "考法十三：损耗、滞销与进货决策",
+     "difficulty": 3,
+     "stem": "某社区便利店每天早上从牧场订购当天的鲜牛奶，每瓶进价8元，售价12元；当天没有卖完的，晚上以每瓶2元的价格处理掉。店主统计了过去20天的日需求量：80瓶的有3天，100瓶的有6天，120瓶的有7天，140瓶的有4天。若每天的订购量都相同，且只能从80、100、120、140瓶中选择，按这20天的需求计算，要使总利润最大，每天应订购（ ）瓶。",
+     "options": {
+      "A": "120",
+      "B": "140",
+      "C": "80",
+      "D": "100"
+     },
+     "answer": "D",
+     "jiexi": "卡点：逐档比较多订的那一批。每多订1瓶，卖掉多赚4元，卖不掉亏 $8-2=6$ 元。80加到100：多出的20瓶有17天能卖掉、3天剩下，$4\\times17>6\\times3$，划算；100加到120：11天能卖掉、9天剩下，$4\\times11<6\\times9$，不划算，再往上更亏。故订100瓶（订80、100、120、140瓶的总利润依次为6400、7400、7200、5600元）。易错：按众数、均值或“过半天数能卖完”订120；按最大需求订140；按最小需求订80。可放后做。选D。（参考用时 100 秒）",
+     "kaofa": "报童模型边际法定进货量",
+     "technique": "边际法逐档比较",
+     "figure": null,
+     "shared_stem_text": null
+    }
+   ]
+  },
+  {
+   "title": "逻辑判断",
+   "module": "前提假设",
+   "time_min": 20,
+   "items": [
+    {
+     "type": "real",
+     "id": "2022GD-64",
+     "src_label": "2022广东县级 第64题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022GD-64_q.png",
+     "answer": "B",
+     "kaofa": "前提-建立联系(目的必要性)",
+     "technique": "搭桥",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022GD-64_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2023SD-70",
+     "src_label": "2023山东 第70题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023SD-70_q.png",
+     "answer": "A",
+     "kaofa": "前提-必要前提搭桥（不饿→减肥）",
+     "technique": "搭桥",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023SD-70_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2023GD-68",
+     "src_label": "2023广东县级 第68题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023GD-68_q.png",
+     "answer": "B",
+     "kaofa": "前提-措施必要性（培养不足）",
+     "technique": "补充必要性",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023GD-68_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2023GK-109",
+     "src_label": "2023国考副省级 第109题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023GK-109_q.png",
+     "answer": "C",
+     "kaofa": "前提-搭桥",
+     "technique": "搭桥",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023GK-109_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2022ZJA-103",
+     "src_label": "2022浙江A类 第103题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022ZJA-103_q.png",
+     "answer": "B",
+     "kaofa": "前提-搭桥(吃辣与伤害感受神经)",
+     "technique": "搭桥",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022ZJA-103_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2020JSA-93",
+     "src_label": "2020江苏A类 第93题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020JSA-93_q.png",
+     "answer": "D",
+     "kaofa": "前提-搭桥(孩子与原谅)",
+     "technique": "搭桥",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020JSA-93_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2020SC0725-82",
+     "src_label": "2020四川(7月) 第82题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020SC0725-82_q.png",
+     "answer": "A",
+     "kaofa": "前提-搭桥(快速眼动与做梦)",
+     "technique": "搭桥",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020SC0725-82_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2024GD-53",
+     "src_label": "2024广东 第53题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024GD-53_q.png",
+     "answer": "A",
+     "kaofa": "前提-搭桥(措施有效)",
+     "technique": "搭桥",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024GD-53_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2022GD-63",
+     "src_label": "2022广东县级 第63题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022GD-63_q.png",
+     "answer": "C",
+     "kaofa": "前提-搭桥(收入与工作成效)",
+     "technique": "搭桥",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022GD-63_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2024GD-56",
+     "src_label": "2024广东 第56题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024GD-56_q.png",
+     "answer": "B",
+     "kaofa": "前提-搭桥(暗含前提)",
+     "technique": "搭桥",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024GD-56_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2025GK-109",
+     "src_label": "2025国考副省级 第109题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025GK-109_q.png",
+     "answer": "A",
+     "kaofa": "前提-搭桥(机制与致癌)",
+     "technique": "搭桥",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025GK-109_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2025GD-54",
+     "src_label": "2025广东 第54题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025GD-54_q.png",
+     "answer": "B",
+     "kaofa": "前提-搭桥(补充归属)",
+     "technique": "搭桥",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025GD-54_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2021GK-112",
+     "src_label": "2021国考副省级 第112题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021GK-112_q.png",
+     "answer": "A",
+     "kaofa": "前提-搭桥(证据→陨石撞击)",
+     "technique": "搭桥",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021GK-112_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2020SD-68",
+     "src_label": "2020山东 第68题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020SD-68_q.png",
+     "answer": "C",
+     "kaofa": "前提-搭桥(颞叶与记忆)",
+     "technique": "搭桥",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020SD-68_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2026ZJA-101",
+     "src_label": "2026浙江A类 第101题（无官方答案，答案与解析为自解）",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2026ZJA-101_q.png",
+     "answer": "D",
+     "kaofa": "前提-搭桥（miR-205↔软化）",
+     "technique": "搭桥",
+     "jiexi_text": "前提假设。论点：增强 miR-205 的表达可使细胞软化并促进毛发生长；论据：毛囊干细胞骨架软化能促使老龄小鼠毛发再生。论据里没有 miR-205，需要搭桥。D：miR-205 对软化细胞骨架起着重要作用，连上\"miR-205→骨架软化\"，必须补充；A：说的是\"毛发\"的软硬，不是干细胞骨架，对象不一致；B：能否用基因手段增强是可行性问题，结论只说\"增强则有效\"，不必假设；C：抑制干细胞增殖和分化，是削弱。故正确答案为 D。"
+    },
+    {
+     "type": "real",
+     "id": "2023GD-74",
+     "src_label": "2023广东县级 第74题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023GD-74_q.png",
+     "answer": "A",
+     "kaofa": "前提-搭桥（声音↔佳酿）",
+     "technique": "搭桥",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023GD-74_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2025HB-106",
+     "src_label": "2025河北 第106题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025HB-106_q.png",
+     "answer": "D",
+     "kaofa": "前提-搭桥（水运↔瓷器外销）",
+     "technique": "搭桥",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025HB-106_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2023HB-108",
+     "src_label": "2023河北 第108题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023HB-108_q.png",
+     "answer": "C",
+     "kaofa": "前提-搭桥（消融↔裸地吸热）",
+     "technique": "搭桥",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023HB-108_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2024GK-108",
+     "src_label": "2024国考副省级 第108题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024GK-108_q.png",
+     "answer": "B",
+     "kaofa": "前提-搭桥（证伪↔科学）",
+     "technique": "搭桥",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024GK-108_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2020HB-107",
+     "src_label": "2020河北 第107题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020HB-107_q.png",
+     "answer": "D",
+     "kaofa": "前提-补充论据(发射窗口周期)",
+     "technique": "补充论据",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020HB-107_j.png"
+    }
+   ]
+  },
+  {
+   "title": "综合推理",
+   "module": "数量与大小比较",
+   "time_min": 10,
+   "items": [
+    {
+     "type": "real",
+     "id": "2022SZ-43",
+     "src_label": "2022深圳 第43题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022SZ-43_q.png",
+     "answer": "B",
+     "kaofa": "综合-2×2交叉人数比较",
+     "technique": "列表+不等式",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022SZ-43_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2024GD-55",
+     "src_label": "2024广东 第55题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024GD-55_q.png",
+     "answer": "C",
+     "kaofa": "综合-得分和比较推最低",
+     "technique": "不等式相加",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024GD-55_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2023ZJA-103",
+     "src_label": "2023浙江A类 第103题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023ZJA-103_q.png",
+     "answer": "A",
+     "kaofa": "综合-数量不等式补条件",
+     "technique": "不等式相加",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023ZJA-103_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2025JSA-99",
+     "src_label": "2025江苏A类 第99题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025JSA-99_q.png",
+     "answer": "B",
+     "kaofa": "综合-计数误差反推真实票数",
+     "technique": "差值代入",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025JSA-99_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2020SZ1-38",
+     "src_label": "2020深圳行测 第38题",
+     "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020SZ1-38_q.png",
+     "answer": "D",
+     "kaofa": "综合-四次得分和17推数字",
+     "technique": "方程+枚举",
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020SZ1-38_j.png"
+    }
+   ]
+  },
+  {
+   "title": "资料分析",
+   "module": "打印册第 1 套、第 2 套",
+   "time_min": 60,
+   "print_only": true,
+   "items": [
+    {
+     "type": "real",
+     "id": "2025GK-Z116",
+     "src_label": "2025国考副省级 第116题",
+     "answer": "A",
+     "set": 1,
+     "zl_no": 1,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2025GK-Z116_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2025GK-Z117",
+     "src_label": "2025国考副省级 第117题",
+     "answer": "C",
+     "set": 1,
+     "zl_no": 2,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2025GK-Z117_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2025GK-Z118",
+     "src_label": "2025国考副省级 第118题",
+     "answer": "D",
+     "set": 1,
+     "zl_no": 3,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2025GK-Z118_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2025GK-Z119",
+     "src_label": "2025国考副省级 第119题",
+     "answer": "A",
+     "set": 1,
+     "zl_no": 4,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2025GK-Z119_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2025GK-Z120",
+     "src_label": "2025国考副省级 第120题",
+     "answer": "D",
+     "set": 1,
+     "zl_no": 5,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2025GK-Z120_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2025GK-Z121",
+     "src_label": "2025国考副省级 第121题",
+     "answer": "A",
+     "set": 1,
+     "zl_no": 6,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2025GK-Z121_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2025GK-Z122",
+     "src_label": "2025国考副省级 第122题",
+     "answer": "B",
+     "set": 1,
+     "zl_no": 7,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2025GK-Z122_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2025GK-Z123",
+     "src_label": "2025国考副省级 第123题",
+     "answer": "C",
+     "set": 1,
+     "zl_no": 8,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2025GK-Z123_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2025GK-Z124",
+     "src_label": "2025国考副省级 第124题",
+     "answer": "A",
+     "set": 1,
+     "zl_no": 9,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2025GK-Z124_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2025GK-Z125",
+     "src_label": "2025国考副省级 第125题",
+     "answer": "D",
+     "set": 1,
+     "zl_no": 10,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2025GK-Z125_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2025GK-Z126",
+     "src_label": "2025国考副省级 第126题",
+     "answer": "D",
+     "set": 1,
+     "zl_no": 11,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2025GK-Z126_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2025GK-Z127",
+     "src_label": "2025国考副省级 第127题",
+     "answer": "B",
+     "set": 1,
+     "zl_no": 12,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2025GK-Z127_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2025GK-Z128",
+     "src_label": "2025国考副省级 第128题",
+     "answer": "A",
+     "set": 1,
+     "zl_no": 13,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2025GK-Z128_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2025GK-Z129",
+     "src_label": "2025国考副省级 第129题",
+     "answer": "C",
+     "set": 1,
+     "zl_no": 14,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2025GK-Z129_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2025GK-Z130",
+     "src_label": "2025国考副省级 第130题",
+     "answer": "B",
+     "set": 1,
+     "zl_no": 15,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2025GK-Z130_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2025GK-Z131",
+     "src_label": "2025国考副省级 第131题",
+     "answer": "A",
+     "set": 1,
+     "zl_no": 16,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2025GK-Z131_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2025GK-Z132",
+     "src_label": "2025国考副省级 第132题",
+     "answer": "D",
+     "set": 1,
+     "zl_no": 17,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2025GK-Z132_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2025GK-Z133",
+     "src_label": "2025国考副省级 第133题",
+     "answer": "B",
+     "set": 1,
+     "zl_no": 18,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2025GK-Z133_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2025GK-Z134",
+     "src_label": "2025国考副省级 第134题",
+     "answer": "C",
+     "set": 1,
+     "zl_no": 19,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2025GK-Z134_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2025GK-Z135",
+     "src_label": "2025国考副省级 第135题",
+     "answer": "C",
+     "set": 1,
+     "zl_no": 20,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2025GK-Z135_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2024JSA-Z116",
+     "src_label": "2024江苏A类 第116题",
+     "answer": "A",
+     "set": 2,
+     "zl_no": 1,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2024JSA-Z116_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2024JSA-Z117",
+     "src_label": "2024江苏A类 第117题",
+     "answer": "C",
+     "set": 2,
+     "zl_no": 2,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2024JSA-Z117_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2024JSA-Z118",
+     "src_label": "2024江苏A类 第118题",
+     "answer": "B",
+     "set": 2,
+     "zl_no": 3,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2024JSA-Z118_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2024JSA-Z119",
+     "src_label": "2024江苏A类 第119题",
+     "answer": "D",
+     "set": 2,
+     "zl_no": 4,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2024JSA-Z119_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2024JSA-Z120",
+     "src_label": "2024江苏A类 第120题",
+     "answer": "B",
+     "set": 2,
+     "zl_no": 5,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2024JSA-Z120_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2024JSA-Z121",
+     "src_label": "2024江苏A类 第121题",
+     "answer": "B",
+     "set": 2,
+     "zl_no": 6,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2024JSA-Z121_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2024JSA-Z122",
+     "src_label": "2024江苏A类 第122题",
+     "answer": "C",
+     "set": 2,
+     "zl_no": 7,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2024JSA-Z122_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2024JSA-Z123",
+     "src_label": "2024江苏A类 第123题",
+     "answer": "A",
+     "set": 2,
+     "zl_no": 8,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2024JSA-Z123_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2024JSA-Z124",
+     "src_label": "2024江苏A类 第124题",
+     "answer": "C",
+     "set": 2,
+     "zl_no": 9,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2024JSA-Z124_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2024JSA-Z125",
+     "src_label": "2024江苏A类 第125题",
+     "answer": "B",
+     "set": 2,
+     "zl_no": 10,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2024JSA-Z125_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2024JSA-Z126",
+     "src_label": "2024江苏A类 第126题",
+     "answer": "B",
+     "set": 2,
+     "zl_no": 11,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2024JSA-Z126_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2024JSA-Z127",
+     "src_label": "2024江苏A类 第127题",
+     "answer": "C",
+     "set": 2,
+     "zl_no": 12,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2024JSA-Z127_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2024JSA-Z128",
+     "src_label": "2024江苏A类 第128题",
+     "answer": "D",
+     "set": 2,
+     "zl_no": 13,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2024JSA-Z128_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2024JSA-Z129",
+     "src_label": "2024江苏A类 第129题",
+     "answer": "A",
+     "set": 2,
+     "zl_no": 14,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2024JSA-Z129_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2024JSA-Z130",
+     "src_label": "2024江苏A类 第130题",
+     "answer": "D",
+     "set": 2,
+     "zl_no": 15,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2024JSA-Z130_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2024JSA-Z131",
+     "src_label": "2024江苏A类 第131题",
+     "answer": "C",
+     "set": 2,
+     "zl_no": 16,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2024JSA-Z131_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2024JSA-Z132",
+     "src_label": "2024江苏A类 第132题",
+     "answer": "D",
+     "set": 2,
+     "zl_no": 17,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2024JSA-Z132_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2024JSA-Z133",
+     "src_label": "2024江苏A类 第133题",
+     "answer": "B",
+     "set": 2,
+     "zl_no": 18,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2024JSA-Z133_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2024JSA-Z134",
+     "src_label": "2024江苏A类 第134题",
+     "answer": "A",
+     "set": 2,
+     "zl_no": 19,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2024JSA-Z134_j.png"
+    },
+    {
+     "type": "real",
+     "id": "2024JSA-Z135",
+     "src_label": "2024江苏A类 第135题",
+     "answer": "B",
+     "set": 2,
+     "zl_no": 20,
+     "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/zl/2024JSA-Z135_j.png"
+    }
+   ],
+   "note": "今天的资料分析在打印册第 1 套、第 2 套（每套 4 篇 20 题），按考场节奏整套做完再对答案；答案和解析在本册最后。"
+  }
+ ]
+}

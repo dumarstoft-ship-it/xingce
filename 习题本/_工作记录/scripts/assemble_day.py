@@ -6,6 +6,34 @@ CR = S + '/crops/real2'
 PART_TITLE = {'ns': '数字推理', 'math': '数学运算', 'logic': '逻辑判断', 'zh': '综合推理'}
 TIME_MIN = {'ns': 10, 'math': 60, 'logic': 20, 'zh': 10}
 NS_PLAN = S + '/db/ns_plan.json'  # 数字推理 (number series): real questions, reused in rotation when they run out
+ZL_PLAN = S + '/db/zl_plan.json'  # 资料分析: two sets a day, questions printed in the separate booklet (scripts/zl_render.py)
+ZL_FIX = S + '/db/zl_fixes.json'  # answers / 解析 for 资料 questions whose 解析 file lacks them
+
+def zl_part(day):
+    plan = json.load(open(ZL_PLAN)).get(str(day)) if os.path.exists(ZL_PLAN) else None
+    if not plan: return None
+    raw = json.load(open(S + '/db/zl_raw.json'))
+    fix = json.load(open(ZL_FIX)) if os.path.exists(ZL_FIX) else {}
+    by = {}
+    for r in raw: by.setdefault(r['mat'], []).append(r)
+    items = []
+    for st in plan:
+        k = 0
+        for m in st['mats']:
+            for r in sorted(by[m], key=lambda r: r['pos']):
+                k += 1
+                f = fix.get(r['id']) or {}
+                it = {'type': 'real', 'id': r['id'], 'src_label': f"{r['paper_name']} 第{r['num']}题", 'answer': r['answer_official'] or f.get('answer'),
+                      'set': st['set'], 'zl_no': k}
+                jp = f"{S}/crops/zl/{r['id']}_j.png"
+                if f.get('jiexi'): it['jiexi_text'] = f['jiexi']
+                elif os.path.exists(jp): it['jiexi_img'] = jp
+                else: it['jiexi_text'] = r.get('jiexi_raw') or '（本题无解析）'
+                if f.get('extra'): it['extra'] = f['extra']
+                items.append(it)
+    sets = '、'.join(f"第 {st['set']} 套" for st in plan)
+    return {'title': '资料分析', 'module': f'打印册{sets}', 'time_min': 30 * len(plan), 'print_only': True, 'items': items,
+            'note': f'今天的资料分析在打印册{sets}（每套 4 篇 20 题），按考场节奏整套做完再对答案；答案和解析在本册最后。'}
 
 def load_db():
     db = {r['id']: r for r in json.load(open(S + '/db/real_raw.json'))}
@@ -191,11 +219,13 @@ def assemble(day):
         if not os.path.exists(f'{S}/blueprints/{bp_key}.json') or not glob.glob(f'{S}/gen/D{day:02d}_{part}_*.json'):
             print('skip part (not ready):', part, m); missing.append(PART_TITLE[part]); continue
         parts.append({'title': PART_TITLE[part], 'module': label, 'time_min': TIME_MIN[part], 'items': part_items(day, part, m, db, fix, cls)})
+    zl = zl_part(day)
+    if zl: parts.append(zl)
     note = ('题目页只有题号，不标题型、考法和出处，请自己判断。数字推理用历年真题，题不够时轮换重做。数学运算由历年真题（直接截取原卷）、老师笔记精选和依据真题考法改编、经程序验算的新题组成，送分题已去掉，每道题都有一个要想清楚的地方；'
-            '逻辑判断和综合推理全部是真题。每道题的出处、考法和技巧都写在本册最后的解析里。建议严格计时，做完再对答案。')
+            '逻辑判断和综合推理全部是真题。' + ('资料分析每天两套，题目在单独的打印册里，都是按篇挑出的高难度真题。' if zl else '') + '每道题的出处、考法和技巧都写在本册最后的解析里。建议严格计时，做完再对答案。')
     if missing:
         note += '今天的' + '、'.join(missing) + '真题暂缺，等补充新卷子后补发。'
-    return {'day': day, 'subtitle': '广东省考 42 天专项训练 · 数量关系 + 判断推理', 'note': note, 'parts': parts}
+    return {'day': day, 'subtitle': '广东省考 42 天专项训练 · 数量关系 + 判断推理' + (' + 资料分析' if zl else ''), 'note': note, 'parts': parts}
 
 if __name__ == '__main__':
     from render_day import render_day, to_pdf
