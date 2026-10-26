@@ -23,7 +23,7 @@ def main(spec):
             out = f'{CR}/{qid}_q.png'
             crop(r['qfile'], o['regions'], out)
             if qid.startswith('2026JS'): clean_js(out)
-            res = mask_qnum.mask(qid, r.get('text'))
+            res = mask_qnum.mask(qid, r.get('text'), shift=(r['kind'] != '数字推理'))
             if res != 'ok':  # no number to mask: the plain crop must replace any stale masked copy
                 shutil.copy(out, f'{CR}_nonum/{qid}_q.png')
                 if os.path.exists(out + '.json'): shutil.copy(out + '.json', f'{CR}_nonum/{qid}_q.png.json')

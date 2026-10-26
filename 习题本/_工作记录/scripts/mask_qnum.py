@@ -120,3 +120,31 @@ def mask_stem_header(qid, stem_text):
     rest.crop((0, max(0, bbox[1] - 6), w, rest.height)).save(f'{OUT_DIR}/{qid}_s.png')
     if os.path.exists(src + '.json'): shutil.copy(src + '.json', f'{OUT_DIR}/{qid}_s.png.json')
     return 'ok'
+
+
+def mask_inplace(qid, text):
+    """Fallback when mask() gives up (number on a row of fraction numerators, tall first band, wide first line):
+    white the number out of the first ink band where it sits, without moving anything."""
+    m = PREFIX.match(text or '')
+    src = f'{SRC_DIR}/{qid}_q.png'
+    if not m or not os.path.exists(src): return 'nomatch'
+    nd, punct = len(m.group(1)), m.group(2)
+    im = Image.open(src).convert('L'); w, h = im.size; px = im.load()
+    # the number may sit lower when a row of numerators (and the fraction bars) comes first
+    bands, y = [], 0
+    while len(bands) < 5 and y < h:
+        sub = im.crop((0, y, w, h)); spx = sub.load()
+        b = first_band(spx, w, h - y)
+        if not b: break
+        bands.append((b[0] + y, b[1] + y)); y = b[1] + y + 1
+    k = None
+    for y0, y1 in [b for b in bands if b[1] - b[0] >= 6][:3]:  # skip fraction bars
+        cl = clusters(px, w, y0, y1)
+        if cl and cl[0][0] <= 4 * min(y1 - y0 + 1, 60):
+            k = find_prefix(cl, min(y1 - y0 + 1, 60), nd, punct)
+            if k is not None: break
+    if k is None: return 'noprefix'
+    d = ImageDraw.Draw(im)
+    d.rectangle([cl[0][0], max(0, y0 - 3), cl[k][1] + 1, min(h - 1, y1 + 3)], fill=255)
+    save(im, qid, src)
+    return 'ok'
