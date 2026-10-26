@@ -4,7 +4,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 S = '/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad'
 CR = S + '/crops/real2'
 PART_TITLE = {'ns': '数字推理', 'math': '数学运算', 'logic': '逻辑判断', 'zh': '综合推理'}
-TIME_MIN = {'ns': 10, 'math': 40, 'logic': 20, 'zh': 20}
+TIME_MIN = {'ns': 10, 'math': 60, 'logic': 20, 'zh': 20}
 NS_PLAN = S + '/db/ns_plan.json'  # 数字推理 (number series): real questions, reused in rotation when they run out
 
 def load_db():
@@ -157,7 +157,7 @@ def part_items(day, part, module, db, fix, cls):
         for v in vs:
             items.append({'type': 'variant', 'vid': v['vid'], 'group': gname, 'stem': v['stem'], 'options': v['options'], 'answer': v['answer'],
                           'jiexi': v['jiexi'], 'kaofa': v.get('kaofa'), 'technique': v.get('technique'), 'figure': v.get('figure_svg'), 'shared_stem_text': v.get('shared_stem')})
-    if hd.get('round1'):  # 20 a day: this week's share of the day's questions (scripts/split_round1.py); the rest wait for the next round
+    if hd.get('round1'):  # 30 a day: this week's share of the day's questions (scripts/split_round1.py); the rest wait for the next round
         keep = set(hd['round1'])
         items = [it for it in items if (it.get('id') or it.get('tid') or it.get('vid')) in keep]
     return items

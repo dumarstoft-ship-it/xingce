@@ -55,7 +55,9 @@ def save(out, qid, src):
     out.save(f'{OUT_DIR}/{qid}_q.png')
     if os.path.exists(src + '.json'): shutil.copy(src + '.json', f'{OUT_DIR}/{qid}_q.png.json')
 
-def mask(qid, text):
+def mask(qid, text, shift=True):
+    """shift=False only whites the number out: number series often start with a row of fraction numerators,
+    and moving that row left would detach the numerators from their fraction bars."""
     m = PREFIX.match(text or '')
     src = f'{SRC_DIR}/{qid}_q.png'
     if not m or not os.path.exists(src): return 'nomatch'
@@ -80,6 +82,10 @@ def mask(qid, text):
     if k is None: return 'wide'
     end, nxt = cl[k][1], cl[k + 1][0]
     out = im.copy(); d = ImageDraw.Draw(out)
+    if not shift:
+        d.rectangle([cl[0][0], max(0, y0 - 3), end + 1, min(h - 1, y1 + 3)], fill=255)
+        save(out, qid, src)
+        return 'ok'
     line = out.crop((nxt, max(0, y0 - 3), w, min(h, y1 + 4)))
     d.rectangle([cl[0][0], max(0, y0 - 3), w - 1, min(h - 1, y1 + 3)], fill=255)
     out.paste(line, (cl[0][0], max(0, y0 - 3)))

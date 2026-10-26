@@ -1,11 +1,12 @@
-"""Week 1 at 20 math questions a day: split each day's 45 (already 去水, ordered by 考法 group, easy -> hard) into
-round 1 (20, this week) and the rest, deferred to the module's next round (db/math_deferred.json).
+"""Week 1 at 30 math questions a day: split each day's 45 (already 去水, ordered by 考法 group, easy -> hard) into
+round 1 (30, this week) and the rest, deferred to the module's next round (db/math_deferred.json).
 Every 考法 group keeps at least one question this week; the other slots go to the larger groups. Both rounds keep
 the day's mix of real (incl. teacher) questions and new variants, and inside a group the picks are spread over
 its difficulty range."""
-import json, sys, collections
+import json, sys, os, collections
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 S = '/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad'
-PER_DAY = 20
+PER_DAY = 30
 
 def key(it): return it.get('id') or it.get('tid') or it.get('vid')
 
@@ -47,14 +48,19 @@ def spread(v, k):
 
 if __name__ == '__main__':
     sched = json.load(open(S + '/db/schedule.json'))['schedule']
-    hd = json.load(open(S + '/db/math_harden.json'))
     deferred = {}
+    import assemble_day as A
+    db, fix = A.load_db(); cls = A.load_cls()
+    hd_full = json.load(open(S + '/db/math_harden.json'))
     for d in range(1, 8):
-        items = json.load(open(f'{S}/out/final/D{d}.json'))['parts'][0]['items']
+        hd_full[str(d)].pop('round1', None)
+    json.dump(hd_full, open(S + '/db/math_harden.json', 'w'), ensure_ascii=False, indent=1)  # the full 45 first
+    for d in range(1, 8):
+        items = A.part_items(d, 'math', sched[d - 1]['math'], db, fix, cls)
         keep = split(items)
-        hd[str(d)]['round1'] = keep
+        hd_full[str(d)]['round1'] = keep
         mod = sched[d - 1]['math']
         deferred.setdefault(mod, []).extend([{'key': key(it), 'type': it['type'], 'group': it['group'], 'from_day': d} for it in items if key(it) not in keep])
         print(d, mod, len(keep), 'deferred', len(items) - len(keep))
-    json.dump(hd, open(S + '/db/math_harden.json', 'w'), ensure_ascii=False, indent=1)
+    json.dump(hd_full, open(S + '/db/math_harden.json', 'w'), ensure_ascii=False, indent=1)
     json.dump(deferred, open(S + '/db/math_deferred.json', 'w'), ensure_ascii=False, indent=1)
