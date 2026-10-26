@@ -3,8 +3,9 @@ import json, os, re, sys, glob
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 S = '/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad'
 CR = S + '/crops/real2'
-PART_TITLE = {'math': '数学运算', 'logic': '逻辑判断', 'zh': '综合推理'}
-TIME_MIN = {'math': 40, 'logic': 20, 'zh': 20}
+PART_TITLE = {'ns': '数字推理', 'math': '数学运算', 'logic': '逻辑判断', 'zh': '综合推理'}
+TIME_MIN = {'ns': 10, 'math': 40, 'logic': 20, 'zh': 20}
+NS_PLAN = S + '/db/ns_plan.json'  # 数字推理 (number series): real questions, reused in rotation when they run out
 
 def load_db():
     db = {r['id']: r for r in json.load(open(S + '/db/real_raw.json'))}
@@ -172,6 +173,9 @@ def assemble(day):
     s = sched['schedule'][day - 1]; names = sched['names']
     db, fix = load_db(); cls = load_cls()
     parts = []; missing = []
+    ns = (json.load(open(NS_PLAN)).get(str(day)) if os.path.exists(NS_PLAN) else None) or []
+    if ns:
+        parts.append({'title': PART_TITLE['ns'], 'module': '数列与数阵规律', 'time_min': TIME_MIN['ns'], 'items': [real_item(i, db, fix, cls) for i in ns]})
     for part in ('math', 'logic', 'zh'):
         m = s[part]
         label = names[m].replace('综合推理·', '')
@@ -187,7 +191,7 @@ def assemble(day):
         if not os.path.exists(f'{S}/blueprints/{bp_key}.json') or not glob.glob(f'{S}/gen/D{day:02d}_{part}_*.json'):
             print('skip part (not ready):', part, m); missing.append(PART_TITLE[part]); continue
         parts.append({'title': PART_TITLE[part], 'module': label, 'time_min': TIME_MIN[part], 'items': part_items(day, part, m, db, fix, cls)})
-    note = ('题目页只有题号，不标题型、考法和出处，请自己判断。数学运算由历年真题（直接截取原卷）、老师笔记精选和依据真题考法改编、经程序验算的新题组成，送分题已去掉，每道题都有一个要想清楚的地方；'
+    note = ('题目页只有题号，不标题型、考法和出处，请自己判断。数字推理用历年真题，题不够时轮换重做。数学运算由历年真题（直接截取原卷）、老师笔记精选和依据真题考法改编、经程序验算的新题组成，送分题已去掉，每道题都有一个要想清楚的地方；'
             '逻辑判断和综合推理全部是真题。每道题的出处、考法和技巧都写在本册最后的解析里。建议严格计时，做完再对答案。')
     if missing:
         note += '今天的' + '、'.join(missing) + '真题暂缺，等补充新卷子后补发。'
