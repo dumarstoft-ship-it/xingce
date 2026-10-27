@@ -1,0 +1,65 @@
+[
+ {
+  "day": 8,
+  "part": "logic",
+  "id": "2026ZJA-96",
+  "tier": 2,
+  "module": "L01"
+ },
+ {
+  "day": 8,
+  "part": "logic",
+  "id": "2026GD-51",
+  "tier": 2,
+  "module": "L01"
+ },
+ {
+  "day": 11,
+  "part": "zh",
+  "id": "2018GK-115",
+  "tier": 2,
+  "module": "C01"
+ },
+ {
+  "day": 12,
+  "part": "logic",
+  "id": "2026GD-55",
+  "tier": 2,
+  "module": "L05"
+ },
+ {
+  "day": 12,
+  "part": "logic",
+  "id": "2026GD-52",
+  "tier": 2,
+  "module": "L05"
+ },
+ {
+  "day": 13,
+  "part": "logic",
+  "id": "2026GD-57",
+  "tier": 2,
+  "module": "L07"
+ },
+ {
+  "day": 13,
+  "part": "logic",
+  "id": "2022SC1-76",
+  "tier": 2,
+  "module": "L07"
+ },
+ {
+  "day": 13,
+  "part": "zh",
+  "id": "2026GK-110",
+  "tier": 2,
+  "module": "C03"
+ },
+ {
+  "day": 13,
+  "part": "zh",
+  "id": "2026ZJA-98",
+  "tier": 2,
+  "module": "C03"
+ }
+]

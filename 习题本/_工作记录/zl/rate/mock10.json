@@ -1,0 +1,158 @@
+[
+  {
+    "mat": "MK2702X-M3",
+    "q": [
+      {"type": "倍数(多几倍)", "work": "前三季度户数 2608040/516790≈5.05 → 多4.05倍; one division, trap 5.0 (是几倍).", "acc": 62, "sec": 35},
+      {"type": "平均数增长率", "work": "上半年资金5.4% vs 户数1.2%: (5.4−1.2)/1.012≈4.15%; direct formula, options well spaced.", "acc": 70, "sec": 40},
+      {"type": "累计差值+环比", "work": "Q3新增 181242.84−179156.31 vs Q2新增 179156.31−177472.63 → 2086.5/1683.7≈+23.9%; trap 1.2% (累计环比).", "acc": 54, "sec": 60},
+      {"type": "增长预测", "work": "175801×1.919^n>500000 needs ×2.84; 1.919²≈3.68 → 2024; 万亿 unit; trap using 2023前三季度 as base.", "acc": 64, "sec": 50},
+      {"type": "柱状图匹配(增量)", "work": "Bars ≈1:1.2:1.9; bases flat so increments ∝ rates: 私营 2.2/2.7/4.2 fits; 个体 too steep, others non-monotone.", "acc": 58, "sec": 75}
+    ],
+    "mat_acc": 61.6,
+    "hard_points": "Big 累计 table. Q3 needs differencing cumulative values into quarterly flows, Q5 needs increment reasoning across four enterprise types, Q1 carries the 是/多倍 trap. The arithmetic itself is light."
+  },
+  {
+    "mat": "MK2706X-M2",
+    "q": [
+      {"type": "余额推算(存量流量)", "work": "2021余额 = 92454.82−31935.05+21363.27 = 81883.04; needs stock/flow logic; exact options; trap D adds net flow.", "acc": 57, "sec": 60},
+      {"type": "两期基期", "work": "31935.05/(1.0953×1.1124)≈26210; take 2021 rate from chart; options ~11% apart; trap D divides once.", "acc": 68, "sec": 45},
+      {"type": "比重升降(读图)", "work": "提取率 rises iff 提取额增速 > 缴存额增速; compare the two lines over 4 years → only 2020.", "acc": 76, "sec": 30},
+      {"type": "比重+多几倍", "work": "2021 share 79.2+3.0 = 82.2%, rest 17.8%; 82.2/17.8≈4.62 → 多3.6倍; traps 4.6 and wrong sign of 3.0.", "acc": 55, "sec": 45},
+      {"type": "综合判断", "work": "A≈40%; B≈3.15万; C trap 452.72−75.22 (real ≈416); D 256927.26−92454.82 exact → true; concept needed.", "acc": 52, "sec": 75}
+    ],
+    "mat_acc": 61.6,
+    "hard_points": "Concept-driven rather than calculation-driven: stock vs flow of 公积金余额 (Q1, Q5-D), a tempting 新开户 subtraction trap (Q5-C), and a double trap in Q4 (share direction plus 多几倍). Q2–Q3 are routine."
+  },
+  {
+    "mat": "MK2709X-M1",
+    "q": [
+      {"type": "隐含总量差", "work": "网民 = 用户/比重: 5.9/0.534≈11.05, 4.2/0.423≈9.93 → 1.12; two divisions, options ~0.2 apart.", "acc": 64, "sec": 50},
+      {"type": "增速趋势匹配", "work": "Growth 2020–23 ≈ 5%, 28.6%, −3.7%, 5.8% → spike, plunge below start, small rebound → D.", "acc": 76, "sec": 45},
+      {"type": "增量预测", "work": "2024增量 = 2.7×14.8/114.8≈0.35 → (4−2.7)/0.35≈3.7 → 2028; bar difference 0.3 gives trap 2029.", "acc": 43, "sec": 50},
+      {"type": "隐含增速比较", "work": "Derive 网民 2018–2023, compare four growth pairs; A 8.65% vs 9.22% (tiny gap); heavy precise division.", "acc": 37, "sec": 120},
+      {"type": "综合判断", "work": "C true by share-rise rule (2021, 2023, 2024); A fails on 2020 −1.9%; B 2019 base → 76.6%; D sum 10.5.", "acc": 61, "sec": 70}
+    ],
+    "mat_acc": 56.2,
+    "hard_points": "Key quantities are implicit (网民 = 用户 ÷ 比重). Q4 needs six derived totals and near-tied growth comparisons; Q3 hides a rounding trap (bar difference vs rate-derived increment). Most computation-heavy passage of the set."
+  },
+  {
+    "mat": "MK2711X-M4",
+    "q": [
+      {"type": "平均数增长率", "work": "发送量 rate 2.11/47.73≈4.4%, 周转量 8.1% → distance ≈+3.5% (<5%); coarse options.", "acc": 67, "sec": 45},
+      {"type": "平均数增量", "work": "国铁 distance 32668.36/39.03≈837 km; rate (9.1−4.8)/104.8≈4.1% → ≈+33 km (<50).", "acc": 63, "sec": 55},
+      {"type": "增长预测", "work": "SO2 2023 = 1228×1228/2340≈644 t → 600–700; one step from chart labels.", "acc": 71, "sec": 30},
+      {"type": "负增速排序", "work": "−74.33/1586.91≈−4.7%, −0.17/4.08≈−4.2%, −0.16/4.04≈−4.0%; order negatives correctly; reversed option B is the trap.", "acc": 55, "sec": 60},
+      {"type": "综合判断", "work": "A exact sum of six COD values = 10179 > 1万; C 年均 base-year convention lure (27.6×); D actually three years >5%.", "acc": 53, "sec": 75}
+    ],
+    "mat_acc": 61.8,
+    "hard_points": "Moderate: average-distance growth logic (Q1–Q2), sorting negative growth rates, and a statement question needing an exact six-number sum plus a 年均 convention lure. Last passage, so time pressure trims accuracy."
+  },
+  {
+    "mat": "MK2714X-M3",
+    "q": [
+      {"type": "平均数(加总)", "work": "Average of 1–6月 金额 bars 2021–25 = 8998/5≈1800 → 1500–2000; pick the right chart and bars.", "acc": 78, "sec": 30},
+      {"type": "隐含总量增量", "work": "全国 = 中金所/份额: 2848/0.3831≈7434, 2374/0.4098≈5793 → +1641; trap 474 (中金所 own increment).", "acc": 63, "sec": 50},
+      {"type": "平均数增长率", "work": "Full-year bars: (5773/7860)/(2691/5261)−1≈+43.6%; options far apart; must not use 1–6月 bars.", "acc": 68, "sec": 45},
+      {"type": "多步差值", "work": "2025全年 = 2×5261; 下半年 10522−4020 = 6502; 2024下半年 7860−3559 = 4301; Δ = 2201; traps 4301/6502.", "acc": 64, "sec": 50},
+      {"type": "折线图匹配", "work": "H2 = 全年−上半年: 1097, 1435, 1512, 3399 vs H1 1389, 1208, 1179, 2374; H1 above H2 in 2021 picks B.", "acc": 60, "sec": 65}
+    ],
+    "mat_acc": 66.6,
+    "hard_points": "Two clean bar charts; work is mostly subtraction/division with well-separated options. Harder spots: deriving national totals from market shares (Q2) and building the H2 series for the chart match (Q5)."
+  },
+  {
+    "mat": "MK2718X-M2",
+    "q": [
+      {"type": "基期倍数(多几倍)", "work": "2022: (43.2/1.709)/(16.8/1.512)≈2.28 → 多1.3倍; traps 2.6/1.6 (2023 values) and 2.3 (是几倍).", "acc": 48, "sec": 50},
+      {"type": "累计差值", "work": "1–11月 出口 177.3−15.1 = 162.2, 进口 15.0−1.8 = 13.2 → 149.0; traps 162.2/175.5.", "acc": 75, "sec": 30},
+      {"type": "比重升降(计数)", "work": "Dec share up iff 当月增速 > 累计增速: 插混, 非插混, 混动客车 → 3.", "acc": 65, "sec": 40},
+      {"type": "月均比较", "work": "1–11月月均 > 12月 ⇔ 累计 > 12×当月: only 纯电动乘用车 (341.3 > 277.2).", "acc": 72, "sec": 45},
+      {"type": "饼图匹配", "work": "Monthly shares 65/18/11/4.5/1% of 35.5; reject pie built on given cumulative shares (81.6%); judge pie angles.", "acc": 62, "sec": 60}
+    ],
+    "mat_acc": 64.4,
+    "hard_points": "Two neat tables. Q1 stacks base-period and 多几倍 traps; Q3–Q4 use standard share/average rules; Q5 needs monthly rather than the printed cumulative shares. Moderate overall."
+  },
+  {
+    "mat": "MK2721X-M1",
+    "q": [
+      {"type": "基期量", "work": "829.6/1.038≈799.2; options well separated; trap D multiplies instead.", "acc": 86, "sec": 20},
+      {"type": "混合平均(十字交叉)", "work": "Count ratio = (811.4−706.4):(866.6−811.4) = 105:55.2≈1.9 → 19:10.", "acc": 59, "sec": 50},
+      {"type": "公式反推", "work": "代工收益率 = 390.8−96.9 = 293.9%; 支出 = 462.1/3.939≈117.3; traps from using 390.8% (94.2, 217.4).", "acc": 56, "sec": 55},
+      {"type": "多步公式", "work": "整体支出 = 266.9/1.416≈188.5; 收益率 = 829.6/188.5−1≈340%; must decode '较整体水平高41.6%'.", "acc": 51, "sec": 65},
+      {"type": "综合判断(选错)", "work": "A +6.8%, B 2.3×, C 829.6×1.245≈1033 all true; D drops '实现产业化的' (scope change) → wrong.", "acc": 55, "sec": 70}
+    ],
+    "mat_acc": 61.4,
+    "hard_points": "Pure text with a custom 投入收益率 definition. Q2–Q4 need formula manipulation (weighted mix, rate-to-cost inversion, chained comparison); Q5's answer is a subtle scope change, not a number."
+  },
+  {
+    "mat": "MK2723X-M4",
+    "q": [
+      {"type": "基期平均数", "work": "2021: (121003/1.047)/82.4≈1403 km; options ~4% apart; mixing 2022 货运量 lures A.", "acc": 61, "sec": 50},
+      {"type": "平均数(加总)", "work": "(74.1+78.8+76.2+82.4+85.5)/5 = 79.4; direct chart read.", "acc": 80, "sec": 25},
+      {"type": "比重差", "work": "外贸 46.0/156.8≈29.3% vs 内贸 70.7% → 低41.3个百分点; trap 29.3.", "acc": 70, "sec": 30},
+      {"type": "增速比较", "work": "2022 growth 0.9% (given) vs 2.5–6.8% other years; visibly smallest bar step.", "acc": 80, "sec": 25},
+      {"type": "综合判断", "work": "A 121003/1.047≈115571 > 115000 (tight); C trap 4.7−2.3 vs true 7.0%; D 28亿 vs 万吨 unit trap.", "acc": 57, "sec": 55}
+    ],
+    "mat_acc": 69.6,
+    "hard_points": "Easy data: two simple bar charts plus short text. Only Q1 (base-period distance) and Q5 (tight threshold, 增速放缓 and unit traps) need care. Last-position time pressure is the main drag."
+  },
+  {
+    "mat": "MK2727X-M3",
+    "q": [
+      {"type": "多项加总比较", "work": "Jul–Dec exports 782 vs imports 788 → 逆差6; trap including the 2022年6月 row gives 顺差.", "acc": 58, "sec": 55},
+      {"type": "单价计数", "work": "进口单价 = 金额/数量 (万元/吨): only Jan 3.46 above 3; others 2.5–2.9.", "acc": 73, "sec": 40},
+      {"type": "多月基期累计", "work": "2022 Jan–Apr = 2023/(1+g): 107.7, 74.1, 79.9, 80.5 → passes 300 in April; trap 2023 values → March.", "acc": 48, "sec": 80},
+      {"type": "单价升降计数", "work": "Price down iff 金额增速 < 数量增速; scan 12 months with negatives → 2023 Jan, Mar, Apr, May = 4.", "acc": 60, "sec": 55},
+      {"type": "环比折线匹配", "work": "Jan 116/143−1≈−19%, Feb −25%, Mar 128/87−1≈+47% → slight dip then sharp rise.", "acc": 68, "sec": 50}
+    ],
+    "mat_acc": 61.4,
+    "hard_points": "One dense 12-month × 8-column table. Q1 has a period-boundary trap, Q3 needs four base-period recoveries then cumulation, Q4 scans 12 growth pairs. Many lookups, moderate math."
+  },
+  {
+    "mat": "MK2730X-M2",
+    "q": [
+      {"type": "基期比值(双基期)", "work": "2023Q1 profit 278.9/0.847≈329, revenue 3840/1.084≈3542 → 9.3%; trap 8.6% (only profit adjusted).", "acc": 55, "sec": 60},
+      {"type": "当月vs累计增速", "work": "当月 > 累计 iff cumulative rate rises from prior month: Jul, Sep–Dec → 5; needs the mixing insight.", "acc": 48, "sec": 45},
+      {"type": "基期+增量", "work": "2023 1–4月 = 5547/1.037≈5349; ×3.3/103.3≈171; read 3.7 vs 3.3 labels; options ~6% apart.", "acc": 52, "sec": 60},
+      {"type": "比重(差额求部分)", "work": "东部 = 8676−408.8−525.4−20.8 = 7721 → /8676≈89%.", "acc": 70, "sec": 40},
+      {"type": "综合判断(选错)", "work": "D false: 中部 5.6+6.4 = 12% beats 东部 5.2%; A/B/C need margin-direction, Q2/Q1 and base-period checks.", "acc": 68, "sec": 55}
+    ],
+    "mat_acc": 58.6,
+    "hard_points": "累计 monthly data with two growth lines: Q1 and Q3 need base-period recovery on two series with close options, Q2 tests the 当月 vs 累计 growth insight. The regional questions are easy."
+  },
+  {
+    "mat": "MK2733X-M1",
+    "q": [
+      {"type": "基期平均", "work": "2024 GDP = 3031.89/1.07≈2833.5; /12≈236; trap 252 (2025/12).", "acc": 79, "sec": 25},
+      {"type": "比重+基期", "work": "2025 三产 = 3031.89×52.5%≈1592; /1.047≈1520; traps 1592 and 1488 (GDP rate used).", "acc": 71, "sec": 40},
+      {"type": "比重计数", "work": "进口 = 总额−出口; share < 1/3 ⇔ 出口 > 2/3 总额: only 2019.", "acc": 75, "sec": 45},
+      {"type": "人均增量", "work": "人均 growth 1.07/1.011−1≈5.8%; Δ = 81502×5.8/105.8≈4500; trap: skipping /(1+r) gives ≈4760, near 4900.", "acc": 56, "sec": 55},
+      {"type": "柱状图匹配", "work": "Imports by subtraction: 2020–23 = 8.4, 17.6, 2.9, 11.5 matches bar pattern; other windows fail.", "acc": 71, "sec": 55}
+    ],
+    "mat_acc": 70.4,
+    "hard_points": "Short text plus one clean bar chart; mostly single base-period or subtraction steps. Only Q4 (per-capita growth from GDP and population growth, then the increment) needs a formula."
+  },
+  {
+    "mat": "MK2735D-M4",
+    "q": [
+      {"type": "平均数(加总)", "work": "(201.6+193.0+269.6+409.4+447.6+553.3)/6≈345.8.", "acc": 78, "sec": 30},
+      {"type": "平均数增长率", "work": "Price factor 3.95/6.869≈0.575 → −42.5%; trap inverted +73.9%.", "acc": 67, "sec": 35},
+      {"type": "季度环比", "work": "Q2 6.1+5.6+7.6 = 19.3 vs Q1 10.5 → +83.8%; close options but exact arithmetic is easy.", "acc": 73, "sec": 35},
+      {"type": "单价计数", "work": "单价 = 亿元/万个 ×10^4 元: Mar 141, Apr 149.0 (tight), May 125, Jun 137 ≤150 → 4.", "acc": 53, "sec": 55},
+      {"type": "综合判断", "work": "D direct (June max in both); C trap uses 2024 ratio 9.2 vs 2023 ≈2.4; A, B need base-period.", "acc": 60, "sec": 55}
+    ],
+    "mat_acc": 66.2,
+    "hard_points": "Simple monthly table. Difficulty only from unit conversion with a borderline April price (Q4), an inverted-ratio trap (Q2) and a wrong-year ratio trap (Q5-C). Last-position time pressure."
+  },
+  {
+    "mat": "MK2738X-M3",
+    "q": [
+      {"type": "增速比较", "work": "2019 9.3%, 2020 3.1%, 2021 11.3%, 2022 3.9% → 2021; compare two candidates.", "acc": 78, "sec": 35},
+      {"type": "比重(隐含总量)", "work": "规上工业 = 51371/15.5%; 21361/331426≈6.4%; options well apart.", "acc": 73, "sec": 35},
+      {"type": "平均数(加总)", "work": "Sum of five 6-digit values = 2830220 → 566044亿≈56.6万亿; unit conversion.", "acc": 76, "sec": 40},
+      {"type": "间隔增长率", "work": "2021 rate = 7.4−3.4 = 4.0%; 7.4+4.0+0.30≈11.7%; options 0.2–0.3 apart; trap 11.4 (no cross term).", "acc": 56, "sec": 40},
+      {"type": "综合判断(选错)", "work": "A 489701/1.08≈45.3万亿, B≈1133亿, C≈1.92万 all true; D 3.4×1.468 = 4.99 < 5 → false.", "acc": 50, "sec": 80}
+    ],
+    "mat_acc": 66.6,
+    "hard_points": "Easy chart and short text. Difficulty sits in Q4 (interval growth with near-identical options) and Q5, where all four statements are close-threshold checks and the false one misses by 0.2%."
+  }
+]

@@ -10,12 +10,14 @@ def complete(rs, fix):
         if (fix.get(r['id']) or {}).get('check'): return False
         if not os.path.exists(f"{S}/crops/zl/{r['id']}_j.png") and not (fix.get(r['id']) or {}).get('jiexi'): return False
     return True
-def make(d0, d1, first_set=1, per_day=2, per_set=4, used=()):
+def make(d0, d1, first_set=1, per_day=2, per_set=4, used=(), selfsolve=('MK',), skip_papers=('2026GK', '2026ZJA')):
     raw = json.load(open(S + '/db/zl_raw.json'))
     fix = json.load(open(S + '/db/zl_fixes.json')) if os.path.exists(S + '/db/zl_fixes.json') else {}
     by = defaultdict(list)
     for r in raw: by[r['mat']].append(r)
-    rank = [e for e in json.load(open(S + '/db/zl_rank.json')) if e['score'] is not None and e['mat'] not in set(used) and complete(by[e['mat']], fix)]
+    # mock papers have no official key: their passages are solved twice independently (zl/solve), so they need no answers yet
+    rank = [e for e in json.load(open(S + '/db/zl_rank.json')) if e['score'] is not None and e['mat'] not in set(used)
+            and e['mat'].split('-M')[0] not in skip_papers and (e['mat'].startswith(selfsolve) or complete(by[e['mat']], fix))]
     n_sets = (d1 - d0 + 1) * per_day
     pick = rank[:n_sets * per_set]
     sets = [[] for _ in range(n_sets)]
@@ -40,9 +42,13 @@ def make(d0, d1, first_set=1, per_day=2, per_set=4, used=()):
     return out
 if __name__ == '__main__':
     d0, d1 = int(sys.argv[1]), int(sys.argv[2]); fs = int(sys.argv[3]) if len(sys.argv) > 3 else 1
-    sets = make(d0, d1, fs)
+    old = json.load(open(S + '/db/zl_sets.json')) if os.path.exists(S + '/db/zl_sets.json') else []
+    keep = [s for s in old if s['day'] < d0]                       # sets of earlier days stay as delivered
+    sets = make(d0, d1, fs, used=[m for s in keep for m in s['mats']])
+    sets = keep + sets
     json.dump(sets, open(S + '/db/zl_sets.json', 'w'), ensure_ascii=False, indent=1)
     plan = defaultdict(list)
     for s in sets: plan[str(s['day'])].append({'set': s['set'], 'mats': s['mats']})
     json.dump(plan, open(S + '/db/zl_plan.json', 'w'), ensure_ascii=False, indent=1)
+    sets = [s for s in sets if s['day'] >= d0]
     for s in sets: print(s['set'], s['day'], s['mats'], s['scores'], round(sum(s['scores']) / len(s['scores']), 1))

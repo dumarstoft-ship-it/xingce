@@ -472,7 +472,7 @@
  {
   "tid": "T102",
   "keep": true,
-  "db_match": null,
+  "db_match": "2016GK-73",
   "module": "M11",
   "kaofa": "三集合画图求单一区域",
   "method": "画文氏图设未知数列方程",
@@ -496,7 +496,7 @@
  {
   "tid": "T103",
   "keep": true,
-  "db_match": null,
+  "db_match": "2025GKD-69",
   "module": "M11",
   "kaofa": "三集合区域等量关系",
   "method": "文氏图标记，相同区域抵消",

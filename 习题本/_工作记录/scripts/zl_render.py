@@ -8,6 +8,7 @@ R = S + '/render'
 CR = S + '/crops/zl'
 DPI = 200
 CN = '一二三四五六七八九十'
+CHECKLINE = os.environ.get('ZL_CHECKLINE', '')  # e.g. 读题圈：时间｜主体｜指标｜问法　选前：回看圈词、核单位
 CSS = r"""
 @page { size: A4; margin: 13mm 14mm 14mm 14mm; }
 html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
@@ -28,6 +29,7 @@ body { font-family: 'Noto Serif SC', serif; font-size: 10.5pt; line-height: 1.55
 img.chunk { display: block; break-inside: avoid; margin: 0 0 1.2mm 0; }
 .q { display: flex; align-items: flex-start; gap: 1.6mm; margin: 1.6mm 0 2.2mm 0; break-inside: avoid; }
 .q .no { flex: 0 0 auto; min-width: 6.2mm; text-align: center; font-family: 'Noto Sans SC', sans-serif; font-weight: 700; font-size: 9.5pt; border: 1.2px solid #111; border-radius: 2px; margin-top: 0.4mm; line-height: 1.35; }
+.chk { font-family: 'Noto Sans SC', sans-serif; font-size: 9pt; color: #222; border: 1px dashed #888; padding: 0.8mm 2mm; margin: 0 0 2mm 0; }
 .card { break-inside: avoid; margin: 0 0 2mm 0; font-family: 'Noto Sans SC', sans-serif; font-size: 9pt; }
 .card table { border-collapse: collapse; }
 .card td { border: 1px solid #888; width: 8.4mm; height: 6.5mm; text-align: center; }
@@ -71,7 +73,8 @@ def render(sets, raw, meta, title, out_html):
         cells = ''.join(f'<td>{i}</td>' for i in range(1, n + 1))
         h.append(f'<section class="set"><div class="set-h"><span class="t">第 {s["set"]} 套</span><span class="m">第 {s["day"]} 天 · {len(s["mats"])} 篇 {n} 题</span></div>'
                  '<div class="rec">开始 ______　结束 ______　用时 ______　正确 ______ / ' + str(n) + '</div>'
-                 f'<div class="card"><table><tr class="n">{cells}</tr><tr>' + '<td></td>' * n + '</tr></table></div>')
+                 + (f'<div class="chk">{html.escape(CHECKLINE)}</div>' if CHECKLINE else '')
+                 + f'<div class="card"><table><tr class="n">{cells}</tr><tr>' + '<td></td>' * n + '</tr></table></div>')
         q = 0
         for k, m in enumerate(s['mats']):
             rs = sorted(by[m], key=lambda r: r['pos'])

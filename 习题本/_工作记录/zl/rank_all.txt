@@ -1,0 +1,63 @@
+calibration actual = 23.1 + 0.57 * pred  (n=47)
+batch offsets {'full00': np.float64(-1.2), 'full01': np.float64(2.8), 'full02': np.float64(3.1), 'full03': np.float64(-0.9), 'full04': np.float64(3.2), 'full05': np.float64(3.6), 'full06': np.float64(3.7), 'full07': np.float64(0.8), 'full08': np.float64(1.7), 'full09': np.float64(3.1), 'full10': np.float64(2.0), 'full11': np.float64(-1.6), 'mock00': np.float64(-3.9), 'mock01': np.float64(0.2), 'mock02': np.float64(-2.3), 'mock03': np.float64(-2.3), 'mock04': np.float64(-3.4), 'mock05': np.float64(-1.3), 'mock06': np.float64(-1.6), 'mock07': np.float64(-0.9), 'mock08': np.float64(-1.7), 'mock09': np.float64(-3.8), 'mock10': np.float64(0.0)}
+48.6 2021JSA-M3 acc 
+49.7 2024SZ-M1 rated Very dense indicator text with unusual definitional reasoning (覆盖率, pe
+50.2 MK2719X-M3 rated Dense two-paragraph education text, no tables. Options 1 apart, 多多少倍 t
+50.7 MK2736F-M2 rated 副省级 cumulative-period table: Q4 subtracts two precise base values, Q3 
+51.0 2021GK-M4 acc 
+51.6 2024SD-M2 rated Computation-heavy: yearly totals built from four columns, five-year ra
+51.9 2019JSA-M1 rated Dense text of minutes and participation rates, no table; every questio
+52.7 MK2735D-M2 rated Chart gives daily averages, so most items need month-length conversion
+52.9 2020JSA-M3 rated Survey pie/bar of respondent shares; four of five items are set-overla
+53.1 2018ZJA-M1 rated Short text but logic-heavy: 达标/超标 complements, percentage points turne
+53.3 2025GKD-M3 rated Two dual-axis charts, 10 cities, four series; many divisions with bord
+53.5 MK2715X-M3 rated Dense 25-row table with monthly and cumulative columns; every item nee
+53.8 2015ZJA-M1 acc 
+53.9 MK2719X-M2 rated Monthly total chart plus cumulative industrial chart; three items requ
+53.9 2024HB-M3 rated Every item needs real computation: unit conversions (亿元/万吨, ‰), near-t
+54.1 2019GK-M1 rated Two dual-axis monthly charts; several items need hidden 2016 values vi
+54.1 MK2711X-M3 rated Hard. Dense 12-row table mixing single-month and cumulative data; 环比 d
+54.3 2026GK-M3 rated Trap-dense: 亿个→万亿千瓦时 conversion, a cumulative chart that must be diffe
+54.4 2022GK-M1 rated Two cumulative-data charts force repeated differencing; Q3 hinges on t
+54.7 2019ZJA-M2 rated Concept traps dominate: January 环比 needs derived Dec-2016, '变化最大' mean
+54.8 MK2729X-M2 rated Text-only with mostly negative growth rates; negative average-rate tra
+54.9 MK2709X-M1 rated Key quantities are implicit (网民 = 用户 ÷ 比重). Q4 needs six derived total
+55.2 MK2732X-M2 rated A severe perspective-reversal plus absolute-value trap where every wro
+55.4 MK2730X-M1 rated Moderate-hard. Cumulative bar-line chart drives four items: monthly va
+55.4 2017JSA-M1 acc 
+55.5 2023JSA-M3 rated Survey with two sample sizes and multi-select data: Q3 base-change tra
+55.6 2020GKD-M1 rated Two clear charts, but a period-counting trap (2011初–2018末), eight grow
+55.7 2025HB-M1 rated Dense text of 6-7 digit numbers and look-alike figures; most questions
+55.7 MK2718X-M1 rated Moderate-hard. Dense numeric text spanning 2021-2023; negative-increme
+55.9 2024GK-M1 rated One clean table, but most items need summing 3-6 provinces then judgin
+55.9 MK2735D-M3 rated Moderate-hard. Dense text listing many industries with growth rates; f
+55.9 2024HB-M4 rated Dense text of near-identical figures as the last passage; negative-rat
+56.0 2017GK-M3 rated Short text but traps everywhere: deriving 2014 rate from '降幅扩大', 2014 
+56.1 MK2710X-M3 rated 纯文字长材料定位成本高；混合增长、比重反推增速、负增长量作差层层递进，Q5为0项且③紧贴40%，易误判。
+56.1 MK2740X-M1 rated 长文字数据密集需定位；Q2需作差求基期，Q3平均数增速有相减陷阱，Q4复合增长选项密集，Q5饼图差异细微。
+56.1 MK2740X-M2 rated Two charts plus text with several base-period traps; Q5 combines inclu
+56.2 2024GK-M3 rated Text mixes cumulative stock and 2022 additions; three items require ba
+56.3 MK2730X-M2 rated 累计 monthly data with two growth lines: Q1 and Q3 need base-period reco
+56.4 MK2734X-M1 rated All dense text, no chart; most items need a derived base (2020 totals,
+56.4 2024SC-M2 rated Built on the 两年平均增长 concept (Q1, Q4), plus a residual mixed-growth and
+56.5 2016GKD-M2 rated Three-part material (two dual-axis charts plus text). Unit pitfalls (亿
+56.5 MK2706X-M3 rated Text needing implied quantities: import from total−export with negativ
+56.5 MK2739X-M3 rated All-text material crowded with similar volume, value and share figures
+56.6 2024ZJA-M1 rated Nearly every question needs base-period work on a dense table; tight o
+56.6 2016JSA-M1 acc 
+56.7 MK2705X-M2 rated Dense text-only material where most shares and growth rates appear onl
+56.7 MK2728X-M1 rated Long dense text with many look-alike figures (营收, 出口交货值, USD exports, 
+56.8 2020GKD-M3 rated Single decimal-heavy table; nothing conceptually hard, but many multi-
+56.8 2024SD-M3 rated Short text, but nearly every item needs base-period reconstruction (同比
+56.9 MK2719X-M1 rated Long table plus text. Concept items (增长贡献率, profit via margin) and a j
+56.9 2020GKD-M2 rated Clean table plus bar-line chart; moderate work: base-period year for a
+56.9 2023GK-M3 rated Table plus stacked bar chart; most items need several growth-rate comp
+57.0 MK2736F-M1 rated Short text plus labelled line chart; little arithmetic but concept-hea
+57.0 2026GK-M1 rated Dense two-level table (quarter vs March, volume vs value, growth). Thr
+57.0 MK2713X-M2 rated 文字+12个月堆积柱图，单位亿/万混用；Q1隔年表述绕，Q5四项都要读图计算且有临界项，耗时。
+57.1 2017GK-M2 rated Text + 7-year table. Q3 needs derived 'other institutions' with an all
+57.1 MK2723X-M3 rated Moderate. Text-only material; items need last-year growth backed out f
+57.1 MK2730X-M3 rated Long text with structure ratios: reverse interval growth, share-based 
+57.1 MK2724X-M1 rated Clean table but concept-trap heavy: '变化量' absolute vs signed, 3.8 thre
+57.2 2020SZ1-M3 acc 
+missing []

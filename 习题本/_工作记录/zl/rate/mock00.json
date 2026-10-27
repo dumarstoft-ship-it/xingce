@@ -1,0 +1,113 @@
+[
+  {"mat": "MK26ZX-M1", "q": [
+    {"type": "基期量作差", "work": "Back out 2023-end 中小 and 民营 counts (subtract increases), take difference 9783; trap A uses current-period difference.", "acc": 65, "sec": 40},
+    {"type": "基期量(含比重)", "work": "Total = 51529.8/63.1%, overall growth 6.0−2.9 = 3.1%, divide by 1.031 ≈ 79208; trap D ignores share.", "acc": 60, "sec": 55},
+    {"type": "平均数比较", "work": "Three revenue-per-firm ratios (0.89, 0.65, 0.60), clearly separated; sort ascending.", "acc": 73, "sec": 40},
+    {"type": "现期比重", "work": "亏损面 = 19872/66654 ≈ 29.8% → 30%; definition supplied, options 2pp apart.", "acc": 71, "sec": 25},
+    {"type": "综合判断", "work": "A 2155.4×44.3/55.7≈1714; B '较…低' wording (国有24.0 vs 外资15.7); C 67.2%<85.1%; D 8.2>7.2 so share rose.", "acc": 51, "sec": 80}
+  ], "mat_acc": 64.0, "hard_points": "Easy-to-locate text data; mostly one- or two-step base-period and ratio work with forgiving options. Only the 能够推出 item (sign wording '较…低', share-vs-count reasoning, part-vs-whole growth) needs real effort."},
+
+  {"mat": "MK2702X-M4", "q": [
+    {"type": "排序比较", "work": "Check each 2015–2021 column (10 rows) for the 2022 descending order; only 2021 matches. Pure scanning, error-prone.", "acc": 51, "sec": 70},
+    {"type": "两期比重差", "work": "Identify Sichuan peak year 2020; compute 2020 and 2019 national shares (5.20% vs 4.50%); options 0.3pp apart.", "acc": 44, "sec": 70},
+    {"type": "年均增长量", "work": "十三五 uses 2015 base: (6241.10−5069.54)/5 ≈ 234; trap using 2016 base or wrong n.", "acc": 54, "sec": 40},
+    {"type": "增长率比较", "work": "Top-5 provinces by 2022 users; compare five growth rates with national 1.01% (广东 0.86% close).", "acc": 50, "sec": 60},
+    {"type": "综合判断", "work": "A doubling check (2039 vs 1995); B first exceed 2026 not 2027; C 5% count (浙江 just below); D top5−bottom5 ≈6400万<1亿.", "acc": 34, "sec": 120}
+  ], "mat_acc": 46.6, "hard_points": "Last passage with two dense 11×8 tables: heavy locating and scanning, two-share precision, and a final item stacked with near-miss traps (首次超过 year, 5% threshold, 万 vs 亿). Time pressure dominates."},
+
+  {"mat": "MK2706X-M3", "q": [
+    {"type": "混合增长率", "work": "Import = total − export; bases 3.654 and 2.187 give import base 1.467 → −3.9%; must see growth is negative.", "acc": 55, "sec": 60},
+    {"type": "基期比重", "work": "(1.78/2.46)×(1.125/1.067) ≈ 76.3%; options ~3pp apart; trap near current share 72.4%.", "acc": 56, "sec": 50},
+    {"type": "增长量比较", "work": "Three import increments from current value and rate (≈41, 229, 87); clear ordering despite 316% rate.", "acc": 61, "sec": 50},
+    {"type": "两期比重", "work": "65.7%×(12.3−5.9)/112.3 ≈ 3.7pp rise; ignore '高出全国12.1个百分点' distractor.", "acc": 58, "sec": 40},
+    {"type": "可推出个数", "work": "① 保税 base derivable; ② '近一半' not exact; ③ Guangdong 2022 base derivable via 拉动2.6pp — conceptual.", "acc": 37, "sec": 60}
+  ], "mat_acc": 53.4, "hard_points": "Text needing implied quantities: import from total−export with negative mixed growth, base-period share, and recognizing that 拉动 makes Guangdong's base derivable. Count-type final item punishes conceptual gaps."},
+
+  {"mat": "MK2709X-M2", "q": [
+    {"type": "现期比重", "work": "7377×(59.9−38.5−1.6)% ≈ 1461; 1461 vs 1490 needs moderate precision.", "acc": 67, "sec": 30},
+    {"type": "基期量", "work": "7377/1.099 ≈ 6712; 6700 vs 6712 only 0.2% apart, so a /1.1 estimate is insufficient.", "acc": 55, "sec": 40},
+    {"type": "增长量+比重", "work": "Find region with largest increment (东部 ≈106), then 780.4/1866.8 ≈ 41.8%; options 2pp apart.", "acc": 63, "sec": 50},
+    {"type": "作差排序", "work": "Subtract increases from June rates (56.7, 57.2, 56.4, 56.2) and sort ascending.", "acc": 72, "sec": 30},
+    {"type": "综合判断(不能推出)", "work": "A 7.2%<10%; B 29.8/6≈4.97<5 (tight); C 454.9/35.7%≈1274; D net change is −20万, sign trap.", "acc": 53, "sec": 60}
+  ], "mat_acc": 62.0, "hard_points": "Short clean text; mostly direct share, base and subtraction. Points lost on a 0.2%-apart option pair, the tight 4.97 vs 5 check, and a sign trap (non-fiber ports actually fell)."},
+
+  {"mat": "MK2712X-M1", "q": [
+    {"type": "混合增长率", "work": "Total accounts dominated by personal (0.37%) over unit (2.93%); result just above 0.37 → 0.39%; options far apart.", "acc": 67, "sec": 30},
+    {"type": "现期比重", "work": "6.78 × 87.82/95.73 ≈ 6.22; one ratio, options well spaced.", "acc": 69, "sec": 30},
+    {"type": "增长率作差", "work": "Three 环比 rates with base = current + decrease (−5.9%, −6.9%, −1.5%); max−min ≈ 5.46; dense text.", "acc": 56, "sec": 70},
+    {"type": "平均数增长率", "work": "(−3.84+15.93)/(1−15.93%) ≈ +14.38%; direction and denominator traps (10.43).", "acc": 60, "sec": 40},
+    {"type": "综合判断(不能推出)", "work": "A says 现金 but data are 非现金 (calc 967>900 looks true); B 70.3%, C 97.7万<100万, D all check out.", "acc": 40, "sec": 60}
+  ], "mat_acc": 58.4, "hard_points": "Very number-dense banking text slows locating. Calculations are standard (mixed growth, average growth, 环比 rates from decreases); the killer is the 现金 vs 非现金 wording trap where the computation misleadingly confirms option A."},
+
+  {"mat": "MK2714X-M4", "q": [
+    {"type": "年均增长量", "work": "(20335−10954)/7 ≈ 1340; trap 1360 from 2014 base divided by 6.", "acc": 57, "sec": 30},
+    {"type": "乘积增长率", "work": "Total income = per-capita × population: 4.64% + 2.67% + cross term ≈ 7.4%; single-factor traps C/D.", "acc": 51, "sec": 45},
+    {"type": "比重判断计数", "work": "十三五 2016–2020: urban < rural in 2016–2018 → 3; trap counting 2015.", "acc": 59, "sec": 35},
+    {"type": "增长量预测", "work": "Increment 1196; (30000−20335)/1196 ≈ 8.08 → 9 years → 2029; trap 2028.", "acc": 47, "sec": 40},
+    {"type": "图形匹配(增长量)", "work": "Five consumption increments (1302, 866, 1504, 1255, 296); match the down-up-down-plunge line shape.", "acc": 51, "sec": 60}
+  ], "mat_acc": 53.0, "hard_points": "Single clean table with easy lookup; questions are standard (年均增长量, product growth, projection, line shape). Difficulty mostly from last-passage time pressure and boundary traps (8.08 years, 十三五 range)."},
+
+  {"mat": "MK2718X-M3", "q": [
+    {"type": "平均数比较", "work": "Five-year mean ≈ 3910; only 2019 and 2023 exceed → 2.", "acc": 69, "sec": 30},
+    {"type": "总量作差(单位)", "work": "Visitors×share×per-capita for urban vs rural; 百万人次×元 → 万亿; gap ≈ 3.4万亿.", "acc": 59, "sec": 45},
+    {"type": "乘积增长率", "work": "1.933×1.243−1 ≈ 140%; traps 240% (forgetting −1) and 24%.", "acc": 61, "sec": 30},
+    {"type": "增长率比较(负值)", "work": "Four 2022 rates (−22%, −10%, −13%, −3%); '最慢' means most negative → visitors.", "acc": 58, "sec": 40},
+    {"type": "图形匹配(增长量)", "work": "2020–2023 increments for four series; need −,+,small −,+ with 2021 bar > 2023 bar → rural only.", "acc": 53, "sec": 70}
+  ], "mat_acc": 60.0, "hard_points": "Labelled bar and line charts make reading easy. Moderate traps: unit conversion to 万亿, product growth 140% vs 240%, '最慢' with negatives, and a bar-shape match needing several subtractions."},
+
+  {"mat": "MK2721X-M2", "q": [
+    {"type": "增速比较计数", "work": "Compare two growth columns across 15 rows incl. negatives/zeros; count 5 (磷 −30.9 vs −28.6 trap).", "acc": 60, "sec": 50},
+    {"type": "增长量", "work": "Fastest drilling growth is 镍 380%: 24×380/480 = 19.", "acc": 72, "sec": 20},
+    {"type": "平均数", "work": "Sum 15 drilling values = 571, /15 ≈ 38.1; options 1 apart so summation must be exact.", "acc": 58, "sec": 50},
+    {"type": "增长预测(复利)", "work": "Gold 14.04 at +31.1% vs coal 19.72 at +19.3%; gap ratio 1.40 needs 4 years of 1.099 → 2027.", "acc": 50, "sec": 60},
+    {"type": "综合判断", "work": "A per-metre −10% not +10%; B top-3 funding 42.47 vs top-3 drilling 42.39 (铜/铅锌 near tie); C amount vs rate; D count 5.", "acc": 46, "sec": 90}
+  ], "mat_acc": 57.2, "hard_points": "One 15-row table; reading easy but many rows. Counting with negatives, an exact 15-number sum, compound catch-up year, and a final item needing two top-3 rankings with near-tied values (8.71 vs 8.63)."},
+
+  {"mat": "MK2724X-M1", "q": [
+    {"type": "两期比重", "work": "68.6%×(−2.6+5.7)/97.4 ≈ +2.2pp; standard formula with negative rates.", "acc": 64, "sec": 45},
+    {"type": "变化量比较", "work": "Increments 内河 +7.2, 沿海 +8.9, 远洋 −10.7; '变化量' uses absolute value → 远洋>沿海>内河; signed-order trap B.", "acc": 46, "sec": 50},
+    {"type": "平均数增长率", "work": "(1.2+2.6)/(1−2.6%) ≈ 3.9% > 3.8; threshold equals the naive difference.", "acc": 58, "sec": 35},
+    {"type": "平均数比值", "work": "(1.27/972)/(24.22/10672) ≈ 0.58 → 3:5; mind 万客位 vs 艘 units.", "acc": 69, "sec": 40},
+    {"type": "综合判断", "work": "A 拉动 ≈3% (not 14.9% growth); B 内河 per-ship unchanged; C 万艘 unit trap; D 4826/30052 ≈ 16% true.", "acc": 44, "sec": 70}
+  ], "mat_acc": 56.2, "hard_points": "Clean table but concept-trap heavy: '变化量' absolute vs signed, 3.8 threshold equal to naive estimate, 拉动 vs growth, 万艘 vs 艘, and a per-ship ratio that is exactly unchanged."},
+
+  {"mat": "MK2727X-M4", "q": [
+    {"type": "部分增长率(比重反推)", "work": "July SUV share 44.4%, total base 167.3/1.091; SUV growth ≈ 13.0%; options about 1pp apart.", "acc": 44, "sec": 60},
+    {"type": "平均数比较", "work": "July above July–Aug mean ⇔ negative 环比 growth → 北京, 天津 → 2.", "acc": 57, "sec": 30},
+    {"type": "倍数(比重反推)", "work": "广东 = 48305/25.4%, 湖北 = 34577/62.1%; ratio ≈ 3.4; options 1 apart.", "acc": 60, "sec": 40},
+    {"type": "现期比重", "work": "Sum of three sedan counts / sum of three totals ≈ 60234/119503 ≈ 50.4%.", "acc": 62, "sec": 40},
+    {"type": "综合判断", "work": "A trap: 8万 is Sichuan total not SUV; B count 6 not 7; C base compare; D bound 苏州 SUV ≤ 17116 < 18964.", "acc": 31, "sec": 80}
+  ], "mat_acc": 50.8, "hard_points": "Last passage, text plus table. Q1 needs a back-out of base share and base total; the final item hinges on bound logic with a strong distractor (province total mistaken for SUV count)."},
+
+  {"mat": "MK2730X-M3", "q": [
+    {"type": "基期量(含比重)", "work": "2021 east = 64931/1.04 × 47.5% (or ×46.8%/1.025) ≈ 29650; options ~4% apart.", "acc": 59, "sec": 45},
+    {"type": "部分增长率", "work": "Share 28.7→28.8 with total +4.0% → growth slightly above 4% ≈ 4.3%; only option above 4.", "acc": 55, "sec": 45},
+    {"type": "间隔增长率逆推", "work": "1.214/1.135 − 1 ≈ 7.0%; options 0.4–0.6pp apart.", "acc": 53, "sec": 40},
+    {"type": "两期比重", "work": "Growth 2.3 > 0.6 → share up; 21.5%×1.7/102.3 ≈ 0.36pp, under 1.", "acc": 66, "sec": 30},
+    {"type": "可推出个数", "work": "① 2021 order from shares (west > central, false); ② contribution ≈21% true; ③ '多4倍多' trap (ratio 4.16) → 1.", "acc": 39, "sec": 70}
+  ], "mat_acc": 54.4, "hard_points": "Long text with structure ratios: reverse interval growth, share-based base and growth, contribution rate, and the classic '多4倍' wording trap inside a count-type item."},
+
+  {"mat": "MK2733X-M2", "q": [
+    {"type": "增长率比较", "work": "Four growth rates of 其他能源; 2020 (6.3%) vs 2022 (5.6%) is the close call.", "acc": 63, "sec": 40},
+    {"type": "增长量倍数", "work": "Coal increment 10435 / oil 4134 ≈ 2.5.", "acc": 70, "sec": 25},
+    {"type": "图形匹配(比重)", "work": "2022 consumption shares 56/18/8/17%; reject production-like pies A/C, then compare gas vs other slices in B/D.", "acc": 57, "sec": 45},
+    {"type": "平均数", "work": "Five gas-output values sum 120267 → 24053, just above the 24000 boundary.", "acc": 58, "sec": 40},
+    {"type": "综合判断", "work": "A: 2018 and 2022 (|−10042|) both exceed 10000 → 2 years; B oil fell 2022; C 83.3% > 80% true; D 8.6%.", "acc": 42, "sec": 70}
+  ], "mat_acc": 58.0, "hard_points": "Two tidy 5-year tables; arithmetic simple. Points lost on pie discrimination (production vs consumption), a near-boundary average, and option A where the negative 2022 gap must count in absolute terms."},
+
+  {"mat": "MK2736F-M1", "q": [
+    {"type": "两期比重", "work": "Part 5.8% < whole 7.1% → share down; 37.9%×1.3/105.8 ≈ 0.47pp, under 1.", "acc": 73, "sec": 30},
+    {"type": "拉动增长", "work": "Base share = 拉动 5.1pp / 11.4% ≈ 44.7%; needs the 拉动 concept.", "acc": 55, "sec": 40},
+    {"type": "平均数增长率", "work": "(2.5+1.9)/(1−1.9%) ≈ 4.49% → 4.5 not 4.3; naive 4.4 sits between.", "acc": 56, "sec": 35},
+    {"type": "累计与当月增速", "work": "Cumulative R&D growth rises in Mar, May, Nov (Jul flat) → current month higher 3 times; read the correct line.", "acc": 49, "sec": 50},
+    {"type": "可推出个数", "work": "① no 技术收入 growth; ② no 2024 H1 level; ③ 2023 base via chart 8.9% → only 1.", "acc": 47, "sec": 50}
+  ], "mat_acc": 56.0, "hard_points": "Short text plus labelled line chart; little arithmetic but concept-heavy: 拉动 back-out, average-growth precision, cumulative-vs-monthly growth logic, and judging derivability using chart data."},
+
+  {"mat": "MK2738X-M4", "q": [
+    {"type": "基期量作差", "work": "2021 total and four crops via ± changes; other ≈ 1241 (cotton/oil/sugar are not grain; 大豆 sign easy to flip).", "acc": 54, "sec": 60},
+    {"type": "降幅比较", "work": "Decline rates: 稻谷 47/2992 ≈ 1.6% largest vs 小麦, 玉米, 棉花.", "acc": 63, "sec": 30},
+    {"type": "比重差", "work": "(51100−14740)/68653 ≈ 53pp; options 2pp apart.", "acc": 60, "sec": 30},
+    {"type": "平均数增长率", "work": "Area growth 183/841 ≈ 21.8%; yield (23.7−21.8)/1.218 ≈ 1.6% < 1.9 threshold.", "acc": 44, "sec": 50},
+    {"type": "可推出个数", "work": "① 1314 vs 3×447 = 1341 false; ② output +0.54% < area +0.60% → yield down; ③ true → 2.", "acc": 38, "sec": 75}
+  ], "mat_acc": 51.8, "hard_points": "Last passage, text dense with crop figures: base derivation with mixed signs, area growth from increments, a 1.9% threshold equal to the naive difference, and tight comparisons (0.54 vs 0.60, 1314 vs 1341)."}
+]

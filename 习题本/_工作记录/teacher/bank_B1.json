@@ -412,7 +412,7 @@
  },
  {
   "tid": "T018",
-  "keep": true,
+  "keep": false,
   "db_match": null,
   "module": "M14",
   "kaofa": "多重倍数条件求天数",
@@ -432,7 +432,8 @@
   "level": "中等",
   "figure": null,
   "verify": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/verify/teacher_T018.py",
-  "issues": ""
+  "issues": "",
+  "drop_reason": "same question as T221"
  },
  {
   "tid": "T019",
@@ -485,7 +486,7 @@
  {
   "tid": "T021",
   "keep": true,
-  "db_match": null,
+  "db_match": "2020GKD-68",
   "module": "M02",
   "kaofa": "比例+总数范围+整除",
   "method": "线段图份数+倍数特性",

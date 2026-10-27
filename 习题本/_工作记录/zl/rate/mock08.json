@@ -1,0 +1,113 @@
+[
+  {"mat": "MK2702X-M1", "q": [
+    {"type": "two base-period diff", "work": "2022Q3 profit = 1026/0.912 − 595/0.787 ≈ 1125 − 756 ≈ 369; traps 431 (2023Q3) and 1125; options far apart.", "acc": 60, "sec": 60},
+    {"type": "increment ratio", "work": "Two negative-growth increments: 2232×9.5/90.5 ≈ 234 vs 1427×8.3/91.7 ≈ 129 → 1.81; options ~12% apart.", "acc": 62, "sec": 70},
+    {"type": "profit via margin", "work": "Profit = revenue × margin: 0.954×(5.3/5.4) − 1 ≈ −6.4%; needs the margin insight; −1.9% trap.", "acc": 53, "sec": 60},
+    {"type": "H2 margin by subtraction", "work": "(764−307)/(14539−6885) = 457/7654 ≈ 6.0%; full-year 5.3% trap.", "acc": 71, "sec": 45},
+    {"type": "综合 correct statement", "work": "A Q3 mixing not −1.4%; B pp trap (Aug −8.4%); C 1551×1.064 ≈ 1650; D 13067×27% ≈ 3528 > 3500 (close).", "acc": 57, "sec": 90}
+  ], "mat_acc": 60.6, "hard_points": "Text-only, half-year vs three-quarter data; base-period subtraction, negative increments and margin-based profit growth all need two-step reasoning; 综合 has a pp-shift trap and a near-threshold product. Moderate."},
+
+  {"mat": "MK2705X-M4", "q": [
+    {"type": "ranking compare", "work": "Rank five import vs five export growth labels; only 2018/2019 swap. Pure chart reading.", "acc": 65, "sec": 35},
+    {"type": "surplus change", "work": "Surplus 1054−869=185 vs 758−566=192 → −3.6%, i.e. fell under 4%.", "acc": 60, "sec": 40},
+    {"type": "share threshold count", "work": "Import share > 1/3 ⇔ import > export/2; true every year → 5; 'all' answer may cause doubt.", "acc": 62, "sec": 40},
+    {"type": "two-year projection", "work": "1282×1.216² ≈ 1896; options far apart.", "acc": 66, "sec": 30},
+    {"type": "综合 能推出", "work": "A is unit trap (亿美元 not 亿元); B totals growth; C import increments; D four import/export ratios fall then rise.", "acc": 42, "sec": 85}
+  ], "mat_acc": 59.0, "hard_points": "Two clean labeled bar-line charts and simple one-step calculations; only Q5 carries a strong unit trap. Content is easy, but as the last passage time pressure and guessing pull accuracy down."},
+
+  {"mat": "MK2708X-M3", "q": [
+    {"type": "lookup + growth", "work": "Max 远洋 output 2018-21 is 2020; scale growth 2197.3/2116 − 1 ≈ 3.8%.", "acc": 72, "sec": 35},
+    {"type": "increment ratio", "work": "188.5×1.28/101.28 ≈ 2.38 vs 1.9×4.43/95.57 ≈ 0.088 → ≈27; options far apart.", "acc": 62, "sec": 55},
+    {"type": "share-up count", "work": "Compare each type's growth with 境内 total (≈ −0.06%): 甲壳, 贝类, 头足 rise → 3.", "acc": 65, "sec": 45},
+    {"type": "median vs mean", "work": "Sort five totals: median 1183.8; mean 6026.4/5 ≈ 1205.3; difference ≈ 21.5.", "acc": 70, "sec": 50},
+    {"type": "per-unit value change", "work": "亿元/万吨 = 万元/吨: 2.1042 − 1.9588 ≈ 0.145万 = 1454 元; 10× unit trap (148).", "acc": 53, "sec": 70}
+  ], "mat_acc": 64.4, "hard_points": "Short text plus small table; mostly lookups and one-step calculations with spread options. Only Q5 (unit conversion with a 10× trap) and the increment ratio need care. Fairly easy."},
+
+  {"mat": "MK2711X-M2", "q": [
+    {"type": "product growth", "work": "Volume +4.52%, price +10.39% → 1.0452×1.1039 − 1 ≈ 15.4%; company 16.5% trap.", "acc": 72, "sec": 30},
+    {"type": "base-period + subtraction", "work": "2021 full year = 557.8+104.3 = 662.1; minus 557.8/1.122 ≈ 497 → Q4 ≈ 165; 104.3 trap.", "acc": 58, "sec": 55},
+    {"type": "product difference", "work": "3042.69×79.42% − 2566.91×80.66% ≈ 2416 − 2070 ≈ +346; 476 (total difference) trap.", "acc": 65, "sec": 60},
+    {"type": "margin pp change", "work": "Margin ≈ 33.2%; change = 33.2×(29.36−9.64)/129.36 ≈ +5.1 pp, below 7.", "acc": 62, "sec": 55},
+    {"type": "综合 correct statement", "work": "A (3.03/1.0146)×41 ≈ 122亿 > 120 (close); B 1114万 unit; C 9.3%; D 671.24/0.9442 ≈ 711 > 700.", "acc": 53, "sec": 90}
+  ], "mat_acc": 62.0, "hard_points": "Dense numeric text across several firms; Q2 hinges on reading '较2021年全年减少', Q5 needs base-period volume × price with unit conversion plus several near-threshold checks. Moderate."},
+
+  {"mat": "MK2714X-M1", "q": [
+    {"type": "sum + unit", "work": "Add five bar labels = 344078万吨 ≈ 34.4亿吨.", "acc": 81, "sec": 35},
+    {"type": "growth count", "work": "Growth from bars: 2021 2.0%, 2022 0.5%, 2023 1.3%, 2024 1.6% → 3 years.", "acc": 77, "sec": 45},
+    {"type": "increment ratio", "work": "52843×1.4/101.4 ≈ 730 vs 14989×2.6/102.6 ≈ 380 → ≈1.9; options far apart.", "acc": 73, "sec": 50},
+    {"type": "share-up count", "work": "Compare with cereal total growth 1.7%: 小麦 2.6, 玉米 2.1 above, 稻谷 0.5 below → 2.", "acc": 80, "sec": 20},
+    {"type": "pie of increments", "work": "Increments ≈103/355/607, remainder ≈26 of 1090; match pie A; B shows output shares (trap).", "acc": 64, "sec": 75}
+  ], "mat_acc": 75.0, "hard_points": "Clean text plus a labeled bar chart; every item is a lookup or a one-step increment/growth comparison with well-separated options. Only the pie-chart match takes real work. Easy."},
+
+  {"mat": "MK2717X-M4", "q": [
+    {"type": "average growth", "work": "Derive 2022 growth 1.2+1.7 = 2.9%; base 2021 → two years ≈ (2.9+1.2)/2 ≈ 2.0%.", "acc": 49, "sec": 45},
+    {"type": "base-period line match", "work": "Four 2022 imports ≈1297/1043/795/926 via base period; match line shape (A vs D differ on last point).", "acc": 46, "sec": 90},
+    {"type": "deficit increment", "work": "Import increment 14629.8×6.1/106.1 ≈ 841 minus export ≈ 300 → 541; options ~15% apart.", "acc": 49, "sec": 60},
+    {"type": "two-step base period", "work": "2023 rate = 1141/18871 ≈ 6.05%; 2021 = 18871/1.0605 ≈ 17795; 18871 (2022) trap.", "acc": 52, "sec": 50},
+    {"type": "综合 correct statement", "work": "D: 1-3Q growth 0.8% < year 1.2% so Q4 share rises; A, C pp traps; B close 336 vs 341.", "acc": 39, "sec": 85}
+  ], "mat_acc": 47.0, "hard_points": "No easy item: growth-rate wording, four base-period values for a line chart, increment differences and quarter-share reasoning from cumulative growth. Last passage, so time pressure compounds the difficulty."},
+
+  {"mat": "MK2720X-M3", "q": [
+    {"type": "lookup + average", "work": "Max boats 2017-21 is 2017 (2016 outside range is trap); 153.0万kW/36521 ≈ 41.9 kW.", "acc": 64, "sec": 40},
+    {"type": "share difference", "work": "511.8/2657.8 ≈ 19.3% vs 535.8/2471.3 ≈ 21.7% → 2.4 pp lower.", "acc": 68, "sec": 45},
+    {"type": "sum ratio", "work": "十三五 = 2016-20; sums 3718.1/786.5 ≈ 4.7; robust to year-range slips.", "acc": 65, "sec": 70},
+    {"type": "change magnitude", "work": "2018 vs 2017 counts: big tractors −32%, small +24%, boats −5% → B.", "acc": 73, "sec": 35},
+    {"type": "pie match", "work": "2019 shares 33.9/22.4/6.7/37.1%; choose pie C over close B and D.", "acc": 56, "sec": 80}
+  ], "mat_acc": 65.2, "hard_points": "Single clean table; lookups, shares and sums with well-separated options. Minor traps (2016 outside range, 十三五 years) and a pie to match. Fairly easy despite the M3 position."},
+
+  {"mat": "MK2723X-M2", "q": [
+    {"type": "multi-row compare count", "work": "Dec > Jan-Nov mean ⇔ 12×Dec > annual; 12 rows, 化纤 near tie (622.8 vs 627.7) → 8.", "acc": 50, "sec": 110},
+    {"type": "two base-period diff", "work": "5477.1/1.035 − 534.2/1.054 ≈ 5292 − 507 ≈ 4785; 2023 value trap C.", "acc": 67, "sec": 55},
+    {"type": "increment ratio", "work": "Top two growth 汽车 26.3%, 黑色 4.2%; increments ≈1690/82 ≈ 20.7.", "acc": 64, "sec": 60},
+    {"type": "mixed growth", "work": "Annual 26.3% mixes Dec 17.3% and Jan-Nov; Dec small → Jan-Nov slightly above → 27.3%.", "acc": 67, "sec": 40},
+    {"type": "count 不能推出", "work": "① minima differ; ② only 2 shares fell, not 10; ③ 134 < 150 → all three fail.", "acc": 52, "sec": 100}
+  ], "mat_acc": 60.0, "hard_points": "Large 12-row table; Q1 and Q5 need exhaustive row-by-row comparisons including a near tie, costing time and inviting miscounts. Other items are standard calculations with clear options. Moderately hard."},
+
+  {"mat": "MK2727X-M1", "q": [
+    {"type": "mixed growth", "work": "Weighted between 税收 16.5% (≈83% weight) and 非税 −0.6% → ≈13.3%.", "acc": 66, "sec": 45},
+    {"type": "min increment", "work": "Increments: 消费税 ≈1280, 个税 ≈47, 出口退税 ≈1008, 城建 ≈111 → 个税.", "acc": 77, "sec": 45},
+    {"type": "环比 rate difference", "work": "Central Q2 9426 vs Q1 7240 (+30%); local 56552 vs 60675 (−6.8%) → 37 pp.", "acc": 62, "sec": 60},
+    {"type": "base-period compare", "work": "20164/1.05 ≈ 19204 vs 21791/1.079 ≈ 20196 → less by ≈1000.", "acc": 73, "sec": 45},
+    {"type": "count 无法推出", "work": "① gap 1.75 pp not 10; ② 27983/6 > 4000; ③ share rule; ④ 118 < 120 close → 1.", "acc": 48, "sec": 110}
+  ], "mat_acc": 65.2, "hard_points": "Long fiscal text, but questions are standard (mixed growth, increments, 环比 rates, base period). The four-statement counting question with a near-threshold item (118 vs 120) is the main difficulty."},
+
+  {"mat": "MK2729X-M4", "q": [
+    {"type": "sum difference", "work": "1809+2115+2312 − (1137+1264+1490) = 2345.", "acc": 68, "sec": 30},
+    {"type": "derived base period", "work": "2023 非木浆 = 8823 − 2312 − 5936 = 575; /1.0305 ≈ 558; 575 trap.", "acc": 53, "sec": 45},
+    {"type": "increment projection", "work": "2312 + 3×(2312−2115) = 2903.", "acc": 65, "sec": 30},
+    {"type": "average annual increase", "work": "(2115 − 1137)/4 ≈ 244.5; count four intervals correctly.", "acc": 62, "sec": 35},
+    {"type": "increment line match", "work": "Increments 226/319/306/197; pick line whose last point sits below the first (B, not C).", "acc": 53, "sec": 60}
+  ], "mat_acc": 60.2, "hard_points": "Content easy: one labeled bar chart and short text, mostly subtraction. Only the hidden non-wood figure and the line-shape match need care. Last passage, so time pressure lowers accuracy."},
+
+  {"mat": "MK2732X-M3", "q": [
+    {"type": "two-step growth", "work": "2018 = 673.8−141.7 = 532.1; 2022 = 673.8/1.065 ≈ 632.7 → +18.9%; 26.6% trap.", "acc": 56, "sec": 55},
+    {"type": "total via share", "work": "532.1/(16.4%−1.2%) ≈ 3500 → 3000-4000; using 2023 spending gives B.", "acc": 62, "sec": 45},
+    {"type": "average change", "work": "Beds per 三甲 ≈1904; change ≈ 1904×(3.5−2.8)/103.5 ≈ 13; 万张 unit conversion.", "acc": 54, "sec": 60},
+    {"type": "simple share", "work": "(22051−1090)/(85038−2528) ≈ 25.4%.", "acc": 72, "sec": 35},
+    {"type": "综合 能推出", "work": "A 130.8 < 150; B 全省 vs 市辖区 scope trap; C '多4倍多' means ≥5×; D 1.28 < 1.45.", "acc": 49, "sec": 90}
+  ], "mat_acc": 58.6, "hard_points": "Text-only, mixing 市辖区 and 全省 data; multi-step base-period growth, an average-change item and semantic traps ('多4倍多', scope mismatch) in Q5. Moderate content, M3 position adds time pressure."},
+
+  {"mat": "MK2735D-M2", "q": [
+    {"type": "daily-to-monthly share", "work": "Dec output = 267.4×31 ≈ 8289; /89090 ≈ 9.3%.", "acc": 62, "sec": 45},
+    {"type": "环比 increment with days", "work": "June 246.6×30 − May 222.1×31 = 512.9; 24.5×30 = 735 trap.", "acc": 47, "sec": 50},
+    {"type": "two-step base period", "work": "267.4/1.08 ≈ 247.6 (2022 Dec); /1.03 ≈ 240.4 (2021); 247.6 trap.", "acc": 59, "sec": 45},
+    {"type": "threshold count with days", "work": "Monthly mean 7424; H2 totals via daily×days: only Oct, Nov below; Sep near tie.", "acc": 51, "sec": 80},
+    {"type": "综合 能推出", "work": "A 69.95% ≤ 70% by a hair; C counts 6 if March vs Jan-Feb allowed, ambiguous; B, D false.", "acc": 34, "sec": 100}
+  ], "mat_acc": 50.6, "hard_points": "Chart gives daily averages, so most items need month-length conversions; near-threshold comparisons (Sep, 69.95%) and an ambiguous counting statement make Q5 a trap. Hard."},
+
+  {"mat": "MK2738X-M1", "q": [
+    {"type": "sum (tail digits)", "work": "Six labeled values sum to 50703.5; tail digit plus rough size.", "acc": 81, "sec": 35},
+    {"type": "mixed growth", "work": "Q1 = 1-2月 (−0.6%) + 3月 (−6.9%), weight ≈2:1 → ≈ −2.8%.", "acc": 71, "sec": 35},
+    {"type": "环比 count, hidden data", "work": "Aug needs Jul 2023 = 7139.9/0.92 ≈ 7761 → decline; total 4; answering 3 is the trap.", "acc": 40, "sec": 55},
+    {"type": "max increment", "work": "Increments: Mar ≈538, Apr ≈623, May ≈92, Jun ≈254 → Apr.", "acc": 71, "sec": 50},
+    {"type": "base-period ratio", "work": "(7154.2/0.967)/(6087.1/0.882) ≈ 1.07; 1.17 (2023 ratio) trap.", "acc": 62, "sec": 50}
+  ], "mat_acc": 65.0, "hard_points": "One labeled bar-line chart; most items easy (sum, mixing, increments). Q3 hides July 2023 behind the 2024 growth rate, a classic trap, and Q5 has a same-year ratio trap."},
+
+  {"mat": "MK2740X-M4", "q": [
+    {"type": "hidden population", "work": "Population = 113.33亿m² / 20 m² ≈ 5.67亿; 704.88亿m³ / 5.67亿 ≈ 124.", "acc": 41, "sec": 60},
+    {"type": "simple base period", "work": "99.36/1.0432 ≈ 95.", "acc": 66, "sec": 20},
+    {"type": "per-city trend", "work": "4802.89/44 ≈ 109, 5061.32/45 ≈ 112.5, 4121.13/38 ≈ 108.5 → rise then fall.", "acc": 56, "sec": 50},
+    {"type": "share change", "work": "78.09% × (6.87−3.05)/106.87 ≈ +2.8 pp → above 1 pp.", "acc": 58, "sec": 45},
+    {"type": "second-difference line", "work": "New length = yearly diffs (922, 1004, 785, 718); their changes −738, +82, −218, −67; first-diff shape A is trap.", "acc": 30, "sec": 100}
+  ], "mat_acc": 50.2, "hard_points": "Long multi-topic text plus a seven-year table; Q1 hides population in per-capita road area, Q5 needs a second difference with a first-difference trap. Last passage adds time pressure. Hard."}
+]

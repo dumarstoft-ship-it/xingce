@@ -26,7 +26,7 @@ if __name__ == '__main__':
     pool = json.load(open(S + '/db/zl_pool.json'))
     by = defaultdict(list)
     for r in raw: by[r['mat']].append(r)
-    pil = load_ratings('pilot'); full = load_ratings('full')
+    pil = load_ratings('pilot'); full = load_ratings('full'); full.update(load_ratings('mock'))
     # calibration on the pilot: actual = a + b * pred
     xs, ys = [], []
     for m, e in pil.items():

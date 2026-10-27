@@ -462,7 +462,7 @@
  {
   "tid": "T143",
   "keep": true,
-  "db_match": null,
+  "db_match": "2020GKD-66",
   "module": "M14",
   "kaofa": "数论-连续两数乘积整除",
   "method": "相邻两数互质，分配质因子",
@@ -953,7 +953,7 @@
  {
   "tid": "T163",
   "keep": true,
-  "db_match": null,
+  "db_match": "2025GKX-71",
   "module": "M13",
   "kaofa": "日期-月跑步次数推星期",
   "method": "4周+余天，月份首尾相接",

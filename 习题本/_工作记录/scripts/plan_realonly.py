@@ -23,12 +23,14 @@ def load_pool():
         for q in t['real']:
             if q['module'][0] in 'LC':
                 items[q['id']] = {'id': q['id'], 'module': q['module'], 'difficulty': q['difficulty'] or 2, 'kaofa': q.get('kaofa') or ''}
-    for l in open(S + '/cls/out_new_batch.jsonl'):
-        l = l.strip()
-        if not l: continue
-        r = json.loads(l); m = str(r.get('module'))
-        if m[0] in 'LC' and not r.get('incomplete') and r['id'] not in items:
-            items[r['id']] = {'id': r['id'], 'module': m, 'difficulty': r.get('difficulty') or 2, 'kaofa': r.get('kaofa') or ''}
+    for f in [S + '/cls/out_new_batch.jsonl'] + sorted(glob.glob(S + '/cls2/out_logic_new_*.jsonl')):  # + papers added 2026-10-26
+        for l in open(f):
+            l = l.strip()
+            if not l: continue
+            r = json.loads(l); m = str(r.get('module'))
+            if r.get('kind', '逻辑') == '逻辑' and m[0] in 'LC' and not r.get('incomplete') and r['id'] not in items:
+                items[r['id']] = {'id': r['id'], 'module': m, 'difficulty': r.get('difficulty') or 2, 'kaofa': r.get('kaofa') or '',
+                                  'answer_check': r.get('answer_check')}
     for i, it in list(items.items()):
         r = raw[i]
         ans = r.get('answer_official') or (fix.get(i) or {}).get('answer')

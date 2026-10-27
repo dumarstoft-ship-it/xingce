@@ -74,7 +74,7 @@
  {
   "tid": "T179",
   "keep": true,
-  "db_match": null,
+  "db_match": "2017JSA-68",
   "module": "M09",
   "kaofa": "和定最值·求中间名次最少",
   "method": "一分为二：前组拉满，后组递减",
@@ -669,7 +669,7 @@
  {
   "tid": "T204",
   "keep": true,
-  "db_match": null,
+  "db_match": "2018JSA-59",
   "module": "M10",
   "kaofa": "统筹·最小生成树（管道最短）",
   "method": "避圈法：从短边选起不成圈",

@@ -31,6 +31,10 @@ def zl_part(day):
                 elif os.path.exists(jp): it['jiexi_img'] = jp
                 else: it['jiexi_text'] = r.get('jiexi_raw') or '（本题无解析）'
                 if f.get('extra'): it['extra'] = f['extra']
+                if f.get('source') == '自解（核定）':
+                    it['src_label'] += '（原卷无答案，答案与解析为自解：两人独立求解答案不一致，复核后裁定）'
+                elif (f.get('source') or '').startswith('自解'):
+                    it['src_label'] += '（原卷无答案，答案与解析为自解：两人独立求解，核对一致后采用）'
                 items.append(it)
     sets = '、'.join(f"第 {st['set']} 套" for st in plan)
     return {'title': '资料分析', 'module': f'打印册{sets}', 'time_min': 30 * len(plan), 'print_only': True, 'items': items,
@@ -88,6 +92,7 @@ def real_item(qid, db, fix, cls):
     if ov.get('jiexi_text'):
         it.pop('jiexi_img', None); it['jiexi_text'] = ov['jiexi_text']
     if ov.get('extra'): it['extra'] = ov['extra']
+    if ov.get('answer'): it['answer'] = ov['answer']  # the paper's printed key is wrong (its own 解析 says otherwise)
     return it
 
 def load_cls():
@@ -191,6 +196,45 @@ def part_items(day, part, module, db, fix, cls):
         items = [it for it in items if (it.get('id') or it.get('tid') or it.get('vid')) in keep]
     return items
 
+W2_DECISION = S + '/w2/D{:02d}_decision.json'  # week 2 on: the planner's 30 math questions, grouped and ordered
+
+def w2_math_items(day, db, fix, cls):
+    p = W2_DECISION.format(day)
+    if not os.path.exists(p): return None
+    d = json.load(open(p))
+    notes, checks = d.get('jiexi_notes') or {}, d.get('answer_checks') or {}
+    variants, review = {}, {}
+    for f in sorted(glob.glob(f'{S}/gen/D{day:02d}_math_w2*.json')):
+        for v in json.load(open(f)): variants[v['vid']] = v
+    for f in glob.glob(f'{S}/review/D{day:02d}_math_w2_review*.json'):
+        for it in json.load(open(f)).get('items', []): review[it['vid']] = it
+    items = []
+    for g in d['groups']:
+        for e in g['items']:
+            if 'real' in e:
+                q = e['real']; it = real_item(q, db, fix, cls)
+                chk = (checks.get(q) or {}).get('answer')
+                if not it['answer']: it['answer'] = chk
+                elif chk and chk != it['answer']: print('WARNING planner answer differs', q, it['answer'], chk)
+                note = None if (OVR.get(q) or {}).get('jiexi_text') else notes.get(q)  # an override's 解析 already covers it
+                if note:
+                    if it.get('jiexi_img') or not (it.get('jiexi_text') or '').startswith('（本题无'):
+                        it['extra'] = ((it.get('extra') or '') + ('' if note.startswith('补充') else ' 补充：') + note).strip()
+                    else:  # no official 解析: the planner's full 解析
+                        it['jiexi_text'] = note
+            elif 'teacher' in e:
+                it = teacher_item(e['teacher'])
+                if notes.get(e['teacher']): it['jiexi'] += ' 补充：' + notes[e['teacher']]
+            else:
+                vid = f"D{day:02d}-math-w2-v{e['variant']:02d}"; v = variants.get(vid)
+                if not v or review.get(vid, {}).get('verdict') == 'drop':
+                    print('WARNING variant missing or dropped', vid); continue
+                it = {'type': 'variant', 'vid': vid, 'difficulty': v.get('difficulty'), 'stem': v['stem'], 'options': v['options'], 'answer': v['answer'],
+                      'jiexi': v['jiexi'], 'kaofa': v.get('kaofa'), 'technique': v.get('technique'), 'figure': v.get('figure_svg'), 'shared_stem_text': v.get('shared_stem')}
+            it['group'] = g['title']
+            items.append(it)
+    return items
+
 def realonly_items(day, part, db, fix, cls):
     if not os.path.exists(REALONLY): return None
     ids = json.load(open(REALONLY)).get(str(day), {}).get(part)
@@ -215,6 +259,11 @@ def assemble(day):
                     parts.append({'title': PART_TITLE[part], 'module': label, 'time_min': TIME_MIN[part], 'items': items})
                 else:
                     missing.append(PART_TITLE[part])
+                continue
+        if part == 'math':
+            items = w2_math_items(day, db, fix, cls)
+            if items is not None:
+                parts.append({'title': PART_TITLE[part], 'module': label, 'time_min': TIME_MIN[part], 'items': items})
                 continue
         bp_key = 'C' if part == 'zh' else m
         if not os.path.exists(f'{S}/blueprints/{bp_key}.json') or not glob.glob(f'{S}/gen/D{day:02d}_{part}_*.json'):

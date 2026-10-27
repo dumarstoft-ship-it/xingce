@@ -95,6 +95,11 @@ def mask_number(path, text):
     if k is None: return 'wide'
     end, nxt = cl[k][1], cl[k + 1][0]
     out = im.copy(); dr = ImageDraw.Draw(out)
+    if (text or '')[m.end():].lstrip(' \t')[:1] == '\n':
+        # the number has the line to itself (e.g. a fraction's numerator printed beside it): white it out, move nothing
+        dr.rectangle([cl[0][0], max(0, y0 - 3), end + 1, min(h - 1, y1 + 3)], fill=(255, 255, 255))
+        out.save(path)
+        return 'ok'
     line = out.crop((nxt, max(0, y0 - 3), w, min(h, y1 + 4)))
     dr.rectangle([cl[0][0], max(0, y0 - 3), w - 1, min(h - 1, y1 + 3)], fill=(255, 255, 255))
     out.paste(line, (cl[0][0], max(0, y0 - 3)))
