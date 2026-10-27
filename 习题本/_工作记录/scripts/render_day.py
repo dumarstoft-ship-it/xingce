@@ -51,8 +51,8 @@ table.key tr.n td { background: #f1f1f1; color: #555; font-size: 8pt; }
 .ana .txt { font-size: 10pt; }
 .ana .txt p { margin: 0 0 0.8mm 0; }
 .src-note { font-size: 8.5pt; color: #666; }
-.intro { font-size: 9.5pt; line-height: 1.6; background: #f5f5f5; border-left: 3px solid #555; padding: 2mm 3mm; margin: 0 0 4.5mm 0; }
-.intro p { margin: 0 0 1mm 0; }
+.ch-intro { font-size: 9.5pt; line-height: 1.6; background: #f5f5f5; border-left: 3px solid #555; padding: 2mm 3mm; margin: 0 0 4.5mm 0; }
+.ch-intro p { margin: 0 0 1mm 0; }
 """
 
 def esc(s):
@@ -174,7 +174,7 @@ def render_day(day, out_html):
     for p in day['parts']:
         h.append(f'<div class="part"><div class="part-h"><span>解析 · {esc(p["title"])}</span><span class="meta">{esc(p["module"])}</span></div>')
         if p.get('ana_intro'):  # a chapter's method summary, shown before its 解析 (the question pages stay bare)
-            h.append(f'<div class="intro">{rich(p["ana_intro"])}</div>')
+            h.append(f'<div class="ch-intro">{rich(p["ana_intro"])}</div>')
         cur_set = None
         for i, it in enumerate(p['items'], 1):
             if p.get('print_only') and it['set'] != cur_set:
