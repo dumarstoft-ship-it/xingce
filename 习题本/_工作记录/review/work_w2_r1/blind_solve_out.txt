@@ -1,0 +1,46 @@
+======================================================================
+Q1 D09-v01: worst 'bad' draw = 44 -> answer 45 ['C']
+   err: cap everyone at 4 then +1 +1          = 20
+   err: forgot +1                             = 44
+   err: 戊 treated as 4 (30+4*4) +1            = 47
+   err: cap at 5 (misread) +1                 = 48
+======================================================================
+Q2 D10-v01: optimum profit 16.0 万 at (Fraction(20, 1), Fraction(40, 1))
+   integer grid best: 16.0 万 at (20, 40)
+   answer letter: ['C']
+   vertex (45.00,15.00) feasible=True profit=13.5万
+   vertex (20.00,40.00) feasible=True profit=16.0万
+   vertex (0.00,60.00) feasible=False profit=18.0万
+   vertex (60.00,0.00) feasible=False profit=12.0万
+   vertex (40.00,30.00) feasible=False profit=17.0万
+   vertex (0.00,150.00) feasible=False profit=45.0万
+   vertex (50.00,0.00) feasible=True profit=10.0万
+   vertex (0.00,50.00) feasible=True profit=15.0万
+   vertex (100.00,0.00) feasible=False profit=20.0万
+   vertex (0.00,0.00) feasible=True profit=0.0万
+======================================================================
+Q3 D10-v02: min days 16 with 甲 doing 8 of 24 units, cost 52
+   answer letter: ['B']
+   err: no budget, both together = 8
+   err: sequential (甲 4d then 乙 16d) = 20
+   err: 乙 alone = 24
+======================================================================
+Q4 D10-v03: min loss 88 order 丁丙乙甲 | ties: ['丁丙乙甲']
+   answer letter: ['B']
+   max over orders: 117 甲乙丙丁
+   SPT order: 101
+   heaviest-loss-rate first: 95
+   waiting-only (forgot own repair time): 43
+   sum p*w (constant part): 45
+   all distinct totals: [88, 89, 90, 93, 94, 95, 97, 98, 99, 101, 104, 106, 107, 108, 110, 111, 112, 115, 116, 117]
+======================================================================
+Q5 D10-v04: cost at each site (元): {'A': 774, 'B': 654, 'C': 478, 'D': 758, 'E': 458, 'F': 542}
+   min: 458 at ['E']
+   answer letter: ['A']
+   best over all points on roads: 458
+   total tons 42 half 21.0
+======================================================================
+Q6 D12-v01: possible (rank, tie) with condition: {(1, False): 425601}
+   without 'most orders' condition: {(1, False): 1277601}
+   丁 avg range under condition: [50.0031, 54.9906]
+   avg of 乙丙丁 combined: 50

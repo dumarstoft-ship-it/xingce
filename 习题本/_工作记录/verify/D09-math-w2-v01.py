@@ -23,14 +23,15 @@ assert all(ok(d) for d in draws if sum(d) == ans)
 assert any(not ok(d) for d in draws if sum(d) == ans - 1)
 
 # the error paths behind the distractors (for information only)
+template_plus1 = sum(min(x, K - 1) for x in n) + 1          # "each K-1, then +1": only 1 variety guaranteed
 template_plus2 = sum(min(x, K - 1) for x in n) + 2          # "each K-1, then +2"
 small_as_full = max(n) + (K - 1) * (len(n) - 1) + 1          # small variety counted as K-1
-no_plus_one = worst                                          # forgot the final +1
 print('worst failing draw', worst, '-> answer', ans)
-print('distractor paths: template+2 =', template_plus2,
-      '| small variety as K-1 =', small_as_full, '| no +1 =', no_plus_one)
+print('distractor paths: template+1 =', template_plus1, '| template+2 =', template_plus2,
+      '| small variety as K-1 =', small_as_full)
 
-opts = {'A': 20, 'B': 44, 'C': 45, 'D': 47}
+opts = {'A': 19, 'B': 20, 'C': 45, 'D': 47}
+assert sorted(v for k, v in opts.items() if v != ans) == sorted([template_plus1, template_plus2, small_as_full])
 hit = [k for k, v in opts.items() if v == ans]
 assert len(hit) == 1, (ans, hit)
 print(hit[0])

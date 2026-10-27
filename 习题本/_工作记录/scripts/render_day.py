@@ -44,7 +44,7 @@ table.key { border-collapse: collapse; margin: 0 0 4mm 0; font-family: 'Noto San
 table.key td { border: 1px solid #aaa; width: 9.2mm; text-align: center; padding: 0.6mm 0; }
 table.key tr.n td { background: #f1f1f1; color: #555; font-size: 8pt; }
 .ana { margin: 0 0 4mm 0; break-inside: avoid-page; }
-.ana .ah { font-family: 'Noto Sans SC', sans-serif; font-size: 9.5pt; font-weight: 600; margin-bottom: 0.8mm; }
+.ana .ah { font-family: 'Noto Sans SC', sans-serif; font-size: 9.5pt; font-weight: 600; margin-bottom: 0.8mm; break-after: avoid; }
 .ana .ah .ans { color: #b00020; }
 .ana .kf { font-weight: 400; color: #444; font-size: 8.8pt; }
 .ana img.crop { display: block; max-width: 100%; }
@@ -64,13 +64,14 @@ def rich(s):
     paras = [p for p in out.split('\n')]
     return ''.join(f'<p>{p}</p>' for p in paras if p.strip())
 
-def img_tag(path, cls='crop'):
+def img_tag(path, cls='crop', max_h=None):
     if not path or not os.path.exists(path):
         return '<div class="src-note">[图片缺失]</div>'
     w, h = Image.open(path).size
     sc = 1.0
     if os.path.exists(path + '.json'):
         sc = json.load(open(path + '.json')).get('scale', 1.0)
+    if max_h and h / DPI * sc > max_h: sc = max_h * DPI / h  # a very long 解析 shrinks to one page, with its header
     return f'<img class="{cls}" src="file://{path}" style="width:{w / DPI * sc:.3f}in">'
 
 def opt_cols(opts):
@@ -97,7 +98,7 @@ def render_ana(n, it):
     head += '］</span></div>'
     if it['type'] == 'real':
         if it.get('jiexi_img'):
-            body = img_tag(it['jiexi_img'])
+            body = img_tag(it['jiexi_img'], max_h=9.9)
         elif it.get('jiexi_text'):
             body = f'<div class="txt">{rich(it["jiexi_text"])}</div>'
         else:

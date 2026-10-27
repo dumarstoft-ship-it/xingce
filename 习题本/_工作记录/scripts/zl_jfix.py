@@ -21,6 +21,42 @@ def locate(jf, n):
     return Z.cut_jiexi(jdoc, regs)
 AD = re.compile(r'考公-考研|资料持续更新|淘宝[:：]|认准淘宝|公众号|资料铺子|Seeyee')
 
+OPTLINE = re.compile(r'(?:^|\s)[A-D]\s*[\.．、:：]')
+LABEL = re.compile(r'^\s*[（(]?\s*(?:材料|资料)\s*[一二三四五六七八0-9]?\s*[)）]?\s*$')
+NOTWRAP = re.compile(r'^\s*(?:图|表|注|单位|资料|材料|（|\()|^\s*[-—–]?\s*\d{1,3}\s*[-—–]?\s*$|第\s*\d+\s*页')
+
+def wrap_fix(raw):
+    """A question whose last option wraps onto a short line ("比重", "约2.13倍") keeps that line (it used to open the next
+    passage's material, which starts right below the D-option line); a bare "材料" label opening a material is left out.
+    Returns the ids whose regions changed."""
+    from crop import page_lines
+    from zl_build import QSTART, INSTR, MATHEAD
+    by_paper, changed = {}, set()
+    for r in raw: by_paper.setdefault(r['paper'], []).append(r)
+    for code, rs in by_paper.items():
+        rs = sorted(rs, key=lambda r: r['num'])
+        for k, r in enumerate(rs):
+            if not r.get('regions'): continue
+            pg = max(r['regions'], key=int); t, b = r['regions'][pg]
+            lines = sorted([l for l in page_lines(r['qfile'], int(pg))['lines'] if l['bottom'] - l['top'] <= 30], key=lambda l: l['top'])
+            own = [l for l in lines if t - 0.5 <= l['top'] < b - 2.0]
+            nxt = [l for l in lines if l['top'] >= b - 2.0 and l not in own]
+            if not own or not nxt: continue
+            last, n = own[-1], nxt[0]; txt = n['text'].strip()
+            if (n['top'] - last['bottom'] <= 0.8 * (last['bottom'] - last['top']) and OPTLINE.search(last['text']) and 0 < len(txt) <= 16
+                    and not (QSTART.match(txt) or OPTLINE.search(txt) or LABEL.match(txt) or MATHEAD.search(txt) or INSTR.search(txt) or NOTWRAP.match(txt))):
+                r['regions'][pg] = [t, round(n['bottom'] + 0.3, 1)]; changed.add(r['id'])
+                nr = rs[k + 1] if k + 1 < len(rs) else None  # the next passage's material may have started on that line
+                if nr and nr.get('stem_regions') and pg in nr['stem_regions'] and nr['stem_regions'][pg][0] < n['bottom']:
+                    nr['stem_regions'][pg] = [round(n['bottom'] + 0.3, 1), nr['stem_regions'][pg][1]]; changed.add(nr['id'])
+        for r in rs:
+            if not r.get('stem_regions'): continue
+            pg = min(r['stem_regions'], key=int); t, b = r['stem_regions'][pg]
+            lines = sorted([l for l in page_lines(r['qfile'], int(pg))['lines'] if l['bottom'] - l['top'] <= 30 and t - 0.5 <= l['top'] < b], key=lambda l: l['top'])
+            if len(lines) > 1 and LABEL.match(lines[0]['text']):
+                r['stem_regions'][pg] = [round(lines[0]['bottom'] + 0.5, 1), b]; changed.add(r['id'])
+    return changed
+
 def snap_regions(stem, regs, drop_slivers=False):
     """A formula image straddling a region's top or bottom edge goes with the text line it mostly sits on: the region
     grows to take in our own formula, or shrinks to leave out the neighbouring question's. With drop_slivers, a page
@@ -33,11 +69,11 @@ def snap_regions(stem, regs, drop_slivers=False):
         P = page_lines(stem, int(pg))
         P = dict(P, images=[dict(im, top=im['top'] - dy, bottom=im['bottom'] - dy) for im in P['images']])
         lines = [l for l in P['lines'] if l['bottom'] - l['top'] <= 30]  # taller "lines" are single watermark glyphs
-        own = [l for l in lines if t - 0.5 <= l['top'] < b]
+        own = [l for l in lines if t - 0.5 <= l['top'] < b - 2.0]  # a line starting at the very bottom edge is the next one's
         ads = [l for l in own if AD.search(l['text'])]
         own = [l for l in own if l['text'].strip() and l not in ads]
-        prev_b = max([l['bottom'] for l in lines if l['bottom'] <= t + 0.5] or [None], key=lambda x: x or -1)
-        next_t = min([l['top'] for l in lines if l['top'] >= b - 0.5] or [None], key=lambda x: x or 1e9)
+        prev_b = max([l['bottom'] for l in lines if l['bottom'] <= t + 2.0] or [None], key=lambda x: x or -1)
+        next_t = min([l['top'] for l in lines if l['top'] >= b - 2.0] or [None], key=lambda x: x or 1e9)
         t2, b2 = t, b
         def ours(im):  # the line the image overlaps most (a fraction sits higher than its line); a free-standing figure by area
             ov = [(min(im['bottom'], l['bottom']) - max(im['top'], l['top']), l) for l in lines]
@@ -71,21 +107,22 @@ def snap_q(r):
     return snap_regions(r['qfile'], r['regions'], drop_slivers=True)
 
 def snap_all(raw, ids=None):
-    """after any rebuild of db/zl_raw.json: snap 解析 and question regions, re-crop what changed"""
-    n = 0
+    """after any rebuild of db/zl_raw.json: snap 解析 and question regions; re-crops the 解析 that changed and returns
+    the ids whose question regions changed (their papers' print crops are rebuilt by the caller)"""
+    qchanged = set()
     for r in raw:
         if ids is not None and r['id'] not in ids: continue
         if r.get('jiexi_regions') and not r['paper'].startswith('MK'):
             new = snap(r)
             if new:
                 print('snap j', r['id'], r['jiexi_regions'], '->', new)
-                r['jiexi_regions'] = new; C.build_jiexi([r], force=True); n += 1
+                r['jiexi_regions'] = new; C.build_jiexi([r], force=True)
         if r.get('regions'):
             new = snap_q(r)
             if new:
                 print('snap q', r['id'], r['regions'], '->', new)
-                r['regions'] = new; C.build([r], force=True); n += 1
-    return n
+                r['regions'] = new; qchanged.add(r['id'])
+    return qchanged
 
 if __name__ == '__main__':
     todo = {'2015GK-Z119': 'C', '2017JSA-Z135': 'C', '2019ZJA-Z126': 'C'}
@@ -113,6 +150,16 @@ if __name__ == '__main__':
     # 2024 河北 124: the 解析 heading prints 正确答案D, its own working (1348.0×20.03%×1.0556≈285) and the data give C
     fix['2024HB-Z124'] = {'answer': 'C', 'override': True, 'source': '核算更正',
                           'extra': '原解析标题印的是“正确答案D”，但解析过程算得约 285 万吨，按材料数据核算也是 285 万吨，答案应为 C；D（291）是误用 2022 年总量得到的干扰项。'}
-    print('snapped', snap_all(raw))
+    wrapped = wrap_fix(raw)
+    print('wrap/label fixes', sorted(wrapped))
+    qchanged = snap_all(raw)
+    print('snapped questions', len(qchanged))
+    papers = {by[i]['paper'] for i in wrapped | qchanged}
+    if papers:
+        meta_p = S + '/db/zl_meta_all.json'; meta = json.load(open(meta_p))
+        for code in sorted(papers):
+            for c, m in C.build_print([r for r in raw if r['paper'] == code]).items(): meta.setdefault(c, {}).update(m)
+            print('rebuilt print crops', code)
+        json.dump(meta, open(meta_p, 'w'), ensure_ascii=False, indent=1)
     json.dump(raw, open(S + '/db/zl_raw.json', 'w'), ensure_ascii=False, indent=0)
     json.dump(fix, open(S + '/db/zl_fixes.json', 'w'), ensure_ascii=False, indent=1)

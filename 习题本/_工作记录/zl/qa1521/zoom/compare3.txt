@@ -1,0 +1,346 @@
+## 23 （四） Q17 MK2734X-Z117_q.png (bands 3, ref lines 3, graphic bands 0)
+     MISSING REF LINE (best 0.00) "吨？"
+## 23 （四） Q19 MK2734X-Z119_q.png (bands 4, ref lines 3, graphic bands 0)
+     MISSING REF LINE (best 0.04) "献率约为："
+## 24 （一） Q2 MK2720X-Z117_q.png (bands 3, ref lines 3, graphic bands 0)
+     MISSING REF LINE (best 0.40) "指标的比值约为："
+## 24 （三） Q14 2023GK-Z134_q.png (bands 2, ref lines 2, graphic bands 0)
+     OPTION LABELS AB
+## 24 （四） Q19 2018GK-Z124_q.png (bands 3, ref lines 1, graphic bands 2)
+     OPTION LABELS 
+## 25 （一） Q1 MK2709X-Z116_q.png (bands 3, ref lines 3, graphic bands 0)
+     MISSING REF LINE (best 0.04) "多少万公里？"
+## 25 （三） Q15 MK2731X-Z120_q.png (bands 5, ref lines 5, graphic bands 0)
+     OPTION LABELS ABD
+## 25 （四） Q16 2025GKD-Z126_q.png (bands 6, ref lines 6, graphic bands 4)
+     MISSING REF LINE (best 0.00) "A."
+     MISSING REF LINE (best 0.00) "B."
+     MISSING REF LINE (best 0.00) "C."
+     MISSING REF LINE (best 0.00) "D."
+     OPTION LABELS 
+## 26 （二） Q7 MK2722X-Z117_q.png (bands 6, ref lines 6, graphic bands 4)
+     MISSING REF LINE (best 0.00) "A."
+     MISSING REF LINE (best 0.00) "B."
+     MISSING REF LINE (best 0.00) "C."
+     MISSING REF LINE (best 0.00) "D."
+     OPTION LABELS 
+## 26 （二） Q8 MK2722X-Z118_q.png (bands 3, ref lines 3, graphic bands 0)
+     MISSING REF LINE (best 0.00) "多少亿元？"
+## 26 （三） Q11 2023SD-Z86_q.png (bands 3, ref lines 3, graphic bands 0)
+     MISSING REF LINE (best 0.00) "是："
+## 26 （四） Q16 2024SZ-Z96_q.png (bands 3, ref lines 3, graphic bands 0)
+     MISSING REF LINE (best 0.09) "（ ）。"
+## 26 （四） Q19 2024SZ-Z99_q.png (bands 7, ref lines 6, graphic bands 4)
+     MISSING REF LINE (best 0.00) "是（ ）。"
+     MISSING REF LINE (best 0.00) "A."
+     MISSING REF LINE (best 0.00) "B."
+     MISSING REF LINE (best 0.00) "C."
+     MISSING REF LINE (best 0.00) "D."
+     OPTION LABELS 
+## 27 （一） Q3 MK2726X-Z113_q.png (bands 4, ref lines 3, graphic bands 0)
+     OPTION LABELS ABC
+## 28 （一） Q5 2025GKD-Z115_q.png (bands 8, ref lines 7, graphic bands 4)
+     MISSING REF LINE (best 0.00) "是："
+     MISSING REF LINE (best 0.00) "A."
+     MISSING REF LINE (best 0.00) "B."
+     MISSING REF LINE (best 0.00) "C."
+     MISSING REF LINE (best 0.00) "D."
+     OPTION LABELS 
+## 28 （四） Q17 MK2701X-Z122_q.png (bands 3, ref lines 3, graphic bands 0)
+     MISSING REF LINE (best 0.00) "约为："
+## 29 （一） Q2 2022GD-Z92_q.png (bands 3, ref lines 3, graphic bands 0)
+     OPTION LABELS AB
+## 29 （一） Q4 2022GD-Z94_q.png (bands 17, ref lines 5, graphic bands 4)
+     MISSING REF LINE (best 0.04) "A."
+     MISSING REF LINE (best 0.04) "B."
+     MISSING REF LINE (best 0.04) "C."
+     MISSING REF LINE (best 0.04) "D."
+     EXTRA BAND (best 0.26) y=305 "2017年2018年2019年2020年"
+     EXTRA BAND (best 0.36) y=362 "国际重要湿地数量同比增适"
+     EXTRA BAND (best 0.26) y=672 "2017年2018年2019年2020年"
+     EXTRA BAND (best 0.39) y=730 "国际重要湿地数量同比增速"
+     EXTRA BAND (best 0.26) y=1007 "2017年2018年2019年2020年"
+     EXTRA BAND (best 0.36) y=1035 "国际重要湿地而积同比增速"
+     EXTRA BAND (best 0.36) y=1065 "国际重要湿地数重同比增速"
+     EXTRA BAND (best 0.26) y=1358 "2017年2018年2019年2020年"
+     EXTRA BAND (best 0.36) y=1416 "国际重要湿地数里同比增速"
+     OPTION LABELS 
+## 29 （三） Q14 MK2717X-Z114_q.png (bands 3, ref lines 3, graphic bands 0)
+     MISSING REF LINE (best 0.22) "的年份有几个？"
+## 30 （二） Q6 MK2718X-Z116_q.png (bands 3, ref lines 3, graphic bands 0)
+     MISSING REF LINE (best 0.00) "约多几倍？"
+## 30 （二） Q8 MK2718X-Z118_q.png (bands 3, ref lines 3, graphic bands 0)
+     MISSING REF LINE (best 0.44) "水平的有几种？"
+## 30 （二） Q10 MK2718X-Z120_q.png (bands 6, ref lines 6, graphic bands 4)
+     MISSING REF LINE (best 0.00) "况？"
+     MISSING REF LINE (best 0.00) "A."
+     MISSING REF LINE (best 0.00) "B."
+     MISSING REF LINE (best 0.00) "C."
+     MISSING REF LINE (best 0.00) "D."
+     OPTION LABELS 
+## 30 （四） Q18 MK26ZX-Z118_q.png (bands 3, ref lines 3, graphic bands 0)
+     MISSING REF LINE (best 0.08) "增长约："
+## 31 （二） Q9 MK2705X-Z124_q.png (bands 6, ref lines 5, graphic bands 3)
+     MISSING REF LINE (best 0.00) "A."
+     MISSING REF LINE (best 0.00) "B."
+     MISSING REF LINE (best 0.00) "C."
+     MISSING REF LINE (best 0.00) "D."
+     OPTION LABELS 
+## 31 （四） Q19 2019GK-Z129_q.png (bands 2, ref lines 1, graphic bands 1)
+     OPTION LABELS 
+## 32 （一） Q2 2023ZJA-Z117_q.png (bands 3, ref lines 3, graphic bands 0)
+     OPTION LABELS AD
+## 32 （一） Q4 2023ZJA-Z119_q.png (bands 2, ref lines 2, graphic bands 0)
+     OPTION LABELS AB
+## 32 （二） Q7 MK2740X-Z122_q.png (bands 3, ref lines 3, graphic bands 0)
+     MISSING REF LINE (best 0.00) "约高："
+## 32 （三） Q11 MK2704X-Z121_q.png (bands 3, ref lines 3, graphic bands 0)
+     MISSING REF LINE (best 0.04) "有几个？"
+## 32 （四） Q16 MK2729X-Z111_q.png (bands 3, ref lines 3, graphic bands 0)
+     MISSING REF LINE (best 0.07) "比增长约："
+## 33 （二） Q7 MK2701X-Z112_q.png (bands 3, ref lines 3, graphic bands 0)
+     MISSING REF LINE (best 0.00) "分点？"
+## 33 （四） Q20 MK2727X-Z125_q.png (bands 6, ref lines 6, graphic bands 4)
+     MISSING REF LINE (best 0.00) "是："
+     MISSING REF LINE (best 0.00) "A."
+     MISSING REF LINE (best 0.00) "B."
+     MISSING REF LINE (best 0.00) "C."
+     MISSING REF LINE (best 0.00) "D."
+     OPTION LABELS 
+## 34 （二） Q9 MK2713X-Z114_q.png (bands 4, ref lines 4, graphic bands 0)
+     MISSING REF LINE (best 0.00) "围内？"
+## 34 （二） Q10 MK2713X-Z115_q.png (bands 5, ref lines 6, graphic bands 0)
+     MISSING REF LINE (best 0.06) "B."
+     OPTION LABELS ACD
+## 34 （三） Q14 MK2711X-Z114_q.png (bands 6, ref lines 6, graphic bands 4)
+     MISSING REF LINE (best 0.00) "占比关系？"
+     MISSING REF LINE (best 0.00) "A."
+     MISSING REF LINE (best 0.00) "B."
+     MISSING REF LINE (best 0.00) "C."
+     MISSING REF LINE (best 0.00) "D."
+     OPTION LABELS 
+## 35 （一） Q1 2022GKD-Z121_q.png (bands 5, ref lines 5, graphic bands 0)
+     MISSING REF LINE (best 0.05) "A、2"
+     MISSING REF LINE (best 0.00) "B、3"
+     MISSING REF LINE (best 0.00) "C、4"
+     MISSING REF LINE (best 0.00) "D、5"
+     OPTION LABELS 
+## 35 （一） Q2 2022GKD-Z122_q.png (bands 5, ref lines 5, graphic bands 0)
+     MISSING REF LINE (best 0.25) "A、不到1%"
+     MISSING REF LINE (best 0.18) "B、1%—2％之间"
+     MISSING REF LINE (best 0.08) "C、2％—3％之间"
+     MISSING REF LINE (best 0.04) "D、3％以上"
+     OPTION LABELS 
+## 35 （一） Q3 2022GKD-Z123_q.png (bands 6, ref lines 6, graphic bands 0)
+     MISSING REF LINE (best 0.04) "A、0.5"
+     MISSING REF LINE (best 0.04) "B、0.8"
+     MISSING REF LINE (best 0.09) "C、1.3"
+     MISSING REF LINE (best 0.04) "D、1.9"
+     OPTION LABELS 
+## 35 （一） Q4 2022GKD-Z124_q.png (bands 6, ref lines 6, graphic bands 0)
+     MISSING REF LINE (best 0.17) "A、③②①"
+     MISSING REF LINE (best 0.17) "B、②③①"
+     MISSING REF LINE (best 0.09) "C、①②③"
+     MISSING REF LINE (best 0.09) "D、①③②"
+     OPTION LABELS 
+## 35 （一） Q5 2022GKD-Z125_q.png (bands 9, ref lines 9, graphic bands 0)
+     MISSING REF LINE (best 0.08) "有几项？"
+     MISSING REF LINE (best 0.08) "A、0项"
+     MISSING REF LINE (best 0.08) "B、1项"
+     MISSING REF LINE (best 0.08) "C、2项"
+     MISSING REF LINE (best 0.08) "D、3项"
+     OPTION LABELS 
+## 35 （二） Q6 2023HB-Z121_q.png (bands 5, ref lines 5, graphic bands 0)
+     MISSING REF LINE (best 0.33) "C.7个"
+     MISSING REF LINE (best 0.33) "D.8个"
+     OPTION LABELS AB
+## 35 （二） Q7 2023HB-Z122_q.png (bands 6, ref lines 6, graphic bands 0)
+     OPTION LABELS 
+## 35 （二） Q8 2023HB-Z123_q.png (bands 5, ref lines 5, graphic bands 0)
+     MISSING REF LINE (best 0.44) "A. 辽宁>河北"
+     MISSING REF LINE (best 0.44) "D. 江苏>广西"
+     OPTION LABELS A
+## 35 （二） Q9 2023HB-Z124_q.png (bands 6, ref lines 6, graphic bands 0)
+     MISSING REF LINE (best 0.04) "A.2"
+     MISSING REF LINE (best 0.00) "B.3"
+     MISSING REF LINE (best 0.00) "C.4"
+     MISSING REF LINE (best 0.00) "D.5"
+     OPTION LABELS 
+## 35 （四） Q20 MK2702X-Z125_q.png (bands 4, ref lines 3, graphic bands 1)
+     MISSING REF LINE (best 0.40) "增量绝对值的大小关系？"
+## 36 （一） Q2 MK2728X-Z122_q.png (bands 6, ref lines 6, graphic bands 4)
+     MISSING REF LINE (best 0.00) "是："
+     MISSING REF LINE (best 0.00) "A."
+     MISSING REF LINE (best 0.00) "B."
+     MISSING REF LINE (best 0.00) "C."
+     MISSING REF LINE (best 0.00) "D."
+     OPTION LABELS 
+## 36 （一） Q4 MK2728X-Z124_q.png (bands 3, ref lines 3, graphic bands 0)
+     MISSING REF LINE (best 0.40) "的地区有多少个？"
+## 36 （一） Q5 MK2728X-Z125_q.png (bands 6, ref lines 6, graphic bands 0)
+     MISSING REF LINE (best 0.44) "同比增速也最高"
+==================== MATERIALS
+## MAT 23 （一） 2021GK-Z126
+     2021GK-Z126_p1.png first band: "截至2019年末，全国已有残疾人康复机构9775个，比201" | last band: "06个，总建设规模414.2万平方米，总投资132.2亿元。"
+## MAT 23 （二） 2015GK-Z121
+     2015GK-Z121_p1.png first band: "2013年，某省工业企业全年实现主营业务收入37864 亿元" | last band: "%，专用设备利润增长22.1%，船舶行业利润增长18.9%。"
+     MISSING REF LINE (best 0.35) "业的29.5%、51%、27.6%。"
+## MAT 23 （三） 2022GK-Z126
+     2022GK-Z126_p1.png first band: "2020年1-6月，全国电池制造业主要产品中，锂离子电池产量" | last band: "池及原电池组（非扣式）产量178.2亿只，同比下降0.7%。"
+     2022GK-Z126_p2.png first band: "（亿只）（%)" | last band: "20年下半年各月全国原电池及原电池组(非扣式)产量及同比增速"
+     DUPLICATE BAND x3 "7月8月9月10月11月12月"
+## MAT 23 （四） MK2734X-Z116
+     MK2734X-Z116_p1.png first band: "图12014-2024年我国糖料产量及种植面积" | last band: "糖料产量（万吨）—→一糖料种植面积（万亩）"
+     MK2734X-Z116_p2.png first band: "图22024年我国糖料产量排名前十地区" | last band: "糖料产"
+## MAT 24 （一） MK2720X-Z116
+     MK2720X-Z116_p1.png first band: "2023年，全国铁路货运总发送量完成50.35亿吨，比上年增" | last band: "海新通道班列发送货物86万标箱，增长14.0%。"
+     MK2720X-Z116_p2.png first band: "2023年全国铁路主要品类运量" | last band: "路运输以1"人公里"换算成1"吨公里”，即换算系数按1进行计"
+## MAT 24 （二） 2020HB-Z126
+     2020HB-Z126_p1.png first band: "2019年5月，全国12358价格监管平台受理价格举报、投诉" | last band: "北京（5786件）、江苏（3528件）、上海（2499件）、"
+     2020HB-Z126_p2.png first band: "重庆（2486件）、河南（2469件）、陕西（2440件）、" | last band: "2019年5月全国12358价格监管平台受理行业分布"
+## MAT 24 （三） 2023GK-Z131
+     2023GK-Z131_p1.png first band: "2021年，全国纺织品服装出口3155亿美元，同比增长8.4" | last band: "他纺织制品出口额为517.2亿美元，同比增长27.5%。"
+     2023GK-Z131_p2.png first band: "2021年，中国向“一带一路”沿线国家出口纺织品服装1137" | last band: "沿线国家进口纺织品服装131.6亿美元，同比增长24.5%。"
+## MAT 24 （四） 2018GK-Z121
+     2018GK-Z121_p1.png first band: "2015~2016 年中国生活服务电商市场交易规模统计表" | last band: "单位："
+     2018GK-Z121_p2.png first band: "亿元%" | last band: "2016年中国在线餐饮外卖市场交易规模及环比增速"
+## MAT 25 （一） MK2709X-Z116
+     MK2709X-Z116_p1.png first band: "截至2025年6月末，全国光缆线路总长度达到7377万公里，" | last band: "、西部和东北地区移动互联网接入流量分别达到780.4亿GB、"
+     MK2709X-Z116_p2.png first band: "441.8亿GB、534.3亿GB和110.3亿GB，分别同" | last band: "分别同比增长15.7%、16.7%、15.4%和25.8%。"
+## MAT 25 （二） 2021SD-Z86
+     2021SD-Z86_p1.png first band: "A地区2019年社会消费品零售总额情况" | last band: "1—11月A地区社会消费品零售总额各月累计金额及累计同比增速"
+## MAT 25 （三） MK2731X-Z116
+     MK2731X-Z116_p1.png first band: "2023年，全国共有旅行社56275家，旅行社全年营业收入4" | last band: "%；农村居民国内出游花费0.7万亿元，同比增长106.4%。"
+     MK2731X-Z116_p2.png first band: "2015-2023年全国国内旅游发展情况" | last band: "国内出游人次（亿人次）——国内游客出游总花费（万亿元）"
+## MAT 25 （四） 2025GKD-Z126
+     2025GKD-Z126_p1.png first band: "2023年一季度，我国外贸进出口总额为9.89万亿元，同比增" | last band: "、5867.6万元，同比分别增长117.8%、119.9%。"
+## MAT 26 （一） MK2718X-Z121
+     MK2718X-Z121_p1.png first band: "2023年中国国内游客数量4891百万人次，同比增长93.3" | last band: "图12019-2023年中国国内游客数量（单位：百万人次）"
+     MK2718X-Z121_p2.png first band: "2019年2020年2021年2022年2023年" | last band: "图22019-2023年中国国内旅游人均花费（单位：元）"
+     DUPLICATE BAND x2 "2019年2020年2021年2022年2023年"
+## MAT 26 （二） MK2722X-Z116
+     MK2722X-Z116_p1.png first band: "2024年前三季度，阿克苏市实现地区生产总值（GDP）266" | last band: "为67.4"
+## MAT 26 （三） 2023SD-Z86
+     2023SD-Z86_p1.png first band: "2021年全球47个国家数字经济市场规模达到38.1万亿美元" | last band: "元，同比增长17.2%，占GDP比重为32.5%。"
+     2023SD-Z86_p2_t.png first band: "（万亿元）" | last band: "2016-2021年我国数字经济市场规模"
+## MAT 26 （四） 2024SZ-Z96
+     2024SZ-Z96_p1.png first band: "2021-2022年我国沿海地区风暴潮灾害及直接经济损失" | last band: "2021-2022年我国沿海地区风暴潮灾害及直接经济损失"
+## MAT 27 （一） MK2726X-Z111
+     MK2726X-Z111_p1.png first band: "SUV轿车MPV" | last band: "图32024年9月我国插电混动新能源汽车车系活跃量TOP10"
+     DUPLICATE BAND x2 "活跃量(万辆)环比增长率"
+## MAT 27 （二） MK2714X-Z116
+     MK2714X-Z116_p1.png first band: "2025年上半年，全国固定资产投资（不含农户）248653亿" | last band: "1亿元，同比下降7.5%；个人按揭贷款6847亿元，同比下降"
+     MK2714X-Z116_p2.png first band: ".4%" | last band: ".4%"
+## MAT 27 （三） 2020HB-Z111
+     2020HB-Z111_p1.png first band: "2019年6月，全国发行地方政府债券8996亿元，同比增长6" | last band: "项债务"
+     MISSING REF LINE (best 0.43) "项债务87080亿元。"
+## MAT 27 （四） 2018JSA-Z121
+     2018JSA-Z121_p1.png first band: "2017年末全国农村贫困人口3046万人，比上年末减少128" | last band: "区农村居民人均可支配收入9377元，比上年增长10.5%。"
+     2018JSA-Z121_p2.png first band: "（元）" | last band: "图2013—2017年全国、城镇和农村居民人均可支配收入情况"
+## MAT 28 （一） 2025GKD-Z111
+     2025GKD-Z111_p1.png first band: "2019年2020年2021年2022年2023年" | last band: "-2023年我国各批次专精特新 “小巨人”企业及上市企业数量"
+     2025GKD-Z111_p2.png first band: "2019-2023年我国部分城市五批次累计专精特新 企业数量" | last band: "2019-2023年我国部分城市五批次累计专精特新 企业数量"
+## MAT 28 （二） MK2723X-Z111
+     MK2723X-Z111_p1.png first band: "2021年全国餐饮收入46895亿元，与上年相比增长18.6" | last band: "渗透"
+     MK2723X-Z111_p2_t.png first band: "2016~2022年全国外卖市场规模（单位：亿元）" | last band: "17年2018年2019年　2020年2021年　2022年"
+     MISSING REF LINE (best 0.31) "业的渗透率达到17%。"
+## MAT 28 （三） 2022JSA-Z131
+     2022JSA-Z131_p1.png first band: "2021年1-7月，我国原油产量11561万吨，同比增长2." | last band: "图2020年7月一2021年6月我国原油进口量变动情况"
+## MAT 28 （四） MK2701X-Z121
+     MK2701X-Z121_p1.png first band: "2018年末，西部地区拥有法人单位405.8万个，占全国的比" | last band: "从业人员9451.6万人，比2013年末增加553.4万人。"
+     MK2701X-Z121_p2.png first band: "2018年末全国部分地区法人单位和从业人员" | last band: "合计数和部分计算数据因小数取舍而产生的误差，均未作机械调整。"
+     MISSING REF LINE (best 0.00) "注："
+## MAT 29 （一） 2022GD-Z91
+     2022GD-Z91_p1.png first band: "增加森林面积、提高森林质量、提升生态系统碳汇增量，将为我国实" | last band: "沙化土地1."
+     2022GD-Z91_p2.png first band: "亿亩亿立方米" | last band: "图22016-2020年我国国际重要湿地面积变化"
+## MAT 29 （二） 2023GK-Z116
+     2023GK-Z116_p1.png first band: "截至2021年底，我国固定互联网宽带接人用户数比上年底净增5" | last band: "联网宽带接人用户可分为100Mbps速率以上用户和其他用户。"
+     2023GK-Z116_p2.png first band: "2021年2-12月各月末固定互联网宽带接入用户数" | last band: "万户"
+## MAT 29 （三） MK2717X-Z111
+     MK2717X-Z111_p1.png first band: "2017-2021年中国洗护用品分渠道市场规模（单位：亿元）" | last band: "20172018201920202021"
+## MAT 29 （四） 2019GK-Z131
+     2019GK-Z131_p1.png first band: "2017年，A省完成邮电业务总量6065.71亿元。其中，电" | last band: ".7%和54.3%，比重比上年分别提高4.3个和3.9个百分"
+     MISSING REF LINE (best 0.43) "年提高1.8个百分点。"
+     MISSING REF LINE (best 0.08) "点。"
+## MAT 30 （一） 2015GK-Z116
+     2015GK-Z116_p1.png first band: "2011年1季度－2014年4季度全国农村居民" | last band: "■城镇居民人均可支配收入农村居民人均现金收入"
+## MAT 30 （二） MK2718X-Z116
+     MK2718X-Z116_p1.png first band: "表12023年12月中国新能源汽车进出口情况" | last band: "注：部分数据因四舍五入，存在着总计与分项合计不等的情况。"
+     MK2718X-Z116_p2.png first band: "表22023年12月中国新能源汽车产品出口额情况" | last band: "表22023年12月中国新能源汽车产品出口额情况"
+## MAT 30 （三） MK2739X-Z116
+     MK2739X-Z116_p1.png first band: "2025年各季度全国外汇市场交易额累计值（单位：亿元）" | last band: "注：由于四舍五入，存在总计与分项合计不等的情况。"
+## MAT 30 （四） MK26ZX-Z116
+     MK26ZX-Z116_p1.png first band: "2022-2023年浙江省居民每百户拥有量情况表" | last band: "2022-2023年浙江省居民每百户拥有量情况表"
+## MAT 31 （一） MK2701X-Z116
+     MK2701X-Z116_p1.png first band: "2023年我国工业主要产品产量及同比增长速度" | last band: "2023年我国工业主要产品产量及同比增长速度"
+## MAT 31 （二） MK2705X-Z121
+     MK2705X-Z121_p1.png first band: "2022年，我国职工医保参保人数36243万人，同比增长2." | last band: "01.77亿元，累计结存（含生育保险）21393.11亿元。"
+     MK2705X-Z121_p2.png first band: "2015-2022年我国职工医保参保人数（万人）" | last band: "古存"
+     MISSING REF LINE (best 0.17) "（2）结存=收入-支出。"
+## MAT 31 （三） MK2711X-Z116
+     MK2711X-Z116_p1.png first band: "2022年，茅台企业实现营业总收入1275.54亿元，同比增" | last band: "4.83亿元，同比增长20.69%；净利润90.72亿元，同"
+     MK2711X-Z116_p2.png first band: "鲁长25." | last band: "损额18.82亿元，同比下降15.69%。"
+## MAT 31 （四） 2019GK-Z126
+## MAT 32 （一） 2023ZJA-Z116
+     2023ZJA-Z116_p1.png first band: "2021年上半年，S市工业战略性新兴产业总产值7164.68" | last band: "售面积667.94万平方米，同比增长23.0%。"
+## MAT 32 （二） MK2740X-Z121
+     MK2740X-Z121_p1.png first band: "表12024年1月我国羊肉各品类进口量和进口额及其同比增速" | last band: "表12024年1月我国羊肉各品类进口量和进口额及其同比增速"
+     MK2740X-Z121_p2.png first band: "表22024年1月我国羊肉进口来源国进口量和进口额及其增速" | last band: "表22024年1月我国羊肉进口来源国进口量和进口额及其增速"
+## MAT 32 （三） MK2704X-Z121
+     MK2704X-Z121_p1.png first band: "2022年，全国共有社会组织89.1万个，较2019年增加2" | last band: "基金会数量同比增速（%）"
+## MAT 32 （四） MK2729X-Z111
+     MK2729X-Z111_p1.png first band: "2023年12月，S市保险保费收入共计139.56亿元，同比" | last band: "790.18元，比上月多出95.06元。"
+     MK2729X-Z111_p2.png first band: "2023年s市每月寿险保费收入（亿元）" | last band: "寿险保费收入+财产险保费收入+健康险保费收入+意外险保费收入"
+## MAT 33 （一） MK2707X-Z121
+     MK2707X-Z121_p1.png first band: "2016-2022年，全球通用飞机交付量整体呈波动上升趋势，" | last band: "全球通用飞机订单交付额达229.00亿美元，较2021年增长"
+     MK2707X-Z121_p2.png first band: "2016年　2017年　2018年　2019年　2020年　" | last band: "图12016-2022年全球通用飞机交付量及同比增速"
+     MK2707X-Z121_p3.png first band: "2016年　2017年　2018年　2019年　2020年　" | last band: "图22016-2022年全球通用飞机订单交付额及同比增速"
+     MISSING REF LINE (best 0.15) "6.2%。"
+     DUPLICATE BAND x2 "2016年2017年2018年2019年2020年2021年2022年"
+## MAT 33 （二） MK2701X-Z111
+     MK2701X-Z111_p1.png first band: "2023年，中国新能源汽车销量完成949.5万辆，同比增长3" | last band: "车销量完成280.7万辆，同比增长84.7%，增速比上年回落"
+     MK2701X-Z111_p2.png first band: "66.9" | last band: "插电式混合动力汽车月度销量（万辆）一同比增长率（%）"
+     MK2701X-Z111_p3.png first band: "注：部分数据因四舍五入，存在总计和分项合计不等的情况。" | last band: "注：部分数据因四舍五入，存在总计和分项合计不等的情况。"
+## MAT 33 （三） MK2733X-Z121
+     MK2733X-Z121_p1.png first band: "截至2023年末，N市银行总资产27116.62亿元，较上年" | last band: "亿元，同比下降22.76%。主要是受到资本市场波动影响，代理"
+     MK2733X-Z121_p2.png first band: "类业务有所下滑，财富业务收入同比下降。" | last band: "类业务有所下滑，财富业务收入同比下降。"
+## MAT 33 （四） MK2727X-Z121
+     MK2727X-Z121_p1.png first band: "2022年6月-2023年5月全国水产品进出口数量与金额情况" | last band: "2年6月-2023年5月全国水产品进出口数量与金额情况统计表"
+## MAT 34 （一） 2021GKD-Z126
+     2021GKD-Z126_p1.png first band: "2019年上半年，我国服务进出口总额达到26124.6亿元，" | last band: "务进出口总额分别同比增长19.4%、18.9%、18.7%。"
+## MAT 34 （二） MK2713X-Z111
+     MK2713X-Z111_p1.png first band: "2022年，上海市金融市场交易总额达2932.98万亿元，比" | last band: "数量"
+     MK2713X-Z111_p2.png first band: "2018-2022年上海市金融市场交易总额" | last band: "司原保险保费收入2095.01亿元。其中，财产险公司原保险保"
+     MK2713X-Z111_p3.png first band: "费收入663.05亿元，比上年增长4.9%；人身险公司原保险" | last band: "全年原保险赔付支出654.55亿元，下降11.3%。"
+     MISSING REF LINE (best 0.44) "数量2213只，增加134只。"
+## MAT 34 （三） MK2711X-Z111
+     MK2711X-Z111_p1.png first band: "2023年1-2月份，我国软件业务收入14461亿元，同比增" | last band: "去年同期回落0.5个百分点。"
+     MK2711X-Z111_p2.png first band: "东部地区中部地区西部地区东北地区" | last band: "图12023年1-2月份我国各地区软件业务收入及增长情况"
+     MK2711X-Z111_p3.png first band: "北京市广东省江苏省山东省浙江省上海市四川省山西省福建省重庆市" | last band: "22023年1-2月份我国软件业务收入前十省市收入及增长情况"
+## MAT 34 （四） 2025GK-Z131
+     2025GK-Z131_p1.png first band: "2023年三季度，支付系统共处理支付业务3358.88亿笔，" | last band: "126.92万亿元，同比分别增长10.42%和6.28%。"
+## MAT 35 （一） 2022GKD-Z121
+     2022GKD-Z121_p1.png first band: "2021年第一季度市场监管部门食品安全监督抽检情况" | last band: "单位："
+## MAT 35 （二） 2023HB-Z121
+     2023HB-Z121_p1.png JUNK? y=87 "材料"
+     2023HB-Z121_p1.png first band: "13" | last band: "年全国11个沿海省市海水冷却工程年总循环量为169.5亿吨。"
+     2023HB-Z121_p2.png first band: "201220132014201520162017201820" | last band: "2012-2021年全国11个沿海省市海水冷却用水量（亿吨）"
+     2023HB-Z121_p3.png first band: "表1：2012-2021年辽宁、河北等8省海水冷却用水量（亿" | last band: "：2012-2021年辽宁、河北等8省海水冷却用水量（亿吨）"
+## MAT 35 （三） 2020SZ1-Z91
+     2020SZ1-Z91_p1.png first band: "2015—2019年我国电影票房及观影人次" | last band: "（）国（）口"
+     DUPLICATE BAND x2 "20152016201720182019"
+## MAT 35 （四） MK2702X-Z121
+     MK2702X-Z121_p1.png first band: "2022年，S市国有、集体及其控股企业累计注册户数11687" | last band: "注册资本175801.17亿元，累计同比增速91.9%。"
+     MK2702X-Z121_p2.png first band: "2023 年前三季度S市注册登记基本业务统计数据" | last band: "2023 年前三季度S市注册登记基本业务统计数据"
+## MAT 36 （一） MK2728X-Z121
+     MK2728X-Z121_p1.png first band: "2024年，全国民航运输机场完成旅客吞吐量14.60亿人次，" | last band: "长10.0%"
+     MK2728X-Z121_p2.png first band: "图12020-2024年全国民航运输机场旅客吞吐量及同比增速" | last band: "20202021202220232024"
+     MK2728X-Z121_p3.png first band: "图22020-2024年全国民航运输机场货邮吞吐量及同比增速" | last band: "20202021202220232024"
+     DUPLICATE BAND x2 "20202021202220232024"
+## MAT 36 （二） 2024ZJA-Z121
+     2024ZJA-Z121_p1.png first band: "2023年第14周，H市流感哨点监测医院（哨点医院）共报告流" | last band: "（一）哨点医院ILI%监测情况"
+     2024ZJA-Z121_p2.png first band: "本周哨点医院共报告流感样病例总数为5187例，比上周增加4." | last band: "例，25~59岁组1266例，60岁以上组940例。"
+## MAT 36 （三） 2020SC0725-Z96
+     2020SC0725-Z96_p1.png first band: "2017年，S市服务业小微样本企业总体实现营业收入105.3" | last band: "8人，人均年薪酬6.64万元，比2016年增加0.60万元。"
+## MAT 36 （四） MK2732X-Z111
+     MK2732X-Z111_p1.png first band: "2023年x地区房地产开发和销售主要指标及其增长速度" | last band: "2023年x地区房地产开发和销售主要指标及其增长速度"

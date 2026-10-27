@@ -1,0 +1,6 @@
+Q1 correct 45 | 戊 as 4, no +1: 46 | 戊 as 4, +1: 47 | template 4x4+2 then +2: 20
+Q5 correct 458 | forgot C's 3 t on C-E: 428 | direct sum at E without C: 428 | forgot x2: 229
+Q6 original (49,46) with 'most': {(1, False): 425601}
+Q6 variant  (49,51) with 'most': {(2, False): 425601}
+Q6 variant  (49,51) w/o  'most': {(2, False): 638401, (2, True): 799, (3, False): 261055, (4, False): 45530, (3, True): 72, (1, True): 799, (1, False): 318801}
+   丁≈48 in variant -> rank 3 | 丁≈48 in original -> rank 2

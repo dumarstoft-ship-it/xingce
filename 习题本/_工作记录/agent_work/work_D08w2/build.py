@@ -1,0 +1,54 @@
+import json
+S = '/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad'
+dec = json.load(open(f'{S}/w2/D08_decision.json'))
+need = {nv['n']: nv for nv in dec['new_variants']}
+L, R = '“', '”'
+items = [
+    {
+        "vid": "D08-math-w2-v01",
+        "group": need[1]['group'],
+        "seed": "2025JSA-68",
+        "direction": "深化",
+        "kaofa": need[1]['kaofa'],
+        "technique": "约简定步长，边界数个数",
+        "difficulty": 3,
+        "time_s": 75,
+        "stem": (f"某社区开设{L}志愿积分超市{R}，志愿者可用服务积分兑换物品：大米每袋 48 积分，食用油每桶 60 积分。"
+                 "某志愿服务队用全队累计的 2700 积分兑换大米和食用油，要求积分恰好用完，两种物品都要兑换，"
+                 "且大米的袋数不少于食用油的桶数。符合要求的兑换方案共有（ ）种。"),
+        "options": {"A": "6", "B": "7", "C": "11", "D": "12"},
+        "answer": "B",
+        "jiexi": ("卡点：约简后用整除定步长，再按两端边界数个数。设米 x 袋、油 y 桶，约去 12 得 $4x+5y=225$，"
+                  "225、$5y$ 都是 5 的倍数，故 x 是 5 的倍数。令 $x=5k$，则 $y=45-4k$（米多 5 袋、油少 4 桶）。"
+                  "$y\\ge1$ 得 $k\\le11$，$x\\ge y$ 得 $k\\ge5$，k 取 5～11，共 7 种，选 B。"
+                  f"易错：漏看{L}米不少于油{R}得 11；再算上全换油的 (0,45) 得 12；把{L}不少于{R}当{L}多于{R}漏掉 x=y=25，或项数忘加 1，得 6。"),
+        "figure_svg": None,
+        "verify": f"{S}/verify/D08-math-w2-v01.py",
+    },
+    {
+        "vid": "D08-math-w2-v02",
+        "group": need[2]['group'],
+        "seed": "2026GD-43",
+        "direction": "深化",
+        "kaofa": need[2]['kaofa'],
+        "technique": "一量表示，逐条列界取最紧",
+        "difficulty": 2,
+        "time_s": 60,
+        "stem": ("某社区甲、乙、丙、丁 4 名网格员上周在各自网格内入户走访，走访户数互不相同，从多到少依次是甲、乙、丙、丁。"
+                 "已知甲的走访户数恰好是丙的 2 倍，甲、乙两人的走访户数之和为 57，丙、丁两人的走访户数之和为 34。丁上周走访了（ ）户。"),
+        "options": {"A": "16", "B": "17", "C": "18", "D": "不能确定"},
+        "answer": "A",
+        "jiexi": ("卡点：用丙表示其余三人，每条大小关系都给出一个界，逐条写出取最紧的。设丙 c 户，则甲 2c、乙 57−2c、丁 34−c。"
+                  f"甲>乙：4c>57，c≥15；乙>丙：3c<57，c≤18；丙>丁：2c>34，c≥18。只用前两条，c 可取 15～18，丁有 4 种可能，易错选{L}不能确定{R}；"
+                  f"卡住下界的是末条{L}丙>丁{R}，只剩 c=18，四人依次 36、21、18、16，选 A。"
+                  f"易错：把{L}>{R}当{L}≥{R}会多出 c=17（丙=丁=17）和 c=19（乙=丙），误选 B 或{L}不能确定{R}；错把丙当成丁，误选 C。"),
+        "figure_svg": None,
+        "verify": f"{S}/verify/D08-math-w2-v02.py",
+    },
+]
+for it in items:
+    assert len(it['kaofa']) <= 20 and len(it['technique']) <= 12, (it['kaofa'], it['technique'])
+    assert len(it['jiexi']) <= 250, len(it['jiexi'])
+    assert it['stem'].endswith('（ ）种。') or it['stem'].endswith('（ ）户。')
+json.dump(items, open(f'{S}/gen/D08_math_w2.json', 'w'), ensure_ascii=False, indent=1)
+print('written', len(items), [len(i['jiexi']) for i in items], [i['group'] for i in items])

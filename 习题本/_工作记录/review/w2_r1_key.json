@@ -1,0 +1,74 @@
+[
+ {
+  "vid": "D09-math-w2-v01",
+  "group": "考法三：最不利原则——先造最倒霉的情况，再+1",
+  "kaofa": "最不利·保证两类各≥k（整类取光）",
+  "technique": "最多一类整类取光",
+  "difficulty": 3,
+  "answer": "C",
+  "jiexi": "最不利原则，卡点是想清“最倒霉长什么样”：不是每类各 4 袋，而是始终只有 1 个品种达标——它到 5 袋后取出的仍全是它，直到取光，取光的应是最多的甲。甲 30 袋全取，乙、丙、丁各 4 袋，戊只有 2 袋全取，共 30+4×3+2=44 袋，仍只有甲达标；再取 1 袋，乙、丙、丁必有一个满 5 袋。至少 45 袋，选 C。最常见的错法是机械套“每类取 4 袋再加 2 袋”得 4×4+2+2=20，没想到多取的袋可能落进同一品种。另：戊也按 4 袋算得 47；忘了加 1 得 44。",
+  "verify": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/verify/D09-math-w2-v01.py",
+  "verify_script": null,
+  "distractors": null
+ },
+ {
+  "vid": "D10-math-w2-v01",
+  "group": "考法一：线性规划——约束取等找顶点，取整、代回都要验",
+  "kaofa": "三约束线性规划：找真正用满的两条",
+  "technique": "交点代回第三条检验",
+  "difficulty": 2,
+  "answer": "C",
+  "jiexi": "卡点：三条约束不能见两条就联立，交点要代回第三条检验。设种甲 $x$ 亩、乙 $y$ 亩：$x+y\\le60$，$3x+y\\le150$，$x+2y\\le100$。用水、用工取等得 $(40,30)$，面积 70 亩超标，故面积必须用满。乙每亩多赚 1000 元，在 $x+y=60$ 上多种乙直到用工用满，得 $(20,40)$，代回用水 $100<150$，获利 $4+12=16$ 万元，选 C。陷阱：直接联立用水、用工得 17；联立面积与用水得 13.5；只种乙（用工限 50 亩）得 15。",
+  "verify": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/verify/D10-math-w2-v01.py",
+  "verify_script": null,
+  "distractors": null
+ },
+ {
+  "vid": "D10-math-w2-v02",
+  "group": "考法三：分配任务——省钱让便宜的干满，抢时间让快的多干",
+  "kaofa": "预算约束下的最短工期",
+  "technique": "预算定份额·瓶颈定工期",
+  "difficulty": 3,
+  "answer": "B",
+  "jiexi": "卡点：预算不够时不能默认两队同时完工。甲单独做要 60 万元、乙要 48 万元，乙按工作量更便宜，甲更快。让甲干 1 天，等于乙 2 天的量，多花 $5-2\\times2=1$ 万元、乙少干 2 天。预算比乙单独做多 $52-48=4$ 万元，甲最多干 4 天，乙干 $24-8=16$ 天；甲早已收工，工期由乙决定，为 16 天，选 B。陷阱：同时完工只要 8 天，但费用 56 万元超预算；只图省钱全交给乙得 24；把两队天数相加得 20。",
+  "verify": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/verify/D10-math-w2-v02.py",
+  "verify_script": null,
+  "distractors": null
+ },
+ {
+  "vid": "D10-math-w2-v03",
+  "group": "考法六：排序与流程——短者优先、按用时÷权重排、瓶颈要平衡",
+  "kaofa": "带权排序：按用时÷每小时损失排",
+  "technique": "相邻交换比较定顺序",
+  "difficulty": 3,
+  "answer": "B",
+  "jiexi": "卡点：每小时损失不同，不能只让用时短的先修。相邻两台 $i$、$j$：$i$ 先修，$j$ 多停 $t_i$ 小时，多损失 $t_iw_j$；反之多损失 $t_jw_i$。故 $t_iw_j<t_jw_i$ 时 $i$ 在前，即按“用时÷每小时损失”从小到大：丁 1、丙 1.5、乙 2、甲 2.5，修好时刻 3、9、11、16，损失 $3\\times3+4\\times9+11+2\\times16=88$ 万元，选 B。陷阱：短者优先得 101；损失大的先修得 95；漏算自身修理时的损失得 43。",
+  "verify": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/verify/D10-math-w2-v03.py",
+  "verify_script": null,
+  "distractors": null
+ },
+ {
+  "vid": "D10-math-w2-v04",
+  "group": "考法七：调运与选址——设一个量表示全部看端点，货物集中比两侧",
+  "kaofa": "分叉路网上的货物集中",
+  "technique": "逐段比较两侧货量",
+  "difficulty": 3,
+  "answer": "A",
+  "jiexi": "卡点：任一段路把收购点分成两侧，货少的一侧整体越过这段路更省，与路程长短无关。逐段比：A—B、B—C、C—D 段较少一侧为 6、10、7 吨；C—E 段 A～D 共 20 吨<E、F 共 22 吨；E—F 段 F 14 吨<28 吨。货都流向 E，E 最优。每段只运较少一侧：$6\\times2+10\\times4+7\\times5+20\\times5+14\\times3=229$ 吨·千米，运费 458 元，选 A。陷阱：以为路口 C 居中最省，得 478；集中到货最多的 F，得 542。",
+  "verify": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/verify/D10-math-w2-v04.py",
+  "verify_script": null,
+  "distractors": null
+ },
+ {
+  "vid": "D12-math-w2-v01",
+  "group": "考法七：线段法的判断用法——极值与定性",
+  "kaofa": "多组加权平均：定性判断未知组排名",
+  "technique": "反证：缺口只能高者补",
+  "difficulty": 3,
+  "answer": "A",
+  "jiexi": "线段法定性：整体客单价是各店按成交单数的加权平均，低于整体的店留下的缺口只能由高于整体的店补齐。甲店比整体低8元、共400单，缺口3200元。反证：若丁店不高于乙店的49元，高于整体的只有乙、丁，每单最多高1元，其余1600单最多补回1600元，补不上缺口，矛盾，故丁店排第一。也可打包：乙丙丁共1600单，平均48+3200÷1600=50元，乙、丙都低于50元，丁店必高于50元。各店单数不定，丁店具体数值算不出。易错：列方程解不出就选D；以为单数最多的丁店接近整体平均、乙店最高而选B。",
+  "verify": "verify/D12-math-w2-v01.py",
+  "verify_script": null,
+  "distractors": null
+ }
+]
