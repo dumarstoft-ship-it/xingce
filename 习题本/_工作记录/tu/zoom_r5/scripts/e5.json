@@ -1,0 +1,7 @@
+[
+{"id":"2023ZJA-79","type":"折纸盒与六面体","q_ok":true,"q_problem":"","j_ok":true,"j_problem":"","jiexi_answer":"C","note":"四面体（三角形展开图）折纸盒"},
+{"id":"2025HB-83","type":"立体拼合与补形","q_ok":true,"q_problem":"","j_ok":true,"j_problem":"","jiexi_answer":"B","note":"guess误为折纸盒，实为立体拼合；官方answer为空，解析截图给出答案B；jiexi_raw只抽到标题，正文在截图中完整"},
+{"id":"2025JSA-90","type":"视图","q_ok":true,"q_problem":"","j_ok":true,"j_problem":"","jiexi_answer":"D","note":"判断哪个立体某一视图可能全白（三视图）；官方answer为空，解析截图给出答案D"},
+{"id":"2021JSA-84","type":"平面拼合与分割","q_ok":true,"q_problem":"","j_ok":false,"j_problem":"漏掉了拼合结果图：原PDF第20页顶部有一张①②③④拼合后的图（即“将其拼合后得到如下图所示”所指），截图只有第19页的四块编号分图，随后直接接“因此，选择C选项”，需补裁该图","jiexi_answer":"C","note":""},
+{"id":"2016GKD-74","type":"截面与切割","q_ok":true,"q_problem":"","j_ok":true,"j_problem":"","jiexi_answer":"A","note":"解析为纯文字，无配图"}
+]

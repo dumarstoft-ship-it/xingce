@@ -1,0 +1,2013 @@
+{
+ "book": {
+  "day": 0,
+  "title": "图形推理 · 空间类固定题型专项",
+  "module_head": "题型",
+  "subtitle": "广东省考专项 · 全部为历年真题（国考、广东和各省卷）",
+  "note": "本册收录历年真题里的空间类固定题型共 178 道，按题型分 7 章。每章先放广东真题，再放国考，再放各省真题，同一类按年份由近到远。不用每天练，按章做：每题限时 1 分钟，做完一章再对答案。每章解析前列出本章官方解析用到的方法。题目是原卷截图，答案和解析为官方答案和原卷解析（粉笔题库收录的题在出处后附全站正确率）；同一道题出现在几份试卷里的只收一次，在出处后注明。",
+  "parts": [
+   {
+    "title": "第 1 章",
+    "module": "折纸盒与六面体",
+    "time_min": 79,
+    "count_text": "79 题（真题）",
+    "items": [
+     {
+      "type": "real",
+      "id": "2023GD-41",
+      "src_label": "2023广东县级 第41题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023GD-41_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023GD-41_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2022GD-43",
+      "src_label": "2022广东县级 第43题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022GD-43_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022GD-43_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2025GK-86",
+      "src_label": "2025国考副省级 第86题（另见2025国考地市级 第81题）",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025GK-86_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025GK-86_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2025GKX-82",
+      "src_label": "2025国考行政执法 第82题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025GKX-82_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025GKX-82_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2024GK-80",
+      "src_label": "2024国考副省级 第80题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024GK-80_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024GK-80_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2024GKD-77",
+      "src_label": "2024国考地市级 第77题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024GKD-77_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024GKD-77_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2023GK-81",
+      "src_label": "2023国考副省级 第81题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023GK-81_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023GK-81_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2022GK-80",
+      "src_label": "2022国考副省级 第80题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022GK-80_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022GK-80_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2022GKD-76",
+      "src_label": "2022国考地市级 第76题（另见2022国考行政执法 第75题）",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022GKD-76_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022GKD-76_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2021GKD-75",
+      "src_label": "2021国考地市级 第75题（另见2021国考副省级 第80题） · 全站正确率 58%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021GKD-75_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021GKD-75_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2020GKD-74",
+      "src_label": "2020国考地市级 第74题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020GKD-74_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020GKD-74_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2019GK-82",
+      "src_label": "2019国考省级 第82题（另见2019国考地市级 第75题）",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2019GK-82_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2019GK-82_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2018GK-80",
+      "src_label": "2018国考副省级 第80题（另见2018国考地市级 第75题）",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2018GK-80_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2018GK-80_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2017GK-81",
+      "src_label": "2017国考副省级 第81题（另见2017国考地市级 第76题）",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2017GK-81_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2017GK-81_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2016GK-78",
+      "src_label": "2016国考副省级 第78题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2016GK-78_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2016GK-78_j.png",
+      "extra": "A项：展开图和选项中均有面e，而面e是可以确定唯一边的（如图中绿线所示）。在展开图和选项的面e上，以唯一边为起始边，沿顺时针同时进行画边，展开图中边2所对的面为面c，选项中边2所对的面不是面c，展开图与选项不一致，排除；\nB项：选项中包括面b和面d，而面b和面d为相对面，不能同时出现，展开图与选项不一致，排除；\nC项：展开图和选项中均有面e，同样，在展开图和选项的面e上，以唯一边为起始边，沿顺时针同时进行画边，展开图中边2所对的面为面c，选项中边2所对的面不是面c，展开图与选项不一致，排除；\nD项：展开图与选项一致，当选。\n故正确答案为D。"
+     },
+     {
+      "type": "real",
+      "id": "2016GKD-75",
+      "src_label": "2016国考地市级 第75题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2016GKD-75_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2016GKD-75_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2015GK-79",
+      "src_label": "2015国考副省级 第79题（另见2015国考地市级 第74题）",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2015GK-79_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2015GK-79_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2026CQ-74",
+      "src_label": "2026重庆 第74题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2026CQ-74_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_text": "（原卷只给答案，没有解析。）"
+     },
+     {
+      "type": "real",
+      "id": "2025JSA-88",
+      "src_label": "2025江苏A类 第88题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025JSA-88_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025JSA-88_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2025JSA-89",
+      "src_label": "2025江苏A类 第89题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025JSA-89_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025JSA-89_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2025SD-67",
+      "src_label": "2025山东 第67题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025SD-67_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025SD-67_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2025ZJA-78",
+      "src_label": "2025浙江A类 第78题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025ZJA-78_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025ZJA-78_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2024JSA-87",
+      "src_label": "2024江苏A类 第87题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024JSA-87_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024JSA-87_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2024JSA-88",
+      "src_label": "2024江苏A类 第88题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024JSA-88_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024JSA-88_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2024JSA-89",
+      "src_label": "2024江苏A类 第89题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024JSA-89_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024JSA-89_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2024SC-60",
+      "src_label": "2024四川 第60题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024SC-60_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024SC-60_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2024SD-67",
+      "src_label": "2024山东 第67题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024SD-67_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024SD-67_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2024ZJA-79",
+      "src_label": "2024浙江A类 第79题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024ZJA-79_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024ZJA-79_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2023HB-78",
+      "src_label": "2023河北 第78题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023HB-78_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023HB-78_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2023JSA-87",
+      "src_label": "2023江苏A类 第87题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023JSA-87_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023JSA-87_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2023JSA-88",
+      "src_label": "2023江苏A类 第88题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023JSA-88_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023JSA-88_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2023JSA-90",
+      "src_label": "2023江苏A类 第90题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023JSA-90_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023JSA-90_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2023SC-61",
+      "src_label": "2023四川 第61题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023SC-61_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023SC-61_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2023SD-50",
+      "src_label": "2023山东 第50题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023SD-50_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023SD-50_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2023ZJA-79",
+      "src_label": "2023浙江A类 第79题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023ZJA-79_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023ZJA-79_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2022HB-80",
+      "src_label": "2022河北 第80题（另见2022浙江A类 第73题）",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022HB-80_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022HB-80_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2022JSA-89",
+      "src_label": "2022江苏A类 第89题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022JSA-89_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022JSA-89_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2022JSA-91",
+      "src_label": "2022江苏A类 第91题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022JSA-91_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022JSA-91_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2022JSA-92",
+      "src_label": "2022江苏A类 第92题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022JSA-92_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022JSA-92_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2022SC2-57",
+      "src_label": "2022四川下半年 第57题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022SC2-57_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022SC2-57_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2022SD-50",
+      "src_label": "2022山东 第50题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022SD-50_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022SD-50_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2021JSA-87",
+      "src_label": "2021江苏A卷 第87题 · 全站正确率 73%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021JSA-87_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021JSA-87_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2021JSA-88",
+      "src_label": "2021江苏A卷 第88题 · 全站正确率 62%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021JSA-88_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021JSA-88_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2021JSA-89",
+      "src_label": "2021江苏A卷 第89题 · 全站正确率 23%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021JSA-89_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021JSA-89_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2021JSA-90",
+      "src_label": "2021江苏A卷 第90题 · 全站正确率 62%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021JSA-90_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_imgs": [
+       "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021JSA-90_p0_j.png",
+       "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021JSA-90_p1_j.png",
+       "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021JSA-90_p2_j.png"
+      ]
+     },
+     {
+      "type": "real",
+      "id": "2021SC2-59",
+      "src_label": "2021四川下半年 第59题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021SC2-59_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021SC2-59_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2021SD-49",
+      "src_label": "2021山东 第49题 · 全站正确率 53%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021SD-49_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021SD-49_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2020JSA-84",
+      "src_label": "2020江苏A类 第84题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020JSA-84_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020JSA-84_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2020JSA-85",
+      "src_label": "2020江苏A类 第85题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020JSA-85_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020JSA-85_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2020JSA-86",
+      "src_label": "2020江苏A类 第86题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020JSA-86_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020JSA-86_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2020JSA-87",
+      "src_label": "2020江苏A类 第87题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020JSA-87_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020JSA-87_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2020SC0725-60",
+      "src_label": "2020四川(7月) 第60题 · 全站正确率 58%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020SC0725-60_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020SC0725-60_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2020SC1206-56",
+      "src_label": "2020四川(12月) 第56题 · 全站正确率 66%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020SC1206-56_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020SC1206-56_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2020SD-49",
+      "src_label": "2020山东 第49题 · 全站正确率 88%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020SD-49_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020SD-49_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2019JSA-84",
+      "src_label": "2019江苏A卷 第84题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2019JSA-84_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2019JSA-84_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2019JSA-85",
+      "src_label": "2019江苏A卷 第85题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2019JSA-85_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2019JSA-85_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2019JSA-86",
+      "src_label": "2019江苏A卷 第86题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2019JSA-86_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2019JSA-86_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2019JSA-87",
+      "src_label": "2019江苏A卷 第87题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2019JSA-87_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2019JSA-87_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2019ZJA-90",
+      "src_label": "2019浙江A类 第90题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2019ZJA-90_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2019ZJA-90_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2018JSA-85",
+      "src_label": "2018江苏A类 第85题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2018JSA-85_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2018JSA-85_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2018JSA-86",
+      "src_label": "2018江苏A类 第86题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2018JSA-86_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2018JSA-86_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2018JSA-87",
+      "src_label": "2018江苏A类 第87题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2018JSA-87_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2018JSA-87_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2018JSA-88",
+      "src_label": "2018江苏A类 第88题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2018JSA-88_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2018JSA-88_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2018ZJA-4",
+      "src_label": "2018浙江A卷 第4题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2018ZJA-4_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2018ZJA-4_j.png",
+      "extra": "A项：由面a、b、c组成，与题干一致，当选；\nB项：由面d、e、f组成，题干面f中箭头右侧挨着面b，而该选项面f的箭头右侧挨着面d，与题干不一致，排除；\nC项：由面a、d、e组成，题干面e的三角形右侧（图中标红线处）挨着面b，而该选项面e的三角形右侧（即蓝线处）挨着面a，与题干不一致，排除；\nD项：由面d、e和f组成，题干中面f的箭头右侧挨着面b，而该选项面f的箭头右侧挨着面d，与题干不一致，排除。\n故正确答案为A。",
+      "jiexi_pre": "本题为空间重构题目。"
+     },
+     {
+      "type": "real",
+      "id": "2018ZJA-5",
+      "src_label": "2018浙江A卷 第5题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2018ZJA-5_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2018ZJA-5_j.png",
+      "extra": "A项：边1对应的是黑色面，而题干边1对应的是灰色面，与题干不一致，排除；\nB项：选项与题干一致，当选；\nC项：边3对应的是白色面，而题干边2对应的是白色面，与题干不一致，排除；\nD项：边3对应的是灰色面，而题干边1对应的是灰色面，与题干不一致，排除。\n故正确答案为B。",
+      "jiexi_pre": "本题为四面体的空间重构题目。四个选项均有含一条直线的面，且该面有唯一点（如下图中绿色点所示），故以这点为起点开始顺时针画边。如下图所示。"
+     },
+     {
+      "type": "real",
+      "id": "2017JSA-87",
+      "src_label": "2017江苏A类 第87题 · 全站正确率 75%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2017JSA-87_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2017JSA-87_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2017JSA-88",
+      "src_label": "2017江苏A类 第88题 · 全站正确率 78%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2017JSA-88_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2017JSA-88_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2017JSA-89",
+      "src_label": "2017江苏A类 第89题 · 全站正确率 79%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2017JSA-89_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2017JSA-89_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2017JSA-90",
+      "src_label": "2017江苏A类 第90题 · 全站正确率 67%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2017JSA-90_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2017JSA-90_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2017ZJA-56",
+      "src_label": "2017浙江A卷 第56题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2017ZJA-56_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2017ZJA-56_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2016JSA-87",
+      "src_label": "2016江苏A卷 第87题 · 全站正确率 73%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2016JSA-87_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2016JSA-87_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2016JSA-88",
+      "src_label": "2016江苏A卷 第88题 · 全站正确率 55%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2016JSA-88_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2016JSA-88_j.png",
+      "extra": "（原卷解析此处缺图。）"
+     },
+     {
+      "type": "real",
+      "id": "2016JSA-89",
+      "src_label": "2016江苏A卷 第89题 · 全站正确率 43%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2016JSA-89_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2016JSA-89_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2016JSA-90",
+      "src_label": "2016江苏A卷 第90题 · 全站正确率 63%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2016JSA-90_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2016JSA-90_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2015JSA-57",
+      "src_label": "2015江苏A卷 第57题 · 全站正确率 74%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2015JSA-57_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2015JSA-57_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2015JSA-58",
+      "src_label": "2015江苏A卷 第58题 · 全站正确率 69%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2015JSA-58_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2015JSA-58_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2015JSA-59",
+      "src_label": "2015江苏A卷 第59题 · 全站正确率 81%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2015JSA-59_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2015JSA-59_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2015JSA-60",
+      "src_label": "2015江苏A卷 第60题 · 全站正确率 57%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2015JSA-60_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2015JSA-60_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2015ZJA-83",
+      "src_label": "2015浙江A卷 第83题 · 全站正确率 62%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2015ZJA-83_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2015ZJA-83_j.png"
+     }
+    ],
+    "ana_intro": "本章 79 题。下面是本章官方解析里用到的方法，括号里是用到它的题数，做完对照解析时再看：\n· 相对面（23 题）：展开图里同一行或同一列隔一个面的两面相对，Z 字形两端的两面也相对；相对的两面在立体图上不会同时出现。\n· 公共边 / 画边（43 题）：展开图里构成直角的两条边，折起来是同一条边；在展开图和选项上标出同一条边，比较它两侧的图案。\n· 公共点 / 时针（26 题）：三个面交于一点时，按相同的起点、相同的路径画时针，展开图和选项的转向必须一致。\n· 标号 / 箭头（29 题）：先给各面标号，有方向的图案画箭头，再逐项核对相邻关系和方向。"
+   },
+   {
+    "title": "第 2 章",
+    "module": "视图",
+    "time_min": 14,
+    "count_text": "14 题（真题）",
+    "items": [
+     {
+      "type": "real",
+      "id": "2025GD-46",
+      "src_label": "2025广东 第46题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025GD-46_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025GD-46_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2024GD-49",
+      "src_label": "2024广东 第49题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024GD-49_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024GD-49_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2023GD-45",
+      "src_label": "2023广东县级 第45题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023GD-45_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023GD-45_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2022GD-44",
+      "src_label": "2022广东县级 第44题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022GD-44_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022GD-44_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2023GKX-76",
+      "src_label": "2023国考行政执法 第76题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023GKX-76_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023GKX-76_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2021GK-82",
+      "src_label": "2021国考副省级 第82题（另见2021国考地市级 第76题） · 全站正确率 76%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021GK-82_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021GK-82_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2018GK-81",
+      "src_label": "2018国考副省级 第81题（另见2018国考地市级 第77题）",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2018GK-81_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2018GK-81_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2025JSA-90",
+      "src_label": "2025江苏A类 第90题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025JSA-90_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025JSA-90_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2025ZJA-79",
+      "src_label": "2025浙江A类 第79题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025ZJA-79_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025ZJA-79_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2025ZJA-80",
+      "src_label": "2025浙江A类 第80题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025ZJA-80_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025ZJA-80_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2024HB-78",
+      "src_label": "2024河北 第78题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024HB-78_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024HB-78_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2024JSA-90",
+      "src_label": "2024江苏A类 第90题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024JSA-90_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024JSA-90_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2022SC2-58",
+      "src_label": "2022四川下半年 第58题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022SC2-58_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022SC2-58_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2019ZJA-89",
+      "src_label": "2019浙江A类 第89题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2019ZJA-89_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2019ZJA-89_j.png"
+     }
+    ],
+    "ana_intro": "本章 14 题。下面是本章官方解析里用到的方法，括号里是用到它的题数，做完对照解析时再看：\n· 观察方向（14 题）：主视图（正视图）从前往后看，俯视图从上往下看，左视图从左往右看；“从任一角度观看”就按前、后、左、右、上、下六个方向分别去想。\n· 实线与虚线（1 题）：看得见的轮廓线画实线，看不见的画虚线；选项里多一条线、少一条线都要核对。"
+   },
+   {
+    "title": "第 3 章",
+    "module": "截面与切割",
+    "time_min": 18,
+    "count_text": "18 题（真题）",
+    "items": [
+     {
+      "type": "real",
+      "id": "2024GK-81",
+      "src_label": "2024国考副省级 第81题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024GK-81_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024GK-81_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2024GKD-75",
+      "src_label": "2024国考地市级 第75题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024GKD-75_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024GKD-75_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2023GK-80",
+      "src_label": "2023国考副省级 第80题（另见2023国考地市级 第75题）",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023GK-80_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023GK-80_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2022GK-81",
+      "src_label": "2022国考副省级 第81题（另见2022国考地市级 第75题）",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022GK-81_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022GK-81_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2022GKX-76",
+      "src_label": "2022国考行政执法 第76题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022GKX-76_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022GKX-76_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2020GKD-77",
+      "src_label": "2020国考地市级 第77题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020GKD-77_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020GKD-77_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2019GK-81",
+      "src_label": "2019国考省级 第81题（另见2019国考地市级 第76题）",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2019GK-81_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2019GK-81_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2018GK-82",
+      "src_label": "2018国考副省级 第82题（另见2018国考地市级 第76题）",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2018GK-82_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2018GK-82_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2016GK-77",
+      "src_label": "2016国考副省级 第77题（另见2016国考地市级 第74题）",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2016GK-77_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2016GK-77_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2015GK-80",
+      "src_label": "2015国考副省级 第80题（另见2015国考地市级 第75题）",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2015GK-80_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2015GK-80_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2023ZJA-80",
+      "src_label": "2023浙江A类 第80题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023ZJA-80_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023ZJA-80_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2022ZJA-80",
+      "src_label": "2022浙江A类 第80题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022ZJA-80_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022ZJA-80_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2021SD-48",
+      "src_label": "2021山东 第48题 · 全站正确率 41%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021SD-48_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021SD-48_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2020HB-77",
+      "src_label": "2020河北 第77题 · 全站正确率 59%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020HB-77_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020HB-77_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2020JSA-90",
+      "src_label": "2020江苏A类 第90题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020JSA-90_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020JSA-90_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2020SD-50",
+      "src_label": "2020山东 第50题 · 全站正确率 46%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020SD-50_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020SD-50_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2019JSA-90",
+      "src_label": "2019江苏A卷 第90题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2019JSA-90_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2019JSA-90_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2017ZJA-55",
+      "src_label": "2017浙江A卷 第55题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2017ZJA-55_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2017ZJA-55_j.png"
+     }
+    ],
+    "ana_intro": "本章 18 题。下面是本章官方解析里用到的方法，括号里是用到它的题数，做完对照解析时再看：\n· 截面的边（12 题）：截面的每条边都落在立体的某个面上：切到平面得到直线段，切到曲面一般得到曲线（顺着圆柱、圆锥的母线切时是直线）。\n· 空心与挖空（2 题）：空心或挖空的立体，要看切面有没有穿过空的部分：穿过时截面中间会出现空洞，或者被分成几块。"
+   },
+   {
+    "title": "第 4 章",
+    "module": "立体拼合与补形",
+    "time_min": 18,
+    "count_text": "18 题（真题）",
+    "items": [
+     {
+      "type": "real",
+      "id": "2025GD-50",
+      "src_label": "2025广东 第50题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025GD-50_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025GD-50_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2024GD-50",
+      "src_label": "2024广东 第50题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024GD-50_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024GD-50_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2023GD-42",
+      "src_label": "2023广东县级 第42题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023GD-42_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023GD-42_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2023GD-44",
+      "src_label": "2023广东县级 第44题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023GD-44_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023GD-44_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2025GK-85",
+      "src_label": "2025国考副省级 第85题（另见2025国考地市级 第82题）",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025GK-85_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025GK-85_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2025GKX-81",
+      "src_label": "2025国考行政执法 第81题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025GKX-81_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025GKX-81_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2024GK-82",
+      "src_label": "2024国考副省级 第82题（另见2024国考地市级 第76题）",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024GK-82_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024GK-82_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2022GK-82",
+      "src_label": "2022国考副省级 第82题（另见2022国考地市级 第77题、2022国考行政执法 第77题）",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022GK-82_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022GK-82_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2021GKD-77",
+      "src_label": "2021国考地市级 第77题 · 全站正确率 53%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021GKD-77_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021GKD-77_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2020GKD-76",
+      "src_label": "2020国考地市级 第76题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020GKD-76_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020GKD-76_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2019GK-80",
+      "src_label": "2019国考省级 第80题（另见2019国考地市级 第77题）",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2019GK-80_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2019GK-80_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2017GK-82",
+      "src_label": "2017国考副省级 第82题（另见2017国考地市级 第77题）",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2017GK-82_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2017GK-82_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2025HB-83",
+      "src_label": "2025河北 第83题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025HB-83_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025HB-83_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2025SC-62",
+      "src_label": "2025四川 第62题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025SC-62_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025SC-62_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2024SC-61",
+      "src_label": "2024四川 第61题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024SC-61_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024SC-61_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2024ZJA-80",
+      "src_label": "2024浙江A类 第80题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024ZJA-80_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024ZJA-80_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2022SC1-61",
+      "src_label": "2022四川上半年 第61题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022SC1-61_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022SC1-61_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2021SC0327-62",
+      "src_label": "2021四川(3月) 第62题 · 全站正确率 31%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021SC0327-62_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021SC0327-62_j.png",
+      "extra": "（原卷解析此处缺少拼合后的示意图。）"
+     }
+    ],
+    "ana_intro": "本章 18 题。下面是本章官方解析里用到的方法，括号里是用到它的题数，做完对照解析时再看：\n· 数块数（7 题）：先数小正方体的个数：各部分的块数加起来要等于整体，补形题是整体减去已给的部分。\n· 特殊部分（1 题）：再找特殊部分：凸出、凹进、最高或最长的那一列只能由某一块提供，先定它的位置。\n· 转动（3 题）：零件通常可以转动方向后再拼（题目另有说明的除外），比对时把选项在脑中转一转。"
+   },
+   {
+    "title": "第 5 章",
+    "module": "平面拼合与分割",
+    "time_min": 44,
+    "count_text": "44 题（真题）",
+    "items": [
+     {
+      "type": "real",
+      "id": "2025JSA-86",
+      "src_label": "2025江苏A类 第86题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025JSA-86_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025JSA-86_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2025JSA-87",
+      "src_label": "2025江苏A类 第87题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025JSA-87_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025JSA-87_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2025SC-60",
+      "src_label": "2025四川 第60题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025SC-60_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025SC-60_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2024JSA-82",
+      "src_label": "2024江苏A类 第82题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024JSA-82_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024JSA-82_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2024JSA-83",
+      "src_label": "2024江苏A类 第83题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024JSA-83_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024JSA-83_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2024JSA-84",
+      "src_label": "2024江苏A类 第84题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024JSA-84_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024JSA-84_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2024JSA-85",
+      "src_label": "2024江苏A类 第85题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024JSA-85_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024JSA-85_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2024JSA-86",
+      "src_label": "2024江苏A类 第86题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024JSA-86_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024JSA-86_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2024SC-59",
+      "src_label": "2024四川 第59题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024SC-59_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024SC-59_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2023JSA-85",
+      "src_label": "2023江苏A类 第85题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023JSA-85_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023JSA-85_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2023JSA-86",
+      "src_label": "2023江苏A类 第86题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023JSA-86_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023JSA-86_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2022JSA-84",
+      "src_label": "2022江苏A类 第84题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022JSA-84_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022JSA-84_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2022JSA-85",
+      "src_label": "2022江苏A类 第85题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022JSA-85_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022JSA-85_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2022JSA-86",
+      "src_label": "2022江苏A类 第86题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022JSA-86_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022JSA-86_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2022JSA-87",
+      "src_label": "2022江苏A类 第87题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022JSA-87_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022JSA-87_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2022JSA-88",
+      "src_label": "2022江苏A类 第88题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022JSA-88_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022JSA-88_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2022SC1-60",
+      "src_label": "2022四川上半年 第60题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022SC1-60_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022SC1-60_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2022SC2-55",
+      "src_label": "2022四川下半年 第55题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022SC2-55_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022SC2-55_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2021JSA-83",
+      "src_label": "2021江苏A卷 第83题 · 全站正确率 55%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021JSA-83_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021JSA-83_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2021JSA-84",
+      "src_label": "2021江苏A卷 第84题 · 全站正确率 78%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021JSA-84_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021JSA-84_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2021JSA-85",
+      "src_label": "2021江苏A卷 第85题 · 全站正确率 91%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021JSA-85_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021JSA-85_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2021JSA-86",
+      "src_label": "2021江苏A卷 第86题 · 全站正确率 75%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2021JSA-86_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2021JSA-86_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2020JSA-79",
+      "src_label": "2020江苏A类 第79题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020JSA-79_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020JSA-79_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2020JSA-80",
+      "src_label": "2020江苏A类 第80题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020JSA-80_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020JSA-80_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2020JSA-81",
+      "src_label": "2020江苏A类 第81题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020JSA-81_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020JSA-81_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2020JSA-82",
+      "src_label": "2020江苏A类 第82题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020JSA-82_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020JSA-82_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2020JSA-83",
+      "src_label": "2020江苏A类 第83题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020JSA-83_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020JSA-83_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2020SC1206-54",
+      "src_label": "2020四川(12月) 第54题 · 全站正确率 28%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2020SC1206-54_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2020SC1206-54_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2019JSA-81",
+      "src_label": "2019江苏A卷 第81题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2019JSA-81_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2019JSA-81_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2019JSA-82",
+      "src_label": "2019江苏A卷 第82题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2019JSA-82_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2019JSA-82_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2019JSA-83",
+      "src_label": "2019江苏A卷 第83题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2019JSA-83_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2019JSA-83_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2018JSA-80",
+      "src_label": "2018江苏A类 第80题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2018JSA-80_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2018JSA-80_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2018JSA-81",
+      "src_label": "2018江苏A类 第81题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2018JSA-81_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2018JSA-81_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2018JSA-82",
+      "src_label": "2018江苏A类 第82题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2018JSA-82_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2018JSA-82_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2018JSA-83",
+      "src_label": "2018江苏A类 第83题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2018JSA-83_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2018JSA-83_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2018JSA-84",
+      "src_label": "2018江苏A类 第84题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2018JSA-84_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2018JSA-84_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2018ZJA-7",
+      "src_label": "2018浙江A卷 第7题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2018ZJA-7_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2018ZJA-7_j.png",
+      "extra": "故正确答案为B。",
+      "jiexi_pre": "本题为平面拼合，可以采用平行等长的方法进行拼合，如下图所示："
+     },
+     {
+      "type": "real",
+      "id": "2017JSA-84",
+      "src_label": "2017江苏A类 第84题 · 全站正确率 72%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2017JSA-84_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2017JSA-84_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2017JSA-85",
+      "src_label": "2017江苏A类 第85题 · 全站正确率 64%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2017JSA-85_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2017JSA-85_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2017JSA-86",
+      "src_label": "2017江苏A类 第86题 · 全站正确率 47%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2017JSA-86_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2017JSA-86_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2016JSA-85",
+      "src_label": "2016江苏A卷 第85题 · 全站正确率 65%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2016JSA-85_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2016JSA-85_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2016JSA-86",
+      "src_label": "2016江苏A卷 第86题 · 全站正确率 34%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2016JSA-86_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2016JSA-86_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2015JSA-55",
+      "src_label": "2015江苏A卷 第55题 · 全站正确率 77%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2015JSA-55_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2015JSA-55_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2015JSA-56",
+      "src_label": "2015江苏A卷 第56题 · 全站正确率 57%",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2015JSA-56_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2015JSA-56_j.png"
+     }
+    ],
+    "ana_intro": "本章 44 题。下面是本章官方解析里用到的方法，括号里是用到它的题数，做完对照解析时再看：\n· 平行且等长相消（34 题）：拼在一起的两条边平行且等长，可以消去；消去后剩下的轮廓应与正确选项一致。\n· 平移 / 旋转（21 题）：题目说“只能平移”时不能旋转、翻转，每块的朝向要和原图一致。"
+   },
+   {
+    "title": "第 6 章",
+    "module": "折纸与剪纸",
+    "time_min": 3,
+    "count_text": "3 题（真题）",
+    "items": [
+     {
+      "type": "real",
+      "id": "2024GD-48",
+      "src_label": "2024广东 第48题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2024GD-48_q.png",
+      "answer": "A",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2024GD-48_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2023GKD-76",
+      "src_label": "2023国考地市级 第76题（另见2023国考行政执法 第75题）",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023GKD-76_q.png",
+      "answer": "D",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023GKD-76_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2025SC-61",
+      "src_label": "2025四川 第61题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2025SC-61_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2025SC-61_j.png"
+     }
+    ],
+    "ana_intro": "本章 3 题。下面是本章官方解析里用到的方法，括号里是用到它的题数，做完对照解析时再看：\n· 逆向展开（3 题）：按折叠的相反顺序一步步展开：每展开一次，剪出的图形关于这一次的折痕对称地多出一份。\n· 重叠部分（1 题）：求折叠后的面积时，叠在一起的部分只算一次。"
+   },
+   {
+    "title": "第 7 章",
+    "module": "立体识别",
+    "time_min": 2,
+    "count_text": "2 题（真题）",
+    "items": [
+     {
+      "type": "real",
+      "id": "2023GD-43",
+      "src_label": "2023广东县级 第43题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2023GD-43_q.png",
+      "answer": "B",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2023GD-43_j.png"
+     },
+     {
+      "type": "real",
+      "id": "2022GD-41",
+      "src_label": "2022广东县级 第41题",
+      "q_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2_nonum/2022GD-41_q.png",
+      "answer": "C",
+      "kaofa": null,
+      "technique": null,
+      "jiexi_img": "/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad/crops/real2/2022GD-41_j.png"
+     }
+    ],
+    "ana_intro": "本章 2 题。下面是本章官方解析里用到的方法，括号里是用到它的题数，做完对照解析时再看：\n· 特征位置（1 题）：抓一个特征最明显的面或点，看它和周围面的位置关系在各选项中是否保持不变。"
+   }
+  ]
+ },
+ "dropped": [
+  [
+   "2021ZJA-84",
+   "官方解析注明本题有误（A、B 两项都能拼成）"
+  ],
+  [
+   "2026GK-86",
+   "无答案"
+  ],
+  [
+   "2026GD-48",
+   "无答案"
+  ],
+  [
+   "2022JSA-90",
+   "原卷题图本身带解题标注（面号、圆点、箭头），会暴露思路，找不到干净原图"
+  ],
+  [
+   "2026ZJA-74",
+   "无答案"
+  ],
+  [
+   "2026GD-50",
+   "无答案"
+  ],
+  [
+   "2023JSA-81",
+   "非固定"
+  ],
+  [
+   "2026GK-87",
+   "无答案"
+  ],
+  [
+   "2024SD-68",
+   "官方解析注明本题为争议题"
+  ],
+  [
+   "2018JSA-98",
+   "非固定"
+  ],
+  [
+   "2021HB-79",
+   "官方解析结论为 C、D 两项都能组成（一题两解）"
+  ],
+  [
+   "2026ZJA-75",
+   "无答案"
+  ],
+  [
+   "2021SC0327-61",
+   "原卷为低分辨率扫描，立方体顶面的箭头方向看不清（解题关键）"
+  ],
+  [
+   "2015GKD-74",
+   "与 2015GK-79 同题"
+  ],
+  [
+   "2015GKD-75",
+   "与 2015GK-80 同题"
+  ],
+  [
+   "2016GKD-74",
+   "与 2016GK-77 同题"
+  ],
+  [
+   "2017GKD-76",
+   "与 2017GK-81 同题"
+  ],
+  [
+   "2017GKD-77",
+   "与 2017GK-82 同题"
+  ],
+  [
+   "2018GKD-75",
+   "与 2018GK-80 同题"
+  ],
+  [
+   "2018GKD-77",
+   "与 2018GK-81 同题"
+  ],
+  [
+   "2018GKD-76",
+   "与 2018GK-82 同题"
+  ],
+  [
+   "2019GKD-77",
+   "与 2019GK-80 同题"
+  ],
+  [
+   "2019GKD-76",
+   "与 2019GK-81 同题"
+  ],
+  [
+   "2019GKD-75",
+   "与 2019GK-82 同题"
+  ],
+  [
+   "2021GK-80",
+   "与 2021GKD-75 同题"
+  ],
+  [
+   "2021GKD-76",
+   "与 2021GK-82 同题"
+  ],
+  [
+   "2022GKD-75",
+   "与 2022GK-81 同题"
+  ],
+  [
+   "2022GKD-77",
+   "与 2022GK-82 同题"
+  ],
+  [
+   "2022GKX-77",
+   "与 2022GK-82 同题"
+  ],
+  [
+   "2022GKX-75",
+   "与 2022GKD-76 同题"
+  ],
+  [
+   "2022ZJA-73",
+   "与 2022HB-80 同题"
+  ],
+  [
+   "2023GKD-75",
+   "与 2023GK-80 同题"
+  ],
+  [
+   "2023GKX-75",
+   "与 2023GKD-76 同题"
+  ],
+  [
+   "2024GKD-76",
+   "与 2024GK-82 同题"
+  ],
+  [
+   "2025GKD-82",
+   "与 2025GK-85 同题"
+  ],
+  [
+   "2025GKD-81",
+   "与 2025GK-86 同题"
+  ]
+ ]
+}

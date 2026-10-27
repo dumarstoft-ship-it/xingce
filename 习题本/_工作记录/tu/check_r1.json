@@ -1,0 +1,302 @@
+[
+ {
+  "id": "2024GD-49",
+  "type": "视图",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": ""
+ },
+ {
+  "id": "2017JSA-90",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "题图图形上方和选项字母下方各有一条贯穿的细横线（原卷表格线），不影响"
+ },
+ {
+  "id": "2020GKD-76",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "guess为六面体/折纸盒，实为三个多面体拼合成给定立体（填问号处的部件）"
+ },
+ {
+  "id": "2022GKD-76",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": "选出折成的纸盒与其他三个不一样的展开图；与2022GKX-75是同一道题（题图、解析完全相同），专项本只需收一次。第一次看时题图底部多4行导出文字“A、如上图所示”…“D、如上图所示”，该文件11:25已被重新裁剪，复查新版：多余文字已去掉，题干、4个展开图和A–D完整"
+ },
+ {
+  "id": "2023ZJA-80",
+  "type": "截面与切割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "guess为六面体/折纸盒，实为多面体截面（选非题）"
+ },
+ {
+  "id": "2025JSA-88",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": ""
+ },
+ {
+  "id": "2015JSA-55",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "平移拼合"
+ },
+ {
+  "id": "2021JSA-85",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "平移拼合；题干文字说“右边/左边”，实际排版为上下两行（原题如此）；解析图中有一条竖直细线（原图残留），不影响"
+ },
+ {
+  "id": "2017ZJA-55",
+  "type": "截面与切割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "解析截图末尾（“本题为选非题，故正确答案为B。”之后）混进了56题解析的配图：一个标有1和1′的削角正方体展开图，且该图底部被截断；本题解析文字和图1–3本身完整",
+  "jiexi_answer": "B",
+  "note": "需把解析截图裁到“故正确答案为B。”为止。这张多出来的图正是2017ZJA-56解析里“如上图所示”缺的那张（56的解析截图顶部只剩这张图的底边残片），重裁时可以把它挪给56"
+ },
+ {
+  "id": "2015JSA-56",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "平移拼合；题干文字说“下边/上边”，实际排版为左右（原题如此）；文字里的页脚“-6-/-12- 2015年江苏省…真题A”在截图中没有出现"
+ },
+ {
+  "id": "2021JSA-86",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "平移拼合；题干文字说“右边/左边”，实际排版为上下两行（原题如此）"
+ },
+ {
+  "id": "2019JSA-90",
+  "type": "截面与切割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "空心圆柱截面（选非题）"
+ },
+ {
+  "id": "2025GD-46",
+  "type": "视图",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": "四棱锥俯视图"
+ },
+ {
+  "id": "2018GK-80",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": ""
+ },
+ {
+  "id": "2020JSA-84",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": "四面体折纸盒"
+ },
+ {
+  "id": "2022GKX-75",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": "与2022GKD-76是同一道题（题图、解析完全相同），专项本只需收一次。题图11:26已被重新裁剪（去掉了题干开头的“（单选题）”），复查新版完整"
+ },
+ {
+  "id": "2024GK-80",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "小正方体粘成的长方体的外表面展开图"
+ },
+ {
+  "id": "2025SC-61",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "折纸剪窗花（长方形纸折叠后沿虚线剪，展开看图案），属平面剪切类；guess为六面体/折纸盒，不对"
+ },
+ {
+  "id": "2017JSA-84",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "平移拼合"
+ },
+ {
+  "id": "2021SC0327-62",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "解析写“因此拼合后的图形如下图所示：”，但后面没有图，紧接“因此，选择D选项”。已核对原解析PDF第15页，原文就缺这张图，不是裁剪问题，重裁也补不回来；解析文字本身完整",
+  "jiexi_answer": "D",
+  "note": "4个四面体拼成正方体，问号处补哪个；guess为平面拼合，不对"
+ },
+ {
+  "id": "2020HB-77",
+  "type": "截面与切割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "挖空圆台截面（选非题）"
+ },
+ {
+  "id": "2015GKD-75",
+  "type": "截面与切割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": "切掉一角的正方体截面（选非题）；guess为六面体/折纸盒，不对"
+ },
+ {
+  "id": "2018JSA-86",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "四面体折纸盒；解析提到“蓝点”，截图为灰度，起点处是黑点，不影响理解"
+ },
+ {
+  "id": "2020SC1206-56",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "四面体折纸盒；解析配图上方有一条贯穿的细横线（原文档自带），不影响"
+ },
+ {
+  "id": "2022JSA-91",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "正方体展开图折叠（题干称“多面体”）"
+ },
+ {
+  "id": "2024GKD-77",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "小正方体粘成的长方体的外表面展开图（选非题）"
+ },
+ {
+  "id": "2026CQ-74",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "解析截图只是把原题（带题号“74、”、题干和全部图形）又截了一遍，再加一行“【答案】B”，没有任何解析过程。原资料《2026年重庆省考行测真题答案》本来就只有答案没有解析，重裁也得不到解析",
+  "jiexi_answer": "B",
+  "note": "带把手的立方体纸盒的展开图；题图上下边距很窄，但文字和A–D字母都完整"
+ },
+ {
+  "id": "2018JSA-80",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "平移拼合；题干文字中的页眉“2018年江苏省…真题A -9-”在截图中没有出现"
+ },
+ {
+  "id": "2022JSA-88",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": "纸片可平移、旋转、翻转的拼合；图框顶边在原卷中就极淡（已核对原卷第15页），截图里几乎看不到，图形和选项完整，不影响"
+ },
+ {
+  "id": "2022GKD-75",
+  "type": "截面与切割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "空心组合体（上圆锥下圆台）截面；查看的是11:24重新裁过的题图，已无“A、如上图所示”文字"
+ }
+]

@@ -51,6 +51,8 @@ table.key tr.n td { background: #f1f1f1; color: #555; font-size: 8pt; }
 .ana .txt { font-size: 10pt; }
 .ana .txt p { margin: 0 0 0.8mm 0; }
 .src-note { font-size: 8.5pt; color: #666; }
+.intro { font-size: 9.5pt; line-height: 1.6; background: #f5f5f5; border-left: 3px solid #555; padding: 2mm 3mm; margin: 0 0 4.5mm 0; }
+.intro p { margin: 0 0 1mm 0; }
 """
 
 def esc(s):
@@ -102,7 +104,9 @@ def render_ana(n, it):
     if kf: head += f' ｜ {esc(kf)}'
     head += '］</span></div>'
     if it['type'] == 'real':
-        if it.get('jiexi_img'):
+        if it.get('jiexi_imgs'):  # a 解析 too long for one page, cut at its page breaks
+            body = ''.join(img_tag(p, max_h=9.9) for p in it['jiexi_imgs'])
+        elif it.get('jiexi_img'):
             body = img_tag(it['jiexi_img'], max_h=9.9)
         elif it.get('jiexi_text'):
             body = f'<div class="txt">{rich(it["jiexi_text"])}</div>'
@@ -110,6 +114,8 @@ def render_ana(n, it):
             body = '<div class="src-note">（解析待补）</div>'
         if it.get('extra'):
             body += f'<div class="txt">{rich(it["extra"])}</div>'
+        if it.get('jiexi_pre'):  # the 解析's own text above its figure, when the scan of that text is unusable
+            body = f'<div class="txt">{rich(it["jiexi_pre"])}</div>' + body
     else:
         body = f'<div class="txt">{rich(it["jiexi"])}</div>'
         if it.get('extra'): body += f'<div class="txt">{rich(it["extra"])}</div>'
@@ -126,15 +132,16 @@ def key_table(items, start=1):
 def render_day(day, out_html):
     fonts = ''.join(f'<link rel="stylesheet" href="file://{R}/node_modules/@fontsource/{f}/{w}.css">' for f in ('noto-serif-sc', 'noto-sans-sc') for w in (400, 700))
     katex = f'<link rel="stylesheet" href="file://{R}/node_modules/katex/dist/katex.min.css"><script src="file://{R}/node_modules/katex/dist/katex.min.js"></script><script src="file://{R}/node_modules/katex/dist/contrib/auto-render.min.js"></script>'
-    h = [f'<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>第{day["day"]}天</title>{fonts}{katex}<style>{CSS}</style></head><body>']
+    h = [f'<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>{esc(day.get("title") or "第" + str(day["day"]) + "天")}</title>{fonts}{katex}<style>{CSS}</style></head><body>']
     # cover
     def cnt(p):
         nr = sum(1 for i in p['items'] if i['type'] == 'real'); nt = sum(1 for i in p['items'] if i['type'] == 'teacher')
         nv = len(p['items']) - nr - nt
         return f'{len(p["items"])} 题（真题 {nr}' + (f'，老师精选 {nt}' if nt else '') + f'，改编 {nv}）'
-    rows = ''.join(f'<tr><td>{esc(p["title"])}</td><td>{esc(p["module"])}</td><td>{cnt(p) if not p.get("print_only") else str(len(p["items"])) + f" 题（{zl_kind(p['items'])}，题目在打印册）"}</td><td>{p.get("time_min", "")} 分钟</td></tr>' for p in day['parts'])
-    h.append(f'<div class="cover"><h1>第 {day["day"]} 天</h1><div class="sub">{esc(day.get("subtitle", "广东省考 42 天专项训练 · 数量关系 + 判断推理"))}</div>'
-             f'<table><tr><th>部分</th><th>今日模块</th><th>题量</th><th>建议用时</th></tr>{rows}</table>'
+    rows = ''.join(f'<tr><td>{esc(p["title"])}</td><td>{esc(p["module"])}</td><td>{p.get("count_text") or cnt(p) if not p.get("print_only") else str(len(p["items"])) + f" 题（{zl_kind(p['items'])}，题目在打印册）"}</td><td>{p.get("time_min", "")} 分钟</td></tr>' for p in day['parts'])
+    cover_title = day.get('title') or f'第 {day["day"]} 天'
+    h.append(f'<div class="cover"><h1>{esc(cover_title)}</h1><div class="sub">{esc(day.get("subtitle", "广东省考 42 天专项训练 · 数量关系 + 判断推理"))}</div>'
+             f'<table><tr><th>部分</th><th>{esc(day.get("module_head", "今日模块"))}</th><th>题量</th><th>建议用时</th></tr>{rows}</table>'
              f'<div class="note">{esc(day.get("note", ""))}</div></div>')
     # parts
     for p in day['parts']:
@@ -166,6 +173,8 @@ def render_day(day, out_html):
     h.append('</div>')
     for p in day['parts']:
         h.append(f'<div class="part"><div class="part-h"><span>解析 · {esc(p["title"])}</span><span class="meta">{esc(p["module"])}</span></div>')
+        if p.get('ana_intro'):  # a chapter's method summary, shown before its 解析 (the question pages stay bare)
+            h.append(f'<div class="intro">{rich(p["ana_intro"])}</div>')
         cur_set = None
         for i, it in enumerate(p['items'], 1):
             if p.get('print_only') and it['set'] != cur_set:

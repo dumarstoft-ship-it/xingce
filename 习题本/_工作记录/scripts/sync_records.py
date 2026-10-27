@@ -2,7 +2,7 @@
 import os, shutil, glob
 S = '/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad'
 D = '/home/user/xingce/习题本/_工作记录'
-FULL = ['briefs', 'blueprints', 'cls', 'gen', 'gen_unused', 'prompts', 'review', 'scripts', 'tasks_in', 'verify', 'teacher', 'harden', 'cropfix', 'zl', 'w2']
+FULL = ['briefs', 'blueprints', 'cls', 'gen', 'gen_unused', 'prompts', 'review', 'scripts', 'tasks_in', 'verify', 'teacher', 'harden', 'cropfix', 'zl', 'w2', 'tu']
 DB = ['real_raw.json', 'schedule.json', 'answer_fixes.json', 'overrides.json', 'real_overrides.json', 'recrop.json', 'ocr_answers.json',
       'math_harden.json', 'realonly_plan.json', 'realonly_frozen.json', 'doc_offsets.json',
       'zl_raw.json', 'zl_dups.json', 'zl_fixes.json', 'zl_incomplete.json', 'zl_meta_all.json', 'zl_pool.json', 'zl_rank.json', 'zl_sets.json', 'zl_plan.json',

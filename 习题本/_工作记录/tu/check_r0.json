@@ -1,0 +1,302 @@
+[
+ {
+  "id": "2019ZJA-89",
+  "type": "视图",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": "题干首字左侧有2像素淡灰点（原题号顿号残留），肉眼几乎不可见"
+ },
+ {
+  "id": "2017GKD-76",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": ""
+ },
+ {
+  "id": "2019JSA-86",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": ""
+ },
+ {
+  "id": "2021SD-49",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "解析配图右侧被截断：原解析有A、B、D三幅标出相邻边的展开图，截图只剩A和半个B，D完全缺失；文字部分完整",
+  "jiexi_answer": "C",
+  "note": "由立体图形选外表面展开图"
+ },
+ {
+  "id": "2023JSA-88",
+  "type": "折纸盒与六面体",
+  "q_ok": false,
+  "q_problem": "质量：题图是试卷拍照，灰色底、线条发虚（内容完整、能辨认）；解析截图开头有同题题干和清晰重绘的展开图及A–D选项，建议换用",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "解析截图开头重复了题干和选项图（属本题，不算混题）"
+ },
+ {
+  "id": "2025GKD-82",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "题干提到①②③，但图中各块未标序号（原卷即如此）"
+ },
+ {
+  "id": "2023GD-45",
+  "type": "视图",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": ""
+ },
+ {
+  "id": "2020JSA-83",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": ""
+ },
+ {
+  "id": "2025SC-60",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "轻微：配图上方混入一条被截断的残字（只剩一行字的下沿，约3像素高的碎点，y≈206–208，原解析配图自带），需抹掉；其余完整",
+  "jiexi_answer": "C",
+  "note": "官方答案为空，解析答案为C"
+ },
+ {
+  "id": "2023SD-50",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "已知3×3小方块组成的立方体五个表面的黑白图案，求下表面；解析把各面排进六面体展开图、用相邻面公共边推外圈（若按“表面图案”归类也可放立体识别）；面名称“上表面”等原图为浅灰小字，截图中略发虚但可辨认"
+ },
+ {
+  "id": "2020SC1206-54",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": ""
+ },
+ {
+  "id": "2026GD-48",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "没有解析截图（j_img为空）",
+  "jiexi_answer": "",
+  "note": "官方答案和解析都没有；按图形尺寸推算应为A（第四个阶梯形的上层与第二个L形的上层并成顶部通栏，阶梯错位形成左上凸出，C、D、B三种凸出位置都拼不出；非官方，仅供核对）；题干首字左侧有2像素淡灰点（原题号残留），肉眼几乎不可见"
+ },
+ {
+  "id": "2022GD-44",
+  "type": "视图",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "由两个视图反推立体；题干首字左侧有2像素淡灰点（原题号残留），肉眼几乎不可见"
+ },
+ {
+  "id": "2017JSA-88",
+  "type": "折纸盒与六面体",
+  "q_ok": false,
+  "q_problem": "轻微：右侧大框外多一条细灰竖线（x≈1105，从框顶一直到D字母下方，原图边缘残留），需裁掉或擦掉；题干、展开图和A–D选项完整",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "四面体折纸盒"
+ },
+ {
+  "id": "2019ZJA-90",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "由立体图形（含四分之一圆柱面）选外表面展开图；题图偏小但能看清"
+ },
+ {
+  "id": "2022GK-80",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "轻微：底边混入一条通栏灰色细线及右端一小段竖线（下一题“81.解析”标题框的上边框），需裁掉底部约10像素；解析内容完整",
+  "jiexi_answer": "A",
+  "note": ""
+ },
+ {
+  "id": "2023SC-61",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "四个展开图中选折出的纸盒不同的一个（选非题）"
+ },
+ {
+  "id": "2025GKX-82",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "四个展开图中选与其他三个不是同一纸盒的一项（选非题）"
+ },
+ {
+  "id": "2025GD-50",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": "官方答案为空，解析答案为C"
+ },
+ {
+  "id": "2021JSA-83",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "题干首字左侧有2像素淡灰点（原题号残留），肉眼几乎不可见"
+ },
+ {
+  "id": "2016GK-77",
+  "type": "截面与切割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": ""
+ },
+ {
+  "id": "2025ZJA-80",
+  "type": "视图",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": "墙角堆码纸箱求俯视图（结合个数推隐藏纸箱）"
+ },
+ {
+  "id": "2018GK-81",
+  "type": "视图",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "解析末尾（“故正确答案为D。”之后）混入下一题82题解析的配图（图1、图2、图3三个立体），底部“图1/图2/图3”标签下沿还被切掉，需整块裁掉；本题解析内容完整",
+  "jiexi_answer": "D",
+  "note": "选非题：哪项不可能是该多面体的视图"
+ },
+ {
+  "id": "2020JSA-85",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "四面体折纸盒；原解析首句“如下图”后没有单独的标号图，A项分析也缺“A项：”字样（原文如此，非截图问题）"
+ },
+ {
+  "id": "2022GKX-77",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "题图在核查期间被更新过，按更新后版本（1413×680）核查：题干、①②③和A–D完整，“A.如上图所示”等行已去掉；左上角框角有极小的十字残线，可忽略"
+ },
+ {
+  "id": "2024GK-81",
+  "type": "截面与切割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "过A、B、C三顶点切小方块组合体，选截面"
+ },
+ {
+  "id": "2025SC-62",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "官方答案为空，解析答案为D"
+ },
+ {
+  "id": "2017JSA-85",
+  "type": "平面拼合与分割",
+  "q_ok": false,
+  "q_problem": "轻微：A–D字母下方多一条通栏灰色横线（y≈332–333，2像素），需裁掉；题干、四个图形和选项完整",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "解析底边最后1像素行有下一题首行文字的顶端残点（17个淡灰像素），几乎不可见，可顺手裁掉1像素"
+ },
+ {
+  "id": "2022JSA-84",
+  "type": "平面拼合与分割",
+  "q_ok": false,
+  "q_problem": "右侧四个选项框下没有A–D字母（原卷图本身就没有，不是裁切造成），需按从左到右补标A–D；题干和全部图形完整",
+  "j_ok": false,
+  "j_problem": "轻微：底边多一条通栏灰色细线（下一题“85.解析”标题框的上边框），需裁掉；解析内容完整",
+  "jiexi_answer": "A",
+  "note": "解析配图原为彩色，截图转为灰度，各块深浅仍可区分"
+ },
+ {
+  "id": "2020JSA-90",
+  "type": "截面与切割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "选非题；题干首字左侧有2像素淡灰点（原题号残留），肉眼几乎不可见"
+ }
+]

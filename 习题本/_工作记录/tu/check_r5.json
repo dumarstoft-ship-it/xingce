@@ -1,0 +1,292 @@
+[
+ {
+  "id": "2016JSA-88",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "四面体折纸盒。解析文字说“对图形进行数字标记”“如下图所示”，但原PDF此处本身就没有配图（第20页末至第21页顶为空白），截图已含全部文字，只是缺标记图，阅读略吃力"
+ },
+ {
+  "id": "2019GKD-76",
+  "type": "截面与切割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": ""
+ },
+ {
+  "id": "2021JSA-89",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "漏掉了标号展开图：原PDF第22页顶部有一张标出面1–6和红色箭头的展开图（即“对展开图中的各面进行标号，如下图所示”所指），截图中“如下图所示：”后直接接选项立方体图，后文的面1/3/5/6无从对应；开头结尾完整，需补裁该图",
+  "jiexi_answer": "D",
+  "note": ""
+ },
+ {
+  "id": "2023GKD-76",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "平面折纸题（直角三角形纸片两次折叠后求投影面积），不是折纸盒；按平面类归入，若专项本另设“折纸/剪纸”可单列"
+ },
+ {
+  "id": "2024ZJA-79",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "轻微：底部残留约5px宽的灰色横条（下一题“80、正确答案是：A”标题底色的上沿），从底部裁掉约6px即可；解析内容完整",
+  "jiexi_answer": "C",
+  "note": "解析为灰度图，原图中的红色标注（B项红点、D项公共边红线）变灰后D项那条线几乎看不出"
+ },
+ {
+  "id": "2022SC1-60",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "图形组合题（平移、旋转、重叠覆盖）；解析截图中部有一处淡色斜向描边水印（原PDF自带），不影响阅读"
+ },
+ {
+  "id": "2020JSA-79",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": ""
+ },
+ {
+  "id": "2024JSA-86",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "平面分割（选非题）"
+ },
+ {
+  "id": "2024ZJA-80",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": ""
+ },
+ {
+  "id": "2020JSA-80",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": ""
+ },
+ {
+  "id": "2024SC-59",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "可读性问题：解析图中③号三角形原PDF为黄色线条，截图灰度化后③的轮廓和编号“③”极淡，几乎看不清（拼合图里也一样）；解析文字和其余图形完整",
+  "jiexi_answer": "D",
+  "note": "可考虑改用彩色截图或加深③的线条"
+ },
+ {
+  "id": "2026ZJA-75",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "无解析截图（j_img为空、jiexi_raw为空），也无官方答案；库里只有该卷网友回忆版题本，没有解析PDF",
+  "jiexi_answer": "",
+  "note": "自行推算答案为D（仅供参考）：按正面和后面图重建立体（4×2×3长方体去掉前排3块，共21块），对四个选项穷举旋转和摆放，只有D能用3个相同小立体恰好拼成"
+ },
+ {
+  "id": "2016JSA-90",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": ""
+ },
+ {
+  "id": "2019JSA-84",
+  "type": "折纸盒与六面体",
+  "q_ok": false,
+  "q_problem": "题图只有一行题干文字（图高仅39px），左侧展开图和A–D四个选项图全部缺失；原卷中该题图形在下一页（第9页顶部），需跨页补裁",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "四棱锥（多面体）折纸盒；解析截图完整，内含题干展开图和选项图"
+ },
+ {
+  "id": "2021SC0327-61",
+  "type": "折纸盒与六面体",
+  "q_ok": false,
+  "q_problem": "清晰度问题：原卷是96dpi扫描件，题图偏糊，图①、图②立方体顶面的箭头和十字图案很难辨认（图①箭头方向是解题关键）；D项最下方十字格有一道横向白色断痕（原扫描件自带）。题干、图①②和A–D四个展开图都齐全，若有更清晰来源建议替换",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "jiexi_raw里OCR把“图①”“A项”识别成“图切”“且项”，截图本身文字正确"
+ },
+ {
+  "id": "2023HB-78",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "多面体（长方体+四棱锥组合体）展开图"
+ },
+ {
+  "id": "2025GK-86",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "由小正方体粘成的长方体的外表面展开图"
+ },
+ {
+  "id": "2023GD-43",
+  "type": "立体识别",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "广东真题，判断同一物体（旋转）；题图左上角题干前有1–2像素的极小残点（疑为题号遮盖残留），可忽略；解析文字“旋转<90°”中的“<”为原文排版残留"
+ },
+ {
+  "id": "2020JSA-81",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "解析图左上角一块原为浅色线条，灰度后较淡但能辨认"
+ },
+ {
+  "id": "2025JSA-86",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "官方answer为空，解析截图给出答案D（①③④⑤）；jiexi_raw只抽到标题，正文在截图中完整"
+ },
+ {
+  "id": "2023GKX-76",
+  "type": "视图",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": ""
+ },
+ {
+  "id": "2017JSA-89",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "题图右侧框外有一条细灰竖线（原图边缘残线），不影响题目，可顺手裁掉"
+ },
+ {
+  "id": "2020GKD-74",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "多面体与展开图的棱对应题，选项为文字"
+ },
+ {
+  "id": "2022GK-82",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "guess误为折纸盒，实为立体拼合"
+ },
+ {
+  "id": "2023ZJA-79",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": "四面体（三角形展开图）折纸盒"
+ },
+ {
+  "id": "2025HB-83",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "guess误为折纸盒，实为立体拼合；官方answer为空，解析截图给出答案B；jiexi_raw只抽到标题，正文在截图中完整"
+ },
+ {
+  "id": "2025JSA-90",
+  "type": "视图",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "判断哪个立体某一视图可能全白（三视图）；官方answer为空，解析截图给出答案D"
+ },
+ {
+  "id": "2021JSA-84",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "漏掉了拼合结果图：原PDF第20页顶部有一张①②③④拼合后的图（即“将其拼合后得到如下图所示”所指），截图只有第19页的四块编号分图，随后直接接“因此，选择C选项”，需补裁该图",
+  "jiexi_answer": "C",
+  "note": ""
+ },
+ {
+  "id": "2016GKD-74",
+  "type": "截面与切割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "解析为纯文字，无配图"
+ }
+]

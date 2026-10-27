@@ -1,0 +1,11 @@
+[
+{"id":"2016JSA-88","type":"折纸盒与六面体","q_ok":true,"q_problem":"","j_ok":true,"j_problem":"","jiexi_answer":"D","note":"四面体折纸盒。解析文字说“对图形进行数字标记”“如下图所示”，但原PDF此处本身就没有配图（第20页末至第21页顶为空白），截图已含全部文字，只是缺标记图，阅读略吃力"},
+{"id":"2019GKD-76","type":"截面与切割","q_ok":true,"q_problem":"","j_ok":true,"j_problem":"","jiexi_answer":"D","note":""},
+{"id":"2021JSA-89","type":"折纸盒与六面体","q_ok":true,"q_problem":"","j_ok":false,"j_problem":"漏掉了标号展开图：原PDF第22页顶部有一张标出面1–6和红色箭头的展开图（即“对展开图中的各面进行标号，如下图所示”所指），截图中“如下图所示：”后直接接选项立方体图，后文的面1/3/5/6无从对应；开头结尾完整，需补裁该图","jiexi_answer":"D","note":""},
+{"id":"2023GKD-76","type":"平面拼合与分割","q_ok":true,"q_problem":"","j_ok":true,"j_problem":"","jiexi_answer":"D","note":"平面折纸题（直角三角形纸片两次折叠后求投影面积），不是折纸盒；按平面类归入，若专项本另设“折纸/剪纸”可单列"},
+{"id":"2024ZJA-79","type":"折纸盒与六面体","q_ok":true,"q_problem":"","j_ok":false,"j_problem":"轻微：底部残留约5px宽的灰色横条（下一题“80、正确答案是：A”标题底色的上沿），从底部裁掉约6px即可；解析内容完整","jiexi_answer":"C","note":"解析为灰度图，原图中的红色标注（B项红点、D项公共边红线）变灰后D项那条线几乎看不出"},
+{"id":"2022SC1-60","type":"平面拼合与分割","q_ok":true,"q_problem":"","j_ok":true,"j_problem":"","jiexi_answer":"B","note":"图形组合题（平移、旋转、重叠覆盖）；解析截图中部有一处淡色斜向描边水印（原PDF自带），不影响阅读"},
+{"id":"2020JSA-79","type":"平面拼合与分割","q_ok":true,"q_problem":"","j_ok":true,"j_problem":"","jiexi_answer":"B","note":""},
+{"id":"2024JSA-86","type":"平面拼合与分割","q_ok":true,"q_problem":"","j_ok":true,"j_problem":"","jiexi_answer":"B","note":"平面分割（选非题）"},
+{"id":"2024ZJA-80","type":"立体拼合与补形","q_ok":true,"q_problem":"","j_ok":true,"j_problem":"","jiexi_answer":"A","note":""}
+]

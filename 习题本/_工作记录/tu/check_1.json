@@ -1,0 +1,362 @@
+[
+ {
+  "id": "2021ZJA-84",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "解析末尾注明“本题有误，A、B两项均能拼成”，官方答案B，选题时需注意；题图底部多一行“A.A B.B C.C D.D”选项文字（原卷导出格式，可裁掉）"
+ },
+ {
+  "id": "2024JSA-90",
+  "type": "视图",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "题图底部多一行“A.A B.B C.C D.D”选项文字（可裁掉）"
+ },
+ {
+  "id": "2015GK-80",
+  "type": "截面与切割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": ""
+ },
+ {
+  "id": "2015JSA-58",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "四棱锥（解析称四面体）折纸盒"
+ },
+ {
+  "id": "2016GK-78",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "解析截图中A–D各项分析的中文文字全部丢失（渲染缺字），只剩零散的字母和数字，无法阅读；仅首行和编号图正常",
+  "jiexi_answer": "D",
+  "note": "解析答案取自jiexi_raw文字，与官方一致"
+ },
+ {
+  "id": "2016JSA-89",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": ""
+ },
+ {
+  "id": "2017JSA-87",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "四棱锥（解析称四面体）折纸盒"
+ },
+ {
+  "id": "2017ZJA-56",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "解析文字说“如上图所示”，但配图没截进来，截图顶部只剩一小块被切断的图形残片；文字部分完整",
+  "jiexi_answer": "C",
+  "note": "削角正方体的展开图"
+ },
+ {
+  "id": "2018GKD-77",
+  "type": "视图",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": ""
+ },
+ {
+  "id": "2018JSA-88",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": ""
+ },
+ {
+  "id": "2019GK-81",
+  "type": "截面与切割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": ""
+ },
+ {
+  "id": "2019GKD-77",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": ""
+ },
+ {
+  "id": "2019JSA-87",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": ""
+ },
+ {
+  "id": "2020GKD-77",
+  "type": "截面与切割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": ""
+ },
+ {
+  "id": "2020JSA-87",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": ""
+ },
+ {
+  "id": "2021GK-80",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "题图底部多一行“A.A B.B C.C D.D”选项文字（可裁掉）"
+ },
+ {
+  "id": "2021GKD-77",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": ""
+ },
+ {
+  "id": "2021JSA-90",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "解析版面错乱：A项和D项第一处“如果箭头为此方向”后的示意图被截掉，只剩底边残片；A项另一幅图外多出粗黑框线，C项文字旁多一条横线；文字和结论完整",
+  "jiexi_answer": "C",
+  "note": "题图右下角D旁有一个很小的残点"
+ },
+ {
+  "id": "2022GD-43",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "题图底部多一行“A.A B.B C.C D.D”选项文字（可裁掉）"
+ },
+ {
+  "id": "2022GKD-77",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "题图底部多4行“A、如上图所示”…“D、如上图所示”选项文字（可裁掉）"
+ },
+ {
+  "id": "2022JSA-89",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "四面体折纸盒"
+ },
+ {
+  "id": "2022SC1-61",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "解析末尾“如下图所示”的拼合示意图在底边被截断，只剩上半部分",
+  "jiexi_answer": "A",
+  "note": "题图原图分辨率偏低，小方块较小但能看清"
+ },
+ {
+  "id": "2022ZJA-73",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "首行“73.正确答案是：B”下方混入一排被截断的图形残片（方框和图案的碎片）；A、B项分析在配图里，C、D项为文字，内容本身完整",
+  "jiexi_answer": "B",
+  "note": "题图底部多一行“A.A B.B C.C D.D”选项文字（可裁掉）"
+ },
+ {
+  "id": "2023GKX-75",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "直角三角形纸片两次折叠后求投影面积（平面折纸题），选项为算式"
+ },
+ {
+  "id": "2023JSA-90",
+  "type": "折纸盒与六面体",
+  "q_ok": false,
+  "q_problem": "题图只截到两行题干文字，A–D四个展开图选项全部缺失",
+  "j_ok": false,
+  "j_problem": "解析截图末尾混入下一部分的标题“三、逻辑判断”和说明“请根据题目要求，从四个选项中选出最恰当的一项。”；开头还重复了整道题的题干和选项图",
+  "jiexi_answer": "A",
+  "note": "解析截图开头有完整的题干和A–D展开图，可用来补题图"
+ },
+ {
+  "id": "2024GD-48",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "正方形卡片沿对角线折两次后剪开再展开（折纸剪纸题）；题图底部多一行“A.A B.B C.C D.D”选项文字（可裁掉）"
+ },
+ {
+  "id": "2024GKD-75",
+  "type": "截面与切割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "题图底部多一行“A.A B.B C.C D.D”选项文字（可裁掉）"
+ },
+ {
+  "id": "2024JSA-87",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "题图底部多一行“A.A B.B C.C D.D”选项文字（可裁掉）"
+ },
+ {
+  "id": "2024SC-61",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "题图底部多一行“A.A B.B C.C D.D”选项文字（可裁掉）"
+ },
+ {
+  "id": "2025GK-85",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "题图底部多一行“A.A B.B C.C D.D”选项文字（可裁掉）"
+ },
+ {
+  "id": "2025GKX-81",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": "题图底部多一行“A.A B.B C.C D.D”选项文字（可裁掉）"
+ },
+ {
+  "id": "2025JSA-89",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "题图底部多一行“A.A B.B C.C D.D”选项文字（可裁掉）"
+ },
+ {
+  "id": "2025ZJA-78",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "5个相同纸盒并排摆放，判断面①的相对面（六面体画边法）；题图底部多一行“A.A B.B C.C D.D”选项文字（可裁掉）"
+ },
+ {
+  "id": "2026GK-86",
+  "type": "视图",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "没有解析截图（j_img为空）",
+  "jiexi_answer": "",
+  "note": "官方答案和解析都没有；按俯视图和左视图推算，正视图应为B（非官方，仅供核对）；题图底部多一行“A.A B.B C.C D.D”选项文字（可裁掉）"
+ },
+ {
+  "id": "2016JSA-86",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": ""
+ },
+ {
+  "id": "2023GD-42",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": "题图底部多一行“A.A B.B C.C D.D”选项文字（可裁掉）"
+ }
+]

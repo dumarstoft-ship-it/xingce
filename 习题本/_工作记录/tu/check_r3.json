@@ -1,0 +1,302 @@
+[
+ {
+  "id": "2015JSA-57",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "四面体（正三棱锥）展开图折纸盒"
+ },
+ {
+  "id": "2018JSA-87",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": ""
+ },
+ {
+  "id": "2020SD-49",
+  "type": "折纸盒与六面体",
+  "q_ok": false,
+  "q_problem": "题目截图只有一行题干文字（高仅39像素），左侧展开图和A–D四个选项图形全部缺失；源图crops/real2/2020SD-49_q.png同样只有这一行，需从原卷重新截图",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "题型依据题干文字和解析中的正方体展开图判断"
+ },
+ {
+  "id": "2022JSA-92",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": "题干称多面体，实为正方体展开图"
+ },
+ {
+  "id": "2024HB-78",
+  "type": "视图",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": "选非题；guess为六面体/折纸盒，实为多面体视图题"
+ },
+ {
+  "id": "2026GD-50",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "没有解析截图（j_img为空）",
+  "jiexi_answer": "",
+  "note": "官方答案和解析都没有；按展开图折叠推算应选D（非官方，仅供核对：A项顶面和右侧面是一对相对面，B项正面对角线方向反了，C项字母A方向反了）"
+ },
+ {
+  "id": "2018JSA-81",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": ""
+ },
+ {
+  "id": "2022SC2-55",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": ""
+ },
+ {
+  "id": "2022GKX-76",
+  "type": "截面与切割",
+  "q_ok": false,
+  "q_problem": "底部残留一行导出文字“A.如上图所示 B.如上图所示 C.如上图所示 D.如上图所示”（未被裁掉）；图形和选项字母A–D完整，只需裁掉这一行",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": "题干开头带“（单选题）”字样，可删去"
+ },
+ {
+  "id": "2018JSA-82",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": ""
+ },
+ {
+  "id": "2023JSA-81",
+  "type": "非固定题型",
+  "q_ok": false,
+  "q_problem": "底部混入下一部分（82~84题）的说明文字“下列82~84题，右边四个图形中，只有一个是由左边的四个图形拼合……请把它找出来。”；顶部带一条页眉横线；题图是灰底翻拍图，较模糊；本题自身无题干文字（只有九宫格和A–D选项）",
+  "j_ok": false,
+  "j_problem": "解析末尾混入82~84题的说明文字“下列82~84题，右边四个图形中……请把它找出来。”",
+  "jiexi_answer": "D",
+  "note": "九宫格对称性（属性规律）填问号题，专项本不收；guess因混入的82~84题说明文字误判为平面拼合"
+ },
+ {
+  "id": "2022ZJA-80",
+  "type": "截面与切割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "选非题；jiexi_raw只有“80.正确答案是：B”，解析正文在截图的图片里，完整"
+ },
+ {
+  "id": "2015JSA-59",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": ""
+ },
+ {
+  "id": "2018ZJA-4",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "解析截图A项、D项开头和末尾有几个“SEP”小方框乱码符号（原文控制字符），不影响阅读；文中所说“红线/蓝线”在灰度图里只是浅灰线，不易分辨"
+ },
+ {
+  "id": "2021GK-82",
+  "type": "视图",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "解析配图右侧被截断：D项示意图只剩左半部分（右半和外框右边缺失）；文字部分完整",
+  "jiexi_answer": "B",
+  "note": "guess为六面体/折纸盒，实为多面体视图题"
+ },
+ {
+  "id": "2022SC2-57",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": "选非题；两个正方体展开图"
+ },
+ {
+  "id": "2024JSA-88",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": "正方体展开图判断相邻/相对面（公共顶点三面数字和）"
+ },
+ {
+  "id": "2026GK-87",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "没有解析截图（j_img为空）",
+  "jiexi_answer": "",
+  "note": "官方答案和解析都没有；按折叠推算①对应右边正方体、③对应左边正方体，②④都对不上，应选D（①和③）（非官方，仅供核对）；题图底部“A.②和④ B.②和③ C.①和④ D.①和③”是本题真正的选项，需保留"
+ },
+ {
+  "id": "2018JSA-83",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": ""
+ },
+ {
+  "id": "2023JSA-85",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "题图是灰底翻拍图，由三段拼成（C、D一段略错位），偏模糊但内容完整；解析截图开头重复了整道题，带清晰的题干、题图和A–D选项，可用来替换题图"
+ },
+ {
+  "id": "2023GK-80",
+  "type": "截面与切割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "选非题"
+ },
+ {
+  "id": "2016JSA-87",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "四面体：由立体图找展开图；题图最底部选项字母下方有一条很淡的细横线（原图边线），不影响使用"
+ },
+ {
+  "id": "2019GKD-75",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": "题干展开图尺寸偏小，但能看清"
+ },
+ {
+  "id": "2021JSA-88",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "四面体折纸盒（题干称多边形）；题图D字母右侧有一个很小的灰色残点，可忽略或擦掉"
+ },
+ {
+  "id": "2023GK-81",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "第六个面由4个小方块拼成的特殊正方体展开图"
+ },
+ {
+  "id": "2024SD-68",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "选非题；解析末尾注明“本题为争议题”（A项最下层左上角因视角无法确定是否有方块），官方答案A，选题时需注意；guess为六面体/折纸盒，实为立体拼合"
+ },
+ {
+  "id": "2022GD-41",
+  "type": "立体识别",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": "三个视角的同一立方体判断相对面，无展开图，归立体识别（与六面体题相近）"
+ },
+ {
+  "id": "2019JSA-83",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": ""
+ },
+ {
+  "id": "2024JSA-85",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "曲线图形拼合"
+ },
+ {
+  "id": "2024GD-50",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "选非题"
+ }
+]

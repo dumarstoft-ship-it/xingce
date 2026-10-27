@@ -1,0 +1,302 @@
+[
+ {
+  "id": "2015GK-79",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "与2015GKD-74是同一道题（题图、选项、解析完全相同），专项本只收一次即可"
+ },
+ {
+  "id": "2018GKD-75",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "解析末尾“故正确答案为D。”之后混入了下一题（2018GKD-76，与2018GK-82同题）解析的三幅配图（图1、图2、图3），需裁掉；这三幅图正好可补给2018GKD-76/2018GK-82缺图的解析",
+  "jiexi_answer": "D",
+  "note": ""
+ },
+ {
+  "id": "2020JSA-86",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": ""
+ },
+ {
+  "id": "2022HB-80",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "由立体图选展开图（选非题）；解析备注称本题作图不严谨，C项公共边处云朵、海鸥细节也与立体图不同，但B项错误更明显，建议选B"
+ },
+ {
+  "id": "2024GK-82",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "与2024GKD-76是同一道题（题图、解析完全相同），专项本只收一次即可"
+ },
+ {
+  "id": "2025SD-67",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "正八面体展开图折叠"
+ },
+ {
+  "id": "2017JSA-86",
+  "type": "平面拼合与分割",
+  "q_ok": false,
+  "q_problem": "题图最底部（选项字母下方）多一条横贯全宽的灰色细线（原文分隔线/页脚线），裁掉底部约10px即可",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "题图分辨率偏低，但小方格能数清"
+ },
+ {
+  "id": "2022JSA-85",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "题图分辨率偏低，线条略糊但能看清"
+ },
+ {
+  "id": "2020SD-50",
+  "type": "截面与切割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "正二十面体截面边数，选项为文字（A、10 B、5 C、4 D、3）"
+ },
+ {
+  "id": "2018GK-82",
+  "type": "截面与切割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "解析文字引用图1、图2、图3，但三幅示意图没截进来（原文排在“82、”之前），截图顶部只剩图注“图1 图2 图3”下半截的残片",
+  "jiexi_answer": "B",
+  "note": "与2018GKD-76是同一道题，专项本只收一次即可；缺的图1–图3可从2018GKD-75解析截图末尾取；用一个平面把立体分成两个相同或镜像部分（切割类）"
+ },
+ {
+  "id": "2022JSA-86",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "题图分辨率偏低，线条略糊但能看清"
+ },
+ {
+  "id": "2021SD-48",
+  "type": "截面与切割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "解析截图中A、B、C三项的截面示意图全部缺失（对应位置是纯白空白），只剩“A项的截面图如图所示：”等文字",
+  "jiexi_answer": "D",
+  "note": "解析截图分辨率偏低，文字有锯齿但能读"
+ },
+ {
+  "id": "2015GKD-74",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "与2015GK-79是同一道题（题图、选项、解析完全相同），专项本只收一次即可"
+ },
+ {
+  "id": "2018JSA-85",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "三棱锥（四面体）展开图；解析提到“蓝点/绿点/黄点”，截图是灰度，颜色分不出（不影响理解）"
+ },
+ {
+  "id": "2020SC0725-60",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": ""
+ },
+ {
+  "id": "2022JSA-90",
+  "type": "折纸盒与六面体",
+  "q_ok": false,
+  "q_problem": "题图用的是解析里的标注图，不是原题干净图：展开图上标了面号1–4、黑色圆点和画边箭头，A、B、D选项上也画了箭头、圆点，B项还标了“4”“3”，会直接暴露解题思路；需换成无标注的原题图（解析截图里的也是同一张标注图）",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": "四面体（三棱锥）折纸盒；图片分辨率偏低"
+ },
+ {
+  "id": "2024GKD-76",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "与2024GK-82是同一道题（题图、解析完全相同），专项本只收一次即可"
+ },
+ {
+  "id": "2025ZJA-79",
+  "type": "视图",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "题图左框下方有一小段浅灰色细横线残留（约85px长），不影响题目，可顺手抹掉"
+ },
+ {
+  "id": "2018GKD-76",
+  "type": "截面与切割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "解析文字引用图1、图2、图3，但三幅示意图没截进来，截图顶部只剩图注“图1 图2 图3”下半截的残片；这三幅图被截进了上一题2018GKD-75的解析截图末尾",
+  "jiexi_answer": "B",
+  "note": "与2018GK-82是同一道题，专项本只收一次即可；用一个平面把立体分成两个相同或镜像部分（切割类）"
+ },
+ {
+  "id": "2022JSA-87",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "题干图片里有原卷错字“能有其拼合”“翻账”（应为“由其”“翻转”）；题图分辨率偏低"
+ },
+ {
+  "id": "2022GK-81",
+  "type": "截面与切割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": ""
+ },
+ {
+  "id": "2015JSA-60",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "主体解析完整（A–D分析和结论都在），但末尾“拓展”段引用的图1、图2没截进来，截图在文字处就结束了；可直接裁掉“拓展”段，或补上两幅图",
+  "jiexi_answer": "A",
+  "note": ""
+ },
+ {
+  "id": "2018ZJA-5",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "解析内容完整，但文字里夹了7个乱码小方框“SEP”（原文控制字符渲染出来的）：“如下图所示。”后、A–D各项开头、“排除。”后和“故正确答案为B。”后，影响观感；需抹掉或按jiexi_raw重排",
+  "jiexi_answer": "B",
+  "note": "四面体（三棱锥）展开图；解析说的“绿色点”在灰度截图里是灰点"
+ },
+ {
+  "id": "2021GKD-75",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "由正方体选展开图；题图右下角（D字母右下方）有一个很小的灰色残点，可忽略"
+ },
+ {
+  "id": "2022SC2-58",
+  "type": "视图",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "解析为纯文字，无配图"
+ },
+ {
+  "id": "2024JSA-89",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "四个三棱锥展开图找不同（选非题）"
+ },
+ {
+  "id": "2026ZJA-74",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "没有解析截图（j_img为空）",
+  "jiexi_answer": "",
+  "note": "官方答案和解析都没有；六棱柱展开图，按展开图逐面推算应选D（非官方，仅供核对：A项左前侧面应是从右上角连到底边中点的线，B项右前侧面应是整条对角线，C项带Y形图案的面应在左前侧）"
+ },
+ {
+  "id": "2018JSA-84",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "题干原文跨页，截图里没有带页脚，正常"
+ },
+ {
+  "id": "2023JSA-86",
+  "type": "平面拼合与分割",
+  "q_ok": false,
+  "q_problem": "题图内容完整，但图形部分是灰底翻拍照片，模糊、略倾斜，A–D选项图形和字母发虚；解析截图开头有同一道题清晰版的图形（4张纸片+A–D），建议换用",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "解析截图开头重复了整道题的题干和图形（可裁掉，或拿来替换题图）；解析配图排版较乱（如A项文字中间只嵌了“均是旋转”小标签），但内容完整"
+ },
+ {
+  "id": "2023GKD-75",
+  "type": "截面与切割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": ""
+ }
+]

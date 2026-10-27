@@ -1,0 +1,7 @@
+[
+{"id":"2025JSA-86","type":"平面拼合与分割","q_ok":true,"q_problem":"","j_ok":true,"j_problem":"","jiexi_answer":"D","note":"官方answer为空，解析截图给出答案D（①③④⑤）；jiexi_raw只抽到标题，正文在截图中完整"},
+{"id":"2023GKX-76","type":"视图","q_ok":true,"q_problem":"","j_ok":true,"j_problem":"","jiexi_answer":"C","note":""},
+{"id":"2017JSA-89","type":"折纸盒与六面体","q_ok":true,"q_problem":"","j_ok":true,"j_problem":"","jiexi_answer":"D","note":"题图右侧框外有一条细灰竖线（原图边缘残线），不影响题目，可顺手裁掉"},
+{"id":"2020GKD-74","type":"折纸盒与六面体","q_ok":true,"q_problem":"","j_ok":true,"j_problem":"","jiexi_answer":"A","note":"多面体与展开图的棱对应题，选项为文字"},
+{"id":"2022GK-82","type":"立体拼合与补形","q_ok":true,"q_problem":"","j_ok":true,"j_problem":"","jiexi_answer":"D","note":"guess误为折纸盒，实为立体拼合"}
+]

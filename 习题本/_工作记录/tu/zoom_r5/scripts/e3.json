@@ -1,0 +1,7 @@
+[
+{"id":"2021SC0327-61","type":"折纸盒与六面体","q_ok":false,"q_problem":"清晰度问题：原卷是96dpi扫描件，题图偏糊，图①、图②立方体顶面的箭头和十字图案很难辨认（图①箭头方向是解题关键）；D项最下方十字格有一道横向白色断痕（原扫描件自带）。题干、图①②和A–D四个展开图都齐全，若有更清晰来源建议替换","j_ok":true,"j_problem":"","jiexi_answer":"A","note":"jiexi_raw里OCR把“图①”“A项”识别成“图切”“且项”，截图本身文字正确"},
+{"id":"2023HB-78","type":"折纸盒与六面体","q_ok":true,"q_problem":"","j_ok":true,"j_problem":"","jiexi_answer":"B","note":"多面体（长方体+四棱锥组合体）展开图"},
+{"id":"2025GK-86","type":"折纸盒与六面体","q_ok":true,"q_problem":"","j_ok":true,"j_problem":"","jiexi_answer":"D","note":"由小正方体粘成的长方体的外表面展开图"},
+{"id":"2023GD-43","type":"立体识别","q_ok":true,"q_problem":"","j_ok":true,"j_problem":"","jiexi_answer":"B","note":"广东真题，判断同一物体（旋转）；题图左上角题干前有1–2像素的极小残点（疑为题号遮盖残留），可忽略；解析文字“旋转<90°”中的“<”为原文排版残留"},
+{"id":"2020JSA-81","type":"平面拼合与分割","q_ok":true,"q_problem":"","j_ok":true,"j_problem":"","jiexi_answer":"D","note":"解析图左上角一块原为浅色线条，灰度后较淡但能辨认"}
+]

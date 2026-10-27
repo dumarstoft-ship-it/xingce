@@ -1,0 +1,7 @@
+[
+{"id":"2020JSA-80","type":"平面拼合与分割","q_ok":true,"q_problem":"","j_ok":true,"j_problem":"","jiexi_answer":"C","note":""},
+{"id":"2024SC-59","type":"平面拼合与分割","q_ok":true,"q_problem":"","j_ok":false,"j_problem":"可读性问题：解析图中③号三角形原PDF为黄色线条，截图灰度化后③的轮廓和编号“③”极淡，几乎看不清（拼合图里也一样）；解析文字和其余图形完整","jiexi_answer":"D","note":"可考虑改用彩色截图或加深③的线条"},
+{"id":"2026ZJA-75","type":"立体拼合与补形","q_ok":true,"q_problem":"","j_ok":false,"j_problem":"无解析截图（j_img为空、jiexi_raw为空），也无官方答案；库里只有该卷网友回忆版题本，没有解析PDF","jiexi_answer":"","note":"自行推算答案为D（仅供参考）：按正面和后面图重建立体（4×2×3长方体去掉前排3块，共21块），对四个选项穷举旋转和摆放，只有D能用3个相同小立体恰好拼成"},
+{"id":"2016JSA-90","type":"折纸盒与六面体","q_ok":true,"q_problem":"","j_ok":true,"j_problem":"","jiexi_answer":"A","note":""},
+{"id":"2019JSA-84","type":"折纸盒与六面体","q_ok":false,"q_problem":"题图只有一行题干文字（图高仅39px），左侧展开图和A–D四个选项图全部缺失；原卷中该题图形在下一页（第9页顶部），需跨页补裁","j_ok":true,"j_problem":"","jiexi_answer":"A","note":"四棱锥（多面体）折纸盒；解析截图完整，内含题干展开图和选项图"}
+]

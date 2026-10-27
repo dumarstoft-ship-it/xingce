@@ -1,0 +1,292 @@
+[
+ {
+  "id": "2015ZJA-83",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "解析配图右侧/下方有几条细线（原文表格边框残留），不影响阅读"
+ },
+ {
+  "id": "2019GK-80",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "由正视图、后视图确定多面体后选第4块拼合体"
+ },
+ {
+  "id": "2021GKD-76",
+  "type": "视图",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": ""
+ },
+ {
+  "id": "2022SD-50",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "非正方体的多面体（折角棱柱）选外表面展开图"
+ },
+ {
+  "id": "2024SC-60",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": "解析第一幅配图B项周围有浅灰色水印残痕，最后一幅图C项下方框线上有一小段灰色弧线，均不影响阅读"
+ },
+ {
+  "id": "2016JSA-85",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": "题图右边缘和底边各有一条很浅的灰色细线（原图边框），无页脚文字残留，可忽略"
+ },
+ {
+  "id": "2018ZJA-7",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "解析首行末尾有一个“SEP”小方块乱码（控制字符渲染残留）"
+ },
+ {
+  "id": "2024JSA-82",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": ""
+ },
+ {
+  "id": "2017GK-82",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "问“不能”填入的一项；解析图1的“A-④”标注压在深色面上，“A”字不易辨认（原图如此）"
+ },
+ {
+  "id": "2019JSA-81",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": ""
+ },
+ {
+  "id": "2024JSA-83",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": ""
+ },
+ {
+  "id": "2017GKD-77",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "与2017GK-82（国考副省级82题）是同一道题，题图、选项、解析都相同，专项本只收一道即可；问“不能”填入的一项"
+ },
+ {
+  "id": "2016GKD-75",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": ""
+ },
+ {
+  "id": "2019GK-82",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": "解析中的标号展开图较小较糊，面字母勉强可辨（原图如此）"
+ },
+ {
+  "id": "2021JSA-87",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": false,
+  "j_problem": "解析写“对题干中的六个面进行标号，如下图所示”，但面①–⑥的标号展开图没截进来：原图在解析PDF第21页顶部（约y=33–192pt，x=56–220pt），跨页拼接时被跳过，A–D项分析里的面号无图可对照；文字部分完整",
+  "jiexi_answer": "B",
+  "note": "缺的标号图可从解析PDF第21页顶部补截"
+ },
+ {
+  "id": "2023GD-41",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "长方体选展开图（公共边等长判断）；广东真题"
+ },
+ {
+  "id": "2024SD-67",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": ""
+ },
+ {
+  "id": "2018JSA-98",
+  "type": "非固定题型",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": "4×4方格填“爱国/敬业/诚信/友善”的数独式逻辑题（排除法），选项为文字，不是空间类图推，专项本不收"
+ },
+ {
+  "id": "2019JSA-82",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": ""
+ },
+ {
+  "id": "2024JSA-84",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": ""
+ },
+ {
+  "id": "2021HB-79",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": "一题两解：解析首行写“正确答案：C”，正文结论却是“C、D项均能组成。因此，选择C、D选项”；按零件可任意旋转验证，C、D都能补成3×3×2，A、B不能。官方答案C，题目有瑕疵，收录需加注或换题"
+ },
+ {
+  "id": "2017GK-81",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "解析A项提到“图中红色线”，截图为灰度，红线看不出来"
+ },
+ {
+  "id": "2019JSA-85",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "B",
+  "note": "正四面体折纸盒（4个三角形面的展开图）"
+ },
+ {
+  "id": "2021SC2-59",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "A",
+  "note": ""
+ },
+ {
+  "id": "2023JSA-87",
+  "type": "折纸盒与六面体",
+  "q_ok": false,
+  "q_problem": "题图是试卷照片：灰底、左右两块图框歪斜且上下错位、选项字母那一行透出背面文字，图案较糊；而且和解析里的重绘题图不是同一版：题图用点状填充+黑色，四面体右侧面的黑块在外侧（重绘图在靠中棱一侧），A–D的分割线和涂色也都不同。按照片版逐项推，只有B符合（C是镜像），与官方答案C矛盾；按解析重绘版推才是C",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": "四面体选展开图。解析截图开头重复了整题（带原题号“87.”）和一份清晰的重绘题图A–D，与答案C和解析配套；收录的话建议把题图换成这份重绘图，或先核实真题原图再定答案"
+ },
+ {
+  "id": "2025GKD-81",
+  "type": "折纸盒与六面体",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "黑白小正方体粘成的长方体选外表面展开图"
+ },
+ {
+  "id": "2023GD-44",
+  "type": "立体拼合与补形",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": "选非题：三个带一个黑面的L形三连块能否拼成选项；广东真题。解析文字说用红/绿/蓝区分各块，截图为灰度、图中只有1、2、3数字标注，颜色区分看不出"
+ },
+ {
+  "id": "2020JSA-82",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "D",
+  "note": ""
+ },
+ {
+  "id": "2025JSA-87",
+  "type": "平面拼合与分割",
+  "q_ok": true,
+  "q_problem": "",
+  "j_ok": true,
+  "j_problem": "",
+  "jiexi_answer": "C",
+  "note": "黑白两面纸片可平移、旋转、翻转的平面拼合；解析配图偏小，星形内①–④标注很小（放大可辨）"
+ }
+]
