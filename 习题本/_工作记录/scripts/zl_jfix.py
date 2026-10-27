@@ -31,5 +31,19 @@ if __name__ == '__main__':
         C.build_jiexi([r], force=True)
         fix[i] = {'answer': ans, 'source': '官方解析（手动定位）'}
         print(i, regs)
+    # the question before a hand-located one ran on into its 解析: end it where the located question starts
+    for i in todo:
+        r = by[i]; prev = by.get(f"{r['paper']}-Z{r['num'] - 1}")
+        if not prev or not prev.get('jiexi_regions'): continue
+        p0 = sorted(r['jiexi_regions'], key=int)[0]; t0 = r['jiexi_regions'][p0][0]
+        regs = {k: v for k, v in prev['jiexi_regions'].items() if int(k) <= int(p0)}
+        if p0 in regs and regs[p0][0] < t0 < regs[p0][1]:
+            regs[p0] = [regs[p0][0], round(t0 - 1, 1)]
+            prev['jiexi_regions'] = regs
+            C.build_jiexi([prev], force=True)
+            print('trimmed', prev['id'], regs)
+    # 2024 河北 124: the 解析 heading prints 正确答案D, its own working (1348.0×20.03%×1.0556≈285) and the data give C
+    fix['2024HB-Z124'] = {'answer': 'C', 'override': True, 'source': '核算更正',
+                          'extra': '原解析标题印的是“正确答案D”，但解析过程算得约 285 万吨，按材料数据核算也是 285 万吨，答案应为 C；D（291）是误用 2022 年总量得到的干扰项。'}
     json.dump(raw, open(S + '/db/zl_raw.json', 'w'), ensure_ascii=False, indent=0)
     json.dump(fix, open(S + '/db/zl_fixes.json', 'w'), ensure_ascii=False, indent=1)

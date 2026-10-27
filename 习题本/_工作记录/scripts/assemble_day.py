@@ -23,7 +23,8 @@ def zl_part(day):
             for r in sorted(by[m], key=lambda r: r['pos']):
                 k += 1
                 f = fix.get(r['id']) or {}
-                it = {'type': 'real', 'id': r['id'], 'src_label': f"{r['paper_name']} 第{r['num']}题", 'answer': r['answer_official'] or f.get('answer'),
+                ans = f['answer'] if f.get('override') else (r['answer_official'] or f.get('answer'))  # override: the official key is misprinted
+                it = {'type': 'real', 'id': r['id'], 'src_label': f"{r['paper_name']} 第{r['num']}题", 'answer': ans,
                       'set': st['set'], 'zl_no': k}
                 jp = f"{S}/crops/zl/{r['id']}_j.png"
                 if f.get('jiexi'): it['jiexi_text'] = f['jiexi']

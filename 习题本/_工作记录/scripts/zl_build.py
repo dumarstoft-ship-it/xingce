@@ -112,8 +112,32 @@ def decor_vec(doc):
     for pg in doc['pages']:
         for v in pg.get('vec', []):
             c[tuple(round(x) for x in v)] += 1
-    n = len(doc['pages'])
+    n = len([pg for pg in doc['pages'] if pg['lines'] or pg['images']])
     return {k for k, v in c.items() if v >= max(3, n * 0.3)}
+
+def _live(doc):
+    """pages that were actually extracted (mock papers keep only the 资料 pages; the rest are empty placeholders)"""
+    return [pg for pg in doc['pages'] if pg['lines'] or pg['images']]
+
+def decor_images_zl(doc):
+    c = Counter()
+    pages = _live(doc)
+    for pg in pages:
+        for im in pg['images']:
+            c[(round(im['x0']), round(im['top']), round(im['x1']), round(im['bottom']))] += 1
+    return {k for k, v in c.items() if v >= max(3, len(pages) * 0.3)}
+
+def hf_texts_zl(doc):
+    """header/footer texts: normalized lines near top/bottom repeating on >=30% of the extracted pages"""
+    c = Counter()
+    pages = _live(doc)
+    for pg in pages:
+        H = pg['height']; seen = set()
+        for L in pg['lines']:
+            if L['top'] < 0.09 * H or L['top'] > 0.88 * H:
+                t = re.sub(r'\d+|\s+', '', L['text'])
+                if t and t not in seen: seen.add(t); c[t] += 1
+    return {t for t, v in c.items() if v >= max(3, 0.3 * len(pages))}
 
 _DV = {}
 def doc_frame(doc):
@@ -121,7 +145,7 @@ def doc_frame(doc):
     from the text lines that are not page furniture"""
     key = doc['name']
     if key in _DV: return _DV[key]
-    deco, dvec, hf = decor_images(doc), decor_vec(doc), hf_texts(doc)
+    deco, dvec, hf = decor_images_zl(doc), decor_vec(doc), hf_texts_zl(doc)
     tops, bots, xs0, xs1 = [], [], [], []
     for pg in doc['pages']:
         H = pg['height']
