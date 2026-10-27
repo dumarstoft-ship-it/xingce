@@ -23,17 +23,18 @@ for t in range(0, 29):                                   # all three
             continue
         if r + tt + h + rt + rh + th + t + NONE != N:
             continue
-        vals.add((rt + rh + th, t))
+        vals.add((rt + rh + th, t, r + tt + h))
 assert len(vals) == 1, vals
-exactly_two, triple = vals.pop()
+exactly_two, triple, only_one = vals.pop()
 
-opts = {'A': 22, 'B': 27, 'C': 32, 'D': 37}
+opts = {'A': 22, 'B': 27, 'C': 37, 'D': 41}
 hit = [k for k, v in opts.items() if v == exactly_two]
 assert len(hit) == 1, (exactly_two, hit)
 
-# distractors (documentation only): subtract the triple 2 times / 1 time / not at all
+# distractors (documentation only): subtract the triple only 2 times ("at least two") / not at all,
+# or answer the wrong layer ("exactly one" = 14 + 14 + 13)
 P = sum(PAIR.values())
-assert [P - 2 * triple, P - triple, P] == [opts['B'], opts['C'], opts['D']]
+assert [P - 2 * triple, P, only_one] == [opts['B'], opts['C'], opts['D']]
 # reading the pairwise figures as "exactly these two" makes the data impossible (negative triple)
 S = sum(SET.values())
 assert (S - P - (N - NONE)) < 0

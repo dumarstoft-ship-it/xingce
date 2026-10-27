@@ -9,6 +9,12 @@ NS_PLAN = S + '/db/ns_plan.json'  # 数字推理 (number series): real questions
 ZL_PLAN = S + '/db/zl_plan.json'  # 资料分析: two sets a day, questions printed in the separate booklet (scripts/zl_render.py)
 ZL_FIX = S + '/db/zl_fixes.json'  # answers / 解析 for 资料 questions whose 解析 file lacks them
 
+def zl_note(items):
+    from render_day import zl_kind
+    kind = zl_kind(items)
+    note = f'资料分析每天两套，题目在单独的打印册里，都是按篇挑出的高难度{kind}'
+    return note + ('。' if kind == '真题' else '（模考题没有官方答案，答案和解析由两人分别独立求解、核对一致后写成）。')
+
 def zl_part(day):
     plan = json.load(open(ZL_PLAN)).get(str(day)) if os.path.exists(ZL_PLAN) else None
     if not plan: return None
@@ -25,16 +31,14 @@ def zl_part(day):
                 f = fix.get(r['id']) or {}
                 ans = f['answer'] if f.get('override') else (r['answer_official'] or f.get('answer'))  # override: the official key is misprinted
                 it = {'type': 'real', 'id': r['id'], 'src_label': f"{r['paper_name']} 第{r['num']}题", 'answer': ans,
-                      'set': st['set'], 'zl_no': k}
+                      'set': st['set'], 'zl_no': k, 'mock': r['paper'].startswith('MK')}
                 jp = f"{S}/crops/zl/{r['id']}_j.png"
                 if f.get('jiexi'): it['jiexi_text'] = f['jiexi']
                 elif os.path.exists(jp): it['jiexi_img'] = jp
                 else: it['jiexi_text'] = r.get('jiexi_raw') or '（本题无解析）'
                 if f.get('extra'): it['extra'] = f['extra']
-                if f.get('source') == '自解（核定）':
-                    it['src_label'] += '（原卷无答案，答案与解析为自解：两人独立求解答案不一致，复核后裁定）'
-                elif (f.get('source') or '').startswith('自解'):
-                    it['src_label'] += '（原卷无答案，答案与解析为自解：两人独立求解，核对一致后采用）'
+                if (f.get('source') or '').startswith('自解'):
+                    it['src_label'] += '（无官方答案，答案与解析为自解）'
                 items.append(it)
     sets = '、'.join(f"第 {st['set']} 套" for st in plan)
     return {'title': '资料分析', 'module': f'打印册{sets}', 'time_min': 30 * len(plan), 'print_only': True, 'items': items,
@@ -59,6 +63,13 @@ OVR = json.load(open(S + '/db/real_overrides.json')) if os.path.exists(S + '/db/
 NO_JIEXI_PAPERS = ('2026GZ', '2026CQ', '2026HB')  # originals print only the answer (or nothing): 解析 is written by us
 REALONLY = S + '/db/realonly_plan.json'             # logic / 综合推理 use real questions only (user decision)
 
+PLACEHOLDER = re.compile(r'待定|无法判断|题目缺失')
+def clean_tag(v):
+    """classifier tags shown in the 解析 header: drop placeholders ("待定") and notes about the crop ("多项为公式图片")"""
+    if not v: return v
+    v = re.sub(r'[（(][^()（）]*公式图片[)）]', '', v).strip()
+    return None if not v or PLACEHOLDER.search(v) else v
+
 def src_label(r):
     return f"{r['paper_name']} 第{r['num']}题"
 
@@ -68,7 +79,7 @@ def real_item(qid, db, fix, cls):
     ans = r['answer_official'] or f.get('answer')
     official = bool(r['answer_official']) or (f.get('source', '').startswith('官方'))
     it = {'type': 'real', 'id': qid, 'src_label': src_label(r), 'q_img': f'{CR}_nonum/{qid}_q.png' if os.path.exists(f'{CR}_nonum/{qid}_q.png') else f'{CR}/{qid}_q.png', 'answer': ans,
-          'kaofa': (cls.get(qid) or {}).get('kaofa'), 'technique': (cls.get(qid) or {}).get('technique')}
+          'kaofa': clean_tag((cls.get(qid) or {}).get('kaofa')), 'technique': clean_tag((cls.get(qid) or {}).get('technique'))}
     if os.path.exists(f'{CR}/{qid}_s.png'):
         it['stem_img'] = f'{CR}_nonum/{qid}_s.png' if os.path.exists(f'{CR}_nonum/{qid}_s.png') else f'{CR}/{qid}_s.png'
         it['stem_key'] = f"{r['paper']}|{(r.get('stem_text') or '').strip()[:40]}"  # 一拖n: print the material once
@@ -97,7 +108,7 @@ def real_item(qid, db, fix, cls):
 
 def load_cls():
     cls = {}
-    for f in glob.glob(S + '/cls/out_*.jsonl'):
+    for f in sorted(glob.glob(S + '/cls/out_*.jsonl')) + sorted(glob.glob(S + '/cls2/out_*.jsonl')):  # cls2: papers added later
         for l in open(f):
             l = l.strip()
             if l:
@@ -115,10 +126,10 @@ def teacher_bank():
 
 def teacher_item(tid):
     b = teacher_bank()[tid]
-    src = b.get('source') or '未注明出处'
+    src = b.get('source')
     jx = b['jiexi'] + ('（原题没有选项，选项为本册补设。）' if b.get('options_added') else '')
     fig = (b.get('figure') or {}).get('svg') if isinstance(b.get('figure'), dict) else None
-    return {'type': 'teacher', 'tid': tid, 'src_label': f'老师笔记精选 · {src}', 'stem': b['stem'], 'options': b['options'],
+    return {'type': 'teacher', 'tid': tid, 'src_label': f'老师笔记精选 · {src}' if src else '老师笔记精选', 'stem': b['stem'], 'options': b['options'],
             'answer': b['answer'], 'jiexi': jx, 'kaofa': b.get('kaofa'), 'technique': b.get('method'), 'figure': fig}
 
 def part_items(day, part, module, db, fix, cls):
@@ -219,7 +230,7 @@ def w2_math_items(day, db, fix, cls):
                 note = None if (OVR.get(q) or {}).get('jiexi_text') else notes.get(q)  # an override's 解析 already covers it
                 if note:
                     if it.get('jiexi_img') or not (it.get('jiexi_text') or '').startswith('（本题无'):
-                        it['extra'] = ((it.get('extra') or '') + ('' if note.startswith('补充') else ' 补充：') + note).strip()
+                        it['extra'] = ((it.get('extra') or '') + ('' if note.startswith(('补充', '易错', '注')) else ' 补充：') + note).strip()
                     else:  # no official 解析: the planner's full 解析
                         it['jiexi_text'] = note
             elif 'teacher' in e:
@@ -256,6 +267,9 @@ def assemble(day):
             items = realonly_items(day, part, db, fix, cls)
             if items is not None:
                 if items:
+                    mods = list(dict.fromkeys((cls.get(it['id']) or {}).get('module') for it in items))  # the modules actually used
+                    if mods and None not in mods and mods != [m]:
+                        label = ' + '.join(names[x].replace('综合推理·', '') for x in mods)
                     parts.append({'title': PART_TITLE[part], 'module': label, 'time_min': TIME_MIN[part], 'items': items})
                 else:
                     missing.append(PART_TITLE[part])
@@ -272,9 +286,16 @@ def assemble(day):
     zl = zl_part(day)
     if zl: parts.append(zl)
     note = ('题目页只有题号，不标题型、考法和出处，请自己判断。数字推理用历年真题，题不够时轮换重做。数学运算由历年真题（直接截取原卷）、老师笔记精选和依据真题考法改编、经程序验算的新题组成，送分题已去掉，每道题都有一个要想清楚的地方；'
-            '逻辑判断和综合推理全部是真题。' + ('资料分析每天两套，题目在单独的打印册里，都是按篇挑出的高难度真题。' if zl else '') + '每道题的出处、考法和技巧都写在本册最后的解析里。建议严格计时，做完再对答案。')
+            '逻辑判断和综合推理全部是真题。' + (zl_note(zl['items']) if zl else '')
+            + '每道题的出处都写在本册最后的解析里，多数题还注明了考法和技巧。建议严格计时，做完再对答案。')
     if missing:
         note += '今天的' + '、'.join(missing) + '真题暂缺，等补充新卷子后补发。'
+    for pt in parts:  # last pass over the student-facing text: no internal ids, no doubled labels
+        for it in pt['items']:
+            for f in ('extra', 'jiexi', 'jiexi_text'):
+                if isinstance(it.get(f), str):
+                    t = re.sub(r'(老师笔记)\s*T\d{3}(?:x\d+)?', r'\1', it[f])
+                    it[f] = re.sub(r'补充[：:]\s*补充[：:]?', '补充：', t)
     return {'day': day, 'subtitle': '广东省考 42 天专项训练 · 数量关系 + 判断推理' + (' + 资料分析' if zl else ''), 'note': note, 'parts': parts}
 
 if __name__ == '__main__':

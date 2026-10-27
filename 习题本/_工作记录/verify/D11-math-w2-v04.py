@@ -40,8 +40,8 @@ tractor = N - U_ONLY - NONE
 forget_triple = U_ONLY + UT_ONLY                              # drone owners without the all-three cell
 tractor_wrong = N - U_ONLY                                    # forget the 18 "none" outside the tractor set
 forget_none = U_ONLY + UT_ONLY + tractor_wrong * THIRD * HALF
-third_as_cell = U_ONLY + UT_ONLY + tractor * THIRD            # 1/3 read as "tractor+tiller only", then all-three = same
-assert [forget_triple, forget_none, third_as_cell] == [opts['A'], opts['C'], opts['D']], (forget_triple, forget_none, third_as_cell)
+ignore_half = U_ONLY + UT_ONLY + tractor * THIRD              # overlook "one half": all 16 tiller owners counted as drone owners
+assert [forget_triple, forget_none, ignore_half] == [opts['A'], opts['C'], opts['D']], (forget_triple, forget_none, ignore_half)
 
 print('tractor', tractor, 'drone', drone)
 print(hit[0])

@@ -17,16 +17,17 @@ for both in range(0, min(S, F) + 1):
         best, arg = one, (both, s_only, f_only, neither)
 assert best is not None
 
-opts = {'A': 9, 'B': 53, 'C': 85, 'D': 110}
+opts = {'A': 9, 'B': 53, 'C': 69, 'D': 85}
 hit = [k for k, v in opts.items() if v == best]
 assert len(hit) == 1, (best, hit)
 
 # distractors (documentation only)
 both_min_set = S + F - 2 * min(S, F)          # "both" pushed to min(88,79): neither would be 38 > 16
 assert N - (S + F - min(S, F)) > NEITHER_MAX
-formula_slip = S + F - arg[0]                 # exactly one written as S + F - both
+forget_neither = N - arg[0]                   # 126 - 57: the 16 "neither" not subtracted
 maximum = S + F - 2 * (S + F - N)             # the largest value (neither = 0)
-assert [both_min_set, maximum, formula_slip] == [opts['A'], opts['C'], opts['D']]
+assert [both_min_set, forget_neither, maximum] == [opts['A'], opts['C'], opts['D']]
+assert all(v % 2 for v in opts.values())      # exactly-one is always odd here; parity must not eliminate options
 
 print('both, session only, factory only, neither =', arg, '-> exactly one min', best)
 print(hit[0])

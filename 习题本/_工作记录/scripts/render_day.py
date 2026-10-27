@@ -60,7 +60,8 @@ def rich(s):
     """Escape text but keep $...$ math for KaTeX; newlines -> paragraphs."""
     s = s or ''
     parts = re.split(r'(\$[^$]+\$)', s)
-    out = ''.join(p if p.startswith('$') and p.endswith('$') and len(p) > 2 else esc(p) for p in parts)
+    math = lambda p: p.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;')  # KaTeX reads the decoded text
+    out = ''.join(math(p) if p.startswith('$') and p.endswith('$') and len(p) > 2 else esc(p) for p in parts)
     paras = [p for p in out.split('\n')]
     return ''.join(f'<p>{p}</p>' for p in paras if p.strip())
 
@@ -78,6 +79,10 @@ def opt_cols(opts):
     m = max((len(re.sub(r'\$[^$]*\$', 'xx', v or '')) for v in opts.values()), default=0)
     return 'c4' if m <= 9 else ('c2' if m <= 22 else 'c1')
 
+def zl_kind(items):
+    m = sum(1 for it in items if it.get('mock'))
+    return '真题' if not m else ('模考题' if m == len(items) else '真题和模考题')
+
 def render_q(n, it):
     tag = ''
     if it['type'] == 'real' and not it.get('stem'):
@@ -92,7 +97,7 @@ def render_q(n, it):
 
 def render_ana(n, it):
     kf = ' ｜ '.join(x for x in [it.get('kaofa'), it.get('technique')] if x)
-    src = f'真题 · {it["src_label"]}' if it['type'] == 'real' else (it['src_label'] if it['type'] == 'teacher' else '改编')
+    src = f'{"模考" if it.get("mock") else "真题"} · {it["src_label"]}' if it['type'] == 'real' else (it['src_label'] if it['type'] == 'teacher' else '改编')
     head = f'<div class="ah">{n}. 答案 <span class="ans">{esc(it["answer"] or "?")}</span> <span class="kf">［{esc(src)}'
     if kf: head += f' ｜ {esc(kf)}'
     head += '］</span></div>'
@@ -127,7 +132,7 @@ def render_day(day, out_html):
         nr = sum(1 for i in p['items'] if i['type'] == 'real'); nt = sum(1 for i in p['items'] if i['type'] == 'teacher')
         nv = len(p['items']) - nr - nt
         return f'{len(p["items"])} 题（真题 {nr}' + (f'，老师精选 {nt}' if nt else '') + f'，改编 {nv}）'
-    rows = ''.join(f'<tr><td>{esc(p["title"])}</td><td>{esc(p["module"])}</td><td>{cnt(p) if not p.get("print_only") else str(len(p["items"])) + " 题（真题，题目在打印册）"}</td><td>{p.get("time_min", "")} 分钟</td></tr>' for p in day['parts'])
+    rows = ''.join(f'<tr><td>{esc(p["title"])}</td><td>{esc(p["module"])}</td><td>{cnt(p) if not p.get("print_only") else str(len(p["items"])) + f" 题（{zl_kind(p['items'])}，题目在打印册）"}</td><td>{p.get("time_min", "")} 分钟</td></tr>' for p in day['parts'])
     h.append(f'<div class="cover"><h1>第 {day["day"]} 天</h1><div class="sub">{esc(day.get("subtitle", "广东省考 42 天专项训练 · 数量关系 + 判断推理"))}</div>'
              f'<table><tr><th>部分</th><th>今日模块</th><th>题量</th><th>建议用时</th></tr>{rows}</table>'
              f'<div class="note">{esc(day.get("note", ""))}</div></div>')

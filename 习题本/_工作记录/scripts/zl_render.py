@@ -62,10 +62,15 @@ def render(sets, raw, meta, title, out_html):
     for r in raw: by.setdefault(r['mat'], []).append(r)
     fonts = ''.join(f'<link rel="stylesheet" href="file://{R}/node_modules/@fontsource/{f}/{w}.css">' for f in ('noto-serif-sc', 'noto-sans-sc') for w in (400, 700))
     h = [f'<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>{html.escape(title)}</title>{fonts}<style>{CSS}</style></head><body>']
+    mats = [m for s in sets for m in s['mats']]; n_mock = sum(1 for m in mats if m.startswith('MK'))
+    src_note = ('题目都选自历年真题中正确率低、计算量大的篇目，' if not n_mock else
+                f'题目选自历年真题和 2027 国考模考大赛题本（本册 {len(mats)} 篇中模考 {n_mock} 篇）中难度大、计算量大的篇目，')
     rows = ''.join(f'<tr><td>第 {s["day"]} 天</td><td>第 {s["set"]} 套</td><td>{sum(len(by[m]) for m in s["mats"])}</td><td></td><td></td></tr>' for s in sets)
     h.append(f'<div class="cover"><h1>{html.escape(title)}</h1><div class="sub">广东省考 42 天专项训练 · 资料分析（每天两套）</div>'
              '<div class="note">每套 4 篇材料、20 道题，按考场节奏一口气做完，不跳题、不放弃，做完再对答案。'
-             '题目都选自历年真题中正确率低、计算量大的篇目，按篇挑选后重新组卷，题号是本册自己的编号。'
+             + src_note +
+             '按篇挑选后重新组卷，题号是本册自己的编号。'
+             + ('模考题没有官方答案，答案和解析由两人分别独立求解、核对一致后写成。' if n_mock else '') +
              '答案和解析在当天的电子版习题本里。图表保留了原卷颜色，彩印最清楚，黑白打印也能看。</div>'
              f'<table><tr><th>日期</th><th>套</th><th>题量</th><th>用时</th><th>正确数</th></tr>{rows}</table></div>')
     for s in sets:

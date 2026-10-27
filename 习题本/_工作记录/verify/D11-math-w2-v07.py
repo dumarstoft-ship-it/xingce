@@ -19,7 +19,7 @@ def exactly_one_days(pers):
 
 ans = exactly_one_days(periods)
 
-opts = {'A': 10, 'B': 15, 'C': 18, 'D': 19}
+opts = {'A': 8, 'B': 10, 'C': 18, 'D': 19}
 hit = [k for k, v in opts.items() if v == ans]
 assert len(hit) == 1, (ans, hit)
 
@@ -33,8 +33,10 @@ assert singles - 2 * sum(pairs_lcm) + 3 * triple == ans
 pairs_prod = [cnt(a * b) for a, b in ((8, 10), (8, 12), (10, 12))]
 use_product = singles - 2 * sum(pairs_prod) + 3 * cnt(8 * 10 * 12)
 at_least_one = singles - sum(pairs_lcm) + triple
+union_minus_pairs = at_least_one - sum(pairs_lcm)   # 15 - 7: 1 June sits in all three pair counts, removed once too often
 gap_as_period = exactly_one_days(list(GAPS))  # read "every other 7 days" as every 7 days
-assert [at_least_one, use_product, gap_as_period] == [opts['B'], opts['C'], opts['D']], (at_least_one, use_product, gap_as_period)
+assert [union_minus_pairs, use_product, gap_as_period] == [opts['A'], opts['C'], opts['D']], (union_minus_pairs, use_product, gap_as_period)
+assert sum(v > at_least_one for v in opts.values()) == 2   # knowing "at least one" = 15 rules out only two options
 # 31 July is day offset 60: routes with periods 10 and 12 meet there (a common period), 1 June has all three
 assert [(L % p == 0) for p in periods] == [False, True, True]
 

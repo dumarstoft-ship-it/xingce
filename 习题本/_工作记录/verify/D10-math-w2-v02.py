@@ -1,5 +1,5 @@
-# D10-math-w2-v02: rooftop PV-panel installation shared by teams 甲 and 乙, who may work at the same time,
-# each on its own part (the work can be split freely); each is paid only for the days it actually works.
+# D10-math-w2-v02: a forest firebreak cut by teams 甲 and 乙, who may work at the same time,
+# each on its own section (the length can be split freely); each is paid only for the days it actually works.
 #   甲 alone: 12 days, 5 (10^4 yuan) per day;  乙 alone: 24 days, 2 (10^4 yuan) per day
 #   total cost <= 52 (10^4 yuan).  Question: the minimum number of days to finish.
 # Method 1: let 甲 do a share s of the work (乙 does 1-s); both start on day 0 (idling never helps),

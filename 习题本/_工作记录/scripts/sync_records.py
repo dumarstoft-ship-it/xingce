@@ -6,7 +6,7 @@ FULL = ['briefs', 'blueprints', 'cls', 'gen', 'gen_unused', 'prompts', 'review',
 DB = ['real_raw.json', 'schedule.json', 'answer_fixes.json', 'overrides.json', 'real_overrides.json', 'recrop.json', 'ocr_answers.json',
       'math_harden.json', 'realonly_plan.json', 'realonly_frozen.json', 'doc_offsets.json',
       'zl_raw.json', 'zl_dups.json', 'zl_fixes.json', 'zl_incomplete.json', 'zl_meta_all.json', 'zl_pool.json', 'zl_rank.json', 'zl_sets.json', 'zl_plan.json',
-      'ns_plan.json', 'mock_papers.json']
+      'ns_plan.json', 'mock_papers.json', 'ns_exclude.json']
 TEXT_EXT = ('.py', '.md', '.json', '.txt', '.jsonl')
 WORK = ['bp_*', 'bpC*', 'work_*', 'rev_*_work', 'l03_build']
 

@@ -26,7 +26,7 @@ best = min(freight.values())
 best_pts = [v for v in NODES if freight[v] == best]
 assert len(best_pts) == 1, best_pts
 
-opts = {'A': 458, 'B': 478, 'C': 542, 'D': 654}
+opts = {'A': 428, 'B': 458, 'C': 478, 'D': 542}
 hit = [k for k, v in opts.items() if v == best]
 assert len(hit) == 1, (best, hit)
 
@@ -49,11 +49,23 @@ def side(u, v):                        # goods on u's side when road u-v is cut
 lighter = PRICE * sum(l * min(side(u, v), side(v, u)) for (u, v), l in ROADS.items())
 assert lighter == best
 
-# where the distractors come from (documentation only)
+# where the distractors come from (documentation only; the answer above does not use them)
 heaviest = max(GOODS, key=GOODS.get)                      # point with the most goods
 junction = 'C'                                            # the fork in the road
 assert best_pts[0] not in (heaviest, junction)
-assert [freight[junction], freight[heaviest], freight['B']] == [opts['B'], opts['C'], opts['D']]
+assert [freight[junction], freight[heaviest]] == [opts['C'], opts['D']]
+# forgetting the junction village C's own goods:
+#  (a) segment-by-segment: on road C-E the lighter side is counted without C's goods
+side_wo_c = {}
+for (u, v), l in ROADS.items():
+    a, b = side(u, v), side(v, u)
+    if {u, v} == {'C', 'E'}:                              # the side containing C loses C's 3 t
+        a, b = (a - GOODS['C'], b) if u == 'C' else (a, b - GOODS['C'])
+    side_wo_c[(u, v)] = min(a, b)
+slip_a = PRICE * sum(l * side_wo_c[e] for e, l in ROADS.items())
+#  (b) direct sum at the best point E, leaving out C's goods
+slip_b = PRICE * sum(GOODS[u] * d[(u, best_pts[0])] for u in NODES if u != junction)
+assert slip_a == slip_b == opts['A'] < best
 
 print({v: freight[v] for v in NODES}, 'best point', best_pts[0])
 print(hit[0])
