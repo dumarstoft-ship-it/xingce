@@ -105,6 +105,23 @@ const assert = (c, m) => { if (!c) { console.error('FAIL ' + m); process.exitCod
     await page.waitForSelector('article');
     assert(await page.$$eval('button.blank, button.tape', els => els.length) > 0, '未做新版的文章照旧可用');
   } else console.log('skip 没有未做新版的文章');
+  // 换了新版本：接着上次读到的那篇往后，停在第一篇还没做完的主旨题，筛选不变
+  if (hasZ) {
+    const c2 = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+    const p2 = await c2.newPage();
+    p2.on('pageerror', e => errors.push('pageerror: ' + e.message));
+    await p2.goto('file://' + file); await p2.waitForSelector('article');
+    const [x, y] = await p2.evaluate(() => { const l = sorted(DATA.filter(a => (a.z || []).length)); return [l[0].id, l[1].id]; });
+    await p2.evaluate(x => {
+      const s = {}; s[x] = { open: {}, tags: {}, words: "", judg: {}, zans: Object.fromEntries(byId[x].z.map(z => [z.id, z.answer])) };
+      localStorage.setItem(KEY, JSON.stringify(s));
+      localStorage.setItem(KEY + ':ui', JSON.stringify({ order: 'theme', src: 'all', cur: x, mode: 'word', ver: 'old' }));
+    }, x);
+    await p2.reload(); await p2.waitForSelector('article');
+    const r = await p2.evaluate(() => [current, mode, srcFilter]);
+    assert(r[0] === y && r[1] === 'zz' && r[2] === 'all', `换新版本后接着往下：停在下一篇没做的主旨题，筛选不变（${r.join(', ')}）`);
+    await c2.close();
+  }
   // 手机宽度
   const m = await ctx.newPage(); await m.setViewportSize({ width: 390, height: 844 });
   await m.goto('file://' + file + '#' + qid); await m.waitForSelector('article');

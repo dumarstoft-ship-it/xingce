@@ -13,14 +13,14 @@ function st(id) {
   return s;
 }
 
-let order = "theme", srcFilter = "all", query = "", current = null, view = "article", mode = "word";
+let order = "theme", srcFilter = "all", query = "", current = null, view = "article", mode = "word", resumeZ = false;
 try {
   const u = JSON.parse(localStorage.getItem(KEY + ":ui") || "{}");
   order = u.order || order; srcFilter = u.src || srcFilter; current = u.cur || null;
   if (u.mode === "word" || u.mode === "zz" || u.mode === "wold") mode = u.mode;
   else if (u.mode === "sent") mode = "zz";
-  // 换了新版本：有主旨题时先列出做了主旨题的文章，停在主旨理解
-  if (u.ver !== META.ver && DATA.some(a => (a.z || []).length)) { srcFilter = "主旨"; mode = "zz"; current = null; }
+  // 换了新版本：有主旨题时列出做了主旨题的文章，停在主旨理解，从上次读到的那篇往后找还没做的主旨题
+  if (u.ver !== META.ver && DATA.some(a => (a.z || []).length)) { if (!u.ver || srcFilter !== "all") srcFilter = "主旨"; mode = "zz"; resumeZ = true; }
   else if (u.ver !== META.ver && DATA.some(a => a.pilot)) { srcFilter = "试点"; mode = "word"; current = null; }
 } catch (e) {}
 function saveUi() { try { localStorage.setItem(KEY + ":ui", JSON.stringify({ order, src: srcFilter, cur: current, mode, ver: META.ver })); } catch (e) {} }
@@ -58,12 +58,12 @@ function visible() {
   });
 }
 function rank(a) { return a.kind === "cs" ? 2 : a.src === "南方日报" ? 1 : 0; }
-function ordered() {
-  const list = visible().slice();
-  if (order === "date") list.sort((x, y) => x.date.localeCompare(y.date) || x.id.localeCompare(y.id));
-  else list.sort((x, y) => rank(x) - rank(y) || x.gidx - y.gidx || x.date.localeCompare(y.date));
-  return list;
+function sorted(list) {
+  if (order === "date") return list.sort((x, y) => x.date.localeCompare(y.date) || x.id.localeCompare(y.id));
+  return list.sort((x, y) => rank(x) - rank(y) || x.gidx - y.gidx || x.date.localeCompare(y.date));
 }
+function ordered() { return sorted(visible().slice()); }
+function zLeft(a) { const s = store[a.id]; return (a.z || []).some(z => !(s && s.zans && s.zans[z.id] != null)); }
 
 function renderNav() {
   const list = ordered();
@@ -904,5 +904,10 @@ document.addEventListener("keydown", e => {
 });
 
 const visibleNow = ordered();
-const start = (location.hash && byId[location.hash.slice(1)]) ? location.hash.slice(1) : (current && byId[current] ? current : (visibleNow[0] || DATA[0]).id);
-openArticle(start);
+let start = (location.hash && byId[location.hash.slice(1)]) ? location.hash.slice(1) : (current && byId[current] ? current : null);
+if (resumeZ && !location.hash) {
+  const full = sorted(DATA.slice()), p = start ? full.findIndex(a => a.id === start) : -1;
+  const nx = p >= 0 ? full.slice(p).find(zLeft) : visibleNow.find(zLeft);
+  if (nx) start = nx.id;
+}
+openArticle(start || (visibleNow[0] || DATA[0]).id);
