@@ -2,7 +2,6 @@
 const DATA = JSON.parse(document.getElementById("data").textContent);
 const REF = JSON.parse(document.getElementById("ref1310").textContent);
 const META = JSON.parse(document.getElementById("meta").textContent);
-const TAGS = [["hit", "猜中"], ["narrow", "太窄"], ["level", "层次不对"], ["tail", "被尾句带走"]];
 const KEY = "gaiju-v1";
 let store = {};
 try { store = JSON.parse(localStorage.getItem(KEY) || "{}") || {}; } catch (e) { store = {}; }
@@ -10,7 +9,7 @@ function save() { try { localStorage.setItem(KEY, JSON.stringify(store)); } catc
 function st(id) {
   const s = store[id] || (store[id] = { open: {}, tags: {}, words: "", judg: {} });
   s.wopen = s.wopen || {}; s.wconf = s.wconf || {}; s.whit = s.whit || {};
-  s.qans = s.qans || {}; s.iqa = s.iqa || {};
+  s.qans = s.qans || {}; s.iqa = s.iqa || {}; s.zans = s.zans || {};
   return s;
 }
 
@@ -18,8 +17,11 @@ let order = "theme", srcFilter = "all", query = "", current = null, view = "arti
 try {
   const u = JSON.parse(localStorage.getItem(KEY + ":ui") || "{}");
   order = u.order || order; srcFilter = u.src || srcFilter; current = u.cur || null;
-  if (u.mode === "word" || u.mode === "sent" || u.mode === "wold") mode = u.mode;
-  if (u.ver !== META.ver && DATA.some(a => a.pilot)) { srcFilter = "试点"; mode = "word"; current = null; }
+  if (u.mode === "word" || u.mode === "zz" || u.mode === "wold") mode = u.mode;
+  else if (u.mode === "sent") mode = "zz";
+  // 换了新版本：有主旨题时先列出做了主旨题的文章，停在主旨理解
+  if (u.ver !== META.ver && DATA.some(a => (a.z || []).length)) { srcFilter = "主旨"; mode = "zz"; current = null; }
+  else if (u.ver !== META.ver && DATA.some(a => a.pilot)) { srcFilter = "试点"; mode = "word"; current = null; }
 } catch (e) {}
 function saveUi() { try { localStorage.setItem(KEY + ":ui", JSON.stringify({ order, src: srcFilter, cur: current, mode, ver: META.ver })); } catch (e) {} }
 
@@ -32,12 +34,14 @@ const SMOOTH = matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" :
 function circ(n) { return n >= 1 && n <= 20 ? String.fromCharCode(0x2460 + n - 1) : "(" + n + ")"; }
 function masksOf(a) { return a.paras.flat().filter(x => x.m); }
 function hasQ(a) { return (a.q || []).length > 0; }
+function hasZ(a) { return (a.z || []).length > 0; }
 function statusOf(a) {
   const s = store[a.id]; if (!s) return "";
   if (hasQ(a)) {
     const n = a.q.length, t = a.q.filter(q => s.qans && s.qans[q.id] != null).length;
-    if (t >= n) return "done";
-    return (t || Object.keys(s.tags || {}).length || Object.keys(s.open || {}).length) ? "part" : "";
+    const zn = (a.z || []).length, zt = (a.z || []).filter(z => s.zans && s.zans[z.id] != null).length;
+    if (t >= n && zt >= zn) return "done";
+    return (t || zt || Object.keys(s.tags || {}).length || Object.keys(s.open || {}).length) ? "part" : "";
   }
   const n = masksOf(a).length, t = Object.keys(s.tags || {}).length;
   if (n && t >= n) return "done";
@@ -47,6 +51,7 @@ function visible() {
   const q = query.trim();
   return DATA.filter(a => {
     if (srcFilter === "试点") { if (!a.pilot) return false; }
+    else if (srcFilter === "主旨") { if (!hasZ(a)) return false; }
     else if (srcFilter === "常识") { if (a.kind !== "cs") return false; }
     else if (srcFilter !== "all") { if (a.kind === "cs" || a.src !== srcFilter) return false; }
     return !q || (a.title + a.group + a.col).includes(q);
@@ -74,7 +79,7 @@ function renderNav() {
     const dot = document.createElement("span"); dot.className = "dot " + statusOf(a);
     const txt = document.createElement("span");
     const t = document.createElement("div"); t.className = "t"; t.textContent = a.title;
-    if (a.pilot) t.append(el("span", "badge", "新版"));
+    if (hasZ(a)) t.append(el("span", "badge", "主旨"));
     const m = document.createElement("div"); m.className = "m";
     const s = document.createElement("span"); s.className = a.src === "南方日报" ? "nf" : ""; s.textContent = a.src;
     m.append(s, document.createTextNode(" · " + a.col + " · " + a.date.slice(5)));
@@ -101,20 +106,20 @@ function openArticle(id) {
 
 function el(tag, cls, text) { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; }
 
-// 当前文章实际用哪种遮法：sent 点题句；q 新版遮词句；w 旧版遮词
+// 当前文章实际用哪种模式：zz 主旨理解；q 新版遮词句；w 旧版遮词；plain 不遮
 function effMode(a) {
-  if (mode === "sent") return "sent";
-  if (mode === "wold") return (a.w || []).length ? "w" : hasQ(a) ? "q" : "sent";
-  return hasQ(a) ? "q" : (a.w || []).length ? "w" : "sent";
+  if (mode === "zz") return hasZ(a) ? "zz" : hasQ(a) ? "q" : (a.w || []).length ? "w" : "plain";
+  if (mode === "wold") return (a.w || []).length ? "w" : hasQ(a) ? "q" : "plain";
+  return hasQ(a) ? "q" : (a.w || []).length ? "w" : "plain";
 }
 
-let activeQ = null;
+let activeQ = null, activeZ = null;
 
 function renderArticle(a) {
   const s = st(a.id);
   const em = effMode(a);
   closeSheet();
-  activeQ = null;
+  activeQ = null; activeZ = null;
   const ph = isPhone();
   const main = document.getElementById("main");
   const wrap = el("div", "wrap");
@@ -130,10 +135,13 @@ function renderArticle(a) {
     how.innerHTML = "读到遮住的词句，先<b>想想自己会怎样接</b>，再选“有把握”或“没把握”揭开。对照原文的措辞和语气，点“对上了”或“没对上”；不必一字不差。";
     legend.innerHTML = "<span><b>有把握却没对上</b>的词会收进“我的记录”，留着重点复习</span>";
     brief = `本篇遮了 ${a.w.length} 处词句`;
+  } else if (em === "zz") {
+    how.innerHTML = "读到命题人会出题的那几段，先像在考场上一样，<b>只看截好的题干</b>，选一个答案。选完揭开原文：<b>划掉的是命题人删去的</b>，加下划线的是命题人改写或添上的。对照着看，命题人删了哪句、为什么这样配选项。";
+    legend.innerHTML = `<span>本篇：主旨类题 <b>${a.z.length}</b> 道</span><span>选错的题会收进“我的记录”</span>`;
+    brief = `本篇主旨类题 ${a.z.length} 道`;
   } else {
-    how.innerHTML = "每段先读灰条以外的部分，<b>心里用一句话说出这段在讲什么</b>，再点灰条看原句，选一个对照结果。灰条遮住的是这一段的点题句，命题人出片段阅读时常删的就是它。";
-    legend.innerHTML = "<span><b>猜中</b>：意思对上了</span><span><b>太窄</b>：把例子或局部当成观点</span><span><b>层次不对</b>：抽象得太高或太低</span><span><b>被尾句带走</b>：抓了段尾，但它不是中心</span>";
-    brief = `本篇遮了 ${masksOf(a).length} 处点题句`;
+    how.innerHTML = "这篇还没有出题，先通读。";
+    brief = "这篇还没有出题";
   }
   // 手机上说明收起来，只露一行
   let intro = [how, legend];
@@ -150,14 +158,15 @@ function renderArticle(a) {
   by.append(link, prog);
   const grp = el("div", "group", (a.kind === "cs" ? "考点：" : a.src === "南方日报" ? "覆盖：" : "主题：") + a.group);
   art.append(meta, h, by, grp);
-  if (hasQ(a) || (a.w || []).length) {
+  if (hasZ(a) || hasQ(a) || (a.w || []).length) {
     const mb = el("div", "modebar");
-    const seg = el("div", "seg"); seg.setAttribute("role", "group"); seg.setAttribute("aria-label", "遮挡方式");
-    const modes = [["sent", ph ? "点题句 " + masksOf(a).length : "遮点题句（" + masksOf(a).length + "）"]];
-    if (hasQ(a)) modes.push(["word", ph ? "词句 " + a.q.length + " 题" : "遮词句 · 新版（" + a.q.length + " 题）"]);
-    else modes.push(["word", ph ? "遮词 " + a.w.length : "遮词句（" + a.w.length + "）"]);
+    const seg = el("div", "seg"); seg.setAttribute("role", "group"); seg.setAttribute("aria-label", "练习方式");
+    const modes = [];
+    if (hasZ(a)) modes.push(["zz", ph ? "主旨 " + a.z.length + " 题" : "主旨理解（" + a.z.length + " 题）"]);
+    if (hasQ(a)) modes.push(["word", ph ? "词句 " + a.q.length + " 题" : "遮词句（" + a.q.length + " 题）"]);
+    else if ((a.w || []).length) modes.push(["word", ph ? "遮词 " + a.w.length : "遮词句（" + a.w.length + "）"]);
     if (hasQ(a) && (a.w || []).length) modes.push(["wold", ph ? "旧版对照" : "旧版遮词（对照）"]);
-    const cur = em === "sent" ? "sent" : em === "q" ? "word" : hasQ(a) ? "wold" : "word";
+    const cur = em === "zz" ? "zz" : em === "q" ? "word" : em === "w" && hasQ(a) ? "wold" : "word";
     for (const [k, name] of modes) {
       const b = el("button", "", name); b.type = "button"; b.dataset.mode = k;
       b.setAttribute("aria-pressed", cur === k ? "true" : "false");
@@ -169,30 +178,24 @@ function renderArticle(a) {
   }
   const qn = hasQ(a) ? Object.fromEntries(a.q.map((q, i) => [q.id, i + 1])) : {};
 
-  a.paras.forEach((para, pi) => {
+  // 主旨理解：出题的那几段换成题卡；会露出答案的段落（如提要）先收起，做完那道题再展开；其余段落照常显示
+  const zAt = em === "zz" ? Object.fromEntries(a.z.map((z, i) => [z.from, [z, i + 1]])) : {};
+  const hideBy = {};
+  if (em === "zz") for (const z of a.z) if (s.zans[z.id] == null) for (const h of z.hide || []) (hideBy[h] = hideBy[h] || []).push(z);
+  for (let pi = 0; pi < a.paras.length; pi++) {
+    const para = a.paras[pi];
+    if (zAt[pi + 1]) { const [z, n] = zAt[pi + 1]; art.append(zCard(a, s, z, n)); pi = z.to - 1; continue; }
+    if (hideBy[pi + 1]) { art.append(zHidden(a, s, para, pi, hideBy[pi + 1])); continue; }
     const box = el("div", "para");
     const p = el("p", para.length === 1 && para[0].sub ? "sub" : "");
     p.append(el("span", "pno", "[" + (pi + 1) + "]"));
     const checks = el("div", "checks");
-    if (em === "q") { renderQPara(a, s, para, pi, p, checks, qn); box.append(p, checks); art.append(box); return; }
-    if (em === "w") { renderWordPara(a, s, para, pi, p, checks); box.append(p, checks); art.append(box); return; }
-    for (const part of para) {
-      if (part.t != null) { p.append(document.createTextNode(part.t)); continue; }
-      const slot = el("span");
-      p.append(slot);
-      const reveal = () => { const mk = el("mark", "rev", part.m); slot.replaceChildren(mk); };
-      const mask = () => {
-        const b = el("button", "tape", (part.label ? part.label + " · " : "") + "点题句，点开");
-        b.type = "button"; b.dataset.mask = part.id;
-        b.setAttribute("aria-label", "揭开第" + (pi + 1) + "段被遮住的句子");
-        b.addEventListener("click", () => { s.open[part.id] = 1; save(); reveal(); checks.append(checkRow(a, part, pi)); updateProg(a); renderNavLite(); });
-        slot.replaceChildren(b);
-      };
-      if (s.open[part.id]) { reveal(); checks.append(checkRow(a, part, pi)); } else mask();
-    }
+    if (em === "q") renderQPara(a, s, para, pi, p, checks, qn);
+    else if (em === "w") renderWordPara(a, s, para, pi, p, checks);
+    else p.append(document.createTextNode(paraText(para)));
     box.append(p, checks);
     art.append(box);
-  });
+  }
 
   const w = el("section", "block");
   w.append(el("h2", "", "意外的措辞"), el("div", "hint", "读到“换我会写别的”的地方就记下来，攒一批再回看。"));
@@ -205,12 +208,12 @@ function renderArticle(a) {
   else if (a.judgments && a.judgments.length) art.append(oldJudgments(a, s, (a.kind === "cs" ? "常识" : "政治理论") + " · 判断题"));
 
   const tools = el("div", "tools");
-  const again = el("button", "", "重新遮住，再读一遍"); again.type = "button";
+  const again = el("button", "", em === "zz" ? "清掉作答，再做一遍" : "重新遮住，再读一遍"); again.type = "button";
   again.addEventListener("click", () => {
-    if (em === "q") s.qans = {}; else if (em === "w") s.wopen = {}; else s.open = {};
+    if (em === "q") s.qans = {}; else if (em === "w") s.wopen = {}; else if (em === "zz") s.zans = {};
     save(); renderArticle(a); renderNavLite();
   });
-  tools.append(again, el("span", "kbd", em === "q" ? "快捷键：空格 打开下一处 · A–D 或 1–4 选项 · ← → 上一篇 / 下一篇" : "快捷键：空格 揭开下一处 · ← → 上一篇 / 下一篇"));
+  tools.append(again, el("span", "kbd", em === "q" || em === "zz" ? "快捷键：空格 跳到下一题 · A–D 或 1–4 选项 · ← → 上一篇 / 下一篇" : "快捷键：空格 揭开下一处 · ← → 上一篇 / 下一篇"));
   art.append(tools);
 
   const list = ordered(); const i = list.findIndex(x => x.id === a.id);
@@ -226,24 +229,6 @@ function renderArticle(a) {
   updateProg(a);
 }
 
-function checkRow(a, part, pi) {
-  const s = st(a.id);
-  const row = el("div", "check");
-  row.append(el("span", "which", "第" + (pi + 1) + "段" + (part.label ? "（" + part.label + "）" : "") + "：我的一句话和原句比——"));
-  const chips = el("div", "chips"); chips.setAttribute("role", "group");
-  for (const [k, name] of TAGS) {
-    const b = el("button", "", name); b.type = "button";
-    b.setAttribute("aria-pressed", s.tags[part.id] === k ? "true" : "false");
-    b.addEventListener("click", () => {
-      if (s.tags[part.id] === k) delete s.tags[part.id]; else s.tags[part.id] = k;
-      for (const c of chips.children) c.setAttribute("aria-pressed", c === b && s.tags[part.id] ? "true" : "false");
-      save(); updateProg(a); renderNavLite();
-    });
-    chips.append(b);
-  }
-  row.append(chips);
-  return row;
-}
 function updateProg(a) {
   updateMbar();
   const s = st(a.id); const p = document.getElementById("prog"); if (!p) return;
@@ -255,8 +240,13 @@ function updateProg(a) {
     return;
   }
   if (em === "w") { const t = a.w.filter(w => s.whit[w.id] != null).length; p.textContent = "词句已对照 " + t + " / " + a.w.length; return; }
-  const n = masksOf(a).length; const t = masksOf(a).filter(m => s.tags[m.id]).length;
-  p.textContent = "已对照 " + t + " / " + n;
+  if (em === "zz") {
+    const done = a.z.filter(z => s.zans[z.id] != null);
+    const ok = done.filter(z => s.zans[z.id] === z.answer).length;
+    p.textContent = "主旨题已答 " + done.length + " / " + a.z.length + (done.length ? " · 答对 " + ok : "");
+    return;
+  }
+  p.textContent = "";
 }
 function paraText(para) { return para.map(x => x.t != null ? x.t : x.m).join(""); }
 
@@ -439,18 +429,115 @@ function updateMbar() {
   let total, left;
   if (em === "q") { total = a.q.length; left = a.q.filter(q => s.qans[q.id] == null).length; }
   else if (em === "w") { total = a.w.length; left = a.w.filter(w => !s.wopen[w.id]).length; }
-  else { const ms = masksOf(a); total = ms.length; left = ms.filter(m => !s.open[m.id]).length; }
-  mbNext.textContent = left ? (em === "sent" ? "下一句 " : "下一空 ") + (total - left) + "/" + total : "下一篇 →";
+  else if (em === "zz") { total = a.z.length; left = a.z.filter(z => s.zans[z.id] == null).length; }
+  else { total = 0; left = 0; }
+  mbNext.textContent = left ? (em === "zz" ? "下一题 " : "下一空 ") + (total - left) + "/" + total : "下一篇 →";
 }
-// 下一处还没揭开的空格或灰条
+// 下一处还没做的空格或主旨题
 function nextTarget() {
   const a = byId[current]; if (!a || view !== "article") return null;
-  return document.querySelector(effMode(a) === "sent" ? "button.tape" : "button.blank");
+  return document.querySelector(effMode(a) === "zz" ? ".zcard:not(.done)" : "button.blank");
 }
 function goNext() {
   const b = nextTarget(); if (!b) return;
-  if (b.matches("button.tape")) b.scrollIntoView({ block: "center", behavior: SMOOTH });
+  if (b.matches(".zcard")) {
+    b.scrollIntoView({ block: "start", behavior: SMOOTH });
+    activeZ = b._ctl;
+    const first = b.querySelector(".opts button"); if (first) first.focus({ preventScroll: true });
+    return;
+  }
   b.click();
+}
+
+// ---------- 主旨理解 ----------
+// 题卡：答之前只给截好的题干；答完给对错、说明，题干换成原文对照（划掉的是命题人删的，下划线是改写或添上的）
+function zCard(a, s, z, n) {
+  const box = el("div", "zcard"); box.dataset.z = z.id;
+  box._ctl = { a, s, z, n, box };
+  paintZ(box._ctl);
+  return box;
+}
+function zRange(z) { return z.from === z.to ? "第 " + z.from + " 段" : "第 " + z.from + "–" + z.to + " 段"; }
+function paintZ(ctl) {
+  const { a, s, z, n, box } = ctl;
+  const chosen = s.zans[z.id], done = chosen != null;
+  box.replaceChildren(); box.classList.toggle("done", done);
+  const head = el("div", "qh");
+  head.append(el("b", "", "主旨题 " + circ(n)), el("span", "", zRange(z) + (z.type ? " · " + z.type : "")));
+  box.append(head);
+  if (!done) {
+    const ps = el("div", "zpass");
+    for (const line of z.passage.split("\n")) ps.append(el("p", "", line));
+    box.append(ps);
+  } else box.append(zDiff(z));
+  box.append(el("div", "zstem", z.stem));
+  const opts = el("div", "opts long");
+  z.options.forEach((o, i) => {
+    const b = el("button"); b.type = "button";
+    b.append(el("span", "k", LETTERS[i]), el("span", "t", o));
+    if (done) {
+      b.disabled = true;
+      if (i === z.answer) b.classList.add("right");
+      if (chosen === i && i !== z.answer) b.classList.add("wrong");
+    } else b.addEventListener("click", () => answerZ(ctl, i));
+    opts.append(b);
+  });
+  box.append(opts);
+  if (!done) {
+    const skip = el("button", "linkish", "不选了，直接看答案"); skip.type = "button";
+    skip.addEventListener("click", () => answerZ(ctl, -1));
+    box.append(skip);
+    return;
+  }
+  const res = el("div", "res");
+  if (chosen === -1) res.append(el("span", "", "没有作答。答案是 " + LETTERS[z.answer] + "。"));
+  else if (chosen === z.answer) res.append(el("span", "ok", "选对了。"));
+  else res.append(el("span", "bad", "选了 " + LETTERS[chosen] + "，答案是 " + LETTERS[z.answer] + "。"));
+  box.append(res, el("div", "note", z.note));
+}
+function zDiff(z) {
+  const d = el("div", "zorig");
+  d.append(el("div", "zlab", "原文" + zRange(z).replace("第 ", "第").replace(" 段", "段") + "：划掉的是命题人删去的，加下划线的是命题人改写或添上的"));
+  let pno = z.from;
+  let p = el("p"); p.append(el("span", "pno", "[" + pno + "]")); d.append(p);
+  for (const [op, t] of z.diff) {
+    t.split("\n").forEach((seg, k) => {
+      if (k > 0 && op !== "+") { pno++; p = el("p"); p.append(el("span", "pno", "[" + pno + "]")); d.append(p); }
+      if (!seg) return;
+      p.append(op === "=" ? document.createTextNode(seg) : el(op === "-" ? "del" : "ins", "", seg));
+    });
+  }
+  return d;
+}
+function answerZ(ctl, i) {
+  const { a, s, z, box } = ctl;
+  s.zans[z.id] = i; save(); activeZ = null;
+  paintZ(ctl); updateProg(a); renderNavLite();
+  unhideZ(s, box);
+  if (box.getBoundingClientRect().top < 0) box.scrollIntoView({ block: "start", behavior: SMOOTH });
+}
+function plainPara(para, pi) {
+  const box = el("div", "para");
+  const p = el("p", para.length === 1 && para[0].sub ? "sub" : "");
+  p.append(el("span", "pno", "[" + (pi + 1) + "]"), document.createTextNode(paraText(para)));
+  box.append(p);
+  return box;
+}
+function zHidden(a, s, para, pi, zs) {
+  const box = el("div", "zhide"); box._para = para; box._pi = pi; box._zs = zs;
+  const nums = zs.map(z => circ(a.z.indexOf(z) + 1)).join("");
+  box.append(el("span", "pno", "[" + (pi + 1) + "]"), el("span", "", "这段先收起：它会露出主旨题 " + nums + " 的答案，做完再看。"));
+  const b = el("button", "linkish", "现在就看"); b.type = "button";
+  b.addEventListener("click", () => box.replaceWith(plainPara(para, pi)));
+  box.append(b);
+  return box;
+}
+// 做完一题，把只为它收起的段落展开；上方展开的段落会把题卡往下推，这里把页面滚回原位
+function unhideZ(s, anchor) {
+  const before = anchor.getBoundingClientRect().top;
+  for (const h of document.querySelectorAll(".zhide")) if (h._zs.every(z => s.zans[z.id] != null)) h.replaceWith(plainPara(h._para, h._pi));
+  const d = anchor.getBoundingClientRect().top - before;
+  if (d) { if (isPhone()) window.scrollBy(0, d); else document.getElementById("main").scrollTop += d; }
 }
 
 // ---------- 广东式政治理论 / 常识 ----------
@@ -645,25 +732,23 @@ let navTimer; function renderNavLite() { clearTimeout(navTimer); navTimer = setT
 function renderStats() {
   view = "stats"; renderNav(); updateMbar();
   const wrap = el("div", "wrap");
-  const c = { hit: 0, narrow: 0, level: 0, tail: 0 }; let jr = 0, jt = 0, cr = 0, ct = 0, done = 0;
-  let qn = 0, qr = 0, ir = 0, itn = 0;
-  const words = [], qmiss = [];
+  let jr = 0, jt = 0, cr = 0, ct = 0, done = 0;
+  let qn = 0, qr = 0, ir = 0, itn = 0, zn = 0, zr = 0;
+  const words = [], qmiss = [], zmiss = [];
   for (const a of DATA) {
     const s = store[a.id]; if (!s) continue;
-    for (const k of Object.values(s.tags || {})) c[k] = (c[k] || 0) + 1;
+    for (const z of a.z || []) { const v = s.zans && s.zans[z.id]; if (v == null || v === -1) continue; zn++; if (v === z.answer) zr++; else zmiss.push([a, z, v]); }
     if (!(a.items || []).length) (a.judgments || []).forEach((j, i) => { if (s.judg && s.judg[i] != null) { if (a.kind === "cs") { ct++; if (s.judg[i] === j.answer) cr++; } else { jt++; if (s.judg[i] === j.answer) jr++; } } });
     for (const it of a.items || []) { const v = s.iqa && s.iqa[it.id]; if (v == null) continue; itn++; if (it.type === "多选" ? JSON.stringify(v) === JSON.stringify(it.answer) : v === it.answer) ir++; }
     for (const q of a.q || []) { const v = s.qans && s.qans[q.id]; if (v == null || v === -1) continue; qn++; if (v === q.answer) qr++; else qmiss.push([a, q, v]); }
     if (statusOf(a) === "done") done++;
     if (s.words && s.words.trim()) words.push("【" + a.title + "】" + s.words.trim());
   }
-  const total = c.hit + c.narrow + c.level + c.tail;
   wrap.append(el("h1", "", "我的记录"));
   const grid = el("div", "stats");
   const card = (n, l, pct) => { const d = el("div", "stat"); const nn = el("div", "n", String(n)); if (pct) nn.append(el("span", "pct", pct)); d.append(nn, el("div", "l", l)); return d; };
-  grid.append(card(done + " / " + DATA.length, "读完的篇数"), card(total, "对照过的点题句"));
-  for (const [k, name] of TAGS) grid.append(card(c[k], name, total ? Math.round(c[k] * 100 / total) + "%" : ""));
-  grid.append(card(qn ? qr + " / " + qn : "0", "新版词句题答对"), card(itn ? ir + " / " + itn : "0", "广东式政治常识题答对"));
+  grid.append(card(done + " / " + DATA.length, "读完的篇数"), card(zn ? zr + " / " + zn : "0", "主旨题答对"));
+  grid.append(card(qn ? qr + " / " + qn : "0", "词句题答对"), card(itn ? ir + " / " + itn : "0", "广东式政治常识题答对"));
   grid.append(card(jt ? jr + " / " + jt : "0", "旧版政治理论判断题答对"), card(ct ? cr + " / " + ct : "0", "旧版常识判断题答对"));
   let wn = 0, wh = 0; const miss = [];
   for (const a of DATA) {
@@ -675,6 +760,21 @@ function renderStats() {
   }
   grid.append(card(wn ? wh + " / " + wn : "0", "旧版词语对上了"), card(miss.length, "旧版有把握却没对上的词"));
   wrap.append(grid);
+  if (zmiss.length) {
+    const rsec = el("section", "block");
+    rsec.append(el("h2", "", "选错的主旨题（重点复习）"), el("div", "hint", "看看当时被哪个选项带走了，再回原文对照命题人删了哪句。"));
+    const list = el("div", "review");
+    for (const [a, z, v] of zmiss) {
+      const it = el("div", "it");
+      it.append(el("div", "ctx", z.stem), el("div", "", "你选了 " + LETTERS[v] + "．" + z.options[v] + "；答案 " + LETTERS[z.answer] + "．" + z.options[z.answer]), el("div", "", z.note));
+      const src = el("a", "src", "【" + a.title + "】" + zRange(z).replace(/ /g, "")); src.href = "#" + a.id;
+      src.addEventListener("click", e => { e.preventDefault(); mode = "zz"; saveUi(); openArticle(a.id); });
+      it.append(src);
+      list.append(it);
+    }
+    rsec.append(list);
+    wrap.append(rsec);
+  }
   if (qmiss.length) {
     const rsec = el("section", "block");
     rsec.append(el("h2", "", "选错的词句题（重点复习）"), el("div", "hint", "原文用词标了出来。看看当时被哪个选项带走了，再读一遍说明。"));
@@ -749,8 +849,15 @@ function render1310() {
 (function addPilotFilter() {
   if (!DATA.some(a => a.pilot)) return;
   const seg = document.querySelector('[aria-label="来源筛选"]');
-  const b = document.createElement("button"); b.type = "button"; b.dataset.src = "试点"; b.textContent = "新版"; b.setAttribute("aria-pressed", "false");
-  seg.prepend(b);
+  // 全部文章都做了新版遮词句以后，"新版"筛选就等于"全部"，换成只列做了主旨题的
+  const allNew = DATA.every(a => a.pilot);
+  if (allNew && !DATA.some(hasZ)) { if (srcFilter === "试点") srcFilter = "all"; }
+  else {
+    const b = document.createElement("button"); b.type = "button";
+    b.dataset.src = allNew ? "主旨" : "试点"; b.textContent = allNew ? "主旨" : "新版"; b.setAttribute("aria-pressed", "false");
+    seg.prepend(b);
+    if (allNew && srcFilter === "试点") srcFilter = "all";
+  }
   const head = document.querySelector(".nav-head");
   const note = el("div", "pilot-note", META.note || "");
   if (META.note) head.append(note);
@@ -781,6 +888,11 @@ document.addEventListener("keydown", e => {
     const k = e.key.toUpperCase();
     const idx = "ABCD".indexOf(k) >= 0 ? "ABCD".indexOf(k) : "1234".indexOf(e.key);
     if (idx >= 0 && e.key.length === 1) { const { a, s, ctl } = activeQ; answerQ(a, s, ctl, idx); e.preventDefault(); return; }
+  }
+  if (activeZ && activeZ.box.isConnected && activeZ.s.zans[activeZ.z.id] == null) {
+    const k = e.key.toUpperCase();
+    const idx = "ABCD".indexOf(k) >= 0 ? "ABCD".indexOf(k) : "1234".indexOf(e.key);
+    if (idx >= 0 && e.key.length === 1) { answerZ(activeZ, idx); e.preventDefault(); return; }
   }
   if (e.key === "ArrowRight" && i >= 0 && i < list.length - 1) { openArticle(list[i + 1].id); e.preventDefault(); }
   else if (e.key === "ArrowLeft" && i > 0) { openArticle(list[i - 1].id); e.preventDefault(); }

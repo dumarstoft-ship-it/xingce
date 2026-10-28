@@ -6,7 +6,7 @@
 - 每题附说明：原文为什么最好，陷阱在哪。
 - 文末的政治理论、常识题改按广东卷的考法出，有判断、单选、多选三种，每题列出依据并标明依据类型。
 
-"遮点题句"模式不动。
+"遮点题句"模式后来换成了"主旨理解"，见 `../主旨理解/`。
 
 手机上（屏宽 760px 以下）目录收进抽屉，顶上一条窄栏放“目录”、标题和“下一空”；点空格从底部弹出选项面板，句子留在上方看得见，选完在面板里看说明。
 
@@ -50,8 +50,8 @@
 ```
 python3 -I scripts/extract_base.py 盖句精读旧版.html 底稿目录
 python3 -I scripts/build_v2.py --base 底稿目录/data.json --ref 底稿目录/ref1310.json --head 底稿目录/head.html \
-    --css scripts/extra.css --js scripts/app_v2.js --masks 试点/M*.json --items 试点/P*.json \
-    --out 盖句精读.html --ver <版本号> --note "<目录栏上的说明>"
+    --css scripts/extra.css --js scripts/app_v2.js --masks 试点/M*.json 全量/M_B*.json --items 试点/P*.json \
+    --zz ../主旨理解/试点/Z_*.json --out 盖句精读.html --ver <版本号> --note "<目录栏上的说明>"
 node scripts/test_v2.js <网页绝对路径> <截图目录>
 ```
 

@@ -27,12 +27,14 @@ function assert(c, m) { (c ? ok : bad).push(m); console.log((c ? 'ok   ' : 'FAIL
   assert(!(await page.isVisible('nav')) && page.url().startsWith('file:'), '按返回键关掉抽屉，页面还在');
   // 从抽屉选一篇有语句填空的
   await page.tap('#mbar .mb-menu');
-  const id = await page.evaluate(() => DATA.find(a => a.q.some(q => q.kind === '语句填空') && a.q.some(q => q.kind === '选词填空') && a.q.length >= 5).id);
+  await page.tap('[data-src="all"]'); await page.waitForTimeout(200);
+  const id = await page.evaluate(() => (DATA.find(a => (a.z || []).length && a.q.some(q => q.kind === '语句填空') && a.q.some(q => q.kind === '选词填空') && a.q.length >= 5) || DATA.find(a => a.q.some(q => q.kind === '语句填空') && a.q.some(q => q.kind === '选词填空') && a.q.length >= 5)).id);
   await page.locator(`.item[href="#${id}"]`).scrollIntoViewIfNeeded();
   await page.tap(`.item[href="#${id}"]`);
   await page.waitForTimeout(300);
   assert(!(await page.isVisible('nav')) && await page.evaluate(id => current === id, id), '在抽屉里点一篇，抽屉收起、打开这篇');
   assert(await page.evaluate(() => window.scrollY === 0), '新打开的文章从顶上开始');
+  await page.locator('[data-mode="word"]').tap(); await page.waitForTimeout(200);
   await shot('m3_article');
   // 下一空
   const t0 = await page.textContent('#mbar .mb-next');
@@ -86,13 +88,20 @@ function assert(c, m) { (c ? ok : bad).push(m); console.log((c ? 'ok   ' : 'FAIL
   await shot('m6_long');
   await page.goBack(); await page.waitForTimeout(300);
   assert(!(await page.isVisible('.qsheet')) && page.url().startsWith('file:'), '按返回键收起面板，页面还在');
-  // 遮点题句
-  await page.locator('[data-mode="sent"]').tap(); await page.waitForTimeout(200);
-  const t2 = await page.textContent('#mbar .mb-next');
-  assert(/^下一句 /.test(t2.trim()), '切到遮点题句，窄栏变成“下一句”');
-  await page.tap('#mbar .mb-next'); await page.waitForTimeout(600);
-  assert(await page.$$eval('mark.rev', els => els.length) === 1, '点“下一句”揭开一处点题句');
-  await shot('m7_sent');
+  // 主旨理解（这篇有主旨题时）
+  const nz = await page.evaluate(() => (byId[current].z || []).length);
+  if (nz) {
+    await page.locator('[data-mode="zz"]').tap(); await page.waitForTimeout(200);
+    const t2 = await page.textContent('#mbar .mb-next');
+    assert(t2.trim() === `下一题 0/${nz}`, '切到主旨理解，窄栏变成“下一题 0/N”（' + t2.trim() + '）');
+    await page.tap('#mbar .mb-next'); await page.waitForTimeout(700);
+    const top = await page.evaluate(() => document.querySelector('.zcard:not(.done)').getBoundingClientRect().top);
+    assert(top >= 40 && top < 140, `点“下一题”跳到题卡，题卡顶在窄栏下面（${Math.round(top)}）`);
+    await shot('m7_zz');
+    await page.locator('.zcard:not(.done) .opts button').first().tap(); await page.waitForTimeout(400);
+    assert(await page.$$eval('.zcard.done .zorig', els => els.length) === 1, '主旨题答完显示原文对照');
+    await shot('m7b_zz_done');
+  } else console.log('skip 这篇没有主旨题');
   // 读到一半，从抽屉换一篇：新的一篇要从顶上开始
   await page.evaluate(() => window.scrollTo(0, 1500)); await page.waitForTimeout(200);
   const other = await page.evaluate(() => { const l = ordered(); const i = l.findIndex(x => x.id === current); return l[(i + 1) % l.length].id; });
@@ -100,7 +109,7 @@ function assert(c, m) { (c ? ok : bad).push(m); console.log((c ? 'ok   ' : 'FAIL
   await page.locator(`.item[href="#${other}"]`).scrollIntoViewIfNeeded();
   await page.tap(`.item[href="#${other}"]`); await page.waitForTimeout(700);
   assert(await page.evaluate(o => current === o && scrollY === 0, other), '读到一半从抽屉换一篇，新的一篇从顶上开始');
-  await page.evaluate(id => openArticle(id), id); await page.locator('[data-mode="sent"]').tap(); await page.waitForTimeout(200);
+  await page.evaluate(id => openArticle(id), id); await page.waitForTimeout(200);
   // 文末
   await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight)); await page.waitForTimeout(200);
   await shot('m8_end');
@@ -117,6 +126,7 @@ function assert(c, m) { (c ? ok : bad).push(m); console.log((c ? 'ok   ' : 'FAIL
   // 暗色
   const dark = await b.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true, colorScheme: 'dark' });
   const dp = await dark.newPage(); await dp.goto('file://' + file + '#' + id); await dp.waitForSelector('article');
+  await dp.locator('[data-mode="word"]').tap(); await dp.waitForTimeout(200);
   await dp.locator('button.blank').first().tap(); await dp.waitForTimeout(600);
   await dp.screenshot({ path: `${out}/m10_dark.png` });
   assert(errs.length === 0, '无报错、无外部请求' + (errs.length ? '：' + errs.join(' | ') : ''));

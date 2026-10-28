@@ -35,6 +35,23 @@ details.old[open] summary { margin-bottom: 8px; }
 details.srcs-d { margin-top: 6px; font-size: 0.8125rem; }
 details.srcs-d summary { cursor: pointer; color: var(--ink-soft); }
 
+/* 主旨理解题卡：答前只给截好的题干；答完换成原文对照，划掉的是命题人删去的，下划线是改写或添上的 */
+.zcard { background: var(--paper); border: 1px solid var(--rule); border-radius: 6px; padding: 12px 14px; display: flex; flex-direction: column; gap: 10px; font-size: 0.875rem; scroll-margin-top: 16px; }
+.zcard .qh { font-size: 0.8125rem; color: var(--ink-soft); display: flex; gap: 4px 10px; flex-wrap: wrap; align-items: baseline; }
+.zcard .qh b { color: var(--ink); font-weight: 600; }
+.zpass, .zorig { background: var(--sheet); border: 1px solid var(--rule); border-radius: 4px; padding: 10px 12px; display: flex; flex-direction: column; gap: 6px; }
+.zpass p, .zorig p { font-family: var(--serif); font-size: 1.02rem; line-height: 1.85; margin: 0; text-indent: 2em; }
+.zorig .pno { text-indent: 0; }
+.zorig .zlab { font-size: 0.75rem; color: var(--ink-soft); line-height: 1.5; }
+.zorig del { color: var(--ink-soft); text-decoration: line-through; text-decoration-color: var(--bad); text-decoration-thickness: 1.5px; background: var(--zhu-soft); }
+.zorig ins { text-decoration: underline; text-decoration-color: var(--ok); text-decoration-thickness: 1.5px; text-underline-offset: 4px; }
+.zstem { font-family: var(--serif); font-size: 1rem; font-weight: 600; line-height: 1.6; }
+.zcard .res { line-height: 1.7; }
+.zcard .res .ok { color: var(--ok); font-weight: 600; }
+.zcard .res .bad { color: var(--bad); font-weight: 600; }
+.zcard .note { line-height: 1.75; color: var(--ink); }
+.zhide { font-size: 0.8125rem; color: var(--ink-soft); border: 1px dashed var(--rule); border-radius: 4px; padding: 8px 10px; display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: baseline; }
+
 /* 手机：目录收进抽屉，顶上一条窄栏；整页滚动；点空格从底部弹出选项面板 */
 #mbar, .nav-close, .qsheet { display: none; }
 .qslot:has(> button.blank) { white-space: nowrap; }
@@ -75,7 +92,9 @@ button { touch-action: manipulation; }
   .judg .row button, .chips button { padding: 7px 16px; }
   .pager button { flex: 1; padding: 12px; font-size: 0.9375rem; }
   .tools button { padding: 9px 14px; }
-  article, .qcard, .judg, button.tape { scroll-margin-top: 64px; }
+  article, .qcard, .zcard, .judg { scroll-margin-top: 64px; }
+  .zcard { padding: 12px; }
+  .zpass, .zorig { padding: 10px; }
   .qsheet { display: flex; flex-direction: column; position: fixed; left: 0; right: 0; bottom: 0; z-index: 25; max-height: 72vh; background: var(--sheet); border-top: 1px solid var(--rule); border-radius: 12px 12px 0 0; box-shadow: 0 -8px 28px rgba(0, 0, 0, 0.16); padding-bottom: env(safe-area-inset-bottom); }
   .qsheet[hidden] { display: none; }
   .qsheet .qs-bar { display: flex; justify-content: flex-end; padding: 4px 8px 0; }
