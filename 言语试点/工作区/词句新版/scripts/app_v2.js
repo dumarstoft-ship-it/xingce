@@ -25,6 +25,10 @@ function saveUi() { try { localStorage.setItem(KEY + ":ui", JSON.stringify({ ord
 
 const byId = Object.fromEntries(DATA.map(a => [a.id, a]));
 const LETTERS = "ABCD";
+// 手机：目录收进抽屉，顶上一条窄栏；点空格从底部弹出选项
+const PHONE = matchMedia("(max-width: 760px)");
+function isPhone() { return PHONE.matches; }
+const SMOOTH = matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth";
 function circ(n) { return n >= 1 && n <= 20 ? String.fromCharCode(0x2460 + n - 1) : "(" + n + ")"; }
 function masksOf(a) { return a.paras.flat().filter(x => x.m); }
 function hasQ(a) { return (a.q || []).length > 0; }
@@ -88,9 +92,10 @@ function renderNav() {
 
 function openArticle(id) {
   if (!byId[id]) return;
+  closeNav(); closeSheet();
   current = id; view = "article"; saveUi();
   renderArticle(byId[id]); renderNav();
-  document.getElementById("main").scrollTop = 0;
+  document.getElementById("main").scrollTop = 0; window.scrollTo(0, 0);
   const cur = document.querySelector('.item[aria-current="true"]'); if (cur) cur.scrollIntoView({ block: "nearest" });
 }
 
@@ -108,22 +113,31 @@ let activeQ = null;
 function renderArticle(a) {
   const s = st(a.id);
   const em = effMode(a);
+  closeSheet();
   activeQ = null;
+  const ph = isPhone();
   const main = document.getElementById("main");
   const wrap = el("div", "wrap");
   const how = el("div", "how");
   const legend = el("div", "legend");
+  let brief;
   if (em === "q") {
     how.innerHTML = "读到空格，先<b>自己想原文用了什么词、什么句</b>，再点空格看选项、选一个。选完揭开原文和说明。空格前的 ①② 是题号，题号相同的几个空是同一道题，依次填入。";
     const nw = a.q.filter(q => q.kind === "选词填空").length, ns = a.q.length - nw;
     legend.innerHTML = `<span>本篇：选词填空 <b>${nw}</b> 题、语句填空 <b>${ns}</b> 题</span><span>选错的题会收进“我的记录”</span>`;
+    brief = `本篇选词填空 ${nw} 题、语句填空 ${ns} 题`;
   } else if (em === "w") {
     how.innerHTML = "读到遮住的词句，先<b>想想自己会怎样接</b>，再选“有把握”或“没把握”揭开。对照原文的措辞和语气，点“对上了”或“没对上”；不必一字不差。";
     legend.innerHTML = "<span><b>有把握却没对上</b>的词会收进“我的记录”，留着重点复习</span>";
+    brief = `本篇遮了 ${a.w.length} 处词句`;
   } else {
     how.innerHTML = "每段先读灰条以外的部分，<b>心里用一句话说出这段在讲什么</b>，再点灰条看原句，选一个对照结果。灰条遮住的是这一段的点题句，命题人出片段阅读时常删的就是它。";
     legend.innerHTML = "<span><b>猜中</b>：意思对上了</span><span><b>太窄</b>：把例子或局部当成观点</span><span><b>层次不对</b>：抽象得太高或太低</span><span><b>被尾句带走</b>：抓了段尾，但它不是中心</span>";
+    brief = `本篇遮了 ${masksOf(a).length} 处点题句`;
   }
+  // 手机上说明收起来，只露一行
+  let intro = [how, legend];
+  if (ph) { const d = el("details", "howd"); d.append(el("summary", "", "怎么做 · " + brief), how, legend); intro = [d]; }
   const art = el("article");
   const meta = el("div", "meta");
   const src = el("span", "src" + (a.src === "南方日报" ? " nf" : ""), a.src);
@@ -139,10 +153,10 @@ function renderArticle(a) {
   if (hasQ(a) || (a.w || []).length) {
     const mb = el("div", "modebar");
     const seg = el("div", "seg"); seg.setAttribute("role", "group"); seg.setAttribute("aria-label", "遮挡方式");
-    const modes = [["sent", "遮点题句（" + masksOf(a).length + "）"]];
-    if (hasQ(a)) modes.push(["word", "遮词句 · 新版（" + a.q.length + " 题）"]);
-    else modes.push(["word", "遮词句（" + a.w.length + "）"]);
-    if (hasQ(a) && (a.w || []).length) modes.push(["wold", "旧版遮词（对照）"]);
+    const modes = [["sent", ph ? "点题句 " + masksOf(a).length : "遮点题句（" + masksOf(a).length + "）"]];
+    if (hasQ(a)) modes.push(["word", ph ? "词句 " + a.q.length + " 题" : "遮词句 · 新版（" + a.q.length + " 题）"]);
+    else modes.push(["word", ph ? "遮词 " + a.w.length : "遮词句（" + a.w.length + "）"]);
+    if (hasQ(a) && (a.w || []).length) modes.push(["wold", ph ? "旧版对照" : "旧版遮词（对照）"]);
     const cur = em === "sent" ? "sent" : em === "q" ? "word" : hasQ(a) ? "wold" : "word";
     for (const [k, name] of modes) {
       const b = el("button", "", name); b.type = "button"; b.dataset.mode = k;
@@ -207,7 +221,7 @@ function renderArticle(a) {
   next.addEventListener("click", () => openArticle(list[i + 1].id));
   pager.append(prev, next);
 
-  wrap.append(how, legend, art, pager);
+  wrap.append(...intro, art, pager);
   main.replaceChildren(wrap);
   updateProg(a);
 }
@@ -231,6 +245,7 @@ function checkRow(a, part, pi) {
   return row;
 }
 function updateProg(a) {
+  updateMbar();
   const s = st(a.id); const p = document.getElementById("prog"); if (!p) return;
   const em = effMode(a);
   if (em === "q") {
@@ -314,14 +329,128 @@ function fillCard(a, s, ctl, revealed) {
   card.append(res, el("div", "note", q.note));
 }
 function openCard(a, s, ctl) {
+  if (isPhone()) { openSheet(a, s, ctl); return; }
   ctl.card.hidden = false; fillCard(a, s, ctl, false);
   activeQ = { a, s, ctl };
   const first = ctl.card.querySelector(".opts button"); if (first) first.focus({ preventScroll: true });
   ctl.card.scrollIntoView({ block: "nearest" });
 }
 function answerQ(a, s, ctl, i) {
-  s.qans[ctl.q.id] = i; save(); activeQ = null;
-  paintQ(a, s, ctl); updateProg(a); renderNavLite();
+  const c = ctl.orig || ctl;
+  s.qans[c.q.id] = i; save(); activeQ = null;
+  paintQ(a, s, c); updateProg(a); renderNavLite();
+  // 面板开着时，段落下方那张同样的卡先藏起来，收起面板再露出
+  if (sheetCtl === c) { c.card.hidden = true; fillSheet(a, s, c, true); placeSheet(c); }
+}
+
+// 手机底部的选项面板：句子留在上方看得见，选完在面板里看说明，再“继续读”
+const sheet = el("div", "qsheet"); sheet.hidden = true;
+sheet.setAttribute("role", "dialog"); sheet.setAttribute("aria-label", "选项");
+const sheetBar = el("div", "qs-bar"); const sheetX = el("button", "qs-x", "收起"); sheetX.type = "button";
+const sheetBody = el("div", "qcard");
+sheetBar.append(sheetX); sheet.append(sheetBar, sheetBody); document.body.append(sheet);
+sheetX.addEventListener("click", () => closeSheet());
+let sheetCtl = null;
+function fillSheet(a, s, ctl, revealed) {
+  const view = Object.assign({}, ctl, { card: sheetBody, orig: ctl });
+  fillCard(a, s, view, revealed);
+  if (revealed) {
+    const go = el("button", "qs-go", "继续读"); go.type = "button";
+    go.addEventListener("click", () => closeSheet());
+    sheetBody.append(go);
+  } else activeQ = { a, s, ctl: view };
+  sheetBody.scrollTop = 0;
+}
+function openSheet(a, s, ctl) {
+  sheetCtl = ctl;
+  fillSheet(a, s, ctl, s.qans[ctl.q.id] != null);
+  sheet.hidden = false; layerOpened();
+  placeSheet(ctl);
+}
+// 把空格挪到面板上方的可见处
+function placeSheet(ctl) {
+  requestAnimationFrame(() => {
+    if (sheet.hidden) return;
+    const h = sheet.offsetHeight;
+    document.body.style.paddingBottom = h + "px";
+    const slot = ctl.slots[0] && ctl.slots[0].slot; if (!slot) return;
+    const top = mbar.offsetHeight + 12;
+    const want = top + Math.max(0, (innerHeight - h - top) * 0.3);
+    window.scrollBy({ top: slot.getBoundingClientRect().top - want, behavior: SMOOTH });
+  });
+}
+function closeSheet(keepHistory) {
+  if (sheet.hidden) return;
+  if (sheetCtl && sheetCtl.card.childNodes.length) sheetCtl.card.hidden = false;
+  sheet.hidden = true; sheetCtl = null; activeQ = null; sheetBody.replaceChildren();
+  document.body.style.paddingBottom = "";
+  if (!keepHistory) layerClosed();
+}
+
+// 目录抽屉和选项面板打开时占一条历史记录，按手机的返回键先关掉它们，而不是离开页面
+const root = document.documentElement;
+let layerPushed = false, skipPop = false;
+// 关抽屉、关面板时退回那条历史记录，别让浏览器顺手把滚动位置也还原回去
+try { history.scrollRestoration = "manual"; } catch (e) {}
+function layerOpened() { if (layerPushed) return; try { history.pushState({ gaiju: 1 }, ""); layerPushed = true; } catch (e) {} }
+function layerClosed() {
+  if (!layerPushed || root.classList.contains("nav-open") || !sheet.hidden) return;
+  layerPushed = false; skipPop = true;
+  try { history.back(); } catch (e) { skipPop = false; }
+}
+window.addEventListener("popstate", () => {
+  if (skipPop) { skipPop = false; return; }
+  layerPushed = false; closeSheet(true); closeNav(true);
+});
+function openNav() {
+  closeSheet(true);
+  root.classList.add("nav-open"); layerOpened();
+  const cur = document.querySelector('.item[aria-current="true"]'); if (cur) cur.scrollIntoView({ block: "center" });
+}
+function closeNav(keepHistory) {
+  if (!root.classList.contains("nav-open")) return;
+  root.classList.remove("nav-open");
+  if (!keepHistory) layerClosed();
+}
+
+// 顶上的窄栏：目录、标题、下一处
+const mbar = el("div"); mbar.id = "mbar";
+const mbMenu = el("button", "mb-menu", "目录"); mbMenu.type = "button";
+const mbTitle = el("span", "mb-title", "");
+const mbNext = el("button", "mb-next", ""); mbNext.type = "button";
+mbar.append(mbMenu, mbTitle, mbNext);
+document.querySelector(".app").prepend(mbar);
+mbMenu.addEventListener("click", openNav);
+mbTitle.addEventListener("click", () => window.scrollTo({ top: 0, behavior: SMOOTH }));
+mbNext.addEventListener("click", () => {
+  if (view !== "article") { if (current) openArticle(current); return; }
+  if (nextTarget()) { goNext(); return; }
+  const list = ordered(); const i = list.findIndex(x => x.id === current);
+  if (i >= 0 && i < list.length - 1) openArticle(list[i + 1].id);
+});
+function updateMbar() {
+  const a = byId[current];
+  if (view !== "article" || !a) {
+    mbTitle.textContent = view === "stats" ? "我的记录" : view === "ref" ? "广东“1310”" : "";
+    mbNext.textContent = "回到文章"; mbNext.hidden = !a; return;
+  }
+  mbTitle.textContent = a.title; mbNext.hidden = false;
+  const s = st(a.id), em = effMode(a);
+  let total, left;
+  if (em === "q") { total = a.q.length; left = a.q.filter(q => s.qans[q.id] == null).length; }
+  else if (em === "w") { total = a.w.length; left = a.w.filter(w => !s.wopen[w.id]).length; }
+  else { const ms = masksOf(a); total = ms.length; left = ms.filter(m => !s.open[m.id]).length; }
+  mbNext.textContent = left ? (em === "sent" ? "下一句 " : "下一空 ") + (total - left) + "/" + total : "下一篇 →";
+}
+// 下一处还没揭开的空格或灰条
+function nextTarget() {
+  const a = byId[current]; if (!a || view !== "article") return null;
+  return document.querySelector(effMode(a) === "sent" ? "button.tape" : "button.blank");
+}
+function goNext() {
+  const b = nextTarget(); if (!b) return;
+  if (b.matches("button.tape")) b.scrollIntoView({ block: "center", behavior: SMOOTH });
+  b.click();
 }
 
 // ---------- 广东式政治理论 / 常识 ----------
@@ -514,7 +643,7 @@ function qContext(a, q) {
 let navTimer; function renderNavLite() { clearTimeout(navTimer); navTimer = setTimeout(renderNav, 150); }
 
 function renderStats() {
-  view = "stats"; renderNav();
+  view = "stats"; renderNav(); updateMbar();
   const wrap = el("div", "wrap");
   const c = { hit: 0, narrow: 0, level: 0, tail: 0 }; let jr = 0, jt = 0, cr = 0, ct = 0, done = 0;
   let qn = 0, qr = 0, ir = 0, itn = 0;
@@ -585,11 +714,11 @@ function renderStats() {
   wsec.append(el("h2", "", "攒下的措辞（可整段复制给 DeepSeek）"));
   const pre = el("div", "words-all", words.length ? words.join("\n") : "还没有记录。");
   const copy = el("button", "", "复制全部"); copy.type = "button";
-  copy.addEventListener("click", async () => { try { await navigator.clipboard.writeText(words.join("\n")); copy.textContent = "已复制"; } catch (e) { const r = document.createRange(); r.selectNodeContents(pre); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); copy.textContent = "已选中，按 Ctrl+C 复制"; } });
+  copy.addEventListener("click", async () => { try { await navigator.clipboard.writeText(words.join("\n")); copy.textContent = "已复制"; } catch (e) { const r = document.createRange(); r.selectNodeContents(pre); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); copy.textContent = "已选中，请手动复制"; } });
   wsec.append(pre, copy);
   wrap.append(wsec);
   const bsec = el("section", "block");
-  bsec.append(el("h2", "", "备份与恢复"), el("div", "hint", "记录保存在这台电脑的浏览器里。换电脑或清理浏览器数据前，先导出备份。"));
+  bsec.append(el("h2", "", "备份与恢复"), el("div", "hint", "记录保存在这台设备的浏览器里，换个浏览器或换台设备就看不到了。换设备或清理浏览器数据前，先导出备份。"));
   const tools = el("div", "tools");
   const ex = el("button", "", "导出备份"); ex.type = "button";
   ex.addEventListener("click", () => { const blob = new Blob([JSON.stringify(store)], { type: "application/json" }); const u = URL.createObjectURL(blob); const a = document.createElement("a"); a.href = u; a.download = "盖句精读-记录.json"; document.body.append(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(u), 1000); });
@@ -602,7 +731,7 @@ function renderStats() {
 }
 
 function render1310() {
-  view = "ref"; renderNav();
+  view = "ref"; renderNav(); updateMbar();
   const wrap = el("div", "wrap");
   wrap.append(el("h1", "", "广东省委“1310”具体部署"));
   wrap.append(el("div", "how", REF.intro));
@@ -630,8 +759,20 @@ function render1310() {
 document.querySelectorAll("[data-order]").forEach(b => b.addEventListener("click", () => { order = b.dataset.order; saveUi(); renderNav(); }));
 document.querySelectorAll("[data-src]").forEach(b => b.addEventListener("click", () => { srcFilter = b.dataset.src; saveUi(); renderNav(); }));
 document.getElementById("q").addEventListener("input", e => { query = e.target.value; renderNav(); });
-document.getElementById("go-stats").addEventListener("click", renderStats);
-document.getElementById("go-1310").addEventListener("click", render1310);
+for (const [bid, fn] of [["go-stats", renderStats], ["go-1310", render1310]]) {
+  document.getElementById(bid).addEventListener("click", () => { closeNav(); closeSheet(); fn(); document.getElementById("main").scrollTop = 0; window.scrollTo(0, 0); });
+}
+// 手机抽屉里的“收起”
+(function addNavClose() {
+  const b = el("button", "nav-close", "收起"); b.type = "button";
+  b.addEventListener("click", () => closeNav());
+  document.querySelector(".brand").append(b);
+})();
+// 屏幕在手机和电脑宽度之间切换时（平板转屏），收起抽屉和面板，按新宽度重画
+(PHONE.addEventListener ? PHONE.addEventListener.bind(PHONE, "change") : PHONE.addListener.bind(PHONE))(() => {
+  closeNav(); closeSheet();
+  if (view === "article" && byId[current]) renderArticle(byId[current]);
+});
 document.addEventListener("keydown", e => {
   if (view !== "article" || e.target.matches("textarea, input")) return;
   if (e.ctrlKey || e.metaKey || e.altKey) return;
@@ -645,10 +786,9 @@ document.addEventListener("keydown", e => {
   else if (e.key === "ArrowLeft" && i > 0) { openArticle(list[i - 1].id); e.preventDefault(); }
   else if (e.key === " ") {
     if (e.target.closest && e.target.closest(".pick")) return;
-    const a = byId[current]; const em = a ? effMode(a) : "sent";
-    const b = document.querySelector(em === "sent" ? "button.tape" : "button.blank");
-    if (b) { b.click(); e.preventDefault(); }
+    if (nextTarget()) { goNext(); e.preventDefault(); }
   }
+  else if (e.key === "Escape") { closeSheet(); closeNav(); }
 });
 
 const visibleNow = ordered();
