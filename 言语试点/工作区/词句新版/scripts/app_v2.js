@@ -145,7 +145,7 @@ function renderArticle(a) {
     brief = `本篇遮了 ${a.w.length} 处词句`;
   } else if (em === "zz") {
     how.innerHTML = "读到命题人会出题的那几段，先像在考场上一样，<b>只看截好的题干</b>，选一个答案。选完揭开原文：<b>划掉的是命题人删去的</b>，加下划线的是命题人改写或添上的。对照着看，命题人删了哪句、为什么这样配选项。";
-    legend.innerHTML = `<span>本篇：主旨类题 <b>${a.z.length}</b> 道</span><span>选错的题会收进“我的记录”</span>`;
+    legend.innerHTML = `<span>本篇：主旨类题 <b>${a.z.length}</b> 道</span><span>选错的题会收进“我的记录”</span><span>说明里引的真题，2025、2026 年度广东卷对过官方答案；其余年份是出题人自己做的，没有官方答案核对</span>`;
     brief = `本篇主旨类题 ${a.z.length} 道`;
   } else {
     how.innerHTML = "这篇还没有出题，先通读。";
