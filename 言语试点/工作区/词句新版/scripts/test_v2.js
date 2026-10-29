@@ -122,6 +122,31 @@ const assert = (c, m) => { if (!c) { console.error('FAIL ' + m); process.exitCod
     assert(r[0] === y && r[1] === 'zz' && r[2] === 'all', `换新版本后接着往下：停在下一篇没做的主旨题，筛选不变（${r.join(', ')}）`);
     await c2.close();
   }
+  // 遮标题、争议题：现有题目里不一定有，临时给一篇加上
+  if (hasZ) {
+    const c3 = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+    const p3 = await c3.newPage();
+    p3.on('pageerror', e => errors.push('pageerror: ' + e.message));
+    await p3.goto('file://' + file); await p3.waitForSelector('article');
+    const info = await p3.evaluate(() => {
+      const a = sorted(DATA.filter(x => (x.z || []).length >= 2))[0];
+      a.z[0].htitle = true; a.z[1].contested = true;
+      mode = 'zz'; openArticle(a.id);
+      const h = document.getElementById('atitle'), cur = document.querySelector('.item[aria-current="true"] .t');
+      return { title: a.title, h1: h.textContent, masked: h.classList.contains('tmask'), nav: cur ? cur.textContent : '', ans0: a.z[0].answer, ans1: a.z[1].answer };
+    });
+    assert(info.masked && !info.h1.includes(info.title) && info.nav && !info.nav.includes(info.title), '写了 hide_title：做完之前顶上和目录都不露标题');
+    await p3.click(`.zcard[data-z="z1"] .opts button:nth-child(${info.ans0 + 1})`); await p3.waitForTimeout(400);
+    const after = await p3.evaluate(() => [document.getElementById('atitle').textContent, document.querySelector('.item[aria-current="true"] .t').textContent]);
+    assert(after[0] === info.title && after[1].startsWith(info.title), '做完这题，顶上和目录露出标题');
+    assert(await p3.$$eval('.zcard[data-z="z2"] .zdisp', els => els.length) === 0, '争议题答前不标');
+    await p3.click(`.zcard[data-z="z2"] .opts button:nth-child(${(info.ans1 + 1) % 4 + 1})`); await p3.waitForTimeout(200);
+    assert(await p3.$$eval('.zcard[data-z="z2"] .zdisp', els => els.length) === 1, '争议题答完标出来');
+    await p3.screenshot({ path: shots + '/v2_6_contested.png', fullPage: true });
+    await p3.evaluate(() => renderStats());
+    assert(/其中争议题答对/.test(await p3.textContent('.stats')) && /【争议题】/.test(await p3.textContent('.review')), '我的记录单列争议题');
+    await c3.close();
+  }
   // 手机宽度
   const m = await ctx.newPage(); await m.setViewportSize({ width: 390, height: 844 });
   await m.goto('file://' + file + '#' + qid); await m.waitForSelector('article');

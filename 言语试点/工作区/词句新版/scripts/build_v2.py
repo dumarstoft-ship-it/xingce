@@ -125,6 +125,10 @@ for path in args.zz:
             zs.append({'type': z.get('type', ''), 'from': f, 'to': t, 'passage': passage, 'stem': z['stem'],
                        'options': z['options'], 'answer': L.index(z['answer']), 'note': z['note'],
                        'hide': hide, 'diff': diff_ops(orig, passage)})
+            # hide_title：做完这题之前先遮住文章标题；contested：争议题，答完标出来
+            for k, kk in (('hide_title', 'htitle'), ('contested', 'contested')):
+                if k in z and not isinstance(z[k], bool): errors.append(f"{a['id']} 主旨第{zi+1}题 {k} 要写 true 或 false")
+                elif z.get(k): zs[-1][kk] = True
         zs.sort(key=lambda z: z['from'])
         for i in range(1, len(zs)):
             if zs[i]['from'] <= zs[i - 1]['to']:
@@ -155,4 +159,4 @@ html = (head + '<script id="data" type="application/json">' + blob(data) + '</sc
         + '<script>\n' + open(args.js, encoding='utf-8').read() + '</script>\n</body>\n</html>\n')
 open(args.out, 'w', encoding='utf-8').write(html)
 n = sum(1 for a in data if a.get('pilot'))
-print(f"写出 {args.out}：{len(data)} 篇，新版 {n} 篇，词句题 {sum(len(a.get('q', [])) for a in data)} 道，主旨题 {sum(len(a.get('z', [])) for a in data)} 道（{sum(1 for a in data if a.get('z'))} 篇），政治常识题 {sum(len(a.get('items', [])) for a in data)} 道，{len(html)//1024} KB")
+print(f"写出 {args.out}：{len(data)} 篇，新版 {n} 篇，词句题 {sum(len(a.get('q', [])) for a in data)} 道，主旨题 {sum(len(a.get('z', [])) for a in data)} 道（{sum(1 for a in data if a.get('z'))} 篇，争议题 {sum(1 for a in data for z in a.get('z', []) if z.get('contested'))} 道，遮标题 {sum(1 for a in data if any(z.get('htitle') for z in a.get('z', [])))} 篇），政治常识题 {sum(len(a.get('items', [])) for a in data)} 道，{len(html)//1024} KB")

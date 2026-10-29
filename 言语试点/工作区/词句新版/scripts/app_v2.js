@@ -35,6 +35,14 @@ function circ(n) { return n >= 1 && n <= 20 ? String.fromCharCode(0x2460 + n - 1
 function masksOf(a) { return a.paras.flat().filter(x => x.m); }
 function hasQ(a) { return (a.q || []).length > 0; }
 function hasZ(a) { return (a.z || []).length > 0; }
+// 标题先遮住：主旨理解里，写了 htitle 的题没做完之前，顶上、目录、手机窄栏、我的记录都不露文章标题
+function titleHidden(a) {
+  if (mode !== "zz" || !hasZ(a)) return false;
+  const s = store[a.id];
+  if (s && s.tshow) return false;
+  return a.z.some(z => z.htitle && !(s && s.zans && s.zans[z.id] != null));
+}
+function titleOf(a) { return titleHidden(a) ? "（标题先遮住）" : a.title; }
 function statusOf(a) {
   const s = store[a.id]; if (!s) return "";
   if (hasQ(a)) {
@@ -78,7 +86,7 @@ function renderNav() {
     if (a.id === current && view === "article") it.setAttribute("aria-current", "true");
     const dot = document.createElement("span"); dot.className = "dot " + statusOf(a);
     const txt = document.createElement("span");
-    const t = document.createElement("div"); t.className = "t"; t.textContent = a.title;
+    const t = document.createElement("div"); t.className = "t" + (titleHidden(a) ? " tmasked" : ""); t.textContent = titleOf(a);
     if (hasZ(a)) t.append(el("span", "badge", "主旨"));
     const m = document.createElement("div"); m.className = "m";
     const s = document.createElement("span"); s.className = a.src === "南方日报" ? "nf" : ""; s.textContent = a.src;
@@ -150,7 +158,7 @@ function renderArticle(a) {
   const meta = el("div", "meta");
   const src = el("span", "src" + (a.src === "南方日报" ? " nf" : ""), a.src);
   meta.append(src, el("span", "", a.col), el("span", "", a.date), el("span", "", a.page || ""));
-  const h = el("h1", "", a.title);
+  const h = titleBox(a, s);
   const by = el("div", "byline");
   if (a.author) by.append(el("span", "", a.author));
   const link = el("a", "", "原文链接（需联网）"); link.href = a.url; link.target = "_blank"; link.rel = "noopener";
@@ -210,7 +218,7 @@ function renderArticle(a) {
   const tools = el("div", "tools");
   const again = el("button", "", em === "zz" ? "清掉作答，再做一遍" : "重新遮住，再读一遍"); again.type = "button";
   again.addEventListener("click", () => {
-    if (em === "q") s.qans = {}; else if (em === "w") s.wopen = {}; else if (em === "zz") s.zans = {};
+    if (em === "q") s.qans = {}; else if (em === "w") s.wopen = {}; else if (em === "zz") { s.zans = {}; s.tshow = false; }
     save(); renderArticle(a); renderNavLite();
   });
   tools.append(again, el("span", "kbd", em === "q" || em === "zz" ? "快捷键：空格 跳到下一题 · A–D 或 1–4 选项 · ← → 上一篇 / 下一篇" : "快捷键：空格 揭开下一处 · ← → 上一篇 / 下一篇"));
@@ -424,7 +432,7 @@ function updateMbar() {
     mbTitle.textContent = view === "stats" ? "我的记录" : view === "ref" ? "广东“1310”" : "";
     mbNext.textContent = "回到文章"; mbNext.hidden = !a; return;
   }
-  mbTitle.textContent = a.title; mbNext.hidden = false;
+  mbTitle.textContent = titleOf(a); mbNext.hidden = false;
   const s = st(a.id), em = effMode(a);
   let total, left;
   if (em === "q") { total = a.q.length; left = a.q.filter(q => s.qans[q.id] == null).length; }
@@ -493,7 +501,9 @@ function paintZ(ctl) {
   if (chosen === -1) res.append(el("span", "", "没有作答。答案是 " + LETTERS[z.answer] + "。"));
   else if (chosen === z.answer) res.append(el("span", "ok", "选对了。"));
   else res.append(el("span", "bad", "选了 " + LETTERS[chosen] + "，答案是 " + LETTERS[z.answer] + "。"));
-  box.append(res, el("div", "note", z.note));
+  box.append(res);
+  if (z.contested) box.append(el("div", "zdisp", "争议题：另一项也说得通，看说明里命题人为什么判这一项。"));
+  box.append(el("div", "note", z.note));
 }
 function zDiff(z) {
   const d = el("div", "zorig");
@@ -532,10 +542,23 @@ function zHidden(a, s, para, pi, zs) {
   box.append(b);
   return box;
 }
-// 做完一题，把只为它收起的段落展开；上方展开的段落会把题卡往下推，这里把页面滚回原位
+function titleBox(a, s) {
+  const h = el("h1"); h.id = "atitle";
+  if (!titleHidden(a)) { h.textContent = a.title; return h; }
+  h.className = "tmask";
+  const nums = a.z.map((z, i) => z.htitle && s.zans[z.id] == null ? circ(i + 1) : "").join("");
+  h.append(el("span", "", "标题先遮住"), el("span", "tnote", "它会露出主旨题 " + nums + " 的答案，做完再看。"));
+  const b = el("button", "linkish", "现在就看"); b.type = "button";
+  b.addEventListener("click", () => { s.tshow = true; save(); h.replaceWith(titleBox(a, s)); updateMbar(); renderNavLite(); });
+  h.append(b);
+  return h;
+}
+// 做完一题，把只为它收起的段落和标题展开；上方展开的段落会把题卡往下推，这里把页面滚回原位
 function unhideZ(s, anchor) {
   const before = anchor.getBoundingClientRect().top;
   for (const h of document.querySelectorAll(".zhide")) if (h._zs.every(z => s.zans[z.id] != null)) h.replaceWith(plainPara(h._para, h._pi));
+  const t = document.getElementById("atitle"), a = byId[current];
+  if (t && a && t.classList.contains("tmask") && !titleHidden(a)) t.replaceWith(titleBox(a, s));
   const d = anchor.getBoundingClientRect().top - before;
   if (d) { if (isPhone()) window.scrollBy(0, d); else document.getElementById("main").scrollTop += d; }
 }
@@ -733,21 +756,26 @@ function renderStats() {
   view = "stats"; renderNav(); updateMbar();
   const wrap = el("div", "wrap");
   let jr = 0, jt = 0, cr = 0, ct = 0, done = 0;
-  let qn = 0, qr = 0, ir = 0, itn = 0, zn = 0, zr = 0;
+  let qn = 0, qr = 0, ir = 0, itn = 0, zn = 0, zr = 0, cn = 0, crr = 0;
   const words = [], qmiss = [], zmiss = [];
   for (const a of DATA) {
     const s = store[a.id]; if (!s) continue;
-    for (const z of a.z || []) { const v = s.zans && s.zans[z.id]; if (v == null || v === -1) continue; zn++; if (v === z.answer) zr++; else zmiss.push([a, z, v]); }
+    for (const z of a.z || []) {
+      const v = s.zans && s.zans[z.id]; if (v == null || v === -1) continue;
+      zn++; if (v === z.answer) zr++; else zmiss.push([a, z, v]);
+      if (z.contested) { cn++; if (v === z.answer) crr++; }
+    }
     if (!(a.items || []).length) (a.judgments || []).forEach((j, i) => { if (s.judg && s.judg[i] != null) { if (a.kind === "cs") { ct++; if (s.judg[i] === j.answer) cr++; } else { jt++; if (s.judg[i] === j.answer) jr++; } } });
     for (const it of a.items || []) { const v = s.iqa && s.iqa[it.id]; if (v == null) continue; itn++; if (it.type === "多选" ? JSON.stringify(v) === JSON.stringify(it.answer) : v === it.answer) ir++; }
     for (const q of a.q || []) { const v = s.qans && s.qans[q.id]; if (v == null || v === -1) continue; qn++; if (v === q.answer) qr++; else qmiss.push([a, q, v]); }
     if (statusOf(a) === "done") done++;
-    if (s.words && s.words.trim()) words.push("【" + a.title + "】" + s.words.trim());
+    if (s.words && s.words.trim()) words.push("【" + titleOf(a) + "】" + s.words.trim());
   }
   wrap.append(el("h1", "", "我的记录"));
   const grid = el("div", "stats");
   const card = (n, l, pct) => { const d = el("div", "stat"); const nn = el("div", "n", String(n)); if (pct) nn.append(el("span", "pct", pct)); d.append(nn, el("div", "l", l)); return d; };
   grid.append(card(done + " / " + DATA.length, "读完的篇数"), card(zn ? zr + " / " + zn : "0", "主旨题答对"));
+  if (DATA.some(a => (a.z || []).some(z => z.contested))) grid.append(card(cn ? crr + " / " + cn : "0", "其中争议题答对"));
   grid.append(card(qn ? qr + " / " + qn : "0", "词句题答对"), card(itn ? ir + " / " + itn : "0", "广东式政治常识题答对"));
   grid.append(card(jt ? jr + " / " + jt : "0", "旧版政治理论判断题答对"), card(ct ? cr + " / " + ct : "0", "旧版常识判断题答对"));
   let wn = 0, wh = 0; const miss = [];
@@ -766,8 +794,8 @@ function renderStats() {
     const list = el("div", "review");
     for (const [a, z, v] of zmiss) {
       const it = el("div", "it");
-      it.append(el("div", "ctx", z.stem), el("div", "", "你选了 " + LETTERS[v] + "．" + z.options[v] + "；答案 " + LETTERS[z.answer] + "．" + z.options[z.answer]), el("div", "", z.note));
-      const src = el("a", "src", "【" + a.title + "】" + zRange(z).replace(/ /g, "")); src.href = "#" + a.id;
+      it.append(el("div", "ctx", (z.contested ? "【争议题】" : "") + z.stem), el("div", "", "你选了 " + LETTERS[v] + "．" + z.options[v] + "；答案 " + LETTERS[z.answer] + "．" + z.options[z.answer]), el("div", "", z.note));
+      const src = el("a", "src", "【" + titleOf(a) + "】" + zRange(z).replace(/ /g, "")); src.href = "#" + a.id;
       src.addEventListener("click", e => { e.preventDefault(); mode = "zz"; saveUi(); openArticle(a.id); });
       it.append(src);
       list.append(it);
@@ -784,7 +812,7 @@ function renderStats() {
       const ctx = el("div", "ctx");
       for (const [t, hl] of qContext(a, q)) ctx.append(hl ? el("mark", "wrev", t) : document.createTextNode(t));
       it.append(ctx, el("div", "", "你选了 " + LETTERS[v] + "．" + q.options[v] + "；原文 " + LETTERS[q.answer] + "．" + q.options[q.answer]), el("div", "", q.note));
-      const src = el("a", "src", "【" + a.title + "】第" + q.p + "段"); src.href = "#" + a.id;
+      const src = el("a", "src", "【" + titleOf(a) + "】第" + q.p + "段"); src.href = "#" + a.id;
       src.addEventListener("click", e => { e.preventDefault(); mode = "word"; saveUi(); openArticle(a.id); });
       it.append(src);
       list.append(it);
@@ -800,7 +828,7 @@ function renderStats() {
       const [l, m, r] = wordContext(a, w);
       const it = el("div", "it");
       const ctx = el("div", "ctx"); ctx.append(document.createTextNode(l), el("mark", "wrev", m), document.createTextNode(r));
-      const src = el("a", "src", "【" + a.title + "】第" + w.p + "段"); src.href = "#" + a.id;
+      const src = el("a", "src", "【" + titleOf(a) + "】第" + w.p + "段"); src.href = "#" + a.id;
       src.addEventListener("click", e => { e.preventDefault(); mode = hasQ(a) ? "wold" : "word"; saveUi(); openArticle(a.id); });
       it.append(ctx);
       if (w.note) it.append(el("div", "", w.note));

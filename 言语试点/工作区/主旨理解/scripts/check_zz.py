@@ -1,8 +1,9 @@
 """检查主旨理解题：python3 -I check_zz.py <结果.json> <文章目录>
 逐题核对段号、选项、答案；把题干材料和原文第 from_p 到 to_p 段逐字比对，列出删去的和添上（改写）的文字。
 题干应当是从原文截取、删改出来的：保留下来的字占题干的比例低于 85%，或者添上的字太多，就报出来。
-hide_p 是做完这题之前先收起的段落（会露出答案的提要等），不能落在任何一道题的范围里。"""
-import json, sys, os, difflib
+hide_p 是做完这题之前先收起的段落（会露出答案的提要等），不能落在任何一道题的范围里。
+hide_title、contested 要写 true 或 false；正确项就是文章标题的，这题要写 hide_title。"""
+import json, sys, os, difflib, re
 f, src = sys.argv[1], sys.argv[2]
 r = json.load(open(f, encoding='utf-8'))
 bad = 0
@@ -31,6 +32,11 @@ for art in r['articles']:
         if q.get('answer') not in ('A', 'B', 'C', 'D'): probs.append('答案要写 A/B/C/D')
         if not (q.get('stem') or '').strip(): probs.append('没有题干问句')
         if not (q.get('note') or '').strip(): probs.append('没有说明')
+        for k in ('hide_title', 'contested'):
+            if k in q and not isinstance(q[k], bool): probs.append(f'{k} 要写 true 或 false')
+        norm = lambda x: re.sub(r'[\s“”‘’"\'，,。：:；;？?！!、（）()《》<>·]', '', x or '')
+        if q.get('answer') in ('A', 'B', 'C', 'D') and len(ops) == 4 and norm(ops['ABCD'.index(q['answer'])]) == norm(a['title']) and not q.get('hide_title'):
+            probs.append('正确项就是文章标题，要写 hide_title: true，否则网页顶上就把答案露出来了')
         sm = difflib.SequenceMatcher(None, orig, pas, autojunk=False)
         kept = sum(b.size for b in sm.get_matching_blocks())
         dels, adds = [], []

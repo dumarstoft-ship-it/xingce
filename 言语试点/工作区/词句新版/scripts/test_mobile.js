@@ -91,7 +91,9 @@ function assert(c, m) { (c ? ok : bad).push(m); console.log((c ? 'ok   ' : 'FAIL
   // 主旨理解（这篇有主旨题时）
   const nz = await page.evaluate(() => (byId[current].z || []).length);
   if (nz) {
+    await page.evaluate(() => { byId[current].z[0].htitle = true; });
     await page.locator('[data-mode="zz"]').tap(); await page.waitForTimeout(200);
+    assert((await page.textContent('#mbar .mb-title')).trim() === '（标题先遮住）', '写了 hide_title：窄栏不露标题');
     const t2 = await page.textContent('#mbar .mb-next');
     assert(t2.trim() === `下一题 0/${nz}`, '切到主旨理解，窄栏变成“下一题 0/N”（' + t2.trim() + '）');
     await page.tap('#mbar .mb-next'); await page.waitForTimeout(700);
@@ -100,6 +102,7 @@ function assert(c, m) { (c ? ok : bad).push(m); console.log((c ? 'ok   ' : 'FAIL
     await shot('m7_zz');
     await page.locator('.zcard:not(.done) .opts button').first().tap(); await page.waitForTimeout(400);
     assert(await page.$$eval('.zcard.done .zorig', els => els.length) === 1, '主旨题答完显示原文对照');
+    assert(await page.evaluate(() => document.querySelector('#mbar .mb-title').textContent === byId[current].title), '做完这题，窄栏露出标题');
     await shot('m7b_zz_done');
   } else console.log('skip 这篇没有主旨题');
   // 读到一半，从抽屉换一篇：新的一篇要从顶上开始
