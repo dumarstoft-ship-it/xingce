@@ -1,7 +1,6 @@
-"""复杂关系画表专练: 20 questions whose relations are easiest to untangle with a table (rows = objects or stages,
-columns = quantities). Questions are the original crops (or the teacher-bank text), each followed by room to draw the
-table; then an answer key; then a table-first 解析 per question. Content lives in cx_tables.json; every answer was
-checked by program against the official one. Usage: make_cx.py <cx_tables.json> <out.pdf>"""
+"""专练本 (复杂关系画表专练, 配速思路专练, ...): questions — original crops, teacher-bank text, or new questions written
+inline in the JSON — each followed by room to work; then an answer key; then a 解析 per question (key point, optional
+table, steps, traps). Every answer was checked by program first. Usage: make_cx.py <set.json> <out.pdf>"""
 import glob, html, json, os, re, subprocess, sys
 from PIL import Image
 S = '/tmp/claude-0/-home-user-xingce/88bc77ab-be1a-5cff-a4a7-35b764f8964e/scratchpad'
@@ -27,7 +26,11 @@ def load():
     raw = {r['id']: r for r in json.load(open(S + '/db/real_raw.json'))}
     tb = {t['tid']: t for f in glob.glob(S + '/teacher/bank_B*.json') for t in json.load(open(f))}
     for it in data['items']:
-        if 'tid' in it:
+        if 'stem' in it:                        # a new question written inline
+            opts = ''.join(f'<span>{k}. {html.escape(v)}</span>' for k, v in it['options'].items())
+            cols = 4 if max(len(v) for v in it['options'].values()) <= 6 else 2
+            it['q'] = f'<div class="stem">{html.escape(it["stem"])}</div><div class="opts c{cols}">{opts}</div>'
+        elif 'tid' in it:
             t = tb[it['tid']]
             it['label'] = f'老师笔记精选 · {t["source"]}' if t.get('source') else '老师笔记精选'
             opts = ''.join(f'<span>{k}. {html.escape(v)}</span>' for k, v in t['options'].items())
@@ -42,22 +45,21 @@ def load():
 
 def page(d):
     out = [f'<section class="cover"><h1>{d["title"]}</h1><div class="sub">共 {len(d["items"])} 题 · {esc(d["intro"])}</div>',
-           '<div class="box"><div class="bt">画表三步</div><ol>' + ''.join(f'<li>{m}</li>' for m in d['method']) + '</ol></div>',
+           f'<div class="box"><div class="bt">{d.get("method_title", "画表三步")}</div><ol>' + ''.join(f'<li>{m}</li>' for m in d['method']) + '</ol></div>',
            f'<div class="box"><div class="bt">{esc(d["model"]["label"])}</div>{table(d["model"]["table"])}'
            + ''.join(f'<p>{esc(s)}</p>' for s in d['model']['steps']) + '</div></section>']
     out.append('<h2 class="sec">题目</h2>')
     for k, it in enumerate(d['items'], 1):
-        out.append(f'<div class="qb"><div class="qn">{k}</div><div class="qc">{it["q"]}</div><div class="draw">画表</div></div>')
-    out.append('<h2 class="sec brk">答案速查</h2><table class="key"><tr>'
-               + ''.join(f'<th>{k}</th>' for k in range(1, 11)) + '</tr><tr>'
-               + ''.join(f'<td>{it["answer"]}</td>' for it in d['items'][:10]) + '</tr><tr>'
-               + ''.join(f'<th>{k}</th>' for k in range(11, 21)) + '</tr><tr>'
-               + ''.join(f'<td>{it["answer"]}</td>' for it in d['items'][10:]) + '</tr></table>')
+        out.append(f'<div class="qb"><div class="qn">{k}</div><div class="qc">{it["q"]}</div><div class="draw">{d.get("draw_label", "画表")}</div></div>')
+    rows = ''.join('<tr>' + ''.join(f'<th>{k}</th>' for k in range(i + 1, min(i + 10, len(d['items'])) + 1)) + '</tr><tr>'
+                   + ''.join(f'<td>{it["answer"]}</td>' for it in d['items'][i:i + 10]) + '</tr>' for i in range(0, len(d['items']), 10))
+    out.append(f'<h2 class="sec brk">答案速查</h2><table class="key">{rows}</table>')
     out.append('<h2 class="sec">解析</h2>')
     for k, it in enumerate(d['items'], 1):
         out.append(f'<div class="ab"><div class="ah"><b>{k}. 答案 {it["answer"]}</b><span>［{esc(it["label"])}］</span></div>'
-                   f'<div class="key-line">画表要点：{esc(it["key"])}</div>{table(it["table"])}'
-                   + ''.join(f'<p>{esc(s)}</p>' for s in it['steps']) + '</div>')
+                   f'<div class="key-line">{d.get("key_name", "画表要点")}：{esc(it["key"])}</div>{table(it["table"]) if it.get("table") else ""}'
+                   + ''.join(f'<p>{esc(s)}</p>' for s in it['steps'])
+                   + (f'<p class="traps">陷阱：{esc(it["traps"])}</p>' if it.get('traps') else '') + '</div>')
     return ''.join(out)
 
 CSS = """
@@ -78,6 +80,8 @@ h2.sec { font-size: 14pt; border-bottom: 2px solid #333; padding-bottom: 1mm; ma
 .qc img.q { max-width: 100%; }
 .stem { margin-bottom: 1.5mm; }
 .opts { display: grid; grid-template-columns: repeat(4, 1fr); }
+.opts.c2 { grid-template-columns: repeat(2, 1fr); }
+.ab p.traps { color: #555; font-size: 9.5pt; }
 .draw { grid-column: 2; height: 58mm; border: 1px dashed #bbb; border-radius: 3px; margin-top: 2mm; color: #bbb; font-size: 9pt; padding: 1mm 2mm; }
 table.key { border-collapse: collapse; margin-bottom: 6mm; }
 table.key th, table.key td { border: 1px solid #aaa; width: 15mm; text-align: center; padding: 1mm 0; }
@@ -98,7 +102,7 @@ if __name__ == '__main__':
     fonts = ''.join(f'<link rel="stylesheet" href="file://{R}/node_modules/@fontsource/noto-sans-sc/{w}.css">' for w in (400, 700))
     doc = (f'<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>{d["title"]}</title>{fonts}'
            f'<style>{CSS}</style></head><body>{page(d)}</body></html>')
-    hp = S + '/cx/cx.html'
+    hp = S + '/cx/' + os.path.basename(sys.argv[2])[:-4] + '.html'
     open(hp, 'w').write(doc)
     subprocess.run(['node', R + '/print.js', hp, os.path.abspath(sys.argv[2])], check=True, cwd=R)
     print('ok', sys.argv[2], len(d['items']), '题')
