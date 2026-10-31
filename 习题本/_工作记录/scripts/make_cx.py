@@ -28,7 +28,7 @@ def load():
     for it in data['items']:
         if 'stem' in it:                        # a new question written inline
             opts = ''.join(f'<span>{k}. {html.escape(v)}</span>' for k, v in it['options'].items())
-            cols = 4 if max(len(v) for v in it['options'].values()) <= 6 else 2
+            cols = 4 if max(len(re.sub(r'\$[^$]*\$', 'xx', v)) for v in it['options'].values()) <= 6 else 2
             it['q'] = f'<div class="stem">{html.escape(it["stem"])}</div><div class="opts c{cols}">{opts}</div>'
         elif 'tid' in it:
             t = tb[it['tid']]
@@ -50,7 +50,7 @@ def page(d):
            + ''.join(f'<p>{esc(s)}</p>' for s in d['model']['steps']) + '</div></section>']
     out.append('<h2 class="sec">题目</h2>')
     for k, it in enumerate(d['items'], 1):
-        out.append(f'<div class="qb"><div class="qn">{k}</div><div class="qc">{it["q"]}</div><div class="draw">{d.get("draw_label", "画表")}</div></div>')
+        out.append(f'<div class="qb"><div class="qn">{k}</div><div class="qc">{it["q"]}</div><div class="draw" style="height:{d.get("draw_mm", 58)}mm">{d.get("draw_label", "画表")}</div></div>')
     rows = ''.join('<tr>' + ''.join(f'<th>{k}</th>' for k in range(i + 1, min(i + 10, len(d['items'])) + 1)) + '</tr><tr>'
                    + ''.join(f'<td>{it["answer"]}</td>' for it in d['items'][i:i + 10]) + '</tr>' for i in range(0, len(d['items']), 10))
     out.append(f'<h2 class="sec brk">答案速查</h2><table class="key">{rows}</table>')
@@ -100,8 +100,13 @@ table.t th:first-child { background: #f6f6f6; text-align: left; }
 if __name__ == '__main__':
     d = load()
     fonts = ''.join(f'<link rel="stylesheet" href="file://{R}/node_modules/@fontsource/noto-sans-sc/{w}.css">' for w in (400, 700))
-    doc = (f'<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>{d["title"]}</title>{fonts}'
-           f'<style>{CSS}</style></head><body>{page(d)}</body></html>')
+    katex = (f'<link rel="stylesheet" href="file://{R}/node_modules/katex/dist/katex.min.css">'
+             f'<script src="file://{R}/node_modules/katex/dist/katex.min.js"></script>'
+             f'<script src="file://{R}/node_modules/katex/dist/contrib/auto-render.min.js"></script>')
+    run = ('<script>document.addEventListener("DOMContentLoaded",function(){if(window.renderMathInElement)'
+           'renderMathInElement(document.body,{delimiters:[{left:"$",right:"$",display:false}],throwOnError:false});});</script>')
+    doc = (f'<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><title>{d["title"]}</title>{fonts}{katex}'
+           f'<style>{CSS}</style></head><body>{page(d)}{run}</body></html>')
     hp = S + '/cx/' + os.path.basename(sys.argv[2])[:-4] + '.html'
     open(hp, 'w').write(doc)
     subprocess.run(['node', R + '/print.js', hp, os.path.abspath(sys.argv[2])], check=True, cwd=R)
