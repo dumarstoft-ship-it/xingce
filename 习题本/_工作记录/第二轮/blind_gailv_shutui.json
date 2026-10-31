@@ -1,0 +1,226 @@
+[
+ {
+  "id": "2020JSA-65",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2024SC-54",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2023HB-62",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2022ZJA-57",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "A strip of garbled outline glyph fragments (unreadable partial text line) sits between '57.正确答案是： C' and '解析'; rest legible.",
+  "note": ""
+ },
+ {
+  "id": "2021SC2-49",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2020SD-43",
+  "mine": "A",
+  "jx": "A",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2026CQ-63",
+  "mine": "A",
+  "jx": "A",
+  "q_issue": "Stem opens with '****单杠、双杠、…' (start of stem masked/missing); crop includes a stray '【答案】A' line at the bottom that gives away the answer.",
+  "j_issue": "No 解析: the j image is only a copy of the question (stem + options, same '****' opening) followed by '【答案】A'.",
+  "note": ""
+ },
+ {
+  "id": "2025GK-79",
+  "mine": "D",
+  "jx": "D",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2021ZJA-69",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2021SD-38",
+  "mine": "D",
+  "jx": "D",
+  "q_issue": "",
+  "j_issue": "Minor: trailing '；' after '= 2/25' on lines ② and ③ clipped at right edge; no content lost.",
+  "note": ""
+ },
+ {
+  "id": "2023SC-49",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2025SD-59",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "Minor: small stray tick mark at the bottom edge under the options (between B and C), probably top of a character from the next line.",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2021SD-44",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2023ZJA-60",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2025ZJA-65",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "Missing images: formula after '根据题干可列式：' is blank (presumably |x−y|≤25); the figure after '如下图所示：' is missing (~105px blank gap); the ratio after '故阴影部分面积所占比例' is blank.",
+  "note": "Agree. Source slip (not crop): '即 x−y≤25 或 y−x≤25' should read 且."
+ },
+ {
+  "id": "2025ZJA-70",
+  "mine": "D",
+  "jx": "D",
+  "q_issue": "Option D cut off at the bottom: only the numerator '1' is visible; fraction bar and denominator (2, per 解析) missing.",
+  "j_issue": "Figures referenced by '（如图阴影区域）' (方法一) and '则如图所示' (方法二) are missing; blank gaps where they belong.",
+  "note": ""
+ },
+ {
+  "id": "2020SC0725-48",
+  "mine": "A",
+  "jx": "A",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2020ZJB-19",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "Option-B formula broken: shows only '12 `` 11 ' 12 `` 11   33' (numerators, operators and the value 10/33 lost).",
+  "note": "Agree. 解析 slips (answer unaffected): A given as 5/11 but true P = 75/154 ≈ 0.487; D line reads '1−38/66' (should be 1−28/66 = 19/33)."
+ },
+ {
+  "id": "2023HB-75",
+  "mine": "D",
+  "jx": "D",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2023GK-71",
+  "mine": "A",
+  "jx": "A",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2021GK-71",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": "Agree. 解析 slip (answer unaffected): case ② count is doubled (A12²/2 should be A12²/4), giving 34/210 ≈ 16.2%; exact 35/222 ≈ 15.8% (2/13 ≈ 15.4% if people treated as identical), all within 14%–17%."
+ },
+ {
+  "id": "2020ZJB-5",
+  "mine": "D",
+  "jx": "D",
+  "q_issue": "Stray figure from the next question (four circles: 8/18/14/4, 7/3/5/9, 6/8/4/2, 5/10/5/?) below the options, itself cut off at the bottom.",
+  "j_issue": "",
+  "note": "Agree. Series: differences 2,3,5,7,11,13 (primes) → 14; no other option fits."
+ },
+ {
+  "id": "2020HB-61",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": "Agree. Not a find-the-missing-term series (AP sum calculation); single answer 1385."
+ },
+ {
+  "id": "2022SZ-46",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "Stem ends '−5, (' — the closing ')' of the blank is cut off at the right edge.",
+  "j_issue": "",
+  "note": "Agree. Series: adjacent sums 2,3,5,7,11 (primes) → 16. Second plausible rule: even-position terms 10,12,14 (+2) → C (14); B is stronger since it uses every term."
+ },
+ {
+  "id": "2022SZ-47",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "Stem ends '5678, (' — the closing ')' of the blank is cut off at the right edge.",
+  "j_issue": "",
+  "note": "Agree. Series: first two digits = product of last two (14=2×7, 27=3×9, 45=5×9, 32=4×8, 56=7×8; 20=4×5); only C fits."
+ },
+ {
+  "id": "2022SZ-48",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "Stem ends '8, (' — the closing ')' of the blank is cut off at the right edge.",
+  "j_issue": "",
+  "note": "Agree. Series: odd terms 1,2,4,8; even terms 2,5,11 with differences 3,6,12 → 23. Only a weak alternative: differences 3,6,10 (triangular) → B (21)."
+ },
+ {
+  "id": "2022SZ-50",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "Numerators of all four stem fractions cut off at the top; only fraction bars and denominators 2, 3, 25, 343 visible, so it cannot be solved as cropped.",
+  "j_issue": "",
+  "note": "Agree. Blind answer reconstructed from denominators only: 1/2, 1/3, 6/25, 64/343 = 2⁻¹/1⁰, 4⁰/3¹, 6¹/5², 8²/7³ → 10³/9⁴ = 1000/6561; the 解析 uses the same pattern. Single fit once numerators are known."
+ },
+ {
+  "id": "2015JSA-31",
+  "mine": "A",
+  "jx": "A",
+  "q_issue": "",
+  "j_issue": "",
+  "note": "Agree. Not a find-the-missing-term series (AP average: d=5, a1=16, (16+516)/2=266); single answer."
+ }
+]

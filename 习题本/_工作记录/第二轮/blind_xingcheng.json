@@ -1,0 +1,210 @@
+[
+ {
+  "id": "2023ZJA-59",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2023JSA-58",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2021ZJA-62",
+  "mine": "D",
+  "jx": "D",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2023GD-38",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2025GK-74",
+  "mine": "A",
+  "jx": "A",
+  "q_issue": "",
+  "j_issue": "Minor: subscript 乙 renders as '∠' in the formulas ('V∠ = 2√3V甲', '√3n/V∠'). Otherwise complete and legible.",
+  "note": ""
+ },
+ {
+  "id": "2025ZJA-61",
+  "mine": "A",
+  "jx": "A",
+  "q_issue": "",
+  "j_issue": "Two formulas are missing and show as blank gaps: '根据公式：匀加速运动的平均速度 ____ ，' and '可得 ____ ，解得v=54'. The key equation is never shown. The answer A is still stated.",
+  "note": ""
+ },
+ {
+  "id": "2022GK-65",
+  "mine": "D",
+  "jx": "D",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2021JSA-54",
+  "mine": "D",
+  "jx": "D",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2020SZS-27",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2023SD-36",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2021SD-39",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2020SD-36",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2025GK-68",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2024HB-75",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2023SZ-60",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2024SD-60",
+  "mine": "D",
+  "jx": "D",
+  "q_issue": "",
+  "j_issue": "",
+  "note": "Agree. Source typo (not a crop problem): the subscript in 'S巡艇逻' should be 巡逻艇."
+ },
+ {
+  "id": "2023ZJA-67",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2020HB-67",
+  "mine": "D",
+  "jx": "D",
+  "q_issue": "",
+  "j_issue": "",
+  "note": "Agree. Source typo (not a crop problem): '设两人运动时间为 t 秒' should be minutes, because the speeds are per minute."
+ },
+ {
+  "id": "2020HB-73",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2021ZJA-72",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2024SD-56",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "Fractions broken: numerators '1' and '3' sit alone on a stray top line, far left of their overlined denominators in '还有 ̄2 路程' and '路程的 ̄8', so 1/2 and 3/8 do not read as fractions. The '3' touches the top edge, and there are faint 1-px specks along the bottom edge.",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2020SC0725-47",
+  "mine": "D",
+  "jx": "D",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2022JSA-58",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "Garbled stray '、' after the place letters: '已知 A、、B、两地相距 9 公里', '从 A、地前往 B、地', '乙从 A、地到 B、地'. Still solvable, but the text needs cleaning.",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2020SZ1-48",
+  "mine": "A",
+  "jx": "A",
+  "q_issue": "",
+  "j_issue": "",
+  "note": "Agree. Source typo in the 解析 (not a crop problem): '(10/20+1/2)×30+10=40=2×40' should end '=2×20'."
+ },
+ {
+  "id": "2023SC-50",
+  "mine": "D",
+  "jx": "D",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2026CQ-58",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "Two spans are masked as '****': '地球和太阳****位于太阳和木星之间' and '****周期约为 12 个地球年'. Words are missing, e.g. '排成一条直线，地球' and '木星公转'. Solvable from context, but the stem is defective.",
+  "j_issue": "No 解析. The image holds only the restated stem (with the same '****' masking) and '【答案】B'; there is no explanation text.",
+  "note": ""
+ }
+]

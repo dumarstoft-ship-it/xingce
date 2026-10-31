@@ -1,0 +1,154 @@
+[
+ {
+  "id": "2023JSA-57",
+  "mine": "D",
+  "jx": "D",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2022GK-73",
+  "mine": "C",
+  "jx": "A",
+  "q_issue": "",
+  "j_issue": "Ends '因此，选择A选项。' although its own result is (√2+1)π+2, which is option C in this paper's option order.",
+  "note": "C is right: cut-off pieces = cylinder surface (√2π+π) − 2 unit squares + 4 unit cut faces = (√2+1)π+2, which is option C here; the 解析's letter A matches neither its own value nor these options (probably from a version with a different option order)."
+ },
+ {
+  "id": "2025GK-80",
+  "mine": "D",
+  "jx": "D",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2021JSA-65",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2020SC0725-55",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2021SD-41",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "The coverage radius in '覆盖半径为 … 米' is a formula set at the top-right of line 1, and the top edge cuts it off: only the denominator '3' and the bottom of '√3' show. The value (110√3/3 per the 解析) cannot be read, so the question cannot be solved as cropped. My B was inferred because it is the only option that gives a clean radius (110√3/3).",
+  "j_issue": "The first figure (triangle ABC with centre O) has a blank horizontal band about 44 px tall (rows ≈617–660). It breaks sides AB/BC and segments OA/OC, and cuts the length label left of A down to a fraction bar over '3' (the text still states OA=100√3/3). There is also a 1-px sliver of the next text line along the bottom edge.",
+  "note": ""
+ },
+ {
+  "id": "2026CQ-66",
+  "mine": "D",
+  "jx": "D",
+  "q_issue": "The stem contains '****' placeholders where source text is missing: at the very start ('****三片风叶…') and before '在离塔杆60米处'. It is still solvable, and this is not a crop cut (the edges are clean).",
+  "j_issue": "No worked 解析: the image is only the question repeated plus '【答案】D'. The bottom margin is clean, so nothing is cut off; the source simply has no explanation.",
+  "note": ""
+ },
+ {
+  "id": "2023JSA-55",
+  "mine": "A",
+  "jx": "D",
+  "q_issue": "",
+  "j_issue": "Typo in 方法一: '同院内接矩形' should be '椭圆内接矩形'.",
+  "note": "I hold A on the strict reading. 方阵 means a square formation, and the largest square in x²/40²+y²/20²=1 has vertices (±8√5,±8√5), area 1280 = A. The 解析's 1600 = 2ab is the largest inscribed rectangle, valid only if 方阵 may be any rectangle (it renames it '长方形方阵'). The stem is ambiguous; editor to decide."
+ },
+ {
+  "id": "2025ZJA-69",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2024GK-71",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "Negligible: a 3-px grey speck on the bottom edge near the right corner (the tip of a glyph below the crop).",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2026CQ-65",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "The stem contains '****' placeholders where source text is missing: at the start ('****下图中…') and before '至少需要增加几人'. It is still solvable; this is not a crop cut.",
+  "j_issue": "No worked 解析: the image is only the question repeated plus '【答案】B'. Nothing is cut off; the source has no explanation.",
+  "note": ""
+ },
+ {
+  "id": "2024SC-53",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2022HB-71",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2022ZJA-65",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "A faint outlined watermark fragment sits in the left margin beside the figure (x≈15–80, y≈165–300). Text and formulas are fine.",
+  "note": ""
+ },
+ {
+  "id": "2024HB-69",
+  "mine": "D",
+  "jx": "D",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2022JSA-67",
+  "mine": "D",
+  "jx": "D",
+  "q_issue": "Source text glitch, not a crop cut: a spurious '、' follows every point letter ('某点C、', '测量点A、和B、', '∠A、B、C、为90°', '观测B、、C、', 'C、点…比A、点高'). The figure is low-res but legible.",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2020SC0725-54",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2022SC2-44",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2022HB-75",
+  "mine": "B",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": "The key is right (C, 14). Beads of diameter 1.5 can be staggered across the 2 cm width with centres offset 0.5, so the pitch is √(1.5²−0.5²)=√2 and 1+⌊(20−1.5)/√2⌋=1+13=14 fit. My blind 13 assumed a single straight row."
+ }
+]

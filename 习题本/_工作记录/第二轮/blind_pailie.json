@@ -1,0 +1,170 @@
+[
+ {
+  "id": "2020HB-64",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2020SZS-19",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "Source typo in the table, not a crop fault: row 夫=3 reads '6—2' (should be '6—12'; its count 7 is correct). The crop itself is complete.",
+  "note": ""
+ },
+ {
+  "id": "2025HB-70",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2025HB-69",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2024JSA-62",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2023SC-55",
+  "mine": "A",
+  "jx": "A",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2022GK-69",
+  "mine": "D",
+  "jx": "D",
+  "q_issue": "",
+  "j_issue": "Cosmetic: the left border of the '69. 解析' header box is cropped off (its top and bottom rules run to x=0). No text is lost.",
+  "note": ""
+ },
+ {
+  "id": "2025GK-72",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2023HB-68",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "Layout only: option 'A. 48' sits beside the figure's bottom-right corner while B-D are listed below it (original typesetting). Stem, tangram figure and all four options are complete and legible.",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2025JSA-64",
+  "mine": "A",
+  "jx": "A",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2022SD-45",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2020SC1206-42",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "Source text, not a crop fault: '没人至少四件' is a typo for '每人至少四件'. The list of splits omits (4,6,7), but the four durations 9/8/7/6 are still right. The crop is complete.",
+  "note": ""
+ },
+ {
+  "id": "2024SZ-55",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2021ZJA-73",
+  "mine": "D",
+  "jx": "D",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2024HB-66",
+  "mine": "D",
+  "jx": "D",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2022SC2-48",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2020ZJB-16",
+  "mine": "D",
+  "jx": "D",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2023ZJA-70",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2020SD-44",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "All 10 figures are present but in greyscale with no legend, so the colours have to be inferred (dark = red, mid-grey = green, light = yellow).",
+  "note": ""
+ },
+ {
+  "id": "2024ZJA-69",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "Stray sliver: a grey bar 5 px tall along the bottom-left edge (x≈12-265, bottom 5 rows) is the top of the next item's highlighted header. It contains no text. All of this item's text is intact.",
+  "note": ""
+ },
+ {
+  "id": "2023GK-69",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ }
+]

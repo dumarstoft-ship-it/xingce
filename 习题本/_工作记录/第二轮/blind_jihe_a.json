@@ -1,0 +1,162 @@
+[
+ {
+  "id": "2022JSA-55",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2022GD-39",
+  "mine": "A",
+  "jx": "A",
+  "q_issue": "",
+  "j_issue": "minor: text writes 'A¹B¹', 'EB¹', 'BB¹' (superscript 1) while the figure labels are 'A1', 'B1'; otherwise complete.",
+  "note": ""
+ },
+ {
+  "id": "2022JSA-59",
+  "mine": "A",
+  "jx": "A",
+  "q_issue": "Stem notation garbled (spurious 、 after each vertex letter, primes misplaced): 'A、B、C、-A、′B、′C、′', '∠A、B、C、=90°', '∠B、A、C、=30°', 'A、D、E-A、′D、′E′', '∠A、D、E=90°', '线段 A、E 与 EB、' (meant ABC-A′B′C′, ∠ABC=90°, ∠BAC=30°, ADE-A′D′E′, ∠ADE=90°, AE与EB). Decodable but should be retyped for print.",
+  "j_issue": "minor: stray apostrophe in 'ABC−A′B′C′'的形状相同'; otherwise complete.",
+  "note": ""
+ },
+ {
+  "id": "2022HB-73",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2024ZJA-67",
+  "mine": "D",
+  "jx": "D",
+  "q_issue": "",
+  "j_issue": "minor: grey bar fragment at the bottom-left edge (top of the next item's header highlight), and the font size changes between parts (2) and (3); content complete.",
+  "note": ""
+ },
+ {
+  "id": "2025HB-67",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2021SD-36",
+  "mine": "D",
+  "jx": "D",
+  "q_issue": "",
+  "j_issue": "minor: header carries website stats '全站正确率：8%，易错项：B。'; otherwise complete.",
+  "note": ""
+ },
+ {
+  "id": "2024HB-71",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2020SD-41",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "minor: header carries website stats '全站正确率：40%，易错项：C。'; otherwise complete.",
+  "note": ""
+ },
+ {
+  "id": "2020HB-68",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "minor: header carries website stats '全站正确率：55%，易错项：B。'; otherwise complete.",
+  "note": ""
+ },
+ {
+  "id": "2023SC-53",
+  "mine": "A",
+  "jx": "A",
+  "q_issue": "",
+  "j_issue": "minor typo: '(A₂M+A₃M)×C₃D₃' should be A₃N (the figure's foot point is N); the Chinese subscripts in 'S平行四边形A₂B₂C₂D₂' are tiny but readable.",
+  "note": ""
+ },
+ {
+  "id": "2023JSA-59",
+  "mine": "A",
+  "jx": "A",
+  "q_issue": "Figure is a low-quality grey phone photo of a printed page and contains stray text: partial '…积为' (from '面积为') at its top-left and clipped glyph fragments along its top edge. Labels A/B/C/D still legible.",
+  "j_issue": "j image repeats the whole question (stem, a clean redrawn figure with C′, options A–D) before 【答案】A. Redundant but complete; that clean figure could replace the photo in q.",
+  "note": ""
+ },
+ {
+  "id": "2020SC1206-44",
+  "mine": "A",
+  "jx": "A",
+  "q_issue": "",
+  "j_issue": "minor: header carries website stats '全站正确率：29%，易错项：C。'; typo '从从E点到C点'.",
+  "note": ""
+ },
+ {
+  "id": "2021GK-70",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "minor: header carries website stats '全站正确率：45%，易错项：C。'; image slightly jagged but legible.",
+  "note": ""
+ },
+ {
+  "id": "2024JSA-65",
+  "mine": "A",
+  "jx": "A",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2025GK-78",
+  "mine": "A",
+  "jx": "A",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2025ZJA-66",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2023GK-67",
+  "mine": "D",
+  "jx": "D",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2023HB-69",
+  "mine": "A",
+  "jx": "A",
+  "q_issue": "",
+  "j_issue": "Formula broken: 'V_M−AEFD=V_N−BCHG = ⅓×S_BCHG×PO =13×1×3×1=1'. The 1/3 lost its fraction bar and prints as '13'.",
+  "note": ""
+ },
+ {
+  "id": "2024JSA-58",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "minor: says 'r 和 R 分别为上、下底面的半径' but then sets r=50/2 (下口) and R=70/2 (上口), so the labels are swapped; the result is unaffected.",
+  "note": ""
+ }
+]
