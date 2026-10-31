@@ -1,4 +1,4 @@
-"""数推第二轮整本：ns_set.py 出的 30 道改编题按类型轮流排（相邻两题类型不同），再插进 4 道没用过的真题，写成
+"""数推第二轮整本：ns_set.py 出的 21 道改编题按类型轮流排（相邻两题类型不同），再插进 4 道没用过的真题，写成
 make_cx.py 的输入。Usage: ns_assemble.py <ns_new_items.json> <out.json>"""
 import itertools, json, random, sys
 
@@ -15,9 +15,9 @@ REAL = [  # 4 道真题：盲做与官方答案一致（_工作记录/第二轮/
 ]
 META = {
     'title': '数字推理第二轮',
-    'intro': ('30 道新出的改编题，加 4 道第 1–14 天没用过的真题。改编题照着广东、深圳、江苏近几年的数推来出，类型打乱排。'
+    'intro': ('21 道新出的改编题，加 4 道第 1–14 天没用过的真题。改编题照着广东、深圳、江苏近几年的数推来出，类型打乱排。'
               '每道改编题的答案都由程序按规律算出，再用一组常见规律去拟合题干，确认没有第二种规律指向别的选项；'
-              '然后找人不看答案独立做，判为送分的、不找规律也能从选项猜出来的题都重出了。'),
+              '然后找人不看答案独立做了三轮，送分的、不找规律也能从选项猜出来的题都去掉了。'),
     'method_title': '看到数列先问三件事',
     'method': ['<b>数的大小</b>：平缓的先做差；增长快的先作商，或者看幂次；忽大忽小、项数多的，考虑隔项或分组。',
                '<b>数的样子</b>：多位数、小数先想机械划分；有分数先反约分，分子分母分开看；有根号先统一成根号。',
@@ -41,7 +41,7 @@ def build(new, seed):
     while any(groups.values()):
         for k in sorted(groups):
             if groups[k]: order.append(groups[k].pop(0))
-    for k, it in zip((5, 13, 21, 29), REAL):
+    for k, it in zip((4, 10, 16, 22), REAL):  # the real questions land at 5, 11, 17, 23 of 25
         order.insert(k, it)
     return order
 

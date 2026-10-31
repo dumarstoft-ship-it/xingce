@@ -1,7 +1,9 @@
 """数推第二轮：30 道新出的改编题（第三版）。
 - 第一版盲做判 16 道太简单、2 道有第二种读法、1 道答案不在选项里，重出成第二版；
 - 第二版盲做 30 道全对、没有歧义，但判 10 道送分、5 道不找规律也能从选项猜出来：重出 11 道，改了 8 道的选项
-  （干扰项不再围着同一个核心数，数位题的选项排成“2 × 2”格子，猜众数猜不出来）。
+  （干扰项不再围着同一个核心数，数位题的选项排成“2 × 2”格子，猜众数猜不出来）；
+- 第三版改动的 22 道再盲做，答案全对。按用户要求，审过没问题的保留，有问题的 9 道不再改、不收（DROPPED，写明原因），
+  成书 21 道改编题。
 每道题的答案都由规律现算（不手填），并检查题干每一项都符合规律；数值选项一律从小到大排，陷阱说明按排好后的字母自动标，
 每个错误选项都要有陷阱说明。输出 verify_input.json（交给 ns_verify.py 查歧义）和 ns_new_items.json（交给 ns_assemble.py）。
 Usage: ns_set.py <out_dir>"""
@@ -269,10 +271,26 @@ add('机械划分', v, [5472, 5475, 5772, v],
     [(5472, '前后两段的差都没递增（42 + 12，57 + 15）'), (5475, '前两位的差没递增（42 + 12）'), (5772, '后两位的差没递增（57 + 15）')],
     stem='1215，1521，2130，3042，4257，（　）', given=t[:5])
 
+# 第三版盲做挑出问题、按用户要求不再修改的题：不收进书（题面保留在上面，作为记录）
+DROPPED = {
+    '1，3，6，13，29，61，（　）': '偏易：二级差就是平方数，接近送分',
+    '1，3，11，35，99，259，（　）': '三个干扰项都在增长趋势之上，估大小就能选',
+    '2，5，13，35，97，（　）': '2ⁿ + 3ⁿ 太常见，选项都是 3 × 97 减一个数，估大小也能选',
+    '1，1，2，7，34，（　）': '选项是 34 的 5、6、7 倍 ± 1，取交集就能选',
+    '2，2，4，12，60，480，（　）': '商是斐波那契数列，一步就看出来，送分',
+    "6，3，2，$\\dfrac{3}{2}$，$\\dfrac{4}{3}$，（　）": '干扰项 5/4 另有两种推法也能拟合全部已知项',
+    "1，$\\dfrac{3}{5}$，$\\dfrac{1}{2}$，$\\dfrac{7}{17}$，$\\dfrac{11}{26}$，（　）": '选项分子分母取交集就能选，只看最后两项也能推出',
+    "$\\dfrac{1}{2}$，1，$\\dfrac{9}{8}$，1，$\\dfrac{25}{32}$，$\\dfrac{9}{16}$，（　）": '空在奇数位，前面奇数位的项直接给出 n²/2ⁿ，送分',
+    '2512，3517，4321，5326，（　）': '整数直接做差 1005、804 交替，一步就出，送分',
+}
+
 if __name__ == '__main__':
     out = sys.argv[1]
     ver, items = [], []
-    for k, q in enumerate(Q, 1):
+    stems = [q['stem'] or show(q['seq']) for q in Q]
+    assert all(s in stems for s in DROPPED), [s for s in DROPPED if s not in stems]
+    kept = [q for q, s in zip(Q, stems) if s not in DROPPED]
+    for k, q in enumerate(kept, 1):
         opts = list(q['options']) if q['letter'] else sorted(q['options'], key=F)
         letters = dict(zip(opts, 'ABCD'))
         ans = q['letter'] or letters[q['value']]
@@ -288,4 +306,4 @@ if __name__ == '__main__':
                         'options': {letters[o]: str(o) for o in opts}, 'groups': q['groups']})
     json.dump(ver, open(os.path.join(out, 'verify_input.json'), 'w'), ensure_ascii=False, indent=1)
     json.dump(items, open(os.path.join(out, 'ns_new_items.json'), 'w'), ensure_ascii=False, indent=1)
-    print(len(items), 'items', sorted(Counter(it['answer'] for it in items).items()))
+    print(len(items), 'items kept,', len(DROPPED), 'dropped', sorted(Counter(it['answer'] for it in items).items()))
