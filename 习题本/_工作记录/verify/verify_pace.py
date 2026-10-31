@@ -9,11 +9,16 @@ x = [x for x in [F(k, 4) for k in range(0, 4 * int(D) + 1)] if (D - x) * p_slow 
 assert D == 15 and T == 56 and x == [6]
 res[1] = ('A', 6, {'C': D - 6, 'B': D / 2, 'D': D})       # 9 慢骑那段 / 7.5 各一半 / 15 全程
 
-# 2 三段等长 40 千米：40、60，要全程均速 60 → 第三段
-t_total = F(120, 60) * 60; t1 = F(40, 40) * 60; t2 = F(40, 60) * 60
-v3 = 40 / ((t_total - t1 - t2) / 60)
-assert v3 == 120
-res[2] = ('D', v3, {'A': 3 * 60 - 40 - 60, 'C': 40 / (2 - 1 - F(6, 10))})   # 80 算术平均 / 100 把 40 分钟当成 0.6 小时
+# 2 赛跑 1500 米：甲到终点时乙差 100、丙差 300；让乙先跑 20 秒同时到 → 丙要先跑几秒
+sols = set()
+for k in range(1, 400):                                 # 乙每米用时 b 按 0.001 秒一档穷举
+    b = F(k, 1000); T = 1400 * b                         # 甲的全程用时 = 乙跑 1400 米的时间
+    a = T / 1500
+    if 1500 * b - 1500 * a == 20:
+        c = T / 1200; sols.add(1500 * c - T)
+assert sols == {70}
+b = F(1, 5); T = 1400 * b; a = T / 1500; c = T / 1200
+res[2] = ('C', 70, {'B': 20 * 3, 'A': 300 * a, 'D': 300 * (T + 20) / 1200})
 
 # 3 施工降速 60%：多 6 千米多晚 4 分钟 → 平时速度
 e = F(24 - 20, 6)                                       # 每千米多用的分钟
@@ -40,7 +45,7 @@ res[5] = ('B', 2 * d / v0, {'C': 40 + 60, 'A': 80, 'D': 120})
 rests = len([k for k in range(1, 15) if k % 2 == 0])     # 跑完第 2、4、…、14 千米后（终点不算）
 ja, yi = 15 * 5 + 2 * rests, 15 * 6
 assert (rests, ja, yi) == (7, 89, 90)
-res[6] = ('A', yi - ja, {'B': 0, 'C': yi - (75 + 16), 'D': yi - (75 + 12)})
+res[6] = ('D', yi - ja, {'A': 0, 'B': yi - (75 + 16), 'C': yi - (75 + 12)})
 
 # 7 甲先出发 20 分钟，乙开 1 小时在 C 追上；乙停车 15 分钟后同时到 B；CB = 48 → 甲速
 AC = 48 * F(20, 15)                                     # 少用的时间与路程成正比
@@ -75,5 +80,7 @@ for k in range(13, 400):                                # AB 按 0.5 千米一�
 assert sols == [60]
 res[10] = ('C', 60, {'A': 60 - 12, 'D': 60 + 12})
 
-for k, (a, v, traps) in res.items():
-    print(k, a, v, {t: (float(x) if isinstance(x, F) else x) for t, x in traps.items()})
+ORDER = [5, 6, 3, 1, 7, 2, 9, 4, 10, 8]
+for n, k in enumerate(ORDER, 1):
+    a, v, traps = res[k]
+    print(n, a, v, {t: (float(x) if isinstance(x, F) else x) for t, x in traps.items()})
