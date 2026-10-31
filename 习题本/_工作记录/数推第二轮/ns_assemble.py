@@ -1,6 +1,6 @@
 """数推第二轮整本：ns_set.py 出的 30 道改编题按类型轮流排（相邻两题类型不同），再插进 4 道没用过的真题，写成
 make_cx.py 的输入。Usage: ns_assemble.py <ns_new_items.json> <out.json>"""
-import json, sys
+import itertools, json, random, sys
 
 TYPES = ['多级', '作商', '倍数', '递推', '幂次', '分数', '根式', '多重', '机械']
 REAL = [  # 4 道真题：盲做与官方答案一致（_工作记录/第二轮/blind_gailv_shutui.json），截图已修
@@ -29,16 +29,27 @@ META = {
               'steps': []},
     'key_name': '卡点', 'draw_label': '草稿', 'draw_mm': 26}
 
-if __name__ == '__main__':
-    new = json.load(open(sys.argv[1]))
+def build(new, seed):
+    """round-robin over types, so neighbours differ in kind; seed > 0 shuffles the order inside each type"""
     groups = {}
     for it in new:
         groups.setdefault(next(i for i, t in enumerate(TYPES) if t in it['label']), []).append(it)
+    if seed:
+        for g in groups.values(): random.Random(seed).shuffle(g)
     order = []
-    while any(groups.values()):  # round-robin over types, so neighbours differ in kind
+    while any(groups.values()):
         for k in sorted(groups):
             if groups[k]: order.append(groups[k].pop(0))
     for k, it in zip((5, 13, 21, 29), REAL):
         order.insert(k, it)
+    return order
+
+def max_run(order):
+    return max(len(list(g)) for _, g in itertools.groupby(it['answer'] for it in order))
+
+if __name__ == '__main__':
+    new = json.load(open(sys.argv[1]))
+    seed = next(s for s in range(1000) if max_run(build(new, s)) <= 2)  # no answer letter three times in a row
+    order = build(new, seed)
     json.dump({**META, 'items': order}, open(sys.argv[2], 'w'), ensure_ascii=False, indent=1)
-    print(len(order), 'items')
+    print(len(order), 'items, seed', seed, ''.join(it['answer'] for it in order))

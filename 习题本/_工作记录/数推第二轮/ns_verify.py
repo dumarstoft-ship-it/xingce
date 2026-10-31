@@ -35,6 +35,17 @@ def fits(s):
         if len(set(q)) == 1: out['差为等比'] = s[-1] + d1[-1] * q[0]
     if len(d1) >= 3 and all(x in PRIMES for x in d1) and d1 == PRIMES[PRIMES.index(d1[0]):PRIMES.index(d1[0]) + len(d1)]:
         out['差为连续质数'] = s[-1] + PRIMES[PRIMES.index(d1[-1]) + 1]
+    # a_n = a_{n-1} * (i + k) + c   and   a_n = p*a_{n-1} + c*(-1)^i   and   a_n = p*a_{n-1} + (r + t*i)
+    if n >= 4:
+        for k in range(-1, 3):
+            cs = {s[i] - s[i - 1] * (i + k) for i in range(1, n)}
+            if len(cs) == 1: out[f'×(n+{k})+常数'] = s[-1] * (n + k) + cs.pop()
+        for p in range(-4, 5):
+            cs = {(s[i] - p * s[i - 1]) * (-1) ** i for i in range(1, n)}
+            if len(cs) == 1 and p != 0: out[f'×{p}±交替'] = p * s[-1] + cs.pop() * (-1) ** n
+            for t in (-3, -2, -1, 1, 2, 3):
+                rs = {s[i] - p * s[i - 1] - t * i for i in range(1, n)}
+                if len(rs) == 1 and p not in (0, 1): out[f'×{p}+{t}i修正'] = p * s[-1] + rs.pop() + t * n
     # a_n = p*a_{n-1} + q
     if n >= 4:
         for p in range(-4, 5):
@@ -46,6 +57,11 @@ def fits(s):
             if (p, q) in ((0, 0), (1, 0)): continue
             rs = {s[i] - p * s[i - 1] - q * s[i - 2] for i in range(2, n)}
             if len(rs) == 1: out[f'{p}a+{q}b+常数'] = p * s[-1] + q * s[-2] + rs.pop()
+        # a_n = p*a_{n-1} + q*a_{n-2} + (r + t*i): a sum of earlier terms plus an arithmetic correction
+        for p, q, t in product(range(-2, 4), range(-2, 4), range(-3, 4)):
+            if t == 0 or (p, q) == (0, 0): continue
+            rs = {s[i] - p * s[i - 1] - q * s[i - 2] - t * i for i in range(2, n)}
+            if len(rs) == 1: out[f'{p}a+{q}b+{t}i修正'] = p * s[-1] + q * s[-2] + rs.pop() + t * n
         for c in range(-5, 6):  # a_n = a_{n-1} * a_{n-2} + c
             if all(s[i] == s[i - 1] * s[i - 2] + c for i in range(2, n)): out[f'积+{c}'] = s[-1] * s[-2] + c
     # odd / even positions (blank is position n+1)
