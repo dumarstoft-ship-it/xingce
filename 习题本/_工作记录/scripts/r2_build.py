@@ -1,8 +1,8 @@
-"""第二轮数学运算专项本（行程、排列组合、概率、几何）: unused medium and hard questions — real questions of difficulty
+"""第二轮数学运算专项本（行程、排列组合、概率、几何，后来加了工程、经济利润）: unused medium and hard questions — real questions of difficulty
 2–3 and teacher-bank 中等/难, deduplicated against everything already printed, 2024–2026 广东 kept back for the full
 mock exams — split into 中等题 and 难题 with 考法 mixed inside each part. Every real question was blind-solved and checked
 against its official answer (r2/blind_*.json); crop repairs are in db/overrides.json, retyped stems, a corrected answer
-and notes under the 解析 in db/real_overrides.json. Usage: r2_build.py <out_dir>"""
+and notes under the 解析 in db/real_overrides.json. Usage: r2_build.py <out_dir> [module codes, e.g. M03 M05; default: all]"""
 import hashlib, json, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import assemble_day as A
@@ -10,7 +10,7 @@ import crop as C
 from render_day import render_day, to_pdf
 from PIL import Image
 S, CR = A.S, A.CR
-MODS = [('M04', '行程问题'), ('M06', '排列组合'), ('M07', '概率问题'), ('M08', '几何问题')]
+MODS = [('M03', '工程问题'), ('M04', '行程问题'), ('M05', '经济利润'), ('M06', '排列组合'), ('M07', '概率问题'), ('M08', '几何问题')]
 FIGURE = ['2022JSA-59', '2022JSA-67']  # stems retyped (garbled letters in the original): keep the original figure
 NOTE = ('题目都是第 1–14 天没用过的真题和老师笔记精选，去掉了送分题，按难度分成中等题和难题两部分，同一部分里考法打乱排。'
         '每道真题都由一位不看答案的解题者独立做过，再和官方答案核对；原卷截图有缺损的已经补截或重新排了题干，'
@@ -40,11 +40,12 @@ def shuffled(items):
     """a fixed order that mixes 考法 (so it is the same on every rebuild)"""
     return sorted(items, key=lambda it: hashlib.md5((it.get('id') or it.get('tid')).encode()).hexdigest())
 
-def build(out_dir):
+def build(out_dir, only=None):
     db, fix = A.load_db(); cls = A.load_cls(); tb = A.teacher_bank()
     sel = json.load(open(S + '/r2/selection.json'))
     os.makedirs(out_dir, exist_ok=True)
     for code, name in MODS:
+        if only and code not in only: continue
         mid, hard = [], []
         for qid in sel[code]['real']:
             it = A.real_item(qid, db, fix, cls)
@@ -63,4 +64,4 @@ def build(out_dir):
         print(name, '中等', len(mid), '难题', len(hard), pdf)
 
 if __name__ == '__main__':
-    build(sys.argv[1])
+    build(sys.argv[1], set(sys.argv[2:]) or None)

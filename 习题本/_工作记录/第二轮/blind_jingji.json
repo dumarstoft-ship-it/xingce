@@ -1,0 +1,130 @@
+[
+ {
+  "id": "2020HB-66",
+  "mine": "A",
+  "jx": "A",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2025SD-56",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2022GK-72",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2023GK-61",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2024SD-58",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2020JSA-57",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "Top edge clips the tops of the raised inline formula “(1+15%)x=1.15x” on line 1 (still readable); stray page-footer digits “1” and “3” on the bottom line; inline formula images low-res but legible",
+  "note": ""
+ },
+ {
+  "id": "2022SC1-48",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "minor, not a crop defect: stem typo “单排汽车” (should be 单辆汽车); crop complete",
+  "j_issue": "Stray first line “因此，选择C选项。” is the tail of the previous question’s (47) 解析; diagonal watermark overlays the text (e.g. across “19800+200=20000”), still legible",
+  "note": ""
+ },
+ {
+  "id": "2021ZJA-70",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2022GK-75",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2024ZJA-59",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "minor: stray grey horizontal rule (footnote separator) at bottom-left; content complete",
+  "note": ""
+ },
+ {
+  "id": "2023SZ-58",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2021JSA-62",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2020ZJB-15",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2021JSA-59",
+  "mine": "D",
+  "jx": "D",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2023SC-52",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2024SZ-57",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "minor, not a crop defect: stray spaces in source text (关注 个人健康 / 每 单收益 / 若 该骑手); crop complete",
+  "j_issue": "",
+  "note": ""
+ }
+]

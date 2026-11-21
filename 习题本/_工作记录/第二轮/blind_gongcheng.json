@@ -1,0 +1,154 @@
+[
+ {
+  "id": "2022SC1-46",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "Stem is missing a fraction: '甲、丙先合作两天，完成了全部任务的，接着…' has nothing after 的. The 解析 (2(甲+丙)=20 of total 60) shows it should be 1/3. As printed, the question cannot be solved.",
+  "j_issue": "",
+  "note": "Blind answer assumed the missing value is 1/3. With fraction f, 甲's share = 0.1+0.9f; only f=1/3 gives one of the options (2/5). The 解析 confirms 1/3 and C."
+ },
+ {
+  "id": "2023SC-46",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2025SC-54",
+  "mine": "A",
+  "jx": "A",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2020SC1206-46",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2025ZJA-58",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2022HB-63",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2021ZJA-65",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2024JSA-61",
+  "mine": "A",
+  "jx": "A",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2025ZJA-59",
+  "mine": "A",
+  "jx": "A",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2020SC0725-46",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2022GD-32",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2024SC-48",
+  "mine": "D",
+  "jx": "D",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2020SD-45",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "",
+  "j_issue": "Typo in the source text, crop is fine: two steps are both labelled '第一步' (the second should be 第二步).",
+  "note": ""
+ },
+ {
+  "id": "2021SC2-51",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2023HB-67",
+  "mine": "C",
+  "jx": "C",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2022SC2-42",
+  "mine": "A",
+  "jx": "A",
+  "q_issue": "",
+  "j_issue": "",
+  "note": ""
+ },
+ {
+  "id": "2022SC1-54",
+  "mine": "D",
+  "jx": "D",
+  "q_issue": "Typo in the source text, crop is fine: option A reads '不到 10 个时' (should be 小时).",
+  "j_issue": "Typo in the source text, crop is fine: '第四部' should be 第四步.",
+  "note": ""
+ },
+ {
+  "id": "2020SZS-29",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "Stem and solution disagree: the stem says '若乙组先做15天', but the 解析 uses 3甲+4(甲+乙)=10乙+2甲, i.e. 10 days. With 15, the data contradict themselves (乙 = 25/6 trees/day, total = 485/6 trees, and no option fits). The stem should say 10天.",
+  "j_issue": "",
+  "note": "Blind answer B was reached by assuming 10天, the only reading that works: 甲=30, 乙=25, 310 trees, 155 per side, 154 gaps × 8 = 1232 m. The 解析 confirms this."
+ },
+ {
+  "id": "2024GK-72",
+  "mine": "B",
+  "jx": "B",
+  "q_issue": "The fraction '剩余任务量的2/3' is broken. Only a '3' with a bar over it appears in the line, and its numerator '2' sits on its own at the top-left corner of the crop, touching the top edge, where it looks like a leftover question number.",
+  "j_issue": "",
+  "note": "The 解析's (1-1/4)×2/3 confirms the fraction is 2/3."
+ }
+]
